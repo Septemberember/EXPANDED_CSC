@@ -1,0 +1,754 @@
+{
+  "subject": "BoundedPerfectSquareLoop",
+  "subject_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop",
+  "fsf": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/FSF/BoundedPerfectSquareLoop_FSF.txt",
+  "manifest": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+  "mode": "expanded",
+  "strategy": "batch",
+  "max_iter": 50,
+  "dry_run": false,
+  "original": {
+    "role": "original",
+    "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop.java",
+    "class_name": "BoundedPerfectSquareLoop",
+    "mutant_id": null
+  },
+  "mutants": [
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M1.java",
+      "class_name": "BoundedPerfectSquareLoop",
+      "mutant_id": "BoundedPerfectSquareLoop_M1"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M2.java",
+      "class_name": "BoundedPerfectSquareLoop",
+      "mutant_id": "BoundedPerfectSquareLoop_M2"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M3.java",
+      "class_name": "BoundedPerfectSquareLoop",
+      "mutant_id": "BoundedPerfectSquareLoop_M3"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M4.java",
+      "class_name": "BoundedPerfectSquareLoop",
+      "mutant_id": "BoundedPerfectSquareLoop_M4"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M5.java",
+      "class_name": "BoundedPerfectSquareLoop",
+      "mutant_id": "BoundedPerfectSquareLoop_M5"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M6.java",
+      "class_name": "BoundedPerfectSquareLoop",
+      "mutant_id": "BoundedPerfectSquareLoop_M6"
+    }
+  ],
+  "step_count": 30,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "mutant:BoundedPerfectSquareLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M1.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/testcases.json"
+      ],
+      "stdout_tail": "round_06/b3  [BATCH_SAFE]  number=23\n  round_06/b4  [BATCH_SAFE]  number=24\n  round_06/b5  [BATCH_SAFE]  number=26\n  round_06/b6  [BATCH_SAFE]  number=27\n  round_06/b7  [BATCH_SAFE]  number=28\n  round_06/b8  [BATCH_SAFE]  number=29\n  round_06/b9  [BATCH_SAFE]  number=30\n  round_06/b10  [BATCH_SAFE]  number=31\n  round_06/b11  [BATCH_SAFE]  number=32\n  round_06/b12  [BATCH_SAFE]  number=33\n  round_06/b13  [BATCH_SAFE]  number=34\n  round_06/b14  [BATCH_SAFE]  number=35\n  round_06/b15  [BATCH_SAFE]  number=37\n  round_06/b16  [BATCH_SAFE]  number=38\n  round_06/b17  [BATCH_SAFE]  number=39\n  round_06/b18  [BATCH_SAFE]  number=40\n  round_06/b19  [BATCH_SAFE]  number=41\n  round_06/b20  [BATCH_SAFE]  number=42\n  round_06/b21  [BATCH_SAFE]  number=43\n  round_06/b22  [BATCH_SAFE]  number=44\n  round_06/b23  [BATCH_SAFE]  number=45\n  round_06/b24  [BATCH_SAFE]  number=46\n  round_06/b25  [BATCH_SAFE]  number=47\n  round_06/b26  [BATCH_SAFE]  number=48\n  round_06/b27  [BATCH_SAFE]  number=50\n  round_06/b28  [BATCH_SAFE]  number=51\n  round_06/b29  [BATCH_SAFE]  number=52\n  round_06/b30  [BATCH_SAFE]  number=53\n  round_06/b31  [BATCH_SAFE]  number=54\n  round_06/b32  [BATCH_SAFE]  number=55\n  round_06/b33  [BATCH_SAFE]  number=56\n  round_06/b34  [BATCH_SAFE]  number=57\n  round_06/b35  [BATCH_SAFE]  number=58\n  round_06/b36  [BATCH_SAFE]  number=59\n  round_06/b37  [BATCH_SAFE]  number=60\n  round_06/b38  [BATCH_SAFE]  number=61\n  round_06/b39  [BATCH_SAFE]  number=62\n  round_06/b40  [BATCH_SAFE]  number=63\n  round_06/b41  [BATCH_SAFE]  number=65\n  round_06/b42  [BATCH_SAFE]  number=66\n  round_06/b43  [BATCH_SAFE]  number=67\n  round_06/b44  [BATCH_SAFE]  number=68\n  round_06/b45  [BATCH_SAFE]  number=69\n  round_06/b46  [BATCH_SAFE]  number=70\n  round_06/b47  [BATCH_SAFE]  number=71\n  round_06/b48  [BATCH_SAFE]  number=72\n  round_06/b49  [BATCH_SAFE]  number=73\n  round_06/b50  [BATCH_SAFE]  number=74\n  round_06/b51  [BATCH_SAFE]  number=75\n  round_06/b52  [BATCH_SAFE]  number=76\n  round_06/b53  [BATCH_SAFE]  number=77\n  round_06/b54  [BATCH_SAFE]  number=78\n  round_06/b55  [BATCH_SAFE]  number=79\n  round_06/b56  [BATCH_SAFE]  number=80\n  round_06/b57  [BATCH_SAFE]  number=82\n  round_06/b58  [BATCH_SAFE]  number=83\n  round_06/b59  [BATCH_SAFE]  number=84\n  round_06/b60  [BATCH_SAFE]  number=85\n  round_06/b61  [BATCH_SAFE]  number=86\n  round_06/b62  [BATCH_SAFE]  number=87\n  round_06/b63  [BATCH_SAFE]  number=88\n  round_06/b64  [BATCH_SAFE]  number=89\n  round_06/b65  [BATCH_SAFE]  number=90\n  round_06/b66  [BATCH_SAFE]  number=91\n  round_06/b67  [BATCH_SAFE]  number=92\n  round_06/b68  [BATCH_SAFE]  number=93\n  round_06/b69  [BATCH_SAFE]  number=94\n  round_06/b70  [BATCH_SAFE]  number=95\n  round_06/b71  [BATCH_SAFE]  number=98\n  round_07/b0  [BATCH_SAFE]  number=97\n  round_07/b1  [BATCH_SAFE]  number=99\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 5423\n  frontier_discovery_time_ms: 40961\n  compile_time_ms: 35895\n  java_exec_time_ms: 7338\n  path_log_parse_time_ms: 942\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 11826\n  merge_verify_wall_time_ms: 4\n  batch_total_wall_time_ms: 11838\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/cct_stats.json\n  Counts: nodes=407, leaves=204, covered=102, infeasible=102, out_of_range=0, expanded=295, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPerfectSquareLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M1.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/FSF/BoundedPerfectSquareLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedPerfectSquareLoop\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/FSF/BoundedPerfectSquareLoop_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/refined_tbfv_report.json\n  Summary:     testcases=102, fsf_units=3, passed=102, failed=1, skipped=203, unsupported=0\n  CCT marked:  1\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/cct_tbfv_stats.json\n  Counts:      nodes=407, leaves=204, fault_leaves=1, failure_cases=1\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=2, intervals=2, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPerfectSquareLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=102, failed=1, condition_nodes=2, condition_intervals=2\n  Top conditions:\n    #1 score=0.0069 fail=1/101 line=3 number >= 100\n    #2 score=0.0068 fail=1/102 line=3 number < 0\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[3, None] root.F.TRUE\n    #2 score=0.0000 fail=1/101 line=[3, 3] root.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPerfectSquareLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M1.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/cct_failure_localization_aggregated.json\n  Source file: BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M1.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  2 raw -> 2 aggregated\n  Intervals[cct_only]: 2 raw -> 2 aggregated\n  Intervals[statement_presence]: 2 raw -> 2 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 2 raw -> 2 aggregated\n  Intervals[edge_divergence_sibling_shared]: 2 raw -> 2 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPerfectSquareLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedPerfectSquareLoop_M1",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M1/BoundedPerfectSquareLoop/fault_localization_eval.json\n  Mutant:    BoundedPerfectSquareLoop_M1\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPerfectSquareLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M2.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/testcases.json"
+      ],
+      "stdout_tail": "]  number=24\n  round_04/b14  [BATCH_SAFE]  number=26\n  round_04/b15  [BATCH_SAFE]  number=27\n  round_04/b16  [BATCH_SAFE]  number=28\n  round_04/b17  [BATCH_SAFE]  number=29\n  round_04/b18  [BATCH_SAFE]  number=30\n  round_04/b19  [BATCH_SAFE]  number=31\n  round_04/b20  [BATCH_SAFE]  number=32\n  round_04/b21  [BATCH_SAFE]  number=33\n  round_04/b22  [BATCH_SAFE]  number=34\n  round_04/b23  [BATCH_SAFE]  number=35\n  round_04/b24  [BATCH_SAFE]  number=37\n  round_04/b25  [BATCH_SAFE]  number=38\n  round_04/b26  [BATCH_SAFE]  number=39\n  round_04/b27  [BATCH_SAFE]  number=40\n  round_04/b28  [BATCH_SAFE]  number=41\n  round_04/b29  [BATCH_SAFE]  number=42\n  round_04/b30  [BATCH_SAFE]  number=43\n  round_04/b31  [BATCH_SAFE]  number=44\n  round_04/b32  [BATCH_SAFE]  number=45\n  round_04/b33  [BATCH_SAFE]  number=46\n  round_04/b34  [BATCH_SAFE]  number=63\n  round_04/b35  [BATCH_SAFE]  number=100\n  round_04/b36  [BATCH_SAFE]  number=81\n  round_05/b0  [BATCH_SAFE]  number=48\n  round_05/b1  [BATCH_SAFE]  number=50\n  round_05/b2  [BATCH_SAFE]  number=51\n  round_05/b3  [BATCH_SAFE]  number=52\n  round_05/b4  [BATCH_SAFE]  number=53\n  round_05/b5  [BATCH_SAFE]  number=54\n  round_05/b6  [BATCH_SAFE]  number=55\n  round_05/b7  [BATCH_SAFE]  number=56\n  round_05/b8  [BATCH_SAFE]  number=57\n  round_05/b9  [BATCH_SAFE]  number=58\n  round_05/b10  [BATCH_SAFE]  number=59\n  round_05/b11  [BATCH_SAFE]  number=60\n  round_05/b12  [BATCH_SAFE]  number=61\n  round_05/b13  [BATCH_SAFE]  number=62\n  round_05/b14  [BATCH_SAFE]  number=65\n  round_06/b0  [BATCH_SAFE]  number=68\n  round_07/b0  [BATCH_SAFE]  number=66\n  round_07/b1  [BATCH_SAFE]  number=67\n  round_07/b2  [BATCH_SAFE]  number=99\n  round_08/b0  [BATCH_SAFE]  number=69\n  round_08/b1  [BATCH_SAFE]  number=70\n  round_08/b2  [BATCH_SAFE]  number=71\n  round_08/b3  [BATCH_SAFE]  number=72\n  round_08/b4  [BATCH_SAFE]  number=73\n  round_08/b5  [BATCH_SAFE]  number=74\n  round_08/b6  [BATCH_SAFE]  number=75\n  round_08/b7  [BATCH_SAFE]  number=76\n  round_08/b8  [BATCH_SAFE]  number=77\n  round_08/b9  [BATCH_SAFE]  number=78\n  round_08/b10  [BATCH_SAFE]  number=79\n  round_08/b11  [BATCH_SAFE]  number=80\n  round_08/b12  [BATCH_SAFE]  number=82\n  round_08/b13  [BATCH_SAFE]  number=83\n  round_08/b14  [BATCH_SAFE]  number=84\n  round_08/b15  [BATCH_SAFE]  number=85\n  round_08/b16  [BATCH_SAFE]  number=86\n  round_08/b17  [BATCH_SAFE]  number=87\n  round_08/b18  [BATCH_SAFE]  number=88\n  round_08/b19  [BATCH_SAFE]  number=89\n  round_08/b20  [BATCH_SAFE]  number=90\n  round_08/b21  [BATCH_SAFE]  number=91\n  round_08/b22  [BATCH_SAFE]  number=92\n  round_08/b23  [BATCH_SAFE]  number=93\n  round_08/b24  [BATCH_SAFE]  number=94\n  round_08/b25  [BATCH_SAFE]  number=95\n  round_08/b26  [BATCH_SAFE]  number=96\n  round_08/b27  [BATCH_SAFE]  number=97\n  round_08/b28  [BATCH_SAFE]  number=98\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 5028\n  frontier_discovery_time_ms: 37976\n  compile_time_ms: 38906\n  java_exec_time_ms: 7029\n  path_log_parse_time_ms: 900\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 12769\n  merge_verify_wall_time_ms: 3\n  batch_total_wall_time_ms: 12783\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/cct_stats.json\n  Counts: nodes=403, leaves=202, covered=103, infeasible=99, out_of_range=0, expanded=294, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPerfectSquareLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M2.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/FSF/BoundedPerfectSquareLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedPerfectSquareLoop\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/FSF/BoundedPerfectSquareLoop_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/refined_tbfv_report.json\n  Summary:     testcases=103, fsf_units=3, passed=101, failed=2, skipped=206, unsupported=0\n  CCT marked:  2\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/cct_tbfv_stats.json\n  Counts:      nodes=403, leaves=202, fault_leaves=2, failure_cases=2\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=5, intervals=6, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPerfectSquareLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=103, failed=2, condition_nodes=5, condition_intervals=6\n  Top conditions:\n    #1 score=0.0218 fail=2/101 line=7 i < number\n    #2 score=0.0215 fail=2/102 line=3 number > 100\n    #3 score=0.0213 fail=2/103 line=3 number < 0\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[7, None] root.F.F.T.F.FALSE\n    #2 score=0.5990 fail=1/1 line=[7, None] root.F.F.FALSE\n    #3 score=0.0096 fail=2/101 line=[3, 7] root.F.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPerfectSquareLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M2.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/cct_failure_localization_aggregated.json\n  Source file: BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M2.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  5 raw -> 4 aggregated\n  Intervals[cct_only]: 6 raw -> 5 aggregated\n  Intervals[statement_presence]: 6 raw -> 5 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 6 raw -> 5 aggregated\n  Intervals[edge_divergence_sibling_shared]: 6 raw -> 5 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPerfectSquareLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedPerfectSquareLoop_M2",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M2/BoundedPerfectSquareLoop/fault_localization_eval.json\n  Mutant:    BoundedPerfectSquareLoop_M2\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPerfectSquareLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M3.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/testcases.json"
+      ],
+      "stdout_tail": "_range=True, range_bound=200]\n[NODE] Condition: number < 0 @L3 (WP: number < 0, Cnt: 1)\n  (F) ->\n  |   [NODE] Condition: number > 100 @L3 (WP: number > 100, Cnt: 1)\n  |     (F) ->\n  |     |   [NODE] Condition: i <= number @L7 (WP: (0) <= number, Cnt: 1)\n  |     |     (F) ->\n  |     |     |   [LEAF] Infeasible (X)\n  |     |     (T) ->\n  |     |     |   [NODE] Condition: i * i != number @L8 (WP: (0) * (0) != number, Cnt: 1)\n  |     |     |     (F) ->\n  |     |     |     |   [NODE] Condition: i <= number @L7 (WP: ((0) + 1) <= number, Cnt: 2)\n  |     |     |     |     (F) ->\n  |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(number=0)\n  |     |     |     |     (T) ->\n  |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     (T) ->\n  |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(number=1)\n  |     (T) ->\n  |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(number=101)\n  (T) ->\n  |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(number=-32768)\n-----------------------------\n\n\n  [Batch Round 3] Discovering frontier branches\n\n--- Current CCT Structure ---\n  [Config: use_bounded_range=True, range_bound=200]\n[NODE] Condition: number < 0 @L3 (WP: number < 0, Cnt: 1)\n  (F) ->\n  |   [NODE] Condition: number > 100 @L3 (WP: number > 100, Cnt: 1)\n  |     (F) ->\n  |     |   [NODE] Condition: i <= number @L7 (WP: (0) <= number, Cnt: 1)\n  |     |     (F) ->\n  |     |     |   [LEAF] Infeasible (X)\n  |     |     (T) ->\n  |     |     |   [NODE] Condition: i * i != number @L8 (WP: (0) * (0) != number, Cnt: 1)\n  |     |     |     (F) ->\n  |     |     |     |   [NODE] Condition: i <= number @L7 (WP: ((0) + 1) <= number, Cnt: 2)\n  |     |     |     |     (F) ->\n  |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(number=0)\n  |     |     |     |     (T) ->\n  |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     (T) ->\n  |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(number=1)\n  |     (T) ->\n  |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(number=101)\n  (T) ->\n  |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(number=-32768)\n-----------------------------\n\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 4 test cases generated in 3 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=1\n  round_02/b1  [BATCH_SAFE]  number=101\n  round_02/b2  [BATCH_SAFE]  number=-32768\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 2\n  frontier_discovery_time_ms: 8\n  compile_time_ms: 1126\n  java_exec_time_ms: 230\n  path_log_parse_time_ms: 0\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 370\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 370\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/cct_stats.json\n  Counts: nodes=11, leaves=6, covered=4, infeasible=2, out_of_range=0, expanded=0, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPerfectSquareLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M3.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/FSF/BoundedPerfectSquareLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedPerfectSquareLoop\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/FSF/BoundedPerfectSquareLoop_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/refined_tbfv_report.json\n  Summary:     testcases=4, fsf_units=3, passed=3, failed=2, skipped=7, unsupported=0\n  CCT marked:  2\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/cct_tbfv_stats.json\n  Counts:      nodes=11, leaves=6, fault_leaves=2, failure_cases=2\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=5, intervals=6, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPerfectSquareLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=4, failed=2, condition_nodes=5, condition_intervals=6\n  Top conditions:\n    #1 score=1.0986 fail=2/2 line=8 i * i != number\n    #2 score=1.0986 fail=2/2 line=7 i <= number\n    #3 score=0.7324 fail=2/3 line=3 number > 100\n  Top intervals:\n    #1 score=0.9542 fail=2/2 line=[3, 7] root.F.FALSE\n    #2 score=0.6021 fail=1/1 line=[7, None] root.F.F.T.F.FALSE\n    #3 score=0.3010 fail=1/1 line=[7, 8] root.F.F.T.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPerfectSquareLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M3.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/cct_failure_localization_aggregated.json\n  Source file: BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M3.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  5 raw -> 4 aggregated\n  Intervals[cct_only]: 6 raw -> 6 aggregated\n  Intervals[statement_presence]: 6 raw -> 6 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 6 raw -> 6 aggregated\n  Intervals[edge_divergence_sibling_shared]: 6 raw -> 6 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPerfectSquareLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedPerfectSquareLoop_M3",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M3/BoundedPerfectSquareLoop/fault_localization_eval.json\n  Mutant:    BoundedPerfectSquareLoop_M3\n  Operator:  ROR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPerfectSquareLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M4.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/testcases.json"
+      ],
+      "stdout_tail": "ber=22\n  round_05/b6  [BATCH_SAFE]  number=23\n  round_05/b7  [BATCH_SAFE]  number=24\n  round_05/b8  [BATCH_SAFE]  number=26\n  round_05/b9  [BATCH_SAFE]  number=27\n  round_05/b10  [BATCH_SAFE]  number=28\n  round_05/b11  [BATCH_SAFE]  number=29\n  round_05/b12  [BATCH_SAFE]  number=30\n  round_05/b13  [BATCH_SAFE]  number=95\n  round_06/b0  [BATCH_SAFE]  number=32\n  round_06/b1  [BATCH_SAFE]  number=33\n  round_06/b2  [BATCH_SAFE]  number=34\n  round_06/b3  [BATCH_SAFE]  number=35\n  round_06/b4  [BATCH_SAFE]  number=37\n  round_06/b5  [BATCH_SAFE]  number=38\n  round_06/b6  [BATCH_SAFE]  number=39\n  round_06/b7  [BATCH_SAFE]  number=40\n  round_06/b8  [BATCH_SAFE]  number=41\n  round_06/b9  [BATCH_SAFE]  number=42\n  round_06/b10  [BATCH_SAFE]  number=43\n  round_06/b11  [BATCH_SAFE]  number=44\n  round_06/b12  [BATCH_SAFE]  number=45\n  round_06/b13  [BATCH_SAFE]  number=46\n  round_06/b14  [BATCH_SAFE]  number=47\n  round_06/b15  [BATCH_SAFE]  number=48\n  round_06/b16  [BATCH_SAFE]  number=50\n  round_06/b17  [BATCH_SAFE]  number=51\n  round_06/b18  [BATCH_SAFE]  number=52\n  round_06/b19  [BATCH_SAFE]  number=53\n  round_06/b20  [BATCH_SAFE]  number=54\n  round_06/b21  [BATCH_SAFE]  number=55\n  round_06/b22  [BATCH_SAFE]  number=56\n  round_06/b23  [BATCH_SAFE]  number=57\n  round_06/b24  [BATCH_SAFE]  number=58\n  round_06/b25  [BATCH_SAFE]  number=59\n  round_06/b26  [BATCH_SAFE]  number=60\n  round_06/b27  [BATCH_SAFE]  number=61\n  round_06/b28  [BATCH_SAFE]  number=62\n  round_06/b29  [BATCH_SAFE]  number=63\n  round_06/b30  [BATCH_SAFE]  number=65\n  round_06/b31  [BATCH_SAFE]  number=66\n  round_06/b32  [BATCH_SAFE]  number=67\n  round_06/b33  [BATCH_SAFE]  number=68\n  round_06/b34  [BATCH_SAFE]  number=69\n  round_06/b35  [BATCH_SAFE]  number=70\n  round_06/b36  [BATCH_SAFE]  number=71\n  round_06/b37  [BATCH_SAFE]  number=72\n  round_06/b38  [BATCH_SAFE]  number=73\n  round_06/b39  [BATCH_SAFE]  number=74\n  round_06/b40  [BATCH_SAFE]  number=75\n  round_06/b41  [BATCH_SAFE]  number=76\n  round_06/b42  [BATCH_SAFE]  number=77\n  round_06/b43  [BATCH_SAFE]  number=78\n  round_06/b44  [BATCH_SAFE]  number=79\n  round_06/b45  [BATCH_SAFE]  number=80\n  round_06/b46  [BATCH_SAFE]  number=82\n  round_06/b47  [BATCH_SAFE]  number=83\n  round_06/b48  [BATCH_SAFE]  number=84\n  round_06/b49  [BATCH_SAFE]  number=85\n  round_06/b50  [BATCH_SAFE]  number=86\n  round_06/b51  [BATCH_SAFE]  number=87\n  round_06/b52  [BATCH_SAFE]  number=88\n  round_06/b53  [BATCH_SAFE]  number=89\n  round_06/b54  [BATCH_SAFE]  number=90\n  round_06/b55  [BATCH_SAFE]  number=91\n  round_06/b56  [BATCH_SAFE]  number=92\n  round_06/b57  [BATCH_SAFE]  number=93\n  round_06/b58  [BATCH_SAFE]  number=94\n  round_06/b59  [BATCH_SAFE]  number=96\n  round_07/b0  [BATCH_SAFE]  number=98\n  round_08/b0  [BATCH_SAFE]  number=97\n  round_08/b1  [BATCH_SAFE]  number=99\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 5030\n  frontier_discovery_time_ms: 38197\n  compile_time_ms: 36073\n  java_exec_time_ms: 7075\n  path_log_parse_time_ms: 841\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 12098\n  merge_verify_wall_time_ms: 4\n  batch_total_wall_time_ms: 12111\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/cct_stats.json\n  Counts: nodes=403, leaves=202, covered=103, infeasible=99, out_of_range=0, expanded=293, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPerfectSquareLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M4.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/FSF/BoundedPerfectSquareLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedPerfectSquareLoop\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/FSF/BoundedPerfectSquareLoop_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/refined_tbfv_report.json\n  Summary:     testcases=103, fsf_units=3, passed=102, failed=1, skipped=206, unsupported=0\n  CCT marked:  1\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/cct_tbfv_stats.json\n  Counts:      nodes=403, leaves=202, fault_leaves=1, failure_cases=1\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=3, intervals=3, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPerfectSquareLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=103, failed=1, condition_nodes=3, condition_intervals=3\n  Top conditions:\n    #1 score=0.0069 fail=1/101 line=7 i <= number\n    #2 score=0.0068 fail=1/102 line=3 number > 100\n    #3 score=0.0067 fail=1/103 line=3 number < 0\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[7, None] root.F.F.FALSE\n    #2 score=0.0030 fail=1/101 line=[3, 7] root.F.FALSE\n    #3 score=0.0000 fail=1/102 line=[3, 3] root.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPerfectSquareLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M4.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/cct_failure_localization_aggregated.json\n  Source file: BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M4.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  3 raw -> 3 aggregated\n  Intervals[cct_only]: 3 raw -> 3 aggregated\n  Intervals[statement_presence]: 3 raw -> 3 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 3 raw -> 3 aggregated\n  Intervals[edge_divergence_sibling_shared]: 3 raw -> 3 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPerfectSquareLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedPerfectSquareLoop_M4",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M4/BoundedPerfectSquareLoop/fault_localization_eval.json\n  Mutant:    BoundedPerfectSquareLoop_M4\n  Operator:  CR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPerfectSquareLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M5.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/testcases.json"
+      ],
+      "stdout_tail": " <= number' (cnt=51) \u2192 F:['tc_10_b0']\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 58 test cases generated in 11 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=1\n  round_02/b1  [BATCH_SAFE]  number=102\n  round_02/b2  [BATCH_SAFE]  number=-32768\n  round_03/b0  [BATCH_SAFE]  number=4\n  round_04/b0  [BATCH_SAFE]  number=2\n  round_05/b0  [BATCH_SAFE]  number=64\n  round_06/b0  [BATCH_SAFE]  number=5\n  round_06/b1  [BATCH_SAFE]  number=6\n  round_06/b2  [BATCH_SAFE]  number=70\n  round_06/b3  [BATCH_SAFE]  number=36\n  round_06/b4  [BATCH_SAFE]  number=16\n  round_07/b0  [BATCH_SAFE]  number=8\n  round_07/b1  [BATCH_SAFE]  number=10\n  round_07/b2  [BATCH_SAFE]  number=12\n  round_07/b3  [BATCH_SAFE]  number=14\n  round_07/b4  [BATCH_SAFE]  number=17\n  round_07/b5  [BATCH_SAFE]  number=18\n  round_07/b6  [BATCH_SAFE]  number=20\n  round_07/b7  [BATCH_SAFE]  number=22\n  round_07/b8  [BATCH_SAFE]  number=24\n  round_07/b9  [BATCH_SAFE]  number=26\n  round_07/b10  [BATCH_SAFE]  number=28\n  round_07/b11  [BATCH_SAFE]  number=30\n  round_07/b12  [BATCH_SAFE]  number=32\n  round_07/b13  [BATCH_SAFE]  number=34\n  round_07/b14  [BATCH_SAFE]  number=37\n  round_07/b15  [BATCH_SAFE]  number=38\n  round_07/b16  [BATCH_SAFE]  number=40\n  round_07/b17  [BATCH_SAFE]  number=42\n  round_07/b18  [BATCH_SAFE]  number=44\n  round_07/b19  [BATCH_SAFE]  number=46\n  round_07/b20  [BATCH_SAFE]  number=48\n  round_07/b21  [BATCH_SAFE]  number=50\n  round_07/b22  [BATCH_SAFE]  number=52\n  round_07/b23  [BATCH_SAFE]  number=54\n  round_07/b24  [BATCH_SAFE]  number=56\n  round_07/b25  [BATCH_SAFE]  number=58\n  round_07/b26  [BATCH_SAFE]  number=60\n  round_07/b27  [BATCH_SAFE]  number=62\n  round_07/b28  [BATCH_SAFE]  number=65\n  round_07/b29  [BATCH_SAFE]  number=66\n  round_07/b30  [BATCH_SAFE]  number=68\n  round_07/b31  [BATCH_SAFE]  number=78\n  round_07/b32  [BATCH_SAFE]  number=100\n  round_08/b0  [BATCH_SAFE]  number=72\n  round_08/b1  [BATCH_SAFE]  number=74\n  round_08/b2  [BATCH_SAFE]  number=76\n  round_08/b3  [BATCH_SAFE]  number=94\n  round_09/b0  [BATCH_SAFE]  number=80\n  round_09/b1  [BATCH_SAFE]  number=82\n  round_09/b2  [BATCH_SAFE]  number=84\n  round_09/b3  [BATCH_SAFE]  number=86\n  round_09/b4  [BATCH_SAFE]  number=88\n  round_09/b5  [BATCH_SAFE]  number=90\n  round_09/b6  [BATCH_SAFE]  number=92\n  round_09/b7  [BATCH_SAFE]  number=96\n  round_10/b0  [BATCH_SAFE]  number=98\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 715\n  frontier_discovery_time_ms: 5368\n  compile_time_ms: 20003\n  java_exec_time_ms: 3557\n  path_log_parse_time_ms: 70\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 7133\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 7140\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/cct_stats.json\n  Counts: nodes=207, leaves=104, covered=58, infeasible=46, out_of_range=0, expanded=150, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPerfectSquareLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M5.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/FSF/BoundedPerfectSquareLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedPerfectSquareLoop\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/FSF/BoundedPerfectSquareLoop_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/refined_tbfv_report.json\n  Summary:     testcases=58, fsf_units=3, passed=57, failed=5, skipped=112, unsupported=0\n  CCT marked:  5\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/cct_tbfv_stats.json\n  Counts:      nodes=207, leaves=104, fault_leaves=5, failure_cases=5\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=85, intervals=89, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPerfectSquareLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=58, failed=5, condition_nodes=85, condition_intervals=89\n  Top conditions:\n    #1 score=0.1629 fail=5/55 line=7 i <= number\n    #2 score=0.1600 fail=5/56 line=8 i * i == number\n    #3 score=0.1600 fail=5/56 line=7 i <= number\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[7, None] root.F.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.FALSE\n    #2 score=0.5900 fail=1/1 line=[7, None] root.F.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.FALSE\n    #3 score=0.5858 fail=1/1 line=[7, None] root.F.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPerfectSquareLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M5.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/cct_failure_localization_aggregated.json\n  Source file: BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M5.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  85 raw -> 4 aggregated\n  Intervals[cct_only]: 89 raw -> 5 aggregated\n  Intervals[statement_presence]: 89 raw -> 5 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 89 raw -> 5 aggregated\n  Intervals[edge_divergence_sibling_shared]: 89 raw -> 5 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPerfectSquareLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedPerfectSquareLoop_M5",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M5/BoundedPerfectSquareLoop/fault_localization_eval.json\n  Mutant:    BoundedPerfectSquareLoop_M5\n  Operator:  AOR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.statement_presence: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPerfectSquareLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M6.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/testcases.json"
+      ],
+      "stdout_tail": "ATCH_SAFE]  number=24\n  round_06/b15  [BATCH_SAFE]  number=26\n  round_06/b16  [BATCH_SAFE]  number=27\n  round_06/b17  [BATCH_SAFE]  number=28\n  round_06/b18  [BATCH_SAFE]  number=29\n  round_06/b19  [BATCH_SAFE]  number=30\n  round_06/b20  [BATCH_SAFE]  number=31\n  round_06/b21  [BATCH_SAFE]  number=50\n  round_06/b22  [BATCH_SAFE]  number=100\n  round_06/b23  [BATCH_SAFE]  number=81\n  round_07/b0  [BATCH_SAFE]  number=33\n  round_07/b1  [BATCH_SAFE]  number=34\n  round_07/b2  [BATCH_SAFE]  number=35\n  round_07/b3  [BATCH_SAFE]  number=37\n  round_07/b4  [BATCH_SAFE]  number=38\n  round_07/b5  [BATCH_SAFE]  number=39\n  round_07/b6  [BATCH_SAFE]  number=40\n  round_07/b7  [BATCH_SAFE]  number=41\n  round_07/b8  [BATCH_SAFE]  number=42\n  round_07/b9  [BATCH_SAFE]  number=43\n  round_07/b10  [BATCH_SAFE]  number=44\n  round_07/b11  [BATCH_SAFE]  number=45\n  round_07/b12  [BATCH_SAFE]  number=46\n  round_07/b13  [BATCH_SAFE]  number=47\n  round_07/b14  [BATCH_SAFE]  number=48\n  round_07/b15  [BATCH_SAFE]  number=63\n  round_08/b0  [BATCH_SAFE]  number=51\n  round_08/b1  [BATCH_SAFE]  number=52\n  round_08/b2  [BATCH_SAFE]  number=53\n  round_08/b3  [BATCH_SAFE]  number=54\n  round_08/b4  [BATCH_SAFE]  number=55\n  round_08/b5  [BATCH_SAFE]  number=56\n  round_08/b6  [BATCH_SAFE]  number=57\n  round_08/b7  [BATCH_SAFE]  number=58\n  round_08/b8  [BATCH_SAFE]  number=59\n  round_08/b9  [BATCH_SAFE]  number=60\n  round_08/b10  [BATCH_SAFE]  number=61\n  round_08/b11  [BATCH_SAFE]  number=62\n  round_08/b12  [BATCH_SAFE]  number=65\n  round_09/b0  [BATCH_SAFE]  number=66\n  round_10/b0  [BATCH_SAFE]  number=68\n  round_11/b0  [BATCH_SAFE]  number=67\n  round_11/b1  [BATCH_SAFE]  number=99\n  round_12/b0  [BATCH_SAFE]  number=69\n  round_12/b1  [BATCH_SAFE]  number=70\n  round_12/b2  [BATCH_SAFE]  number=71\n  round_12/b3  [BATCH_SAFE]  number=72\n  round_12/b4  [BATCH_SAFE]  number=73\n  round_12/b5  [BATCH_SAFE]  number=74\n  round_12/b6  [BATCH_SAFE]  number=75\n  round_12/b7  [BATCH_SAFE]  number=76\n  round_12/b8  [BATCH_SAFE]  number=77\n  round_12/b9  [BATCH_SAFE]  number=78\n  round_12/b10  [BATCH_SAFE]  number=79\n  round_12/b11  [BATCH_SAFE]  number=80\n  round_12/b12  [BATCH_SAFE]  number=82\n  round_12/b13  [BATCH_SAFE]  number=83\n  round_12/b14  [BATCH_SAFE]  number=84\n  round_12/b15  [BATCH_SAFE]  number=85\n  round_12/b16  [BATCH_SAFE]  number=86\n  round_12/b17  [BATCH_SAFE]  number=87\n  round_12/b18  [BATCH_SAFE]  number=88\n  round_12/b19  [BATCH_SAFE]  number=89\n  round_12/b20  [BATCH_SAFE]  number=90\n  round_12/b21  [BATCH_SAFE]  number=91\n  round_12/b22  [BATCH_SAFE]  number=92\n  round_12/b23  [BATCH_SAFE]  number=93\n  round_12/b24  [BATCH_SAFE]  number=94\n  round_12/b25  [BATCH_SAFE]  number=95\n  round_12/b26  [BATCH_SAFE]  number=96\n  round_12/b27  [BATCH_SAFE]  number=97\n  round_12/b28  [BATCH_SAFE]  number=98\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 5171\n  frontier_discovery_time_ms: 39255\n  compile_time_ms: 36051\n  java_exec_time_ms: 6577\n  path_log_parse_time_ms: 946\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 12491\n  merge_verify_wall_time_ms: 2\n  batch_total_wall_time_ms: 12504\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/cct_stats.json\n  Counts: nodes=407, leaves=204, covered=103, infeasible=101, out_of_range=0, expanded=296, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPerfectSquareLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M6.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/FSF/BoundedPerfectSquareLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedPerfectSquareLoop\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPerfectSquareLoop/FSF/BoundedPerfectSquareLoop_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/refined_tbfv_report.json\n  Summary:     testcases=103, fsf_units=3, passed=13, failed=90, skipped=206, unsupported=0\n  CCT marked:  90\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/cct_tbfv_stats.json\n  Counts:      nodes=407, leaves=204, fault_leaves=90, failure_cases=90\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=203, intervals=292, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPerfectSquareLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=103, failed=90, condition_nodes=203, condition_intervals=292\n  Top conditions:\n    #1 score=4.4427 fail=84/84 line=7 i <= number\n    #2 score=4.4308 fail=83/83 line=7 i <= number\n    #3 score=4.4308 fail=83/83 line=8 i * i == number\n  Top intervals:\n    #1 score=3.8588 fail=84/84 line=[7, 8] root.F.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.FALSE\n    #2 score=3.8486 fail=83/83 line=[7, 8] root.F.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.FALSE\n    #3 score=3.8382 fail=82/82 line=[7, 8] root.F.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPerfectSquareLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M6.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/cct_failure_localization_aggregated.json\n  Source file: BoundedPerfectSquareLoop/BoundedPerfectSquareLoop_M6.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  203 raw -> 4 aggregated\n  Intervals[cct_only]: 292 raw -> 5 aggregated\n  Intervals[statement_presence]: 292 raw -> 5 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 292 raw -> 5 aggregated\n  Intervals[edge_divergence_sibling_shared]: 292 raw -> 5 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPerfectSquareLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedPerfectSquareLoop_M6",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPerfectSquareLoop_M6/BoundedPerfectSquareLoop/fault_localization_eval.json\n  Mutant:    BoundedPerfectSquareLoop_M6\n  Operator:  CR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=101, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=200, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.statement_presence: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=5, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    }
+  ]
+}

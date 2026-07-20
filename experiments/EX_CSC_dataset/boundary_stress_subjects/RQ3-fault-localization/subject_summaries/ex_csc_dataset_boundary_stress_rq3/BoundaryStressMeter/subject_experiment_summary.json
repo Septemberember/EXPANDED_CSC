@@ -1,0 +1,805 @@
+{
+  "subject": "BoundaryStressMeter",
+  "subject_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter",
+  "fsf": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/FSF/BoundaryStressMeter_FSF.txt",
+  "manifest": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+  "mode": "expanded",
+  "strategy": "batch",
+  "max_iter": 100,
+  "dry_run": false,
+  "original": {
+    "role": "original",
+    "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/BoundaryStressMeter.java",
+    "class_name": "BoundaryStressMeter",
+    "mutant_id": null
+  },
+  "mutants": [
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/BoundaryStressMeter_M1.java",
+      "class_name": "BoundaryStressMeter",
+      "mutant_id": "BoundaryStressMeter_M1"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/BoundaryStressMeter_M2.java",
+      "class_name": "BoundaryStressMeter",
+      "mutant_id": "BoundaryStressMeter_M2"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/BoundaryStressMeter_M3.java",
+      "class_name": "BoundaryStressMeter",
+      "mutant_id": "BoundaryStressMeter_M3"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/BoundaryStressMeter_M4.java",
+      "class_name": "BoundaryStressMeter",
+      "mutant_id": "BoundaryStressMeter_M4"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/BoundaryStressMeter_M5.java",
+      "class_name": "BoundaryStressMeter",
+      "mutant_id": "BoundaryStressMeter_M5"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/BoundaryStressMeter_M8.java",
+      "class_name": "BoundaryStressMeter",
+      "mutant_id": "BoundaryStressMeter_M8"
+    }
+  ],
+  "step_count": 32,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "original:BoundaryStressMeter:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/BoundaryStressMeter.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_BoundaryStressMeter",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter/BoundaryStressMeter/testcases.json"
+      ],
+      "stdout_tail": "s=48, limit=0, surge=0\n  round_05/b10  [BATCH_SAFE]  days=51, limit=0, surge=0\n  round_05/b11  [BATCH_SAFE]  days=53, limit=0, surge=0\n  round_05/b12  [BATCH_SAFE]  days=57, limit=0, surge=0\n  round_05/b13  [BATCH_SAFE]  days=60, limit=0, surge=0\n  round_05/b14  [BATCH_SAFE]  days=63, limit=12, surge=0\n  round_05/b15  [BATCH_SAFE]  days=66, limit=0, surge=0\n  round_05/b16  [BATCH_SAFE]  days=69, limit=0, surge=0\n  round_05/b17  [BATCH_SAFE]  days=70, limit=0, surge=0\n  round_05/b18  [BATCH_SAFE]  days=74, limit=0, surge=0\n  round_05/b19  [BATCH_SAFE]  days=76, limit=12, surge=0\n  round_05/b20  [BATCH_SAFE]  days=79, limit=0, surge=0\n  round_05/b21  [BATCH_SAFE]  days=84, limit=0, surge=0\n  round_05/b22  [BATCH_SAFE]  days=87, limit=12, surge=0\n  round_05/b23  [BATCH_SAFE]  days=90, limit=12, surge=12\n  round_05/b24  [BATCH_SAFE]  days=91, limit=0, surge=0\n  round_05/b25  [BATCH_SAFE]  days=96, limit=0, surge=0\n  round_05/b26  [BATCH_SAFE]  days=97, limit=0, surge=0\n  round_05/b27  [BATCH_SAFE]  days=100, limit=0, surge=0\n  round_05/b28  [BATCH_SAFE]  days=103, limit=0, surge=0\n  round_05/b29  [BATCH_SAFE]  days=107, limit=0, surge=0\n  round_05/b30  [BATCH_SAFE]  days=111, limit=0, surge=0\n  round_05/b31  [BATCH_SAFE]  days=112, limit=0, surge=0\n  round_05/b32  [BATCH_SAFE]  days=116, limit=0, surge=12\n  round_05/b33  [BATCH_SAFE]  days=118, limit=0, surge=12\n  round_05/b34  [BATCH_SAFE]  days=123, limit=0, surge=0\n  round_05/b35  [BATCH_SAFE]  days=125, limit=12, surge=0\n  round_05/b36  [BATCH_SAFE]  days=200, limit=12, surge=0\n  round_05/b37  [BATCH_SAFE]  days=128, limit=201, surge=206\n  round_06/b0  [BATCH_SAFE]  days=130, limit=0, surge=0\n  round_06/b1  [BATCH_SAFE]  days=135, limit=10, surge=0\n  round_06/b2  [BATCH_SAFE]  days=138, limit=0, surge=0\n  round_06/b3  [BATCH_SAFE]  days=139, limit=12, surge=0\n  round_06/b4  [BATCH_SAFE]  days=142, limit=0, surge=0\n  round_06/b5  [BATCH_SAFE]  days=147, limit=0, surge=0\n  round_06/b6  [BATCH_SAFE]  days=149, limit=0, surge=12\n  round_06/b7  [BATCH_SAFE]  days=153, limit=0, surge=0\n  round_06/b8  [BATCH_SAFE]  days=156, limit=0, surge=0\n  round_06/b9  [BATCH_SAFE]  days=158, limit=0, surge=0\n  round_06/b10  [BATCH_SAFE]  days=161, limit=0, surge=0\n  round_06/b11  [BATCH_SAFE]  days=163, limit=0, surge=0\n  round_06/b12  [BATCH_SAFE]  days=166, limit=0, surge=0\n  round_06/b13  [BATCH_SAFE]  days=171, limit=0, surge=0\n  round_06/b14  [BATCH_SAFE]  days=173, limit=0, surge=0\n  round_06/b15  [BATCH_SAFE]  days=176, limit=0, surge=0\n  round_06/b16  [BATCH_SAFE]  days=180, limit=0, surge=0\n  round_06/b17  [BATCH_SAFE]  days=183, limit=0, surge=10\n  round_06/b18  [BATCH_SAFE]  days=186, limit=0, surge=12\n  round_06/b19  [BATCH_SAFE]  days=187, limit=0, surge=0\n  round_06/b20  [BATCH_SAFE]  days=192, limit=0, surge=0\n  round_06/b21  [BATCH_SAFE]  days=194, limit=0, surge=0\n  round_06/b22  [BATCH_SAFE]  days=198, limit=0, surge=0\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 2470\n  frontier_discovery_time_ms: 43421\n  compile_time_ms: 60721\n  java_exec_time_ms: 10464\n  path_log_parse_time_ms: 2002\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 19353\n  merge_verify_wall_time_ms: 13\n  batch_total_wall_time_ms: 19381\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter/BoundaryStressMeter/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter/BoundaryStressMeter/BoundaryStressMeter_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter/BoundaryStressMeter/cct_stats.json\n  Counts: nodes=913, leaves=457, covered=74, infeasible=373, out_of_range=10, expanded=458, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter/BoundaryStressMeter/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter/BoundaryStressMeter/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter/BoundaryStressMeter/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "original:BoundaryStressMeter:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter/BoundaryStressMeter",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/BoundaryStressMeter.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter/BoundaryStressMeter/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/FSF/BoundaryStressMeter_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter/BoundaryStressMeter/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter/BoundaryStressMeter/BoundaryStressMeter_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundaryStressMeter\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter/BoundaryStressMeter\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/FSF/BoundaryStressMeter_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter/BoundaryStressMeter/refined_tbfv_report.json\n  Summary:     testcases=81, fsf_units=9, passed=79, failed=0, skipped=650, unsupported=0\n  CCT marked:  0\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter/BoundaryStressMeter/cct_tbfv_stats.json\n  Counts:      nodes=913, leaves=457, fault_leaves=0, failure_cases=0\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter/BoundaryStressMeter/BoundaryStressMeter_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter/BoundaryStressMeter/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter/BoundaryStressMeter/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=0, intervals=0, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter/BoundaryStressMeter/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundaryStressMeter:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/BoundaryStressMeter_M1.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_BoundaryStressMeter_M1",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/testcases.json"
+      ],
+      "stdout_tail": "round_04/b19  [BATCH_SAFE]  days=60, limit=0, surge=0\n  round_04/b20  [BATCH_SAFE]  days=63, limit=12, surge=0\n  round_04/b21  [BATCH_SAFE]  days=66, limit=12, surge=0\n  round_04/b22  [BATCH_SAFE]  days=68, limit=0, surge=0\n  round_04/b23  [BATCH_SAFE]  days=72, limit=0, surge=0\n  round_04/b24  [BATCH_SAFE]  days=74, limit=0, surge=0\n  round_04/b25  [BATCH_SAFE]  days=78, limit=0, surge=0\n  round_04/b26  [BATCH_SAFE]  days=81, limit=0, surge=0\n  round_04/b27  [BATCH_SAFE]  days=84, limit=0, surge=0\n  round_04/b28  [BATCH_SAFE]  days=87, limit=0, surge=0\n  round_04/b29  [BATCH_SAFE]  days=90, limit=12, surge=12\n  round_04/b30  [BATCH_SAFE]  days=93, limit=0, surge=0\n  round_04/b31  [BATCH_SAFE]  days=96, limit=0, surge=0\n  round_04/b32  [BATCH_SAFE]  days=99, limit=0, surge=0\n  round_04/b33  [BATCH_SAFE]  days=102, limit=0, surge=0\n  round_04/b34  [BATCH_SAFE]  days=103, limit=0, surge=0\n  round_04/b35  [BATCH_SAFE]  days=106, limit=0, surge=0\n  round_04/b36  [BATCH_SAFE]  days=109, limit=0, surge=0\n  round_04/b37  [BATCH_SAFE]  days=114, limit=0, surge=0\n  round_04/b38  [BATCH_SAFE]  days=115, limit=0, surge=12\n  round_04/b39  [BATCH_SAFE]  days=119, limit=0, surge=0\n  round_04/b40  [BATCH_SAFE]  days=123, limit=0, surge=0\n  round_04/b41  [BATCH_SAFE]  days=124, limit=0, surge=0\n  round_04/b42  [BATCH_SAFE]  days=190, limit=0, surge=0\n  round_04/b43  [BATCH_SAFE]  days=128, limit=0, surge=205\n  round_04/b44  [BATCH_SAFE]  days=128, limit=206, surge=0\n  round_04/b45  [BATCH_SAFE]  days=204, limit=206, surge=206\n  round_05/b0  [BATCH_SAFE]  days=132, limit=0, surge=0\n  round_05/b1  [BATCH_SAFE]  days=135, limit=10, surge=0\n  round_05/b2  [BATCH_SAFE]  days=136, limit=0, surge=0\n  round_05/b3  [BATCH_SAFE]  days=139, limit=12, surge=0\n  round_05/b4  [BATCH_SAFE]  days=144, limit=0, surge=0\n  round_05/b5  [BATCH_SAFE]  days=147, limit=0, surge=12\n  round_05/b6  [BATCH_SAFE]  days=150, limit=0, surge=0\n  round_05/b7  [BATCH_SAFE]  days=153, limit=12, surge=0\n  round_05/b8  [BATCH_SAFE]  days=156, limit=0, surge=0\n  round_05/b9  [BATCH_SAFE]  days=159, limit=0, surge=12\n  round_05/b10  [BATCH_SAFE]  days=162, limit=0, surge=0\n  round_05/b11  [BATCH_SAFE]  days=164, limit=12, surge=0\n  round_05/b12  [BATCH_SAFE]  days=168, limit=12, surge=0\n  round_05/b13  [BATCH_SAFE]  days=169, limit=0, surge=0\n  round_05/b14  [BATCH_SAFE]  days=173, limit=10, surge=0\n  round_05/b15  [BATCH_SAFE]  days=177, limit=0, surge=0\n  round_05/b16  [BATCH_SAFE]  days=180, limit=0, surge=0\n  round_05/b17  [BATCH_SAFE]  days=183, limit=0, surge=0\n  round_05/b18  [BATCH_SAFE]  days=184, limit=0, surge=0\n  round_05/b19  [BATCH_SAFE]  days=189, limit=0, surge=0\n  round_05/b20  [BATCH_SAFE]  days=197, limit=0, surge=0\n  round_05/b21  [BATCH_SAFE]  days=128, limit=202, surge=205\n  round_06/b0  [BATCH_SAFE]  days=195, limit=0, surge=0\n  round_06/b1  [BATCH_SAFE]  days=199, limit=0, surge=0\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 2351\n  frontier_discovery_time_ms: 38338\n  compile_time_ms: 47194\n  java_exec_time_ms: 8498\n  path_log_parse_time_ms: 1876\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 15554\n  merge_verify_wall_time_ms: 12\n  batch_total_wall_time_ms: 15581\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/BoundaryStressMeter_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/cct_stats.json\n  Counts: nodes=913, leaves=457, covered=74, infeasible=373, out_of_range=10, expanded=458, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundaryStressMeter:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/BoundaryStressMeter_M1.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/FSF/BoundaryStressMeter_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/BoundaryStressMeter_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundaryStressMeter\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/FSF/BoundaryStressMeter_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/refined_tbfv_report.json\n  Summary:     testcases=81, fsf_units=9, passed=79, failed=1, skipped=649, unsupported=0\n  CCT marked:  1\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/cct_tbfv_stats.json\n  Counts:      nodes=913, leaves=457, fault_leaves=1, failure_cases=1\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/BoundaryStressMeter_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=2, intervals=2, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundaryStressMeter:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter\n  CCT:         csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/BoundaryStressMeter_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=74, failed=1, condition_nodes=2, condition_intervals=2\n  Top conditions:\n    #1 score=0.0095 fail=1/73 line=3 days >= 500\n    #2 score=0.0094 fail=1/74 line=3 days < 0\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[3, None] root.F.TRUE\n    #2 score=0.0000 fail=1/73 line=[3, 3] root.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundaryStressMeter:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundaryStressMeter/BoundaryStressMeter_M1.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/cct_failure_localization_aggregated.json\n  Source file: BoundaryStressMeter/BoundaryStressMeter_M1.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  2 raw -> 2 aggregated\n  Intervals[cct_only]: 2 raw -> 2 aggregated\n  Intervals[statement_presence]: 2 raw -> 2 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 2 raw -> 2 aggregated\n  Intervals[edge_divergence_sibling_shared]: 2 raw -> 2 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundaryStressMeter:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundaryStressMeter_M1",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M1/BoundaryStressMeter/fault_localization_eval.json\n  Mutant:    BoundaryStressMeter_M1\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundaryStressMeter:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/BoundaryStressMeter_M2.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_BoundaryStressMeter_M2",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/testcases.json"
+      ],
+      "stdout_tail": ", limit=0, surge=0\n  round_05/b50  [BATCH_SAFE]  days=162, limit=0, surge=0\n  round_05/b51  [BATCH_SAFE]  days=165, limit=0, surge=0\n  round_05/b52  [BATCH_SAFE]  days=195, limit=0, surge=0\n  round_05/b53  [BATCH_SAFE]  days=3, limit=200, surge=0\n  round_05/b54  [BATCH_SAFE]  days=6, limit=200, surge=0\n  round_05/b55  [BATCH_SAFE]  days=8, limit=200, surge=0\n  round_05/b56  [BATCH_SAFE]  days=12, limit=200, surge=0\n  round_05/b57  [BATCH_SAFE]  days=14, limit=200, surge=0\n  round_05/b58  [BATCH_SAFE]  days=18, limit=200, surge=0\n  round_05/b59  [BATCH_SAFE]  days=20, limit=200, surge=0\n  round_05/b60  [BATCH_SAFE]  days=22, limit=200, surge=0\n  round_05/b61  [BATCH_SAFE]  days=27, limit=200, surge=12\n  round_05/b62  [BATCH_SAFE]  days=29, limit=200, surge=0\n  round_05/b63  [BATCH_SAFE]  days=31, limit=200, surge=0\n  round_05/b64  [BATCH_SAFE]  days=34, limit=200, surge=12\n  round_05/b65  [BATCH_SAFE]  days=37, limit=200, surge=0\n  round_05/b66  [BATCH_SAFE]  days=42, limit=200, surge=0\n  round_05/b67  [BATCH_SAFE]  days=44, limit=200, surge=0\n  round_05/b68  [BATCH_SAFE]  days=46, limit=200, surge=0\n  round_05/b69  [BATCH_SAFE]  days=49, limit=200, surge=0\n  round_05/b70  [BATCH_SAFE]  days=54, limit=200, surge=0\n  round_05/b71  [BATCH_SAFE]  days=56, limit=200, surge=0\n  round_05/b72  [BATCH_SAFE]  days=60, limit=200, surge=0\n  round_05/b73  [BATCH_SAFE]  days=63, limit=200, surge=0\n  round_05/b74  [BATCH_SAFE]  days=64, limit=200, surge=0\n  round_05/b75  [BATCH_SAFE]  days=69, limit=200, surge=0\n  round_05/b76  [BATCH_SAFE]  days=72, limit=200, surge=0\n  round_05/b77  [BATCH_SAFE]  days=75, limit=200, surge=0\n  round_05/b78  [BATCH_SAFE]  days=77, limit=200, surge=0\n  round_05/b79  [BATCH_SAFE]  days=81, limit=200, surge=0\n  round_05/b80  [BATCH_SAFE]  days=84, limit=200, surge=0\n  round_05/b81  [BATCH_SAFE]  days=87, limit=200, surge=12\n  round_05/b82  [BATCH_SAFE]  days=88, limit=200, surge=0\n  round_05/b83  [BATCH_SAFE]  days=93, limit=200, surge=0\n  round_05/b84  [BATCH_SAFE]  days=94, limit=200, surge=0\n  round_05/b85  [BATCH_SAFE]  days=99, limit=200, surge=0\n  round_05/b86  [BATCH_SAFE]  days=102, limit=200, surge=0\n  round_05/b87  [BATCH_SAFE]  days=103, limit=200, surge=0\n  round_05/b88  [BATCH_SAFE]  days=107, limit=200, surge=0\n  round_05/b89  [BATCH_SAFE]  days=128, limit=224, surge=206\n  round_06/b0  [BATCH_SAFE]  days=171, limit=0, surge=0\n  round_06/b1  [BATCH_SAFE]  days=174, limit=0, surge=0\n  round_06/b2  [BATCH_SAFE]  days=176, limit=0, surge=0\n  round_06/b3  [BATCH_SAFE]  days=179, limit=0, surge=0\n  round_06/b4  [BATCH_SAFE]  days=183, limit=0, surge=0\n  round_06/b5  [BATCH_SAFE]  days=186, limit=0, surge=0\n  round_06/b6  [BATCH_SAFE]  days=189, limit=0, surge=0\n  round_06/b7  [BATCH_SAFE]  days=191, limit=0, surge=0\n  round_06/b8  [BATCH_SAFE]  days=197, limit=0, surge=0\n  round_07/b0  [BATCH_SAFE]  days=199, limit=0, surge=0\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 3288\n  frontier_discovery_time_ms: 52161\n  compile_time_ms: 80997\n  java_exec_time_ms: 13711\n  path_log_parse_time_ms: 2258\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 25690\n  merge_verify_wall_time_ms: 13\n  batch_total_wall_time_ms: 25726\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/BoundaryStressMeter_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/cct_stats.json\n  Counts: nodes=1335, leaves=668, covered=111, infeasible=549, out_of_range=8, expanded=704, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundaryStressMeter:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/BoundaryStressMeter_M2.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/FSF/BoundaryStressMeter_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/BoundaryStressMeter_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundaryStressMeter\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/FSF/BoundaryStressMeter_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/refined_tbfv_report.json\n  Summary:     testcases=117, fsf_units=9, passed=117, failed=39, skipped=897, unsupported=0\n  CCT marked:  37\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/cct_tbfv_stats.json\n  Counts:      nodes=1335, leaves=668, fault_leaves=37, failure_cases=37\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/BoundaryStressMeter_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=227, intervals=263, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundaryStressMeter:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter\n  CCT:         csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/BoundaryStressMeter_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=111, failed=37, condition_nodes=227, condition_intervals=263\n  Top conditions:\n    #1 score=3.6376 fail=37/37 line=15 remaining > 0\n    #2 score=3.6376 fail=37/37 line=30 charge > 220\n    #3 score=3.6376 fail=37/37 line=26 surge > 200\n  Top intervals:\n    #1 score=3.1596 fail=37/37 line=[15, 30] root.F.F.F.F.F.F.T.T.F.F.FALSE\n    #2 score=3.1596 fail=37/37 line=[16, 22] root.F.F.F.F.F.F.T.TRUE\n    #3 score=3.1364 fail=36/36 line=[15, 30] root.F.F.F.F.F.F.T.T.F.F.F.T.T.F.F.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundaryStressMeter:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundaryStressMeter/BoundaryStressMeter_M2.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/cct_failure_localization_aggregated.json\n  Source file: BoundaryStressMeter/BoundaryStressMeter_M2.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  227 raw -> 12 aggregated\n  Intervals[cct_only]: 263 raw -> 14 aggregated\n  Intervals[statement_presence]: 263 raw -> 14 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 263 raw -> 14 aggregated\n  Intervals[edge_divergence_sibling_shared]: 263 raw -> 14 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundaryStressMeter:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundaryStressMeter_M2",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M2/BoundaryStressMeter/fault_localization_eval.json\n  Mutant:    BoundaryStressMeter_M2\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=9, top1=miss, top3=miss, top5=miss, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=5, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=5, top1=miss, top3=miss, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundaryStressMeter:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/BoundaryStressMeter_M3.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_BoundaryStressMeter_M3",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/testcases.json"
+      ],
+      "stdout_tail": "t=0, surge=12\n  round_05/b5  [BATCH_SAFE]  days=51, limit=0, surge=0\n  round_05/b6  [BATCH_SAFE]  days=52, limit=9, surge=0\n  round_05/b7  [BATCH_SAFE]  days=55, limit=0, surge=12\n  round_05/b8  [BATCH_SAFE]  days=60, limit=12, surge=12\n  round_05/b9  [BATCH_SAFE]  days=63, limit=0, surge=0\n  round_05/b10  [BATCH_SAFE]  days=66, limit=0, surge=0\n  round_05/b11  [BATCH_SAFE]  days=68, limit=0, surge=0\n  round_05/b12  [BATCH_SAFE]  days=72, limit=0, surge=0\n  round_05/b13  [BATCH_SAFE]  days=73, limit=0, surge=0\n  round_05/b14  [BATCH_SAFE]  days=78, limit=0, surge=0\n  round_05/b15  [BATCH_SAFE]  days=79, limit=0, surge=0\n  round_05/b16  [BATCH_SAFE]  days=83, limit=0, surge=12\n  round_05/b17  [BATCH_SAFE]  days=87, limit=0, surge=12\n  round_05/b18  [BATCH_SAFE]  days=90, limit=0, surge=0\n  round_05/b19  [BATCH_SAFE]  days=93, limit=0, surge=0\n  round_05/b20  [BATCH_SAFE]  days=96, limit=0, surge=0\n  round_05/b21  [BATCH_SAFE]  days=97, limit=0, surge=0\n  round_05/b22  [BATCH_SAFE]  days=100, limit=0, surge=0\n  round_05/b23  [BATCH_SAFE]  days=104, limit=0, surge=12\n  round_05/b24  [BATCH_SAFE]  days=108, limit=0, surge=0\n  round_05/b25  [BATCH_SAFE]  days=109, limit=0, surge=0\n  round_05/b26  [BATCH_SAFE]  days=112, limit=0, surge=0\n  round_05/b27  [BATCH_SAFE]  days=115, limit=0, surge=0\n  round_05/b28  [BATCH_SAFE]  days=120, limit=0, surge=10\n  round_05/b29  [BATCH_SAFE]  days=123, limit=0, surge=12\n  round_05/b30  [BATCH_SAFE]  days=125, limit=0, surge=0\n  round_05/b31  [BATCH_SAFE]  days=128, limit=0, surge=0\n  round_05/b32  [BATCH_SAFE]  days=190, limit=0, surge=0\n  round_05/b33  [BATCH_SAFE]  days=128, limit=202, surge=205\n  round_06/b0  [BATCH_SAFE]  days=133, limit=0, surge=0\n  round_06/b1  [BATCH_SAFE]  days=136, limit=0, surge=0\n  round_06/b2  [BATCH_SAFE]  days=139, limit=12, surge=0\n  round_06/b3  [BATCH_SAFE]  days=142, limit=0, surge=0\n  round_06/b4  [BATCH_SAFE]  days=145, limit=12, surge=0\n  round_06/b5  [BATCH_SAFE]  days=148, limit=0, surge=0\n  round_06/b6  [BATCH_SAFE]  days=152, limit=12, surge=0\n  round_06/b7  [BATCH_SAFE]  days=155, limit=9, surge=0\n  round_06/b8  [BATCH_SAFE]  days=157, limit=0, surge=0\n  round_06/b9  [BATCH_SAFE]  days=160, limit=9, surge=0\n  round_06/b10  [BATCH_SAFE]  days=165, limit=0, surge=0\n  round_06/b11  [BATCH_SAFE]  days=166, limit=0, surge=0\n  round_06/b12  [BATCH_SAFE]  days=169, limit=0, surge=10\n  round_06/b13  [BATCH_SAFE]  days=174, limit=0, surge=0\n  round_06/b14  [BATCH_SAFE]  days=175, limit=0, surge=0\n  round_06/b15  [BATCH_SAFE]  days=179, limit=0, surge=0\n  round_06/b16  [BATCH_SAFE]  days=183, limit=12, surge=0\n  round_06/b17  [BATCH_SAFE]  days=186, limit=0, surge=0\n  round_06/b18  [BATCH_SAFE]  days=189, limit=0, surge=0\n  round_06/b19  [BATCH_SAFE]  days=193, limit=0, surge=0\n  round_07/b0  [BATCH_SAFE]  days=196, limit=0, surge=0\n  round_08/b0  [BATCH_SAFE]  days=199, limit=0, surge=0\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 2302\n  frontier_discovery_time_ms: 37950\n  compile_time_ms: 52719\n  java_exec_time_ms: 8824\n  path_log_parse_time_ms: 1784\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 17229\n  merge_verify_wall_time_ms: 10\n  batch_total_wall_time_ms: 17261\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/BoundaryStressMeter_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/cct_stats.json\n  Counts: nodes=901, leaves=451, covered=73, infeasible=368, out_of_range=10, expanded=451, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundaryStressMeter:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/BoundaryStressMeter_M3.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/FSF/BoundaryStressMeter_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/BoundaryStressMeter_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundaryStressMeter\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/FSF/BoundaryStressMeter_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/refined_tbfv_report.json\n  Summary:     testcases=80, fsf_units=9, passed=7, failed=71, skipped=642, unsupported=0\n  CCT marked:  69\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/cct_tbfv_stats.json\n  Counts:      nodes=901, leaves=451, fault_leaves=67, failure_cases=67\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/BoundaryStressMeter_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=404, intervals=470, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundaryStressMeter:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter\n  CCT:         csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/BoundaryStressMeter_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=73, failed=67, condition_nodes=404, condition_intervals=470\n  Top conditions:\n    #1 score=4.2195 fail=67/67 line=15 remaining > 3\n    #2 score=4.2047 fail=66/66 line=15 remaining > 3\n    #3 score=4.2047 fail=66/66 line=30 charge > 220\n  Top intervals:\n    #1 score=3.6650 fail=67/67 line=[9, 15] root.F.F.F.F.F.FALSE\n    #2 score=3.6521 fail=66/66 line=[15, 30] root.F.F.F.F.F.F.T.F.F.F.FALSE\n    #3 score=3.6521 fail=66/66 line=[16, 22] root.F.F.F.F.F.F.T.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundaryStressMeter:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundaryStressMeter/BoundaryStressMeter_M3.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/cct_failure_localization_aggregated.json\n  Source file: BoundaryStressMeter/BoundaryStressMeter_M3.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  404 raw -> 12 aggregated\n  Intervals[cct_only]: 470 raw -> 13 aggregated\n  Intervals[statement_presence]: 470 raw -> 13 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 470 raw -> 13 aggregated\n  Intervals[edge_divergence_sibling_shared]: 470 raw -> 13 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundaryStressMeter:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundaryStressMeter_M3",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M3/BoundaryStressMeter/fault_localization_eval.json\n  Mutant:    BoundaryStressMeter_M3\n  Operator:  ROR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundaryStressMeter:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/BoundaryStressMeter_M4.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_BoundaryStressMeter_M4",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/testcases.json"
+      ],
+      "stdout_tail": "8, limit=0, surge=0\n  round_05/b10  [BATCH_SAFE]  days=50, limit=12, surge=0\n  round_05/b11  [BATCH_SAFE]  days=53, limit=0, surge=0\n  round_05/b12  [BATCH_SAFE]  days=56, limit=12, surge=0\n  round_05/b13  [BATCH_SAFE]  days=60, limit=0, surge=0\n  round_05/b14  [BATCH_SAFE]  days=63, limit=0, surge=0\n  round_05/b15  [BATCH_SAFE]  days=130, limit=0, surge=0\n  round_05/b16  [BATCH_SAFE]  days=128, limit=201, surge=206\n  round_06/b0  [BATCH_SAFE]  days=69, limit=0, surge=0\n  round_06/b1  [BATCH_SAFE]  days=70, limit=0, surge=0\n  round_06/b2  [BATCH_SAFE]  days=74, limit=0, surge=0\n  round_06/b3  [BATCH_SAFE]  days=76, limit=0, surge=0\n  round_06/b4  [BATCH_SAFE]  days=79, limit=0, surge=0\n  round_06/b5  [BATCH_SAFE]  days=84, limit=0, surge=0\n  round_06/b6  [BATCH_SAFE]  days=87, limit=12, surge=0\n  round_06/b7  [BATCH_SAFE]  days=88, limit=0, surge=0\n  round_06/b8  [BATCH_SAFE]  days=93, limit=0, surge=0\n  round_06/b9  [BATCH_SAFE]  days=96, limit=0, surge=0\n  round_06/b10  [BATCH_SAFE]  days=97, limit=0, surge=0\n  round_06/b11  [BATCH_SAFE]  days=102, limit=0, surge=0\n  round_06/b12  [BATCH_SAFE]  days=103, limit=0, surge=0\n  round_06/b13  [BATCH_SAFE]  days=106, limit=0, surge=0\n  round_06/b14  [BATCH_SAFE]  days=109, limit=0, surge=0\n  round_06/b15  [BATCH_SAFE]  days=112, limit=0, surge=0\n  round_06/b16  [BATCH_SAFE]  days=116, limit=0, surge=12\n  round_06/b17  [BATCH_SAFE]  days=118, limit=0, surge=12\n  round_06/b18  [BATCH_SAFE]  days=121, limit=0, surge=0\n  round_06/b19  [BATCH_SAFE]  days=125, limit=12, surge=0\n  round_06/b20  [BATCH_SAFE]  days=129, limit=0, surge=0\n  round_06/b21  [BATCH_SAFE]  days=190, limit=0, surge=0\n  round_07/b0  [BATCH_SAFE]  days=133, limit=0, surge=0\n  round_07/b1  [BATCH_SAFE]  days=138, limit=0, surge=12\n  round_07/b2  [BATCH_SAFE]  days=141, limit=0, surge=0\n  round_07/b3  [BATCH_SAFE]  days=144, limit=0, surge=12\n  round_07/b4  [BATCH_SAFE]  days=145, limit=0, surge=0\n  round_07/b5  [BATCH_SAFE]  days=150, limit=0, surge=0\n  round_07/b6  [BATCH_SAFE]  days=151, limit=0, surge=0\n  round_07/b7  [BATCH_SAFE]  days=156, limit=0, surge=12\n  round_07/b8  [BATCH_SAFE]  days=159, limit=0, surge=10\n  round_07/b9  [BATCH_SAFE]  days=162, limit=0, surge=0\n  round_07/b10  [BATCH_SAFE]  days=163, limit=0, surge=0\n  round_07/b11  [BATCH_SAFE]  days=168, limit=0, surge=0\n  round_07/b12  [BATCH_SAFE]  days=170, limit=0, surge=0\n  round_07/b13  [BATCH_SAFE]  days=173, limit=0, surge=0\n  round_07/b14  [BATCH_SAFE]  days=175, limit=0, surge=0\n  round_07/b15  [BATCH_SAFE]  days=180, limit=0, surge=12\n  round_07/b16  [BATCH_SAFE]  days=181, limit=0, surge=0\n  round_07/b17  [BATCH_SAFE]  days=184, limit=0, surge=0\n  round_07/b18  [BATCH_SAFE]  days=188, limit=0, surge=0\n  round_07/b19  [BATCH_SAFE]  days=197, limit=0, surge=0\n  round_08/b0  [BATCH_SAFE]  days=193, limit=0, surge=0\n  round_08/b1  [BATCH_SAFE]  days=199, limit=0, surge=0\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 2420\n  frontier_discovery_time_ms: 39998\n  compile_time_ms: 49780\n  java_exec_time_ms: 8457\n  path_log_parse_time_ms: 1645\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 16672\n  merge_verify_wall_time_ms: 12\n  batch_total_wall_time_ms: 16705\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/BoundaryStressMeter_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/cct_stats.json\n  Counts: nodes=913, leaves=457, covered=74, infeasible=373, out_of_range=10, expanded=458, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundaryStressMeter:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/BoundaryStressMeter_M4.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/FSF/BoundaryStressMeter_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/BoundaryStressMeter_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundaryStressMeter\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/FSF/BoundaryStressMeter_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/refined_tbfv_report.json\n  Summary:     testcases=81, fsf_units=9, passed=12, failed=69, skipped=648, unsupported=0\n  CCT marked:  67\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/cct_tbfv_stats.json\n  Counts:      nodes=913, leaves=457, fault_leaves=67, failure_cases=67\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/BoundaryStressMeter_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=409, intervals=475, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundaryStressMeter:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter\n  CCT:         csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/BoundaryStressMeter_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=74, failed=67, condition_nodes=409, condition_intervals=475\n  Top conditions:\n    #1 score=4.2195 fail=67/67 line=15 remaining > 0\n    #2 score=4.2195 fail=67/67 line=30 charge > 220\n    #3 score=4.2195 fail=67/67 line=26 surge > 200\n  Top intervals:\n    #1 score=3.6650 fail=67/67 line=[15, 30] root.F.F.F.F.F.F.T.F.F.F.FALSE\n    #2 score=3.6650 fail=67/67 line=[16, 22] root.F.F.F.F.F.F.T.FALSE\n    #3 score=3.6521 fail=66/66 line=[15, 30] root.F.F.F.F.F.F.T.F.F.F.F.T.F.F.F.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundaryStressMeter:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundaryStressMeter/BoundaryStressMeter_M4.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/cct_failure_localization_aggregated.json\n  Source file: BoundaryStressMeter/BoundaryStressMeter_M4.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  409 raw -> 12 aggregated\n  Intervals[cct_only]: 475 raw -> 13 aggregated\n  Intervals[statement_presence]: 475 raw -> 13 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 475 raw -> 13 aggregated\n  Intervals[edge_divergence_sibling_shared]: 475 raw -> 13 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundaryStressMeter:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundaryStressMeter_M4",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M4/BoundaryStressMeter/fault_localization_eval.json\n  Mutant:    BoundaryStressMeter_M4\n  Operator:  AOR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=4, top1=miss, top3=miss, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=4, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundaryStressMeter:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/BoundaryStressMeter_M5.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_BoundaryStressMeter_M5",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/testcases.json"
+      ],
+      "stdout_tail": "ays=256, limit=205, surge=0\n  round_04/b0  [BATCH_SAFE]  days=12, limit=0, surge=0\n  round_04/b1  [BATCH_SAFE]  days=16, limit=0, surge=0\n  round_04/b2  [BATCH_SAFE]  days=18, limit=0, surge=0\n  round_04/b3  [BATCH_SAFE]  days=22, limit=0, surge=0\n  round_04/b4  [BATCH_SAFE]  days=26, limit=0, surge=0\n  round_04/b5  [BATCH_SAFE]  days=32, limit=0, surge=0\n  round_04/b6  [BATCH_SAFE]  days=33, limit=0, surge=0\n  round_04/b7  [BATCH_SAFE]  days=40, limit=0, surge=0\n  round_04/b8  [BATCH_SAFE]  days=41, limit=0, surge=0\n  round_04/b9  [BATCH_SAFE]  days=45, limit=0, surge=0\n  round_04/b10  [BATCH_SAFE]  days=52, limit=0, surge=0\n  round_04/b11  [BATCH_SAFE]  days=54, limit=0, surge=0\n  round_04/b12  [BATCH_SAFE]  days=60, limit=0, surge=0\n  round_04/b13  [BATCH_SAFE]  days=61, limit=0, surge=0\n  round_04/b14  [BATCH_SAFE]  days=67, limit=9, surge=0\n  round_04/b15  [BATCH_SAFE]  days=72, limit=0, surge=0\n  round_04/b16  [BATCH_SAFE]  days=76, limit=0, surge=0\n  round_04/b17  [BATCH_SAFE]  days=78, limit=0, surge=0\n  round_04/b18  [BATCH_SAFE]  days=82, limit=0, surge=0\n  round_04/b19  [BATCH_SAFE]  days=85, limit=0, surge=12\n  round_04/b20  [BATCH_SAFE]  days=89, limit=0, surge=0\n  round_04/b21  [BATCH_SAFE]  days=96, limit=0, surge=0\n  round_04/b22  [BATCH_SAFE]  days=99, limit=0, surge=10\n  round_04/b23  [BATCH_SAFE]  days=101, limit=0, surge=0\n  round_04/b24  [BATCH_SAFE]  days=108, limit=12, surge=0\n  round_04/b25  [BATCH_SAFE]  days=110, limit=12, surge=0\n  round_04/b26  [BATCH_SAFE]  days=114, limit=9, surge=0\n  round_04/b27  [BATCH_SAFE]  days=120, limit=12, surge=0\n  round_04/b28  [BATCH_SAFE]  days=124, limit=0, surge=0\n  round_04/b29  [BATCH_SAFE]  days=126, limit=9, surge=0\n  round_04/b30  [BATCH_SAFE]  days=172, limit=0, surge=0\n  round_04/b31  [BATCH_SAFE]  days=201, limit=0, surge=206\n  round_04/b32  [BATCH_SAFE]  days=128, limit=206, surge=0\n  round_04/b33  [BATCH_SAFE]  days=206, limit=206, surge=256\n  round_05/b0  [BATCH_SAFE]  days=136, limit=0, surge=0\n  round_05/b1  [BATCH_SAFE]  days=140, limit=0, surge=0\n  round_05/b2  [BATCH_SAFE]  days=144, limit=0, surge=0\n  round_05/b3  [BATCH_SAFE]  days=148, limit=0, surge=0\n  round_05/b4  [BATCH_SAFE]  days=152, limit=0, surge=0\n  round_05/b5  [BATCH_SAFE]  days=153, limit=0, surge=0\n  round_05/b6  [BATCH_SAFE]  days=160, limit=0, surge=0\n  round_05/b7  [BATCH_SAFE]  days=164, limit=0, surge=0\n  round_05/b8  [BATCH_SAFE]  days=166, limit=0, surge=0\n  round_05/b9  [BATCH_SAFE]  days=196, limit=0, surge=0\n  round_05/b10  [BATCH_SAFE]  days=128, limit=202, surge=205\n  round_06/b0  [BATCH_SAFE]  days=176, limit=9, surge=12\n  round_06/b1  [BATCH_SAFE]  days=180, limit=0, surge=0\n  round_06/b2  [BATCH_SAFE]  days=184, limit=12, surge=0\n  round_06/b3  [BATCH_SAFE]  days=188, limit=0, surge=0\n  round_06/b4  [BATCH_SAFE]  days=190, limit=12, surge=0\n  round_06/b5  [BATCH_SAFE]  days=200, limit=0, surge=0\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 1147\n  frontier_discovery_time_ms: 19010\n  compile_time_ms: 37470\n  java_exec_time_ms: 6725\n  path_log_parse_time_ms: 840\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 12523\n  merge_verify_wall_time_ms: 5\n  batch_total_wall_time_ms: 12541\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/BoundaryStressMeter_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/cct_stats.json\n  Counts: nodes=709, leaves=355, covered=57, infeasible=288, out_of_range=10, expanded=339, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundaryStressMeter:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/BoundaryStressMeter_M5.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/FSF/BoundaryStressMeter_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/BoundaryStressMeter_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundaryStressMeter\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/FSF/BoundaryStressMeter_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/refined_tbfv_report.json\n  Summary:     testcases=64, fsf_units=9, passed=9, failed=53, skipped=514, unsupported=0\n  CCT marked:  50\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/cct_tbfv_stats.json\n  Counts:      nodes=709, leaves=355, fault_leaves=50, failure_cases=50\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/BoundaryStressMeter_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=307, intervals=356, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundaryStressMeter:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter\n  CCT:         csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/BoundaryStressMeter_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=57, failed=50, condition_nodes=307, condition_intervals=356\n  Top conditions:\n    #1 score=3.9318 fail=50/50 line=15 remaining > 0\n    #2 score=3.9318 fail=50/50 line=30 charge > 220\n    #3 score=3.9318 fail=50/50 line=26 surge > 200\n  Top intervals:\n    #1 score=3.4151 fail=50/50 line=[15, 30] root.F.F.F.F.F.F.T.F.F.F.FALSE\n    #2 score=3.4151 fail=50/50 line=[16, 22] root.F.F.F.F.F.F.T.FALSE\n    #3 score=3.3979 fail=49/49 line=[15, 30] root.F.F.F.F.F.F.T.F.F.F.F.T.F.F.F.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundaryStressMeter:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundaryStressMeter/BoundaryStressMeter_M5.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/cct_failure_localization_aggregated.json\n  Source file: BoundaryStressMeter/BoundaryStressMeter_M5.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  307 raw -> 12 aggregated\n  Intervals[cct_only]: 356 raw -> 13 aggregated\n  Intervals[statement_presence]: 356 raw -> 13 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 356 raw -> 13 aggregated\n  Intervals[edge_divergence_sibling_shared]: 356 raw -> 13 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundaryStressMeter:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundaryStressMeter_M5",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M5/BoundaryStressMeter/fault_localization_eval.json\n  Mutant:    BoundaryStressMeter_M5\n  Operator:  SUR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=252, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=13, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundaryStressMeter:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/BoundaryStressMeter_M8.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_BoundaryStressMeter_M8",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/testcases.json"
+      ],
+      "stdout_tail": "surge=0\n  round_05/b10  [BATCH_SAFE]  days=50, limit=12, surge=0\n  round_05/b11  [BATCH_SAFE]  days=53, limit=0, surge=0\n  round_05/b12  [BATCH_SAFE]  days=57, limit=0, surge=0\n  round_05/b13  [BATCH_SAFE]  days=60, limit=0, surge=0\n  round_05/b14  [BATCH_SAFE]  days=63, limit=12, surge=0\n  round_05/b15  [BATCH_SAFE]  days=66, limit=0, surge=0\n  round_05/b16  [BATCH_SAFE]  days=69, limit=0, surge=0\n  round_05/b17  [BATCH_SAFE]  days=72, limit=0, surge=0\n  round_05/b18  [BATCH_SAFE]  days=74, limit=0, surge=0\n  round_05/b19  [BATCH_SAFE]  days=76, limit=0, surge=0\n  round_05/b20  [BATCH_SAFE]  days=81, limit=0, surge=0\n  round_05/b21  [BATCH_SAFE]  days=84, limit=0, surge=0\n  round_05/b22  [BATCH_SAFE]  days=87, limit=0, surge=0\n  round_05/b23  [BATCH_SAFE]  days=88, limit=0, surge=0\n  round_05/b24  [BATCH_SAFE]  days=93, limit=0, surge=0\n  round_05/b25  [BATCH_SAFE]  days=96, limit=0, surge=0\n  round_05/b26  [BATCH_SAFE]  days=97, limit=0, surge=0\n  round_05/b27  [BATCH_SAFE]  days=102, limit=0, surge=0\n  round_05/b28  [BATCH_SAFE]  days=103, limit=12, surge=0\n  round_05/b29  [BATCH_SAFE]  days=106, limit=0, surge=0\n  round_05/b30  [BATCH_SAFE]  days=109, limit=0, surge=0\n  round_05/b31  [BATCH_SAFE]  days=112, limit=0, surge=0\n  round_05/b32  [BATCH_SAFE]  days=116, limit=0, surge=12\n  round_05/b33  [BATCH_SAFE]  days=118, limit=0, surge=12\n  round_05/b34  [BATCH_SAFE]  days=121, limit=0, surge=0\n  round_05/b35  [BATCH_SAFE]  days=125, limit=12, surge=0\n  round_05/b36  [BATCH_SAFE]  days=200, limit=12, surge=0\n  round_05/b37  [BATCH_SAFE]  days=128, limit=201, surge=205\n  round_06/b0  [BATCH_SAFE]  days=132, limit=0, surge=0\n  round_06/b1  [BATCH_SAFE]  days=133, limit=0, surge=0\n  round_06/b2  [BATCH_SAFE]  days=136, limit=12, surge=0\n  round_06/b3  [BATCH_SAFE]  days=141, limit=0, surge=0\n  round_06/b4  [BATCH_SAFE]  days=142, limit=0, surge=0\n  round_06/b5  [BATCH_SAFE]  days=145, limit=0, surge=12\n  round_06/b6  [BATCH_SAFE]  days=150, limit=0, surge=0\n  round_06/b7  [BATCH_SAFE]  days=153, limit=10, surge=0\n  round_06/b8  [BATCH_SAFE]  days=156, limit=0, surge=0\n  round_06/b9  [BATCH_SAFE]  days=157, limit=0, surge=0\n  round_06/b10  [BATCH_SAFE]  days=161, limit=0, surge=0\n  round_06/b11  [BATCH_SAFE]  days=165, limit=0, surge=0\n  round_06/b12  [BATCH_SAFE]  days=168, limit=0, surge=0\n  round_06/b13  [BATCH_SAFE]  days=170, limit=0, surge=0\n  round_06/b14  [BATCH_SAFE]  days=173, limit=0, surge=0\n  round_06/b15  [BATCH_SAFE]  days=176, limit=0, surge=0\n  round_06/b16  [BATCH_SAFE]  days=180, limit=0, surge=0\n  round_06/b17  [BATCH_SAFE]  days=181, limit=0, surge=0\n  round_06/b18  [BATCH_SAFE]  days=184, limit=12, surge=12\n  round_06/b19  [BATCH_SAFE]  days=189, limit=0, surge=0\n  round_06/b20  [BATCH_SAFE]  days=192, limit=0, surge=0\n  round_06/b21  [BATCH_SAFE]  days=193, limit=0, surge=0\n  round_06/b22  [BATCH_SAFE]  days=198, limit=0, surge=0\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 2417\n  frontier_discovery_time_ms: 41314\n  compile_time_ms: 48850\n  java_exec_time_ms: 8905\n  path_log_parse_time_ms: 2066\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 16178\n  merge_verify_wall_time_ms: 10\n  batch_total_wall_time_ms: 16201\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/BoundaryStressMeter_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/cct_stats.json\n  Counts: nodes=913, leaves=457, covered=74, infeasible=373, out_of_range=10, expanded=458, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundaryStressMeter:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/BoundaryStressMeter_M8.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/FSF/BoundaryStressMeter_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/BoundaryStressMeter_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundaryStressMeter\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/FSF/BoundaryStressMeter_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/refined_tbfv_report.json\n  Summary:     testcases=81, fsf_units=9, passed=79, failed=0, skipped=650, unsupported=0\n  CCT marked:  0\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/cct_tbfv_stats.json\n  Counts:      nodes=913, leaves=457, fault_leaves=0, failure_cases=0\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/BoundaryStressMeter_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=0, intervals=0, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundaryStressMeter:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter\n  CCT:         csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/BoundaryStressMeter_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=74, failed=0, condition_nodes=0, condition_intervals=0\n  Top conditions: <none>\n  Top intervals: <none>\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundaryStressMeter:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundaryStressMeter/BoundaryStressMeter_M8.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/cct_failure_localization_aggregated.json\n  Source file: BoundaryStressMeter/BoundaryStressMeter_M8.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  0 raw -> 0 aggregated\n  Intervals[cct_only]: 0 raw -> 0 aggregated\n  Intervals[statement_presence]: 0 raw -> 0 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 0 raw -> 0 aggregated\n  Intervals[edge_divergence_sibling_shared]: 0 raw -> 0 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundaryStressMeter:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundaryStressMeter_M8",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_BoundaryStressMeter_M8/BoundaryStressMeter/fault_localization_eval.json\n  Mutant:    BoundaryStressMeter_M8\n  Operator:  AOR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n",
+      "stderr_tail": ""
+    }
+  ]
+}

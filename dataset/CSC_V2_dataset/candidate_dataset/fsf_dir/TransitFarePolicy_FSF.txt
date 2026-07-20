@@ -1,0 +1,47 @@
+[fsf_1]
+T: zones < 1
+D: return_value == -1
+
+[fsf_2]
+T: zones > 6
+D: return_value == -1
+
+[fsf_3]
+T: zones >= 1 && zones <= 6 && rides < 1
+D: return_value == -1
+
+[fsf_4]
+T: zones >= 1 && zones <= 6 && rides > 10
+D: return_value == -1
+
+[fsf_5]
+T: zones >= 1 && zones <= 6 && rides >= 1 && rides <= 10 && age < 0
+D: return_value == -1
+
+[fsf_6]
+T: zones >= 1 && zones <= 6 && rides >= 1 && rides <= 10 && age > 120
+D: return_value == -1
+
+[fsf_7]
+T: zones >= 1 && zones <= 6 && rides >= 1 && rides <= 10 && age >= 0 && age <= 120 && hour < 0
+D: return_value == -1
+
+[fsf_8]
+T: zones >= 1 && zones <= 6 && rides >= 1 && rides <= 10 && age >= 0 && age <= 120 && hour > 23
+D: return_value == -1
+
+[fsf_9]
+T: zones >= 5 && zones <= 6 && rides >= 8 && rides <= 10 && age >= 18 && age <= 64 && hour >= 7 && hour <= 9 && express == true && student == false && disabled == false && weekend == false
+D: return_value == 660
+
+[fsf_10]
+T: zones >= 3 && zones <= 4 && rides >= 4 && rides <= 7 && age >= 65 && age <= 120 && hour >= 22 && hour <= 23 && express == false && student == false && disabled == false && weekend == true
+D: return_value == 225
+
+[fsf_11]
+T: zones >= 1 && zones <= 2 && rides >= 1 && rides <= 3 && age >= 7 && age <= 17 && hour >= 10 && hour <= 16 && express == false && student == true && disabled == false && weekend == false
+D: return_value == 195
+
+[fsf_12]
+T: zones >= 1 && zones <= 2 && rides >= 1 && rides <= 3 && age >= 0 && age <= 6 && hour >= 10 && hour <= 16 && express == false && student == false && disabled == false && weekend == false
+D: return_value == 0

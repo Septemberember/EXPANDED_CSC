@@ -1,0 +1,754 @@
+{
+  "subject": "TailRotateSortFive",
+  "subject_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive",
+  "fsf": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/FSF/TailRotateSortFive_FSF.txt",
+  "manifest": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+  "mode": "expanded",
+  "strategy": "batch",
+  "max_iter": 100,
+  "dry_run": false,
+  "original": {
+    "role": "original",
+    "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/TailRotateSortFive.java",
+    "class_name": "TailRotateSortFive",
+    "mutant_id": null
+  },
+  "mutants": [
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/TailRotateSortFive_M1.java",
+      "class_name": "TailRotateSortFive",
+      "mutant_id": "TailRotateSortFive_M1"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/TailRotateSortFive_M2.java",
+      "class_name": "TailRotateSortFive",
+      "mutant_id": "TailRotateSortFive_M2"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/TailRotateSortFive_M3.java",
+      "class_name": "TailRotateSortFive",
+      "mutant_id": "TailRotateSortFive_M3"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/TailRotateSortFive_M4.java",
+      "class_name": "TailRotateSortFive",
+      "mutant_id": "TailRotateSortFive_M4"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/TailRotateSortFive_M5.java",
+      "class_name": "TailRotateSortFive",
+      "mutant_id": "TailRotateSortFive_M5"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/TailRotateSortFive_M6.java",
+      "class_name": "TailRotateSortFive",
+      "mutant_id": "TailRotateSortFive_M6"
+    }
+  ],
+  "step_count": 30,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "mutant:TailRotateSortFive:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/TailRotateSortFive_M1.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_TailRotateSortFive_M1",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/testcases.json"
+      ],
+      "stdout_tail": "2766\n  round_04/b18  [BATCH_SAFE]  a=-3, b=-32641, c=-1, d=0, e=-4\n  round_04/b19  [BATCH_SAFE]  a=3, b=1, c=0, d=32767, e=32767\n  round_04/b20  [BATCH_SAFE]  a=7, b=-7, c=-8, d=6, e=32766\n  round_04/b21  [BATCH_SAFE]  a=5, b=3, c=-1, d=2, e=4\n  round_04/b22  [BATCH_SAFE]  a=0, b=-2, c=-2, d=1, e=0\n  round_04/b23  [BATCH_SAFE]  a=3, b=1, c=0, d=32767, e=32764\n  round_04/b24  [BATCH_SAFE]  a=-16383, b=-16385, c=-32768, d=-1, e=-16384\n  round_04/b25  [BATCH_SAFE]  a=-1, b=-3, c=-32765, d=0, e=-4\n  round_04/b26  [BATCH_SAFE]  a=-32767, b=-32768, c=1, d=0, e=0\n  round_04/b27  [BATCH_SAFE]  a=0, b=-2, c=0, d=-2, e=32766\n  round_04/b28  [BATCH_SAFE]  a=2051, b=2, c=20483, d=2048, e=16386\n  round_04/b29  [BATCH_SAFE]  a=7, b=-1, c=4, d=2, e=2\n  round_04/b30  [BATCH_SAFE]  a=513, b=0, c=513, d=511, e=0\n  round_04/b31  [BATCH_SAFE]  a=-17, b=-21, c=1, d=-22, e=0\n  round_05/b0  [BATCH_SAFE]  a=-32136, b=-577, c=-2662, d=-892, e=-856\n  round_05/b1  [BATCH_SAFE]  a=511, b=512, c=510, d=32766, e=32766\n  round_05/b2  [BATCH_SAFE]  a=-31987, b=-869, c=-32768, d=-1006, e=-256\n  round_05/b3  [BATCH_SAFE]  a=1, b=1, c=-1, d=0, e=0\n  round_05/b4  [BATCH_SAFE]  a=-4097, b=8191, c=-8192, d=4096, e=4094\n  round_05/b5  [BATCH_SAFE]  a=0, b=1, c=3, d=1, e=0\n  round_05/b6  [BATCH_SAFE]  a=1, b=1, c=32767, d=0, e=32767\n  round_05/b7  [BATCH_SAFE]  a=-22781, b=-11425, c=-11502, d=-32768, e=4368\n  round_05/b8  [BATCH_SAFE]  a=-16385, b=-1, c=-24576, d=-24578, e=-8194\n  round_05/b9  [BATCH_SAFE]  a=-28673, b=-28671, c=-1, d=-28674, e=-28672\n  round_05/b10  [BATCH_SAFE]  a=1, b=-1, c=-2, d=0, e=0\n  round_05/b11  [BATCH_SAFE]  a=1, b=0, c=0, d=32767, e=0\n  round_05/b12  [BATCH_SAFE]  a=3, b=-4, c=-5, d=2, e=0\n  round_05/b13  [BATCH_SAFE]  a=-32767, b=-32768, c=-32512, d=-32513, e=-2\n  round_05/b14  [BATCH_SAFE]  a=7, b=0, c=9, d=7, e=0\n  round_05/b15  [BATCH_SAFE]  a=3, b=0, c=2, d=0, e=32766\n  round_05/b16  [BATCH_SAFE]  a=16385, b=16383, c=1, d=0, e=32767\n  round_05/b17  [BATCH_SAFE]  a=1, b=-1, c=0, d=-1, e=-2\n  round_05/b18  [BATCH_SAFE]  a=3, b=1, c=1, d=0, e=0\n  round_06/b0  [BATCH_SAFE]  a=1, b=32767, c=0, d=32766, e=32766\n  round_06/b1  [BATCH_SAFE]  a=-24577, b=-20479, c=-28672, d=-28674, e=-1\n  round_06/b2  [BATCH_SAFE]  a=3, b=-1, c=-1, d=2, e=0\n  round_06/b3  [BATCH_SAFE]  a=5, b=-1, c=3, d=32767, e=0\n  round_06/b4  [BATCH_SAFE]  a=-32766, b=-32768, c=-32761, d=-32765, e=-32766\n  round_06/b5  [BATCH_SAFE]  a=1, b=-1, c=0, d=-1, e=0\n  round_06/b6  [BATCH_SAFE]  a=3, b=1, c=32767, d=0, e=32767\n  round_06/b7  [BATCH_SAFE]  a=3, b=-2, c=2, d=-4, e=32766\n  round_06/b8  [BATCH_SAFE]  a=1, b=-65, c=-66, d=-70, e=0\n  round_06/b9  [BATCH_SAFE]  a=-16351, b=-32737, c=-16297, d=-32738, e=-16384\n  round_06/b10  [BATCH_SAFE]  a=3, b=1, c=3, d=-1, e=0\n  round_07/b0  [BATCH_SAFE]  a=1, b=-1, c=-1, d=0, e=-2\n  round_07/b1  [BATCH_SAFE]  a=1, b=-3, c=-1, d=-5, e=0\n  round_07/b2  [BATCH_SAFE]  a=3, b=0, c=2, d=-1, e=0\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 415\n  frontier_discovery_time_ms: 2285\n  compile_time_ms: 58282\n  java_exec_time_ms: 10442\n  path_log_parse_time_ms: 9\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 18066\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 18084\n\nTest cases written to: csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/TailRotateSortFive_cct.dot\n  Stats: csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/cct_stats.json\n  Counts: nodes=529, leaves=265, covered=88, infeasible=177, out_of_range=0, expanded=176, truncated=0\n  Render script: csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/render_cct.sh\n  (render later with: csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:TailRotateSortFive:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/TailRotateSortFive_M1.java",
+        "--output",
+        "csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/FSF/TailRotateSortFive_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/TailRotateSortFive_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       TailRotateSortFive\n  CSC result:  csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/FSF/TailRotateSortFive_FSF.txt\n  Report:      csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/refined_tbfv_report.json\n  Summary:     testcases=88, fsf_units=1, passed=64, failed=24, skipped=0, unsupported=0\n  CCT marked:  24\n  TBFV stats:  csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/cct_tbfv_stats.json\n  Counts:      nodes=529, leaves=265, fault_leaves=24, failure_cases=24\n  Fault DOT:    csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/TailRotateSortFive_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=112, intervals=135, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TailRotateSortFive:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive",
+        "--output",
+        "csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive\n  CCT:         csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/TailRotateSortFive_cct.pkl\n  Report:      csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=88, failed=24, condition_nodes=112, condition_intervals=135\n  Top conditions:\n    #1 score=1.0986 fail=2/2 line=20 d > e\n    #2 score=1.0986 fail=2/2 line=20 d > e\n    #3 score=1.0986 fail=2/2 line=20 d > e\n  Top intervals:\n    #1 score=0.9542 fail=2/2 line=[15, 20] root.T.F.F.T.T.T.F.T.TRUE\n    #2 score=0.9542 fail=2/2 line=[15, 20] root.T.F.F.T.T.T.T.T.TRUE\n    #3 score=0.9542 fail=2/2 line=[15, 20] root.T.F.T.T.T.T.F.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TailRotateSortFive:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "TailRotateSortFive/TailRotateSortFive_M1.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/cct_failure_localization_aggregated.json\n  Source file: TailRotateSortFive/TailRotateSortFive_M1.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  112 raw -> 5 aggregated\n  Intervals[cct_only]: 135 raw -> 10 aggregated\n  Intervals[statement_presence]: 135 raw -> 10 aggregated\n  Intervals[edge_divergence_gated]: 135 raw -> 10 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TailRotateSortFive:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "TailRotateSortFive_M1",
+        "--report",
+        "csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_TailRotateSortFive_M1/TailRotateSortFive/fault_localization_eval.json\n  Mutant:    TailRotateSortFive_M1\n  Operator:  CR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=10, top1=miss, top3=miss, top5=miss, top10=hit\n  raw.interval.cct_only: best_rank=9, top1=miss, top3=miss, top5=miss, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:TailRotateSortFive:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/TailRotateSortFive_M2.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_TailRotateSortFive_M2",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/testcases.json"
+      ],
+      "stdout_tail": "02/b0  [BATCH_SAFE]  a=-1, b=-32765, c=2, d=30721, e=0\n  round_02/b1  [BATCH_SAFE]  a=32720, b=-32703, c=-32704, d=24616, e=0\n  round_02/b2  [BATCH_SAFE]  a=32766, b=0, c=16384, d=16382, e=0\n  round_02/b3  [BATCH_SAFE]  a=0, b=1, c=0, d=0, e=0\n  round_03/b0  [BATCH_SAFE]  a=-2, b=-32768, c=-1, d=1, e=0\n  round_03/b1  [BATCH_SAFE]  a=0, b=-32765, c=1, d=24191, e=-32768\n  round_03/b2  [BATCH_SAFE]  a=-1, b=-32765, c=-32766, d=-2047, e=0\n  round_03/b3  [BATCH_SAFE]  a=32767, b=1, c=0, d=32767, e=0\n  round_03/b4  [BATCH_SAFE]  a=32766, b=-32768, c=-32767, d=-32768, e=0\n  round_03/b5  [BATCH_SAFE]  a=32766, b=0, c=1, d=0, e=0\n  round_03/b6  [BATCH_SAFE]  a=32767, b=1, c=3, d=1, e=0\n  round_03/b7  [BATCH_SAFE]  a=32767, b=1, c=1, d=0, e=0\n  round_03/b8  [BATCH_SAFE]  a=-32768, b=-32767, c=32512, d=32512, e=254\n  round_03/b9  [BATCH_SAFE]  a=1, b=2, c=0, d=32766, e=0\n  round_03/b10  [BATCH_SAFE]  a=0, b=1, c=1, d=0, e=0\n  round_04/b0  [BATCH_SAFE]  a=32767, b=513, c=511, d=512, e=32766\n  round_04/b1  [BATCH_SAFE]  a=32767, b=32767, c=0, d=32766, e=32764\n  round_04/b2  [BATCH_SAFE]  a=32766, b=0, c=-1, d=0, e=-2\n  round_04/b3  [BATCH_SAFE]  a=230, b=-32512, c=-32513, d=-32514, e=-1\n  round_04/b4  [BATCH_SAFE]  a=32767, b=1, c=3, d=0, e=2\n  round_04/b5  [BATCH_SAFE]  a=-1, b=-28669, c=-28670, d=-28673, e=-28672\n  round_04/b6  [BATCH_SAFE]  a=-1, b=-1, c=0, d=-3, e=-4\n  round_04/b7  [BATCH_SAFE]  a=-2048, b=0, c=0, d=32767, e=32766\n  round_04/b8  [BATCH_SAFE]  a=-17, b=-1, c=-1, d=0, e=-18\n  round_04/b9  [BATCH_SAFE]  a=256, b=257, c=254, d=254, e=32766\n  round_04/b10  [BATCH_SAFE]  a=1, b=32766, c=0, d=32767, e=32766\n  round_04/b11  [BATCH_SAFE]  a=3, b=4, c=-1, d=2, e=0\n  round_04/b12  [BATCH_SAFE]  a=-1, b=0, c=-32767, d=-1, e=-32768\n  round_04/b13  [BATCH_SAFE]  a=-32768, b=-32767, c=-32512, d=-32514, e=-2\n  round_04/b14  [BATCH_SAFE]  a=0, b=32767, c=9, d=7, e=0\n  round_04/b15  [BATCH_SAFE]  a=-513, b=-512, c=0, d=-514, e=0\n  round_05/b0  [BATCH_SAFE]  a=0, b=-1, c=-32766, d=-32766, e=-2\n  round_05/b1  [BATCH_SAFE]  a=32766, b=1, c=-1, d=0, e=-2\n  round_05/b2  [BATCH_SAFE]  a=32767, b=447, c=32256, d=446, e=32766\n  round_05/b3  [BATCH_SAFE]  a=32759, b=1, c=-1, d=-8, e=-1\n  round_05/b4  [BATCH_SAFE]  a=-1, b=-32763, c=-32764, d=-32765, e=-32766\n  round_05/b5  [BATCH_SAFE]  a=1, b=32766, c=0, d=32767, e=32767\n  round_05/b6  [BATCH_SAFE]  a=1, b=2, c=-1, d=0, e=0\n  round_05/b7  [BATCH_SAFE]  a=1, b=2, c=-1, d=0, e=-2\n  round_05/b8  [BATCH_SAFE]  a=-32767, b=0, c=-32765, d=-32767, e=-32768\n  round_05/b9  [BATCH_SAFE]  a=3, b=32764, c=2, d=0, e=32766\n  round_05/b10  [BATCH_SAFE]  a=1, b=2, c=1, d=0, e=0\n  round_06/b0  [BATCH_SAFE]  a=1, b=2, c=0, d=-1, e=0\n  round_06/b1  [BATCH_SAFE]  a=4097, b=16142, c=4099, d=4096, e=4098\n  round_06/b2  [BATCH_SAFE]  a=7, b=8, c=4, d=-1, e=2\n  round_06/b3  [BATCH_SAFE]  a=513, b=32272, c=513, d=511, e=0\n  round_07/b0  [BATCH_SAFE]  a=1, b=2, c=0, d=-1, e=-2\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 170\n  frontier_discovery_time_ms: 3631\n  compile_time_ms: 26824\n  java_exec_time_ms: 4782\n  path_log_parse_time_ms: 11\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 8566\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 8583\n\nTest cases written to: csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/TailRotateSortFive_cct.dot\n  Stats: csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/cct_stats.json\n  Counts: nodes=833, leaves=417, covered=48, infeasible=369, out_of_range=0, expanded=336, truncated=0\n  Render script: csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/render_cct.sh\n  (render later with: csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:TailRotateSortFive:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/TailRotateSortFive_M2.java",
+        "--output",
+        "csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/FSF/TailRotateSortFive_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/TailRotateSortFive_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       TailRotateSortFive\n  CSC result:  csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/FSF/TailRotateSortFive_FSF.txt\n  Report:      csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/refined_tbfv_report.json\n  Summary:     testcases=48, fsf_units=1, passed=0, failed=48, skipped=0, unsupported=0\n  CCT marked:  48\n  TBFV stats:  csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/cct_tbfv_stats.json\n  Counts:      nodes=833, leaves=417, fault_leaves=48, failure_cases=48\n  Fault DOT:    csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/TailRotateSortFive_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=416, intervals=463, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TailRotateSortFive:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive",
+        "--output",
+        "csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive\n  CCT:         csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/TailRotateSortFive_cct.pkl\n  Report:      csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=48, failed=48, condition_nodes=416, condition_intervals=463\n  Top conditions:\n    #1 score=3.8918 fail=48/48 line=5 a < b\n    #2 score=3.8918 fail=48/48 line=4 pass < 3\n    #3 score=3.2189 fail=24/24 line=10 c > d\n  Top intervals:\n    #1 score=1.3979 fail=24/24 line=[5, 10] root.T.TRUE\n    #2 score=1.1139 fail=12/12 line=[10, 15] root.T.F.TRUE\n    #3 score=1.1139 fail=12/12 line=[10, 15] root.T.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TailRotateSortFive:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "TailRotateSortFive/TailRotateSortFive_M2.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/cct_failure_localization_aggregated.json\n  Source file: TailRotateSortFive/TailRotateSortFive_M2.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  416 raw -> 5 aggregated\n  Intervals[cct_only]: 463 raw -> 10 aggregated\n  Intervals[statement_presence]: 463 raw -> 10 aggregated\n  Intervals[edge_divergence_gated]: 463 raw -> 10 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TailRotateSortFive:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "TailRotateSortFive_M2",
+        "--report",
+        "csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_TailRotateSortFive_M2/TailRotateSortFive/fault_localization_eval.json\n  Mutant:    TailRotateSortFive_M2\n  Operator:  ROR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:TailRotateSortFive:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/TailRotateSortFive_M3.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_TailRotateSortFive_M3",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/testcases.json"
+      ],
+      "stdout_tail": "est Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  a=-32768, b=-1, c=0, d=0, e=1\n  round_02/b1  [BATCH_SAFE]  a=-32750, b=17, c=16, d=24586, e=0\n  round_02/b2  [BATCH_SAFE]  a=0, b=32766, c=16384, d=16382, e=0\n  round_02/b3  [BATCH_SAFE]  a=1, b=0, c=0, d=0, e=0\n  round_03/b0  [BATCH_SAFE]  a=0, b=32321, c=32255, d=32320, e=0\n  round_03/b1  [BATCH_SAFE]  a=-32767, b=-9, c=-32768, d=-2, e=-32768\n  round_03/b2  [BATCH_SAFE]  a=0, b=32767, c=0, d=0, e=1\n  round_03/b3  [BATCH_SAFE]  a=-32768, b=-1, c=1, d=0, e=0\n  round_03/b4  [BATCH_SAFE]  a=0, b=511, c=32256, d=510, e=0\n  round_03/b5  [BATCH_SAFE]  a=1, b=32767, c=32641, d=0, e=2\n  round_03/b6  [BATCH_SAFE]  a=0, b=0, c=-1, d=-2, e=0\n  round_03/b7  [BATCH_SAFE]  a=-32759, b=-32768, c=7, d=32767, e=0\n  round_03/b8  [BATCH_SAFE]  a=-24017, b=-32595, c=-25762, d=-4593, e=-32768\n  round_03/b9  [BATCH_SAFE]  a=3, b=1, c=0, d=32766, e=0\n  round_03/b10  [BATCH_SAFE]  a=1, b=0, c=-1, d=-1, e=0\n  round_03/b11  [BATCH_SAFE]  a=1, b=0, c=1, d=0, e=0\n  round_04/b0  [BATCH_SAFE]  a=1, b=32767, c=0, d=32766, e=0\n  round_04/b1  [BATCH_SAFE]  a=0, b=512, c=510, d=32766, e=32767\n  round_04/b2  [BATCH_SAFE]  a=1, b=32767, c=0, d=0, e=1\n  round_04/b3  [BATCH_SAFE]  a=-32768, b=-1024, c=2, d=1, e=3\n  round_04/b4  [BATCH_SAFE]  a=1, b=1, c=32767, d=0, e=0\n  round_04/b5  [BATCH_SAFE]  a=-1, b=-1, c=-16384, d=-16386, e=-32768\n  round_04/b6  [BATCH_SAFE]  a=-32768, b=0, c=0, d=-2, e=1\n  round_04/b7  [BATCH_SAFE]  a=1, b=32767, c=15, d=0, e=16\n  round_04/b8  [BATCH_SAFE]  a=-32767, b=-32768, c=0, d=0, e=1\n  round_04/b9  [BATCH_SAFE]  a=3, b=1, c=0, d=2, e=0\n  round_04/b10  [BATCH_SAFE]  a=0, b=-2, c=-1, d=0, e=1\n  round_04/b11  [BATCH_SAFE]  a=3, b=1, c=0, d=32766, e=32767\n  round_04/b12  [BATCH_SAFE]  a=391, b=253, c=120, d=126, e=128\n  round_04/b13  [BATCH_SAFE]  a=-32767, b=-32768, c=1, d=0, e=0\n  round_04/b14  [BATCH_SAFE]  a=3, b=0, c=2, d=0, e=0\n  round_04/b15  [BATCH_SAFE]  a=16385, b=16383, c=32767, d=0, e=0\n  round_04/b16  [BATCH_SAFE]  a=8193, b=8187, c=1, d=0, e=2\n  round_05/b0  [BATCH_SAFE]  a=1, b=1, c=-1, d=0, e=0\n  round_05/b1  [BATCH_SAFE]  a=1, b=31, c=0, d=32736, e=32737\n  round_05/b2  [BATCH_SAFE]  a=1, b=1, c=-1, d=-1, e=0\n  round_05/b3  [BATCH_SAFE]  a=0, b=32767, c=1, d=0, e=2\n  round_05/b4  [BATCH_SAFE]  a=255, b=32641, c=127, d=126, e=128\n  round_05/b5  [BATCH_SAFE]  a=16387, b=16383, c=0, d=2, e=0\n  round_05/b6  [BATCH_SAFE]  a=3, b=0, c=0, d=0, e=2\n  round_05/b7  [BATCH_SAFE]  a=-32767, b=-32768, c=-1, d=-2, e=0\n  round_05/b8  [BATCH_SAFE]  a=1027, b=1, c=1026, d=0, e=0\n  round_05/b9  [BATCH_SAFE]  a=0, b=-17410, c=-16385, d=-16386, e=-16384\n  round_05/b10  [BATCH_SAFE]  a=3, b=1, c=2, d=0, e=32767\n  round_05/b11  [BATCH_SAFE]  a=99, b=31, c=64, d=30, e=98\n  round_06/b0  [BATCH_SAFE]  a=103, b=59, c=34, d=24, e=-32640\n  round_06/b1  [BATCH_SAFE]  a=1, b=0, c=2, d=0, e=32767\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 167\n  frontier_discovery_time_ms: 3946\n  compile_time_ms: 30344\n  java_exec_time_ms: 5226\n  path_log_parse_time_ms: 12\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 9495\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 9510\n\nTest cases written to: csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/TailRotateSortFive_cct.dot\n  Stats: csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/cct_stats.json\n  Counts: nodes=897, leaves=449, covered=48, infeasible=401, out_of_range=0, expanded=336, truncated=0\n  Render script: csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/render_cct.sh\n  (render later with: csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:TailRotateSortFive:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/TailRotateSortFive_M3.java",
+        "--output",
+        "csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/FSF/TailRotateSortFive_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/TailRotateSortFive_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       TailRotateSortFive\n  CSC result:  csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/FSF/TailRotateSortFive_FSF.txt\n  Report:      csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/refined_tbfv_report.json\n  Summary:     testcases=48, fsf_units=1, passed=0, failed=48, skipped=0, unsupported=0\n  CCT marked:  48\n  TBFV stats:  csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/cct_tbfv_stats.json\n  Counts:      nodes=897, leaves=449, fault_leaves=48, failure_cases=48\n  Fault DOT:    csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/TailRotateSortFive_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=448, intervals=495, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TailRotateSortFive:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive",
+        "--output",
+        "csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive\n  CCT:         csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/TailRotateSortFive_cct.pkl\n  Report:      csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=48, failed=48, condition_nodes=448, condition_intervals=495\n  Top conditions:\n    #1 score=3.8918 fail=48/48 line=5 a > b\n    #2 score=3.8918 fail=48/48 line=4 pass < 3\n    #3 score=3.2189 fail=24/24 line=10 c > d\n  Top intervals:\n    #1 score=1.3979 fail=24/24 line=[5, 10] root.T.TRUE\n    #2 score=1.1139 fail=12/12 line=[10, 15] root.T.F.TRUE\n    #3 score=1.1139 fail=12/12 line=[10, 15] root.T.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TailRotateSortFive:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "TailRotateSortFive/TailRotateSortFive_M3.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/cct_failure_localization_aggregated.json\n  Source file: TailRotateSortFive/TailRotateSortFive_M3.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  448 raw -> 5 aggregated\n  Intervals[cct_only]: 495 raw -> 10 aggregated\n  Intervals[statement_presence]: 495 raw -> 10 aggregated\n  Intervals[edge_divergence_gated]: 495 raw -> 10 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TailRotateSortFive:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "TailRotateSortFive_M3",
+        "--report",
+        "csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_TailRotateSortFive_M3/TailRotateSortFive/fault_localization_eval.json\n  Mutant:    TailRotateSortFive_M3\n  Operator:  ROR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=9, top1=miss, top3=miss, top5=miss, top10=hit\n  raw.interval.cct_only: best_rank=16, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=5, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=5, top1=miss, top3=miss, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:TailRotateSortFive:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/TailRotateSortFive_M4.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_TailRotateSortFive_M4",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/testcases.json"
+      ],
+      "stdout_tail": "  round_04/b18  [BATCH_SAFE]  a=-32763, b=-32763, c=-3, d=-32765, e=-32768\n  round_04/b19  [BATCH_SAFE]  a=3, b=32767, c=2, d=0, e=0\n  round_04/b20  [BATCH_SAFE]  a=-32767, b=-32768, c=-32767, d=-32767, e=-1\n  round_04/b21  [BATCH_SAFE]  a=27144, b=-30721, c=27144, d=31935, e=0\n  round_04/b22  [BATCH_SAFE]  a=2, b=0, c=3, d=32767, e=32764\n  round_04/b23  [BATCH_SAFE]  a=1, b=0, c=0, d=32767, e=32640\n  round_04/b24  [BATCH_SAFE]  a=1, b=0, c=0, d=32767, e=0\n  round_04/b25  [BATCH_SAFE]  a=3, b=-1, c=1, d=32767, e=0\n  round_04/b26  [BATCH_SAFE]  a=-32767, b=-32768, c=1, d=0, e=0\n  round_04/b27  [BATCH_SAFE]  a=0, b=-2, c=0, d=-2, e=32766\n  round_04/b28  [BATCH_SAFE]  a=1, b=-1, c=3, d=0, e=2\n  round_04/b29  [BATCH_SAFE]  a=2, b=-64, c=259, d=-1, e=0\n  round_04/b30  [BATCH_SAFE]  a=3, b=0, c=2, d=0, e=0\n  round_05/b0  [BATCH_SAFE]  a=-32083, b=-807, c=-8, d=-1, e=-808\n  round_05/b1  [BATCH_SAFE]  a=-32136, b=-577, c=-2662, d=-892, e=-856\n  round_05/b2  [BATCH_SAFE]  a=511, b=512, c=510, d=32766, e=32766\n  round_05/b3  [BATCH_SAFE]  a=-31987, b=-869, c=-32768, d=-1006, e=-256\n  round_05/b4  [BATCH_SAFE]  a=0, b=0, c=-2, d=-2, e=32766\n  round_05/b5  [BATCH_SAFE]  a=1, b=1, c=-1, d=0, e=0\n  round_05/b6  [BATCH_SAFE]  a=1, b=1, c=0, d=32767, e=2\n  round_05/b7  [BATCH_SAFE]  a=-4097, b=8191, c=-8192, d=4096, e=4094\n  round_05/b8  [BATCH_SAFE]  a=12287, b=28675, c=4092, d=8194, e=0\n  round_05/b9  [BATCH_SAFE]  a=0, b=1, c=3, d=1, e=0\n  round_05/b10  [BATCH_SAFE]  a=1, b=1, c=32767, d=0, e=32767\n  round_05/b11  [BATCH_SAFE]  a=-22781, b=-11425, c=-11502, d=-32768, e=4368\n  round_05/b12  [BATCH_SAFE]  a=-16385, b=-1, c=-24576, d=-24578, e=-8194\n  round_05/b13  [BATCH_SAFE]  a=-32766, b=-32765, c=-1, d=-32768, e=-32764\n  round_05/b14  [BATCH_SAFE]  a=-28673, b=-28671, c=-1, d=-28674, e=-28672\n  round_05/b15  [BATCH_SAFE]  a=16382, b=16383, c=16385, d=16380, e=0\n  round_05/b16  [BATCH_SAFE]  a=2, b=0, c=35, d=35, e=32767\n  round_05/b17  [BATCH_SAFE]  a=0, b=-2, c=0, d=32767, e=32766\n  round_05/b18  [BATCH_SAFE]  a=16387, b=16383, c=0, d=16386, e=16384\n  round_05/b19  [BATCH_SAFE]  a=-32767, b=-32768, c=-32512, d=-32513, e=-2\n  round_05/b20  [BATCH_SAFE]  a=-32766, b=-32768, c=-32761, d=-32763, e=-32768\n  round_05/b21  [BATCH_SAFE]  a=2, b=-2, c=32511, d=0, e=32511\n  round_05/b22  [BATCH_SAFE]  a=16387, b=16383, c=2, d=0, e=32766\n  round_06/b0  [BATCH_SAFE]  a=33, b=33, c=0, d=32767, e=32767\n  round_06/b1  [BATCH_SAFE]  a=1, b=32767, c=0, d=32766, e=32766\n  round_06/b2  [BATCH_SAFE]  a=1, b=32767, c=0, d=0, e=24574\n  round_06/b3  [BATCH_SAFE]  a=-1, b=0, c=1, d=0, e=-2\n  round_06/b4  [BATCH_SAFE]  a=-1, b=0, c=0, d=-2, e=32766\n  round_06/b5  [BATCH_SAFE]  a=-24577, b=-20479, c=-28672, d=-28674, e=-1\n  round_06/b6  [BATCH_SAFE]  a=32767, b=32767, c=2, d=0, e=32766\n  round_06/b7  [BATCH_SAFE]  a=1027, b=0, c=2, d=0, e=1026\n  round_07/b0  [BATCH_SAFE]  a=30431, b=30431, c=16384, d=-16368, e=31721\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 394\n  frontier_discovery_time_ms: 6123\n  compile_time_ms: 61261\n  java_exec_time_ms: 10721\n  path_log_parse_time_ms: 43\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 18952\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 18978\n\nTest cases written to: csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/TailRotateSortFive_cct.dot\n  Stats: csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/cct_stats.json\n  Counts: nodes=1259, leaves=630, covered=87, infeasible=543, out_of_range=0, expanded=558, truncated=0\n  Render script: csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/render_cct.sh\n  (render later with: csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:TailRotateSortFive:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/TailRotateSortFive_M4.java",
+        "--output",
+        "csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/FSF/TailRotateSortFive_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/TailRotateSortFive_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       TailRotateSortFive\n  CSC result:  csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/FSF/TailRotateSortFive_FSF.txt\n  Report:      csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/refined_tbfv_report.json\n  Summary:     testcases=87, fsf_units=1, passed=65, failed=22, skipped=0, unsupported=0\n  CCT marked:  22\n  TBFV stats:  csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/cct_tbfv_stats.json\n  Counts:      nodes=1259, leaves=630, fault_leaves=22, failure_cases=22\n  Fault DOT:    csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/TailRotateSortFive_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=188, intervals=209, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TailRotateSortFive:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive",
+        "--output",
+        "csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive\n  CCT:         csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/TailRotateSortFive_cct.pkl\n  Report:      csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=87, failed=22, condition_nodes=188, condition_intervals=209\n  Top conditions:\n    #1 score=1.0986 fail=2/2 line=10 c > d\n    #2 score=1.0986 fail=2/2 line=10 c > d\n    #3 score=1.0986 fail=2/2 line=10 c > d\n  Top intervals:\n    #1 score=0.9542 fail=2/2 line=[5, 10] root.T.F.F.T.F.T.T.T.T.T.T.TRUE\n    #2 score=0.9542 fail=2/2 line=[5, 10] root.T.F.F.T.T.T.T.T.T.T.T.TRUE\n    #3 score=0.9542 fail=2/2 line=[5, 10] root.T.F.T.T.F.T.T.T.T.T.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TailRotateSortFive:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "TailRotateSortFive/TailRotateSortFive_M4.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/cct_failure_localization_aggregated.json\n  Source file: TailRotateSortFive/TailRotateSortFive_M4.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  188 raw -> 5 aggregated\n  Intervals[cct_only]: 209 raw -> 10 aggregated\n  Intervals[statement_presence]: 209 raw -> 10 aggregated\n  Intervals[edge_divergence_gated]: 209 raw -> 10 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TailRotateSortFive:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "TailRotateSortFive_M4",
+        "--report",
+        "csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_TailRotateSortFive_M4/TailRotateSortFive/fault_localization_eval.json\n  Mutant:    TailRotateSortFive_M4\n  Operator:  SUR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_gated: best_rank=5, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_gated: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:TailRotateSortFive:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/TailRotateSortFive_M5.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_TailRotateSortFive_M5",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/testcases.json"
+      ],
+      "stdout_tail": "nd_04/b2  [BATCH_SAFE]  a=0, b=32257, c=511, d=32256, e=32766\n  round_04/b3  [BATCH_SAFE]  a=-32767, b=-9, c=-32768, d=-32768, e=-2\n  round_04/b4  [BATCH_SAFE]  a=-32768, b=-32768, c=-32767, d=-32768, e=0\n  round_04/b5  [BATCH_SAFE]  a=-32768, b=-2, c=3, d=1, e=0\n  round_04/b6  [BATCH_SAFE]  a=0, b=1, c=32767, d=0, e=32767\n  round_04/b7  [BATCH_SAFE]  a=-32768, b=-1, c=-2, d=-32768, e=-2\n  round_04/b8  [BATCH_SAFE]  a=3, b=32767, c=2, d=0, e=32640\n  round_04/b9  [BATCH_SAFE]  a=0, b=1, c=1, d=0, e=0\n  round_04/b10  [BATCH_SAFE]  a=-32767, b=-32768, c=-32767, d=-32767, e=-1\n  round_04/b11  [BATCH_SAFE]  a=0, b=-4096, c=0, d=32767, e=32766\n  round_04/b12  [BATCH_SAFE]  a=-3, b=-32641, c=-1, d=0, e=-4\n  round_04/b13  [BATCH_SAFE]  a=1, b=0, c=0, d=1, e=32767\n  round_04/b14  [BATCH_SAFE]  a=16385, b=16383, c=0, d=0, e=16384\n  round_04/b15  [BATCH_SAFE]  a=1, b=0, c=0, d=32767, e=32766\n  round_04/b16  [BATCH_SAFE]  a=1, b=0, c=-1, d=32767, e=0\n  round_04/b17  [BATCH_SAFE]  a=16385, b=16383, c=0, d=16382, e=0\n  round_04/b18  [BATCH_SAFE]  a=-32767, b=-32768, c=1, d=0, e=0\n  round_04/b19  [BATCH_SAFE]  a=0, b=-2, c=0, d=-2, e=32766\n  round_04/b20  [BATCH_SAFE]  a=1, b=0, c=32767, d=0, e=32766\n  round_04/b21  [BATCH_SAFE]  a=32766, b=0, c=32767, d=0, e=0\n  round_04/b22  [BATCH_SAFE]  a=515, b=0, c=514, d=511, e=0\n  round_04/b23  [BATCH_SAFE]  a=4, b=3, c=2, d=-2, e=0\n  round_05/b0  [BATCH_SAFE]  a=-32766, b=1, c=1, d=32767, e=0\n  round_05/b1  [BATCH_SAFE]  a=-32247, b=-569, c=-32637, d=-634, e=-574\n  round_05/b2  [BATCH_SAFE]  a=-32767, b=-32767, c=-32768, d=-32768, e=-1\n  round_05/b3  [BATCH_SAFE]  a=1, b=1, c=-1, d=0, e=0\n  round_05/b4  [BATCH_SAFE]  a=0, b=1, c=3, d=1, e=0\n  round_05/b5  [BATCH_SAFE]  a=-32766, b=1, c=1, d=0, e=32736\n  round_05/b6  [BATCH_SAFE]  a=-32765, b=-32765, c=-32766, d=-32768, e=-1\n  round_05/b7  [BATCH_SAFE]  a=32767, b=32767, c=2048, d=2046, e=32766\n  round_05/b8  [BATCH_SAFE]  a=1, b=-17, c=1, d=32767, e=0\n  round_05/b9  [BATCH_SAFE]  a=30977, b=2047, c=0, d=0, e=256\n  round_05/b10  [BATCH_SAFE]  a=1, b=-1, c=-1, d=1, e=0\n  round_05/b11  [BATCH_SAFE]  a=-32767, b=-32768, c=-32512, d=-32513, e=-2\n  round_05/b12  [BATCH_SAFE]  a=7, b=0, c=9, d=7, e=0\n  round_05/b13  [BATCH_SAFE]  a=-32665, b=-32768, c=-12, d=-32768, e=4092\n  round_05/b14  [BATCH_SAFE]  a=3, b=0, c=2, d=0, e=32766\n  round_05/b15  [BATCH_SAFE]  a=16385, b=16383, c=2, d=0, e=32766\n  round_06/b0  [BATCH_SAFE]  a=1, b=32767, c=0, d=0, e=32766\n  round_06/b1  [BATCH_SAFE]  a=28, b=1026, c=32761, d=32731, e=0\n  round_06/b2  [BATCH_SAFE]  a=36, b=32677, c=18, d=1, e=32736\n  round_06/b3  [BATCH_SAFE]  a=-32766, b=-32768, c=-32761, d=-32765, e=-32766\n  round_06/b4  [BATCH_SAFE]  a=-2, b=-32768, c=0, d=-1, e=-292\n  round_06/b5  [BATCH_SAFE]  a=3, b=-4, c=2, d=0, e=2\n  round_06/b6  [BATCH_SAFE]  a=-32729, b=-32731, c=-32732, d=-32741, e=-32732\n  round_07/b0  [BATCH_SAFE]  a=3, b=-1, c=-32766, d=-32768, e=0\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 272\n  frontier_discovery_time_ms: 4385\n  compile_time_ms: 40936\n  java_exec_time_ms: 7281\n  path_log_parse_time_ms: 15\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 12885\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 12906\n\nTest cases written to: csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/TailRotateSortFive_cct.dot\n  Stats: csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/cct_stats.json\n  Counts: nodes=1049, leaves=525, covered=70, infeasible=455, out_of_range=0, expanded=442, truncated=0\n  Render script: csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/render_cct.sh\n  (render later with: csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:TailRotateSortFive:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/TailRotateSortFive_M5.java",
+        "--output",
+        "csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/FSF/TailRotateSortFive_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/TailRotateSortFive_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       TailRotateSortFive\n  CSC result:  csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/FSF/TailRotateSortFive_FSF.txt\n  Report:      csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/refined_tbfv_report.json\n  Summary:     testcases=70, fsf_units=1, passed=54, failed=16, skipped=0, unsupported=0\n  CCT marked:  16\n  TBFV stats:  csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/cct_tbfv_stats.json\n  Counts:      nodes=1049, leaves=525, fault_leaves=16, failure_cases=16\n  Fault DOT:    csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/TailRotateSortFive_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=148, intervals=163, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TailRotateSortFive:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive",
+        "--output",
+        "csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive\n  CCT:         csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/TailRotateSortFive_cct.pkl\n  Report:      csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=70, failed=16, condition_nodes=148, condition_intervals=163\n  Top conditions:\n    #1 score=1.0986 fail=2/2 line=10 c > d\n    #2 score=1.0986 fail=2/2 line=10 c > d\n    #3 score=1.0986 fail=2/2 line=10 c > d\n  Top intervals:\n    #1 score=0.9542 fail=2/2 line=[4, 20] root.T.F.F.T.F.T.T.T.T.TRUE\n    #2 score=0.9542 fail=2/2 line=[4, 20] root.T.F.T.T.F.T.T.T.T.TRUE\n    #3 score=0.9542 fail=2/2 line=[4, 20] root.T.T.F.T.F.T.T.T.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TailRotateSortFive:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "TailRotateSortFive/TailRotateSortFive_M5.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/cct_failure_localization_aggregated.json\n  Source file: TailRotateSortFive/TailRotateSortFive_M5.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  148 raw -> 5 aggregated\n  Intervals[cct_only]: 163 raw -> 9 aggregated\n  Intervals[statement_presence]: 163 raw -> 9 aggregated\n  Intervals[edge_divergence_gated]: 163 raw -> 9 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TailRotateSortFive:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "TailRotateSortFive_M5",
+        "--report",
+        "csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_TailRotateSortFive_M5/TailRotateSortFive/fault_localization_eval.json\n  Mutant:    TailRotateSortFive_M5\n  Operator:  SUR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=9, top1=miss, top3=miss, top5=miss, top10=hit\n  raw.interval.statement_presence: best_rank=37, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=13, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_gated: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:TailRotateSortFive:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/TailRotateSortFive_M6.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_TailRotateSortFive_M6",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/testcases.json"
+      ],
+      "stdout_tail": "2766\n  round_04/b18  [BATCH_SAFE]  a=-3, b=-32641, c=-1, d=0, e=-4\n  round_04/b19  [BATCH_SAFE]  a=3, b=1, c=0, d=32767, e=32767\n  round_04/b20  [BATCH_SAFE]  a=7, b=-7, c=-8, d=6, e=32766\n  round_04/b21  [BATCH_SAFE]  a=5, b=3, c=-1, d=2, e=4\n  round_04/b22  [BATCH_SAFE]  a=0, b=-2, c=-2, d=1, e=0\n  round_04/b23  [BATCH_SAFE]  a=3, b=1, c=0, d=32767, e=32764\n  round_04/b24  [BATCH_SAFE]  a=-16383, b=-16385, c=-32768, d=-1, e=-16384\n  round_04/b25  [BATCH_SAFE]  a=-1, b=-3, c=-32765, d=0, e=-4\n  round_04/b26  [BATCH_SAFE]  a=-32767, b=-32768, c=1, d=0, e=0\n  round_04/b27  [BATCH_SAFE]  a=0, b=-2, c=0, d=-2, e=32766\n  round_04/b28  [BATCH_SAFE]  a=2051, b=2, c=20483, d=2048, e=16386\n  round_04/b29  [BATCH_SAFE]  a=7, b=-1, c=4, d=2, e=2\n  round_04/b30  [BATCH_SAFE]  a=513, b=0, c=513, d=511, e=0\n  round_04/b31  [BATCH_SAFE]  a=-17, b=-21, c=1, d=-22, e=0\n  round_05/b0  [BATCH_SAFE]  a=-32136, b=-577, c=-2662, d=-892, e=-856\n  round_05/b1  [BATCH_SAFE]  a=511, b=512, c=510, d=32766, e=32766\n  round_05/b2  [BATCH_SAFE]  a=-31987, b=-869, c=-32768, d=-1006, e=-256\n  round_05/b3  [BATCH_SAFE]  a=1, b=1, c=-1, d=0, e=0\n  round_05/b4  [BATCH_SAFE]  a=-4097, b=8191, c=-8192, d=4096, e=4094\n  round_05/b5  [BATCH_SAFE]  a=0, b=1, c=3, d=1, e=0\n  round_05/b6  [BATCH_SAFE]  a=1, b=1, c=32767, d=0, e=32767\n  round_05/b7  [BATCH_SAFE]  a=-22781, b=-11425, c=-11502, d=-32768, e=4368\n  round_05/b8  [BATCH_SAFE]  a=-16385, b=-1, c=-24576, d=-24578, e=-8194\n  round_05/b9  [BATCH_SAFE]  a=-28673, b=-28671, c=-1, d=-28674, e=-28672\n  round_05/b10  [BATCH_SAFE]  a=1, b=-1, c=-2, d=0, e=0\n  round_05/b11  [BATCH_SAFE]  a=1, b=0, c=0, d=32767, e=0\n  round_05/b12  [BATCH_SAFE]  a=3, b=-4, c=-5, d=2, e=0\n  round_05/b13  [BATCH_SAFE]  a=-32767, b=-32768, c=-32512, d=-32513, e=-2\n  round_05/b14  [BATCH_SAFE]  a=7, b=0, c=9, d=7, e=0\n  round_05/b15  [BATCH_SAFE]  a=3, b=0, c=2, d=0, e=32766\n  round_05/b16  [BATCH_SAFE]  a=16385, b=16383, c=1, d=0, e=32767\n  round_05/b17  [BATCH_SAFE]  a=1, b=-1, c=0, d=-1, e=-2\n  round_05/b18  [BATCH_SAFE]  a=3, b=1, c=1, d=0, e=0\n  round_06/b0  [BATCH_SAFE]  a=1, b=32767, c=0, d=32766, e=32766\n  round_06/b1  [BATCH_SAFE]  a=-24577, b=-20479, c=-28672, d=-28674, e=-1\n  round_06/b2  [BATCH_SAFE]  a=3, b=-1, c=-1, d=2, e=0\n  round_06/b3  [BATCH_SAFE]  a=5, b=-1, c=3, d=32767, e=0\n  round_06/b4  [BATCH_SAFE]  a=-32766, b=-32768, c=-32761, d=-32765, e=-32766\n  round_06/b5  [BATCH_SAFE]  a=1, b=-1, c=0, d=-1, e=0\n  round_06/b6  [BATCH_SAFE]  a=3, b=1, c=32767, d=0, e=32767\n  round_06/b7  [BATCH_SAFE]  a=3, b=-2, c=2, d=-4, e=32766\n  round_06/b8  [BATCH_SAFE]  a=1, b=-65, c=-66, d=-70, e=0\n  round_06/b9  [BATCH_SAFE]  a=-16351, b=-32737, c=-16297, d=-32738, e=-16384\n  round_06/b10  [BATCH_SAFE]  a=3, b=1, c=3, d=-1, e=0\n  round_07/b0  [BATCH_SAFE]  a=1, b=-1, c=-1, d=0, e=-2\n  round_07/b1  [BATCH_SAFE]  a=1, b=-3, c=-1, d=-5, e=0\n  round_07/b2  [BATCH_SAFE]  a=3, b=0, c=2, d=-1, e=0\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 360\n  frontier_discovery_time_ms: 2034\n  compile_time_ms: 52986\n  java_exec_time_ms: 10233\n  path_log_parse_time_ms: 6\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 16714\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 16734\n\nTest cases written to: csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/TailRotateSortFive_cct.dot\n  Stats: csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/cct_stats.json\n  Counts: nodes=529, leaves=265, covered=88, infeasible=177, out_of_range=0, expanded=176, truncated=0\n  Render script: csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/render_cct.sh\n  (render later with: csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:TailRotateSortFive:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/TailRotateSortFive_M6.java",
+        "--output",
+        "csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/FSF/TailRotateSortFive_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/TailRotateSortFive_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       TailRotateSortFive\n  CSC result:  csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TailRotateSortFive/FSF/TailRotateSortFive_FSF.txt\n  Report:      csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/refined_tbfv_report.json\n  Summary:     testcases=88, fsf_units=1, passed=64, failed=24, skipped=0, unsupported=0\n  CCT marked:  24\n  TBFV stats:  csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/cct_tbfv_stats.json\n  Counts:      nodes=529, leaves=265, fault_leaves=24, failure_cases=24\n  Fault DOT:    csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/TailRotateSortFive_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=112, intervals=135, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TailRotateSortFive:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive",
+        "--output",
+        "csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive\n  CCT:         csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/TailRotateSortFive_cct.pkl\n  Report:      csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=88, failed=24, condition_nodes=112, condition_intervals=135\n  Top conditions:\n    #1 score=1.0986 fail=2/2 line=20 d > e\n    #2 score=1.0986 fail=2/2 line=20 d > e\n    #3 score=1.0986 fail=2/2 line=20 d > e\n  Top intervals:\n    #1 score=0.9542 fail=2/2 line=[15, 20] root.T.F.F.T.T.T.F.T.TRUE\n    #2 score=0.9542 fail=2/2 line=[15, 20] root.T.F.F.T.T.T.T.T.TRUE\n    #3 score=0.9542 fail=2/2 line=[15, 20] root.T.F.T.T.T.T.F.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TailRotateSortFive:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "TailRotateSortFive/TailRotateSortFive_M6.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/cct_failure_localization_aggregated.json\n  Source file: TailRotateSortFive/TailRotateSortFive_M6.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  112 raw -> 5 aggregated\n  Intervals[cct_only]: 135 raw -> 10 aggregated\n  Intervals[statement_presence]: 135 raw -> 10 aggregated\n  Intervals[edge_divergence_gated]: 135 raw -> 10 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TailRotateSortFive:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "TailRotateSortFive_M6",
+        "--report",
+        "csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_TailRotateSortFive_M6/TailRotateSortFive/fault_localization_eval.json\n  Mutant:    TailRotateSortFive_M6\n  Operator:  SUR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=33, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=9, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.statement_presence: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_gated: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    }
+  ]
+}

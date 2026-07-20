@@ -1,0 +1,27 @@
+[fsf_1]
+T: hours <= 0
+D: return_value == -1
+
+[fsf_2]
+T: hours > 24
+D: return_value == -1
+
+[fsf_3]
+T: hours > 0 && hours <= 24 && entryHour < 0
+D: return_value == -1
+
+[fsf_4]
+T: hours > 0 && hours <= 24 && entryHour > 23
+D: return_value == -1
+
+[fsf_5]
+T: hours >= 1 && hours <= 6 && entryHour >= 0 && entryHour < 18 && weekend == false
+D: return_value == 4 + 2 * (hours - 1)
+
+[fsf_6]
+T: hours == 1 && entryHour == 23 && weekend == false
+D: return_value == 4
+
+[fsf_7]
+T: hours == 8 && entryHour == 19 && weekend == true
+D: return_value == 30

@@ -1,0 +1,9 @@
+[fsf_1]
+    T: x < -30 || x > 30 || y < -30 || y > 30
+    D: return_value == -1
+[fsf_2]
+    T: y > 0 && y <= 100 && x >= -30 && x <= 30
+    D: return_value == x + y
+[fsf_3]
+    T: y <= 0 && y >= -100 && x >= -30 && x <= 30
+    D: return_value == x + y

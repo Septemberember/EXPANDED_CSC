@@ -1,0 +1,754 @@
+{
+  "subject": "BoundedPopcountDensity",
+  "subject_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity",
+  "fsf": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/FSF/BoundedPopcountDensity_FSF.txt",
+  "manifest": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+  "mode": "expanded",
+  "strategy": "batch",
+  "max_iter": 50,
+  "dry_run": false,
+  "original": {
+    "role": "original",
+    "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/BoundedPopcountDensity.java",
+    "class_name": "BoundedPopcountDensity",
+    "mutant_id": null
+  },
+  "mutants": [
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/BoundedPopcountDensity_M1.java",
+      "class_name": "BoundedPopcountDensity",
+      "mutant_id": "BoundedPopcountDensity_M1"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/BoundedPopcountDensity_M2.java",
+      "class_name": "BoundedPopcountDensity",
+      "mutant_id": "BoundedPopcountDensity_M2"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/BoundedPopcountDensity_M3.java",
+      "class_name": "BoundedPopcountDensity",
+      "mutant_id": "BoundedPopcountDensity_M3"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/BoundedPopcountDensity_M4.java",
+      "class_name": "BoundedPopcountDensity",
+      "mutant_id": "BoundedPopcountDensity_M4"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/BoundedPopcountDensity_M5.java",
+      "class_name": "BoundedPopcountDensity",
+      "mutant_id": "BoundedPopcountDensity_M5"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/BoundedPopcountDensity_M6.java",
+      "class_name": "BoundedPopcountDensity",
+      "mutant_id": "BoundedPopcountDensity_M6"
+    }
+  ],
+  "step_count": 30,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "mutant:BoundedPopcountDensity:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/BoundedPopcountDensity_M1.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/testcases.json"
+      ],
+      "stdout_tail": "nd_07/b11  [BATCH_SAFE]  number=113\n  round_07/b12  [BATCH_SAFE]  number=41\n  round_07/b13  [BATCH_SAFE]  number=25\n  round_07/b14  [BATCH_SAFE]  number=37\n  round_07/b15  [BATCH_SAFE]  number=21\n  round_07/b16  [BATCH_SAFE]  number=13\n  round_07/b17  [BATCH_SAFE]  number=35\n  round_07/b18  [BATCH_SAFE]  number=19\n  round_07/b19  [BATCH_SAFE]  number=11\n  round_07/b20  [BATCH_SAFE]  number=7\n  round_08/b0  [BATCH_SAFE]  number=120\n  round_08/b1  [BATCH_SAFE]  number=116\n  round_08/b2  [BATCH_SAFE]  number=108\n  round_08/b3  [BATCH_SAFE]  number=60\n  round_08/b4  [BATCH_SAFE]  number=114\n  round_08/b5  [BATCH_SAFE]  number=106\n  round_08/b6  [BATCH_SAFE]  number=90\n  round_08/b7  [BATCH_SAFE]  number=102\n  round_08/b8  [BATCH_SAFE]  number=86\n  round_08/b9  [BATCH_SAFE]  number=78\n  round_08/b10  [BATCH_SAFE]  number=105\n  round_08/b11  [BATCH_SAFE]  number=57\n  round_08/b12  [BATCH_SAFE]  number=101\n  round_08/b13  [BATCH_SAFE]  number=85\n  round_08/b14  [BATCH_SAFE]  number=77\n  round_08/b15  [BATCH_SAFE]  number=99\n  round_08/b16  [BATCH_SAFE]  number=83\n  round_08/b17  [BATCH_SAFE]  number=75\n  round_08/b18  [BATCH_SAFE]  number=63\n  round_09/b0  [BATCH_SAFE]  number=92\n  round_09/b1  [BATCH_SAFE]  number=124\n  round_09/b2  [BATCH_SAFE]  number=58\n  round_09/b3  [BATCH_SAFE]  number=54\n  round_09/b4  [BATCH_SAFE]  number=46\n  round_09/b5  [BATCH_SAFE]  number=30\n  round_09/b6  [BATCH_SAFE]  number=89\n  round_09/b7  [BATCH_SAFE]  number=121\n  round_09/b8  [BATCH_SAFE]  number=53\n  round_09/b9  [BATCH_SAFE]  number=45\n  round_09/b10  [BATCH_SAFE]  number=29\n  round_09/b11  [BATCH_SAFE]  number=51\n  round_09/b12  [BATCH_SAFE]  number=43\n  round_09/b13  [BATCH_SAFE]  number=27\n  round_09/b14  [BATCH_SAFE]  number=71\n  round_09/b15  [BATCH_SAFE]  number=15\n  round_09/b16  [BATCH_SAFE]  number=47\n  round_09/b17  [BATCH_SAFE]  number=31\n  round_09/b18  [BATCH_SAFE]  number=95\n  round_10/b0  [BATCH_SAFE]  number=122\n  round_10/b1  [BATCH_SAFE]  number=118\n  round_10/b2  [BATCH_SAFE]  number=110\n  round_10/b3  [BATCH_SAFE]  number=62\n  round_10/b4  [BATCH_SAFE]  number=117\n  round_10/b5  [BATCH_SAFE]  number=109\n  round_10/b6  [BATCH_SAFE]  number=61\n  round_10/b7  [BATCH_SAFE]  number=115\n  round_10/b8  [BATCH_SAFE]  number=107\n  round_10/b9  [BATCH_SAFE]  number=59\n  round_10/b10  [BATCH_SAFE]  number=39\n  round_10/b11  [BATCH_SAFE]  number=23\n  round_10/b12  [BATCH_SAFE]  number=79\n  round_10/b13  [BATCH_SAFE]  number=111\n  round_11/b0  [BATCH_SAFE]  number=94\n  round_11/b1  [BATCH_SAFE]  number=126\n  round_11/b2  [BATCH_SAFE]  number=93\n  round_11/b3  [BATCH_SAFE]  number=125\n  round_11/b4  [BATCH_SAFE]  number=91\n  round_11/b5  [BATCH_SAFE]  number=123\n  round_11/b6  [BATCH_SAFE]  number=103\n  round_11/b7  [BATCH_SAFE]  number=87\n  round_12/b0  [BATCH_SAFE]  number=55\n  round_13/b0  [BATCH_SAFE]  number=119\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 263\n  frontier_discovery_time_ms: 3819\n  compile_time_ms: 49475\n  java_exec_time_ms: 8576\n  path_log_parse_time_ms: 3\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 16193\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 16219\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/BoundedPopcountDensity_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/cct_stats.json\n  Counts: nodes=1087, leaves=544, covered=129, infeasible=415, out_of_range=0, expanded=658, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPopcountDensity:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/BoundedPopcountDensity_M1.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/FSF/BoundedPopcountDensity_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/BoundedPopcountDensity_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedPopcountDensity\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/FSF/BoundedPopcountDensity_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/refined_tbfv_report.json\n  Summary:     testcases=129, fsf_units=4, passed=129, failed=1, skipped=386, unsupported=0\n  CCT marked:  1\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/cct_tbfv_stats.json\n  Counts:      nodes=1087, leaves=544, fault_leaves=1, failure_cases=1\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/BoundedPopcountDensity_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=2, intervals=2, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPopcountDensity:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/BoundedPopcountDensity_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=129, failed=1, condition_nodes=2, condition_intervals=2\n  Top conditions:\n    #1 score=0.0054 fail=1/128 line=3 number >= 127\n    #2 score=0.0054 fail=1/129 line=3 number < 0\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[3, None] root.F.TRUE\n    #2 score=0.0000 fail=1/128 line=[3, 3] root.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPopcountDensity:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedPopcountDensity/BoundedPopcountDensity_M1.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/cct_failure_localization_aggregated.json\n  Source file: BoundedPopcountDensity/BoundedPopcountDensity_M1.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  2 raw -> 2 aggregated\n  Intervals[cct_only]: 2 raw -> 2 aggregated\n  Intervals[statement_presence]: 2 raw -> 2 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 2 raw -> 2 aggregated\n  Intervals[edge_divergence_sibling_shared]: 2 raw -> 2 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPopcountDensity:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedPopcountDensity_M1",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M1/BoundedPopcountDensity/fault_localization_eval.json\n  Mutant:    BoundedPopcountDensity_M1\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPopcountDensity:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/BoundedPopcountDensity_M2.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/testcases.json"
+      ],
+      "stdout_tail": "round_07/b12  [BATCH_SAFE]  number=22\n  round_07/b13  [BATCH_SAFE]  number=38\n  round_07/b14  [BATCH_SAFE]  number=26\n  round_07/b15  [BATCH_SAFE]  number=42\n  round_07/b16  [BATCH_SAFE]  number=114\n  round_07/b17  [BATCH_SAFE]  number=82\n  round_07/b18  [BATCH_SAFE]  number=28\n  round_07/b19  [BATCH_SAFE]  number=44\n  round_07/b20  [BATCH_SAFE]  number=116\n  round_07/b21  [BATCH_SAFE]  number=84\n  round_07/b22  [BATCH_SAFE]  number=120\n  round_07/b23  [BATCH_SAFE]  number=88\n  round_08/b0  [BATCH_SAFE]  number=71\n  round_08/b1  [BATCH_SAFE]  number=75\n  round_08/b2  [BATCH_SAFE]  number=83\n  round_08/b3  [BATCH_SAFE]  number=99\n  round_08/b4  [BATCH_SAFE]  number=77\n  round_08/b5  [BATCH_SAFE]  number=53\n  round_08/b6  [BATCH_SAFE]  number=101\n  round_08/b7  [BATCH_SAFE]  number=89\n  round_08/b8  [BATCH_SAFE]  number=105\n  round_08/b9  [BATCH_SAFE]  number=78\n  round_08/b10  [BATCH_SAFE]  number=54\n  round_08/b11  [BATCH_SAFE]  number=102\n  round_08/b12  [BATCH_SAFE]  number=90\n  round_08/b13  [BATCH_SAFE]  number=106\n  round_08/b14  [BATCH_SAFE]  number=92\n  round_08/b15  [BATCH_SAFE]  number=108\n  round_09/b0  [BATCH_SAFE]  number=15\n  round_09/b1  [BATCH_SAFE]  number=23\n  round_09/b2  [BATCH_SAFE]  number=39\n  round_09/b3  [BATCH_SAFE]  number=27\n  round_09/b4  [BATCH_SAFE]  number=43\n  round_09/b5  [BATCH_SAFE]  number=51\n  round_09/b6  [BATCH_SAFE]  number=29\n  round_09/b7  [BATCH_SAFE]  number=45\n  round_09/b8  [BATCH_SAFE]  number=117\n  round_09/b9  [BATCH_SAFE]  number=85\n  round_09/b10  [BATCH_SAFE]  number=57\n  round_09/b11  [BATCH_SAFE]  number=30\n  round_09/b12  [BATCH_SAFE]  number=46\n  round_09/b13  [BATCH_SAFE]  number=118\n  round_09/b14  [BATCH_SAFE]  number=86\n  round_09/b15  [BATCH_SAFE]  number=58\n  round_09/b16  [BATCH_SAFE]  number=60\n  round_10/b0  [BATCH_SAFE]  number=79\n  round_10/b1  [BATCH_SAFE]  number=87\n  round_10/b2  [BATCH_SAFE]  number=103\n  round_10/b3  [BATCH_SAFE]  number=91\n  round_10/b4  [BATCH_SAFE]  number=107\n  round_10/b5  [BATCH_SAFE]  number=115\n  round_10/b6  [BATCH_SAFE]  number=61\n  round_10/b7  [BATCH_SAFE]  number=109\n  round_10/b8  [BATCH_SAFE]  number=121\n  round_10/b9  [BATCH_SAFE]  number=62\n  round_10/b10  [BATCH_SAFE]  number=110\n  round_10/b11  [BATCH_SAFE]  number=122\n  round_10/b12  [BATCH_SAFE]  number=124\n  round_11/b0  [BATCH_SAFE]  number=31\n  round_11/b1  [BATCH_SAFE]  number=47\n  round_11/b2  [BATCH_SAFE]  number=55\n  round_11/b3  [BATCH_SAFE]  number=59\n  round_11/b4  [BATCH_SAFE]  number=125\n  round_11/b5  [BATCH_SAFE]  number=93\n  round_11/b6  [BATCH_SAFE]  number=126\n  round_11/b7  [BATCH_SAFE]  number=94\n  round_12/b0  [BATCH_SAFE]  number=95\n  round_12/b1  [BATCH_SAFE]  number=111\n  round_12/b2  [BATCH_SAFE]  number=119\n  round_12/b3  [BATCH_SAFE]  number=123\n  round_13/b0  [BATCH_SAFE]  number=63\n  round_14/b0  [BATCH_SAFE]  number=127\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 269\n  frontier_discovery_time_ms: 3736\n  compile_time_ms: 50555\n  java_exec_time_ms: 8969\n  path_log_parse_time_ms: 2\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 16489\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 16516\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/BoundedPopcountDensity_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/cct_stats.json\n  Counts: nodes=1025, leaves=513, covered=130, infeasible=383, out_of_range=0, expanded=628, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPopcountDensity:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/BoundedPopcountDensity_M2.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/FSF/BoundedPopcountDensity_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/BoundedPopcountDensity_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedPopcountDensity\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/FSF/BoundedPopcountDensity_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/refined_tbfv_report.json\n  Summary:     testcases=130, fsf_units=4, passed=57, failed=73, skipped=390, unsupported=0\n  CCT marked:  73\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/cct_tbfv_stats.json\n  Counts:      nodes=1025, leaves=513, fault_leaves=73, failure_cases=73\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/BoundedPopcountDensity_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=296, intervals=368, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPopcountDensity:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/BoundedPopcountDensity_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=130, failed=73, condition_nodes=296, condition_intervals=368\n  Top conditions:\n    #1 score=2.6275 fail=25/31 line=9 temp % 2 != 1\n    #2 score=2.5993 fail=15/16 line=8 temp > 0\n    #3 score=2.5454 fail=25/32 line=8 temp > 0\n  Top intervals:\n    #1 score=1.6740 fail=73/128 line=[3, 8] root.F.FALSE\n    #2 score=1.4346 fail=15/16 line=[8, 9] root.F.F.T.F.T.F.T.FALSE\n    #3 score=1.3985 fail=25/32 line=[8, 9] root.F.F.T.F.T.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPopcountDensity:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedPopcountDensity/BoundedPopcountDensity_M2.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/cct_failure_localization_aggregated.json\n  Source file: BoundedPopcountDensity/BoundedPopcountDensity_M2.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  296 raw -> 6 aggregated\n  Intervals[cct_only]: 368 raw -> 10 aggregated\n  Intervals[statement_presence]: 368 raw -> 10 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 368 raw -> 10 aggregated\n  Intervals[edge_divergence_sibling_shared]: 368 raw -> 10 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPopcountDensity:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedPopcountDensity_M2",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M2/BoundedPopcountDensity/fault_localization_eval.json\n  Mutant:    BoundedPopcountDensity_M2\n  Operator:  ROR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPopcountDensity:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/BoundedPopcountDensity_M3.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/testcases.json"
+      ],
+      "stdout_tail": " round_07/b12  [BATCH_SAFE]  number=113\n  round_07/b13  [BATCH_SAFE]  number=41\n  round_07/b14  [BATCH_SAFE]  number=25\n  round_07/b15  [BATCH_SAFE]  number=37\n  round_07/b16  [BATCH_SAFE]  number=21\n  round_07/b17  [BATCH_SAFE]  number=13\n  round_07/b18  [BATCH_SAFE]  number=35\n  round_07/b19  [BATCH_SAFE]  number=19\n  round_07/b20  [BATCH_SAFE]  number=11\n  round_07/b21  [BATCH_SAFE]  number=7\n  round_08/b0  [BATCH_SAFE]  number=116\n  round_08/b1  [BATCH_SAFE]  number=108\n  round_08/b2  [BATCH_SAFE]  number=60\n  round_08/b3  [BATCH_SAFE]  number=114\n  round_08/b4  [BATCH_SAFE]  number=106\n  round_08/b5  [BATCH_SAFE]  number=90\n  round_08/b6  [BATCH_SAFE]  number=102\n  round_08/b7  [BATCH_SAFE]  number=54\n  round_08/b8  [BATCH_SAFE]  number=78\n  round_08/b9  [BATCH_SAFE]  number=105\n  round_08/b10  [BATCH_SAFE]  number=57\n  round_08/b11  [BATCH_SAFE]  number=101\n  round_08/b12  [BATCH_SAFE]  number=53\n  round_08/b13  [BATCH_SAFE]  number=77\n  round_08/b14  [BATCH_SAFE]  number=99\n  round_08/b15  [BATCH_SAFE]  number=83\n  round_08/b16  [BATCH_SAFE]  number=75\n  round_08/b17  [BATCH_SAFE]  number=71\n  round_09/b0  [BATCH_SAFE]  number=92\n  round_09/b1  [BATCH_SAFE]  number=124\n  round_09/b2  [BATCH_SAFE]  number=58\n  round_09/b3  [BATCH_SAFE]  number=86\n  round_09/b4  [BATCH_SAFE]  number=118\n  round_09/b5  [BATCH_SAFE]  number=46\n  round_09/b6  [BATCH_SAFE]  number=30\n  round_09/b7  [BATCH_SAFE]  number=89\n  round_09/b8  [BATCH_SAFE]  number=121\n  round_09/b9  [BATCH_SAFE]  number=85\n  round_09/b10  [BATCH_SAFE]  number=117\n  round_09/b11  [BATCH_SAFE]  number=45\n  round_09/b12  [BATCH_SAFE]  number=29\n  round_09/b13  [BATCH_SAFE]  number=51\n  round_09/b14  [BATCH_SAFE]  number=43\n  round_09/b15  [BATCH_SAFE]  number=27\n  round_09/b16  [BATCH_SAFE]  number=39\n  round_09/b17  [BATCH_SAFE]  number=23\n  round_09/b18  [BATCH_SAFE]  number=15\n  round_10/b0  [BATCH_SAFE]  number=122\n  round_10/b1  [BATCH_SAFE]  number=110\n  round_10/b2  [BATCH_SAFE]  number=94\n  round_10/b3  [BATCH_SAFE]  number=109\n  round_10/b4  [BATCH_SAFE]  number=93\n  round_10/b5  [BATCH_SAFE]  number=115\n  round_10/b6  [BATCH_SAFE]  number=107\n  round_10/b7  [BATCH_SAFE]  number=91\n  round_10/b8  [BATCH_SAFE]  number=103\n  round_10/b9  [BATCH_SAFE]  number=55\n  round_10/b10  [BATCH_SAFE]  number=79\n  round_11/b0  [BATCH_SAFE]  number=62\n  round_11/b1  [BATCH_SAFE]  number=61\n  round_11/b2  [BATCH_SAFE]  number=59\n  round_11/b3  [BATCH_SAFE]  number=87\n  round_11/b4  [BATCH_SAFE]  number=119\n  round_11/b5  [BATCH_SAFE]  number=47\n  round_11/b6  [BATCH_SAFE]  number=31\n  round_12/b0  [BATCH_SAFE]  number=126\n  round_12/b1  [BATCH_SAFE]  number=125\n  round_12/b2  [BATCH_SAFE]  number=123\n  round_12/b3  [BATCH_SAFE]  number=111\n  round_12/b4  [BATCH_SAFE]  number=63\n  round_13/b0  [BATCH_SAFE]  number=95\n  round_13/b1  [BATCH_SAFE]  number=127\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 242\n  frontier_discovery_time_ms: 3724\n  compile_time_ms: 49871\n  java_exec_time_ms: 8271\n  path_log_parse_time_ms: 3\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 16165\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 16186\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/BoundedPopcountDensity_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/cct_stats.json\n  Counts: nodes=1095, leaves=548, covered=130, infeasible=418, out_of_range=0, expanded=663, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPopcountDensity:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/BoundedPopcountDensity_M3.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/FSF/BoundedPopcountDensity_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/BoundedPopcountDensity_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedPopcountDensity\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/FSF/BoundedPopcountDensity_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/refined_tbfv_report.json\n  Summary:     testcases=130, fsf_units=4, passed=95, failed=35, skipped=390, unsupported=0\n  CCT marked:  35\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/cct_tbfv_stats.json\n  Counts:      nodes=1095, leaves=548, fault_leaves=35, failure_cases=35\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/BoundedPopcountDensity_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=245, intervals=279, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPopcountDensity:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/BoundedPopcountDensity_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=130, failed=35, condition_nodes=245, condition_intervals=279\n  Top conditions:\n    #1 score=0.9876 fail=35/127 line=9 temp % 2 == 1\n    #2 score=0.9799 fail=35/128 line=8 temp > 0\n    #3 score=0.9723 fail=35/129 line=3 number > 127\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[17, None] root.F.F.T.F.T.F.T.F.T.T.T.T.T.T.T.T.F.F.FALSE\n    #2 score=0.6021 fail=1/1 line=[17, None] root.F.F.T.F.T.F.T.T.T.F.T.T.T.T.T.T.F.F.FALSE\n    #3 score=0.6021 fail=1/1 line=[17, None] root.F.F.T.F.T.F.T.T.T.T.T.F.T.T.T.T.F.F.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPopcountDensity:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedPopcountDensity/BoundedPopcountDensity_M3.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/cct_failure_localization_aggregated.json\n  Source file: BoundedPopcountDensity/BoundedPopcountDensity_M3.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  245 raw -> 6 aggregated\n  Intervals[cct_only]: 279 raw -> 8 aggregated\n  Intervals[statement_presence]: 279 raw -> 8 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 279 raw -> 8 aggregated\n  Intervals[edge_divergence_sibling_shared]: 279 raw -> 8 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPopcountDensity:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedPopcountDensity_M3",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M3/BoundedPopcountDensity/fault_localization_eval.json\n  Mutant:    BoundedPopcountDensity_M3\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=33, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=5, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=5, top1=miss, top3=miss, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPopcountDensity:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/BoundedPopcountDensity_M4.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/testcases.json"
+      ],
+      "stdout_tail": " round_07/b12  [BATCH_SAFE]  number=41\n  round_07/b13  [BATCH_SAFE]  number=25\n  round_07/b14  [BATCH_SAFE]  number=37\n  round_07/b15  [BATCH_SAFE]  number=21\n  round_07/b16  [BATCH_SAFE]  number=13\n  round_07/b17  [BATCH_SAFE]  number=35\n  round_07/b18  [BATCH_SAFE]  number=19\n  round_07/b19  [BATCH_SAFE]  number=11\n  round_07/b20  [BATCH_SAFE]  number=7\n  round_08/b0  [BATCH_SAFE]  number=120\n  round_08/b1  [BATCH_SAFE]  number=108\n  round_08/b2  [BATCH_SAFE]  number=92\n  round_08/b3  [BATCH_SAFE]  number=114\n  round_08/b4  [BATCH_SAFE]  number=106\n  round_08/b5  [BATCH_SAFE]  number=90\n  round_08/b6  [BATCH_SAFE]  number=102\n  round_08/b7  [BATCH_SAFE]  number=86\n  round_08/b8  [BATCH_SAFE]  number=78\n  round_08/b9  [BATCH_SAFE]  number=113\n  round_08/b10  [BATCH_SAFE]  number=105\n  round_08/b11  [BATCH_SAFE]  number=57\n  round_08/b12  [BATCH_SAFE]  number=101\n  round_08/b13  [BATCH_SAFE]  number=53\n  round_08/b14  [BATCH_SAFE]  number=77\n  round_08/b15  [BATCH_SAFE]  number=99\n  round_08/b16  [BATCH_SAFE]  number=51\n  round_08/b17  [BATCH_SAFE]  number=75\n  round_08/b18  [BATCH_SAFE]  number=71\n  round_09/b0  [BATCH_SAFE]  number=60\n  round_09/b1  [BATCH_SAFE]  number=58\n  round_09/b2  [BATCH_SAFE]  number=54\n  round_09/b3  [BATCH_SAFE]  number=46\n  round_09/b4  [BATCH_SAFE]  number=30\n  round_09/b5  [BATCH_SAFE]  number=89\n  round_09/b6  [BATCH_SAFE]  number=121\n  round_09/b7  [BATCH_SAFE]  number=85\n  round_09/b8  [BATCH_SAFE]  number=117\n  round_09/b9  [BATCH_SAFE]  number=45\n  round_09/b10  [BATCH_SAFE]  number=29\n  round_09/b11  [BATCH_SAFE]  number=83\n  round_09/b12  [BATCH_SAFE]  number=115\n  round_09/b13  [BATCH_SAFE]  number=43\n  round_09/b14  [BATCH_SAFE]  number=27\n  round_09/b15  [BATCH_SAFE]  number=39\n  round_09/b16  [BATCH_SAFE]  number=23\n  round_09/b17  [BATCH_SAFE]  number=15\n  round_10/b0  [BATCH_SAFE]  number=124\n  round_10/b1  [BATCH_SAFE]  number=122\n  round_10/b2  [BATCH_SAFE]  number=118\n  round_10/b3  [BATCH_SAFE]  number=110\n  round_10/b4  [BATCH_SAFE]  number=62\n  round_10/b5  [BATCH_SAFE]  number=109\n  round_10/b6  [BATCH_SAFE]  number=93\n  round_10/b7  [BATCH_SAFE]  number=107\n  round_10/b8  [BATCH_SAFE]  number=59\n  round_10/b9  [BATCH_SAFE]  number=103\n  round_10/b10  [BATCH_SAFE]  number=55\n  round_10/b11  [BATCH_SAFE]  number=79\n  round_11/b0  [BATCH_SAFE]  number=94\n  round_11/b1  [BATCH_SAFE]  number=126\n  round_11/b2  [BATCH_SAFE]  number=61\n  round_11/b3  [BATCH_SAFE]  number=91\n  round_11/b4  [BATCH_SAFE]  number=123\n  round_11/b5  [BATCH_SAFE]  number=87\n  round_11/b6  [BATCH_SAFE]  number=119\n  round_11/b7  [BATCH_SAFE]  number=47\n  round_11/b8  [BATCH_SAFE]  number=31\n  round_12/b0  [BATCH_SAFE]  number=125\n  round_12/b1  [BATCH_SAFE]  number=111\n  round_12/b2  [BATCH_SAFE]  number=95\n  round_13/b0  [BATCH_SAFE]  number=63\n  round_14/b0  [BATCH_SAFE]  number=127\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 259\n  frontier_discovery_time_ms: 3800\n  compile_time_ms: 50366\n  java_exec_time_ms: 8622\n  path_log_parse_time_ms: 4\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 16658\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 16686\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/BoundedPopcountDensity_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/cct_stats.json\n  Counts: nodes=1137, leaves=569, covered=130, infeasible=439, out_of_range=0, expanded=684, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPopcountDensity:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/BoundedPopcountDensity_M4.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/FSF/BoundedPopcountDensity_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/BoundedPopcountDensity_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedPopcountDensity\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/FSF/BoundedPopcountDensity_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/refined_tbfv_report.json\n  Summary:     testcases=130, fsf_units=4, passed=39, failed=91, skipped=390, unsupported=0\n  CCT marked:  91\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/cct_tbfv_stats.json\n  Counts:      nodes=1137, leaves=569, fault_leaves=91, failure_cases=91\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/BoundedPopcountDensity_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=434, intervals=524, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPopcountDensity:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/BoundedPopcountDensity_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=130, failed=91, condition_nodes=434, condition_intervals=524\n  Top conditions:\n    #1 score=3.2400 fail=91/127 line=9 temp % 2 == 1\n    #2 score=3.2147 fail=91/128 line=8 temp > 0\n    #3 score=3.1898 fail=91/129 line=3 number > 127\n  Top intervals:\n    #1 score=2.3887 fail=91/128 line=[3, 8] root.F.FALSE\n    #2 score=1.5626 fail=50/63 line=[8, 9] root.F.F.T.FALSE\n    #3 score=1.4908 fail=25/31 line=[8, 9] root.F.F.T.T.T.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPopcountDensity:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedPopcountDensity/BoundedPopcountDensity_M4.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/cct_failure_localization_aggregated.json\n  Source file: BoundedPopcountDensity/BoundedPopcountDensity_M4.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  434 raw -> 6 aggregated\n  Intervals[cct_only]: 524 raw -> 9 aggregated\n  Intervals[statement_presence]: 524 raw -> 9 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 524 raw -> 9 aggregated\n  Intervals[edge_divergence_sibling_shared]: 524 raw -> 9 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPopcountDensity:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedPopcountDensity_M4",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M4/BoundedPopcountDensity/fault_localization_eval.json\n  Mutant:    BoundedPopcountDensity_M4\n  Operator:  AOR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=162, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=35, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=7, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.statement_presence: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=5, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPopcountDensity:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/BoundedPopcountDensity_M5.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/testcases.json"
+      ],
+      "stdout_tail": "PANDED]\n  |     |     |     |     |     |     |     |     |     (F) ->\n  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: bits <= 4 @L17 (WP: ((((0) + 1) + 1) + 1) <= 4, Cnt: 1) [EXPANDED]\n  |     |     |     |     |     |     |     |     |     |     (F) ->\n  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_7_b1'} [EXPANDED]  inputs: tc_7_b1(number=21)\n  |     |     |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_8_b0'} [TRUNCATED, EXPANDED]  inputs: tc_8_b0(number=85)\n  |     (T) ->\n  |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(number=16384)\n  (T) ->\n  |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(number=-32768)\n-----------------------------\n\n  [EXPAND] Promoted truncated leaf at 'temp % 2 == 1' (cnt=4) \u2192 T:['tc_8_b0']\n  [EXPAND] Promoted truncated leaf at 'temp > 0' (cnt=5) \u2192 F:['tc_8_b0']\n  [EXPAND] Promoted truncated leaf at 'bits <= 2' (cnt=1) \u2192 F:['tc_8_b0']\n  [EXPAND] Promoted truncated leaf at 'bits <= 4' (cnt=1) \u2192 T:['tc_8_b0']\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/BoundedPopcountDensity_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 25 test cases generated in 9 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/BoundedPopcountDensity_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=64\n  round_02/b1  [BATCH_SAFE]  number=16384\n  round_02/b2  [BATCH_SAFE]  number=-32768\n  round_03/b0  [BATCH_SAFE]  number=2\n  round_03/b1  [BATCH_SAFE]  number=8\n  round_03/b2  [BATCH_SAFE]  number=32\n  round_03/b3  [BATCH_SAFE]  number=16\n  round_03/b4  [BATCH_SAFE]  number=4\n  round_03/b5  [BATCH_SAFE]  number=1\n  round_04/b0  [BATCH_SAFE]  number=80\n  round_04/b1  [BATCH_SAFE]  number=68\n  round_04/b2  [BATCH_SAFE]  number=65\n  round_05/b0  [BATCH_SAFE]  number=36\n  round_05/b1  [BATCH_SAFE]  number=20\n  round_05/b2  [BATCH_SAFE]  number=9\n  round_05/b3  [BATCH_SAFE]  number=33\n  round_05/b4  [BATCH_SAFE]  number=17\n  round_05/b5  [BATCH_SAFE]  number=5\n  round_06/b0  [BATCH_SAFE]  number=84\n  round_06/b1  [BATCH_SAFE]  number=81\n  round_06/b2  [BATCH_SAFE]  number=69\n  round_07/b0  [BATCH_SAFE]  number=37\n  round_07/b1  [BATCH_SAFE]  number=21\n  round_08/b0  [BATCH_SAFE]  number=85\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 24\n  frontier_discovery_time_ms: 273\n  compile_time_ms: 8233\n  java_exec_time_ms: 1408\n  path_log_parse_time_ms: 0\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 3385\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 3390\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/BoundedPopcountDensity_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/cct_stats.json\n  Counts: nodes=137, leaves=69, covered=25, infeasible=44, out_of_range=0, expanded=77, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPopcountDensity:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/BoundedPopcountDensity_M5.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/FSF/BoundedPopcountDensity_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/BoundedPopcountDensity_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedPopcountDensity\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/FSF/BoundedPopcountDensity_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/refined_tbfv_report.json\n  Summary:     testcases=25, fsf_units=4, passed=24, failed=25, skipped=51, unsupported=0\n  CCT marked:  25\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/cct_tbfv_stats.json\n  Counts:      nodes=137, leaves=69, fault_leaves=19, failure_cases=19\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/BoundedPopcountDensity_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=64, intervals=82, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPopcountDensity:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/BoundedPopcountDensity_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=25, failed=19, condition_nodes=64, condition_intervals=82\n  Top conditions:\n    #1 score=2.5872 fail=19/22 line=9 temp % 2 == 1\n    #2 score=2.4747 fail=19/23 line=8 temp > 0\n    #3 score=2.3979 fail=10/10 line=9 temp % 2 == 1\n  Top intervals:\n    #1 score=1.9626 fail=19/23 line=[3, 8] root.F.FALSE\n    #2 score=1.0328 fail=10/11 line=[8, 9] root.F.F.T.TRUE\n    #3 score=0.9338 fail=5/5 line=[8, 9] root.F.F.T.F.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPopcountDensity:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedPopcountDensity/BoundedPopcountDensity_M5.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/cct_failure_localization_aggregated.json\n  Source file: BoundedPopcountDensity/BoundedPopcountDensity_M5.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  64 raw -> 6 aggregated\n  Intervals[cct_only]: 82 raw -> 9 aggregated\n  Intervals[statement_presence]: 82 raw -> 9 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 82 raw -> 9 aggregated\n  Intervals[edge_divergence_sibling_shared]: 82 raw -> 9 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPopcountDensity:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedPopcountDensity_M5",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M5/BoundedPopcountDensity/fault_localization_eval.json\n  Mutant:    BoundedPopcountDensity_M5\n  Operator:  AOR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=27, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=37, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.statement_presence: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=4, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPopcountDensity:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/BoundedPopcountDensity_M6.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/testcases.json"
+      ],
+      "stdout_tail": "  round_07/b12  [BATCH_SAFE]  number=81\n  round_07/b13  [BATCH_SAFE]  number=113\n  round_07/b14  [BATCH_SAFE]  number=41\n  round_07/b15  [BATCH_SAFE]  number=25\n  round_07/b16  [BATCH_SAFE]  number=37\n  round_07/b17  [BATCH_SAFE]  number=21\n  round_07/b18  [BATCH_SAFE]  number=13\n  round_07/b19  [BATCH_SAFE]  number=35\n  round_07/b20  [BATCH_SAFE]  number=19\n  round_07/b21  [BATCH_SAFE]  number=11\n  round_07/b22  [BATCH_SAFE]  number=7\n  round_08/b0  [BATCH_SAFE]  number=120\n  round_08/b1  [BATCH_SAFE]  number=108\n  round_08/b2  [BATCH_SAFE]  number=60\n  round_08/b3  [BATCH_SAFE]  number=106\n  round_08/b4  [BATCH_SAFE]  number=90\n  round_08/b5  [BATCH_SAFE]  number=102\n  round_08/b6  [BATCH_SAFE]  number=54\n  round_08/b7  [BATCH_SAFE]  number=78\n  round_08/b8  [BATCH_SAFE]  number=105\n  round_08/b9  [BATCH_SAFE]  number=57\n  round_08/b10  [BATCH_SAFE]  number=101\n  round_08/b11  [BATCH_SAFE]  number=53\n  round_08/b12  [BATCH_SAFE]  number=77\n  round_08/b13  [BATCH_SAFE]  number=99\n  round_08/b14  [BATCH_SAFE]  number=83\n  round_08/b15  [BATCH_SAFE]  number=75\n  round_08/b16  [BATCH_SAFE]  number=71\n  round_09/b0  [BATCH_SAFE]  number=92\n  round_09/b1  [BATCH_SAFE]  number=124\n  round_09/b2  [BATCH_SAFE]  number=58\n  round_09/b3  [BATCH_SAFE]  number=86\n  round_09/b4  [BATCH_SAFE]  number=118\n  round_09/b5  [BATCH_SAFE]  number=46\n  round_09/b6  [BATCH_SAFE]  number=30\n  round_09/b7  [BATCH_SAFE]  number=89\n  round_09/b8  [BATCH_SAFE]  number=121\n  round_09/b9  [BATCH_SAFE]  number=85\n  round_09/b10  [BATCH_SAFE]  number=117\n  round_09/b11  [BATCH_SAFE]  number=45\n  round_09/b12  [BATCH_SAFE]  number=29\n  round_09/b13  [BATCH_SAFE]  number=51\n  round_09/b14  [BATCH_SAFE]  number=43\n  round_09/b15  [BATCH_SAFE]  number=27\n  round_09/b16  [BATCH_SAFE]  number=39\n  round_09/b17  [BATCH_SAFE]  number=23\n  round_09/b18  [BATCH_SAFE]  number=15\n  round_10/b0  [BATCH_SAFE]  number=122\n  round_10/b1  [BATCH_SAFE]  number=110\n  round_10/b2  [BATCH_SAFE]  number=94\n  round_10/b3  [BATCH_SAFE]  number=109\n  round_10/b4  [BATCH_SAFE]  number=93\n  round_10/b5  [BATCH_SAFE]  number=115\n  round_10/b6  [BATCH_SAFE]  number=107\n  round_10/b7  [BATCH_SAFE]  number=59\n  round_10/b8  [BATCH_SAFE]  number=103\n  round_10/b9  [BATCH_SAFE]  number=55\n  round_10/b10  [BATCH_SAFE]  number=79\n  round_11/b0  [BATCH_SAFE]  number=62\n  round_11/b1  [BATCH_SAFE]  number=61\n  round_11/b2  [BATCH_SAFE]  number=91\n  round_11/b3  [BATCH_SAFE]  number=123\n  round_11/b4  [BATCH_SAFE]  number=87\n  round_11/b5  [BATCH_SAFE]  number=119\n  round_11/b6  [BATCH_SAFE]  number=47\n  round_11/b7  [BATCH_SAFE]  number=31\n  round_12/b0  [BATCH_SAFE]  number=126\n  round_12/b1  [BATCH_SAFE]  number=125\n  round_12/b2  [BATCH_SAFE]  number=111\n  round_12/b3  [BATCH_SAFE]  number=95\n  round_13/b0  [BATCH_SAFE]  number=63\n  round_14/b0  [BATCH_SAFE]  number=127\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 256\n  frontier_discovery_time_ms: 3761\n  compile_time_ms: 51917\n  java_exec_time_ms: 9218\n  path_log_parse_time_ms: 0\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 16951\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 16980\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/BoundedPopcountDensity_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/cct_stats.json\n  Counts: nodes=1095, leaves=548, covered=130, infeasible=418, out_of_range=0, expanded=663, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPopcountDensity:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/BoundedPopcountDensity_M6.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/FSF/BoundedPopcountDensity_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/BoundedPopcountDensity_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedPopcountDensity\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPopcountDensity/FSF/BoundedPopcountDensity_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/refined_tbfv_report.json\n  Summary:     testcases=130, fsf_units=4, passed=101, failed=29, skipped=390, unsupported=0\n  CCT marked:  29\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/cct_tbfv_stats.json\n  Counts:      nodes=1095, leaves=548, fault_leaves=29, failure_cases=29\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/BoundedPopcountDensity_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=208, intervals=236, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPopcountDensity:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/BoundedPopcountDensity_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=130, failed=29, condition_nodes=208, condition_intervals=236\n  Top conditions:\n    #1 score=2.0794 fail=7/7 line=9 temp % 2 == 1\n    #2 score=1.8223 fail=11/15 line=9 temp % 2 == 1\n    #3 score=1.8195 fail=7/8 line=8 temp > 0\n  Top intervals:\n    #1 score=1.0301 fail=7/8 line=[8, 9] root.F.F.T.T.T.T.T.T.T.TRUE\n    #2 score=1.0047 fail=11/16 line=[8, 9] root.F.F.T.T.T.T.T.TRUE\n    #3 score=0.8038 fail=16/32 line=[8, 9] root.F.F.T.T.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPopcountDensity:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedPopcountDensity/BoundedPopcountDensity_M6.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/cct_failure_localization_aggregated.json\n  Source file: BoundedPopcountDensity/BoundedPopcountDensity_M6.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  208 raw -> 6 aggregated\n  Intervals[cct_only]: 236 raw -> 8 aggregated\n  Intervals[statement_presence]: 236 raw -> 8 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 236 raw -> 8 aggregated\n  Intervals[edge_divergence_sibling_shared]: 236 raw -> 8 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPopcountDensity:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedPopcountDensity_M6",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedPopcountDensity_M6/BoundedPopcountDensity/fault_localization_eval.json\n  Mutant:    BoundedPopcountDensity_M6\n  Operator:  CR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=10, top1=miss, top3=miss, top5=miss, top10=hit\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=24, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.statement_presence: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    }
+  ]
+}

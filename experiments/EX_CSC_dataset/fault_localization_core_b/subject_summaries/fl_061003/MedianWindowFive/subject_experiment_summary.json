@@ -1,0 +1,754 @@
+{
+  "subject": "MedianWindowFive",
+  "subject_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive",
+  "fsf": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/FSF/MedianWindowFive_FSF.txt",
+  "manifest": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+  "mode": "expanded",
+  "strategy": "batch",
+  "max_iter": 100,
+  "dry_run": false,
+  "original": {
+    "role": "original",
+    "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/MedianWindowFive.java",
+    "class_name": "MedianWindowFive",
+    "mutant_id": null
+  },
+  "mutants": [
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/MedianWindowFive_M1.java",
+      "class_name": "MedianWindowFive",
+      "mutant_id": "MedianWindowFive_M1"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/MedianWindowFive_M2.java",
+      "class_name": "MedianWindowFive",
+      "mutant_id": "MedianWindowFive_M2"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/MedianWindowFive_M3.java",
+      "class_name": "MedianWindowFive",
+      "mutant_id": "MedianWindowFive_M3"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/MedianWindowFive_M4.java",
+      "class_name": "MedianWindowFive",
+      "mutant_id": "MedianWindowFive_M4"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/MedianWindowFive_M5.java",
+      "class_name": "MedianWindowFive",
+      "mutant_id": "MedianWindowFive_M5"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/MedianWindowFive_M6.java",
+      "class_name": "MedianWindowFive",
+      "mutant_id": "MedianWindowFive_M6"
+    }
+  ],
+  "step_count": 30,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "mutant:MedianWindowFive:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/MedianWindowFive_M1.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_MedianWindowFive_M1",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/testcases.json"
+      ],
+      "stdout_tail": "a=4095, b=4097, c=0, d=2, e=0)\n  |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     (T) ->\n  |     |     |     |     |     |   [LEAF] Infeasible (X)\n-----------------------------\n\nCCT DOT saved to: csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/MedianWindowFive_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 36 test cases generated in 7 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/MedianWindowFive_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  a=-32767, b=-32768, c=-1, d=-2, e=-2\n  round_02/b1  [BATCH_SAFE]  a=-32767, b=-32767, c=-32768, d=-1, e=0\n  round_02/b2  [BATCH_SAFE]  a=17, b=-32750, c=0, d=16, e=24586\n  round_02/b3  [BATCH_SAFE]  a=32766, b=0, c=0, d=16384, e=16382\n  round_02/b4  [BATCH_SAFE]  a=0, b=1, c=0, d=0, e=0\n  round_03/b0  [BATCH_SAFE]  a=32256, b=0, c=32767, d=510, e=32766\n  round_03/b1  [BATCH_SAFE]  a=-9, b=-32767, c=-32768, d=-32766, e=0\n  round_03/b2  [BATCH_SAFE]  a=24577, b=8193, c=0, d=8191, e=8192\n  round_03/b3  [BATCH_SAFE]  a=-1, b=-32768, c=0, d=1, e=0\n  round_03/b4  [BATCH_SAFE]  a=32766, b=0, c=32767, d=32767, e=0\n  round_03/b5  [BATCH_SAFE]  a=0, b=-32375, c=-32768, d=378, e=-2\n  round_03/b6  [BATCH_SAFE]  a=32767, b=5, c=0, d=4, e=2\n  round_03/b7  [BATCH_SAFE]  a=-32768, b=-32759, c=0, d=7, e=32767\n  round_03/b8  [BATCH_SAFE]  a=0, b=2, c=32767, d=0, e=32766\n  round_03/b9  [BATCH_SAFE]  a=-1025, b=0, c=-32768, d=-2, e=2047\n  round_03/b10  [BATCH_SAFE]  a=3, b=5, c=0, d=0, e=2\n  round_03/b11  [BATCH_SAFE]  a=0, b=1, c=0, d=1, e=0\n  round_04/b0  [BATCH_SAFE]  a=-9, b=-32767, c=-2, d=-32768, e=-32768\n  round_04/b1  [BATCH_SAFE]  a=0, b=0, c=32767, d=32767, e=32766\n  round_04/b2  [BATCH_SAFE]  a=0, b=-32765, c=-32768, d=1, e=0\n  round_04/b3  [BATCH_SAFE]  a=32767, b=3, c=32640, d=2, e=0\n  round_04/b4  [BATCH_SAFE]  a=511, b=512, c=32767, d=31742, e=31744\n  round_04/b5  [BATCH_SAFE]  a=-32767, b=-32766, c=-32768, d=-1, e=0\n  round_04/b6  [BATCH_SAFE]  a=1, b=3, c=32766, d=0, e=0\n  round_04/b7  [BATCH_SAFE]  a=-32768, b=-32767, c=0, d=1, e=0\n  round_04/b8  [BATCH_SAFE]  a=0, b=2, c=32767, d=32767, e=0\n  round_04/b9  [BATCH_SAFE]  a=-1, b=1, c=-32768, d=1, e=0\n  round_04/b10  [BATCH_SAFE]  a=4095, b=4097, c=0, d=2, e=0\n  round_05/b0  [BATCH_SAFE]  a=32256, b=511, c=511, d=510, e=510\n  round_05/b1  [BATCH_SAFE]  a=32766, b=3, c=32767, d=2, e=0\n  round_05/b2  [BATCH_SAFE]  a=1, b=32767, c=0, d=0, e=0\n  round_05/b3  [BATCH_SAFE]  a=2, b=3, c=32737, d=32767, e=32736\n  round_05/b4  [BATCH_SAFE]  a=-32511, b=-32510, c=-32768, d=129, e=-1\n  round_05/b5  [BATCH_SAFE]  a=16383, b=16385, c=32766, d=2, e=0\n  round_06/b0  [BATCH_SAFE]  a=3, b=32765, c=2, d=2, e=0\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 149\n  frontier_discovery_time_ms: 413\n  compile_time_ms: 22985\n  java_exec_time_ms: 3879\n  path_log_parse_time_ms: 3\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 7850\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 7857\n\nTest cases written to: csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/MedianWindowFive_cct.dot\n  Stats: csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/cct_stats.json\n  Counts: nodes=175, leaves=88, covered=36, infeasible=52, out_of_range=0, expanded=0, truncated=0\n  Render script: csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/render_cct.sh\n  (render later with: csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:MedianWindowFive:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/MedianWindowFive_M1.java",
+        "--output",
+        "csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/FSF/MedianWindowFive_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/MedianWindowFive_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       MedianWindowFive\n  CSC result:  csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/FSF/MedianWindowFive_FSF.txt\n  Report:      csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/refined_tbfv_report.json\n  Summary:     testcases=36, fsf_units=1, passed=8, failed=28, skipped=0, unsupported=0\n  CCT marked:  28\n  TBFV stats:  csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/cct_tbfv_stats.json\n  Counts:      nodes=175, leaves=88, fault_leaves=28, failure_cases=28\n  Fault DOT:    csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/MedianWindowFive_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=75, intervals=102, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MedianWindowFive:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive",
+        "--output",
+        "csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive\n  CCT:         csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/MedianWindowFive_cct.pkl\n  Report:      csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=36, failed=28, condition_nodes=75, condition_intervals=102\n  Top conditions:\n    #1 score=2.6190 fail=28/36 line=3 a < b\n    #2 score=2.1063 fail=14/18 line=8 d > e\n    #3 score=2.1063 fail=14/18 line=8 d > e\n  Top intervals:\n    #1 score=0.9147 fail=14/18 line=[3, 8] root.TRUE\n    #2 score=0.7565 fail=5/6 line=[13, 18] root.F.F.TRUE\n    #3 score=0.7565 fail=5/6 line=[13, 18] root.F.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MedianWindowFive:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "MedianWindowFive/MedianWindowFive_M1.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/cct_failure_localization_aggregated.json\n  Source file: MedianWindowFive/MedianWindowFive_M1.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  75 raw -> 7 aggregated\n  Intervals[cct_only]: 102 raw -> 13 aggregated\n  Intervals[statement_presence]: 102 raw -> 13 aggregated\n  Intervals[edge_divergence_gated]: 102 raw -> 13 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MedianWindowFive:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "MedianWindowFive_M1",
+        "--report",
+        "csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_MedianWindowFive_M1/MedianWindowFive/fault_localization_eval.json\n  Mutant:    MedianWindowFive_M1\n  Operator:  ROR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=5, top1=miss, top3=miss, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:MedianWindowFive:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/MedianWindowFive_M2.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_MedianWindowFive_M2",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/testcases.json"
+      ],
+      "stdout_tail": "67, e=-32768\n  round_03/b11  [BATCH_SAFE]  a=-32768, b=-1, c=-32767, d=-32767, e=-32768\n  round_03/b12  [BATCH_SAFE]  a=-32768, b=-32768, c=0, d=-32767, e=-32768\n  round_03/b13  [BATCH_SAFE]  a=1, b=32767, c=0, d=1, e=0\n  round_03/b14  [BATCH_SAFE]  a=0, b=-2, c=32766, d=-1, e=0\n  round_03/b15  [BATCH_SAFE]  a=9117, b=8191, c=0, d=9117, e=9117\n  round_03/b16  [BATCH_SAFE]  a=0, b=-2, c=-1, d=-2, e=0\n  round_03/b17  [BATCH_SAFE]  a=2, b=0, c=0, d=32766, e=32767\n  round_03/b18  [BATCH_SAFE]  a=2, b=1, c=0, d=0, e=32766\n  round_03/b19  [BATCH_SAFE]  a=1, b=0, c=0, d=1, e=0\n  round_04/b0  [BATCH_SAFE]  a=-32507, b=-20096, c=-5660, d=-5660, e=-5660\n  round_04/b1  [BATCH_SAFE]  a=-32696, b=3632, c=32763, d=24310, e=24310\n  round_04/b2  [BATCH_SAFE]  a=149, b=149, c=149, d=0, e=19\n  round_04/b3  [BATCH_SAFE]  a=34, b=34, c=32767, d=0, e=0\n  round_04/b4  [BATCH_SAFE]  a=-32767, b=-32766, c=-1, d=-32768, e=-32765\n  round_04/b5  [BATCH_SAFE]  a=0, b=28670, c=1, d=-2, e=28671\n  round_04/b6  [BATCH_SAFE]  a=-32767, b=-1, c=0, d=1, e=0\n  round_04/b7  [BATCH_SAFE]  a=1, b=9, c=32767, d=1, e=0\n  round_04/b8  [BATCH_SAFE]  a=1, b=1, c=0, d=1, e=0\n  round_04/b9  [BATCH_SAFE]  a=0, b=32767, c=1, d=0, e=-2\n  round_04/b10  [BATCH_SAFE]  a=3, b=4, c=0, d=5, e=2\n  round_04/b11  [BATCH_SAFE]  a=30978, b=-29625, c=30978, d=30978, e=30978\n  round_04/b12  [BATCH_SAFE]  a=27147, b=24586, c=28171, d=27147, e=27147\n  round_04/b13  [BATCH_SAFE]  a=2, b=0, c=32767, d=10, e=11\n  round_04/b14  [BATCH_SAFE]  a=2, b=0, c=0, d=3, e=3\n  round_04/b15  [BATCH_SAFE]  a=0, b=-8, c=9, d=8, e=32767\n  round_04/b16  [BATCH_SAFE]  a=24576, b=8191, c=0, d=0, e=0\n  round_04/b17  [BATCH_SAFE]  a=2, b=1, c=32767, d=0, e=3\n  round_04/b18  [BATCH_SAFE]  a=511, b=0, c=1, d=-16896, e=15875\n  round_04/b19  [BATCH_SAFE]  a=-32767, b=-32768, c=-1, d=-32767, e=-32768\n  round_04/b20  [BATCH_SAFE]  a=3, b=-1, c=1, d=1, e=0\n  round_04/b21  [BATCH_SAFE]  a=0, b=-129, c=0, d=1, e=0\n  round_04/b22  [BATCH_SAFE]  a=-512, b=-513, c=0, d=0, e=-514\n  round_05/b0  [BATCH_SAFE]  a=0, b=2, c=1, d=3, e=0\n  round_05/b1  [BATCH_SAFE]  a=1023, b=1023, c=1023, d=512, e=510\n  round_05/b2  [BATCH_SAFE]  a=-32766, b=-32766, c=-1, d=-32767, e=-32768\n  round_05/b3  [BATCH_SAFE]  a=1, b=2, c=32640, d=3, e=0\n  round_05/b4  [BATCH_SAFE]  a=0, b=8703, c=1, d=8707, e=-6\n  round_05/b5  [BATCH_SAFE]  a=2, b=0, c=259, d=259, e=259\n  round_05/b6  [BATCH_SAFE]  a=450, b=0, c=14394, d=12983, e=12983\n  round_05/b7  [BATCH_SAFE]  a=2, b=1, c=32766, d=0, e=0\n  round_05/b8  [BATCH_SAFE]  a=3, b=0, c=1, d=-2, e=-2\n  round_05/b9  [BATCH_SAFE]  a=2, b=0, c=32640, d=3, e=2\n  round_05/b10  [BATCH_SAFE]  a=31, b=0, c=1, d=35, e=0\n  round_05/b11  [BATCH_SAFE]  a=32643, b=125, c=0, d=1, e=0\n  round_05/b12  [BATCH_SAFE]  a=0, b=-1, c=0, d=1, e=-2\n  round_06/b0  [BATCH_SAFE]  a=2, b=1, c=32766, d=1, e=0\n  round_06/b1  [BATCH_SAFE]  a=16375, b=0, c=1, d=0, e=-2\n  round_06/b2  [BATCH_SAFE]  a=66, b=64, c=0, d=67, e=63\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 285\n  frontier_discovery_time_ms: 531\n  compile_time_ms: 41711\n  java_exec_time_ms: 7504\n  path_log_parse_time_ms: 9\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 13222\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 13232\n\nTest cases written to: csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/MedianWindowFive_cct.dot\n  Stats: csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/cct_stats.json\n  Counts: nodes=215, leaves=108, covered=66, infeasible=42, out_of_range=0, expanded=0, truncated=0\n  Render script: csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/render_cct.sh\n  (render later with: csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:MedianWindowFive:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/MedianWindowFive_M2.java",
+        "--output",
+        "csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/FSF/MedianWindowFive_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/MedianWindowFive_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       MedianWindowFive\n  CSC result:  csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/FSF/MedianWindowFive_FSF.txt\n  Report:      csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/refined_tbfv_report.json\n  Summary:     testcases=66, fsf_units=1, passed=22, failed=44, skipped=0, unsupported=0\n  CCT marked:  44\n  TBFV stats:  csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/cct_tbfv_stats.json\n  Counts:      nodes=215, leaves=108, fault_leaves=44, failure_cases=44\n  Fault DOT:    csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/MedianWindowFive_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=99, intervals=142, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MedianWindowFive:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive",
+        "--output",
+        "csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive\n  CCT:         csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/MedianWindowFive_cct.pkl\n  Report:      csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=66, failed=44, condition_nodes=99, condition_intervals=142\n  Top conditions:\n    #1 score=2.5378 fail=44/66 line=3 a > b\n    #2 score=2.1637 fail=21/30 line=8 d > e\n    #3 score=2.0304 fail=23/36 line=8 d > e\n  Top intervals:\n    #1 score=1.0607 fail=10/12 line=[8, 13] root.T.TRUE\n    #2 score=1.0034 fail=3/3 line=[23, 28] root.F.F.F.T.TRUE\n    #3 score=1.0034 fail=3/3 line=[23, 28] root.F.F.T.F.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MedianWindowFive:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "MedianWindowFive/MedianWindowFive_M2.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/cct_failure_localization_aggregated.json\n  Source file: MedianWindowFive/MedianWindowFive_M2.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  99 raw -> 7 aggregated\n  Intervals[cct_only]: 142 raw -> 14 aggregated\n  Intervals[statement_presence]: 142 raw -> 14 aggregated\n  Intervals[edge_divergence_gated]: 142 raw -> 14 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MedianWindowFive:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "MedianWindowFive_M2",
+        "--report",
+        "csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_MedianWindowFive_M2/MedianWindowFive/fault_localization_eval.json\n  Mutant:    MedianWindowFive_M2\n  Operator:  ROR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=7, top1=miss, top3=miss, top5=miss, top10=hit\n  raw.interval.cct_only: best_rank=13, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=4, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=4, top1=miss, top3=miss, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:MedianWindowFive:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/MedianWindowFive_M3.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_MedianWindowFive_M3",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/testcases.json"
+      ],
+      "stdout_tail": "767\n  round_04/b15  [BATCH_SAFE]  a=-32767, b=-32768, c=-32768, d=-1, e=0\n  round_04/b16  [BATCH_SAFE]  a=3, b=0, c=0, d=1, e=1\n  round_04/b17  [BATCH_SAFE]  a=-32765, b=-32768, c=-32768, d=-32768, e=-32767\n  round_04/b18  [BATCH_SAFE]  a=2, b=1, c=32766, d=0, e=32766\n  round_04/b19  [BATCH_SAFE]  a=32767, b=1, c=32766, d=0, e=32767\n  round_04/b20  [BATCH_SAFE]  a=5, b=3, c=0, d=0, e=4\n  round_04/b21  [BATCH_SAFE]  a=-32767, b=-32768, c=-1, d=-9, e=-26\n  round_04/b22  [BATCH_SAFE]  a=1, b=0, c=0, d=32767, e=32766\n  round_04/b23  [BATCH_SAFE]  a=3, b=-1, c=0, d=28671, e=1\n  round_04/b24  [BATCH_SAFE]  a=-32717, b=-32767, c=0, d=-32766, e=-32767\n  round_04/b25  [BATCH_SAFE]  a=-512, b=-513, c=0, d=0, e=-514\n  round_05/b0  [BATCH_SAFE]  a=1, b=1, c=1, d=0, e=32764\n  round_05/b1  [BATCH_SAFE]  a=32767, b=32767, c=0, d=0, e=0\n  round_05/b2  [BATCH_SAFE]  a=-32768, b=256, c=256, d=32767, e=32766\n  round_05/b3  [BATCH_SAFE]  a=-32745, b=-15419, c=-32768, d=32747, e=-15424\n  round_05/b4  [BATCH_SAFE]  a=511, b=511, c=511, d=32256, e=510\n  round_05/b5  [BATCH_SAFE]  a=0, b=511, c=0, d=512, e=-2\n  round_05/b6  [BATCH_SAFE]  a=32767, b=32767, c=2, d=2, e=0\n  round_05/b7  [BATCH_SAFE]  a=-8195, b=-1, c=-8194, d=-16384, e=-24580\n  round_05/b8  [BATCH_SAFE]  a=2048, b=24574, c=2176, d=18609, e=-22181\n  round_05/b9  [BATCH_SAFE]  a=1, b=0, c=1, d=32255, e=32765\n  round_05/b10  [BATCH_SAFE]  a=-30623, b=-32736, c=-32768, d=-30720, e=96\n  round_05/b11  [BATCH_SAFE]  a=3, b=1, c=32766, d=0, e=0\n  round_05/b12  [BATCH_SAFE]  a=2, b=1, c=0, d=0, e=1\n  round_05/b13  [BATCH_SAFE]  a=25110, b=9646, c=16454, d=762, e=18415\n  round_05/b14  [BATCH_SAFE]  a=-32256, b=-32258, c=16, d=32767, e=32766\n  round_05/b15  [BATCH_SAFE]  a=31743, b=0, c=32767, d=31745, e=0\n  round_05/b16  [BATCH_SAFE]  a=2, b=-1, c=0, d=1, e=0\n  round_05/b17  [BATCH_SAFE]  a=1, b=-1, c=0, d=2, e=-2\n  round_05/b18  [BATCH_SAFE]  a=4099, b=4095, c=0, d=2, e=0\n  round_06/b0  [BATCH_SAFE]  a=0, b=32767, c=32766, d=32767, e=4096\n  round_06/b1  [BATCH_SAFE]  a=1, b=1, c=0, d=32767, e=0\n  round_06/b2  [BATCH_SAFE]  a=-3, b=-1, c=-32768, d=0, e=-4\n  round_06/b3  [BATCH_SAFE]  a=-1, b=-1, c=-32765, d=-32766, e=-32768\n  round_06/b4  [BATCH_SAFE]  a=-1, b=-32768, c=-2, d=-24576, e=-1\n  round_06/b5  [BATCH_SAFE]  a=3, b=1, c=0, d=0, e=0\n  round_06/b6  [BATCH_SAFE]  a=5, b=0, c=32767, d=-1, e=4\n  round_06/b7  [BATCH_SAFE]  a=3, b=2, c=3, d=32767, e=16384\n  round_06/b8  [BATCH_SAFE]  a=33, b=0, c=0, d=31, e=29\n  round_06/b9  [BATCH_SAFE]  a=35, b=33, c=0, d=32736, e=31\n  round_06/b10  [BATCH_SAFE]  a=16387, b=16383, c=32766, d=2, e=0\n  round_06/b11  [BATCH_SAFE]  a=8192, b=8190, c=0, d=8191, e=0\n  round_07/b0  [BATCH_SAFE]  a=3, b=1, c=1, d=-1, e=0\n  round_07/b1  [BATCH_SAFE]  a=7, b=5, c=2, d=2, e=0\n  round_07/b2  [BATCH_SAFE]  a=0, b=-2, c=-1, d=-1, e=-32768\n  round_07/b3  [BATCH_SAFE]  a=67, b=64, c=64, d=65, e=63\n  round_08/b0  [BATCH_SAFE]  a=0, b=-17, c=-17, d=-18, e=-32768\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 400\n  frontier_discovery_time_ms: 549\n  compile_time_ms: 55948\n  java_exec_time_ms: 9521\n  path_log_parse_time_ms: 1\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 17645\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 17661\n\nTest cases written to: csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/MedianWindowFive_cct.dot\n  Stats: csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/cct_stats.json\n  Counts: nodes=239, leaves=120, covered=88, infeasible=32, out_of_range=0, expanded=0, truncated=0\n  Render script: csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/render_cct.sh\n  (render later with: csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:MedianWindowFive:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/MedianWindowFive_M3.java",
+        "--output",
+        "csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/FSF/MedianWindowFive_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/MedianWindowFive_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       MedianWindowFive\n  CSC result:  csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/FSF/MedianWindowFive_FSF.txt\n  Report:      csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/refined_tbfv_report.json\n  Summary:     testcases=88, fsf_units=1, passed=88, failed=0, skipped=0, unsupported=0\n  CCT marked:  0\n  TBFV stats:  csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/cct_tbfv_stats.json\n  Counts:      nodes=239, leaves=120, fault_leaves=0, failure_cases=0\n  Fault DOT:    csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/MedianWindowFive_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=0, intervals=0, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MedianWindowFive:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive",
+        "--output",
+        "csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive\n  CCT:         csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/MedianWindowFive_cct.pkl\n  Report:      csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=88, failed=0, condition_nodes=0, condition_intervals=0\n  Top conditions: <none>\n  Top intervals: <none>\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MedianWindowFive:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "MedianWindowFive/MedianWindowFive_M3.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/cct_failure_localization_aggregated.json\n  Source file: MedianWindowFive/MedianWindowFive_M3.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  0 raw -> 0 aggregated\n  Intervals[cct_only]: 0 raw -> 0 aggregated\n  Intervals[statement_presence]: 0 raw -> 0 aggregated\n  Intervals[edge_divergence_gated]: 0 raw -> 0 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MedianWindowFive:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "MedianWindowFive_M3",
+        "--report",
+        "csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_MedianWindowFive_M3/MedianWindowFive/fault_localization_eval.json\n  Mutant:    MedianWindowFive_M3\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:MedianWindowFive:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/MedianWindowFive_M4.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_MedianWindowFive_M4",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/testcases.json"
+      ],
+      "stdout_tail": "578\n  round_04/b11  [BATCH_SAFE]  a=1, b=32767, c=32640, d=2, e=0\n  round_04/b12  [BATCH_SAFE]  a=2, b=32736, c=0, d=31, e=0\n  round_04/b13  [BATCH_SAFE]  a=-1, b=-32768, c=0, d=32766, e=32766\n  round_04/b14  [BATCH_SAFE]  a=-24575, b=-32768, c=-1, d=-24576, e=-1\n  round_04/b15  [BATCH_SAFE]  a=-32767, b=-32768, c=-32768, d=-1, e=0\n  round_04/b16  [BATCH_SAFE]  a=-32765, b=-32768, c=-1, d=-32768, e=-32767\n  round_04/b17  [BATCH_SAFE]  a=3, b=0, c=0, d=1, e=1\n  round_04/b18  [BATCH_SAFE]  a=13, b=-16, c=9, d=8, e=11\n  round_04/b19  [BATCH_SAFE]  a=2, b=1, c=32766, d=0, e=32766\n  round_04/b20  [BATCH_SAFE]  a=3, b=0, c=1, d=-2, e=32767\n  round_04/b21  [BATCH_SAFE]  a=5, b=3, c=0, d=0, e=4\n  round_04/b22  [BATCH_SAFE]  a=-32767, b=-32768, c=-1, d=-9, e=-26\n  round_04/b23  [BATCH_SAFE]  a=1, b=0, c=0, d=32767, e=32766\n  round_04/b24  [BATCH_SAFE]  a=3, b=-1, c=1, d=28671, e=0\n  round_04/b25  [BATCH_SAFE]  a=-32717, b=-32767, c=0, d=-32766, e=-32767\n  round_04/b26  [BATCH_SAFE]  a=-512, b=-513, c=0, d=0, e=-514\n  round_05/b0  [BATCH_SAFE]  a=1, b=1, c=1, d=0, e=32764\n  round_05/b1  [BATCH_SAFE]  a=34, b=34, c=32767, d=0, e=32766\n  round_05/b2  [BATCH_SAFE]  a=-32745, b=-15419, c=-32768, d=32747, e=-15424\n  round_05/b3  [BATCH_SAFE]  a=511, b=511, c=511, d=32256, e=510\n  round_05/b4  [BATCH_SAFE]  a=-2, b=-2, c=-1, d=0, e=-4\n  round_05/b5  [BATCH_SAFE]  a=0, b=511, c=0, d=512, e=-2\n  round_05/b6  [BATCH_SAFE]  a=32767, b=32767, c=2, d=2, e=0\n  round_05/b7  [BATCH_SAFE]  a=-2, b=-1, c=-1, d=-32766, e=-32768\n  round_05/b8  [BATCH_SAFE]  a=0, b=30208, c=1, d=511, e=-2\n  round_05/b9  [BATCH_SAFE]  a=-30623, b=-32736, c=-32768, d=-30720, e=96\n  round_05/b10  [BATCH_SAFE]  a=3, b=1, c=32766, d=0, e=0\n  round_05/b11  [BATCH_SAFE]  a=2, b=1, c=0, d=0, e=1\n  round_05/b12  [BATCH_SAFE]  a=15873, b=0, c=1, d=-16996, e=15871\n  round_05/b13  [BATCH_SAFE]  a=-32256, b=-32258, c=16, d=32767, e=32766\n  round_05/b14  [BATCH_SAFE]  a=-32767, b=-32768, c=-1, d=-1, e=-32768\n  round_05/b15  [BATCH_SAFE]  a=2, b=-1, c=0, d=1, e=0\n  round_05/b16  [BATCH_SAFE]  a=1, b=-1, c=0, d=2, e=-2\n  round_05/b17  [BATCH_SAFE]  a=4099, b=4095, c=0, d=2, e=0\n  round_06/b0  [BATCH_SAFE]  a=-32768, b=-32765, c=-32767, d=-129, e=-32768\n  round_06/b1  [BATCH_SAFE]  a=1, b=1, c=0, d=32767, e=0\n  round_06/b2  [BATCH_SAFE]  a=0, b=3, c=1, d=3, e=-1\n  round_06/b3  [BATCH_SAFE]  a=-32765, b=-32768, c=-32767, d=-32768, e=2\n  round_06/b4  [BATCH_SAFE]  a=3, b=1, c=0, d=0, e=0\n  round_06/b5  [BATCH_SAFE]  a=16384, b=16382, c=16384, d=0, e=16383\n  round_06/b6  [BATCH_SAFE]  a=33, b=0, c=1, d=31, e=0\n  round_06/b7  [BATCH_SAFE]  a=32767, b=32765, c=0, d=32767, e=0\n  round_06/b8  [BATCH_SAFE]  a=16387, b=16383, c=32766, d=2, e=0\n  round_06/b9  [BATCH_SAFE]  a=8192, b=8190, c=0, d=8191, e=0\n  round_07/b0  [BATCH_SAFE]  a=7, b=5, c=2, d=2, e=0\n  round_07/b1  [BATCH_SAFE]  a=63, b=32, c=32767, d=61, e=28\n  round_07/b2  [BATCH_SAFE]  a=0, b=-16384, c=-16383, d=-1, e=-16386\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 346\n  frontier_discovery_time_ms: 511\n  compile_time_ms: 50901\n  java_exec_time_ms: 8821\n  path_log_parse_time_ms: 2\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 16255\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 16268\n\nTest cases written to: csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/MedianWindowFive_cct.dot\n  Stats: csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/cct_stats.json\n  Counts: nodes=239, leaves=120, covered=84, infeasible=36, out_of_range=0, expanded=0, truncated=0\n  Render script: csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/render_cct.sh\n  (render later with: csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:MedianWindowFive:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/MedianWindowFive_M4.java",
+        "--output",
+        "csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/FSF/MedianWindowFive_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/MedianWindowFive_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       MedianWindowFive\n  CSC result:  csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/FSF/MedianWindowFive_FSF.txt\n  Report:      csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/refined_tbfv_report.json\n  Summary:     testcases=84, fsf_units=1, passed=62, failed=22, skipped=0, unsupported=0\n  CCT marked:  22\n  TBFV stats:  csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/cct_tbfv_stats.json\n  Counts:      nodes=239, leaves=120, fault_leaves=22, failure_cases=22\n  Fault DOT:    csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/MedianWindowFive_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=43, intervals=64, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MedianWindowFive:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive",
+        "--output",
+        "csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive\n  CCT:         csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/MedianWindowFive_cct.pkl\n  Report:      csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=84, failed=22, condition_nodes=43, condition_intervals=64\n  Top conditions:\n    #1 score=1.3863 fail=3/3 line=23 b > c\n    #2 score=1.3863 fail=3/3 line=23 b > c\n    #3 score=1.0986 fail=2/2 line=33 b > c\n  Top intervals:\n    #1 score=0.9542 fail=2/2 line=[28, 33] root.F.F.T.F.F.TRUE\n    #2 score=0.9542 fail=2/2 line=[28, 33] root.F.F.T.F.T.TRUE\n    #3 score=0.9542 fail=2/2 line=[28, 33] root.F.F.T.T.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MedianWindowFive:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "MedianWindowFive/MedianWindowFive_M4.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/cct_failure_localization_aggregated.json\n  Source file: MedianWindowFive/MedianWindowFive_M4.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  43 raw -> 7 aggregated\n  Intervals[cct_only]: 64 raw -> 12 aggregated\n  Intervals[statement_presence]: 64 raw -> 12 aggregated\n  Intervals[edge_divergence_gated]: 64 raw -> 12 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MedianWindowFive:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "MedianWindowFive_M4",
+        "--report",
+        "csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_MedianWindowFive_M4/MedianWindowFive/fault_localization_eval.json\n  Mutant:    MedianWindowFive_M4\n  Operator:  SUR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=13, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=11, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=11, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_gated: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:MedianWindowFive:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/MedianWindowFive_M5.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_MedianWindowFive_M5",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/testcases.json"
+      ],
+      "stdout_tail": "37, b=9158, c=5716, d=5716, e=5716\n  round_03/b2  [BATCH_SAFE]  a=-32765, b=2, c=0, d=0, e=1\n  round_03/b3  [BATCH_SAFE]  a=-28671, b=2049, c=0, d=-32768, e=32767\n  round_03/b4  [BATCH_SAFE]  a=-32767, b=-9, c=-2, d=-32768, e=-32768\n  round_03/b5  [BATCH_SAFE]  a=32767, b=32767, c=0, d=0, e=1\n  round_03/b6  [BATCH_SAFE]  a=-32768, b=0, c=0, d=0, e=-2\n  round_03/b7  [BATCH_SAFE]  a=-32768, b=-1, c=-2, d=-32766, e=-32768\n  round_03/b8  [BATCH_SAFE]  a=1, b=32767, c=0, d=1, e=0\n  round_03/b9  [BATCH_SAFE]  a=-32767, b=-32768, c=0, d=-1, e=0\n  round_03/b10  [BATCH_SAFE]  a=1, b=0, c=32767, d=0, e=0\n  round_03/b11  [BATCH_SAFE]  a=0, b=-1026, c=-32768, d=-2, e=-1\n  round_03/b12  [BATCH_SAFE]  a=2, b=1, c=0, d=0, e=32766\n  round_03/b13  [BATCH_SAFE]  a=1, b=0, c=0, d=1, e=0\n  round_04/b0  [BATCH_SAFE]  a=-32767, b=0, c=-32768, d=-1, e=-1\n  round_04/b1  [BATCH_SAFE]  a=-32767, b=0, c=32766, d=-32768, e=32766\n  round_04/b2  [BATCH_SAFE]  a=1, b=1, c=0, d=-1, e=32767\n  round_04/b3  [BATCH_SAFE]  a=32256, b=32767, c=511, d=510, e=510\n  round_04/b4  [BATCH_SAFE]  a=-3, b=-1, c=0, d=32766, e=32764\n  round_04/b5  [BATCH_SAFE]  a=-32767, b=-1, c=-32768, d=1, e=0\n  round_04/b6  [BATCH_SAFE]  a=-24577, b=-24576, c=0, d=-8192, e=-24578\n  round_04/b7  [BATCH_SAFE]  a=1, b=32767, c=32640, d=2, e=0\n  round_04/b8  [BATCH_SAFE]  a=2, b=32736, c=0, d=31, e=0\n  round_04/b9  [BATCH_SAFE]  a=-1, b=-32768, c=0, d=32766, e=32766\n  round_04/b10  [BATCH_SAFE]  a=-32767, b=-32768, c=-32768, d=-1, e=0\n  round_04/b11  [BATCH_SAFE]  a=3, b=0, c=0, d=1, e=1\n  round_04/b12  [BATCH_SAFE]  a=2, b=1, c=32766, d=0, e=32766\n  round_04/b13  [BATCH_SAFE]  a=5, b=3, c=0, d=0, e=4\n  round_04/b14  [BATCH_SAFE]  a=-32767, b=-32768, c=-1, d=-9, e=-26\n  round_04/b15  [BATCH_SAFE]  a=1, b=0, c=0, d=32767, e=32766\n  round_04/b16  [BATCH_SAFE]  a=-32717, b=-32767, c=0, d=-32766, e=-32767\n  round_04/b17  [BATCH_SAFE]  a=-512, b=-513, c=0, d=0, e=-514\n  round_05/b0  [BATCH_SAFE]  a=1, b=1, c=1, d=0, e=32764\n  round_05/b1  [BATCH_SAFE]  a=-32746, b=-15419, c=-32768, d=32747, e=-15424\n  round_05/b2  [BATCH_SAFE]  a=511, b=511, c=511, d=32256, e=510\n  round_05/b3  [BATCH_SAFE]  a=0, b=511, c=0, d=512, e=-2\n  round_05/b4  [BATCH_SAFE]  a=32767, b=32767, c=2, d=2, e=0\n  round_05/b5  [BATCH_SAFE]  a=-30623, b=-32736, c=-32768, d=-30720, e=96\n  round_05/b6  [BATCH_SAFE]  a=3, b=1, c=32766, d=0, e=0\n  round_05/b7  [BATCH_SAFE]  a=2, b=1, c=0, d=0, e=1\n  round_05/b8  [BATCH_SAFE]  a=-32256, b=-32258, c=16, d=32767, e=32766\n  round_05/b9  [BATCH_SAFE]  a=2, b=-1, c=0, d=1, e=0\n  round_05/b10  [BATCH_SAFE]  a=1, b=-1, c=0, d=2, e=-2\n  round_05/b11  [BATCH_SAFE]  a=4099, b=4095, c=0, d=2, e=0\n  round_06/b0  [BATCH_SAFE]  a=1, b=1, c=0, d=32767, e=0\n  round_06/b1  [BATCH_SAFE]  a=3, b=1, c=0, d=0, e=0\n  round_06/b2  [BATCH_SAFE]  a=16387, b=16383, c=32766, d=2, e=0\n  round_06/b3  [BATCH_SAFE]  a=8192, b=8190, c=0, d=8191, e=0\n  round_07/b0  [BATCH_SAFE]  a=7, b=5, c=2, d=2, e=0\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 217\n  frontier_discovery_time_ms: 508\n  compile_time_ms: 33151\n  java_exec_time_ms: 5742\n  path_log_parse_time_ms: 2\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 10842\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 10853\n\nTest cases written to: csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/MedianWindowFive_cct.dot\n  Stats: csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/cct_stats.json\n  Counts: nodes=239, leaves=120, covered=56, infeasible=64, out_of_range=0, expanded=0, truncated=0\n  Render script: csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/render_cct.sh\n  (render later with: csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:MedianWindowFive:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/MedianWindowFive_M5.java",
+        "--output",
+        "csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/FSF/MedianWindowFive_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/MedianWindowFive_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       MedianWindowFive\n  CSC result:  csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/FSF/MedianWindowFive_FSF.txt\n  Report:      csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/refined_tbfv_report.json\n  Summary:     testcases=56, fsf_units=1, passed=24, failed=32, skipped=0, unsupported=0\n  CCT marked:  32\n  TBFV stats:  csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/cct_tbfv_stats.json\n  Counts:      nodes=239, leaves=120, fault_leaves=32, failure_cases=32\n  Fault DOT:    csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/MedianWindowFive_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=95, intervals=126, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MedianWindowFive:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive",
+        "--output",
+        "csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive\n  CCT:         csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/MedianWindowFive_cct.pkl\n  Report:      csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=56, failed=32, condition_nodes=95, condition_intervals=126\n  Top conditions:\n    #1 score=1.9980 fail=32/56 line=3 a > b\n    #2 score=1.7435 fail=16/26 line=8 d > e\n    #3 score=1.5110 fail=16/30 line=8 d > e\n  Top intervals:\n    #1 score=0.8193 fail=16/26 line=[3, 8] root.TRUE\n    #2 score=0.7157 fail=2/2 line=[18, 23] root.F.T.F.TRUE\n    #3 score=0.7157 fail=2/2 line=[18, 23] root.T.T.F.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MedianWindowFive:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "MedianWindowFive/MedianWindowFive_M5.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/cct_failure_localization_aggregated.json\n  Source file: MedianWindowFive/MedianWindowFive_M5.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  95 raw -> 7 aggregated\n  Intervals[cct_only]: 126 raw -> 12 aggregated\n  Intervals[statement_presence]: 126 raw -> 12 aggregated\n  Intervals[edge_divergence_gated]: 126 raw -> 12 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MedianWindowFive:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "MedianWindowFive_M5",
+        "--report",
+        "csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_MedianWindowFive_M5/MedianWindowFive/fault_localization_eval.json\n  Mutant:    MedianWindowFive_M5\n  Operator:  SUR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=40, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=37, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=5, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=7, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.statement_presence: best_rank=5, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_gated: best_rank=4, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=4, top1=miss, top3=miss, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:MedianWindowFive:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/MedianWindowFive_M6.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_MedianWindowFive_M6",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/testcases.json"
+      ],
+      "stdout_tail": "578\n  round_04/b11  [BATCH_SAFE]  a=1, b=32767, c=32640, d=2, e=0\n  round_04/b12  [BATCH_SAFE]  a=2, b=32736, c=0, d=31, e=0\n  round_04/b13  [BATCH_SAFE]  a=-1, b=-32768, c=0, d=32766, e=32766\n  round_04/b14  [BATCH_SAFE]  a=-24575, b=-32768, c=-1, d=-24576, e=-1\n  round_04/b15  [BATCH_SAFE]  a=-32767, b=-32768, c=-32768, d=-1, e=0\n  round_04/b16  [BATCH_SAFE]  a=-32765, b=-32768, c=-1, d=-32768, e=-32767\n  round_04/b17  [BATCH_SAFE]  a=3, b=0, c=0, d=1, e=1\n  round_04/b18  [BATCH_SAFE]  a=13, b=-16, c=9, d=8, e=11\n  round_04/b19  [BATCH_SAFE]  a=2, b=1, c=32766, d=0, e=32766\n  round_04/b20  [BATCH_SAFE]  a=3, b=0, c=1, d=-2, e=32767\n  round_04/b21  [BATCH_SAFE]  a=5, b=3, c=0, d=0, e=4\n  round_04/b22  [BATCH_SAFE]  a=-32767, b=-32768, c=-1, d=-9, e=-26\n  round_04/b23  [BATCH_SAFE]  a=1, b=0, c=0, d=32767, e=32766\n  round_04/b24  [BATCH_SAFE]  a=3, b=-1, c=1, d=28671, e=0\n  round_04/b25  [BATCH_SAFE]  a=-32717, b=-32767, c=0, d=-32766, e=-32767\n  round_04/b26  [BATCH_SAFE]  a=-512, b=-513, c=0, d=0, e=-514\n  round_05/b0  [BATCH_SAFE]  a=1, b=1, c=1, d=0, e=32764\n  round_05/b1  [BATCH_SAFE]  a=34, b=34, c=32767, d=0, e=32766\n  round_05/b2  [BATCH_SAFE]  a=-32745, b=-15419, c=-32768, d=32747, e=-15424\n  round_05/b3  [BATCH_SAFE]  a=511, b=511, c=511, d=32256, e=510\n  round_05/b4  [BATCH_SAFE]  a=-2, b=-2, c=-1, d=0, e=-4\n  round_05/b5  [BATCH_SAFE]  a=0, b=511, c=0, d=512, e=-2\n  round_05/b6  [BATCH_SAFE]  a=32767, b=32767, c=2, d=2, e=0\n  round_05/b7  [BATCH_SAFE]  a=-2, b=-1, c=-1, d=-32766, e=-32768\n  round_05/b8  [BATCH_SAFE]  a=0, b=30208, c=1, d=511, e=-2\n  round_05/b9  [BATCH_SAFE]  a=-30623, b=-32736, c=-32768, d=-30720, e=96\n  round_05/b10  [BATCH_SAFE]  a=3, b=1, c=32766, d=0, e=0\n  round_05/b11  [BATCH_SAFE]  a=2, b=1, c=0, d=0, e=1\n  round_05/b12  [BATCH_SAFE]  a=15873, b=0, c=1, d=-16996, e=15871\n  round_05/b13  [BATCH_SAFE]  a=-32256, b=-32258, c=16, d=32767, e=32766\n  round_05/b14  [BATCH_SAFE]  a=-32767, b=-32768, c=-1, d=-1, e=-32768\n  round_05/b15  [BATCH_SAFE]  a=2, b=-1, c=0, d=1, e=0\n  round_05/b16  [BATCH_SAFE]  a=1, b=-1, c=0, d=2, e=-2\n  round_05/b17  [BATCH_SAFE]  a=4099, b=4095, c=0, d=2, e=0\n  round_06/b0  [BATCH_SAFE]  a=-32768, b=-32765, c=-32767, d=-129, e=-32768\n  round_06/b1  [BATCH_SAFE]  a=1, b=1, c=0, d=32767, e=0\n  round_06/b2  [BATCH_SAFE]  a=0, b=3, c=1, d=3, e=-1\n  round_06/b3  [BATCH_SAFE]  a=-32765, b=-32768, c=-32767, d=-32768, e=2\n  round_06/b4  [BATCH_SAFE]  a=3, b=1, c=0, d=0, e=0\n  round_06/b5  [BATCH_SAFE]  a=16384, b=16382, c=16384, d=0, e=16383\n  round_06/b6  [BATCH_SAFE]  a=33, b=0, c=1, d=31, e=0\n  round_06/b7  [BATCH_SAFE]  a=32767, b=32765, c=0, d=32767, e=0\n  round_06/b8  [BATCH_SAFE]  a=16387, b=16383, c=32766, d=2, e=0\n  round_06/b9  [BATCH_SAFE]  a=8192, b=8190, c=0, d=8191, e=0\n  round_07/b0  [BATCH_SAFE]  a=7, b=5, c=2, d=2, e=0\n  round_07/b1  [BATCH_SAFE]  a=63, b=32, c=32767, d=61, e=28\n  round_07/b2  [BATCH_SAFE]  a=0, b=-16384, c=-16383, d=-1, e=-16386\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 338\n  frontier_discovery_time_ms: 503\n  compile_time_ms: 49095\n  java_exec_time_ms: 8456\n  path_log_parse_time_ms: 4\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 15555\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 15567\n\nTest cases written to: csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/MedianWindowFive_cct.dot\n  Stats: csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/cct_stats.json\n  Counts: nodes=239, leaves=120, covered=84, infeasible=36, out_of_range=0, expanded=0, truncated=0\n  Render script: csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/render_cct.sh\n  (render later with: csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:MedianWindowFive:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/MedianWindowFive_M6.java",
+        "--output",
+        "csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/FSF/MedianWindowFive_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/MedianWindowFive_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       MedianWindowFive\n  CSC result:  csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MedianWindowFive/FSF/MedianWindowFive_FSF.txt\n  Report:      csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/refined_tbfv_report.json\n  Summary:     testcases=84, fsf_units=1, passed=8, failed=76, skipped=0, unsupported=0\n  CCT marked:  76\n  TBFV stats:  csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/cct_tbfv_stats.json\n  Counts:      nodes=239, leaves=120, fault_leaves=76, failure_cases=76\n  Fault DOT:    csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/MedianWindowFive_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=115, intervals=190, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MedianWindowFive:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive",
+        "--output",
+        "csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive\n  CCT:         csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/MedianWindowFive_cct.pkl\n  Report:      csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=84, failed=76, condition_nodes=115, condition_intervals=190\n  Top conditions:\n    #1 score=3.9301 fail=76/84 line=3 a > b\n    #2 score=3.4510 fail=37/39 line=8 d > e\n    #3 score=3.1970 fail=39/45 line=8 d > e\n  Top intervals:\n    #1 score=1.6217 fail=37/39 line=[3, 8] root.TRUE\n    #2 score=1.4005 fail=18/18 line=[8, 13] root.T.TRUE\n    #3 score=1.2612 fail=19/21 line=[8, 13] root.F.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MedianWindowFive:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "MedianWindowFive/MedianWindowFive_M6.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/cct_failure_localization_aggregated.json\n  Source file: MedianWindowFive/MedianWindowFive_M6.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  115 raw -> 7 aggregated\n  Intervals[cct_only]: 190 raw -> 14 aggregated\n  Intervals[statement_presence]: 190 raw -> 14 aggregated\n  Intervals[edge_divergence_gated]: 190 raw -> 14 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MedianWindowFive:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "MedianWindowFive_M6",
+        "--report",
+        "csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_MedianWindowFive_M6/MedianWindowFive/fault_localization_eval.json\n  Mutant:    MedianWindowFive_M6\n  Operator:  RVR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=30, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=20, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.statement_presence: best_rank=7, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.edge_divergence_gated: best_rank=7, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=7, top1=miss, top3=miss, top5=miss, top10=hit\n",
+      "stderr_tail": ""
+    }
+  ]
+}

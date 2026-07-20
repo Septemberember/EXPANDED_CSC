@@ -1,0 +1,33 @@
+{
+  "dataset": "EX_CSC_dataset",
+  "git_commit": "af328b27f5db0cb5392256bfbcc45d5881fc0bf4",
+  "configuration": {
+    "range_bound": 200,
+    "max_iter_rq1": 2000,
+    "max_iter_rq2_rq3": 100,
+    "rq2_workers": [1, 2, 4, 8],
+    "rq2_repeats": 3,
+    "rq3_workers": 4,
+    "folded_scoring": "coverage_x_purity",
+    "top_k": [1, 2, 3]
+  },
+  "counts": {
+    "subjects": 2,
+    "mutants": 12,
+    "rq2_runs_expected": 24,
+    "rq2_runs_completed": 24,
+    "rq3_runs_completed": 14,
+    "rq3_tasks_evaluated": 10,
+    "rq3_no_failure": 2
+  },
+  "phases": {
+    "dataset_validation": {"status": "complete"},
+    "rq1": {"status": "complete"},
+    "kill_mutant": {"status": "complete"},
+    "rq2": {"status": "complete"},
+    "rq3": {"status": "complete"},
+    "combined_preview": {"status": "pending"}
+  },
+  "reused_sources": ["boundary_stress/BoundaryKill (M1-M5)"],
+  "deviations": []
+}

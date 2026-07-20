@@ -1,0 +1,35 @@
+[fsf_1]
+T: number < 0 || number > 100
+D: return_value == -2
+
+[fsf_2]
+T: number == 0
+D: return_value == -1
+
+[fsf_3]
+T: number >= 1 && number <= 100 && number % 2 != 0
+D: return_value == 0
+
+[fsf_4]
+T: number >= 1 && number <= 100 && number % 2 == 0 && number % 4 != 0
+D: return_value == 1
+
+[fsf_5]
+T: number >= 1 && number <= 100 && number % 4 == 0 && number % 8 != 0
+D: return_value == 2
+
+[fsf_6]
+T: number >= 1 && number <= 100 && number % 8 == 0 && number % 16 != 0
+D: return_value == 3
+
+[fsf_7]
+T: number >= 1 && number <= 100 && number % 16 == 0 && number % 32 != 0
+D: return_value == 4
+
+[fsf_8]
+T: number >= 1 && number <= 100 && number % 32 == 0 && number % 64 != 0
+D: return_value == 5
+
+[fsf_9]
+T: number >= 1 && number <= 100 && number % 64 == 0
+D: return_value == 6

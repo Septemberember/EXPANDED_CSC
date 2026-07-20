@@ -1,0 +1,31 @@
+[fsf_1]
+T: income < 0
+D: return_value == -1
+
+[fsf_2]
+T: income > 200
+D: return_value == -1
+
+[fsf_3]
+T: income >= 0 && income <= 200 && debt < 0
+D: return_value == -1
+
+[fsf_4]
+T: income >= 0 && income <= 200 && debt > 200
+D: return_value == -1
+
+[fsf_5]
+T: income >= 100 && income <= 200 && debt == 0 && stableJob == true
+D: return_value == 20
+
+[fsf_6]
+T: income == 100 && debt == 0 && stableJob == false
+D: return_value == 30
+
+[fsf_7]
+T: income == 120 && debt == 130 && stableJob == true
+D: return_value == 39
+
+[fsf_8]
+T: income == 30 && debt == 0 && stableJob == false
+D: return_value == 60

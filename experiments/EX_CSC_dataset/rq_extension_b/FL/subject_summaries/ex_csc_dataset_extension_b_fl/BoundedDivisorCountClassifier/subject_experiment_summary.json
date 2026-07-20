@@ -1,0 +1,754 @@
+{
+  "subject": "BoundedDivisorCountClassifier",
+  "subject_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier",
+  "fsf": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/FSF/BoundedDivisorCountClassifier_FSF.txt",
+  "manifest": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+  "mode": "expanded",
+  "strategy": "batch",
+  "max_iter": 50,
+  "dry_run": false,
+  "original": {
+    "role": "original",
+    "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier.java",
+    "class_name": "BoundedDivisorCountClassifier",
+    "mutant_id": null
+  },
+  "mutants": [
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M1.java",
+      "class_name": "BoundedDivisorCountClassifier",
+      "mutant_id": "BoundedDivisorCountClassifier_M1"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M2.java",
+      "class_name": "BoundedDivisorCountClassifier",
+      "mutant_id": "BoundedDivisorCountClassifier_M2"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M3.java",
+      "class_name": "BoundedDivisorCountClassifier",
+      "mutant_id": "BoundedDivisorCountClassifier_M3"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M4.java",
+      "class_name": "BoundedDivisorCountClassifier",
+      "mutant_id": "BoundedDivisorCountClassifier_M4"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M5.java",
+      "class_name": "BoundedDivisorCountClassifier",
+      "mutant_id": "BoundedDivisorCountClassifier_M5"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M6.java",
+      "class_name": "BoundedDivisorCountClassifier",
+      "mutant_id": "BoundedDivisorCountClassifier_M6"
+    }
+  ],
+  "step_count": 30,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "mutant:BoundedDivisorCountClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M1.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/testcases.json"
+      ],
+      "stdout_tail": "ND] Promoted truncated leaf at 'divisor <= number' (cnt=26) \u2192 F:['tc_8_b0']\n  [EXPAND] Promoted truncated leaf at 'count <= 2' (cnt=1) \u2192 F:['tc_8_b0']\n  [EXPAND] Promoted truncated leaf at 'count <= 4' (cnt=1) \u2192 T:['tc_8_b0']\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 51 test cases generated in 9 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=32\n  round_04/b0  [BATCH_SAFE]  number=1\n  round_04/b1  [BATCH_SAFE]  number=33\n  round_04/b2  [BATCH_SAFE]  number=2\n  round_04/b3  [BATCH_SAFE]  number=34\n  round_04/b4  [BATCH_SAFE]  number=4\n  round_04/b5  [BATCH_SAFE]  number=44\n  round_04/b6  [BATCH_SAFE]  number=8\n  round_04/b7  [BATCH_SAFE]  number=16\n  round_04/b8  [BATCH_SAFE]  number=28\n  round_04/b9  [BATCH_SAFE]  number=20\n  round_04/b10  [BATCH_SAFE]  number=6\n  round_05/b0  [BATCH_SAFE]  number=47\n  round_05/b1  [BATCH_SAFE]  number=3\n  round_05/b2  [BATCH_SAFE]  number=39\n  round_05/b3  [BATCH_SAFE]  number=9\n  round_05/b4  [BATCH_SAFE]  number=21\n  round_05/b5  [BATCH_SAFE]  number=45\n  round_05/b6  [BATCH_SAFE]  number=38\n  round_05/b7  [BATCH_SAFE]  number=26\n  round_05/b8  [BATCH_SAFE]  number=22\n  round_05/b9  [BATCH_SAFE]  number=14\n  round_05/b10  [BATCH_SAFE]  number=10\n  round_05/b11  [BATCH_SAFE]  number=40\n  round_05/b12  [BATCH_SAFE]  number=18\n  round_05/b13  [BATCH_SAFE]  number=30\n  round_05/b14  [BATCH_SAFE]  number=24\n  round_06/b0  [BATCH_SAFE]  number=43\n  round_06/b1  [BATCH_SAFE]  number=41\n  round_06/b2  [BATCH_SAFE]  number=37\n  round_06/b3  [BATCH_SAFE]  number=31\n  round_06/b4  [BATCH_SAFE]  number=29\n  round_06/b5  [BATCH_SAFE]  number=23\n  round_06/b6  [BATCH_SAFE]  number=19\n  round_06/b7  [BATCH_SAFE]  number=17\n  round_06/b8  [BATCH_SAFE]  number=13\n  round_06/b9  [BATCH_SAFE]  number=11\n  round_06/b10  [BATCH_SAFE]  number=49\n  round_06/b11  [BATCH_SAFE]  number=5\n  round_06/b12  [BATCH_SAFE]  number=27\n  round_06/b13  [BATCH_SAFE]  number=15\n  round_06/b14  [BATCH_SAFE]  number=46\n  round_06/b15  [BATCH_SAFE]  number=42\n  round_06/b16  [BATCH_SAFE]  number=12\n  round_06/b17  [BATCH_SAFE]  number=48\n  round_07/b0  [BATCH_SAFE]  number=7\n  round_07/b1  [BATCH_SAFE]  number=35\n  round_07/b2  [BATCH_SAFE]  number=36\n  round_08/b0  [BATCH_SAFE]  number=25\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 256\n  frontier_discovery_time_ms: 47742\n  compile_time_ms: 19424\n  java_exec_time_ms: 3289\n  path_log_parse_time_ms: 94\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 6750\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 6777\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/cct_stats.json\n  Counts: nodes=2963, leaves=1482, covered=51, infeasible=1431, out_of_range=0, expanded=1522, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedDivisorCountClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M1.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/FSF/BoundedDivisorCountClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedDivisorCountClassifier\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/FSF/BoundedDivisorCountClassifier_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/refined_tbfv_report.json\n  Summary:     testcases=51, fsf_units=4, passed=51, failed=1, skipped=152, unsupported=0\n  CCT marked:  1\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/cct_tbfv_stats.json\n  Counts:      nodes=2963, leaves=1482, fault_leaves=1, failure_cases=1\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=2, intervals=2, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedDivisorCountClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=51, failed=1, condition_nodes=2, condition_intervals=2\n  Top conditions:\n    #1 score=0.0139 fail=1/50 line=3 number >= 50\n    #2 score=0.0136 fail=1/51 line=3 number < 1\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[3, None] root.F.TRUE\n    #2 score=0.0000 fail=1/50 line=[3, 3] root.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedDivisorCountClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M1.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M1.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  2 raw -> 2 aggregated\n  Intervals[cct_only]: 2 raw -> 2 aggregated\n  Intervals[statement_presence]: 2 raw -> 2 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 2 raw -> 2 aggregated\n  Intervals[edge_divergence_sibling_shared]: 2 raw -> 2 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedDivisorCountClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedDivisorCountClassifier_M1",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M1/BoundedDivisorCountClassifier/fault_localization_eval.json\n  Mutant:    BoundedDivisorCountClassifier_M1\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedDivisorCountClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M2.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/testcases.json"
+      ],
+      "stdout_tail": " 0' (cnt=46) \u2192 F:['tc_10_b0']\n  [EXPAND] Promoted truncated leaf at 'divisor < number' (cnt=47) \u2192 F:['tc_10_b0']\n  [EXPAND] Promoted truncated leaf at 'count <= 2' (cnt=1) \u2192 T:['tc_10_b0']\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 52 test cases generated in 11 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=32\n  round_04/b0  [BATCH_SAFE]  number=1\n  round_04/b1  [BATCH_SAFE]  number=2\n  round_04/b2  [BATCH_SAFE]  number=33\n  round_04/b3  [BATCH_SAFE]  number=4\n  round_04/b4  [BATCH_SAFE]  number=50\n  round_04/b5  [BATCH_SAFE]  number=8\n  round_04/b6  [BATCH_SAFE]  number=44\n  round_04/b7  [BATCH_SAFE]  number=16\n  round_04/b8  [BATCH_SAFE]  number=28\n  round_04/b9  [BATCH_SAFE]  number=20\n  round_04/b10  [BATCH_SAFE]  number=12\n  round_05/b0  [BATCH_SAFE]  number=3\n  round_05/b1  [BATCH_SAFE]  number=17\n  round_05/b2  [BATCH_SAFE]  number=9\n  round_05/b3  [BATCH_SAFE]  number=39\n  round_05/b4  [BATCH_SAFE]  number=27\n  round_05/b5  [BATCH_SAFE]  number=21\n  round_05/b6  [BATCH_SAFE]  number=45\n  round_05/b7  [BATCH_SAFE]  number=38\n  round_05/b8  [BATCH_SAFE]  number=10\n  round_05/b9  [BATCH_SAFE]  number=40\n  round_05/b10  [BATCH_SAFE]  number=42\n  round_05/b11  [BATCH_SAFE]  number=36\n  round_05/b12  [BATCH_SAFE]  number=48\n  round_06/b0  [BATCH_SAFE]  number=5\n  round_06/b1  [BATCH_SAFE]  number=7\n  round_06/b2  [BATCH_SAFE]  number=11\n  round_06/b3  [BATCH_SAFE]  number=13\n  round_06/b4  [BATCH_SAFE]  number=31\n  round_06/b5  [BATCH_SAFE]  number=49\n  round_06/b6  [BATCH_SAFE]  number=25\n  round_06/b7  [BATCH_SAFE]  number=15\n  round_06/b8  [BATCH_SAFE]  number=46\n  round_06/b9  [BATCH_SAFE]  number=34\n  round_06/b10  [BATCH_SAFE]  number=26\n  round_06/b11  [BATCH_SAFE]  number=22\n  round_06/b12  [BATCH_SAFE]  number=14\n  round_06/b13  [BATCH_SAFE]  number=6\n  round_06/b14  [BATCH_SAFE]  number=18\n  round_06/b15  [BATCH_SAFE]  number=30\n  round_06/b16  [BATCH_SAFE]  number=24\n  round_07/b0  [BATCH_SAFE]  number=19\n  round_07/b1  [BATCH_SAFE]  number=23\n  round_07/b2  [BATCH_SAFE]  number=29\n  round_07/b3  [BATCH_SAFE]  number=37\n  round_07/b4  [BATCH_SAFE]  number=35\n  round_08/b0  [BATCH_SAFE]  number=41\n  round_09/b0  [BATCH_SAFE]  number=43\n  round_10/b0  [BATCH_SAFE]  number=47\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 220\n  frontier_discovery_time_ms: 46274\n  compile_time_ms: 17751\n  java_exec_time_ms: 3094\n  path_log_parse_time_ms: 79\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 6861\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 6901\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/cct_stats.json\n  Counts: nodes=2983, leaves=1492, covered=52, infeasible=1440, out_of_range=0, expanded=1531, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedDivisorCountClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M2.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/FSF/BoundedDivisorCountClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedDivisorCountClassifier\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/FSF/BoundedDivisorCountClassifier_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/refined_tbfv_report.json\n  Summary:     testcases=52, fsf_units=4, passed=47, failed=5, skipped=156, unsupported=0\n  CCT marked:  5\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/cct_tbfv_stats.json\n  Counts:      nodes=2983, leaves=1492, fault_leaves=5, failure_cases=5\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=182, intervals=186, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedDivisorCountClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=52, failed=5, condition_nodes=182, condition_intervals=186\n  Top conditions:\n    #1 score=0.6931 fail=1/1 line=14 count <= 2\n    #2 score=0.6931 fail=1/1 line=8 divisor < number\n    #3 score=0.6931 fail=1/1 line=9 number % divisor == 0\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[14, None] root.F.F.T.T.T.F.T.F.T.F.T.F.T.F.T.T.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.F.TRUE\n    #2 score=0.6021 fail=1/1 line=[8, 9] root.F.F.T.T.T.F.T.F.T.F.T.F.T.F.T.T.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.FALSE\n    #3 score=0.6021 fail=1/1 line=[8, 9] root.F.F.T.T.T.F.T.F.T.F.T.F.T.F.T.T.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedDivisorCountClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M2.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M2.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  182 raw -> 6 aggregated\n  Intervals[cct_only]: 186 raw -> 9 aggregated\n  Intervals[statement_presence]: 186 raw -> 9 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 186 raw -> 9 aggregated\n  Intervals[edge_divergence_sibling_shared]: 186 raw -> 9 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedDivisorCountClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedDivisorCountClassifier_M2",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M2/BoundedDivisorCountClassifier/fault_localization_eval.json\n  Mutant:    BoundedDivisorCountClassifier_M2\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=4, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=4, top1=miss, top3=miss, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedDivisorCountClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M3.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/testcases.json"
+      ],
+      "stdout_tail": ")\n-----------------------------\n\n  [EXPAND] Promoted truncated leaf at 'divisor <= number' (cnt=44) \u2192 F:['tc_9_b0']\n  [EXPAND] Promoted truncated leaf at 'count <= 2' (cnt=1) \u2192 T:['tc_9_b0']\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 52 test cases generated in 10 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=32\n  round_04/b0  [BATCH_SAFE]  number=1\n  round_04/b1  [BATCH_SAFE]  number=33\n  round_04/b2  [BATCH_SAFE]  number=2\n  round_04/b3  [BATCH_SAFE]  number=50\n  round_04/b4  [BATCH_SAFE]  number=4\n  round_04/b5  [BATCH_SAFE]  number=44\n  round_04/b6  [BATCH_SAFE]  number=8\n  round_04/b7  [BATCH_SAFE]  number=16\n  round_04/b8  [BATCH_SAFE]  number=28\n  round_04/b9  [BATCH_SAFE]  number=40\n  round_04/b10  [BATCH_SAFE]  number=6\n  round_05/b0  [BATCH_SAFE]  number=31\n  round_05/b1  [BATCH_SAFE]  number=3\n  round_05/b2  [BATCH_SAFE]  number=39\n  round_05/b3  [BATCH_SAFE]  number=27\n  round_05/b4  [BATCH_SAFE]  number=21\n  round_05/b5  [BATCH_SAFE]  number=15\n  round_05/b6  [BATCH_SAFE]  number=22\n  round_05/b7  [BATCH_SAFE]  number=10\n  round_05/b8  [BATCH_SAFE]  number=20\n  round_05/b9  [BATCH_SAFE]  number=18\n  round_05/b10  [BATCH_SAFE]  number=30\n  round_05/b11  [BATCH_SAFE]  number=24\n  round_06/b0  [BATCH_SAFE]  number=37\n  round_06/b1  [BATCH_SAFE]  number=29\n  round_06/b2  [BATCH_SAFE]  number=23\n  round_06/b3  [BATCH_SAFE]  number=19\n  round_06/b4  [BATCH_SAFE]  number=17\n  round_06/b5  [BATCH_SAFE]  number=13\n  round_06/b6  [BATCH_SAFE]  number=11\n  round_06/b7  [BATCH_SAFE]  number=7\n  round_06/b8  [BATCH_SAFE]  number=25\n  round_06/b9  [BATCH_SAFE]  number=9\n  round_06/b10  [BATCH_SAFE]  number=45\n  round_06/b11  [BATCH_SAFE]  number=34\n  round_06/b12  [BATCH_SAFE]  number=14\n  round_06/b13  [BATCH_SAFE]  number=42\n  round_06/b14  [BATCH_SAFE]  number=36\n  round_06/b15  [BATCH_SAFE]  number=48\n  round_07/b0  [BATCH_SAFE]  number=41\n  round_07/b1  [BATCH_SAFE]  number=49\n  round_07/b2  [BATCH_SAFE]  number=5\n  round_07/b3  [BATCH_SAFE]  number=35\n  round_07/b4  [BATCH_SAFE]  number=38\n  round_07/b5  [BATCH_SAFE]  number=26\n  round_07/b6  [BATCH_SAFE]  number=12\n  round_08/b0  [BATCH_SAFE]  number=47\n  round_08/b1  [BATCH_SAFE]  number=46\n  round_09/b0  [BATCH_SAFE]  number=43\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 243\n  frontier_discovery_time_ms: 49803\n  compile_time_ms: 17954\n  java_exec_time_ms: 3172\n  path_log_parse_time_ms: 79\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 6241\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 6273\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/cct_stats.json\n  Counts: nodes=3127, leaves=1564, covered=52, infeasible=1512, out_of_range=0, expanded=1605, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedDivisorCountClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M3.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/FSF/BoundedDivisorCountClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedDivisorCountClassifier\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/FSF/BoundedDivisorCountClassifier_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/refined_tbfv_report.json\n  Summary:     testcases=52, fsf_units=4, passed=37, failed=15, skipped=156, unsupported=0\n  CCT marked:  15\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/cct_tbfv_stats.json\n  Counts:      nodes=3127, leaves=1564, fault_leaves=15, failure_cases=15\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=563, intervals=577, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedDivisorCountClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=52, failed=15, condition_nodes=563, condition_intervals=577\n  Top conditions:\n    #1 score=1.9459 fail=6/6 line=9 number % divisor == 0\n    #2 score=1.9459 fail=6/6 line=8 divisor <= number\n    #3 score=1.9459 fail=6/6 line=9 number % divisor == 0\n  Top intervals:\n    #1 score=1.6902 fail=6/6 line=[8, 9] root.F.F.T.T.T.T.T.F.T.F.T.F.T.FALSE\n    #2 score=1.5563 fail=5/5 line=[8, 9] root.F.F.T.T.T.T.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.FALSE\n    #3 score=1.5563 fail=5/5 line=[8, 9] root.F.F.T.T.T.T.T.F.T.F.T.F.T.F.T.F.T.F.T.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedDivisorCountClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M3.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M3.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  563 raw -> 6 aggregated\n  Intervals[cct_only]: 577 raw -> 8 aggregated\n  Intervals[statement_presence]: 577 raw -> 8 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 577 raw -> 8 aggregated\n  Intervals[edge_divergence_sibling_shared]: 577 raw -> 8 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedDivisorCountClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedDivisorCountClassifier_M3",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M3/BoundedDivisorCountClassifier/fault_localization_eval.json\n  Mutant:    BoundedDivisorCountClassifier_M3\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=57, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=47, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=5, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=4, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=5, top1=miss, top3=miss, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedDivisorCountClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M4.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/testcases.json"
+      ],
+      "stdout_tail": "divisor <= number' (cnt=35) \u2192 F:['tc_8_b1']\n  [EXPAND] Promoted truncated leaf at 'count <= 2' (cnt=1) \u2192 F:['tc_8_b1']\n  [EXPAND] Promoted truncated leaf at 'count <= 4' (cnt=1) \u2192 F:['tc_8_b1']\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 52 test cases generated in 9 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=32\n  round_04/b0  [BATCH_SAFE]  number=1\n  round_04/b1  [BATCH_SAFE]  number=33\n  round_04/b2  [BATCH_SAFE]  number=2\n  round_04/b3  [BATCH_SAFE]  number=50\n  round_04/b4  [BATCH_SAFE]  number=4\n  round_04/b5  [BATCH_SAFE]  number=44\n  round_04/b6  [BATCH_SAFE]  number=8\n  round_04/b7  [BATCH_SAFE]  number=16\n  round_04/b8  [BATCH_SAFE]  number=28\n  round_04/b9  [BATCH_SAFE]  number=20\n  round_04/b10  [BATCH_SAFE]  number=6\n  round_05/b0  [BATCH_SAFE]  number=49\n  round_05/b1  [BATCH_SAFE]  number=3\n  round_05/b2  [BATCH_SAFE]  number=39\n  round_05/b3  [BATCH_SAFE]  number=9\n  round_05/b4  [BATCH_SAFE]  number=21\n  round_05/b5  [BATCH_SAFE]  number=15\n  round_05/b6  [BATCH_SAFE]  number=22\n  round_05/b7  [BATCH_SAFE]  number=10\n  round_05/b8  [BATCH_SAFE]  number=40\n  round_05/b9  [BATCH_SAFE]  number=18\n  round_05/b10  [BATCH_SAFE]  number=30\n  round_05/b11  [BATCH_SAFE]  number=12\n  round_06/b0  [BATCH_SAFE]  number=47\n  round_06/b1  [BATCH_SAFE]  number=7\n  round_06/b2  [BATCH_SAFE]  number=25\n  round_06/b3  [BATCH_SAFE]  number=27\n  round_06/b4  [BATCH_SAFE]  number=45\n  round_06/b5  [BATCH_SAFE]  number=26\n  round_06/b6  [BATCH_SAFE]  number=14\n  round_06/b7  [BATCH_SAFE]  number=42\n  round_06/b8  [BATCH_SAFE]  number=36\n  round_06/b9  [BATCH_SAFE]  number=48\n  round_07/b0  [BATCH_SAFE]  number=43\n  round_07/b1  [BATCH_SAFE]  number=41\n  round_07/b2  [BATCH_SAFE]  number=37\n  round_07/b3  [BATCH_SAFE]  number=31\n  round_07/b4  [BATCH_SAFE]  number=29\n  round_07/b5  [BATCH_SAFE]  number=23\n  round_07/b6  [BATCH_SAFE]  number=19\n  round_07/b7  [BATCH_SAFE]  number=17\n  round_07/b8  [BATCH_SAFE]  number=13\n  round_07/b9  [BATCH_SAFE]  number=11\n  round_07/b10  [BATCH_SAFE]  number=5\n  round_07/b11  [BATCH_SAFE]  number=35\n  round_07/b12  [BATCH_SAFE]  number=46\n  round_07/b13  [BATCH_SAFE]  number=24\n  round_08/b0  [BATCH_SAFE]  number=38\n  round_08/b1  [BATCH_SAFE]  number=34\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 244\n  frontier_discovery_time_ms: 50365\n  compile_time_ms: 17921\n  java_exec_time_ms: 2959\n  path_log_parse_time_ms: 78\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 6204\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 6227\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/cct_stats.json\n  Counts: nodes=3157, leaves=1579, covered=52, infeasible=1527, out_of_range=0, expanded=1620, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedDivisorCountClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M4.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/FSF/BoundedDivisorCountClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedDivisorCountClassifier\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/FSF/BoundedDivisorCountClassifier_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/refined_tbfv_report.json\n  Summary:     testcases=52, fsf_units=4, passed=18, failed=34, skipped=156, unsupported=0\n  CCT marked:  34\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/cct_tbfv_stats.json\n  Counts:      nodes=3157, leaves=1579, fault_leaves=34, failure_cases=34\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=818, intervals=851, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedDivisorCountClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=52, failed=34, condition_nodes=818, condition_intervals=851\n  Top conditions:\n    #1 score=3.0456 fail=23/24 line=9 number % divisor == 0\n    #2 score=3.0456 fail=23/24 line=8 divisor <= number\n    #3 score=2.8332 fail=16/16 line=9 number % divisor == 0\n  Top intervals:\n    #1 score=2.4609 fail=16/16 line=[8, 9] root.F.F.T.T.T.F.T.F.T.FALSE\n    #2 score=2.2923 fail=13/13 line=[8, 9] root.F.F.T.T.T.F.T.F.T.F.T.F.T.FALSE\n    #3 score=2.1584 fail=11/11 line=[8, 9] root.F.F.T.T.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedDivisorCountClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M4.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M4.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  818 raw -> 6 aggregated\n  Intervals[cct_only]: 851 raw -> 9 aggregated\n  Intervals[statement_presence]: 851 raw -> 9 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 851 raw -> 9 aggregated\n  Intervals[edge_divergence_sibling_shared]: 851 raw -> 9 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedDivisorCountClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedDivisorCountClassifier_M4",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M4/BoundedDivisorCountClassifier/fault_localization_eval.json\n  Mutant:    BoundedDivisorCountClassifier_M4\n  Operator:  AOR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=138, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=15, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=37, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=7, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.statement_presence: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedDivisorCountClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M5.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/testcases.json"
+      ],
+      "stdout_tail": "ND] Promoted truncated leaf at 'divisor <= number' (cnt=21) \u2192 F:['tc_7_b1']\n  [EXPAND] Promoted truncated leaf at 'count <= 2' (cnt=1) \u2192 F:['tc_7_b1']\n  [EXPAND] Promoted truncated leaf at 'count <= 4' (cnt=1) \u2192 T:['tc_7_b1']\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 51 test cases generated in 8 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=32\n  round_04/b0  [BATCH_SAFE]  number=2\n  round_04/b1  [BATCH_SAFE]  number=4\n  round_04/b2  [BATCH_SAFE]  number=8\n  round_04/b3  [BATCH_SAFE]  number=16\n  round_04/b4  [BATCH_SAFE]  number=37\n  round_04/b5  [BATCH_SAFE]  number=31\n  round_04/b6  [BATCH_SAFE]  number=29\n  round_04/b7  [BATCH_SAFE]  number=46\n  round_04/b8  [BATCH_SAFE]  number=19\n  round_04/b9  [BATCH_SAFE]  number=34\n  round_04/b10  [BATCH_SAFE]  number=13\n  round_04/b11  [BATCH_SAFE]  number=11\n  round_04/b12  [BATCH_SAFE]  number=7\n  round_04/b13  [BATCH_SAFE]  number=10\n  round_04/b14  [BATCH_SAFE]  number=27\n  round_05/b0  [BATCH_SAFE]  number=43\n  round_05/b1  [BATCH_SAFE]  number=23\n  round_05/b2  [BATCH_SAFE]  number=38\n  round_05/b3  [BATCH_SAFE]  number=17\n  round_05/b4  [BATCH_SAFE]  number=26\n  round_05/b5  [BATCH_SAFE]  number=22\n  round_05/b6  [BATCH_SAFE]  number=28\n  round_05/b7  [BATCH_SAFE]  number=5\n  round_05/b8  [BATCH_SAFE]  number=50\n  round_05/b9  [BATCH_SAFE]  number=35\n  round_05/b10  [BATCH_SAFE]  number=3\n  round_05/b11  [BATCH_SAFE]  number=6\n  round_05/b12  [BATCH_SAFE]  number=12\n  round_05/b13  [BATCH_SAFE]  number=9\n  round_05/b14  [BATCH_SAFE]  number=18\n  round_05/b15  [BATCH_SAFE]  number=36\n  round_05/b16  [BATCH_SAFE]  number=42\n  round_05/b17  [BATCH_SAFE]  number=30\n  round_06/b0  [BATCH_SAFE]  number=47\n  round_06/b1  [BATCH_SAFE]  number=41\n  round_06/b2  [BATCH_SAFE]  number=44\n  round_06/b3  [BATCH_SAFE]  number=14\n  round_06/b4  [BATCH_SAFE]  number=49\n  round_06/b5  [BATCH_SAFE]  number=20\n  round_06/b6  [BATCH_SAFE]  number=40\n  round_06/b7  [BATCH_SAFE]  number=25\n  round_06/b8  [BATCH_SAFE]  number=48\n  round_06/b9  [BATCH_SAFE]  number=33\n  round_06/b10  [BATCH_SAFE]  number=21\n  round_06/b11  [BATCH_SAFE]  number=15\n  round_06/b12  [BATCH_SAFE]  number=45\n  round_07/b0  [BATCH_SAFE]  number=24\n  round_07/b1  [BATCH_SAFE]  number=39\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 163\n  frontier_discovery_time_ms: 10265\n  compile_time_ms: 17666\n  java_exec_time_ms: 2938\n  path_log_parse_time_ms: 18\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 6122\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 6130\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/cct_stats.json\n  Counts: nodes=1155, leaves=578, covered=51, infeasible=527, out_of_range=0, expanded=618, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedDivisorCountClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M5.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/FSF/BoundedDivisorCountClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedDivisorCountClassifier\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/FSF/BoundedDivisorCountClassifier_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/refined_tbfv_report.json\n  Summary:     testcases=51, fsf_units=4, passed=27, failed=24, skipped=153, unsupported=0\n  CCT marked:  24\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/cct_tbfv_stats.json\n  Counts:      nodes=1155, leaves=578, fault_leaves=24, failure_cases=24\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=382, intervals=405, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedDivisorCountClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=51, failed=24, condition_nodes=382, condition_intervals=405\n  Top conditions:\n    #1 score=1.6094 fail=24/48 line=9 number % divisor == 0\n    #2 score=1.5766 fail=24/49 line=8 divisor <= number\n    #3 score=1.5766 fail=24/49 line=9 number % divisor == 0\n  Top intervals:\n    #1 score=1.0201 fail=24/49 line=[8, 9] root.F.F.T.TRUE\n    #2 score=1.0201 fail=24/49 line=[3, 8] root.F.FALSE\n    #3 score=1.0065 fail=4/5 line=[8, 9] root.F.F.T.T.T.F.T.T.T.F.T.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedDivisorCountClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M5.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M5.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  382 raw -> 6 aggregated\n  Intervals[cct_only]: 405 raw -> 9 aggregated\n  Intervals[statement_presence]: 405 raw -> 9 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 405 raw -> 9 aggregated\n  Intervals[edge_divergence_sibling_shared]: 405 raw -> 9 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedDivisorCountClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedDivisorCountClassifier_M5",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M5/BoundedDivisorCountClassifier/fault_localization_eval.json\n  Mutant:    BoundedDivisorCountClassifier_M5\n  Operator:  AOR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=48, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_shared: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedDivisorCountClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M6.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/testcases.json"
+      ],
+      "stdout_tail": "or <= number' (cnt=13) \u2192 F:['tc_7_b10']\n  [EXPAND] Promoted truncated leaf at 'count <= 2' (cnt=1) \u2192 F:['tc_7_b10']\n  [EXPAND] Promoted truncated leaf at 'count <= 4' (cnt=1) \u2192 F:['tc_7_b10']\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 52 test cases generated in 8 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=32\n  round_04/b0  [BATCH_SAFE]  number=1\n  round_04/b1  [BATCH_SAFE]  number=33\n  round_04/b2  [BATCH_SAFE]  number=2\n  round_04/b3  [BATCH_SAFE]  number=50\n  round_04/b4  [BATCH_SAFE]  number=4\n  round_04/b5  [BATCH_SAFE]  number=44\n  round_04/b6  [BATCH_SAFE]  number=8\n  round_04/b7  [BATCH_SAFE]  number=16\n  round_04/b8  [BATCH_SAFE]  number=28\n  round_04/b9  [BATCH_SAFE]  number=20\n  round_04/b10  [BATCH_SAFE]  number=18\n  round_05/b0  [BATCH_SAFE]  number=17\n  round_05/b1  [BATCH_SAFE]  number=3\n  round_05/b2  [BATCH_SAFE]  number=39\n  round_05/b3  [BATCH_SAFE]  number=9\n  round_05/b4  [BATCH_SAFE]  number=21\n  round_05/b5  [BATCH_SAFE]  number=45\n  round_05/b6  [BATCH_SAFE]  number=46\n  round_05/b7  [BATCH_SAFE]  number=10\n  round_05/b8  [BATCH_SAFE]  number=40\n  round_05/b9  [BATCH_SAFE]  number=6\n  round_05/b10  [BATCH_SAFE]  number=42\n  round_05/b11  [BATCH_SAFE]  number=30\n  round_05/b12  [BATCH_SAFE]  number=24\n  round_06/b0  [BATCH_SAFE]  number=43\n  round_06/b1  [BATCH_SAFE]  number=13\n  round_06/b2  [BATCH_SAFE]  number=11\n  round_06/b3  [BATCH_SAFE]  number=7\n  round_06/b4  [BATCH_SAFE]  number=25\n  round_06/b5  [BATCH_SAFE]  number=27\n  round_06/b6  [BATCH_SAFE]  number=15\n  round_06/b7  [BATCH_SAFE]  number=38\n  round_06/b8  [BATCH_SAFE]  number=34\n  round_06/b9  [BATCH_SAFE]  number=26\n  round_06/b10  [BATCH_SAFE]  number=22\n  round_06/b11  [BATCH_SAFE]  number=14\n  round_06/b12  [BATCH_SAFE]  number=36\n  round_06/b13  [BATCH_SAFE]  number=48\n  round_07/b0  [BATCH_SAFE]  number=47\n  round_07/b1  [BATCH_SAFE]  number=41\n  round_07/b2  [BATCH_SAFE]  number=37\n  round_07/b3  [BATCH_SAFE]  number=31\n  round_07/b4  [BATCH_SAFE]  number=29\n  round_07/b5  [BATCH_SAFE]  number=23\n  round_07/b6  [BATCH_SAFE]  number=19\n  round_07/b7  [BATCH_SAFE]  number=49\n  round_07/b8  [BATCH_SAFE]  number=5\n  round_07/b9  [BATCH_SAFE]  number=35\n  round_07/b10  [BATCH_SAFE]  number=12\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 245\n  frontier_discovery_time_ms: 50140\n  compile_time_ms: 18113\n  java_exec_time_ms: 3387\n  path_log_parse_time_ms: 82\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 6338\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 6363\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/cct_stats.json\n  Counts: nodes=3127, leaves=1564, covered=52, infeasible=1512, out_of_range=0, expanded=1605, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedDivisorCountClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M6.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/FSF/BoundedDivisorCountClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedDivisorCountClassifier\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedDivisorCountClassifier/FSF/BoundedDivisorCountClassifier_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/refined_tbfv_report.json\n  Summary:     testcases=52, fsf_units=4, passed=37, failed=15, skipped=156, unsupported=0\n  CCT marked:  15\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/cct_tbfv_stats.json\n  Counts:      nodes=3127, leaves=1564, fault_leaves=15, failure_cases=15\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=812, intervals=826, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedDivisorCountClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=52, failed=15, condition_nodes=812, condition_intervals=826\n  Top conditions:\n    #1 score=1.8195 fail=7/8 line=9 number % divisor == 0\n    #2 score=1.8195 fail=7/8 line=8 divisor <= number\n    #3 score=1.6679 fail=6/7 line=9 number % divisor == 0\n  Top intervals:\n    #1 score=1.3979 fail=4/4 line=[8, 9] root.F.F.T.T.T.T.T.T.T.T.T.F.T.T.T.FALSE\n    #2 score=1.3979 fail=4/4 line=[8, 9] root.F.F.T.T.T.T.T.T.T.T.T.F.T.TRUE\n    #3 score=1.3979 fail=4/4 line=[8, 9] root.F.F.T.T.T.T.T.T.T.T.T.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedDivisorCountClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M6.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedDivisorCountClassifier/BoundedDivisorCountClassifier_M6.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  812 raw -> 6 aggregated\n  Intervals[cct_only]: 826 raw -> 8 aggregated\n  Intervals[statement_presence]: 826 raw -> 8 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 826 raw -> 8 aggregated\n  Intervals[edge_divergence_sibling_shared]: 826 raw -> 8 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedDivisorCountClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedDivisorCountClassifier_M6",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedDivisorCountClassifier_M6/BoundedDivisorCountClassifier/fault_localization_eval.json\n  Mutant:    BoundedDivisorCountClassifier_M6\n  Operator:  CR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=26, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=58, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.statement_presence: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=4, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    }
+  ]
+}

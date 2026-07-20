@@ -1,0 +1,27 @@
+[fsf_1]
+T: weight <= 0
+D: return_value == -1
+
+[fsf_2]
+T: weight > 0 && distance <= 0
+D: return_value == -1
+
+[fsf_3]
+T: weight > 20 && distance > 0
+D: return_value == -1
+
+[fsf_4]
+T: weight > 0 && weight <= 20 && distance > 500
+D: return_value == -1
+
+[fsf_5]
+T: weight >= 1 && weight <= 6 && distance > 0 && distance <= 100 && express == false
+D: return_value == 5 + 2 * (weight - 1)
+
+[fsf_6]
+T: weight == 1 && distance == 500 && express == false
+D: return_value == 21
+
+[fsf_7]
+T: weight == 3 && distance == 250 && express == true
+D: return_value == 27

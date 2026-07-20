@@ -1,0 +1,18 @@
+{
+  "experiment_id": "boundary_kill_with_boundary_stress",
+  "source_experiment": "experiments/EX_CSC_dataset/boundary_kill_core",
+  "stress_experiment": "experiments/EX_CSC_dataset/boundary_stress/BoundarySensitiveMutants",
+  "selection_policy": "Keep the pool at 198 tasks by excluding four low-discrimination statement mutants killed by the first CSC-only test and including four validated Boundary-sensitive mutants.",
+  "excluded_mutant_ids": [
+    "TaxBracket_M5",
+    "InventoryReorder_M6",
+    "TwoBucketLoop_M6",
+    "RewardCapLoop_M6"
+  ],
+  "included_mutant_ids": [
+    "BoundaryStressCounter_M7",
+    "BoundaryStressMeter_M7",
+    "BoundaryStressLedger_M7",
+    "BoundaryStressQuota_M7"
+  ]
+}

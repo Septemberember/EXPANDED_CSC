@@ -1,0 +1,754 @@
+{
+  "subject": "BoundedBinaryPalindromeClassifier",
+  "subject_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier",
+  "fsf": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/FSF/BoundedBinaryPalindromeClassifier_FSF.txt",
+  "manifest": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+  "mode": "expanded",
+  "strategy": "batch",
+  "max_iter": 50,
+  "dry_run": false,
+  "original": {
+    "role": "original",
+    "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier.java",
+    "class_name": "BoundedBinaryPalindromeClassifier",
+    "mutant_id": null
+  },
+  "mutants": [
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M1.java",
+      "class_name": "BoundedBinaryPalindromeClassifier",
+      "mutant_id": "BoundedBinaryPalindromeClassifier_M1"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M2.java",
+      "class_name": "BoundedBinaryPalindromeClassifier",
+      "mutant_id": "BoundedBinaryPalindromeClassifier_M2"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M3.java",
+      "class_name": "BoundedBinaryPalindromeClassifier",
+      "mutant_id": "BoundedBinaryPalindromeClassifier_M3"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M4.java",
+      "class_name": "BoundedBinaryPalindromeClassifier",
+      "mutant_id": "BoundedBinaryPalindromeClassifier_M4"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M5.java",
+      "class_name": "BoundedBinaryPalindromeClassifier",
+      "mutant_id": "BoundedBinaryPalindromeClassifier_M5"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M6.java",
+      "class_name": "BoundedBinaryPalindromeClassifier",
+      "mutant_id": "BoundedBinaryPalindromeClassifier_M6"
+    }
+  ],
+  "step_count": 30,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "mutant:BoundedBinaryPalindromeClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M1.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/testcases.json"
+      ],
+      "stdout_tail": "lindromeClassifier/BoundedBinaryPalindromeClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=64\n  round_04/b0  [BATCH_SAFE]  number=32\n  round_04/b1  [BATCH_SAFE]  number=68\n  round_04/b2  [BATCH_SAFE]  number=80\n  round_04/b3  [BATCH_SAFE]  number=66\n  round_04/b4  [BATCH_SAFE]  number=96\n  round_04/b5  [BATCH_SAFE]  number=65\n  round_05/b0  [BATCH_SAFE]  number=16\n  round_05/b1  [BATCH_SAFE]  number=36\n  round_05/b2  [BATCH_SAFE]  number=48\n  round_05/b3  [BATCH_SAFE]  number=34\n  round_05/b4  [BATCH_SAFE]  number=1\n  round_05/b5  [BATCH_SAFE]  number=84\n  round_05/b6  [BATCH_SAFE]  number=70\n  round_05/b7  [BATCH_SAFE]  number=82\n  round_05/b8  [BATCH_SAFE]  number=100\n  round_05/b9  [BATCH_SAFE]  number=112\n  round_05/b10  [BATCH_SAFE]  number=98\n  round_05/b11  [BATCH_SAFE]  number=69\n  round_05/b12  [BATCH_SAFE]  number=81\n  round_05/b13  [BATCH_SAFE]  number=67\n  round_05/b14  [BATCH_SAFE]  number=97\n  round_06/b0  [BATCH_SAFE]  number=8\n  round_06/b1  [BATCH_SAFE]  number=20\n  round_06/b2  [BATCH_SAFE]  number=2\n  round_06/b3  [BATCH_SAFE]  number=52\n  round_06/b4  [BATCH_SAFE]  number=38\n  round_06/b5  [BATCH_SAFE]  number=50\n  round_06/b6  [BATCH_SAFE]  number=5\n  round_06/b7  [BATCH_SAFE]  number=17\n  round_06/b8  [BATCH_SAFE]  number=3\n  round_06/b9  [BATCH_SAFE]  number=33\n  round_06/b10  [BATCH_SAFE]  number=86\n  round_06/b11  [BATCH_SAFE]  number=116\n  round_06/b12  [BATCH_SAFE]  number=102\n  round_06/b13  [BATCH_SAFE]  number=114\n  round_06/b14  [BATCH_SAFE]  number=85\n  round_06/b15  [BATCH_SAFE]  number=71\n  round_06/b16  [BATCH_SAFE]  number=83\n  round_06/b17  [BATCH_SAFE]  number=101\n  round_06/b18  [BATCH_SAFE]  number=113\n  round_06/b19  [BATCH_SAFE]  number=99\n  round_07/b0  [BATCH_SAFE]  number=4\n  round_07/b1  [BATCH_SAFE]  number=6\n  round_07/b2  [BATCH_SAFE]  number=18\n  round_07/b3  [BATCH_SAFE]  number=54\n  round_07/b4  [BATCH_SAFE]  number=21\n  round_07/b5  [BATCH_SAFE]  number=7\n  round_07/b6  [BATCH_SAFE]  number=19\n  round_07/b7  [BATCH_SAFE]  number=37\n  round_07/b8  [BATCH_SAFE]  number=49\n  round_07/b9  [BATCH_SAFE]  number=35\n  round_07/b10  [BATCH_SAFE]  number=118\n  round_07/b11  [BATCH_SAFE]  number=87\n  round_07/b12  [BATCH_SAFE]  number=117\n  round_07/b13  [BATCH_SAFE]  number=103\n  round_07/b14  [BATCH_SAFE]  number=115\n  round_08/b0  [BATCH_SAFE]  number=22\n  round_08/b1  [BATCH_SAFE]  number=23\n  round_08/b2  [BATCH_SAFE]  number=53\n  round_08/b3  [BATCH_SAFE]  number=39\n  round_08/b4  [BATCH_SAFE]  number=51\n  round_08/b5  [BATCH_SAFE]  number=119\n  round_09/b0  [BATCH_SAFE]  number=55\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 110\n  frontier_discovery_time_ms: 1195\n  compile_time_ms: 21429\n  java_exec_time_ms: 3876\n  path_log_parse_time_ms: 1\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 7376\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 7386\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/cct_stats.json\n  Counts: nodes=597, leaves=299, covered=66, infeasible=233, out_of_range=0, expanded=320, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedBinaryPalindromeClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M1.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/FSF/BoundedBinaryPalindromeClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedBinaryPalindromeClassifier\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/FSF/BoundedBinaryPalindromeClassifier_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/refined_tbfv_report.json\n  Summary:     testcases=66, fsf_units=3, passed=66, failed=1, skipped=131, unsupported=0\n  CCT marked:  1\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/cct_tbfv_stats.json\n  Counts:      nodes=597, leaves=299, fault_leaves=1, failure_cases=1\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=1, intervals=1, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedBinaryPalindromeClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=66, failed=1, condition_nodes=1, condition_intervals=1\n  Top conditions:\n    #1 score=0.0105 fail=1/66 line=3 number <= 0\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[3, None] root.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedBinaryPalindromeClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M1.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M1.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  1 raw -> 1 aggregated\n  Intervals[cct_only]: 1 raw -> 1 aggregated\n  Intervals[statement_presence]: 1 raw -> 1 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 1 raw -> 1 aggregated\n  Intervals[edge_divergence_sibling_shared]: 1 raw -> 1 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedBinaryPalindromeClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedBinaryPalindromeClassifier_M1",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M1/BoundedBinaryPalindromeClassifier/fault_localization_eval.json\n  Mutant:    BoundedBinaryPalindromeClassifier_M1\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedBinaryPalindromeClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M2.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/testcases.json"
+      ],
+      "stdout_tail": "omeClassifier/BoundedBinaryPalindromeClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=64\n  round_02/b1  [BATCH_SAFE]  number=32\n  round_02/b2  [BATCH_SAFE]  number=16\n  round_02/b3  [BATCH_SAFE]  number=4\n  round_02/b4  [BATCH_SAFE]  number=2\n  round_02/b5  [BATCH_SAFE]  number=1\n  round_02/b6  [BATCH_SAFE]  number=16384\n  round_02/b7  [BATCH_SAFE]  number=-32768\n  round_03/b0  [BATCH_SAFE]  number=96\n  round_03/b1  [BATCH_SAFE]  number=80\n  round_03/b2  [BATCH_SAFE]  number=68\n  round_03/b3  [BATCH_SAFE]  number=66\n  round_03/b4  [BATCH_SAFE]  number=65\n  round_03/b5  [BATCH_SAFE]  number=48\n  round_03/b6  [BATCH_SAFE]  number=36\n  round_03/b7  [BATCH_SAFE]  number=34\n  round_03/b8  [BATCH_SAFE]  number=20\n  round_03/b9  [BATCH_SAFE]  number=18\n  round_03/b10  [BATCH_SAFE]  number=6\n  round_03/b11  [BATCH_SAFE]  number=33\n  round_03/b12  [BATCH_SAFE]  number=17\n  round_03/b13  [BATCH_SAFE]  number=5\n  round_03/b14  [BATCH_SAFE]  number=3\n  round_04/b0  [BATCH_SAFE]  number=112\n  round_04/b1  [BATCH_SAFE]  number=100\n  round_04/b2  [BATCH_SAFE]  number=98\n  round_04/b3  [BATCH_SAFE]  number=84\n  round_04/b4  [BATCH_SAFE]  number=82\n  round_04/b5  [BATCH_SAFE]  number=70\n  round_04/b6  [BATCH_SAFE]  number=97\n  round_04/b7  [BATCH_SAFE]  number=81\n  round_04/b8  [BATCH_SAFE]  number=69\n  round_04/b9  [BATCH_SAFE]  number=67\n  round_04/b10  [BATCH_SAFE]  number=52\n  round_04/b11  [BATCH_SAFE]  number=50\n  round_04/b12  [BATCH_SAFE]  number=38\n  round_04/b13  [BATCH_SAFE]  number=22\n  round_04/b14  [BATCH_SAFE]  number=49\n  round_04/b15  [BATCH_SAFE]  number=37\n  round_04/b16  [BATCH_SAFE]  number=35\n  round_04/b17  [BATCH_SAFE]  number=21\n  round_04/b18  [BATCH_SAFE]  number=19\n  round_04/b19  [BATCH_SAFE]  number=7\n  round_05/b0  [BATCH_SAFE]  number=116\n  round_05/b1  [BATCH_SAFE]  number=114\n  round_05/b2  [BATCH_SAFE]  number=102\n  round_05/b3  [BATCH_SAFE]  number=86\n  round_05/b4  [BATCH_SAFE]  number=113\n  round_05/b5  [BATCH_SAFE]  number=101\n  round_05/b6  [BATCH_SAFE]  number=99\n  round_05/b7  [BATCH_SAFE]  number=85\n  round_05/b8  [BATCH_SAFE]  number=83\n  round_05/b9  [BATCH_SAFE]  number=71\n  round_05/b10  [BATCH_SAFE]  number=54\n  round_05/b11  [BATCH_SAFE]  number=53\n  round_05/b12  [BATCH_SAFE]  number=51\n  round_05/b13  [BATCH_SAFE]  number=39\n  round_05/b14  [BATCH_SAFE]  number=23\n  round_06/b0  [BATCH_SAFE]  number=118\n  round_06/b1  [BATCH_SAFE]  number=117\n  round_06/b2  [BATCH_SAFE]  number=115\n  round_06/b3  [BATCH_SAFE]  number=103\n  round_06/b4  [BATCH_SAFE]  number=87\n  round_06/b5  [BATCH_SAFE]  number=55\n  round_07/b0  [BATCH_SAFE]  number=119\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 113\n  frontier_discovery_time_ms: 1344\n  compile_time_ms: 24727\n  java_exec_time_ms: 4532\n  path_log_parse_time_ms: 3\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 7962\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 7972\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/cct_stats.json\n  Counts: nodes=597, leaves=299, covered=66, infeasible=233, out_of_range=0, expanded=320, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedBinaryPalindromeClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M2.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/FSF/BoundedBinaryPalindromeClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedBinaryPalindromeClassifier\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/FSF/BoundedBinaryPalindromeClassifier_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/refined_tbfv_report.json\n  Summary:     testcases=66, fsf_units=3, passed=50, failed=16, skipped=132, unsupported=0\n  CCT marked:  16\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/cct_tbfv_stats.json\n  Counts:      nodes=597, leaves=299, fault_leaves=16, failure_cases=16\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=114, intervals=129, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedBinaryPalindromeClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=66, failed=16, condition_nodes=114, condition_intervals=129\n  Top conditions:\n    #1 score=0.7083 fail=16/64 line=12 number / left % 2 != 1\n    #2 score=0.7083 fail=16/64 line=9 left > right\n    #3 score=0.6974 fail=16/65 line=3 number > 127\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[24, None] root.F.F.T.F.F.F.T.F.F.F.T.F.F.F.F.TRUE\n    #2 score=0.6021 fail=1/1 line=[24, None] root.F.F.T.F.F.F.T.F.F.F.T.T.T.F.F.TRUE\n    #3 score=0.6021 fail=1/1 line=[24, None] root.F.F.T.F.F.F.T.T.T.F.T.F.F.F.F.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedBinaryPalindromeClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M2.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M2.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  114 raw -> 7 aggregated\n  Intervals[cct_only]: 129 raw -> 12 aggregated\n  Intervals[statement_presence]: 129 raw -> 12 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 129 raw -> 12 aggregated\n  Intervals[edge_divergence_sibling_shared]: 129 raw -> 12 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedBinaryPalindromeClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedBinaryPalindromeClassifier_M2",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M2/BoundedBinaryPalindromeClassifier/fault_localization_eval.json\n  Mutant:    BoundedBinaryPalindromeClassifier_M2\n  Operator:  ROR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=17, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedBinaryPalindromeClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M3.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/testcases.json"
+      ],
+      "stdout_tail": "omeClassifier/BoundedBinaryPalindromeClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=4\n  round_02/b1  [BATCH_SAFE]  number=16\n  round_02/b2  [BATCH_SAFE]  number=2\n  round_02/b3  [BATCH_SAFE]  number=32\n  round_02/b4  [BATCH_SAFE]  number=1\n  round_02/b5  [BATCH_SAFE]  number=64\n  round_02/b6  [BATCH_SAFE]  number=16384\n  round_02/b7  [BATCH_SAFE]  number=-32768\n  round_03/b0  [BATCH_SAFE]  number=20\n  round_03/b1  [BATCH_SAFE]  number=6\n  round_03/b2  [BATCH_SAFE]  number=18\n  round_03/b3  [BATCH_SAFE]  number=36\n  round_03/b4  [BATCH_SAFE]  number=48\n  round_03/b5  [BATCH_SAFE]  number=34\n  round_03/b6  [BATCH_SAFE]  number=5\n  round_03/b7  [BATCH_SAFE]  number=17\n  round_03/b8  [BATCH_SAFE]  number=3\n  round_03/b9  [BATCH_SAFE]  number=33\n  round_03/b10  [BATCH_SAFE]  number=68\n  round_03/b11  [BATCH_SAFE]  number=80\n  round_03/b12  [BATCH_SAFE]  number=66\n  round_03/b13  [BATCH_SAFE]  number=96\n  round_03/b14  [BATCH_SAFE]  number=65\n  round_04/b0  [BATCH_SAFE]  number=22\n  round_04/b1  [BATCH_SAFE]  number=52\n  round_04/b2  [BATCH_SAFE]  number=38\n  round_04/b3  [BATCH_SAFE]  number=50\n  round_04/b4  [BATCH_SAFE]  number=21\n  round_04/b5  [BATCH_SAFE]  number=7\n  round_04/b6  [BATCH_SAFE]  number=19\n  round_04/b7  [BATCH_SAFE]  number=37\n  round_04/b8  [BATCH_SAFE]  number=49\n  round_04/b9  [BATCH_SAFE]  number=35\n  round_04/b10  [BATCH_SAFE]  number=84\n  round_04/b11  [BATCH_SAFE]  number=70\n  round_04/b12  [BATCH_SAFE]  number=82\n  round_04/b13  [BATCH_SAFE]  number=100\n  round_04/b14  [BATCH_SAFE]  number=112\n  round_04/b15  [BATCH_SAFE]  number=98\n  round_04/b16  [BATCH_SAFE]  number=69\n  round_04/b17  [BATCH_SAFE]  number=81\n  round_04/b18  [BATCH_SAFE]  number=67\n  round_04/b19  [BATCH_SAFE]  number=97\n  round_05/b0  [BATCH_SAFE]  number=54\n  round_05/b1  [BATCH_SAFE]  number=23\n  round_05/b2  [BATCH_SAFE]  number=53\n  round_05/b3  [BATCH_SAFE]  number=39\n  round_05/b4  [BATCH_SAFE]  number=51\n  round_05/b5  [BATCH_SAFE]  number=86\n  round_05/b6  [BATCH_SAFE]  number=116\n  round_05/b7  [BATCH_SAFE]  number=102\n  round_05/b8  [BATCH_SAFE]  number=114\n  round_05/b9  [BATCH_SAFE]  number=85\n  round_05/b10  [BATCH_SAFE]  number=71\n  round_05/b11  [BATCH_SAFE]  number=83\n  round_05/b12  [BATCH_SAFE]  number=101\n  round_05/b13  [BATCH_SAFE]  number=113\n  round_05/b14  [BATCH_SAFE]  number=99\n  round_06/b0  [BATCH_SAFE]  number=55\n  round_06/b1  [BATCH_SAFE]  number=118\n  round_06/b2  [BATCH_SAFE]  number=87\n  round_06/b3  [BATCH_SAFE]  number=117\n  round_06/b4  [BATCH_SAFE]  number=103\n  round_06/b5  [BATCH_SAFE]  number=115\n  round_07/b0  [BATCH_SAFE]  number=119\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 112\n  frontier_discovery_time_ms: 1358\n  compile_time_ms: 26489\n  java_exec_time_ms: 4726\n  path_log_parse_time_ms: 6\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 8463\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 8474\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/cct_stats.json\n  Counts: nodes=597, leaves=299, covered=66, infeasible=233, out_of_range=0, expanded=320, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedBinaryPalindromeClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M3.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/FSF/BoundedBinaryPalindromeClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedBinaryPalindromeClassifier\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/FSF/BoundedBinaryPalindromeClassifier_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/refined_tbfv_report.json\n  Summary:     testcases=66, fsf_units=3, passed=50, failed=16, skipped=132, unsupported=0\n  CCT marked:  16\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/cct_tbfv_stats.json\n  Counts:      nodes=597, leaves=299, fault_leaves=16, failure_cases=16\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=114, intervals=129, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedBinaryPalindromeClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=66, failed=16, condition_nodes=114, condition_intervals=129\n  Top conditions:\n    #1 score=0.7083 fail=16/64 line=12 number / left % 2 == 1\n    #2 score=0.7083 fail=16/64 line=9 left > right\n    #3 score=0.6974 fail=16/65 line=3 number > 127\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[24, None] root.F.F.T.F.F.T.T.F.F.T.T.F.F.T.F.FALSE\n    #2 score=0.6021 fail=1/1 line=[24, None] root.F.F.T.F.F.T.T.F.F.T.T.T.T.T.F.FALSE\n    #3 score=0.6021 fail=1/1 line=[24, None] root.F.F.T.F.F.T.T.T.T.T.T.F.F.T.F.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedBinaryPalindromeClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M3.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M3.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  114 raw -> 7 aggregated\n  Intervals[cct_only]: 129 raw -> 12 aggregated\n  Intervals[statement_presence]: 129 raw -> 12 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 129 raw -> 12 aggregated\n  Intervals[edge_divergence_sibling_shared]: 129 raw -> 12 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedBinaryPalindromeClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedBinaryPalindromeClassifier_M3",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M3/BoundedBinaryPalindromeClassifier/fault_localization_eval.json\n  Mutant:    BoundedBinaryPalindromeClassifier_M3\n  Operator:  ROR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=36, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=17, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=5, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=5, top1=miss, top3=miss, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedBinaryPalindromeClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M4.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/testcases.json"
+      ],
+      "stdout_tail": "omeClassifier/BoundedBinaryPalindromeClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=4\n  round_02/b1  [BATCH_SAFE]  number=16\n  round_02/b2  [BATCH_SAFE]  number=2\n  round_02/b3  [BATCH_SAFE]  number=32\n  round_02/b4  [BATCH_SAFE]  number=1\n  round_02/b5  [BATCH_SAFE]  number=64\n  round_02/b6  [BATCH_SAFE]  number=16384\n  round_02/b7  [BATCH_SAFE]  number=-32768\n  round_03/b0  [BATCH_SAFE]  number=20\n  round_03/b1  [BATCH_SAFE]  number=6\n  round_03/b2  [BATCH_SAFE]  number=18\n  round_03/b3  [BATCH_SAFE]  number=36\n  round_03/b4  [BATCH_SAFE]  number=48\n  round_03/b5  [BATCH_SAFE]  number=34\n  round_03/b6  [BATCH_SAFE]  number=5\n  round_03/b7  [BATCH_SAFE]  number=17\n  round_03/b8  [BATCH_SAFE]  number=3\n  round_03/b9  [BATCH_SAFE]  number=33\n  round_03/b10  [BATCH_SAFE]  number=68\n  round_03/b11  [BATCH_SAFE]  number=80\n  round_03/b12  [BATCH_SAFE]  number=66\n  round_03/b13  [BATCH_SAFE]  number=96\n  round_03/b14  [BATCH_SAFE]  number=65\n  round_04/b0  [BATCH_SAFE]  number=22\n  round_04/b1  [BATCH_SAFE]  number=52\n  round_04/b2  [BATCH_SAFE]  number=38\n  round_04/b3  [BATCH_SAFE]  number=50\n  round_04/b4  [BATCH_SAFE]  number=21\n  round_04/b5  [BATCH_SAFE]  number=7\n  round_04/b6  [BATCH_SAFE]  number=19\n  round_04/b7  [BATCH_SAFE]  number=37\n  round_04/b8  [BATCH_SAFE]  number=49\n  round_04/b9  [BATCH_SAFE]  number=35\n  round_04/b10  [BATCH_SAFE]  number=84\n  round_04/b11  [BATCH_SAFE]  number=70\n  round_04/b12  [BATCH_SAFE]  number=82\n  round_04/b13  [BATCH_SAFE]  number=100\n  round_04/b14  [BATCH_SAFE]  number=112\n  round_04/b15  [BATCH_SAFE]  number=98\n  round_04/b16  [BATCH_SAFE]  number=69\n  round_04/b17  [BATCH_SAFE]  number=81\n  round_04/b18  [BATCH_SAFE]  number=67\n  round_04/b19  [BATCH_SAFE]  number=97\n  round_05/b0  [BATCH_SAFE]  number=54\n  round_05/b1  [BATCH_SAFE]  number=23\n  round_05/b2  [BATCH_SAFE]  number=53\n  round_05/b3  [BATCH_SAFE]  number=39\n  round_05/b4  [BATCH_SAFE]  number=51\n  round_05/b5  [BATCH_SAFE]  number=86\n  round_05/b6  [BATCH_SAFE]  number=116\n  round_05/b7  [BATCH_SAFE]  number=102\n  round_05/b8  [BATCH_SAFE]  number=114\n  round_05/b9  [BATCH_SAFE]  number=85\n  round_05/b10  [BATCH_SAFE]  number=71\n  round_05/b11  [BATCH_SAFE]  number=83\n  round_05/b12  [BATCH_SAFE]  number=101\n  round_05/b13  [BATCH_SAFE]  number=113\n  round_05/b14  [BATCH_SAFE]  number=99\n  round_06/b0  [BATCH_SAFE]  number=55\n  round_06/b1  [BATCH_SAFE]  number=118\n  round_06/b2  [BATCH_SAFE]  number=87\n  round_06/b3  [BATCH_SAFE]  number=117\n  round_06/b4  [BATCH_SAFE]  number=103\n  round_06/b5  [BATCH_SAFE]  number=115\n  round_07/b0  [BATCH_SAFE]  number=119\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 107\n  frontier_discovery_time_ms: 1277\n  compile_time_ms: 25600\n  java_exec_time_ms: 4124\n  path_log_parse_time_ms: 0\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 8005\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 8016\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/cct_stats.json\n  Counts: nodes=597, leaves=299, covered=66, infeasible=233, out_of_range=0, expanded=320, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedBinaryPalindromeClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M4.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/FSF/BoundedBinaryPalindromeClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedBinaryPalindromeClassifier\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/FSF/BoundedBinaryPalindromeClassifier_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/refined_tbfv_report.json\n  Summary:     testcases=66, fsf_units=3, passed=10, failed=56, skipped=132, unsupported=0\n  CCT marked:  56\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/cct_tbfv_stats.json\n  Counts:      nodes=597, leaves=299, fault_leaves=56, failure_cases=56\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=274, intervals=329, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedBinaryPalindromeClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=66, failed=56, condition_nodes=274, condition_intervals=329\n  Top conditions:\n    #1 score=3.5377 fail=56/64 line=12 number / left % 2 == 1\n    #2 score=3.5377 fail=56/64 line=9 left > right\n    #3 score=3.4832 fail=56/65 line=3 number > 127\n  Top intervals:\n    #1 score=2.8807 fail=56/64 line=[9, 12] root.F.F.TRUE\n    #2 score=2.8807 fail=56/64 line=[3, 9] root.F.FALSE\n    #3 score=2.4609 fail=16/16 line=[9, 12] root.F.F.T.F.T.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedBinaryPalindromeClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M4.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M4.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  274 raw -> 7 aggregated\n  Intervals[cct_only]: 329 raw -> 11 aggregated\n  Intervals[statement_presence]: 329 raw -> 11 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 329 raw -> 11 aggregated\n  Intervals[edge_divergence_sibling_shared]: 329 raw -> 11 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedBinaryPalindromeClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedBinaryPalindromeClassifier_M4",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M4/BoundedBinaryPalindromeClassifier/fault_localization_eval.json\n  Mutant:    BoundedBinaryPalindromeClassifier_M4\n  Operator:  SUR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=118, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=5, top1=miss, top3=miss, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=11, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.statement_presence: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=4, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedBinaryPalindromeClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M5.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/testcases.json"
+      ],
+      "stdout_tail": "|     |     |     |     |     |     |     |     (F) ->\n  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b3'} [EXPANDED]  inputs: tc_4_b3(number=81)\n  |     |     |     |     |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |   [NODE] Condition: leftBit != rightBit @L18 (WP: (1) != (1), Cnt: 2)\n  |     |     |     |     |     |     |     |     |     (F) ->\n  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b0'} [TRUNCATED]  inputs: tc_5_b0(number=83)\n  |     |     |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |     |   {\u00d8}\n  |     |     |     |     |     (T) ->\n  |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     (T) ->\n  |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(number=16384)\n  (T) ->\n  |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(number=-32768)\n-----------------------------\n\n  [EXPAND] Promoted truncated leaf at 'left > right' (cnt=3) \u2192 F:['tc_5_b0']\n  [EXPAND] Promoted truncated leaf at 'mismatch == 0' (cnt=1) \u2192 T:['tc_5_b0']\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 18 test cases generated in 6 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=2\n  round_02/b1  [BATCH_SAFE]  number=16\n  round_02/b2  [BATCH_SAFE]  number=1\n  round_02/b3  [BATCH_SAFE]  number=64\n  round_02/b4  [BATCH_SAFE]  number=16384\n  round_02/b5  [BATCH_SAFE]  number=-32768\n  round_03/b0  [BATCH_SAFE]  number=18\n  round_03/b1  [BATCH_SAFE]  number=3\n  round_03/b2  [BATCH_SAFE]  number=17\n  round_03/b3  [BATCH_SAFE]  number=66\n  round_03/b4  [BATCH_SAFE]  number=80\n  round_03/b5  [BATCH_SAFE]  number=65\n  round_04/b0  [BATCH_SAFE]  number=19\n  round_04/b1  [BATCH_SAFE]  number=82\n  round_04/b2  [BATCH_SAFE]  number=67\n  round_04/b3  [BATCH_SAFE]  number=81\n  round_05/b0  [BATCH_SAFE]  number=83\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 16\n  frontier_discovery_time_ms: 166\n  compile_time_ms: 6300\n  java_exec_time_ms: 1016\n  path_log_parse_time_ms: 1\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 2316\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 2320\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/cct_stats.json\n  Counts: nodes=149, leaves=75, covered=18, infeasible=57, out_of_range=0, expanded=48, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedBinaryPalindromeClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M5.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/FSF/BoundedBinaryPalindromeClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedBinaryPalindromeClassifier\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/FSF/BoundedBinaryPalindromeClassifier_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/refined_tbfv_report.json\n  Summary:     testcases=18, fsf_units=3, passed=18, failed=8, skipped=28, unsupported=0\n  CCT marked:  8\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/cct_tbfv_stats.json\n  Counts:      nodes=149, leaves=75, fault_leaves=8, failure_cases=8\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=40, intervals=47, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedBinaryPalindromeClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=18, failed=8, condition_nodes=40, condition_intervals=47\n  Top conditions:\n    #1 score=1.6094 fail=4/4 line=12 number / left % 2 == 1\n    #2 score=1.6094 fail=4/4 line=12 number / left % 2 == 1\n    #3 score=1.6094 fail=4/4 line=9 left > right\n  Top intervals:\n    #1 score=1.3979 fail=4/4 line=[9, 12] root.F.F.T.F.F.F.TRUE\n    #2 score=1.3979 fail=4/4 line=[9, 12] root.F.F.T.T.T.F.TRUE\n    #3 score=1.3979 fail=4/4 line=[9, 18] root.F.F.T.F.F.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedBinaryPalindromeClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M5.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M5.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  40 raw -> 7 aggregated\n  Intervals[cct_only]: 47 raw -> 12 aggregated\n  Intervals[statement_presence]: 47 raw -> 12 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 47 raw -> 12 aggregated\n  Intervals[edge_divergence_sibling_shared]: 47 raw -> 12 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedBinaryPalindromeClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedBinaryPalindromeClassifier_M5",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M5/BoundedBinaryPalindromeClassifier/fault_localization_eval.json\n  Mutant:    BoundedBinaryPalindromeClassifier_M5\n  Operator:  AOR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=18, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=7, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedBinaryPalindromeClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M6.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/testcases.json"
+      ],
+      "stdout_tail": "omeClassifier/BoundedBinaryPalindromeClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=4\n  round_02/b1  [BATCH_SAFE]  number=16\n  round_02/b2  [BATCH_SAFE]  number=2\n  round_02/b3  [BATCH_SAFE]  number=32\n  round_02/b4  [BATCH_SAFE]  number=1\n  round_02/b5  [BATCH_SAFE]  number=64\n  round_02/b6  [BATCH_SAFE]  number=16384\n  round_02/b7  [BATCH_SAFE]  number=-32768\n  round_03/b0  [BATCH_SAFE]  number=20\n  round_03/b1  [BATCH_SAFE]  number=6\n  round_03/b2  [BATCH_SAFE]  number=18\n  round_03/b3  [BATCH_SAFE]  number=36\n  round_03/b4  [BATCH_SAFE]  number=48\n  round_03/b5  [BATCH_SAFE]  number=34\n  round_03/b6  [BATCH_SAFE]  number=5\n  round_03/b7  [BATCH_SAFE]  number=17\n  round_03/b8  [BATCH_SAFE]  number=3\n  round_03/b9  [BATCH_SAFE]  number=33\n  round_03/b10  [BATCH_SAFE]  number=68\n  round_03/b11  [BATCH_SAFE]  number=80\n  round_03/b12  [BATCH_SAFE]  number=66\n  round_03/b13  [BATCH_SAFE]  number=96\n  round_03/b14  [BATCH_SAFE]  number=65\n  round_04/b0  [BATCH_SAFE]  number=22\n  round_04/b1  [BATCH_SAFE]  number=52\n  round_04/b2  [BATCH_SAFE]  number=38\n  round_04/b3  [BATCH_SAFE]  number=50\n  round_04/b4  [BATCH_SAFE]  number=21\n  round_04/b5  [BATCH_SAFE]  number=7\n  round_04/b6  [BATCH_SAFE]  number=19\n  round_04/b7  [BATCH_SAFE]  number=37\n  round_04/b8  [BATCH_SAFE]  number=49\n  round_04/b9  [BATCH_SAFE]  number=35\n  round_04/b10  [BATCH_SAFE]  number=84\n  round_04/b11  [BATCH_SAFE]  number=70\n  round_04/b12  [BATCH_SAFE]  number=82\n  round_04/b13  [BATCH_SAFE]  number=100\n  round_04/b14  [BATCH_SAFE]  number=112\n  round_04/b15  [BATCH_SAFE]  number=98\n  round_04/b16  [BATCH_SAFE]  number=69\n  round_04/b17  [BATCH_SAFE]  number=81\n  round_04/b18  [BATCH_SAFE]  number=67\n  round_04/b19  [BATCH_SAFE]  number=97\n  round_05/b0  [BATCH_SAFE]  number=54\n  round_05/b1  [BATCH_SAFE]  number=23\n  round_05/b2  [BATCH_SAFE]  number=53\n  round_05/b3  [BATCH_SAFE]  number=39\n  round_05/b4  [BATCH_SAFE]  number=51\n  round_05/b5  [BATCH_SAFE]  number=86\n  round_05/b6  [BATCH_SAFE]  number=116\n  round_05/b7  [BATCH_SAFE]  number=102\n  round_05/b8  [BATCH_SAFE]  number=114\n  round_05/b9  [BATCH_SAFE]  number=85\n  round_05/b10  [BATCH_SAFE]  number=71\n  round_05/b11  [BATCH_SAFE]  number=83\n  round_05/b12  [BATCH_SAFE]  number=101\n  round_05/b13  [BATCH_SAFE]  number=113\n  round_05/b14  [BATCH_SAFE]  number=99\n  round_06/b0  [BATCH_SAFE]  number=55\n  round_06/b1  [BATCH_SAFE]  number=118\n  round_06/b2  [BATCH_SAFE]  number=87\n  round_06/b3  [BATCH_SAFE]  number=117\n  round_06/b4  [BATCH_SAFE]  number=103\n  round_06/b5  [BATCH_SAFE]  number=115\n  round_07/b0  [BATCH_SAFE]  number=119\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 108\n  frontier_discovery_time_ms: 1274\n  compile_time_ms: 25421\n  java_exec_time_ms: 4300\n  path_log_parse_time_ms: 2\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 8041\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 8051\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/cct_stats.json\n  Counts: nodes=597, leaves=299, covered=66, infeasible=233, out_of_range=0, expanded=320, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedBinaryPalindromeClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M6.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/FSF/BoundedBinaryPalindromeClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedBinaryPalindromeClassifier\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedBinaryPalindromeClassifier/FSF/BoundedBinaryPalindromeClassifier_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/refined_tbfv_report.json\n  Summary:     testcases=66, fsf_units=3, passed=10, failed=56, skipped=132, unsupported=0\n  CCT marked:  56\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/cct_tbfv_stats.json\n  Counts:      nodes=597, leaves=299, fault_leaves=56, failure_cases=56\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=274, intervals=329, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedBinaryPalindromeClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=66, failed=56, condition_nodes=274, condition_intervals=329\n  Top conditions:\n    #1 score=3.5377 fail=56/64 line=12 number / left % 2 == 1\n    #2 score=3.5377 fail=56/64 line=9 left > right\n    #3 score=3.4832 fail=56/65 line=3 number > 127\n  Top intervals:\n    #1 score=2.8807 fail=56/64 line=[9, 12] root.F.F.TRUE\n    #2 score=2.8807 fail=56/64 line=[3, 9] root.F.FALSE\n    #3 score=2.4609 fail=16/16 line=[9, 12] root.F.F.T.F.T.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedBinaryPalindromeClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M6.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedBinaryPalindromeClassifier/BoundedBinaryPalindromeClassifier_M6.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  274 raw -> 7 aggregated\n  Intervals[cct_only]: 329 raw -> 11 aggregated\n  Intervals[statement_presence]: 329 raw -> 11 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 329 raw -> 11 aggregated\n  Intervals[edge_divergence_sibling_shared]: 329 raw -> 11 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedBinaryPalindromeClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedBinaryPalindromeClassifier_M6",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedBinaryPalindromeClassifier_M6/BoundedBinaryPalindromeClassifier/fault_localization_eval.json\n  Mutant:    BoundedBinaryPalindromeClassifier_M6\n  Operator:  CR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=48, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=62, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.statement_presence: best_rank=7, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=10, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    }
+  ]
+}

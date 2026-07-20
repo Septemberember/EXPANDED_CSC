@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSC Engine — Usage Guide</title>
+<style>
+  :root {
+    --bg: #fafafa;
+    --fg: #1a1a1a;
+    --code-bg: #f0f0f0;
+    --border: #e0e0e0;
+    --link: #1565c0;
+    --h1: #0d47a1;
+    --h2: #1a237e;
+    --h3: #283593;
+    --note-bg: #e3f2fd;
+    --note-border: #90caf9;
+    --warn-bg: #fff3e0;
+    --warn-border: #ffb74d;
+    --tbl-head: #eceff1;
+    --tbl-stripe: #f5f5f5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1e1e1e;
+      --fg: #d4d4d4;
+      --code-bg: #2a2a2a;
+      --border: #444;
+      --link: #64b5f6;
+      --h1: #90caf9;
+      --h2: #9fa8da;
+      --h3: #c5cae9;
+      --note-bg: #1a237e22;
+      --note-border: #283593;
+      --warn-bg: #3e272322;
+      --warn-border: #e65100;
+      --tbl-head: #2a2a2a;
+      --tbl-stripe: #252525;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--fg);
+    background: var(--bg);
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+  }
+  h1 { font-size: 2rem; color: var(--h1); border-bottom: 3px solid var(--border); padding-bottom: 0.5rem; margin: 2rem 0 1rem; }
+  h1:first-child { margin-top: 0; }
+  h2 { font-size: 1.5rem; color: var(--h2); margin: 2rem 0 0.75rem; border-bottom: 1px solid var(--border); padding-bottom: 0.25rem; }
+  h3 { font-size: 1.15rem; color: var(--h3); margin: 1.5rem 0 0.5rem; }
+  p, li { margin: 0.5rem 0; }
+  ul, ol { padding-left: 1.5rem; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code {
+    font-family: "SF Mono", "Fira Code", "Fira Mono", Menlo, Consolas, monospace;
+    font-size: 0.88em;
+    background: var(--code-bg);
+    padding: 0.1em 0.35em;
+    border-radius: 3px;
+  }
+  pre {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1rem 1.2rem;
+    overflow-x: auto;
+    font-size: 0.85em;
+    line-height: 1.5;
+    margin: 0.75rem 0;
+  }
+  pre code { background: none; padding: 0; border-radius: 0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.75rem 0 1.25rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 0.55rem 0.75rem;
+    border: 1px solid var(--border);
+  }
+  th { background: var(--tbl-head); font-weight: 600; }
+  tr:nth-child(even) td { background: var(--tbl-stripe); }
+  .note {
+    background: var(--note-bg);
+    border-left: 4px solid var(--note-border);
+    padding: 0.75rem 1rem;
+    margin: 0.75rem 0;
+    border-radius: 0 4px 4px 0;
+  }
+  .warn {
+    background: var(--warn-bg);
+    border-left: 4px solid var(--warn-border);
+    padding: 0.75rem 1rem;
+    margin: 0.75rem 0;
+    border-radius: 0 4px 4px 0;
+  }
+  .toc { background: var(--code-bg); border: 1px solid var(--border); border-radius: 6px; padding: 1rem 1.3rem; margin: 1rem 0; }
+  .toc ul { list-style: none; padding-left: 0; }
+  .toc li { margin: 0.3rem 0; }
+  .toc a { font-weight: 500; }
+  .tag {
+    display: inline-block;
+    font-size: 0.75em;
+    padding: 0.15em 0.5em;
+    border-radius: 3px;
+    margin-left: 0.3em;
+    font-weight: 600;
+    vertical-align: middle;
+  }
+  .tag-class { background: #c8e6c9; color: #2e7d32; }
+  .tag-func { background: #bbdefb; color: #1565c0; }
+  .tag-const { background: #f8bbd0; color: #ad1457; }
+  .tag-mod { background: #ffe0b2; color: #e65100; }
+  hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+</style>
+</head>
+<body>
+
+<h1>CSC Engine — Usage Guide</h1>
+
+<p>
+  <strong>CSC Engine</strong> is a standalone Python library for <em>Condition Sequence Coverage</em> (CSC)
+  test case generation. CSC is a coverage criterion that sits between branch coverage and full path
+  coverage — it systematically explores condition branches while avoiding path explosion through
+  ancestor-loop matching and infeasibility marking.
+</p>
+
+<p>
+  Version: <strong>0.1.0</strong> &nbsp;|&nbsp;
+  Python: <strong>3.10+</strong> &nbsp;|&nbsp;
+  Key Dependency: <strong>Z3 Solver 4.15.0+</strong>
+</p>
+
+<!-- ======================================================================== -->
+<div class="toc">
+<strong>Table of Contents</strong>
+<ul>
+  <li><a href="#quickstart">1. Quick Start</a></li>
+  <li><a href="#installation">2. Installation</a></li>
+  <li><a href="#core-concepts">3. Core Concepts</a></li>
+  <li><a href="#architecture">4. Architecture</a></li>
+  <li><a href="#api-reference">5. API Reference</a></li>
+  <li><a href="#workflows">6. Workflows</a></li>
+  <li><a href="#java-bridge">7. Java Instrumentation Bridge</a></li>
+  <li><a href="#z3-solving">8. Z3 Constraint Solving</a></li>
+  <li><a href="#visualization">9. CCT Visualization</a></li>
+  <li><a href="#configuration">10. Configuration Reference</a></li>
+  <li><a href="#examples">11. Complete Examples</a></li>
+  <li><a href="#cli-tool">12. CLI Tool: csc_tool.py</a>
+    <ul>
+      <li><a href="#batch-trace-layout">12.5 Batch Trace Layout</a></li>
+      <li><a href="#cli-update">12.6 Updating After Code Changes</a></li>
+    </ul>
+  </li>
+  <li><a href="#refined-tbfv-cli">13. CLI Tool: refined_tbfv_tool.py</a></li>
+  <li><a href="#failure-localization-cli">14. CLI Tool: failure_localization_tool.py</a></li>
+  <li><a href="#faq">15. FAQ</a></li>
+</ul>
+</div>
+
+<!-- ======================================================================== -->
+<h2 id="quickstart">1. Quick Start</h2>
+
+<h3>1.1 CSC CLI (recommended)</h3>
+
+<p>Build the Java bridge JAR once, then run CSC generation for any Java file:</p>
+
+<pre><code># One-time: build the Java instrumentation bridge
+cd java_bridge &amp;&amp; mvn clean package &amp;&amp; cd ..
+
+# Generate CSC test cases and keep trace/CCT artifacts
+python3 csc_tool.py path/to/MyClass.java \
+  --session my_session \
+  --keep-artifacts
+
+# With options:
+python3 csc_tool.py MyClass.java --bootstrap "x=42" --max-iter 50 --output results.json
+python3 csc_tool.py MyClass.java --mode original          # Original CSC (no expansion)
+python3 csc_tool.py MyClass.java --no-auto-instrument     # Already instrumented</code></pre>
+
+<p>This command auto-instruments the Java source, compiles it, runs the CSC loop, writes trace JSONL files, and outputs generated test cases with CCT visualization.</p>
+
+<div class="note">
+  <strong>Default result location:</strong> if <code>--output</code> is not provided,
+  <code>csc_tool.py</code> writes generated test cases to
+  <code>csc_tmp/{session}/{ClassName}/testcases.json</code>. This directory is the recommended
+  <em>CSC result directory</em> for the Refined TBFV stage.
+</div>
+
+<h3>1.2 Refined TBFV After CSC</h3>
+
+<p>
+  Refined TBFV is intentionally a second offline stage. It consumes the test cases, trace JSONL files,
+  and CCT produced by <code>csc_tool.py</code>, then verifies each observed path against an FSF file.
+</p>
+
+<pre><code>python3 refined_tbfv_tool.py \
+  --csc-result-dir csc_tmp/my_session/MyClass \
+  --fsf path/to/MyClass_fsf.txt</code></pre>
+
+<p>
+  The report is written to <code>csc_tmp/my_session/MyClass/refined_tbfv_report.json</code>.
+  If a path violates an FSF unit, the corresponding CCT leaf is marked in a separate fault view:
+  <code>MyClass_cct_tbfv_fault.dot</code>. A read-only failure-localization report is also written to
+  <code>cct_failure_localization.json</code>, with a matching risk view at
+  <code>cct_failure_localization_&lt;strategy&gt;.dot</code>.
+</p>
+
+<p>
+  With <code>--csc-result-dir</code>, the TBFV tool infers
+  <code>testcases.json</code>, <code>run_log.jsonl</code>, <code>MyClass_cct.pkl</code>,
+  and the default report/fault-view paths from one directory.
+</p>
+
+<h3>1.3 Python API (library usage)</h3>
+
+<p>Use the Python API directly to integrate CSC into your own tools:</p>
+
+<pre><code># Install
+pip install -e .
+
+# Python usage
+from csc_engine import CCT, Condition, ConditionResult, parse_path_info
+
+# Build a CCT from a program execution trace
+cct = CCT(use_bounded_range=True, range_bound=200)
+csc_path = [
+    "n &lt;= 1,False,!(n &lt;= 1),1",
+    "i &gt; 1,True,i &gt; 1,1",
+]
+cct.add_sequence(parse_path_info(csc_path), "tc_0")
+
+# Find the next uncovered branch
+var_types = {"n": "int", "return_value": "int"}
+target = cct.check_for_csc(var_types)
+if target:
+    pc = cct.construct_path_constraint(target)
+    print(f"Next branch path constraint: {pc}")
+
+# Visualize the tree
+cct.save_dot("cct.dot")  # renders cct.png if Graphviz is installed</code></pre>
+
+<!-- ======================================================================== -->
+<h2 id="installation">2. Installation</h2>
+
+<h3>2.1 Requirements</h3>
+<table>
+  <tr><th>Component</th><th>Version</th><th>Required?</th></tr>
+  <tr><td>Python</td><td>3.10 or later</td><td>Required</td></tr>
+  <tr><td>z3-solver</td><td>4.15.0 or later</td><td>Required</td></tr>
+  <tr><td>Java (JDK)</td><td>16 or later</td><td>Optional — only for Java bridge</td></tr>
+  <tr><td>Graphviz (dot)</td><td>any recent</td><td>Optional — for PNG visualization</td></tr>
+</table>
+
+<h3>2.2 Install from Source</h3>
+<pre><code>cd CSC_EXPANDED
+pip install -e .
+</code></pre>
+
+<p>The <code>-e</code> flag installs in editable mode — changes to the source are reflected immediately, useful during development.</p>
+
+<h3>2.3 Verify Installation</h3>
+<pre><code>python3 -c "import csc_engine; print(csc_engine.__all__)"
+
+# Run the test suite
+python3 -m pytest tests</code></pre>
+
+<!-- ======================================================================== -->
+<h2 id="core-concepts">3. Core Concepts</h2>
+
+<h3>3.1 Condition Sequence Coverage (CSC)</h3>
+
+<p>
+  CSC explores program paths by looking at the <em>sequence of conditions</em> evaluated along
+  each path. Unlike full path coverage (which can explode exponentially), CSC uses two stopping
+  rules to keep the problem tractable:
+</p>
+
+<ol>
+  <li>
+    <strong>Condition 1 — Ancestor-Loop Matching:</strong> Stop exploring a branch when an
+    <em>ancestor node</em> in the CCT has the same condition on the <em>opposite</em> side
+    already covered. This captures loop-like repetition without unbounded unrolling.
+  </li>
+  <li>
+    <strong>Rule 2 — Infeasibility Marking:</strong> When Z3 proves a path constraint is UNSAT,
+    mark the branch as infeasible (no input can reach it).
+  </li>
+</ol>
+
+<h3>3.2 Condition Case Tree (CCT)</h3>
+
+<p>
+  The CCT is a binary tree where:
+</p>
+<ul>
+  <li><strong>Internal nodes</strong> represent a program condition paired with a loop count <code>(condition_string, loop_count)</code>.</li>
+  <li><strong>Left child</strong> = the <strong>False</strong> branch of the condition.</li>
+  <li><strong>Right child</strong> = the <strong>True</strong> branch of the condition.</li>
+  <li><strong>Leaf nodes</strong> store test case identifiers (e.g. <code>"tc_0"</code>), infeasibility markers (<code>"X"</code>), or range-excluded markers. Leaf nodes also carry a <code>test_inputs</code> dict mapping each test case ID to its actual input values (e.g. <code>{"tc_0": {"x": 5}}</code>), shown in tree printouts and DOT visualizations.</li>
+  <li><strong>Truncated leaves</strong> appear when a condition's <code>loop_count</code> exceeds <code>MAX_LOOP_BOUND</code> (2). The remainder of the path is stored for potential promotion later.</li>
+</ul>
+
+<div class="note">
+  <strong>Key detail:</strong> <code>Condition.__eq__</code> and <code>__hash__</code> are based
+  <em>only</em> on <code>(condition_string, loop_count)</code>. The line number and input
+  constraint are excluded — this is what enables ancestor-loop matching to work correctly.
+</div>
+
+<h3>3.3 Original CSC vs. Expanded CSC</h3>
+
+<table>
+  <tr><th>Mode</th><th>Constructor</th><th>Behavior at Ancestor Match</th></tr>
+  <tr>
+    <td>Original CSC</td>
+    <td><code>CCT(use_bounded_range=False)</code></td>
+    <td>Always skip — strict Condition 1</td>
+  </tr>
+  <tr>
+    <td>Expanded CSC</td>
+    <td><code>CCT(use_bounded_range=True, range_bound=200)</code></td>
+    <td>Check bounded-range Z3 satisfiability first; explore if SAT, skip if UNSAT</td>
+  </tr>
+</table>
+
+<p>
+  Expanded CSC additionally checks whether <em>in-range</em> Z3 solutions exist
+  (<code>[-range_bound, range_bound]</code> for integer variables). This means loops can be
+  explored more thoroughly when values within the bounded range can distinguish new paths.
+</p>
+
+<h3>3.4 Key Data Classes</h3>
+
+<table>
+  <tr><th>Class</th><th>Role</th><th>Key Fields</th></tr>
+  <tr>
+    <td><code>Condition</code></td>
+    <td>Program condition in the CCT</td>
+    <td><code>condition_string</code>, <code>line_number</code>, <code>input_constraint</code>, <code>loop_count</code></td>
+  </tr>
+  <tr>
+    <td><code>ConditionResult</code></td>
+    <td>A condition paired with its boolean evaluation</td>
+    <td><code>condition: Condition</code>, <code>result: bool</code></td>
+  </tr>
+  <tr>
+    <td><code>Node</code></td>
+    <td>Tree node (internal or leaf)</td>
+    <td><code>is_leaf</code>, <code>left</code>, <code>right</code>, <code>condition</code>, <code>test_cases</code>, <code>test_inputs</code></td>
+  </tr>
+  <tr>
+    <td><code>Result</code></td>
+    <td>JSON-serializable operation result</td>
+    <td><code>status</code>, <code>counter_example</code>, <code>path_constrain</code></td>
+  </tr>
+  <tr>
+    <td><code>CCT</code></td>
+    <td>The full Condition Case Tree</td>
+    <td><code>root</code>, <code>MAX_LOOP_BOUND</code></td>
+  </tr>
+</table>
+
+<!-- ======================================================================== -->
+<h2 id="architecture">4. Architecture</h2>
+
+<pre><code>csc_engine/
+├── __init__.py          # Public API — <strong>all user-facing exports live here</strong>
+├── cct.py               # Core: Condition, ConditionResult, Node, CCT (~1070 lines)
+├── z3_helpers.py        # Z3 expression building + constraint solving
+├── execution_trace.py   # CSCTrace JSONL parsing and path/WP reconstruction
+├── refined_tbfv.py      # Offline Refined TBFV FSF/path verification
+├── failure_localization.py # Read-only CCT-based failure localization
+├── java_exec.py         # Java compilation + execution via subprocess
+└── csc.py               # High-level orchestration (sequential CSC, batch CSC)
+
+java_bridge/             # Optional Java instrumentation (Maven)
+tests/                   # Python test suite (run with: python3 -m pytest tests)
+examples/                # Usage examples + sample Java programs
+csc_tool.py              # CSC CLI: auto-instrument, compile, generate test cases
+refined_tbfv_tool.py     # Refined TBFV CLI: verify generated traces against FSF
+failure_localization_tool.py # Failure localization CLI over annotated CCTs</code></pre>
+
+<h3>Module Responsibilities</h3>
+
+<table>
+  <tr><th>Module</th><th>Responsibility</th></tr>
+  <tr><td><code>cct.py</code></td><td>
+    Core data structures, tree mutation (add, mark, promote, expand), CCT traversal (check_for_csc, discover_all_uncovered), DOT generation, pickle persistence
+  </td></tr>
+  <tr><td><code>z3_helpers.py</code></td><td>
+    Java expression → Z3 AST conversion (<code>java_expr_to_z3</code>), solver wrapper (<code>solver_check_z3</code>), value/range constraint helpers
+  </td></tr>
+  <tr><td><code>execution_trace.py</code></td><td>
+    Parse CSCTrace JSONL events into CSC condition sequences, derive <code>Ct_in</code>, and perform trace-based expression substitution
+  </td></tr>
+  <tr><td><code>refined_tbfv.py</code></td><td>
+    Parse FSF units, derive <code>wp(path, D_i)</code>, verify <code>T_i &amp;&amp; Ct_in &amp;&amp; !wp(path, D_i)</code>, and mark TBFV-failing CCT leaves
+  </td></tr>
+  <tr><td><code>failure_localization.py</code></td><td>
+    Aggregate failed/passed executable evidence from an annotated CCT and rank suspicious condition nodes and condition intervals
+  </td></tr>
+  <tr><td><code>java_exec.py</code></td><td>
+    Write Java source to disk, compile with <code>javac</code>, execute with <code>java -cp</code>, parse method signatures
+  </td></tr>
+  <tr><td><code>csc.py</code></td><td>
+    Sequential CSC loop (<code>generate_tcs_by_csc</code>), batch Phase 1 (<code>batch_discover</code>), batch Phase 3 (<code>batch_verify_and_merge</code>)
+  </td></tr>
+</table>
+
+<!-- ======================================================================== -->
+<h2 id="api-reference">5. API Reference</h2>
+
+<h3>5.1 CCT Construction &amp; Mutation</h3>
+
+<h4><code>CCT(use_bounded_range=False, range_bound=200, debug=False)</code> <span class="tag tag-class">class</span></h4>
+<p>Create a new Condition Case Tree.</p>
+<table>
+  <tr><th>Parameter</th><th>Type</th><th>Default</th><th>Description</th></tr>
+  <tr><td><code>use_bounded_range</code></td><td>bool</td><td>False</td><td>Enable Expanded CSC mode</td></tr>
+  <tr><td><code>range_bound</code></td><td>int</td><td>200</td><td>±bound for int variable range checks</td></tr>
+  <tr><td><code>debug</code></td><td>bool</td><td>False</td><td>Print verbose CSC traversal details</td></tr>
+</table>
+
+<p><strong>Class Attribute:</strong></p>
+<table>
+  <tr><th>Attribute</th><th>Value</th><th>Description</th></tr>
+  <tr><td><code>CCT.MAX_LOOP_BOUND</code></td><td>2</td><td>Maximum loop count before path truncation</td></tr>
+</table>
+
+<h4>Key Methods</h4>
+
+<p><code>CCT.add_sequence(sequence, test_case, is_expanded=False, skip_truncation=False, test_inputs=None)</code> <span class="tag tag-func">method</span></p>
+<p>Append a condition sequence to the CCT (Algorithm 1 from the paper).</p>
+<ul>
+  <li><code>sequence: List[ConditionResult]</code> — the condition sequence</li>
+  <li><code>test_case: str</code> — identifier (e.g. "tc_0")</li>
+  <li><code>is_expanded: bool</code> — mark nodes as created during expansion</li>
+  <li><code>skip_truncation: bool</code> — bypass MAX_LOOP_BOUND truncation</li>
+  <li><code>test_inputs: dict</code> — e.g. <code>{"x": 5}</code>, stored on the leaf node for display</li>
+</ul>
+
+<p><code>CCT.check_for_csc(var_types=None)</code> → <code>Optional[List[ConditionResult]]</code> <span class="tag tag-func">method</span></p>
+<p>DFS left-first search for the first uncovered branch. Returns the target sequence or <code>None</code> if CCT is full / not initialized.</p>
+
+<p><code>CCT.mark_infeasible(sequence)</code> <span class="tag tag-func">method</span></p>
+<p>Mark a proven-infeasible branch with <code>"X"</code> marker.</p>
+
+<p><code>CCT.construct_path_constraint(sequence)</code> → <code>str</code> <span class="tag tag-func">method</span></p>
+<p>Build the path constraint (logical && of all conditions) from a condition sequence.</p>
+
+<p><code>CCT.discover_all_uncovered(var_types)</code> → <code>List[dict]</code> <span class="tag tag-func">method</span></p>
+<p>Walk the entire CCT and find ALL uncovered branches at once. Each result dict has <code>idx</code>, <code>inputs</code>, and <code>debug_path</code>.</p>
+
+<p><code>CCT.print_tree()</code> <span class="tag tag-func">method</span></p>
+<p>Print the CCT structure to stdout (text representation).</p>
+
+<p><code>CCT.save_to_file(filepath)</code> / <code>CCT.load_from_file(filepath)</code> <span class="tag tag-func">method</span></p>
+<p>Persist/restore CCT via pickle. <code>load_from_file</code> handles backward compatibility with old pickle formats.</p>
+
+<p><code>CCT.save_dot(filepath)</code> / <code>CCT.to_dot(name="CCT")</code> <span class="tag tag-func">method</span></p>
+<p>Generate Graphviz DOT output. <code>save_dot</code> also attempts PNG rendering if <code>dot</code> is available.</p>
+
+<h3>5.2 Data Classes</h3>
+
+<h4><code>Condition(line_number, condition_string, input_constraint, loop_count=1)</code> <span class="tag tag-class">class</span></h4>
+<p>Frozen dataclass. Equality/hash is based <em>only</em> on <code>(condition_string, loop_count)</code>.</p>
+
+<h4><code>ConditionResult(condition, result)</code> <span class="tag tag-class">class</span></h4>
+<p>Frozen dataclass pairing a <code>Condition</code> with a <code>bool</code> result.</p>
+
+<h4><code>Result(status, counter_example, path_constrain, dt="", exec_time_ms=0, verify_time_ms=0)</code> <span class="tag tag-class">class</span></h4>
+<p>JSON-serializable result with <code>to_json()</code> and <code>from_json()</code> methods.</p>
+
+<h4>Status Codes</h4>
+<table>
+  <tr><th>Code</th><th>Meaning</th></tr>
+  <tr><td>0</td><td>SAT — test case found, counter_example contains Z3 model</td></tr>
+  <tr><td>1</td><td>INFEASIBLE — branch is UNSAT, marked in CCT</td></tr>
+  <tr><td>5</td><td>CCT_FULL — all branches covered</td></tr>
+  <tr><td>6</td><td>CCT_NOT_INITIALIZED — need bootstrap execution first</td></tr>
+</table>
+
+<h3>5.3 Trace and Path Parsing</h3>
+
+<p>
+  Current CLI runs use structured CSCTrace JSONL files. The older stdout parsing helpers remain
+  listed here for historical API context, but new experiments should prefer
+  <code>parse_trace_jsonl</code> and <code>condition_results_from_trace</code>.
+</p>
+
+<h4><code>parse_trace_jsonl(trace_path)</code> → <code>List[ExecutionEvent]</code> <span class="tag tag-func">function</span></h4>
+<p>Read a CSCTrace JSONL file and return structured execution events.</p>
+
+<h4><code>condition_results_from_trace(events, input_vars)</code> → <code>List[ConditionResult]</code> <span class="tag tag-func">function</span></h4>
+<p>Convert <code>COND</code> events into the condition sequence used to update the CCT.</p>
+
+<h4><code>path_condition_from_condition_results(results)</code> → <code>str</code> <span class="tag tag-func">function</span></h4>
+<p>Build <code>Ct_in</code>, the conjunction of path conditions in input-state form.</p>
+
+<h4><code>parse_path_info(path_info_list)</code> → <code>List[ConditionResult]</code> <span class="tag tag-func">function</span></h4>
+<p>Parse CSC path strings into ConditionResult objects. Expected format:</p>
+<pre><code>"condition_string,result_bool,input_constraint,loop_count"
+# Example: "(x >= 2),True,x >= 2 && y == 0,1"</code></pre>
+
+<h4><code>parse_execution_path(execution_output)</code> → <code>List[str]</code> <span class="tag tag-func">function</span></h4>
+<p>Legacy helper for extracting execution path lines from old stdout instrumentation. The current CLI requires CSCTrace JSONL instead.</p>
+
+<h4><code>execution_path_2_csc_path(execution_path, vars)</code> → <code>List[str]</code> <span class="tag tag-func">function</span></h4>
+<p>Legacy helper for converting old stdout paths into CSC condition sequences.</p>
+
+<h4><code>get_ct_from_execution_path(execution_path)</code> → <code>str</code> <span class="tag tag-func">function</span></h4>
+<p>Legacy helper for building path constraints from old stdout paths.</p>
+
+<h4><code>exist_flag_in_path(execution_path)</code> → <code>bool</code> <span class="tag tag-func">function</span></h4>
+<p>Legacy helper from the old runtime-exception workflow; not used by the current CSC + Refined TBFV path.</p>
+
+<h3>5.4 Z3 Helpers</h3>
+
+<h4><code>java_expr_to_z3(expr_str, var_types)</code> <span class="tag tag-func">function</span></h4>
+<p>Convert a Java-like boolean expression string to a Z3 expression. Handles:</p>
+<ul>
+  <li>Logical operators: <code>&&</code> → And, <code>||</code> → Or, <code>!</code> → Not</li>
+  <li>Type mapping: <code>int</code> → BitVec(32), <code>float/double</code> → Real, <code>boolean</code> → Bool</li>
+  <li>Char literals: <code>'c'</code> → BitVecVal(ord(c), 32)</li>
+  <li>Type casts stripped: <code>(int)</code>, <code>(long)</code>, <code>(short)</code>, <code>(byte)</code>, <code>(char)</code></li>
+</ul>
+
+<h4><code>solver_check_z3(z3_expr, vars_types=None)</code> → <code>str</code> <span class="tag tag-func">function</span></h4>
+<p>Solve a Z3 expression. Returns model string (e.g. <code>"[n=10, i=5]"</code>) or <code>"OK"</code> if UNSAT.</p>
+
+<h4><code>parse_result(z3_result_str)</code> → <code>dict</code> <span class="tag tag-func">function</span></h4>
+<p>Parse Z3 model string into <code>{"var_name": "value", ...}</code> dict.</p>
+
+<h4><code>add_value_constraints(logic_expr, var_types)</code> → <code>str</code> <span class="tag tag-func">function</span></h4>
+<p>Add global domain bounds: int ∈ [-32768, 32767], char ∈ [32, 126].</p>
+
+<h4><code>add_bounded_range_constraints(logic_expr, var_types, bound=200)</code> → <code>str</code> <span class="tag tag-func">function</span></h4>
+<p>Add tight bounded-range constraints for int variables: <code>[-bound, bound]</code>.</p>
+
+<h3>5.5 High-Level Orchestration</h3>
+
+<h4><code>generate_tcs_by_csc(program, session_id="default", use_expanded=False)</code> → <code>Result</code> <span class="tag tag-func">function</span></h4>
+<p><strong>Sequential CSC:</strong> Find one uncovered branch at a time, Z3-solve for inputs. Call repeatedly until status 5 (CCT_FULL) or 6 (CCT_NOT_INITIALIZED).</p>
+
+<h4><code>batch_discover(program, session_id="default", use_expanded=False)</code> → <code>dict</code> <span class="tag tag-func">function</span></h4>
+<p><strong>Phase 1:</strong> Find ALL uncovered branches at once. Returns <code>{"status": "ok", "branches": [...], "cct_full": bool}</code>.</p>
+
+<h4><code>batch_verify_and_merge(program, T, D, branches, var_types, session_id="default", use_expanded=False, max_workers=4)</code> → <code>List[dict]</code> <span class="tag tag-func">function</span></h4>
+<p><strong>Phase 3:</strong> Parallel compile+execute, sequential CCT merge + Z3 verify.</p>
+
+<h3>5.6 Java Execution</h3>
+
+<h4><code>run_java_code(java_code, timeout_seconds=20)</code> <span class="tag tag-func">function</span></h4>
+<p>Compile and execute a Java program. Returns subprocess <code>CompletedProcess</code>.</p>
+
+<h4><code>parse_top_level_md_def(java_code)</code> → <code>dict</code> <span class="tag tag-func">function</span></h4>
+<p>Parse variable type declarations from the top-level method in Java code.</p>
+
+<h4><code>parse_class_name(java_code)</code> → <code>str</code> <span class="tag tag-func">function</span></h4>
+<p>Extract class name with access modifiers from Java source.</p>
+
+<h3>5.7 Constants</h3>
+<table>
+  <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+  <tr><td><code>MAX_LOOP_BOUND</code></td><td>2</td><td>Max loop count before path truncation</td></tr>
+  <tr><td><code>INFEASIBLE_MARKER</code></td><td>"X"</td><td>Leaf marker for infeasible branches</td></tr>
+  <tr><td><code>RANGE_EXCLUDED_MARKER</code></td><td>"RANGE_EXCLUDED"</td><td>Leaf marker for out-of-range branches</td></tr>
+  <tr><td><code>CCT_NOT_INITIALIZED</code></td><td>6</td><td>Status code: CCT has no root node</td></tr>
+</table>
+
+<!-- ======================================================================== -->
+<h2 id="workflows">6. Workflows</h2>
+
+<h3>6.1 Sequential CSC (one branch at a time)</h3>
+
+<p>The original algorithm. Call <code>generate_tcs_by_csc</code> in a loop until the CCT is full:</p>
+
+<pre><code>from csc_engine import generate_tcs_by_csc, CCT_NOT_INITIALIZED
+
+program = open("MyClass.java").read()
+session = "my_session"
+
+while True:
+    result = generate_tcs_by_csc(program, session_id=session, use_expanded=True)
+
+    if result.status == 6:  # CCT_NOT_INITIALIZED — need bootstrap
+        # Run the program once with default inputs to populate the CCT
+        # Then call generate_tcs_by_csc again
+        break
+
+    if result.status == 0:  # SAT — test case found
+        print(f"New inputs: {result.counter_example}")
+        # Execute the program with these inputs, get the execution path,
+        # add it to the CCT, then loop again
+        break
+
+    if result.status == 1:  # INFEASIBLE
+        print("Branch marked infeasible, continue...")
+        continue
+
+    if result.status == 5:  # CCT_FULL
+        print("All branches covered!")
+        break</code></pre>
+
+<h3>6.2 Batch CSC (three-phase)</h3>
+
+<p>For faster throughput, use the batch pipeline:</p>
+
+<ol>
+  <li><strong>Phase 1</strong> — <code>batch_discover</code>: Find ALL uncovered branches</li>
+  <li><strong>Phase 2</strong> (manual) — Generate main methods for each branch</li>
+  <li><strong>Phase 3</strong> — <code>batch_verify_and_merge</code>: Parallel execute + merge</li>
+</ol>
+
+<pre><code>from csc_engine import batch_discover, batch_verify_and_merge
+from csc_engine.java_exec import parse_top_level_md_def
+
+program = open("MyClass.java").read()
+var_types = parse_top_level_md_def(program)
+
+# Phase 1: discover
+discovery = batch_discover(program, session_id="batch1", use_expanded=True)
+print(f"Found {len(discovery['branches'])} uncovered branches")
+
+# Build main methods for each branch (your code)
+for b in discovery["branches"]:
+    b["main_method"] = build_main_method(b["inputs"])  # your helper
+
+# Phase 3: verify and merge
+T = "true"           # precondition
+D = "divisor != 0"   # danger condition (optional safety property)
+results = batch_verify_and_merge(
+    program, T, D, discovery["branches"], var_types,
+    session_id="batch1", max_workers=4
+)
+for r in results:
+    if r["status"] == 2:
+        print(f"Branch {r['idx']}: COUNTEREXAMPLE = {r['counterexample']}")
+    else:
+        print(f"Branch {r['idx']}: SAFE")</code></pre>
+
+<h3>6.3 Building from Execution Traces (Python-Only)</h3>
+
+<p>You don't need Java at all — build CCTs directly from CSC path strings:</p>
+
+<pre><code>from csc_engine import CCT, parse_path_info, java_expr_to_z3, solver_check_z3
+
+cct = CCT(use_bounded_range=True, range_bound=200)
+var_types = {"n": "int", "return_value": "int"}
+
+# Add paths as they are explored
+cct.add_sequence(parse_path_info([
+    "n &lt;= 1,False,!(n &lt;= 1),1",
+    "i &gt; 1,True,i &gt; 1,1",
+]), "tc_0")
+
+# Find uncovered branches and Z3-solve
+target = cct.check_for_csc(var_types)
+while target:
+    pc = cct.construct_path_constraint(target)
+    from csc_engine import add_value_constraints
+    z3_expr = java_expr_to_z3(add_value_constraints(pc, var_types), var_types)
+    result = solver_check_z3(z3_expr, var_types)
+    if result == "OK":
+        cct.mark_infeasible(target)
+    else:
+        print(f"Inputs for next path: {result}")
+        # Execute program with those inputs, get new path, add to CCT...
+        break
+    target = cct.check_for_csc(var_types)</code></pre>
+
+<!-- ======================================================================== -->
+<h2 id="java-bridge">7. Java Instrumentation Bridge</h2>
+
+<p>
+  The <code>java_bridge/</code> directory contains a Maven project that instruments Java source code
+  with transparent <code>CSCTrace</code> probes at condition, assignment, declaration, and return points.
+  At runtime those probes append structured JSON Lines events to the trace file configured by
+  <code>-Dcsc.trace.file=...</code>. The Python side reads this JSONL trace to reconstruct CSC paths
+  and Refined TBFV formulas.
+</p>
+
+<h3>7.1 Execution Path Format</h3>
+<p>Instrumented Java programs write one JSON object per executed event:</p>
+<pre><code>{"type":"ASSIGN","line":5,"kind":"var_decl","target":"n","rhs":"tons","value":"10"}
+{"type":"COND","line":7,"kind":"if","order":1,"expr":"n &gt;= 500","value":false}
+{"type":"COND","line":10,"kind":"while","order":1,"expr":"n &gt; 0","value":true}
+{"type":"ASSIGN","line":18,"kind":"assign","target":"n","rhs":"n - 1","value":"9"}
+{"type":"RETURN","line":21,"target":"return_value","rhs":"fee","value":"41"}</code></pre>
+
+<p>
+  Each <code>COND</code> is treated as a CSC condition. Compound expressions such as
+  <code>A &amp;&amp; B</code> or <code>A || B</code> are instrumented as separate condition probes where supported,
+  so the CCT and Refined TBFV stages reason over condition sequences rather than only whole branch statements.
+</p>
+
+<h3>7.2 Writing Instrumented Java Programs</h3>
+<p>Usually you should not write probes manually. Let the Java bridge generate calls such as:</p>
+<pre><code>int n = csc.bridge.CSCTrace.assignObject(5, "var_decl", "n", "tons", tons);
+if (csc.bridge.CSCTrace.cond(7, "if", 1, "n &gt;= 500", n &gt;= 500)) {
+    fee = csc.bridge.CSCTrace.assignObject(8, "assign", "fee", "n * 5", n * 5);
+}
+return csc.bridge.CSCTrace.retObject(21, "return_value", "fee", fee);</code></pre>
+
+<div class="note">
+  <strong>Semantic transparency:</strong> <code>CSCTrace.cond(..., exprValue)</code> returns the boolean
+  value it receives, and <code>assignObject</code>/<code>retObject</code> return the runtime value they receive.
+  The probe records information while preserving the source program's execution result.
+</div>
+
+<!-- ======================================================================== -->
+<h2 id="z3-solving">8. Z3 Constraint Solving</h2>
+
+<h3>8.1 Type Mapping</h3>
+<table>
+  <tr><th>Java Type</th><th>Z3 Sort</th><th>Domain Constraints</th></tr>
+  <tr><td><code>int</code></td><td>BitVec(32)</td><td>[-32768, 32767] (value) / [-bound, bound] (bounded-range)</td></tr>
+  <tr><td><code>float</code>, <code>double</code></td><td>Real</td><td>Unbounded</td></tr>
+  <tr><td><code>boolean</code></td><td>Bool</td><td>True / False</td></tr>
+  <tr><td><code>char</code></td><td>BitVec(32)</td><td>[32, 126] (printable ASCII)</td></tr>
+  <tr><td><code>String</code>, <code>List</code>, <code>Map</code>, etc.</td><td>—</td><td>Skipped (not modeled)</td></tr>
+</table>
+
+<h3>8.2 Solver Configuration</h3>
+<ul>
+  <li>Timeout: 5 seconds per query (<code>solver.set("timeout", 5000)</code>)</li>
+  <li>Model completion enabled for Bool variables</li>
+  <li>Signed interpretation for int/char BitVec values</li>
+</ul>
+
+<h3>8.3 Expression Conversion Details</h3>
+<pre><code># Java → Python AST → Z3
+"x &gt; 5 && y &lt; 10"
+# 1. Replace: "x &gt; 5 and y &lt; 10"
+# 2. AST parse → BoolOp(And, [Compare(x, Gt, 5), Compare(y, Lt, 10)])
+# 3. Z3: And(x &gt; 5, y &lt; 10)</code></pre>
+
+<!-- ======================================================================== -->
+<h2 id="visualization">9. CCT Visualization</h2>
+
+<h3>9.1 Text Output</h3>
+<p>Use <code>cct.print_tree()</code> for a quick text representation:</p>
+<pre><code>cct.print_tree()
+# --- Current CCT Structure ---
+#   [Config: use_bounded_range=True, range_bound=200]
+# [NODE] Condition: n &lt;= 1 @L1 (WP: !(n &lt;= 1), Cnt: 1)
+#   (F) -&gt;
+#   |   [NODE] Condition: i &gt; 1 @L1 (WP: i &gt; 1, Cnt: 1)
+#   |     (T) -&gt;
+#   |     |   [LEAF] Cases: {'tc_0'}
+#   |     (F) -&gt;
+#   |     |   {Ø}
+#   (T) -&gt;
+#   |   {Ø}
+# -----------------------------</code></pre>
+
+<h3>9.2 Graphviz DOT / PNG</h3>
+<pre><code>cct.save_dot("cct.dot")  # writes DOT file, auto-renders PNG if `dot` is available</code></pre>
+
+<p>Color legend:</p>
+<table>
+  <tr><th>Color</th><th>Meaning</th></tr>
+  <tr><td style="background:#e8f5e9">Green</td><td>Covered leaf (has test cases)</td></tr>
+  <tr><td style="background:#ffebee">Red</td><td>Infeasible leaf (X)</td></tr>
+  <tr><td style="background:#fff9c4">Yellow</td><td>Out-of-Range leaf</td></tr>
+  <tr><td style="background:#fff3e0">Orange</td><td>Truncated leaf (MAX_LOOP_BOUND exceeded)</td></tr>
+  <tr><td style="background:#e3f2fd">Blue</td><td>Expanded node</td></tr>
+  <tr><td style="background:#eeeeee">Gray dashed</td><td>Uncovered (empty)</td></tr>
+</table>
+
+<h3>9.3 Persistence</h3>
+<p>CCTs can be saved and loaded across sessions:</p>
+<pre><code>cct.save_to_file("cct.pkl")
+cct = CCT.load_from_file("cct.pkl")  # handles old pickle format upgrades</code></pre>
+
+<!-- ======================================================================== -->
+<h2 id="configuration">10. Configuration Reference</h2>
+
+<h3>10.1 CCT Modes</h3>
+
+<table>
+  <tr><th>Scenario</th><th>Recommended Config</th></tr>
+  <tr><td>Simple programs, few loops</td><td><code>CCT(use_bounded_range=False)</code></td></tr>
+  <tr><td>Loops with small integer ranges</td><td><code>CCT(use_bounded_range=True, range_bound=200)</code></td></tr>
+  <tr><td>Loops with large integer ranges</td><td><code>CCT(use_bounded_range=True, range_bound=1000)</code></td></tr>
+  <tr><td>Debugging / understanding CSC traversal</td><td><code>CCT(debug=True)</code></td></tr>
+</table>
+
+<h3>10.2 Session Management</h3>
+<p>All orchestration functions accept a <code>session_id</code> parameter for CCT isolation:</p>
+<pre><code># Each session gets its own CCT in csc_tmp/{session_id}/{ClassName}/
+generate_tcs_by_csc(program, session_id="experiment_1")
+generate_tcs_by_csc(program, session_id="experiment_2")  # independent CCT</code></pre>
+
+<h3>10.3 Threading</h3>
+<p><code>batch_verify_and_merge</code> uses <code>max_workers</code> (default 4) for parallel compile+execute. Each thread gets its own temp directory at <code>dataset/runnable/{session_id}/t{thread_id}/</code>.</p>
+
+<h3>10.4 Directory Layout</h3>
+<table>
+  <tr><th>Path</th><th>Purpose</th></tr>
+  <tr><td><code>csc_tmp/{session_id}/{ClassName}/</code></td><td>Per-class session directory: run log, traces, CCT, reports, visualizations</td></tr>
+  <tr><td><code>csc_tmp/{session_id}/{ClassName}/traces/{run_id}/trace.jsonl</code></td><td>Structured runtime trace for one generated test case</td></tr>
+  <tr><td><code>csc_tmp/{session_id}/{ClassName}/{ClassName}_cct.pkl</code></td><td>Persisted CCT used by later CSC and Refined TBFV stages</td></tr>
+  <tr><td><code>csc_tmp/{session_id}/{ClassName}/refined_tbfv_report.json</code></td><td>Offline Refined TBFV report</td></tr>
+  <tr><td><code>csc_tmp/{session_id}/{ClassName}/cct_failure_localization.json</code></td><td>Ranked suspicious condition nodes and condition intervals after Refined TBFV annotation</td></tr>
+  <tr><td><code>csc_tmp/{session_id}/{ClassName}/{ClassName}_cct_tbfv_fault.dot</code></td><td>Separate CCT fault view for Refined TBFV failures; render to SVG/PDF/PNG when needed</td></tr>
+  <tr><td><code>dataset/instrumented/.../*_instrumented.java</code></td><td>Persistent auto-instrumented Java sources mirrored from <code>dataset/</code></td></tr>
+  <tr><td><code>dataset/runnable/{session_id}/t{idx}/</code></td><td>Per-thread compiled Java class files</td></tr>
+  <tr><td><code>dataset/runnable/</code></td><td>Default directory for <code>run_java_code</code></td></tr>
+</table>
+
+<!-- ======================================================================== -->
+<h2 id="examples">11. Complete Examples</h2>
+
+<h3>11.1 Python-Only CCT Construction</h3>
+<pre><code>#!/usr/bin/env python3
+"""Build a CCT from CSC path strings and find uncovered branches."""
+from csc_engine import (
+    CCT, Condition, ConditionResult, parse_path_info,
+    java_expr_to_z3, solver_check_z3, add_value_constraints,
+)
+
+cct = CCT(use_bounded_range=True, range_bound=200)
+
+# Simulate paths through: if (n &lt;= 1) return -1; while (i &gt; 1) { ... }
+path_tc0 = [
+    "n &lt;= 1,False,!(n &lt;= 1),1",
+    "i &gt; 1,True,i &gt; 1,1",
+    "n % i == 0,True,n % i == 0,1",
+]
+cct.add_sequence(parse_path_info(path_tc0), "tc_n=6")
+
+path_tc1 = [
+    "n &lt;= 1,False,!(n &lt;= 1),1",
+    "i &gt; 1,True,i &gt; 1,1",
+    "n % i == 0,False,!(n % i == 0),1",
+    "i &gt; 1,False,!(i &gt; 1),2",
+]
+cct.add_sequence(parse_path_info(path_tc1), "tc_n=5")
+
+cct.print_tree()
+
+# Find and solve
+var_types = {"n": "int", "return_value": "int"}
+target = cct.check_for_csc(var_types)
+if target:
+    pc = cct.construct_path_constraint(target)
+    bounded = add_value_constraints(pc, var_types)
+    z3_expr = java_expr_to_z3(bounded, var_types)
+    result = solver_check_z3(z3_expr, var_types)
+    print(f"Z3 model: {result}")
+
+cct.save_dot("example_cct.dot")</code></pre>
+
+<h3>11.2 Batch Discovery + Verification</h3>
+<pre><code>#!/usr/bin/env python3
+"""Full batch CSC pipeline."""
+from csc_engine import batch_discover, batch_verify_and_merge
+from csc_engine.java_exec import parse_top_level_md_def
+
+program = open("examples/sample_programs/LargestProperDivisor.java").read()
+var_types = parse_top_level_md_def(program)
+
+# Phase 1: Find all uncovered branches
+discovery = batch_discover(program, session_id="demo", use_expanded=True)
+print(f"Found {len(discovery['branches'])} uncovered branches")
+
+# Build main methods for each branch
+for b in discovery["branches"]:
+    inputs = b["inputs"]
+    # Build a main method that calls the target with these args
+    args = ", ".join(str(v) for v in inputs.values())
+    b["main_method"] = f'public static void main(String[] args) {{\n'
+    b["main_method"] += f'    int r = largestProperDivisor({args});\n'
+    b["main_method"] += f'    System.out.println("RETURN_VALUE: largestProperDivisor() = " + r);\n'
+    b["main_method"] += f'}}'
+
+# Phase 3: Execute and merge
+results = batch_verify_and_merge(
+    program,
+    T="true",
+    D="true",
+    branches=discovery["branches"],
+    var_types=var_types,
+    session_id="demo",
+    max_workers=4,
+)
+for r in results:
+    status = "SAFE" if r["status"] == 0 else f"CE: {r['counterexample']}"
+    print(f"  Branch {r['idx']}: {status}")</code></pre>
+
+<h3>11.3 End-to-End CSC + Refined TBFV Case</h3>
+
+<p>This example uses <code>dataset/CSC_V2_dataset/Try3.java</code> and its FSF file:</p>
+
+<pre><code>cd /path/to/CSC_EXPANDED
+
+# 1. Generate test cases and keep traces/CCT.
+python3 csc_tool.py \
+  dataset/CSC_V2_dataset/Try3.java \
+  --strategy sequential \
+  --max-iter 20 \
+  --session try3_refined_tbfv \
+  --keep-artifacts
+
+# 2. Verify generated paths against the FSF.
+python3 refined_tbfv_tool.py \
+  --csc-result-dir csc_tmp/try3_refined_tbfv/Try3 \
+  --fsf dataset/CSC_V2_dataset/fsf_dir/Try3_fsf.txt</code></pre>
+
+<p>Expected Refined TBFV output for the current fixture:</p>
+
+<pre><code>Refined TBFV complete
+  Class:       Try3
+  CSC result:  csc_tmp/try3_refined_tbfv/Try3
+  FSF:         dataset/CSC_V2_dataset/fsf_dir/Try3_fsf.txt
+  Report:      csc_tmp/try3_refined_tbfv/Try3/refined_tbfv_report.json
+  Summary:     testcases=4, fsf_units=4, passed=4, failed=0, skipped=12, unsupported=0
+  CCT marked:  0
+  TBFV stats:  csc_tmp/try3_refined_tbfv/Try3/cct_tbfv_stats.json
+  Counts:      nodes=..., leaves=..., fault_leaves=0, failure_cases=0
+  Fault DOT:    csc_tmp/try3_refined_tbfv/Try3/Try3_cct_tbfv_fault.dot
+  Localization: csc_tmp/try3_refined_tbfv/Try3/cct_failure_localization.json
+  Risk DOT:     csc_tmp/try3_refined_tbfv/Try3/cct_failure_localization_statement_presence.dot
+  Risk counts:  conditions=0, intervals=0, default_edge_strategy=statement_presence</code></pre>
+
+<p>The important Refined TBFV artifacts are:</p>
+<ul>
+  <li><code>refined_tbfv_report.json</code> — detailed per-path, per-FSF verification results.</li>
+  <li><code>*_cct_tbfv_fault.dot</code> — a separate CCT view highlighting leaves with Refined TBFV counterexamples.</li>
+  <li><code>cct_failure_localization.json</code> — ranked condition-node and multi-strategy interval suspiciousness report.</li>
+  <li><code>cct_failure_localization_*.dot</code> — strategy-specific failure-localization risk views.</li>
+</ul>
+
+<!-- ======================================================================== -->
+<h2 id="cli-tool">12. CLI Tool: csc_tool.py</h2>
+
+<p>
+  <code>csc_tool.py</code> automates the entire pipeline: instrument, compile, bootstrap, and CSC loop.
+  It uses the Java bridge JAR for auto-instrumentation, then drives the CSC engine to discover all branches.
+</p>
+
+<h3>12.1 Prerequisites</h3>
+<pre><code># One-time setup: build the Java bridge JAR
+cd java_bridge &amp;&amp; mvn clean package &amp;&amp; cd ..
+# Creates: java_bridge/target/csc-bridge-0.1.0-jar-with-dependencies.jar</code></pre>
+
+<h3>12.2 Usage</h3>
+<pre><code>python3 csc_tool.py &lt;path/to/MyClass.java&gt; [options]
+
+Options:
+  --mode MODE           original | expanded (default: expanded)
+  --range-bound N       Bounded range for expanded mode (default: 200)
+  --bootstrap VAL       Bootstrap input — "var1=5,var2=10"
+  --max-iter N          Max CSC iterations (default: 30)
+  --strategy STR        sequential | batch (default: sequential)
+  --workers N           Worker count for batch strategy (default: 4)
+  --no-auto-instrument  Skip instrumentation (file already instrumented)
+  --session NAME        Session ID for CCT isolation
+  --output FILE         Write generated test cases as JSON
+                        (default: csc_tmp/{session}/{ClassName}/testcases.json)
+  --keep-artifacts      Don't clean up temp files
+  -h, --help            Show help</code></pre>
+
+<h3>12.3 Examples</h3>
+<pre><code># Basic: auto-instrument + full CSC loop
+python3 csc_tool.py dataset/CSC_V2_dataset/Try1.java
+
+# Custom bootstrap, more iterations
+python3 csc_tool.py MyClass.java --bootstrap "x=42" --max-iter 50
+
+# Original CSC mode (no expansion)
+python3 csc_tool.py MyClass.java --mode original
+
+# Already-instrumented file (skip auto-instrument)
+python3 csc_tool.py MyInstrumented.java --no-auto-instrument
+
+# Override the default testcases JSON path
+python3 csc_tool.py MyClass.java --output results.json</code></pre>
+
+<h3>12.4 Output</h3>
+<p>The tool prints per-iteration progress, the final CCT tree (with inputs in leaf nodes), a test case summary table, and saves JSONL traces, run logs, CCT pickle, DOT, and PNG files:</p>
+<pre><code>Generated Test Cases:
+---------------------------------------------
+  [BOOTSTRAP]  bootstrap(x=5)
+  tc_03  [SAT]  x=0
+  tc_04  [SAT]  x=6
+  [INFEASIBLE]
+
+Test cases JSON:
+  csc_tmp/try1/Try1/testcases.json
+
+CCT stats:
+  csc_tmp/try1/Try1/cct_stats.json
+
+CCT visualization:
+  DOT: csc_tmp/try1/Try1/Try1_cct.dot
+  PNG: csc_tmp/try1/Try1/Try1_cct.png
+
+Trace files:
+  csc_tmp/try1/Try1/traces/bootstrap/trace.jsonl
+  csc_tmp/try1/Try1/traces/t2/trace.jsonl
+
+Run log:
+  csc_tmp/try1/Try1/run_log.jsonl</code></pre>
+
+<p>
+  The directory <code>csc_tmp/{session}/{ClassName}/</code> is the canonical output directory for
+  one CSC experiment on one class. It is intentionally shaped so downstream tools can consume a
+  single directory instead of several separately specified files.
+</p>
+
+<h3 id="batch-trace-layout">12.5 Batch Trace Layout</h3>
+
+<p>
+  In <code>--strategy batch</code> mode, each executed frontier branch gets a distinct trace file.
+  Successful batch records in <code>testcases.json</code> include the exact trace path:
+</p>
+
+<pre><code>{
+  "iteration": 2,
+  "branch_idx": 5,
+  "inputs": {"n": 101},
+  "status": "batch_safe",
+  "strategy": "batch",
+  "trace_path": "csc_tmp/demo/Try3/traces/round_02/b5/trace.jsonl"
+}</code></pre>
+
+<p>
+  Refined TBFV reads this <code>trace_path</code> field directly. It does not reconstruct trace paths
+  from <code>iteration</code> or <code>branch_idx</code>, so sequential and batch records are handled by
+  the same verification code.
+</p>
+
+<h3 id="cli-update">12.6 Updating the Tool After Code Changes</h3>
+
+<p>Depending on which part of the project you modify, different steps are needed:</p>
+
+<table>
+  <tr><th>What Changed</th><th>What to Do</th></tr>
+  <tr>
+    <td>Python code in <code>csc_engine/</code></td>
+    <td>Nothing. Changes take effect immediately (editable install: <code>pip install -e .</code>).</td>
+  </tr>
+  <tr>
+    <td>Java bridge code in <code>java_bridge/src/</code></td>
+    <td>Rebuild the JAR:<br><code>cd java_bridge &amp;&amp; mvn clean package</code><br>The fat JAR is auto-discovered by <code>csc_tool.py</code> — no path changes needed.</td>
+  </tr>
+  <tr>
+    <td>Both Python and Java</td>
+    <td>Rebuild the JAR only. Python changes are live.</td>
+  </tr>
+  <tr>
+    <td><code>csc_tool.py</code> itself</td>
+    <td>Nothing — it's a standalone script, changes take effect on next run.</td>
+  </tr>
+  <tr>
+    <td>Dependencies (<code>pyproject.toml</code>)</td>
+    <td>Reinstall:<br><code>pip install -e .</code></td>
+  </tr>
+  <tr>
+    <td>Tests (<code>tests/</code>)</td>
+    <td>Run to verify:<br><code>python3 -m pytest tests</code></td>
+  </tr>
+</table>
+
+<div class="note">
+  <strong>Rule of thumb:</strong> If you edited anything in <code>java_bridge/src/</code>, you must
+  rebuild the JAR. For all Python changes, just re-run — no build step needed.
+</div>
+
+<!-- ======================================================================== -->
+<h2 id="refined-tbfv-cli">13. CLI Tool: refined_tbfv_tool.py</h2>
+
+<p>
+  <code>refined_tbfv_tool.py</code> verifies the paths generated by CSC against a Functional Scenario
+  Form (FSF). It does not execute Java again. Instead, it reads the generated test case JSON,
+  each test case's trace JSONL file, and optionally the persisted CCT pickle.
+</p>
+
+<h3>13.1 FSF File Format</h3>
+
+<p>Each FSF unit has a scenario predicate <code>T</code> and expected postcondition <code>D</code>:</p>
+
+<pre><code>[fsf_positive]
+T: n &gt; 0
+D: return_value &gt; 0
+
+[fsf_non_positive]
+T: n &lt;= 0
+D: return_value &lt;= 0</code></pre>
+
+<p>
+  The canonical filename is <code>ClassName_FSF.txt</code>. The tool also accepts
+  <code>ClassName_fsf.txt</code>, and <code>--fsf</code> can point to any explicit FSF file.
+  If no FSF file is found, the default smoke-test FSF is <code>T: true</code>, <code>D: true</code>.
+</p>
+
+<h3>13.2 Usage</h3>
+
+<pre><code>python3 refined_tbfv_tool.py [&lt;csc_results.json&gt;] [options]
+
+Options:
+  --class, --class-name NAME    Target Java class name
+  --java-file FILE             Infer class name and var types from Java source
+  --run-log FILE               Infer class name and var types from CSC run_log.jsonl
+  --csc-result-dir DIR         CSC result artifact dir, e.g. csc_tmp/session/ClassName
+  --class-dir DIR              Backward-compatible alias for --csc-result-dir
+  --fsf FILE                   Explicit FSF file
+  --fsf-dir DIR                Directory containing ClassName_FSF.txt or ClassName_fsf.txt
+  --var-types SPEC             Extra types: "return_value:int,n:int" or JSON object
+  --cct FILE                   CCT pickle to annotate
+  --output FILE                Report JSON path
+  --fault-output-dir DIR       Directory for TBFV fault DOT/PNG
+  --no-annotate-cct            Do not mark CCT leaves or render fault view
+  --fail-on-violation          Exit 1 if any path violates an FSF unit
+  --fail-on-unsupported        Exit 1 if any verification result is unsupported</code></pre>
+
+<h3>13.3 Recommended Invocation</h3>
+
+<p>
+  The preferred CSC-to-TBFV handoff is directory based:
+</p>
+
+<pre><code>python3 refined_tbfv_tool.py \
+  --csc-result-dir csc_tmp/try3_refined_tbfv/Try3 \
+  --fsf dataset/CSC_V2_dataset/fsf_dir/Try3_fsf.txt</code></pre>
+
+<p>When <code>--csc-result-dir</code> is provided, the tool uses these default paths:</p>
+
+<table>
+  <tr><th>Artifact</th><th>Default path</th></tr>
+  <tr><td>Generated test cases</td><td><code>&lt;csc-result-dir&gt;/testcases.json</code></td></tr>
+  <tr><td>Run metadata and variable types</td><td><code>&lt;csc-result-dir&gt;/run_log.jsonl</code></td></tr>
+  <tr><td>CCT pickle</td><td><code>&lt;csc-result-dir&gt;/&lt;ClassName&gt;_cct.pkl</code></td></tr>
+  <tr><td>TBFV report</td><td><code>&lt;csc-result-dir&gt;/refined_tbfv_report.json</code></td></tr>
+  <tr><td>CSC-stage CCT stats</td><td><code>&lt;csc-result-dir&gt;/cct_stats.json</code></td></tr>
+  <tr><td>TBFV-stage CCT stats</td><td><code>&lt;csc-result-dir&gt;/cct_tbfv_stats.json</code></td></tr>
+  <tr><td>TBFV fault DOT</td><td><code>&lt;csc-result-dir&gt;/&lt;ClassName&gt;_cct_tbfv_fault.dot</code></td></tr>
+  <tr><td>Failure localization report</td><td><code>&lt;csc-result-dir&gt;/cct_failure_localization.json</code></td></tr>
+  <tr><td>Failure localization DOT</td><td><code>&lt;csc-result-dir&gt;/cct_failure_localization_statement_presence.dot</code> by default when traces are available</td></tr>
+</table>
+
+<p>
+  DOT files are not rendered by default. To inspect the CCT views visually, run the generated
+  <code>render_cct.sh</code> script in the result directory; it renders the normal CCT, the TBFV
+  fault view, and all <code>cct_failure_localization_*.dot</code> strategy views when they exist.
+</p>
+
+<p>
+  Passing <code>&lt;csc_results.json&gt;</code> directly is still supported, especially when results come
+  from a non-standard generator. In that mode, use <code>--run-log</code>, <code>--cct</code>,
+  <code>--class</code>, or <code>--var-types</code> as needed to provide missing metadata.
+</p>
+
+<h3>13.4 How Trace Files Are Found</h3>
+
+<p>
+  Refined TBFV finds the trace for each generated test case through the
+  <code>trace_path</code> field stored in <code>testcases.json</code>. This is true for both
+  sequential and batch CSC runs.
+</p>
+
+<pre><code>{
+  "iteration": 2,
+  "branch_idx": 5,
+  "strategy": "batch",
+  "trace_path": "csc_tmp/demo/Try3/traces/round_02/b5/trace.jsonl"
+}</code></pre>
+
+<p>
+  The verifier does not derive this path from the test case ID. It loads the record, reads
+  <code>record["trace_path"]</code>, parses that JSONL file, then reconstructs <code>Ct_in</code>
+  and <code>wp(path, D_i)</code> from the actual executed events. If a record has no
+  <code>trace_path</code>, that path/FSF pair is reported as <code>skipped</code> with reason
+  <code>missing_trace_path</code>.
+</p>
+
+<h3>13.5 Verification Formula</h3>
+
+<p>For every observed path and every FSF unit, the tool first checks scenario matching:</p>
+
+<pre><code>SAT(T_i &amp;&amp; Ct_in)</code></pre>
+
+<p>If the path intersects the scenario, it verifies that no counterexample exists:</p>
+
+<pre><code>UNSAT(T_i &amp;&amp; Ct_in &amp;&amp; !wp(path, D_i))</code></pre>
+
+<ul>
+  <li><code>Ct_in</code> is the input-state path condition reconstructed from condition events.</li>
+  <li><code>wp(path, D_i)</code> is the expected postcondition rewritten backward through value events.</li>
+  <li>A SAT result for the counterexample formula means the path violates the FSF unit.</li>
+</ul>
+
+<h3>13.6 Report and Fault View</h3>
+
+<p>The report summary counts results across all generated test cases and all FSF units:</p>
+
+<pre><code>{
+  "summary": {
+    "testcases": 4,
+    "fsf_units": 4,
+    "passed": 4,
+    "failed": 0,
+    "skipped": 12,
+    "unsupported": 0
+  },
+  "results": [...]
+}</code></pre>
+
+<p>
+  When <code>--cct</code> is provided, every failed result is added to the matching CCT leaf via
+  TBFV-specific metadata. The normal CSC CCT view is left unchanged; the fault distribution is
+  exported separately as <code>*_cct_tbfv_fault.dot</code>. The same annotated CCT is then analyzed
+  to produce <code>cct_failure_localization.json</code>.
+</p>
+
+<h3>13.7 Stage-Boundary CCT Statistics</h3>
+
+<p>
+  CCT statistics are collected with one full tree traversal only at stage boundaries:
+  after CSC generation and after Refined TBFV fault annotation. They are not recomputed
+  after every iteration or every branch merge.
+</p>
+
+<pre><code>{
+  "stage": "csc_generation",
+  "cct": {
+    "total_nodes": 17,
+    "internal_nodes": 8,
+    "leaf_nodes": 9,
+    "covered_leaves": 4,
+    "valid_testcases": 4,
+    "infeasible_leaves": 2,
+    "out_of_range_leaves": 1,
+    "empty_leaves": 2,
+    "truncated_leaves": 0,
+    "expanded_nodes": 3,
+    "tbfv_fault_leaves": 0
+  }
+}</code></pre>
+
+<p>
+  <code>cct_stats.json</code> also includes test-case record counts from <code>testcases.json</code>,
+  which is useful in batch mode where the CCT structure and the generated testcase records are
+  intentionally tracked as separate artifacts.
+</p>
+
+<!-- ======================================================================== -->
+<h2 id="failure-localization-cli">14. CLI Tool: failure_localization_tool.py</h2>
+
+<p>
+  <code>failure_localization_tool.py</code> is a read-only analysis tool for an already annotated CCT.
+  It does not run Java, does not re-run TBFV, and does not mutate the CCT. Its input is a CCT where
+  Refined TBFV has marked failing leaves; its output is a JSON ranking report plus a DOT risk view.
+</p>
+
+<pre><code>python3 failure_localization_tool.py \
+  --csc-result-dir csc_tmp/my_session/MyClass
+
+# Or point directly to a CCT pickle:
+python3 failure_localization_tool.py \
+  --cct csc_tmp/my_session/MyClass/MyClass_cct.pkl \
+  --output csc_tmp/my_session/MyClass/cct_failure_localization.json</code></pre>
+
+<p>Options:</p>
+
+<pre><code>--csc-result-dir DIR   CSC result artifact dir, e.g. csc_tmp/session/ClassName
+--cct FILE            Annotated CCT pickle; inferred from --csc-result-dir when possible
+--class NAME          Class name used to infer &lt;ClassName&gt;_cct.pkl
+--output FILE         Report JSON path; defaults to cct_failure_localization.json
+--dot-output FILE     DOT risk-view path; defaults to cct_failure_localization_&lt;strategy&gt;.dot
+--edge-strategy NAME  Edge strategy for compatibility ranking and DOT view
+--list-strategies     Print available edge strategies and exit
+--no-statement-aware  Do not read testcases.json traces; only use cct_only
+--render-cct          Render the DOT risk view during this run
+--cct-formats LIST    Comma-separated render formats for --render-cct
+--top-k N             Keep only top N records in each ranking</code></pre>
+
+<p>The report contains node rankings and one or more interval edge strategy rankings:</p>
+<ul>
+  <li><code>condition_node_ranking</code>: risk that a condition expression itself is faulty.</li>
+  <li><code>interval_rankings.cct_only</code>: CCT subtree failure evidence only.</li>
+  <li><code>interval_rankings.statement_presence</code>: keeps edge risk only when the concrete edge segment contains <code>ASSIGN</code> or <code>RETURN</code> trace events.</li>
+  <li><code>interval_rankings.edge_divergence_gated</code>: Edge-level Divergence and Gated Evaluation; empty statement regions receive score 0, while non-empty regions use <code>base_risk * (1 + log10(1 + LC))</code>, where <code>LC</code> is the number of distinct <code>ASSIGN</code>/<code>RETURN</code> source lines.</li>
+  <li><code>condition_interval_ranking</code>: compatibility alias for the default interval strategy.</li>
+</ul>
+
+<p>
+  Infeasible, out-of-range, empty, skipped, and unsupported paths are excluded from the executable
+  denominator. A node or interval is ranked only when its subtree contains at least one Refined
+  TBFV failure. With <code>--csc-result-dir</code>, the default interval strategy is
+  <code>statement_presence</code> because <code>testcases.json</code> provides trace paths. With
+  <code>--cct</code> only, the default interval strategy falls back to <code>cct_only</code>.
+</p>
+
+<p>
+  The DOT risk view highlights suspicious condition nodes and condition-interval edges. It is
+  generated as text by default and named by strategy, such as
+  <code>cct_failure_localization_statement_presence.dot</code>. Render it explicitly with
+  <code>--render-cct</code> or with the session-level <code>render_cct.sh</code> script.
+</p>
+
+<h3>Aggregating Failure-Localization Rankings</h3>
+
+<p>
+  The raw localization report ranks dynamic CCT nodes and edges. For automated fault-localization
+  evaluation, aggregate those dynamic rankings into source-level locations before computing top-k
+  metrics:
+</p>
+
+<pre><code>python3 failure_localization_aggregate_tool.py \
+  --report csc_tmp/my_session/MyClass/cct_failure_localization.json \
+  --source-file dataset/CSC_V2_dataset/MySubject/MyClass.java \
+  --output csc_tmp/my_session/MyClass/cct_failure_localization_aggregated.json</code></pre>
+
+<p>
+  The aggregated report contains <code>aggregated_condition_node_ranking</code> and
+  <code>aggregated_interval_rankings</code>. Condition nodes are grouped by source line and
+  condition text. Statement-aware edge rankings are grouped by the condition transition:
+  <code>from_line</code>, <code>from_condition</code>, <code>outcome</code>,
+  <code>to_line</code>, and <code>to_condition</code>.
+</p>
+
+<p>
+  For <code>statement_presence</code> and <code>edge_divergence_gated</code>, fault-localization
+  evaluation should use <code>statement_lines</code> collected from the trace segment as the
+  predicted source locations. The <code>line_interval</code> and
+  <code>condition_anchor_span</code> fields are condition anchors, not necessarily the executed
+  statement region, especially in loops.
+</p>
+
+<!-- ======================================================================== -->
+<h2 id="faq">15. FAQ</h2>
+
+<h3>Q: What's the difference between branch coverage and CSC?</h3>
+<p>
+  Branch coverage checks each <em>static</em> branch (the True and False sides of every if/while).
+  CSC checks each <em>dynamic</em> occurrence of a condition along execution paths, distinguished by
+  loop count. This means <code>i &gt; 1</code> in iteration 1 and <code>i &gt; 1</code> in iteration 2
+  are treated as separate conditions, providing deeper coverage than branch coverage but avoiding
+  full path explosion.
+</p>
+
+<h3>Q: When should I use Expanded CSC over Original CSC?</h3>
+<p>
+  Use Expanded CSC when your program has loops where the number of iterations depends on
+  integer inputs within a known range. The bounded-range check prevents infinite loop unrolling
+  while still exploring meaningful variations. Use Original CSC for programs where loop
+  iterations are fixed or don't depend on input values in interesting ways.
+</p>
+
+<h3>Q: Why does path truncation happen?</h3>
+<p>
+  When a condition's <code>loop_count</code> exceeds <code>MAX_LOOP_BOUND</code> (2), the path
+  is cut and stored as a truncated leaf. This prevents the CCT from growing unboundedly for
+  programs with many loop iterations. In Expanded CSC mode, truncated leaves can be "promoted"
+  to internal nodes if in-range Z3 solutions exist for continuing exploration.
+</p>
+
+<h3>Q: How do I interpret the DOT visualization?</h3>
+<ul>
+  <li>Internal nodes show <code>(loop_count) condition_string</code> plus the WP constraint</li>
+  <li>Solid green edges = True branch; dashed red edges = False branch</li>
+  <li>Truncated leaves (orange) mean the path was cut at MAX_LOOP_BOUND</li>
+  <li>Expanded nodes/leaves (blue) were created during bounded-range expansion</li>
+  <li>Infeasible leaves (red) were proven UNSAT by Z3</li>
+</ul>
+
+<h3>Q: Can I use the CSC engine without Java?</h3>
+<p>
+  Yes. The core CCT data structure and CSC algorithms are language-agnostic. You can build CCTs
+  directly from CSC path strings (see <a href="#examples">Section 11.1</a>). The Java bridge is
+  optional and only needed when you want to automatically instrument and execute Java programs.
+</p>
+
+<h3>Q: What happens when Z3 returns "OK"?</h3>
+<p>
+  "OK" means UNSAT — the path constraint has no satisfying assignment. The branch is then
+  marked as infeasible (<code>"X"</code>) in the CCT, which prevents the algorithm from trying
+  to explore it again.
+</p>
+
+<h3>Q: Why do some conditions appear with "!(...)" wrapping in the trace but not in the CCT?</h3>
+<p>
+  The Java auto-instrumenter synthesizes negated conditions like <code>!(x &lt; 0)</code> for the else-
+  branch of an if-statement. The CSC engine normalizes these back to their original form
+  (<code>x &lt; 0</code>) with the result flipped, so that both the if-true and if-false paths use
+  the same condition string in the CCT. This ensures ancestor-loop matching works correctly.
+</p>
+
+<h3>Q: How are multi-method programs handled?</h3>
+<p>
+  The <code>PARAM_MAP</code> mechanism in execution traces records how caller arguments map to
+  callee parameters. The WP substitution engine resolves these bindings to build correct path
+  constraints that span method call boundaries.
+</p>
+
+<hr>
+
+<p style="text-align: center; color: #888; font-size: 0.85em;">
+  CSC Engine v0.1.0 &nbsp;|&nbsp;
+  <a href="https://github.com/anthropics/claude-code">Built with Claude Code</a>
+</p>
+
+</body>
+</html>

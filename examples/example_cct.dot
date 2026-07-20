@@ -1,0 +1,38 @@
+digraph CCT {
+  rankdir=TB;
+  node [shape=box, style=filled, fontname="monospace", fontsize=10];
+  edge [fontname="monospace", fontsize=9];
+
+  // Legend
+  {
+    rank=sink;
+    legend [shape=plaintext, label=<
+      <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td bgcolor="#e8f5e9"><b>Leaf</b></td><td>Covered (has test cases)</td></tr>
+        <tr><td bgcolor="#ffebee"><b>Leaf</b></td><td>Infeasible (X)</td></tr>
+        <tr><td bgcolor="#fff9c4"><b>Leaf</b></td><td>Out-of-Range</td></tr>
+        <tr><td bgcolor="#fff3e0"><b>Leaf</b></td><td>Truncated (MAX_LOOP_BOUND)</td></tr>
+        <tr><td bgcolor="#e3f2fd"><b>Leaf</b></td><td>Expanded node</td></tr>
+        <tr><td bgcolor="#eeeeee"><b>Leaf Ø</b></td><td>Uncovered (empty)</td></tr>
+      </table>
+    >];
+  }
+
+  node0 [label="(1) n <= 1\nWP: !(n <= 1)", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node1 [label="(1) i > 1\nWP: !(n <= 1) && (n/2 > 1)", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node0 -> node1 [label="F", color="#c62828", style=dashed];
+  node2 [label="{Ø}", shape=ellipse, fillcolor="#eeeeee", fontcolor="#999999", style=dashed];
+  node1 -> node2 [label="F", color="#c62828", style=dashed];
+  node3 [label="(1) n % i == 0\nWP: !(n <= 1) && (n/2 > 1) && (n/2 | n)", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node1 -> node3 [label="T", color="#2e7d32"];
+  node4 [label="(2) i > 1\nWP: !(n <= 1) && (n/2 > 1) && !(n/2 | n) && ...", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node3 -> node4 [label="F", color="#c62828", style=dashed];
+  node5 [label="tc_n=5", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node4 -> node5 [label="F", color="#c62828", style=dashed];
+  node6 [label="{Ø}", shape=ellipse, fillcolor="#eeeeee", fontcolor="#999999", style=dashed];
+  node4 -> node6 [label="T", color="#2e7d32"];
+  node7 [label="tc_n=6", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node3 -> node7 [label="T", color="#2e7d32"];
+  node8 [label="{Ø}", shape=ellipse, fillcolor="#eeeeee", fontcolor="#999999", style=dashed];
+  node0 -> node8 [label="T", color="#2e7d32"];
+}

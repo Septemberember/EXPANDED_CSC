@@ -1,0 +1,754 @@
+{
+  "subject": "BoundedAliquotClassifier",
+  "subject_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier",
+  "fsf": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/FSF/BoundedAliquotClassifier_FSF.txt",
+  "manifest": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+  "mode": "expanded",
+  "strategy": "batch",
+  "max_iter": 50,
+  "dry_run": false,
+  "original": {
+    "role": "original",
+    "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/BoundedAliquotClassifier.java",
+    "class_name": "BoundedAliquotClassifier",
+    "mutant_id": null
+  },
+  "mutants": [
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/BoundedAliquotClassifier_M1.java",
+      "class_name": "BoundedAliquotClassifier",
+      "mutant_id": "BoundedAliquotClassifier_M1"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/BoundedAliquotClassifier_M2.java",
+      "class_name": "BoundedAliquotClassifier",
+      "mutant_id": "BoundedAliquotClassifier_M2"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/BoundedAliquotClassifier_M3.java",
+      "class_name": "BoundedAliquotClassifier",
+      "mutant_id": "BoundedAliquotClassifier_M3"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/BoundedAliquotClassifier_M4.java",
+      "class_name": "BoundedAliquotClassifier",
+      "mutant_id": "BoundedAliquotClassifier_M4"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/BoundedAliquotClassifier_M5.java",
+      "class_name": "BoundedAliquotClassifier",
+      "mutant_id": "BoundedAliquotClassifier_M5"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/BoundedAliquotClassifier_M6.java",
+      "class_name": "BoundedAliquotClassifier",
+      "mutant_id": "BoundedAliquotClassifier_M6"
+    }
+  ],
+  "step_count": 30,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "mutant:BoundedAliquotClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/BoundedAliquotClassifier_M1.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/testcases.json"
+      ],
+      "stdout_tail": "PAND] Promoted truncated leaf at 'number % divisor == 0' (cnt=11) \u2192 F:['tc_7_b2']\n  [EXPAND] Promoted truncated leaf at 'divisor < number' (cnt=12) \u2192 F:['tc_7_b2']\n  [EXPAND] Promoted truncated leaf at 'sum == number' (cnt=1) \u2192 F:['tc_7_b2']\n  [EXPAND] Promoted truncated leaf at 'sum > number' (cnt=1) \u2192 T:['tc_7_b2']\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/BoundedAliquotClassifier_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 51 test cases generated in 8 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/BoundedAliquotClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=32\n  round_04/b0  [BATCH_SAFE]  number=2\n  round_04/b1  [BATCH_SAFE]  number=33\n  round_04/b2  [BATCH_SAFE]  number=4\n  round_04/b3  [BATCH_SAFE]  number=50\n  round_04/b4  [BATCH_SAFE]  number=8\n  round_04/b5  [BATCH_SAFE]  number=44\n  round_04/b6  [BATCH_SAFE]  number=16\n  round_04/b7  [BATCH_SAFE]  number=28\n  round_04/b8  [BATCH_SAFE]  number=40\n  round_04/b9  [BATCH_SAFE]  number=30\n  round_05/b0  [BATCH_SAFE]  number=3\n  round_05/b1  [BATCH_SAFE]  number=47\n  round_05/b2  [BATCH_SAFE]  number=9\n  round_05/b3  [BATCH_SAFE]  number=39\n  round_05/b4  [BATCH_SAFE]  number=27\n  round_05/b5  [BATCH_SAFE]  number=21\n  round_05/b6  [BATCH_SAFE]  number=45\n  round_05/b7  [BATCH_SAFE]  number=46\n  round_05/b8  [BATCH_SAFE]  number=10\n  round_05/b9  [BATCH_SAFE]  number=20\n  round_05/b10  [BATCH_SAFE]  number=6\n  round_05/b11  [BATCH_SAFE]  number=48\n  round_06/b0  [BATCH_SAFE]  number=5\n  round_06/b1  [BATCH_SAFE]  number=7\n  round_06/b2  [BATCH_SAFE]  number=11\n  round_06/b3  [BATCH_SAFE]  number=13\n  round_06/b4  [BATCH_SAFE]  number=17\n  round_06/b5  [BATCH_SAFE]  number=19\n  round_06/b6  [BATCH_SAFE]  number=23\n  round_06/b7  [BATCH_SAFE]  number=29\n  round_06/b8  [BATCH_SAFE]  number=31\n  round_06/b9  [BATCH_SAFE]  number=37\n  round_06/b10  [BATCH_SAFE]  number=41\n  round_06/b11  [BATCH_SAFE]  number=43\n  round_06/b12  [BATCH_SAFE]  number=49\n  round_06/b13  [BATCH_SAFE]  number=25\n  round_06/b14  [BATCH_SAFE]  number=15\n  round_06/b15  [BATCH_SAFE]  number=38\n  round_06/b16  [BATCH_SAFE]  number=34\n  round_06/b17  [BATCH_SAFE]  number=26\n  round_06/b18  [BATCH_SAFE]  number=22\n  round_06/b19  [BATCH_SAFE]  number=14\n  round_06/b20  [BATCH_SAFE]  number=42\n  round_06/b21  [BATCH_SAFE]  number=36\n  round_06/b22  [BATCH_SAFE]  number=24\n  round_07/b0  [BATCH_SAFE]  number=35\n  round_07/b1  [BATCH_SAFE]  number=18\n  round_07/b2  [BATCH_SAFE]  number=12\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 215\n  frontier_discovery_time_ms: 47187\n  compile_time_ms: 18182\n  java_exec_time_ms: 3199\n  path_log_parse_time_ms: 77\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 6123\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 6145\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/BoundedAliquotClassifier_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/cct_stats.json\n  Counts: nodes=3015, leaves=1508, covered=51, infeasible=1457, out_of_range=0, expanded=1547, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedAliquotClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/BoundedAliquotClassifier_M1.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/FSF/BoundedAliquotClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/BoundedAliquotClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedAliquotClassifier\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/FSF/BoundedAliquotClassifier_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/refined_tbfv_report.json\n  Summary:     testcases=51, fsf_units=4, passed=51, failed=1, skipped=152, unsupported=0\n  CCT marked:  1\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/cct_tbfv_stats.json\n  Counts:      nodes=3015, leaves=1508, fault_leaves=1, failure_cases=1\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/BoundedAliquotClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=1, intervals=1, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAliquotClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/BoundedAliquotClassifier_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=51, failed=1, condition_nodes=1, condition_intervals=1\n  Top conditions:\n    #1 score=0.0136 fail=1/51 line=3 number <= 1\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[3, None] root.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAliquotClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedAliquotClassifier/BoundedAliquotClassifier_M1.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedAliquotClassifier/BoundedAliquotClassifier_M1.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  1 raw -> 1 aggregated\n  Intervals[cct_only]: 1 raw -> 1 aggregated\n  Intervals[statement_presence]: 1 raw -> 1 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 1 raw -> 1 aggregated\n  Intervals[edge_divergence_sibling_shared]: 1 raw -> 1 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAliquotClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedAliquotClassifier_M1",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M1/BoundedAliquotClassifier/fault_localization_eval.json\n  Mutant:    BoundedAliquotClassifier_M1\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedAliquotClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/BoundedAliquotClassifier_M2.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/testcases.json"
+      ],
+      "stdout_tail": " 'number % divisor == 0' (cnt=46) \u2192 T:['tc_8_b3']\n  [EXPAND] Promoted truncated leaf at 'divisor <= number' (cnt=47) \u2192 F:['tc_8_b3']\n  [EXPAND] Promoted truncated leaf at 'sum == number' (cnt=1) \u2192 F:['tc_8_b3']\n  [EXPAND] Promoted truncated leaf at 'sum > number' (cnt=1) \u2192 T:['tc_8_b3']\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/BoundedAliquotClassifier_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 52 test cases generated in 9 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/BoundedAliquotClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=32\n  round_04/b0  [BATCH_SAFE]  number=1\n  round_04/b1  [BATCH_SAFE]  number=33\n  round_04/b2  [BATCH_SAFE]  number=2\n  round_04/b3  [BATCH_SAFE]  number=50\n  round_04/b4  [BATCH_SAFE]  number=4\n  round_04/b5  [BATCH_SAFE]  number=44\n  round_04/b6  [BATCH_SAFE]  number=8\n  round_04/b7  [BATCH_SAFE]  number=16\n  round_04/b8  [BATCH_SAFE]  number=28\n  round_04/b9  [BATCH_SAFE]  number=20\n  round_04/b10  [BATCH_SAFE]  number=30\n  round_05/b0  [BATCH_SAFE]  number=29\n  round_05/b1  [BATCH_SAFE]  number=3\n  round_05/b2  [BATCH_SAFE]  number=39\n  round_05/b3  [BATCH_SAFE]  number=27\n  round_05/b4  [BATCH_SAFE]  number=21\n  round_05/b5  [BATCH_SAFE]  number=45\n  round_05/b6  [BATCH_SAFE]  number=22\n  round_05/b7  [BATCH_SAFE]  number=10\n  round_05/b8  [BATCH_SAFE]  number=40\n  round_05/b9  [BATCH_SAFE]  number=42\n  round_05/b10  [BATCH_SAFE]  number=24\n  round_06/b0  [BATCH_SAFE]  number=37\n  round_06/b1  [BATCH_SAFE]  number=23\n  round_06/b2  [BATCH_SAFE]  number=19\n  round_06/b3  [BATCH_SAFE]  number=17\n  round_06/b4  [BATCH_SAFE]  number=13\n  round_06/b5  [BATCH_SAFE]  number=11\n  round_06/b6  [BATCH_SAFE]  number=7\n  round_06/b7  [BATCH_SAFE]  number=5\n  round_06/b8  [BATCH_SAFE]  number=9\n  round_06/b9  [BATCH_SAFE]  number=15\n  round_06/b10  [BATCH_SAFE]  number=34\n  round_06/b11  [BATCH_SAFE]  number=14\n  round_06/b12  [BATCH_SAFE]  number=6\n  round_06/b13  [BATCH_SAFE]  number=18\n  round_06/b14  [BATCH_SAFE]  number=12\n  round_06/b15  [BATCH_SAFE]  number=48\n  round_07/b0  [BATCH_SAFE]  number=47\n  round_07/b1  [BATCH_SAFE]  number=31\n  round_07/b2  [BATCH_SAFE]  number=49\n  round_07/b3  [BATCH_SAFE]  number=35\n  round_07/b4  [BATCH_SAFE]  number=38\n  round_07/b5  [BATCH_SAFE]  number=26\n  round_07/b6  [BATCH_SAFE]  number=36\n  round_08/b0  [BATCH_SAFE]  number=43\n  round_08/b1  [BATCH_SAFE]  number=41\n  round_08/b2  [BATCH_SAFE]  number=25\n  round_08/b3  [BATCH_SAFE]  number=46\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 246\n  frontier_discovery_time_ms: 51026\n  compile_time_ms: 18534\n  java_exec_time_ms: 3113\n  path_log_parse_time_ms: 83\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 6172\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 6197\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/BoundedAliquotClassifier_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/cct_stats.json\n  Counts: nodes=3157, leaves=1579, covered=52, infeasible=1527, out_of_range=0, expanded=1620, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedAliquotClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/BoundedAliquotClassifier_M2.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/FSF/BoundedAliquotClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/BoundedAliquotClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedAliquotClassifier\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/FSF/BoundedAliquotClassifier_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/refined_tbfv_report.json\n  Summary:     testcases=52, fsf_units=4, passed=11, failed=41, skipped=156, unsupported=0\n  CCT marked:  41\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/cct_tbfv_stats.json\n  Counts:      nodes=3157, leaves=1579, fault_leaves=41, failure_cases=41\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/BoundedAliquotClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=1148, intervals=1188, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAliquotClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/BoundedAliquotClassifier_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=52, failed=41, condition_nodes=1148, condition_intervals=1188\n  Top conditions:\n    #1 score=3.2189 fail=24/24 line=10 number % divisor == 0\n    #2 score=3.2189 fail=24/24 line=9 divisor <= number\n    #3 score=3.0649 fail=41/50 line=9 divisor <= number\n  Top intervals:\n    #1 score=2.4609 fail=16/16 line=[9, 10] root.F.F.T.T.T.F.T.F.T.FALSE\n    #2 score=2.4225 fail=41/50 line=[9, 10] root.F.F.T.TRUE\n    #3 score=2.4225 fail=41/50 line=[3, 9] root.F.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAliquotClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedAliquotClassifier/BoundedAliquotClassifier_M2.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedAliquotClassifier/BoundedAliquotClassifier_M2.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  1148 raw -> 6 aggregated\n  Intervals[cct_only]: 1188 raw -> 9 aggregated\n  Intervals[statement_presence]: 1188 raw -> 9 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 1188 raw -> 9 aggregated\n  Intervals[edge_divergence_sibling_shared]: 1188 raw -> 9 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAliquotClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedAliquotClassifier_M2",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M2/BoundedAliquotClassifier/fault_localization_eval.json\n  Mutant:    BoundedAliquotClassifier_M2\n  Operator:  ROR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedAliquotClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/BoundedAliquotClassifier_M3.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/testcases.json"
+      ],
+      "stdout_tail": "truncated leaf at 'sum == number' (cnt=1) \u2192 F:['tc_9_b3']\n  [EXPAND] Promoted truncated leaf at 'sum >= number' (cnt=1) \u2192 F:['tc_9_b3']\n  [EXPAND] Promoted truncated leaf at 'sum == number' (cnt=1) \u2192 F:['tc_9_b4']\n  [EXPAND] Promoted truncated leaf at 'sum >= number' (cnt=1) \u2192 F:['tc_9_b4']\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/BoundedAliquotClassifier_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 52 test cases generated in 10 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/BoundedAliquotClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=32\n  round_04/b0  [BATCH_SAFE]  number=1\n  round_04/b1  [BATCH_SAFE]  number=2\n  round_04/b2  [BATCH_SAFE]  number=33\n  round_04/b3  [BATCH_SAFE]  number=4\n  round_04/b4  [BATCH_SAFE]  number=50\n  round_04/b5  [BATCH_SAFE]  number=8\n  round_04/b6  [BATCH_SAFE]  number=44\n  round_04/b7  [BATCH_SAFE]  number=16\n  round_04/b8  [BATCH_SAFE]  number=28\n  round_04/b9  [BATCH_SAFE]  number=20\n  round_04/b10  [BATCH_SAFE]  number=30\n  round_05/b0  [BATCH_SAFE]  number=3\n  round_05/b1  [BATCH_SAFE]  number=35\n  round_05/b2  [BATCH_SAFE]  number=9\n  round_05/b3  [BATCH_SAFE]  number=39\n  round_05/b4  [BATCH_SAFE]  number=27\n  round_05/b5  [BATCH_SAFE]  number=21\n  round_05/b6  [BATCH_SAFE]  number=45\n  round_05/b7  [BATCH_SAFE]  number=26\n  round_05/b8  [BATCH_SAFE]  number=10\n  round_05/b9  [BATCH_SAFE]  number=40\n  round_05/b10  [BATCH_SAFE]  number=6\n  round_05/b11  [BATCH_SAFE]  number=24\n  round_06/b0  [BATCH_SAFE]  number=5\n  round_06/b1  [BATCH_SAFE]  number=49\n  round_06/b2  [BATCH_SAFE]  number=25\n  round_06/b3  [BATCH_SAFE]  number=15\n  round_06/b4  [BATCH_SAFE]  number=46\n  round_06/b5  [BATCH_SAFE]  number=22\n  round_06/b6  [BATCH_SAFE]  number=14\n  round_06/b7  [BATCH_SAFE]  number=42\n  round_06/b8  [BATCH_SAFE]  number=12\n  round_06/b9  [BATCH_SAFE]  number=48\n  round_07/b0  [BATCH_SAFE]  number=7\n  round_07/b1  [BATCH_SAFE]  number=23\n  round_07/b2  [BATCH_SAFE]  number=38\n  round_07/b3  [BATCH_SAFE]  number=34\n  round_07/b4  [BATCH_SAFE]  number=18\n  round_07/b5  [BATCH_SAFE]  number=36\n  round_08/b0  [BATCH_SAFE]  number=11\n  round_08/b1  [BATCH_SAFE]  number=13\n  round_08/b2  [BATCH_SAFE]  number=17\n  round_08/b3  [BATCH_SAFE]  number=19\n  round_08/b4  [BATCH_SAFE]  number=47\n  round_09/b0  [BATCH_SAFE]  number=29\n  round_09/b1  [BATCH_SAFE]  number=31\n  round_09/b2  [BATCH_SAFE]  number=37\n  round_09/b3  [BATCH_SAFE]  number=41\n  round_09/b4  [BATCH_SAFE]  number=43\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 198\n  frontier_discovery_time_ms: 46566\n  compile_time_ms: 16327\n  java_exec_time_ms: 3076\n  path_log_parse_time_ms: 73\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 5984\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 6017\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/BoundedAliquotClassifier_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/cct_stats.json\n  Counts: nodes=3019, leaves=1510, covered=52, infeasible=1458, out_of_range=0, expanded=1547, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedAliquotClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/BoundedAliquotClassifier_M3.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/FSF/BoundedAliquotClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/BoundedAliquotClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedAliquotClassifier\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/FSF/BoundedAliquotClassifier_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/refined_tbfv_report.json\n  Summary:     testcases=52, fsf_units=4, passed=52, failed=0, skipped=156, unsupported=0\n  CCT marked:  0\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/cct_tbfv_stats.json\n  Counts:      nodes=3019, leaves=1510, fault_leaves=0, failure_cases=0\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/BoundedAliquotClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=0, intervals=0, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAliquotClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/BoundedAliquotClassifier_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=52, failed=0, condition_nodes=0, condition_intervals=0\n  Top conditions: <none>\n  Top intervals: <none>\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAliquotClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedAliquotClassifier/BoundedAliquotClassifier_M3.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedAliquotClassifier/BoundedAliquotClassifier_M3.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  0 raw -> 0 aggregated\n  Intervals[cct_only]: 0 raw -> 0 aggregated\n  Intervals[statement_presence]: 0 raw -> 0 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 0 raw -> 0 aggregated\n  Intervals[edge_divergence_sibling_shared]: 0 raw -> 0 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAliquotClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedAliquotClassifier_M3",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M3/BoundedAliquotClassifier/fault_localization_eval.json\n  Mutant:    BoundedAliquotClassifier_M3\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedAliquotClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/BoundedAliquotClassifier_M4.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/testcases.json"
+      ],
+      "stdout_tail": "cated leaf at 'sum == number' (cnt=1) \u2192 F:['tc_9_b0']\n  [EXPAND] Promoted truncated leaf at 'sum > number' (cnt=1) \u2192 F:['tc_9_b0']\n  [EXPAND] Promoted truncated leaf at 'sum == number' (cnt=1) \u2192 F:['tc_9_b1']\n  [EXPAND] Promoted truncated leaf at 'sum > number' (cnt=1) \u2192 F:['tc_9_b1']\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/BoundedAliquotClassifier_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 52 test cases generated in 10 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/BoundedAliquotClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=32\n  round_04/b0  [BATCH_SAFE]  number=1\n  round_04/b1  [BATCH_SAFE]  number=2\n  round_04/b2  [BATCH_SAFE]  number=33\n  round_04/b3  [BATCH_SAFE]  number=4\n  round_04/b4  [BATCH_SAFE]  number=50\n  round_04/b5  [BATCH_SAFE]  number=8\n  round_04/b6  [BATCH_SAFE]  number=44\n  round_04/b7  [BATCH_SAFE]  number=16\n  round_04/b8  [BATCH_SAFE]  number=28\n  round_04/b9  [BATCH_SAFE]  number=20\n  round_04/b10  [BATCH_SAFE]  number=48\n  round_05/b0  [BATCH_SAFE]  number=3\n  round_05/b1  [BATCH_SAFE]  number=11\n  round_05/b2  [BATCH_SAFE]  number=9\n  round_05/b3  [BATCH_SAFE]  number=39\n  round_05/b4  [BATCH_SAFE]  number=27\n  round_05/b5  [BATCH_SAFE]  number=21\n  round_05/b6  [BATCH_SAFE]  number=45\n  round_05/b7  [BATCH_SAFE]  number=46\n  round_05/b8  [BATCH_SAFE]  number=10\n  round_05/b9  [BATCH_SAFE]  number=40\n  round_05/b10  [BATCH_SAFE]  number=42\n  round_05/b11  [BATCH_SAFE]  number=36\n  round_05/b12  [BATCH_SAFE]  number=24\n  round_06/b0  [BATCH_SAFE]  number=5\n  round_06/b1  [BATCH_SAFE]  number=7\n  round_06/b2  [BATCH_SAFE]  number=31\n  round_06/b3  [BATCH_SAFE]  number=49\n  round_06/b4  [BATCH_SAFE]  number=25\n  round_06/b5  [BATCH_SAFE]  number=15\n  round_06/b6  [BATCH_SAFE]  number=38\n  round_06/b7  [BATCH_SAFE]  number=34\n  round_06/b8  [BATCH_SAFE]  number=26\n  round_06/b9  [BATCH_SAFE]  number=22\n  round_06/b10  [BATCH_SAFE]  number=14\n  round_06/b11  [BATCH_SAFE]  number=6\n  round_06/b12  [BATCH_SAFE]  number=18\n  round_06/b13  [BATCH_SAFE]  number=30\n  round_06/b14  [BATCH_SAFE]  number=12\n  round_07/b0  [BATCH_SAFE]  number=13\n  round_07/b1  [BATCH_SAFE]  number=17\n  round_07/b2  [BATCH_SAFE]  number=19\n  round_07/b3  [BATCH_SAFE]  number=23\n  round_07/b4  [BATCH_SAFE]  number=29\n  round_07/b5  [BATCH_SAFE]  number=37\n  round_07/b6  [BATCH_SAFE]  number=35\n  round_08/b0  [BATCH_SAFE]  number=47\n  round_09/b0  [BATCH_SAFE]  number=41\n  round_09/b1  [BATCH_SAFE]  number=43\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 207\n  frontier_discovery_time_ms: 46353\n  compile_time_ms: 15961\n  java_exec_time_ms: 3026\n  path_log_parse_time_ms: 74\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 5908\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 5943\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/BoundedAliquotClassifier_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/cct_stats.json\n  Counts: nodes=3023, leaves=1512, covered=52, infeasible=1460, out_of_range=0, expanded=1549, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedAliquotClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/BoundedAliquotClassifier_M4.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/FSF/BoundedAliquotClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/BoundedAliquotClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedAliquotClassifier\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/FSF/BoundedAliquotClassifier_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/refined_tbfv_report.json\n  Summary:     testcases=52, fsf_units=4, passed=41, failed=11, skipped=156, unsupported=0\n  CCT marked:  11\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/cct_tbfv_stats.json\n  Counts:      nodes=3023, leaves=1512, fault_leaves=11, failure_cases=11\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/BoundedAliquotClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=480, intervals=490, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAliquotClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/BoundedAliquotClassifier_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=52, failed=11, condition_nodes=480, condition_intervals=490\n  Top conditions:\n    #1 score=2.1972 fail=8/8 line=10 number % divisor == 0\n    #2 score=2.1972 fail=8/8 line=9 divisor < number\n    #3 score=1.6094 fail=4/4 line=10 number % divisor == 0\n  Top intervals:\n    #1 score=1.7296 fail=8/8 line=[9, 10] root.F.F.T.T.T.T.T.TRUE\n    #2 score=1.3979 fail=4/4 line=[9, 10] root.F.F.T.T.T.T.T.T.T.T.T.F.T.T.T.FALSE\n    #3 score=1.3979 fail=4/4 line=[9, 10] root.F.F.T.T.T.T.T.T.T.T.T.F.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAliquotClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedAliquotClassifier/BoundedAliquotClassifier_M4.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedAliquotClassifier/BoundedAliquotClassifier_M4.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  480 raw -> 6 aggregated\n  Intervals[cct_only]: 490 raw -> 8 aggregated\n  Intervals[statement_presence]: 490 raw -> 8 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 490 raw -> 8 aggregated\n  Intervals[edge_divergence_sibling_shared]: 490 raw -> 8 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAliquotClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedAliquotClassifier_M4",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M4/BoundedAliquotClassifier/fault_localization_eval.json\n  Mutant:    BoundedAliquotClassifier_M4\n  Operator:  AOR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=42, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedAliquotClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/BoundedAliquotClassifier_M5.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/testcases.json"
+      ],
+      "stdout_tail": "ND] Promoted truncated leaf at 'divisor < number' (cnt=15) \u2192 T:['tc_7_b0']\n  [EXPAND] Promoted truncated leaf at 'number % divisor == 0' (cnt=15) \u2192 F:['tc_7_b0']\n  [EXPAND] Promoted truncated leaf at 'divisor < number' (cnt=16) \u2192 F:['tc_7_b0']\n  [EXPAND] Promoted truncated leaf at 'sum == number' (cnt=1) \u2192 F:['tc_7_b0']\n  [EXPAND] Promoted truncated leaf at 'sum > number' (cnt=1) \u2192 F:['tc_7_b0']\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/BoundedAliquotClassifier_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 49 test cases generated in 8 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/BoundedAliquotClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=32\n  round_04/b0  [BATCH_SAFE]  number=1\n  round_04/b1  [BATCH_SAFE]  number=2\n  round_04/b2  [BATCH_SAFE]  number=4\n  round_04/b3  [BATCH_SAFE]  number=7\n  round_04/b4  [BATCH_SAFE]  number=8\n  round_04/b5  [BATCH_SAFE]  number=11\n  round_04/b6  [BATCH_SAFE]  number=13\n  round_04/b7  [BATCH_SAFE]  number=16\n  round_04/b8  [BATCH_SAFE]  number=19\n  round_04/b9  [BATCH_SAFE]  number=23\n  round_04/b10  [BATCH_SAFE]  number=29\n  round_04/b11  [BATCH_SAFE]  number=31\n  round_04/b12  [BATCH_SAFE]  number=37\n  round_04/b13  [BATCH_SAFE]  number=46\n  round_04/b14  [BATCH_SAFE]  number=38\n  round_04/b15  [BATCH_SAFE]  number=34\n  round_04/b16  [BATCH_SAFE]  number=26\n  round_04/b17  [BATCH_SAFE]  number=22\n  round_04/b18  [BATCH_SAFE]  number=49\n  round_04/b19  [BATCH_SAFE]  number=20\n  round_04/b20  [BATCH_SAFE]  number=39\n  round_05/b0  [BATCH_SAFE]  number=43\n  round_05/b1  [BATCH_SAFE]  number=44\n  round_05/b2  [BATCH_SAFE]  number=14\n  round_05/b3  [BATCH_SAFE]  number=28\n  round_05/b4  [BATCH_SAFE]  number=10\n  round_05/b5  [BATCH_SAFE]  number=40\n  round_05/b6  [BATCH_SAFE]  number=35\n  round_05/b7  [BATCH_SAFE]  number=6\n  round_05/b8  [BATCH_SAFE]  number=9\n  round_05/b9  [BATCH_SAFE]  number=12\n  round_05/b10  [BATCH_SAFE]  number=48\n  round_05/b11  [BATCH_SAFE]  number=33\n  round_05/b12  [BATCH_SAFE]  number=36\n  round_05/b13  [BATCH_SAFE]  number=21\n  round_05/b14  [BATCH_SAFE]  number=45\n  round_06/b0  [BATCH_SAFE]  number=41\n  round_06/b1  [BATCH_SAFE]  number=47\n  round_06/b2  [BATCH_SAFE]  number=25\n  round_06/b3  [BATCH_SAFE]  number=50\n  round_06/b4  [BATCH_SAFE]  number=24\n  round_06/b5  [BATCH_SAFE]  number=18\n  round_06/b6  [BATCH_SAFE]  number=27\n  round_06/b7  [BATCH_SAFE]  number=42\n  round_06/b8  [BATCH_SAFE]  number=15\n  round_07/b0  [BATCH_SAFE]  number=30\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 146\n  frontier_discovery_time_ms: 9761\n  compile_time_ms: 15273\n  java_exec_time_ms: 2921\n  path_log_parse_time_ms: 17\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 5558\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 5569\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/BoundedAliquotClassifier_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/cct_stats.json\n  Counts: nodes=1179, leaves=590, covered=49, infeasible=541, out_of_range=0, expanded=624, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedAliquotClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/BoundedAliquotClassifier_M5.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/FSF/BoundedAliquotClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/BoundedAliquotClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedAliquotClassifier\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/FSF/BoundedAliquotClassifier_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/refined_tbfv_report.json\n  Summary:     testcases=49, fsf_units=4, passed=38, failed=11, skipped=147, unsupported=0\n  CCT marked:  11\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/cct_tbfv_stats.json\n  Counts:      nodes=1179, leaves=590, fault_leaves=11, failure_cases=11\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/BoundedAliquotClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=220, intervals=230, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAliquotClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/BoundedAliquotClassifier_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=49, failed=11, condition_nodes=220, condition_intervals=230\n  Top conditions:\n    #1 score=1.2130 fail=7/12 line=9 divisor < number\n    #2 score=1.1719 fail=8/15 line=10 number % divisor == 0\n    #3 score=1.1719 fail=8/15 line=9 divisor < number\n  Top intervals:\n    #1 score=0.9542 fail=2/2 line=[9, 10] root.F.F.T.T.T.T.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.FALSE\n    #2 score=0.9542 fail=2/2 line=[9, 10] root.F.F.T.T.T.T.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.FALSE\n    #3 score=0.9542 fail=2/2 line=[9, 10] root.F.F.T.T.T.T.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAliquotClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedAliquotClassifier/BoundedAliquotClassifier_M5.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedAliquotClassifier/BoundedAliquotClassifier_M5.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  220 raw -> 6 aggregated\n  Intervals[cct_only]: 230 raw -> 8 aggregated\n  Intervals[statement_presence]: 230 raw -> 8 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 230 raw -> 8 aggregated\n  Intervals[edge_divergence_sibling_shared]: 230 raw -> 8 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAliquotClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedAliquotClassifier_M5",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M5/BoundedAliquotClassifier/fault_localization_eval.json\n  Mutant:    BoundedAliquotClassifier_M5\n  Operator:  AOR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=19, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_shared: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedAliquotClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/BoundedAliquotClassifier_M6.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/testcases.json"
+      ],
+      "stdout_tail": "number % divisor == 0' (cnt=46) \u2192 F:['tc_8_b0']\n  [EXPAND] Promoted truncated leaf at 'divisor < number' (cnt=47) \u2192 F:['tc_8_b0']\n  [EXPAND] Promoted truncated leaf at 'sum == number' (cnt=1) \u2192 F:['tc_8_b0']\n  [EXPAND] Promoted truncated leaf at 'sum > number' (cnt=1) \u2192 F:['tc_8_b0']\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/BoundedAliquotClassifier_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 52 test cases generated in 9 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/BoundedAliquotClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=32\n  round_04/b0  [BATCH_SAFE]  number=1\n  round_04/b1  [BATCH_SAFE]  number=2\n  round_04/b2  [BATCH_SAFE]  number=33\n  round_04/b3  [BATCH_SAFE]  number=4\n  round_04/b4  [BATCH_SAFE]  number=50\n  round_04/b5  [BATCH_SAFE]  number=8\n  round_04/b6  [BATCH_SAFE]  number=44\n  round_04/b7  [BATCH_SAFE]  number=16\n  round_04/b8  [BATCH_SAFE]  number=28\n  round_04/b9  [BATCH_SAFE]  number=40\n  round_04/b10  [BATCH_SAFE]  number=6\n  round_05/b0  [BATCH_SAFE]  number=3\n  round_05/b1  [BATCH_SAFE]  number=29\n  round_05/b2  [BATCH_SAFE]  number=9\n  round_05/b3  [BATCH_SAFE]  number=39\n  round_05/b4  [BATCH_SAFE]  number=27\n  round_05/b5  [BATCH_SAFE]  number=21\n  round_05/b6  [BATCH_SAFE]  number=45\n  round_05/b7  [BATCH_SAFE]  number=26\n  round_05/b8  [BATCH_SAFE]  number=10\n  round_05/b9  [BATCH_SAFE]  number=20\n  round_05/b10  [BATCH_SAFE]  number=42\n  round_05/b11  [BATCH_SAFE]  number=30\n  round_05/b12  [BATCH_SAFE]  number=24\n  round_06/b0  [BATCH_SAFE]  number=5\n  round_06/b1  [BATCH_SAFE]  number=7\n  round_06/b2  [BATCH_SAFE]  number=11\n  round_06/b3  [BATCH_SAFE]  number=13\n  round_06/b4  [BATCH_SAFE]  number=17\n  round_06/b5  [BATCH_SAFE]  number=19\n  round_06/b6  [BATCH_SAFE]  number=23\n  round_06/b7  [BATCH_SAFE]  number=41\n  round_06/b8  [BATCH_SAFE]  number=49\n  round_06/b9  [BATCH_SAFE]  number=25\n  round_06/b10  [BATCH_SAFE]  number=15\n  round_06/b11  [BATCH_SAFE]  number=46\n  round_06/b12  [BATCH_SAFE]  number=22\n  round_06/b13  [BATCH_SAFE]  number=14\n  round_06/b14  [BATCH_SAFE]  number=18\n  round_06/b15  [BATCH_SAFE]  number=12\n  round_06/b16  [BATCH_SAFE]  number=48\n  round_07/b0  [BATCH_SAFE]  number=31\n  round_07/b1  [BATCH_SAFE]  number=37\n  round_07/b2  [BATCH_SAFE]  number=43\n  round_07/b3  [BATCH_SAFE]  number=35\n  round_07/b4  [BATCH_SAFE]  number=38\n  round_07/b5  [BATCH_SAFE]  number=34\n  round_07/b6  [BATCH_SAFE]  number=36\n  round_08/b0  [BATCH_SAFE]  number=47\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 211\n  frontier_discovery_time_ms: 46569\n  compile_time_ms: 16082\n  java_exec_time_ms: 3005\n  path_log_parse_time_ms: 75\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 5869\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 5891\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/BoundedAliquotClassifier_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/cct_stats.json\n  Counts: nodes=3019, leaves=1510, covered=52, infeasible=1458, out_of_range=0, expanded=1547, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedAliquotClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/BoundedAliquotClassifier_M6.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/FSF/BoundedAliquotClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/BoundedAliquotClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedAliquotClassifier\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAliquotClassifier/FSF/BoundedAliquotClassifier_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/refined_tbfv_report.json\n  Summary:     testcases=52, fsf_units=4, passed=13, failed=39, skipped=156, unsupported=0\n  CCT marked:  39\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/cct_tbfv_stats.json\n  Counts:      nodes=3019, leaves=1510, fault_leaves=39, failure_cases=39\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/BoundedAliquotClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=1047, intervals=1085, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAliquotClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/BoundedAliquotClassifier_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=52, failed=39, condition_nodes=1047, condition_intervals=1085\n  Top conditions:\n    #1 score=3.2189 fail=24/24 line=9 divisor < number\n    #2 score=3.1781 fail=23/23 line=10 number % divisor == 0\n    #3 score=2.8773 fail=39/50 line=9 divisor < number\n  Top intervals:\n    #1 score=2.4609 fail=16/16 line=[9, 10] root.F.F.T.T.T.F.T.F.T.FALSE\n    #2 score=2.2923 fail=13/13 line=[9, 10] root.F.F.T.T.T.F.T.F.T.F.T.F.T.FALSE\n    #3 score=2.2243 fail=39/50 line=[3, 9] root.F.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAliquotClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedAliquotClassifier/BoundedAliquotClassifier_M6.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedAliquotClassifier/BoundedAliquotClassifier_M6.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  1047 raw -> 6 aggregated\n  Intervals[cct_only]: 1085 raw -> 8 aggregated\n  Intervals[statement_presence]: 1085 raw -> 8 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 1085 raw -> 8 aggregated\n  Intervals[edge_divergence_sibling_shared]: 1085 raw -> 8 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAliquotClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedAliquotClassifier_M6",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedAliquotClassifier_M6/BoundedAliquotClassifier/fault_localization_eval.json\n  Mutant:    BoundedAliquotClassifier_M6\n  Operator:  CR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=85, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=173, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.statement_presence: best_rank=4, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    }
+  ]
+}

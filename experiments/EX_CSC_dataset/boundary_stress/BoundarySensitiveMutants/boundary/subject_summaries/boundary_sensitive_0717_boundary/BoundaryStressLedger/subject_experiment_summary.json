@@ -1,0 +1,130 @@
+{
+  "subject": "BoundaryStressLedger",
+  "subject_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressLedger",
+  "fsf": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressLedger/FSF/BoundaryStressLedger_FSF.txt",
+  "manifest": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/boundary_sensitive_mutants_manifest.jsonl",
+  "mode": "expanded",
+  "strategy": "batch",
+  "max_iter": 1200,
+  "dry_run": false,
+  "original": {
+    "role": "original",
+    "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressLedger/BoundaryStressLedger.java",
+    "class_name": "BoundaryStressLedger",
+    "mutant_id": null
+  },
+  "mutants": [
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressLedger/BoundaryStressLedger_M7.java",
+      "class_name": "BoundaryStressLedger",
+      "mutant_id": "BoundaryStressLedger_M7"
+    }
+  ],
+  "step_count": 4,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "original:BoundaryStressLedger:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressLedger/BoundaryStressLedger.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "1200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "boundary_sensitive_0717_boundary_BoundaryStressLedger",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger/BoundaryStressLedger/testcases.json"
+      ],
+      "stdout_tail": " round_05/b16  [BATCH_SAFE]  periods=128, reserve=201, audit=205\n  round_06/b0  [BATCH_SAFE]  periods=69, reserve=0, audit=0\n  round_06/b1  [BATCH_SAFE]  periods=70, reserve=0, audit=0\n  round_06/b2  [BATCH_SAFE]  periods=74, reserve=0, audit=0\n  round_06/b3  [BATCH_SAFE]  periods=77, reserve=12, audit=0\n  round_06/b4  [BATCH_SAFE]  periods=81, reserve=0, audit=0\n  round_06/b5  [BATCH_SAFE]  periods=84, reserve=0, audit=0\n  round_06/b6  [BATCH_SAFE]  periods=87, reserve=0, audit=0\n  round_06/b7  [BATCH_SAFE]  periods=90, reserve=12, audit=12\n  round_06/b8  [BATCH_SAFE]  periods=92, reserve=0, audit=0\n  round_06/b9  [BATCH_SAFE]  periods=96, reserve=0, audit=0\n  round_06/b10  [BATCH_SAFE]  periods=99, reserve=0, audit=0\n  round_06/b11  [BATCH_SAFE]  periods=100, reserve=0, audit=0\n  round_06/b12  [BATCH_SAFE]  periods=105, reserve=0, audit=0\n  round_06/b13  [BATCH_SAFE]  periods=107, reserve=0, audit=0\n  round_06/b14  [BATCH_SAFE]  periods=109, reserve=0, audit=0\n  round_06/b15  [BATCH_SAFE]  periods=112, reserve=0, audit=0\n  round_06/b16  [BATCH_SAFE]  periods=117, reserve=0, audit=12\n  round_06/b17  [BATCH_SAFE]  periods=118, reserve=0, audit=12\n  round_06/b18  [BATCH_SAFE]  periods=123, reserve=0, audit=0\n  round_06/b19  [BATCH_SAFE]  periods=125, reserve=12, audit=0\n  round_06/b20  [BATCH_SAFE]  periods=129, reserve=0, audit=12\n  round_06/b21  [BATCH_SAFE]  periods=132, reserve=0, audit=0\n  round_06/b22  [BATCH_SAFE]  periods=133, reserve=0, audit=0\n  round_06/b23  [BATCH_SAFE]  periods=138, reserve=0, audit=12\n  round_06/b24  [BATCH_SAFE]  periods=139, reserve=0, audit=0\n  round_06/b25  [BATCH_SAFE]  periods=142, reserve=0, audit=12\n  round_06/b26  [BATCH_SAFE]  periods=147, reserve=12, audit=0\n  round_06/b27  [BATCH_SAFE]  periods=150, reserve=0, audit=0\n  round_06/b28  [BATCH_SAFE]  periods=151, reserve=12, audit=0\n  round_06/b29  [BATCH_SAFE]  periods=156, reserve=0, audit=0\n  round_06/b30  [BATCH_SAFE]  periods=158, reserve=0, audit=12\n  round_06/b31  [BATCH_SAFE]  periods=162, reserve=0, audit=0\n  round_06/b32  [BATCH_SAFE]  periods=165, reserve=0, audit=0\n  round_06/b33  [BATCH_SAFE]  periods=168, reserve=0, audit=0\n  round_06/b34  [BATCH_SAFE]  periods=171, reserve=0, audit=0\n  round_06/b35  [BATCH_SAFE]  periods=172, reserve=0, audit=0\n  round_06/b36  [BATCH_SAFE]  periods=175, reserve=0, audit=0\n  round_06/b37  [BATCH_SAFE]  periods=179, reserve=12, audit=0\n  round_06/b38  [BATCH_SAFE]  periods=183, reserve=0, audit=0\n  round_06/b39  [BATCH_SAFE]  periods=186, reserve=0, audit=0\n  round_06/b40  [BATCH_SAFE]  periods=189, reserve=0, audit=0\n  round_06/b41  [BATCH_SAFE]  periods=197, reserve=0, audit=0\n  round_07/b0  [BATCH_SAFE]  periods=193, reserve=0, audit=0\n  round_07/b1  [BATCH_SAFE]  periods=199, reserve=0, audit=0\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 2089\n  frontier_discovery_time_ms: 34407\n  compile_time_ms: 44341\n  java_exec_time_ms: 8199\n  path_log_parse_time_ms: 1476\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 14850\n  merge_verify_wall_time_ms: 12\n  batch_total_wall_time_ms: 14877\n\nTest cases written to: csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger/BoundaryStressLedger/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger/BoundaryStressLedger/BoundaryStressLedger_cct.dot\n  Stats: csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger/BoundaryStressLedger/cct_stats.json\n  Counts: nodes=913, leaves=457, covered=74, infeasible=373, out_of_range=10, expanded=458, truncated=0\n  Render script: csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger/BoundaryStressLedger/render_cct.sh\n  (render later with: csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger/BoundaryStressLedger/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger/BoundaryStressLedger/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "original:BoundaryStressLedger:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger/BoundaryStressLedger",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressLedger/BoundaryStressLedger.java",
+        "--output",
+        "csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger/BoundaryStressLedger/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressLedger/FSF/BoundaryStressLedger_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger/BoundaryStressLedger/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger/BoundaryStressLedger/BoundaryStressLedger_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundaryStressLedger\n  CSC result:  csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger/BoundaryStressLedger\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressLedger/FSF/BoundaryStressLedger_FSF.txt\n  Report:      csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger/BoundaryStressLedger/refined_tbfv_report.json\n  Summary:     testcases=81, fsf_units=10, passed=78, failed=0, skipped=732, unsupported=0\n  CCT marked:  0\n  TBFV stats:  csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger/BoundaryStressLedger/cct_tbfv_stats.json\n  Counts:      nodes=913, leaves=457, fault_leaves=0, failure_cases=0\n  Fault DOT:    csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger/BoundaryStressLedger/BoundaryStressLedger_cct_tbfv_fault.dot\n  Localization: csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger/BoundaryStressLedger/cct_failure_localization.json\n  Risk DOT:     csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger/BoundaryStressLedger/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=0, intervals=0, default_edge_strategy=statement_presence\n  Render script: csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger/BoundaryStressLedger/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundaryStressLedger:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressLedger/BoundaryStressLedger_M7.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "1200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "boundary_sensitive_0717_boundary_BoundaryStressLedger_M7",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger_M7/BoundaryStressLedger/testcases.json"
+      ],
+      "stdout_tail": "TCH_SAFE]  periods=128, reserve=201, audit=205\n  round_06/b0  [BATCH_SAFE]  periods=69, reserve=0, audit=0\n  round_06/b1  [BATCH_SAFE]  periods=70, reserve=0, audit=0\n  round_06/b2  [BATCH_SAFE]  periods=74, reserve=0, audit=0\n  round_06/b3  [BATCH_SAFE]  periods=77, reserve=12, audit=0\n  round_06/b4  [BATCH_SAFE]  periods=81, reserve=0, audit=0\n  round_06/b5  [BATCH_SAFE]  periods=84, reserve=0, audit=0\n  round_06/b6  [BATCH_SAFE]  periods=87, reserve=0, audit=0\n  round_06/b7  [BATCH_SAFE]  periods=90, reserve=12, audit=12\n  round_06/b8  [BATCH_SAFE]  periods=92, reserve=0, audit=0\n  round_06/b9  [BATCH_SAFE]  periods=96, reserve=0, audit=0\n  round_06/b10  [BATCH_SAFE]  periods=99, reserve=0, audit=0\n  round_06/b11  [BATCH_SAFE]  periods=100, reserve=0, audit=0\n  round_06/b12  [BATCH_SAFE]  periods=105, reserve=0, audit=0\n  round_06/b13  [BATCH_SAFE]  periods=107, reserve=0, audit=0\n  round_06/b14  [BATCH_SAFE]  periods=109, reserve=0, audit=0\n  round_06/b15  [BATCH_SAFE]  periods=112, reserve=0, audit=0\n  round_06/b16  [BATCH_SAFE]  periods=117, reserve=0, audit=12\n  round_06/b17  [BATCH_SAFE]  periods=118, reserve=0, audit=12\n  round_06/b18  [BATCH_SAFE]  periods=123, reserve=0, audit=0\n  round_06/b19  [BATCH_SAFE]  periods=125, reserve=12, audit=0\n  round_06/b20  [BATCH_SAFE]  periods=129, reserve=0, audit=12\n  round_06/b21  [BATCH_SAFE]  periods=132, reserve=0, audit=0\n  round_06/b22  [BATCH_SAFE]  periods=133, reserve=0, audit=0\n  round_06/b23  [BATCH_SAFE]  periods=138, reserve=0, audit=12\n  round_06/b24  [BATCH_SAFE]  periods=139, reserve=0, audit=0\n  round_06/b25  [BATCH_SAFE]  periods=142, reserve=0, audit=12\n  round_06/b26  [BATCH_SAFE]  periods=147, reserve=12, audit=0\n  round_06/b27  [BATCH_SAFE]  periods=150, reserve=0, audit=0\n  round_06/b28  [BATCH_SAFE]  periods=151, reserve=12, audit=0\n  round_06/b29  [BATCH_SAFE]  periods=156, reserve=0, audit=0\n  round_06/b30  [BATCH_SAFE]  periods=158, reserve=0, audit=12\n  round_06/b31  [BATCH_SAFE]  periods=162, reserve=0, audit=0\n  round_06/b32  [BATCH_SAFE]  periods=165, reserve=0, audit=0\n  round_06/b33  [BATCH_SAFE]  periods=168, reserve=0, audit=0\n  round_06/b34  [BATCH_SAFE]  periods=171, reserve=0, audit=0\n  round_06/b35  [BATCH_SAFE]  periods=172, reserve=0, audit=0\n  round_06/b36  [BATCH_SAFE]  periods=175, reserve=0, audit=0\n  round_06/b37  [BATCH_SAFE]  periods=179, reserve=12, audit=0\n  round_06/b38  [BATCH_SAFE]  periods=183, reserve=0, audit=0\n  round_06/b39  [BATCH_SAFE]  periods=186, reserve=0, audit=0\n  round_06/b40  [BATCH_SAFE]  periods=189, reserve=0, audit=0\n  round_06/b41  [BATCH_SAFE]  periods=197, reserve=0, audit=0\n  round_07/b0  [BATCH_SAFE]  periods=193, reserve=0, audit=0\n  round_07/b1  [BATCH_SAFE]  periods=199, reserve=0, audit=0\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 2105\n  frontier_discovery_time_ms: 33016\n  compile_time_ms: 46697\n  java_exec_time_ms: 8774\n  path_log_parse_time_ms: 1622\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 15720\n  merge_verify_wall_time_ms: 10\n  batch_total_wall_time_ms: 15766\n\nTest cases written to: csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger_M7/BoundaryStressLedger/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger_M7/BoundaryStressLedger/BoundaryStressLedger_cct.dot\n  Stats: csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger_M7/BoundaryStressLedger/cct_stats.json\n  Counts: nodes=913, leaves=457, covered=74, infeasible=373, out_of_range=10, expanded=458, truncated=0\n  Render script: csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger_M7/BoundaryStressLedger/render_cct.sh\n  (render later with: csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger_M7/BoundaryStressLedger/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger_M7/BoundaryStressLedger/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundaryStressLedger:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger_M7/BoundaryStressLedger",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressLedger/BoundaryStressLedger_M7.java",
+        "--output",
+        "csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger_M7/BoundaryStressLedger/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressLedger/FSF/BoundaryStressLedger_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger_M7/BoundaryStressLedger/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger_M7/BoundaryStressLedger/BoundaryStressLedger_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundaryStressLedger\n  CSC result:  csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger_M7/BoundaryStressLedger\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressLedger/FSF/BoundaryStressLedger_FSF.txt\n  Report:      csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger_M7/BoundaryStressLedger/refined_tbfv_report.json\n  Summary:     testcases=81, fsf_units=10, passed=69, failed=9, skipped=732, unsupported=0\n  CCT marked:  9\n  TBFV stats:  csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger_M7/BoundaryStressLedger/cct_tbfv_stats.json\n  Counts:      nodes=913, leaves=457, fault_leaves=9, failure_cases=9\n  Fault DOT:    csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger_M7/BoundaryStressLedger/BoundaryStressLedger_cct_tbfv_fault.dot\n  Localization: csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger_M7/BoundaryStressLedger/cct_failure_localization.json\n  Risk DOT:     csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger_M7/BoundaryStressLedger/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=286, intervals=294, default_edge_strategy=statement_presence\n  Render script: csc_tmp/boundary_sensitive_0717_boundary_BoundaryStressLedger_M7/BoundaryStressLedger/render_cct.sh\n",
+      "stderr_tail": ""
+    }
+  ]
+}

@@ -1,0 +1,754 @@
+{
+  "subject": "MarginAdjustLoop",
+  "subject_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop",
+  "fsf": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/FSF/MarginAdjustLoop_FSF.txt",
+  "manifest": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+  "mode": "expanded",
+  "strategy": "batch",
+  "max_iter": 100,
+  "dry_run": false,
+  "original": {
+    "role": "original",
+    "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/MarginAdjustLoop.java",
+    "class_name": "MarginAdjustLoop",
+    "mutant_id": null
+  },
+  "mutants": [
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/MarginAdjustLoop_M1.java",
+      "class_name": "MarginAdjustLoop",
+      "mutant_id": "MarginAdjustLoop_M1"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/MarginAdjustLoop_M2.java",
+      "class_name": "MarginAdjustLoop",
+      "mutant_id": "MarginAdjustLoop_M2"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/MarginAdjustLoop_M3.java",
+      "class_name": "MarginAdjustLoop",
+      "mutant_id": "MarginAdjustLoop_M3"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/MarginAdjustLoop_M4.java",
+      "class_name": "MarginAdjustLoop",
+      "mutant_id": "MarginAdjustLoop_M4"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/MarginAdjustLoop_M5.java",
+      "class_name": "MarginAdjustLoop",
+      "mutant_id": "MarginAdjustLoop_M5"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/MarginAdjustLoop_M6.java",
+      "class_name": "MarginAdjustLoop",
+      "mutant_id": "MarginAdjustLoop_M6"
+    }
+  ],
+  "step_count": 30,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "mutant:MarginAdjustLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/MarginAdjustLoop_M1.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_MarginAdjustLoop_M1",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/testcases.json"
+      ],
+      "stdout_tail": "/b21  [BATCH_SAFE]  start=-64, count=20, aggressive=True\n  round_05/b22  [BATCH_SAFE]  start=-64, count=21, aggressive=True\n  round_05/b23  [BATCH_SAFE]  start=-80, count=22, aggressive=True\n  round_05/b24  [BATCH_SAFE]  start=-80, count=23, aggressive=True\n  round_05/b25  [BATCH_SAFE]  start=-80, count=24, aggressive=True\n  round_05/b26  [BATCH_SAFE]  start=-64, count=28, aggressive=True\n  round_06/b0  [BATCH_SAFE]  start=0, count=29, aggressive=False\n  round_06/b1  [BATCH_SAFE]  start=-80, count=19, aggressive=False\n  round_06/b2  [BATCH_SAFE]  start=-80, count=20, aggressive=False\n  round_06/b3  [BATCH_SAFE]  start=-80, count=21, aggressive=False\n  round_06/b4  [BATCH_SAFE]  start=-64, count=22, aggressive=False\n  round_06/b5  [BATCH_SAFE]  start=-80, count=23, aggressive=False\n  round_06/b6  [BATCH_SAFE]  start=-80, count=30, aggressive=False\n  round_06/b7  [BATCH_SAFE]  start=0, count=19, aggressive=True\n  round_06/b8  [BATCH_SAFE]  start=0, count=20, aggressive=True\n  round_06/b9  [BATCH_SAFE]  start=0, count=21, aggressive=True\n  round_06/b10  [BATCH_SAFE]  start=0, count=22, aggressive=True\n  round_06/b11  [BATCH_SAFE]  start=0, count=23, aggressive=True\n  round_06/b12  [BATCH_SAFE]  start=0, count=26, aggressive=True\n  round_06/b13  [BATCH_SAFE]  start=-80, count=26, aggressive=True\n  round_06/b14  [BATCH_SAFE]  start=-64, count=27, aggressive=True\n  round_06/b15  [BATCH_SAFE]  start=-64, count=30, aggressive=True\n  round_07/b0  [BATCH_SAFE]  start=0, count=18, aggressive=False\n  round_07/b1  [BATCH_SAFE]  start=0, count=19, aggressive=False\n  round_07/b2  [BATCH_SAFE]  start=0, count=20, aggressive=False\n  round_07/b3  [BATCH_SAFE]  start=0, count=21, aggressive=False\n  round_07/b4  [BATCH_SAFE]  start=0, count=22, aggressive=False\n  round_07/b5  [BATCH_SAFE]  start=0, count=23, aggressive=False\n  round_07/b6  [BATCH_SAFE]  start=0, count=24, aggressive=False\n  round_07/b7  [BATCH_SAFE]  start=0, count=25, aggressive=False\n  round_07/b8  [BATCH_SAFE]  start=0, count=26, aggressive=False\n  round_07/b9  [BATCH_SAFE]  start=0, count=27, aggressive=False\n  round_07/b10  [BATCH_SAFE]  start=0, count=28, aggressive=False\n  round_07/b11  [BATCH_SAFE]  start=0, count=30, aggressive=False\n  round_07/b12  [BATCH_SAFE]  start=-80, count=25, aggressive=False\n  round_07/b13  [BATCH_SAFE]  start=-64, count=26, aggressive=False\n  round_07/b14  [BATCH_SAFE]  start=-80, count=27, aggressive=False\n  round_07/b15  [BATCH_SAFE]  start=-80, count=28, aggressive=False\n  round_07/b16  [BATCH_SAFE]  start=-80, count=29, aggressive=False\n  round_07/b17  [BATCH_SAFE]  start=0, count=25, aggressive=True\n  round_07/b18  [BATCH_SAFE]  start=0, count=27, aggressive=True\n  round_07/b19  [BATCH_SAFE]  start=-80, count=29, aggressive=True\n  round_08/b0  [BATCH_SAFE]  start=0, count=28, aggressive=True\n  round_09/b0  [BATCH_SAFE]  start=0, count=29, aggressive=True\n  round_10/b0  [BATCH_SAFE]  start=0, count=30, aggressive=True\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 857\n  frontier_discovery_time_ms: 5851\n  compile_time_ms: 72985\n  java_exec_time_ms: 13199\n  path_log_parse_time_ms: 235\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 23421\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 23443\n\nTest cases written to: csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/MarginAdjustLoop_cct.dot\n  Stats: csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/cct_stats.json\n  Counts: nodes=491, leaves=246, covered=126, infeasible=120, out_of_range=0, expanded=344, truncated=0\n  Render script: csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/render_cct.sh\n  (render later with: csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:MarginAdjustLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/MarginAdjustLoop_M1.java",
+        "--output",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/FSF/MarginAdjustLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/MarginAdjustLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       MarginAdjustLoop\n  CSC result:  csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/FSF/MarginAdjustLoop_FSF.txt\n  Report:      csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/refined_tbfv_report.json\n  Summary:     testcases=126, fsf_units=5, passed=128, failed=2, skipped=500, unsupported=0\n  CCT marked:  2\n  TBFV stats:  csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/cct_tbfv_stats.json\n  Counts:      nodes=491, leaves=246, fault_leaves=1, failure_cases=1\n  Fault DOT:    csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/MarginAdjustLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=2, intervals=2, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MarginAdjustLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop",
+        "--output",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop\n  CCT:         csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/MarginAdjustLoop_cct.pkl\n  Report:      csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=126, failed=1, condition_nodes=2, condition_intervals=2\n  Top conditions:\n    #1 score=0.0055 fail=1/125 line=3 start >= 80\n    #2 score=0.0055 fail=1/126 line=3 start < -80\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[3, None] root.F.TRUE\n    #2 score=0.0000 fail=1/125 line=[3, 3] root.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MarginAdjustLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "MarginAdjustLoop/MarginAdjustLoop_M1.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/cct_failure_localization_aggregated.json\n  Source file: MarginAdjustLoop/MarginAdjustLoop_M1.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  2 raw -> 2 aggregated\n  Intervals[cct_only]: 2 raw -> 2 aggregated\n  Intervals[statement_presence]: 2 raw -> 2 aggregated\n  Intervals[edge_divergence_gated]: 2 raw -> 2 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MarginAdjustLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "MarginAdjustLoop_M1",
+        "--report",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_MarginAdjustLoop_M1/MarginAdjustLoop/fault_localization_eval.json\n  Mutant:    MarginAdjustLoop_M1\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:MarginAdjustLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/MarginAdjustLoop_M2.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_MarginAdjustLoop_M2",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/testcases.json"
+      ],
+      "stdout_tail": "_05/b7  [BATCH_SAFE]  start=0, count=8, aggressive=False\n  round_05/b8  [BATCH_SAFE]  start=0, count=9, aggressive=False\n  round_05/b9  [BATCH_SAFE]  start=0, count=10, aggressive=False\n  round_05/b10  [BATCH_SAFE]  start=0, count=11, aggressive=False\n  round_05/b11  [BATCH_SAFE]  start=0, count=12, aggressive=False\n  round_05/b12  [BATCH_SAFE]  start=0, count=13, aggressive=False\n  round_05/b13  [BATCH_SAFE]  start=0, count=14, aggressive=False\n  round_05/b14  [BATCH_SAFE]  start=0, count=15, aggressive=False\n  round_05/b15  [BATCH_SAFE]  start=0, count=24, aggressive=False\n  round_05/b16  [BATCH_SAFE]  start=-80, count=17, aggressive=False\n  round_05/b17  [BATCH_SAFE]  start=-80, count=18, aggressive=False\n  round_05/b18  [BATCH_SAFE]  start=-64, count=19, aggressive=False\n  round_05/b19  [BATCH_SAFE]  start=-80, count=20, aggressive=False\n  round_05/b20  [BATCH_SAFE]  start=-64, count=21, aggressive=False\n  round_05/b21  [BATCH_SAFE]  start=-80, count=22, aggressive=False\n  round_05/b22  [BATCH_SAFE]  start=-80, count=23, aggressive=False\n  round_05/b23  [BATCH_SAFE]  start=-80, count=24, aggressive=False\n  round_05/b24  [BATCH_SAFE]  start=-80, count=25, aggressive=False\n  round_05/b25  [BATCH_SAFE]  start=-80, count=26, aggressive=False\n  round_05/b26  [BATCH_SAFE]  start=-80, count=27, aggressive=False\n  round_05/b27  [BATCH_SAFE]  start=-80, count=28, aggressive=False\n  round_05/b28  [BATCH_SAFE]  start=0, count=17, aggressive=True\n  round_05/b29  [BATCH_SAFE]  start=0, count=18, aggressive=True\n  round_05/b30  [BATCH_SAFE]  start=0, count=19, aggressive=True\n  round_05/b31  [BATCH_SAFE]  start=0, count=20, aggressive=True\n  round_05/b32  [BATCH_SAFE]  start=0, count=21, aggressive=True\n  round_05/b33  [BATCH_SAFE]  start=0, count=22, aggressive=True\n  round_05/b34  [BATCH_SAFE]  start=0, count=23, aggressive=True\n  round_05/b35  [BATCH_SAFE]  start=0, count=24, aggressive=True\n  round_05/b36  [BATCH_SAFE]  start=0, count=25, aggressive=True\n  round_05/b37  [BATCH_SAFE]  start=0, count=28, aggressive=True\n  round_06/b0  [BATCH_SAFE]  start=0, count=17, aggressive=False\n  round_06/b1  [BATCH_SAFE]  start=24, count=18, aggressive=False\n  round_06/b2  [BATCH_SAFE]  start=0, count=19, aggressive=False\n  round_06/b3  [BATCH_SAFE]  start=24, count=20, aggressive=False\n  round_06/b4  [BATCH_SAFE]  start=0, count=21, aggressive=False\n  round_06/b5  [BATCH_SAFE]  start=0, count=22, aggressive=False\n  round_06/b6  [BATCH_SAFE]  start=0, count=23, aggressive=False\n  round_06/b7  [BATCH_SAFE]  start=0, count=25, aggressive=False\n  round_06/b8  [BATCH_SAFE]  start=0, count=27, aggressive=True\n  round_06/b9  [BATCH_SAFE]  start=0, count=29, aggressive=True\n  round_07/b0  [BATCH_SAFE]  start=0, count=29, aggressive=False\n  round_08/b0  [BATCH_SAFE]  start=0, count=26, aggressive=False\n  round_08/b1  [BATCH_SAFE]  start=0, count=27, aggressive=False\n  round_08/b2  [BATCH_SAFE]  start=0, count=28, aggressive=False\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 873\n  frontier_discovery_time_ms: 5849\n  compile_time_ms: 81191\n  java_exec_time_ms: 15347\n  path_log_parse_time_ms: 240\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 26155\n  merge_verify_wall_time_ms: 2\n  batch_total_wall_time_ms: 26177\n\nTest cases written to: csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/MarginAdjustLoop_cct.dot\n  Stats: csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/cct_stats.json\n  Counts: nodes=475, leaves=238, covered=122, infeasible=116, out_of_range=0, expanded=332, truncated=0\n  Render script: csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/render_cct.sh\n  (render later with: csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:MarginAdjustLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/MarginAdjustLoop_M2.java",
+        "--output",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/FSF/MarginAdjustLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/MarginAdjustLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       MarginAdjustLoop\n  CSC result:  csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/FSF/MarginAdjustLoop_FSF.txt\n  Report:      csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/refined_tbfv_report.json\n  Summary:     testcases=122, fsf_units=5, passed=124, failed=4, skipped=482, unsupported=0\n  CCT marked:  4\n  TBFV stats:  csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/cct_tbfv_stats.json\n  Counts:      nodes=475, leaves=238, fault_leaves=1, failure_cases=1\n  Fault DOT:    csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/MarginAdjustLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=4, intervals=4, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MarginAdjustLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop",
+        "--output",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop\n  CCT:         csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/MarginAdjustLoop_cct.pkl\n  Report:      csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=122, failed=1, condition_nodes=4, condition_intervals=4\n  Top conditions:\n    #1 score=0.0058 fail=1/119 line=6 count >= 30\n    #2 score=0.0058 fail=1/120 line=6 count < 0\n    #3 score=0.0057 fail=1/121 line=3 start > 80\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[6, None] root.F.F.F.TRUE\n    #2 score=0.0000 fail=1/119 line=[6, 6] root.F.F.FALSE\n    #3 score=0.0000 fail=1/120 line=[3, 6] root.F.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MarginAdjustLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "MarginAdjustLoop/MarginAdjustLoop_M2.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/cct_failure_localization_aggregated.json\n  Source file: MarginAdjustLoop/MarginAdjustLoop_M2.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  4 raw -> 4 aggregated\n  Intervals[cct_only]: 4 raw -> 4 aggregated\n  Intervals[statement_presence]: 4 raw -> 4 aggregated\n  Intervals[edge_divergence_gated]: 4 raw -> 4 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MarginAdjustLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "MarginAdjustLoop_M2",
+        "--report",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_MarginAdjustLoop_M2/MarginAdjustLoop/fault_localization_eval.json\n  Mutant:    MarginAdjustLoop_M2\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:MarginAdjustLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/MarginAdjustLoop_M3.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_MarginAdjustLoop_M3",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/testcases.json"
+      ],
+      "stdout_tail": "10  [BATCH_SAFE]  start=8, count=11, aggressive=False\n  round_05/b11  [BATCH_SAFE]  start=16, count=12, aggressive=False\n  round_05/b12  [BATCH_SAFE]  start=16, count=13, aggressive=False\n  round_05/b13  [BATCH_SAFE]  start=16, count=14, aggressive=False\n  round_05/b14  [BATCH_SAFE]  start=64, count=15, aggressive=False\n  round_05/b15  [BATCH_SAFE]  start=64, count=20, aggressive=False\n  round_05/b16  [BATCH_SAFE]  start=0, count=17, aggressive=False\n  round_05/b17  [BATCH_SAFE]  start=0, count=18, aggressive=False\n  round_05/b18  [BATCH_SAFE]  start=0, count=26, aggressive=False\n  round_05/b19  [BATCH_SAFE]  start=64, count=17, aggressive=True\n  round_05/b20  [BATCH_SAFE]  start=16, count=18, aggressive=True\n  round_05/b21  [BATCH_SAFE]  start=4, count=19, aggressive=True\n  round_05/b22  [BATCH_SAFE]  start=32, count=20, aggressive=True\n  round_05/b23  [BATCH_SAFE]  start=18, count=21, aggressive=True\n  round_05/b24  [BATCH_SAFE]  start=64, count=22, aggressive=True\n  round_05/b25  [BATCH_SAFE]  start=64, count=23, aggressive=True\n  round_05/b26  [BATCH_SAFE]  start=64, count=24, aggressive=True\n  round_05/b27  [BATCH_SAFE]  start=64, count=25, aggressive=True\n  round_05/b28  [BATCH_SAFE]  start=64, count=30, aggressive=True\n  round_06/b0  [BATCH_SAFE]  start=64, count=17, aggressive=False\n  round_06/b1  [BATCH_SAFE]  start=16, count=18, aggressive=False\n  round_06/b2  [BATCH_SAFE]  start=16, count=19, aggressive=False\n  round_06/b3  [BATCH_SAFE]  start=64, count=29, aggressive=False\n  round_06/b4  [BATCH_SAFE]  start=0, count=20, aggressive=False\n  round_06/b5  [BATCH_SAFE]  start=0, count=21, aggressive=False\n  round_06/b6  [BATCH_SAFE]  start=0, count=22, aggressive=False\n  round_06/b7  [BATCH_SAFE]  start=0, count=23, aggressive=False\n  round_06/b8  [BATCH_SAFE]  start=0, count=24, aggressive=False\n  round_06/b9  [BATCH_SAFE]  start=0, count=25, aggressive=False\n  round_06/b10  [BATCH_SAFE]  start=-12, count=28, aggressive=False\n  round_06/b11  [BATCH_SAFE]  start=64, count=27, aggressive=True\n  round_06/b12  [BATCH_SAFE]  start=64, count=28, aggressive=True\n  round_06/b13  [BATCH_SAFE]  start=64, count=29, aggressive=True\n  round_07/b0  [BATCH_SAFE]  start=17, count=21, aggressive=False\n  round_07/b1  [BATCH_SAFE]  start=64, count=22, aggressive=False\n  round_07/b2  [BATCH_SAFE]  start=64, count=23, aggressive=False\n  round_07/b3  [BATCH_SAFE]  start=24, count=24, aggressive=False\n  round_07/b4  [BATCH_SAFE]  start=64, count=25, aggressive=False\n  round_07/b5  [BATCH_SAFE]  start=16, count=26, aggressive=False\n  round_07/b6  [BATCH_SAFE]  start=64, count=27, aggressive=False\n  round_07/b7  [BATCH_SAFE]  start=64, count=28, aggressive=False\n  round_07/b8  [BATCH_SAFE]  start=64, count=30, aggressive=False\n  round_07/b9  [BATCH_SAFE]  start=0, count=27, aggressive=False\n  round_07/b10  [BATCH_SAFE]  start=0, count=30, aggressive=False\n  round_08/b0  [BATCH_SAFE]  start=-72, count=29, aggressive=False\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 804\n  frontier_discovery_time_ms: 5514\n  compile_time_ms: 70064\n  java_exec_time_ms: 12681\n  path_log_parse_time_ms: 203\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 22468\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 22483\n\nTest cases written to: csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/MarginAdjustLoop_cct.dot\n  Stats: csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/cct_stats.json\n  Counts: nodes=491, leaves=246, covered=126, infeasible=120, out_of_range=0, expanded=344, truncated=0\n  Render script: csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/render_cct.sh\n  (render later with: csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:MarginAdjustLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/MarginAdjustLoop_M3.java",
+        "--output",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/FSF/MarginAdjustLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/MarginAdjustLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       MarginAdjustLoop\n  CSC result:  csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/FSF/MarginAdjustLoop_FSF.txt\n  Report:      csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/refined_tbfv_report.json\n  Summary:     testcases=126, fsf_units=5, passed=128, failed=60, skipped=442, unsupported=0\n  CCT marked:  60\n  TBFV stats:  csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/cct_tbfv_stats.json\n  Counts:      nodes=491, leaves=246, fault_leaves=60, failure_cases=60\n  Fault DOT:    csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/MarginAdjustLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=127, intervals=186, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MarginAdjustLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop",
+        "--output",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop\n  CCT:         csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/MarginAdjustLoop_cct.pkl\n  Report:      csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=126, failed=60, condition_nodes=127, condition_intervals=186\n  Top conditions:\n    #1 score=3.4340 fail=30/30 line=17 remaining > 0\n    #2 score=3.4340 fail=30/30 line=17 remaining > 0\n    #3 score=3.4012 fail=29/29 line=17 remaining > 0\n  Top intervals:\n    #1 score=2.9827 fail=30/30 line=[17, 18] root.F.F.F.F.F.T.TRUE\n    #2 score=2.9827 fail=30/30 line=[17, 18] root.F.F.F.F.T.T.TRUE\n    #3 score=2.9542 fail=29/29 line=[17, 18] root.F.F.F.F.F.T.T.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MarginAdjustLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "MarginAdjustLoop/MarginAdjustLoop_M3.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/cct_failure_localization_aggregated.json\n  Source file: MarginAdjustLoop/MarginAdjustLoop_M3.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  127 raw -> 7 aggregated\n  Intervals[cct_only]: 186 raw -> 9 aggregated\n  Intervals[statement_presence]: 186 raw -> 9 aggregated\n  Intervals[edge_divergence_gated]: 186 raw -> 9 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MarginAdjustLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "MarginAdjustLoop_M3",
+        "--report",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_MarginAdjustLoop_M3/MarginAdjustLoop/fault_localization_eval.json\n  Mutant:    MarginAdjustLoop_M3\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=5, top1=miss, top3=miss, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:MarginAdjustLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/MarginAdjustLoop_M4.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_MarginAdjustLoop_M4",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/testcases.json"
+      ],
+      "stdout_tail": "[BATCH_SAFE]  start=-80, count=22, aggressive=False\n  round_05/b22  [BATCH_SAFE]  start=-80, count=23, aggressive=False\n  round_05/b23  [BATCH_SAFE]  start=-80, count=24, aggressive=False\n  round_05/b24  [BATCH_SAFE]  start=-80, count=25, aggressive=False\n  round_05/b25  [BATCH_SAFE]  start=-64, count=26, aggressive=False\n  round_05/b26  [BATCH_SAFE]  start=-80, count=27, aggressive=False\n  round_05/b27  [BATCH_SAFE]  start=-80, count=28, aggressive=False\n  round_05/b28  [BATCH_SAFE]  start=-80, count=29, aggressive=False\n  round_05/b29  [BATCH_SAFE]  start=0, count=17, aggressive=True\n  round_05/b30  [BATCH_SAFE]  start=0, count=18, aggressive=True\n  round_05/b31  [BATCH_SAFE]  start=0, count=19, aggressive=True\n  round_05/b32  [BATCH_SAFE]  start=0, count=20, aggressive=True\n  round_05/b33  [BATCH_SAFE]  start=0, count=21, aggressive=True\n  round_05/b34  [BATCH_SAFE]  start=0, count=22, aggressive=True\n  round_05/b35  [BATCH_SAFE]  start=0, count=23, aggressive=True\n  round_05/b36  [BATCH_SAFE]  start=0, count=24, aggressive=True\n  round_05/b37  [BATCH_SAFE]  start=0, count=25, aggressive=True\n  round_05/b38  [BATCH_SAFE]  start=0, count=30, aggressive=True\n  round_05/b39  [BATCH_SAFE]  start=-80, count=19, aggressive=True\n  round_05/b40  [BATCH_SAFE]  start=-64, count=20, aggressive=True\n  round_05/b41  [BATCH_SAFE]  start=-80, count=21, aggressive=True\n  round_05/b42  [BATCH_SAFE]  start=-80, count=22, aggressive=True\n  round_05/b43  [BATCH_SAFE]  start=-80, count=23, aggressive=True\n  round_05/b44  [BATCH_SAFE]  start=-80, count=24, aggressive=True\n  round_05/b45  [BATCH_SAFE]  start=-80, count=25, aggressive=True\n  round_05/b46  [BATCH_SAFE]  start=-64, count=26, aggressive=True\n  round_05/b47  [BATCH_SAFE]  start=-80, count=27, aggressive=True\n  round_05/b48  [BATCH_SAFE]  start=-80, count=28, aggressive=True\n  round_05/b49  [BATCH_SAFE]  start=-80, count=29, aggressive=True\n  round_06/b0  [BATCH_SAFE]  start=0, count=17, aggressive=False\n  round_06/b1  [BATCH_SAFE]  start=0, count=18, aggressive=False\n  round_06/b2  [BATCH_SAFE]  start=0, count=19, aggressive=False\n  round_06/b3  [BATCH_SAFE]  start=0, count=20, aggressive=False\n  round_06/b4  [BATCH_SAFE]  start=0, count=21, aggressive=False\n  round_06/b5  [BATCH_SAFE]  start=0, count=22, aggressive=False\n  round_06/b6  [BATCH_SAFE]  start=0, count=23, aggressive=False\n  round_06/b7  [BATCH_SAFE]  start=0, count=24, aggressive=False\n  round_06/b8  [BATCH_SAFE]  start=0, count=25, aggressive=False\n  round_06/b9  [BATCH_SAFE]  start=0, count=26, aggressive=False\n  round_06/b10  [BATCH_SAFE]  start=0, count=27, aggressive=False\n  round_06/b11  [BATCH_SAFE]  start=0, count=28, aggressive=False\n  round_06/b12  [BATCH_SAFE]  start=0, count=29, aggressive=False\n  round_06/b13  [BATCH_SAFE]  start=0, count=27, aggressive=True\n  round_06/b14  [BATCH_SAFE]  start=0, count=28, aggressive=True\n  round_06/b15  [BATCH_SAFE]  start=0, count=29, aggressive=True\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 769\n  frontier_discovery_time_ms: 5302\n  compile_time_ms: 68339\n  java_exec_time_ms: 12491\n  path_log_parse_time_ms: 210\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 21140\n  merge_verify_wall_time_ms: 1\n  batch_total_wall_time_ms: 21151\n\nTest cases written to: csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/MarginAdjustLoop_cct.dot\n  Stats: csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/cct_stats.json\n  Counts: nodes=491, leaves=246, covered=126, infeasible=120, out_of_range=0, expanded=344, truncated=0\n  Render script: csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/render_cct.sh\n  (render later with: csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:MarginAdjustLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/MarginAdjustLoop_M4.java",
+        "--output",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/FSF/MarginAdjustLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/MarginAdjustLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       MarginAdjustLoop\n  CSC result:  csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/FSF/MarginAdjustLoop_FSF.txt\n  Report:      csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/refined_tbfv_report.json\n  Summary:     testcases=126, fsf_units=5, passed=68, failed=60, skipped=502, unsupported=0\n  CCT marked:  60\n  TBFV stats:  csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/cct_tbfv_stats.json\n  Counts:      nodes=491, leaves=246, fault_leaves=60, failure_cases=60\n  Fault DOT:    csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/MarginAdjustLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=125, intervals=184, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MarginAdjustLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop",
+        "--output",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop\n  CCT:         csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/MarginAdjustLoop_cct.pkl\n  Report:      csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=126, failed=60, condition_nodes=125, condition_intervals=184\n  Top conditions:\n    #1 score=4.1109 fail=60/60 line=18 start < 0\n    #2 score=4.0435 fail=60/61 line=17 remaining > 0\n    #3 score=3.4340 fail=30/30 line=17 remaining > 0\n  Top intervals:\n    #1 score=3.4833 fail=60/61 line=[12, 17] root.F.F.F.F.TRUE\n    #2 score=2.9542 fail=29/29 line=[17, 18] root.F.F.F.F.T.T.F.T.FALSE\n    #3 score=2.9542 fail=29/29 line=[17, 18] root.F.F.F.F.T.T.T.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MarginAdjustLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "MarginAdjustLoop/MarginAdjustLoop_M4.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/cct_failure_localization_aggregated.json\n  Source file: MarginAdjustLoop/MarginAdjustLoop_M4.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  125 raw -> 7 aggregated\n  Intervals[cct_only]: 184 raw -> 9 aggregated\n  Intervals[statement_presence]: 184 raw -> 9 aggregated\n  Intervals[edge_divergence_gated]: 184 raw -> 9 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MarginAdjustLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "MarginAdjustLoop_M4",
+        "--report",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_MarginAdjustLoop_M4/MarginAdjustLoop/fault_localization_eval.json\n  Mutant:    MarginAdjustLoop_M4\n  Operator:  CR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_gated: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_gated: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:MarginAdjustLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/MarginAdjustLoop_M5.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_MarginAdjustLoop_M5",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/testcases.json"
+      ],
+      "stdout_tail": "[BATCH_SAFE]  start=-80, count=22, aggressive=False\n  round_05/b22  [BATCH_SAFE]  start=-80, count=23, aggressive=False\n  round_05/b23  [BATCH_SAFE]  start=-80, count=24, aggressive=False\n  round_05/b24  [BATCH_SAFE]  start=-80, count=25, aggressive=False\n  round_05/b25  [BATCH_SAFE]  start=-64, count=26, aggressive=False\n  round_05/b26  [BATCH_SAFE]  start=-80, count=27, aggressive=False\n  round_05/b27  [BATCH_SAFE]  start=-80, count=28, aggressive=False\n  round_05/b28  [BATCH_SAFE]  start=-80, count=29, aggressive=False\n  round_05/b29  [BATCH_SAFE]  start=0, count=17, aggressive=True\n  round_05/b30  [BATCH_SAFE]  start=0, count=18, aggressive=True\n  round_05/b31  [BATCH_SAFE]  start=0, count=19, aggressive=True\n  round_05/b32  [BATCH_SAFE]  start=0, count=20, aggressive=True\n  round_05/b33  [BATCH_SAFE]  start=0, count=21, aggressive=True\n  round_05/b34  [BATCH_SAFE]  start=0, count=22, aggressive=True\n  round_05/b35  [BATCH_SAFE]  start=0, count=23, aggressive=True\n  round_05/b36  [BATCH_SAFE]  start=0, count=24, aggressive=True\n  round_05/b37  [BATCH_SAFE]  start=0, count=25, aggressive=True\n  round_05/b38  [BATCH_SAFE]  start=0, count=30, aggressive=True\n  round_05/b39  [BATCH_SAFE]  start=-80, count=19, aggressive=True\n  round_05/b40  [BATCH_SAFE]  start=-64, count=20, aggressive=True\n  round_05/b41  [BATCH_SAFE]  start=-80, count=21, aggressive=True\n  round_05/b42  [BATCH_SAFE]  start=-80, count=22, aggressive=True\n  round_05/b43  [BATCH_SAFE]  start=-80, count=23, aggressive=True\n  round_05/b44  [BATCH_SAFE]  start=-80, count=24, aggressive=True\n  round_05/b45  [BATCH_SAFE]  start=-80, count=25, aggressive=True\n  round_05/b46  [BATCH_SAFE]  start=-64, count=26, aggressive=True\n  round_05/b47  [BATCH_SAFE]  start=-80, count=27, aggressive=True\n  round_05/b48  [BATCH_SAFE]  start=-80, count=28, aggressive=True\n  round_05/b49  [BATCH_SAFE]  start=-80, count=29, aggressive=True\n  round_06/b0  [BATCH_SAFE]  start=0, count=17, aggressive=False\n  round_06/b1  [BATCH_SAFE]  start=0, count=18, aggressive=False\n  round_06/b2  [BATCH_SAFE]  start=0, count=19, aggressive=False\n  round_06/b3  [BATCH_SAFE]  start=0, count=20, aggressive=False\n  round_06/b4  [BATCH_SAFE]  start=0, count=21, aggressive=False\n  round_06/b5  [BATCH_SAFE]  start=0, count=22, aggressive=False\n  round_06/b6  [BATCH_SAFE]  start=0, count=23, aggressive=False\n  round_06/b7  [BATCH_SAFE]  start=0, count=24, aggressive=False\n  round_06/b8  [BATCH_SAFE]  start=0, count=25, aggressive=False\n  round_06/b9  [BATCH_SAFE]  start=0, count=26, aggressive=False\n  round_06/b10  [BATCH_SAFE]  start=0, count=27, aggressive=False\n  round_06/b11  [BATCH_SAFE]  start=0, count=28, aggressive=False\n  round_06/b12  [BATCH_SAFE]  start=0, count=29, aggressive=False\n  round_06/b13  [BATCH_SAFE]  start=0, count=27, aggressive=True\n  round_06/b14  [BATCH_SAFE]  start=0, count=28, aggressive=True\n  round_06/b15  [BATCH_SAFE]  start=0, count=29, aggressive=True\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 814\n  frontier_discovery_time_ms: 5505\n  compile_time_ms: 76434\n  java_exec_time_ms: 13881\n  path_log_parse_time_ms: 256\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 23589\n  merge_verify_wall_time_ms: 1\n  batch_total_wall_time_ms: 23602\n\nTest cases written to: csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/MarginAdjustLoop_cct.dot\n  Stats: csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/cct_stats.json\n  Counts: nodes=491, leaves=246, covered=126, infeasible=120, out_of_range=0, expanded=344, truncated=0\n  Render script: csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/render_cct.sh\n  (render later with: csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:MarginAdjustLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/MarginAdjustLoop_M5.java",
+        "--output",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/FSF/MarginAdjustLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/MarginAdjustLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       MarginAdjustLoop\n  CSC result:  csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/FSF/MarginAdjustLoop_FSF.txt\n  Report:      csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/refined_tbfv_report.json\n  Summary:     testcases=126, fsf_units=5, passed=68, failed=60, skipped=502, unsupported=0\n  CCT marked:  60\n  TBFV stats:  csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/cct_tbfv_stats.json\n  Counts:      nodes=491, leaves=246, fault_leaves=60, failure_cases=60\n  Fault DOT:    csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/MarginAdjustLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=127, intervals=186, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MarginAdjustLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop",
+        "--output",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop\n  CCT:         csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/MarginAdjustLoop_cct.pkl\n  Report:      csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=126, failed=60, condition_nodes=127, condition_intervals=186\n  Top conditions:\n    #1 score=3.4340 fail=30/30 line=17 remaining > 0\n    #2 score=3.4340 fail=30/30 line=17 remaining > 0\n    #3 score=3.4012 fail=29/29 line=17 remaining > 0\n  Top intervals:\n    #1 score=2.9827 fail=30/30 line=[17, 18] root.F.F.F.F.F.T.TRUE\n    #2 score=2.9827 fail=30/30 line=[17, 18] root.F.F.F.F.T.T.TRUE\n    #3 score=2.9542 fail=29/29 line=[17, 18] root.F.F.F.F.F.T.T.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MarginAdjustLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "MarginAdjustLoop/MarginAdjustLoop_M5.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/cct_failure_localization_aggregated.json\n  Source file: MarginAdjustLoop/MarginAdjustLoop_M5.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  127 raw -> 7 aggregated\n  Intervals[cct_only]: 186 raw -> 9 aggregated\n  Intervals[statement_presence]: 186 raw -> 9 aggregated\n  Intervals[edge_divergence_gated]: 186 raw -> 9 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MarginAdjustLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "MarginAdjustLoop_M5",
+        "--report",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_MarginAdjustLoop_M5/MarginAdjustLoop/fault_localization_eval.json\n  Mutant:    MarginAdjustLoop_M5\n  Operator:  AOR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_gated: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_gated: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:MarginAdjustLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/MarginAdjustLoop_M6.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_MarginAdjustLoop_M6",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/testcases.json"
+      ],
+      "stdout_tail": "[BATCH_SAFE]  start=-80, count=22, aggressive=False\n  round_05/b22  [BATCH_SAFE]  start=-80, count=23, aggressive=False\n  round_05/b23  [BATCH_SAFE]  start=-80, count=24, aggressive=False\n  round_05/b24  [BATCH_SAFE]  start=-80, count=25, aggressive=False\n  round_05/b25  [BATCH_SAFE]  start=-64, count=26, aggressive=False\n  round_05/b26  [BATCH_SAFE]  start=-80, count=27, aggressive=False\n  round_05/b27  [BATCH_SAFE]  start=-80, count=28, aggressive=False\n  round_05/b28  [BATCH_SAFE]  start=-80, count=29, aggressive=False\n  round_05/b29  [BATCH_SAFE]  start=0, count=17, aggressive=True\n  round_05/b30  [BATCH_SAFE]  start=0, count=18, aggressive=True\n  round_05/b31  [BATCH_SAFE]  start=0, count=19, aggressive=True\n  round_05/b32  [BATCH_SAFE]  start=0, count=20, aggressive=True\n  round_05/b33  [BATCH_SAFE]  start=0, count=21, aggressive=True\n  round_05/b34  [BATCH_SAFE]  start=0, count=22, aggressive=True\n  round_05/b35  [BATCH_SAFE]  start=0, count=23, aggressive=True\n  round_05/b36  [BATCH_SAFE]  start=0, count=24, aggressive=True\n  round_05/b37  [BATCH_SAFE]  start=0, count=25, aggressive=True\n  round_05/b38  [BATCH_SAFE]  start=0, count=30, aggressive=True\n  round_05/b39  [BATCH_SAFE]  start=-80, count=19, aggressive=True\n  round_05/b40  [BATCH_SAFE]  start=-64, count=20, aggressive=True\n  round_05/b41  [BATCH_SAFE]  start=-80, count=21, aggressive=True\n  round_05/b42  [BATCH_SAFE]  start=-80, count=22, aggressive=True\n  round_05/b43  [BATCH_SAFE]  start=-80, count=23, aggressive=True\n  round_05/b44  [BATCH_SAFE]  start=-80, count=24, aggressive=True\n  round_05/b45  [BATCH_SAFE]  start=-80, count=25, aggressive=True\n  round_05/b46  [BATCH_SAFE]  start=-64, count=26, aggressive=True\n  round_05/b47  [BATCH_SAFE]  start=-80, count=27, aggressive=True\n  round_05/b48  [BATCH_SAFE]  start=-80, count=28, aggressive=True\n  round_05/b49  [BATCH_SAFE]  start=-80, count=29, aggressive=True\n  round_06/b0  [BATCH_SAFE]  start=0, count=17, aggressive=False\n  round_06/b1  [BATCH_SAFE]  start=0, count=18, aggressive=False\n  round_06/b2  [BATCH_SAFE]  start=0, count=19, aggressive=False\n  round_06/b3  [BATCH_SAFE]  start=0, count=20, aggressive=False\n  round_06/b4  [BATCH_SAFE]  start=0, count=21, aggressive=False\n  round_06/b5  [BATCH_SAFE]  start=0, count=22, aggressive=False\n  round_06/b6  [BATCH_SAFE]  start=0, count=23, aggressive=False\n  round_06/b7  [BATCH_SAFE]  start=0, count=24, aggressive=False\n  round_06/b8  [BATCH_SAFE]  start=0, count=25, aggressive=False\n  round_06/b9  [BATCH_SAFE]  start=0, count=26, aggressive=False\n  round_06/b10  [BATCH_SAFE]  start=0, count=27, aggressive=False\n  round_06/b11  [BATCH_SAFE]  start=0, count=28, aggressive=False\n  round_06/b12  [BATCH_SAFE]  start=0, count=29, aggressive=False\n  round_06/b13  [BATCH_SAFE]  start=0, count=27, aggressive=True\n  round_06/b14  [BATCH_SAFE]  start=0, count=28, aggressive=True\n  round_06/b15  [BATCH_SAFE]  start=0, count=29, aggressive=True\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 802\n  frontier_discovery_time_ms: 5505\n  compile_time_ms: 75288\n  java_exec_time_ms: 13090\n  path_log_parse_time_ms: 245\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 23066\n  merge_verify_wall_time_ms: 1\n  batch_total_wall_time_ms: 23077\n\nTest cases written to: csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/MarginAdjustLoop_cct.dot\n  Stats: csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/cct_stats.json\n  Counts: nodes=491, leaves=246, covered=126, infeasible=120, out_of_range=0, expanded=344, truncated=0\n  Render script: csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/render_cct.sh\n  (render later with: csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:MarginAdjustLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/MarginAdjustLoop_M6.java",
+        "--output",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/FSF/MarginAdjustLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/MarginAdjustLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       MarginAdjustLoop\n  CSC result:  csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/MarginAdjustLoop/FSF/MarginAdjustLoop_FSF.txt\n  Report:      csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/refined_tbfv_report.json\n  Summary:     testcases=126, fsf_units=5, passed=68, failed=60, skipped=502, unsupported=0\n  CCT marked:  60\n  TBFV stats:  csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/cct_tbfv_stats.json\n  Counts:      nodes=491, leaves=246, fault_leaves=60, failure_cases=60\n  Fault DOT:    csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/MarginAdjustLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=127, intervals=186, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MarginAdjustLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop",
+        "--output",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop\n  CCT:         csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/MarginAdjustLoop_cct.pkl\n  Report:      csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=126, failed=60, condition_nodes=127, condition_intervals=186\n  Top conditions:\n    #1 score=3.4340 fail=30/30 line=17 remaining > 0\n    #2 score=3.4340 fail=30/30 line=17 remaining > 0\n    #3 score=3.4012 fail=29/29 line=17 remaining > 0\n  Top intervals:\n    #1 score=2.9827 fail=30/30 line=[17, 18] root.F.F.F.F.F.T.FALSE\n    #2 score=2.9827 fail=30/30 line=[17, 18] root.F.F.F.F.T.T.FALSE\n    #3 score=2.9542 fail=29/29 line=[17, 18] root.F.F.F.F.F.T.F.T.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MarginAdjustLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "MarginAdjustLoop/MarginAdjustLoop_M6.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/cct_failure_localization_aggregated.json\n  Source file: MarginAdjustLoop/MarginAdjustLoop_M6.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  127 raw -> 7 aggregated\n  Intervals[cct_only]: 186 raw -> 9 aggregated\n  Intervals[statement_presence]: 186 raw -> 9 aggregated\n  Intervals[edge_divergence_gated]: 186 raw -> 9 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "MarginAdjustLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "MarginAdjustLoop_M6",
+        "--report",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_MarginAdjustLoop_M6/MarginAdjustLoop/fault_localization_eval.json\n  Mutant:    MarginAdjustLoop_M6\n  Operator:  AOR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_gated: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_gated: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    }
+  ]
+}

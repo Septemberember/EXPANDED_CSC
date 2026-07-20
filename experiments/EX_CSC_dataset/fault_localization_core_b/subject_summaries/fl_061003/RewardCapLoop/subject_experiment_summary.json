@@ -1,0 +1,754 @@
+{
+  "subject": "RewardCapLoop",
+  "subject_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop",
+  "fsf": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/FSF/RewardCapLoop_FSF.txt",
+  "manifest": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+  "mode": "expanded",
+  "strategy": "batch",
+  "max_iter": 100,
+  "dry_run": false,
+  "original": {
+    "role": "original",
+    "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/RewardCapLoop.java",
+    "class_name": "RewardCapLoop",
+    "mutant_id": null
+  },
+  "mutants": [
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/RewardCapLoop_M1.java",
+      "class_name": "RewardCapLoop",
+      "mutant_id": "RewardCapLoop_M1"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/RewardCapLoop_M2.java",
+      "class_name": "RewardCapLoop",
+      "mutant_id": "RewardCapLoop_M2"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/RewardCapLoop_M3.java",
+      "class_name": "RewardCapLoop",
+      "mutant_id": "RewardCapLoop_M3"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/RewardCapLoop_M4.java",
+      "class_name": "RewardCapLoop",
+      "mutant_id": "RewardCapLoop_M4"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/RewardCapLoop_M5.java",
+      "class_name": "RewardCapLoop",
+      "mutant_id": "RewardCapLoop_M5"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/RewardCapLoop_M6.java",
+      "class_name": "RewardCapLoop",
+      "mutant_id": "RewardCapLoop_M6"
+    }
+  ],
+  "step_count": 30,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "mutant:RewardCapLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/RewardCapLoop_M1.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_RewardCapLoop_M1",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/testcases.json"
+      ],
+      "stdout_tail": "4, rounds=10, fast=False\n  round_04/b11  [BATCH_SAFE]  points=0, rounds=11, fast=False\n  round_04/b12  [BATCH_SAFE]  points=0, rounds=12, fast=False\n  round_04/b13  [BATCH_SAFE]  points=14, rounds=13, fast=False\n  round_04/b14  [BATCH_SAFE]  points=0, rounds=14, fast=False\n  round_04/b15  [BATCH_SAFE]  points=0, rounds=15, fast=False\n  round_04/b16  [BATCH_SAFE]  points=70, rounds=1, fast=True\n  round_04/b17  [BATCH_SAFE]  points=72, rounds=2, fast=True\n  round_04/b18  [BATCH_SAFE]  points=70, rounds=3, fast=True\n  round_04/b19  [BATCH_SAFE]  points=70, rounds=4, fast=True\n  round_04/b20  [BATCH_SAFE]  points=70, rounds=5, fast=True\n  round_04/b21  [BATCH_SAFE]  points=96, rounds=6, fast=True\n  round_04/b22  [BATCH_SAFE]  points=70, rounds=7, fast=True\n  round_04/b23  [BATCH_SAFE]  points=78, rounds=8, fast=True\n  round_04/b24  [BATCH_SAFE]  points=70, rounds=9, fast=True\n  round_04/b25  [BATCH_SAFE]  points=78, rounds=10, fast=True\n  round_04/b26  [BATCH_SAFE]  points=70, rounds=11, fast=True\n  round_04/b27  [BATCH_SAFE]  points=72, rounds=12, fast=True\n  round_04/b28  [BATCH_SAFE]  points=70, rounds=13, fast=True\n  round_04/b29  [BATCH_SAFE]  points=78, rounds=14, fast=True\n  round_04/b30  [BATCH_SAFE]  points=70, rounds=15, fast=True\n  round_04/b31  [BATCH_SAFE]  points=106, rounds=16, fast=True\n  round_04/b32  [BATCH_SAFE]  points=69, rounds=13, fast=True\n  round_04/b33  [BATCH_SAFE]  points=68, rounds=14, fast=True\n  round_04/b34  [BATCH_SAFE]  points=62, rounds=15, fast=True\n  round_05/b0  [BATCH_SAFE]  points=70, rounds=1, fast=False\n  round_05/b1  [BATCH_SAFE]  points=72, rounds=2, fast=False\n  round_05/b2  [BATCH_SAFE]  points=70, rounds=3, fast=False\n  round_05/b3  [BATCH_SAFE]  points=96, rounds=4, fast=False\n  round_05/b4  [BATCH_SAFE]  points=70, rounds=5, fast=False\n  round_05/b5  [BATCH_SAFE]  points=96, rounds=6, fast=False\n  round_05/b6  [BATCH_SAFE]  points=78, rounds=7, fast=False\n  round_05/b7  [BATCH_SAFE]  points=78, rounds=8, fast=False\n  round_05/b8  [BATCH_SAFE]  points=96, rounds=9, fast=False\n  round_05/b9  [BATCH_SAFE]  points=78, rounds=10, fast=False\n  round_05/b10  [BATCH_SAFE]  points=70, rounds=11, fast=False\n  round_05/b11  [BATCH_SAFE]  points=72, rounds=12, fast=False\n  round_05/b12  [BATCH_SAFE]  points=70, rounds=13, fast=False\n  round_05/b13  [BATCH_SAFE]  points=78, rounds=14, fast=False\n  round_05/b14  [BATCH_SAFE]  points=70, rounds=15, fast=False\n  round_05/b15  [BATCH_SAFE]  points=108, rounds=16, fast=False\n  round_05/b16  [BATCH_SAFE]  points=109, rounds=12, fast=True\n  round_05/b17  [BATCH_SAFE]  points=108, rounds=13, fast=True\n  round_05/b18  [BATCH_SAFE]  points=108, rounds=14, fast=True\n  round_05/b19  [BATCH_SAFE]  points=108, rounds=15, fast=True\n  round_06/b0  [BATCH_SAFE]  points=109, rounds=12, fast=False\n  round_06/b1  [BATCH_SAFE]  points=108, rounds=13, fast=False\n  round_06/b2  [BATCH_SAFE]  points=108, rounds=14, fast=False\n  round_06/b3  [BATCH_SAFE]  points=108, rounds=15, fast=False\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 304\n  frontier_discovery_time_ms: 1993\n  compile_time_ms: 44043\n  java_exec_time_ms: 7873\n  path_log_parse_time_ms: 60\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 13602\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 13611\n\nTest cases written to: csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/RewardCapLoop_cct.dot\n  Stats: csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/cct_stats.json\n  Counts: nodes=399, leaves=200, covered=84, infeasible=116, out_of_range=0, expanded=250, truncated=0\n  Render script: csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/render_cct.sh\n  (render later with: csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:RewardCapLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/RewardCapLoop_M1.java",
+        "--output",
+        "csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/FSF/RewardCapLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/RewardCapLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       RewardCapLoop\n  CSC result:  csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/FSF/RewardCapLoop_FSF.txt\n  Report:      csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/refined_tbfv_report.json\n  Summary:     testcases=84, fsf_units=7, passed=86, failed=2, skipped=500, unsupported=0\n  CCT marked:  2\n  TBFV stats:  csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/cct_tbfv_stats.json\n  Counts:      nodes=399, leaves=200, fault_leaves=1, failure_cases=1\n  Fault DOT:    csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/RewardCapLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=2, intervals=2, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "RewardCapLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop",
+        "--output",
+        "csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop\n  CCT:         csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/RewardCapLoop_cct.pkl\n  Report:      csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=84, failed=1, condition_nodes=2, condition_intervals=2\n  Top conditions:\n    #1 score=0.0084 fail=1/83 line=3 points >= 110\n    #2 score=0.0083 fail=1/84 line=3 points < 0\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[3, None] root.F.TRUE\n    #2 score=0.0000 fail=1/83 line=[3, 3] root.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "RewardCapLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "RewardCapLoop/RewardCapLoop_M1.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/cct_failure_localization_aggregated.json\n  Source file: RewardCapLoop/RewardCapLoop_M1.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  2 raw -> 2 aggregated\n  Intervals[cct_only]: 2 raw -> 2 aggregated\n  Intervals[statement_presence]: 2 raw -> 2 aggregated\n  Intervals[edge_divergence_gated]: 2 raw -> 2 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "RewardCapLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "RewardCapLoop_M1",
+        "--report",
+        "csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_RewardCapLoop_M1/RewardCapLoop/fault_localization_eval.json\n  Mutant:    RewardCapLoop_M1\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:RewardCapLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/RewardCapLoop_M2.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_RewardCapLoop_M2",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/testcases.json"
+      ],
+      "stdout_tail": "CH_SAFE]  points=79, rounds=5, fast=True\n  round_04/b14  [BATCH_SAFE]  points=72, rounds=6, fast=True\n  round_04/b15  [BATCH_SAFE]  points=72, rounds=7, fast=True\n  round_04/b16  [BATCH_SAFE]  points=96, rounds=14, fast=True\n  round_04/b17  [BATCH_SAFE]  points=0, rounds=9, fast=True\n  round_04/b18  [BATCH_SAFE]  points=0, rounds=12, fast=True\n  round_05/b0  [BATCH_SAFE]  points=70, rounds=1, fast=False\n  round_05/b1  [BATCH_SAFE]  points=79, rounds=2, fast=False\n  round_05/b2  [BATCH_SAFE]  points=79, rounds=3, fast=False\n  round_05/b3  [BATCH_SAFE]  points=96, rounds=4, fast=False\n  round_05/b4  [BATCH_SAFE]  points=79, rounds=5, fast=False\n  round_05/b5  [BATCH_SAFE]  points=72, rounds=6, fast=False\n  round_05/b6  [BATCH_SAFE]  points=70, rounds=7, fast=False\n  round_05/b7  [BATCH_SAFE]  points=96, rounds=14, fast=False\n  round_05/b8  [BATCH_SAFE]  points=0, rounds=9, fast=False\n  round_05/b9  [BATCH_SAFE]  points=0, rounds=13, fast=False\n  round_05/b10  [BATCH_SAFE]  points=70, rounds=9, fast=True\n  round_05/b11  [BATCH_SAFE]  points=70, rounds=10, fast=True\n  round_05/b12  [BATCH_SAFE]  points=70, rounds=11, fast=True\n  round_05/b13  [BATCH_SAFE]  points=70, rounds=12, fast=True\n  round_05/b14  [BATCH_SAFE]  points=70, rounds=13, fast=True\n  round_05/b15  [BATCH_SAFE]  points=108, rounds=14, fast=True\n  round_05/b16  [BATCH_SAFE]  points=79, rounds=15, fast=True\n  round_05/b17  [BATCH_SAFE]  points=0, rounds=11, fast=True\n  round_05/b18  [BATCH_SAFE]  points=0, rounds=14, fast=True\n  round_06/b0  [BATCH_SAFE]  points=70, rounds=9, fast=False\n  round_06/b1  [BATCH_SAFE]  points=70, rounds=10, fast=False\n  round_06/b2  [BATCH_SAFE]  points=70, rounds=11, fast=False\n  round_06/b3  [BATCH_SAFE]  points=70, rounds=12, fast=False\n  round_06/b4  [BATCH_SAFE]  points=70, rounds=13, fast=False\n  round_06/b5  [BATCH_SAFE]  points=108, rounds=14, fast=False\n  round_06/b6  [BATCH_SAFE]  points=79, rounds=15, fast=False\n  round_06/b7  [BATCH_SAFE]  points=0, rounds=11, fast=False\n  round_06/b8  [BATCH_SAFE]  points=0, rounds=12, fast=False\n  round_06/b9  [BATCH_SAFE]  points=0, rounds=14, fast=False\n  round_06/b10  [BATCH_SAFE]  points=110, rounds=11, fast=True\n  round_06/b11  [BATCH_SAFE]  points=110, rounds=12, fast=True\n  round_06/b12  [BATCH_SAFE]  points=110, rounds=13, fast=True\n  round_06/b13  [BATCH_SAFE]  points=110, rounds=15, fast=True\n  round_06/b14  [BATCH_SAFE]  points=0, rounds=13, fast=True\n  round_06/b15  [BATCH_SAFE]  points=66, rounds=14, fast=True\n  round_06/b16  [BATCH_SAFE]  points=0, rounds=15, fast=True\n  round_07/b0  [BATCH_SAFE]  points=110, rounds=11, fast=False\n  round_07/b1  [BATCH_SAFE]  points=110, rounds=12, fast=False\n  round_07/b2  [BATCH_SAFE]  points=110, rounds=13, fast=False\n  round_07/b3  [BATCH_SAFE]  points=110, rounds=15, fast=False\n  round_07/b4  [BATCH_SAFE]  points=0, rounds=15, fast=False\n  round_07/b5  [BATCH_SAFE]  points=69, rounds=13, fast=True\n  round_07/b6  [BATCH_SAFE]  points=68, rounds=15, fast=True\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 276\n  frontier_discovery_time_ms: 1853\n  compile_time_ms: 39977\n  java_exec_time_ms: 7294\n  path_log_parse_time_ms: 49\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 13058\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 13070\n\nTest cases written to: csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/RewardCapLoop_cct.dot\n  Stats: csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/cct_stats.json\n  Counts: nodes=375, leaves=188, covered=79, infeasible=109, out_of_range=0, expanded=233, truncated=0\n  Render script: csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/render_cct.sh\n  (render later with: csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:RewardCapLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/RewardCapLoop_M2.java",
+        "--output",
+        "csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/FSF/RewardCapLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/RewardCapLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       RewardCapLoop\n  CSC result:  csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/FSF/RewardCapLoop_FSF.txt\n  Report:      csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/refined_tbfv_report.json\n  Summary:     testcases=79, fsf_units=7, passed=81, failed=5, skipped=467, unsupported=0\n  CCT marked:  5\n  TBFV stats:  csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/cct_tbfv_stats.json\n  Counts:      nodes=375, leaves=188, fault_leaves=1, failure_cases=1\n  Fault DOT:    csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/RewardCapLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=4, intervals=4, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "RewardCapLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop",
+        "--output",
+        "csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop\n  CCT:         csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/RewardCapLoop_cct.pkl\n  Report:      csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=79, failed=1, condition_nodes=4, condition_intervals=4\n  Top conditions:\n    #1 score=0.0091 fail=1/76 line=6 rounds >= 16\n    #2 score=0.0090 fail=1/77 line=6 rounds < 0\n    #3 score=0.0089 fail=1/78 line=3 points > 110\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[6, None] root.F.F.F.TRUE\n    #2 score=0.0000 fail=1/76 line=[6, 6] root.F.F.FALSE\n    #3 score=0.0000 fail=1/77 line=[3, 6] root.F.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "RewardCapLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "RewardCapLoop/RewardCapLoop_M2.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/cct_failure_localization_aggregated.json\n  Source file: RewardCapLoop/RewardCapLoop_M2.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  4 raw -> 4 aggregated\n  Intervals[cct_only]: 4 raw -> 4 aggregated\n  Intervals[statement_presence]: 4 raw -> 4 aggregated\n  Intervals[edge_divergence_gated]: 4 raw -> 4 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "RewardCapLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "RewardCapLoop_M2",
+        "--report",
+        "csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_RewardCapLoop_M2/RewardCapLoop/fault_localization_eval.json\n  Mutant:    RewardCapLoop_M2\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:RewardCapLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/RewardCapLoop_M3.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_RewardCapLoop_M3",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/testcases.json"
+      ],
+      "stdout_tail": ", rounds=12, fast=False\n  round_04/b13  [BATCH_SAFE]  points=0, rounds=13, fast=False\n  round_04/b14  [BATCH_SAFE]  points=0, rounds=14, fast=False\n  round_04/b15  [BATCH_SAFE]  points=0, rounds=15, fast=False\n  round_04/b16  [BATCH_SAFE]  points=71, rounds=1, fast=True\n  round_04/b17  [BATCH_SAFE]  points=71, rounds=2, fast=True\n  round_04/b18  [BATCH_SAFE]  points=80, rounds=3, fast=True\n  round_04/b19  [BATCH_SAFE]  points=71, rounds=4, fast=True\n  round_04/b20  [BATCH_SAFE]  points=96, rounds=5, fast=True\n  round_04/b21  [BATCH_SAFE]  points=79, rounds=6, fast=True\n  round_04/b22  [BATCH_SAFE]  points=79, rounds=7, fast=True\n  round_04/b23  [BATCH_SAFE]  points=79, rounds=8, fast=True\n  round_04/b24  [BATCH_SAFE]  points=96, rounds=9, fast=True\n  round_04/b25  [BATCH_SAFE]  points=72, rounds=10, fast=True\n  round_04/b26  [BATCH_SAFE]  points=71, rounds=11, fast=True\n  round_04/b27  [BATCH_SAFE]  points=79, rounds=12, fast=True\n  round_04/b28  [BATCH_SAFE]  points=71, rounds=13, fast=True\n  round_04/b29  [BATCH_SAFE]  points=71, rounds=14, fast=True\n  round_04/b30  [BATCH_SAFE]  points=71, rounds=15, fast=True\n  round_04/b31  [BATCH_SAFE]  points=108, rounds=16, fast=True\n  round_04/b32  [BATCH_SAFE]  points=70, rounds=13, fast=True\n  round_04/b33  [BATCH_SAFE]  points=68, rounds=14, fast=True\n  round_04/b34  [BATCH_SAFE]  points=64, rounds=15, fast=True\n  round_05/b0  [BATCH_SAFE]  points=71, rounds=1, fast=False\n  round_05/b1  [BATCH_SAFE]  points=79, rounds=2, fast=False\n  round_05/b2  [BATCH_SAFE]  points=80, rounds=3, fast=False\n  round_05/b3  [BATCH_SAFE]  points=71, rounds=4, fast=False\n  round_05/b4  [BATCH_SAFE]  points=96, rounds=5, fast=False\n  round_05/b5  [BATCH_SAFE]  points=79, rounds=6, fast=False\n  round_05/b6  [BATCH_SAFE]  points=80, rounds=7, fast=False\n  round_05/b7  [BATCH_SAFE]  points=71, rounds=8, fast=False\n  round_05/b8  [BATCH_SAFE]  points=71, rounds=9, fast=False\n  round_05/b9  [BATCH_SAFE]  points=72, rounds=10, fast=False\n  round_05/b10  [BATCH_SAFE]  points=71, rounds=11, fast=False\n  round_05/b11  [BATCH_SAFE]  points=71, rounds=12, fast=False\n  round_05/b12  [BATCH_SAFE]  points=71, rounds=13, fast=False\n  round_05/b13  [BATCH_SAFE]  points=71, rounds=14, fast=False\n  round_05/b14  [BATCH_SAFE]  points=71, rounds=15, fast=False\n  round_05/b15  [BATCH_SAFE]  points=108, rounds=16, fast=False\n  round_05/b16  [BATCH_SAFE]  points=110, rounds=11, fast=True\n  round_05/b17  [BATCH_SAFE]  points=110, rounds=12, fast=True\n  round_05/b18  [BATCH_SAFE]  points=108, rounds=13, fast=True\n  round_05/b19  [BATCH_SAFE]  points=108, rounds=14, fast=True\n  round_05/b20  [BATCH_SAFE]  points=108, rounds=15, fast=True\n  round_06/b0  [BATCH_SAFE]  points=110, rounds=11, fast=False\n  round_06/b1  [BATCH_SAFE]  points=109, rounds=12, fast=False\n  round_06/b2  [BATCH_SAFE]  points=108, rounds=13, fast=False\n  round_06/b3  [BATCH_SAFE]  points=107, rounds=14, fast=False\n  round_06/b4  [BATCH_SAFE]  points=108, rounds=15, fast=False\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 317\n  frontier_discovery_time_ms: 2011\n  compile_time_ms: 46299\n  java_exec_time_ms: 8377\n  path_log_parse_time_ms: 69\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 14950\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 14959\n\nTest cases written to: csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/RewardCapLoop_cct.dot\n  Stats: csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/cct_stats.json\n  Counts: nodes=399, leaves=200, covered=86, infeasible=114, out_of_range=0, expanded=252, truncated=0\n  Render script: csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/render_cct.sh\n  (render later with: csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:RewardCapLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/RewardCapLoop_M3.java",
+        "--output",
+        "csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/FSF/RewardCapLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/RewardCapLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       RewardCapLoop\n  CSC result:  csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/FSF/RewardCapLoop_FSF.txt\n  Report:      csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/refined_tbfv_report.json\n  Summary:     testcases=86, fsf_units=7, passed=104, failed=16, skipped=482, unsupported=0\n  CCT marked:  16\n  TBFV stats:  csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/cct_tbfv_stats.json\n  Counts:      nodes=399, leaves=200, fault_leaves=16, failure_cases=16\n  Fault DOT:    csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/RewardCapLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=54, intervals=69, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "RewardCapLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop",
+        "--output",
+        "csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop\n  CCT:         csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/RewardCapLoop_cct.pkl\n  Report:      csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=86, failed=16, condition_nodes=54, condition_intervals=69\n  Top conditions:\n    #1 score=2.2666 fail=16/20 line=17 remaining > 0\n    #2 score=2.1889 fail=15/19 line=17 remaining > 0\n    #3 score=2.1889 fail=15/19 line=18 points <= 70\n  Top intervals:\n    #1 score=1.7718 fail=16/20 line=[17, 18] root.F.F.F.F.T.T.TRUE\n    #2 score=1.7011 fail=15/19 line=[17, 18] root.F.F.F.F.T.T.T.T.TRUE\n    #3 score=1.6262 fail=14/18 line=[17, 18] root.F.F.F.F.T.T.T.T.T.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "RewardCapLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "RewardCapLoop/RewardCapLoop_M3.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/cct_failure_localization_aggregated.json\n  Source file: RewardCapLoop/RewardCapLoop_M3.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  54 raw -> 8 aggregated\n  Intervals[cct_only]: 69 raw -> 10 aggregated\n  Intervals[statement_presence]: 69 raw -> 10 aggregated\n  Intervals[edge_divergence_gated]: 69 raw -> 10 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "RewardCapLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "RewardCapLoop_M3",
+        "--report",
+        "csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_RewardCapLoop_M3/RewardCapLoop/fault_localization_eval.json\n  Mutant:    RewardCapLoop_M3\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:RewardCapLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/RewardCapLoop_M4.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_RewardCapLoop_M4",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/testcases.json"
+      ],
+      "stdout_tail": ", rounds=14, fast=False\n  round_04/b15  [BATCH_SAFE]  points=0, rounds=15, fast=False\n  round_04/b16  [BATCH_SAFE]  points=70, rounds=1, fast=True\n  round_04/b17  [BATCH_SAFE]  points=96, rounds=2, fast=True\n  round_04/b18  [BATCH_SAFE]  points=72, rounds=3, fast=True\n  round_04/b19  [BATCH_SAFE]  points=72, rounds=4, fast=True\n  round_04/b20  [BATCH_SAFE]  points=96, rounds=5, fast=True\n  round_04/b21  [BATCH_SAFE]  points=96, rounds=6, fast=True\n  round_04/b22  [BATCH_SAFE]  points=72, rounds=7, fast=True\n  round_04/b23  [BATCH_SAFE]  points=70, rounds=8, fast=True\n  round_04/b24  [BATCH_SAFE]  points=70, rounds=9, fast=True\n  round_04/b25  [BATCH_SAFE]  points=80, rounds=10, fast=True\n  round_04/b26  [BATCH_SAFE]  points=72, rounds=11, fast=True\n  round_04/b27  [BATCH_SAFE]  points=79, rounds=12, fast=True\n  round_04/b28  [BATCH_SAFE]  points=70, rounds=13, fast=True\n  round_04/b29  [BATCH_SAFE]  points=70, rounds=14, fast=True\n  round_04/b30  [BATCH_SAFE]  points=70, rounds=15, fast=True\n  round_04/b31  [BATCH_SAFE]  points=106, rounds=16, fast=True\n  round_04/b32  [BATCH_SAFE]  points=68, rounds=11, fast=True\n  round_04/b33  [BATCH_SAFE]  points=64, rounds=12, fast=True\n  round_04/b34  [BATCH_SAFE]  points=56, rounds=13, fast=True\n  round_04/b35  [BATCH_SAFE]  points=56, rounds=14, fast=True\n  round_04/b36  [BATCH_SAFE]  points=48, rounds=15, fast=True\n  round_05/b0  [BATCH_SAFE]  points=70, rounds=1, fast=False\n  round_05/b1  [BATCH_SAFE]  points=96, rounds=2, fast=False\n  round_05/b2  [BATCH_SAFE]  points=70, rounds=3, fast=False\n  round_05/b3  [BATCH_SAFE]  points=72, rounds=4, fast=False\n  round_05/b4  [BATCH_SAFE]  points=96, rounds=5, fast=False\n  round_05/b5  [BATCH_SAFE]  points=96, rounds=6, fast=False\n  round_05/b6  [BATCH_SAFE]  points=72, rounds=7, fast=False\n  round_05/b7  [BATCH_SAFE]  points=70, rounds=8, fast=False\n  round_05/b8  [BATCH_SAFE]  points=79, rounds=9, fast=False\n  round_05/b9  [BATCH_SAFE]  points=96, rounds=10, fast=False\n  round_05/b10  [BATCH_SAFE]  points=72, rounds=11, fast=False\n  round_05/b11  [BATCH_SAFE]  points=79, rounds=12, fast=False\n  round_05/b12  [BATCH_SAFE]  points=70, rounds=13, fast=False\n  round_05/b13  [BATCH_SAFE]  points=70, rounds=14, fast=False\n  round_05/b14  [BATCH_SAFE]  points=70, rounds=15, fast=False\n  round_05/b15  [BATCH_SAFE]  points=106, rounds=16, fast=False\n  round_05/b16  [BATCH_SAFE]  points=110, rounds=11, fast=True\n  round_05/b17  [BATCH_SAFE]  points=109, rounds=12, fast=True\n  round_05/b18  [BATCH_SAFE]  points=110, rounds=13, fast=True\n  round_05/b19  [BATCH_SAFE]  points=110, rounds=14, fast=True\n  round_05/b20  [BATCH_SAFE]  points=108, rounds=15, fast=True\n  round_06/b0  [BATCH_SAFE]  points=110, rounds=11, fast=False\n  round_06/b1  [BATCH_SAFE]  points=109, rounds=12, fast=False\n  round_06/b2  [BATCH_SAFE]  points=110, rounds=13, fast=False\n  round_06/b3  [BATCH_SAFE]  points=110, rounds=14, fast=False\n  round_06/b4  [BATCH_SAFE]  points=108, rounds=15, fast=False\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 358\n  frontier_discovery_time_ms: 2180\n  compile_time_ms: 48585\n  java_exec_time_ms: 8846\n  path_log_parse_time_ms: 66\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 15662\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 15671\n\nTest cases written to: csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/RewardCapLoop_cct.dot\n  Stats: csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/cct_stats.json\n  Counts: nodes=399, leaves=200, covered=88, infeasible=112, out_of_range=0, expanded=254, truncated=0\n  Render script: csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/render_cct.sh\n  (render later with: csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:RewardCapLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/RewardCapLoop_M4.java",
+        "--output",
+        "csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/FSF/RewardCapLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/RewardCapLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       RewardCapLoop\n  CSC result:  csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/FSF/RewardCapLoop_FSF.txt\n  Report:      csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/refined_tbfv_report.json\n  Summary:     testcases=88, fsf_units=7, passed=72, failed=22, skipped=522, unsupported=0\n  CCT marked:  22\n  TBFV stats:  csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/cct_tbfv_stats.json\n  Counts:      nodes=399, leaves=200, fault_leaves=22, failure_cases=22\n  Fault DOT:    csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/RewardCapLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=54, intervals=75, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "RewardCapLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop",
+        "--output",
+        "csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop\n  CCT:         csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/RewardCapLoop_cct.pkl\n  Report:      csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=88, failed=22, condition_nodes=54, condition_intervals=75\n  Top conditions:\n    #1 score=3.1355 fail=22/22 line=17 remaining > 0\n    #2 score=3.0910 fail=21/21 line=17 remaining > 0\n    #3 score=3.0910 fail=21/21 line=18 points < 70\n  Top intervals:\n    #1 score=2.7235 fail=22/22 line=[17, 18] root.F.F.F.F.T.T.TRUE\n    #2 score=2.6848 fail=21/21 line=[17, 18] root.F.F.F.F.T.T.T.T.TRUE\n    #3 score=2.6444 fail=20/20 line=[17, 18] root.F.F.F.F.T.T.T.T.T.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "RewardCapLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "RewardCapLoop/RewardCapLoop_M4.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/cct_failure_localization_aggregated.json\n  Source file: RewardCapLoop/RewardCapLoop_M4.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  54 raw -> 8 aggregated\n  Intervals[cct_only]: 75 raw -> 10 aggregated\n  Intervals[statement_presence]: 75 raw -> 10 aggregated\n  Intervals[edge_divergence_gated]: 75 raw -> 10 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "RewardCapLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "RewardCapLoop_M4",
+        "--report",
+        "csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_RewardCapLoop_M4/RewardCapLoop/fault_localization_eval.json\n  Mutant:    RewardCapLoop_M4\n  Operator:  CR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=28, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=16, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=16, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_gated: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:RewardCapLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/RewardCapLoop_M5.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_RewardCapLoop_M5",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/testcases.json"
+      ],
+      "stdout_tail": "=96, rounds=7, fast=True\n  round_04/b23  [BATCH_SAFE]  points=70, rounds=8, fast=True\n  round_04/b24  [BATCH_SAFE]  points=70, rounds=9, fast=True\n  round_04/b25  [BATCH_SAFE]  points=96, rounds=10, fast=True\n  round_04/b26  [BATCH_SAFE]  points=72, rounds=11, fast=True\n  round_04/b27  [BATCH_SAFE]  points=79, rounds=12, fast=True\n  round_04/b28  [BATCH_SAFE]  points=79, rounds=13, fast=True\n  round_04/b29  [BATCH_SAFE]  points=70, rounds=14, fast=True\n  round_04/b30  [BATCH_SAFE]  points=70, rounds=15, fast=True\n  round_04/b31  [BATCH_SAFE]  points=94, rounds=16, fast=True\n  round_04/b32  [BATCH_SAFE]  points=69, rounds=13, fast=True\n  round_04/b33  [BATCH_SAFE]  points=68, rounds=14, fast=True\n  round_04/b34  [BATCH_SAFE]  points=64, rounds=15, fast=True\n  round_05/b0  [BATCH_SAFE]  points=70, rounds=1, fast=False\n  round_05/b1  [BATCH_SAFE]  points=96, rounds=2, fast=False\n  round_05/b2  [BATCH_SAFE]  points=72, rounds=3, fast=False\n  round_05/b3  [BATCH_SAFE]  points=72, rounds=4, fast=False\n  round_05/b4  [BATCH_SAFE]  points=96, rounds=5, fast=False\n  round_05/b5  [BATCH_SAFE]  points=79, rounds=6, fast=False\n  round_05/b6  [BATCH_SAFE]  points=72, rounds=7, fast=False\n  round_05/b7  [BATCH_SAFE]  points=70, rounds=8, fast=False\n  round_05/b8  [BATCH_SAFE]  points=70, rounds=9, fast=False\n  round_05/b9  [BATCH_SAFE]  points=96, rounds=10, fast=False\n  round_05/b10  [BATCH_SAFE]  points=79, rounds=11, fast=False\n  round_05/b11  [BATCH_SAFE]  points=79, rounds=12, fast=False\n  round_05/b12  [BATCH_SAFE]  points=70, rounds=13, fast=False\n  round_05/b13  [BATCH_SAFE]  points=70, rounds=14, fast=False\n  round_05/b14  [BATCH_SAFE]  points=70, rounds=15, fast=False\n  round_05/b15  [BATCH_SAFE]  points=94, rounds=16, fast=False\n  round_05/b16  [BATCH_SAFE]  points=109, rounds=6, fast=True\n  round_05/b17  [BATCH_SAFE]  points=108, rounds=7, fast=True\n  round_05/b18  [BATCH_SAFE]  points=110, rounds=8, fast=True\n  round_05/b19  [BATCH_SAFE]  points=104, rounds=9, fast=True\n  round_05/b20  [BATCH_SAFE]  points=104, rounds=10, fast=True\n  round_05/b21  [BATCH_SAFE]  points=108, rounds=11, fast=True\n  round_05/b22  [BATCH_SAFE]  points=97, rounds=12, fast=True\n  round_05/b23  [BATCH_SAFE]  points=95, rounds=13, fast=True\n  round_05/b24  [BATCH_SAFE]  points=95, rounds=14, fast=True\n  round_05/b25  [BATCH_SAFE]  points=96, rounds=15, fast=True\n  round_06/b0  [BATCH_SAFE]  points=110, rounds=6, fast=False\n  round_06/b1  [BATCH_SAFE]  points=108, rounds=7, fast=False\n  round_06/b2  [BATCH_SAFE]  points=110, rounds=8, fast=False\n  round_06/b3  [BATCH_SAFE]  points=103, rounds=9, fast=False\n  round_06/b4  [BATCH_SAFE]  points=104, rounds=10, fast=False\n  round_06/b5  [BATCH_SAFE]  points=102, rounds=11, fast=False\n  round_06/b6  [BATCH_SAFE]  points=97, rounds=12, fast=False\n  round_06/b7  [BATCH_SAFE]  points=95, rounds=13, fast=False\n  round_06/b8  [BATCH_SAFE]  points=95, rounds=14, fast=False\n  round_06/b9  [BATCH_SAFE]  points=95, rounds=15, fast=False\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 355\n  frontier_discovery_time_ms: 2006\n  compile_time_ms: 51002\n  java_exec_time_ms: 9233\n  path_log_parse_time_ms: 67\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 16186\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 16196\n\nTest cases written to: csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/RewardCapLoop_cct.dot\n  Stats: csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/cct_stats.json\n  Counts: nodes=399, leaves=200, covered=96, infeasible=104, out_of_range=0, expanded=262, truncated=0\n  Render script: csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/render_cct.sh\n  (render later with: csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:RewardCapLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/RewardCapLoop_M5.java",
+        "--output",
+        "csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/FSF/RewardCapLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/RewardCapLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       RewardCapLoop\n  CSC result:  csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/FSF/RewardCapLoop_FSF.txt\n  Report:      csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/refined_tbfv_report.json\n  Summary:     testcases=96, fsf_units=7, passed=56, failed=54, skipped=562, unsupported=0\n  CCT marked:  54\n  TBFV stats:  csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/cct_tbfv_stats.json\n  Counts:      nodes=399, leaves=200, fault_leaves=54, failure_cases=54\n  Fault DOT:    csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/RewardCapLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=103, intervals=156, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "RewardCapLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop",
+        "--output",
+        "csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop\n  CCT:         csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/RewardCapLoop_cct.pkl\n  Report:      csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=96, failed=54, condition_nodes=103, condition_intervals=156\n  Top conditions:\n    #1 score=3.3322 fail=27/27 line=17 remaining > 0\n    #2 score=3.3322 fail=27/27 line=17 remaining > 0\n    #3 score=3.2958 fail=26/26 line=17 remaining > 0\n  Top intervals:\n    #1 score=2.8943 fail=27/27 line=[17, 18] root.F.F.F.F.F.T.FALSE\n    #2 score=2.8943 fail=27/27 line=[17, 18] root.F.F.F.F.T.T.FALSE\n    #3 score=2.8627 fail=26/26 line=[17, 18] root.F.F.F.F.F.T.F.T.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "RewardCapLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "RewardCapLoop/RewardCapLoop_M5.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/cct_failure_localization_aggregated.json\n  Source file: RewardCapLoop/RewardCapLoop_M5.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  103 raw -> 8 aggregated\n  Intervals[cct_only]: 156 raw -> 11 aggregated\n  Intervals[statement_presence]: 156 raw -> 11 aggregated\n  Intervals[edge_divergence_gated]: 156 raw -> 11 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "RewardCapLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "RewardCapLoop_M5",
+        "--report",
+        "csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_RewardCapLoop_M5/RewardCapLoop/fault_localization_eval.json\n  Mutant:    RewardCapLoop_M5\n  Operator:  AOR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=61, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_gated: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=7, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_gated: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:RewardCapLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/RewardCapLoop_M6.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_RewardCapLoop_M6",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/testcases.json"
+      ],
+      "stdout_tail": " rounds=12, fast=False\n  round_04/b13  [BATCH_SAFE]  points=15, rounds=13, fast=False\n  round_04/b14  [BATCH_SAFE]  points=0, rounds=14, fast=False\n  round_04/b15  [BATCH_SAFE]  points=0, rounds=15, fast=False\n  round_04/b16  [BATCH_SAFE]  points=70, rounds=1, fast=True\n  round_04/b17  [BATCH_SAFE]  points=96, rounds=2, fast=True\n  round_04/b18  [BATCH_SAFE]  points=72, rounds=3, fast=True\n  round_04/b19  [BATCH_SAFE]  points=79, rounds=4, fast=True\n  round_04/b20  [BATCH_SAFE]  points=96, rounds=5, fast=True\n  round_04/b21  [BATCH_SAFE]  points=96, rounds=6, fast=True\n  round_04/b22  [BATCH_SAFE]  points=96, rounds=7, fast=True\n  round_04/b23  [BATCH_SAFE]  points=70, rounds=8, fast=True\n  round_04/b24  [BATCH_SAFE]  points=70, rounds=9, fast=True\n  round_04/b25  [BATCH_SAFE]  points=96, rounds=10, fast=True\n  round_04/b26  [BATCH_SAFE]  points=72, rounds=11, fast=True\n  round_04/b27  [BATCH_SAFE]  points=79, rounds=12, fast=True\n  round_04/b28  [BATCH_SAFE]  points=79, rounds=13, fast=True\n  round_04/b29  [BATCH_SAFE]  points=70, rounds=14, fast=True\n  round_04/b30  [BATCH_SAFE]  points=70, rounds=15, fast=True\n  round_04/b31  [BATCH_SAFE]  points=106, rounds=16, fast=True\n  round_04/b32  [BATCH_SAFE]  points=69, rounds=13, fast=True\n  round_04/b33  [BATCH_SAFE]  points=65, rounds=14, fast=True\n  round_04/b34  [BATCH_SAFE]  points=64, rounds=15, fast=True\n  round_05/b0  [BATCH_SAFE]  points=70, rounds=1, fast=False\n  round_05/b1  [BATCH_SAFE]  points=96, rounds=2, fast=False\n  round_05/b2  [BATCH_SAFE]  points=72, rounds=3, fast=False\n  round_05/b3  [BATCH_SAFE]  points=72, rounds=4, fast=False\n  round_05/b4  [BATCH_SAFE]  points=96, rounds=5, fast=False\n  round_05/b5  [BATCH_SAFE]  points=79, rounds=6, fast=False\n  round_05/b6  [BATCH_SAFE]  points=72, rounds=7, fast=False\n  round_05/b7  [BATCH_SAFE]  points=96, rounds=8, fast=False\n  round_05/b8  [BATCH_SAFE]  points=70, rounds=9, fast=False\n  round_05/b9  [BATCH_SAFE]  points=96, rounds=10, fast=False\n  round_05/b10  [BATCH_SAFE]  points=72, rounds=11, fast=False\n  round_05/b11  [BATCH_SAFE]  points=79, rounds=12, fast=False\n  round_05/b12  [BATCH_SAFE]  points=79, rounds=13, fast=False\n  round_05/b13  [BATCH_SAFE]  points=70, rounds=14, fast=False\n  round_05/b14  [BATCH_SAFE]  points=79, rounds=15, fast=False\n  round_05/b15  [BATCH_SAFE]  points=106, rounds=16, fast=False\n  round_05/b16  [BATCH_SAFE]  points=110, rounds=11, fast=True\n  round_05/b17  [BATCH_SAFE]  points=110, rounds=12, fast=True\n  round_05/b18  [BATCH_SAFE]  points=110, rounds=13, fast=True\n  round_05/b19  [BATCH_SAFE]  points=110, rounds=14, fast=True\n  round_05/b20  [BATCH_SAFE]  points=108, rounds=15, fast=True\n  round_06/b0  [BATCH_SAFE]  points=110, rounds=11, fast=False\n  round_06/b1  [BATCH_SAFE]  points=109, rounds=12, fast=False\n  round_06/b2  [BATCH_SAFE]  points=110, rounds=13, fast=False\n  round_06/b3  [BATCH_SAFE]  points=110, rounds=14, fast=False\n  round_06/b4  [BATCH_SAFE]  points=110, rounds=15, fast=False\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 342\n  frontier_discovery_time_ms: 2182\n  compile_time_ms: 49988\n  java_exec_time_ms: 9174\n  path_log_parse_time_ms: 69\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 16075\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 16085\n\nTest cases written to: csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/RewardCapLoop_cct.dot\n  Stats: csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/cct_stats.json\n  Counts: nodes=399, leaves=200, covered=86, infeasible=114, out_of_range=0, expanded=252, truncated=0\n  Render script: csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/render_cct.sh\n  (render later with: csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:RewardCapLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/RewardCapLoop_M6.java",
+        "--output",
+        "csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/FSF/RewardCapLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/RewardCapLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       RewardCapLoop\n  CSC result:  csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/RewardCapLoop/FSF/RewardCapLoop_FSF.txt\n  Report:      csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/refined_tbfv_report.json\n  Summary:     testcases=86, fsf_units=7, passed=20, failed=68, skipped=514, unsupported=0\n  CCT marked:  68\n  TBFV stats:  csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/cct_tbfv_stats.json\n  Counts:      nodes=399, leaves=200, fault_leaves=66, failure_cases=66\n  Fault DOT:    csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/RewardCapLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=199, intervals=264, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "RewardCapLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop",
+        "--output",
+        "csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop\n  CCT:         csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/RewardCapLoop_cct.pkl\n  Report:      csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=86, failed=66, condition_nodes=199, condition_intervals=264\n  Top conditions:\n    #1 score=3.3843 fail=66/82 line=12 fast\n    #2 score=3.3435 fail=66/83 line=6 rounds > 16\n    #3 score=3.3037 fail=66/84 line=6 rounds < 0\n  Top intervals:\n    #1 score=2.6528 fail=66/82 line=[6, 12] root.F.F.F.FALSE\n    #2 score=2.4082 fail=15/15 line=[17, 18] root.F.F.F.F.F.T.T.T.TRUE\n    #3 score=2.3522 fail=14/14 line=[17, 18] root.F.F.F.F.F.T.T.T.T.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "RewardCapLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "RewardCapLoop/RewardCapLoop_M6.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/cct_failure_localization_aggregated.json\n  Source file: RewardCapLoop/RewardCapLoop_M6.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  199 raw -> 8 aggregated\n  Intervals[cct_only]: 264 raw -> 11 aggregated\n  Intervals[statement_presence]: 264 raw -> 11 aggregated\n  Intervals[edge_divergence_gated]: 264 raw -> 11 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "RewardCapLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "RewardCapLoop_M6",
+        "--report",
+        "csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_RewardCapLoop_M6/RewardCapLoop/fault_localization_eval.json\n  Mutant:    RewardCapLoop_M6\n  Operator:  RVR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=53, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=56, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.statement_presence: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.edge_divergence_gated: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n",
+      "stderr_tail": ""
+    }
+  ]
+}

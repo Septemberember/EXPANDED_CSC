@@ -1,0 +1,38 @@
+[fsf_1]
+    T: n <= 1
+    D: return_value == -1
+
+[fsf_2]
+    T: n == 100000
+    D: return_value == 50000
+
+[fsf_3]
+    T: n > 1 && n % 2 == 0 && n != 100000
+    D: return_value == n / 2
+
+[fsf_4]
+    T: n > 1 && n % 2 != 0 && n % 3 == 0
+    D: return_value == n / 3
+
+[fsf_5]
+    T: n > 1 && n % 2 != 0 && n % 3 != 0 && n % 5 == 0
+    D: return_value == n / 5
+
+[fsf_6]
+    T: n > 1 && n % 2 != 0 && n % 3 != 0 && n % 5 != 0 && n % 7 == 0
+    D: return_value == n / 7
+
+[fsf_7]
+    T: n > 1 && n % 2 != 0 && n % 3 != 0 && n % 5 != 0 && n % 7 != 0 && n % 11 == 0
+    D: return_value == n / 11
+
+[fsf_8]
+    T: n > 1 && n % 2 != 0 && n % 3 != 0 && n % 5 != 0 && n % 7 != 0 && n % 11 != 0 && n % 13 == 0
+    D: return_value == n / 13
+
+[fsf_9]
+    T: n > 1 && n < 200 && n % 2 != 0 && n % 3 != 0 && n % 5 != 0 && n % 7 != 0 && n % 11 != 0 && n % 13 != 0
+    D: return_value == 1
+[fsf_10]
+    T: n >= 200 && n % 2 != 0 && n % 3 != 0 && n % 5 != 0 && n % 7 != 0 && n % 11 != 0 && n % 13 != 0
+    D: return_value >= 1

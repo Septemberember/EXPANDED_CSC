@@ -1,0 +1,401 @@
+{
+  "subject": "BoundaryStressQuota",
+  "subject_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota",
+  "fsf": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/FSF/BoundaryStressQuota_FSF.txt",
+  "manifest": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/mutants_manifest.jsonl",
+  "mode": "original",
+  "strategy": "batch",
+  "max_iter": 1200,
+  "dry_run": false,
+  "original": {
+    "role": "original",
+    "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/BoundaryStressQuota.java",
+    "class_name": "BoundaryStressQuota",
+    "mutant_id": null
+  },
+  "mutants": [
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/BoundaryStressQuota_M1.java",
+      "class_name": "BoundaryStressQuota",
+      "mutant_id": "BoundaryStressQuota_M1"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/BoundaryStressQuota_M2.java",
+      "class_name": "BoundaryStressQuota",
+      "mutant_id": "BoundaryStressQuota_M2"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/BoundaryStressQuota_M3.java",
+      "class_name": "BoundaryStressQuota",
+      "mutant_id": "BoundaryStressQuota_M3"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/BoundaryStressQuota_M4.java",
+      "class_name": "BoundaryStressQuota",
+      "mutant_id": "BoundaryStressQuota_M4"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/BoundaryStressQuota_M5.java",
+      "class_name": "BoundaryStressQuota",
+      "mutant_id": "BoundaryStressQuota_M5"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/BoundaryStressQuota_M6.java",
+      "class_name": "BoundaryStressQuota",
+      "mutant_id": "BoundaryStressQuota_M6"
+    }
+  ],
+  "step_count": 14,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "original:BoundaryStressQuota:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/BoundaryStressQuota.java",
+        "--mode",
+        "original",
+        "--max-iter",
+        "1200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "boundary_stress_0717_kill_csc_only_BoundaryStressQuota"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota/BoundaryStressQuota/testcases.json"
+      ],
+      "stdout_tail": "  |     |     |     |     |     |     |     |     (F) ->\n  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b2'} [TRUNCATED]  inputs: tc_4_b2(rounds=206, quota=205, reserve=256)\n  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     (T) ->\n  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(rounds=0, quota=0, reserve=501)\n  |     |     |     |     (T) ->\n  |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(rounds=0, quota=0, reserve=-32768)\n  |     |     |     (T) ->\n  |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(rounds=0, quota=501, reserve=0)\n  |     |     (T) ->\n  |     |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(rounds=0, quota=-32768, reserve=0)\n  |     (T) ->\n  |     |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(rounds=504, quota=0, reserve=0)\n  (T) ->\n  |   [LEAF] Cases: {'tc_2_b6'}  inputs: tc_2_b6(rounds=-32768, quota=0, reserve=0)\n-----------------------------\n\nCCT DOT saved to: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota/BoundaryStressQuota/BoundaryStressQuota_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 15 test cases generated in 7 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota/BoundaryStressQuota/BoundaryStressQuota_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  rounds=5, quota=0, reserve=0\n  round_02/b1  [BATCH_SAFE]  rounds=0, quota=0, reserve=501\n  round_02/b2  [BATCH_SAFE]  rounds=0, quota=0, reserve=-32768\n  round_02/b3  [BATCH_SAFE]  rounds=0, quota=501, reserve=0\n  round_02/b4  [BATCH_SAFE]  rounds=0, quota=-32768, reserve=0\n  round_02/b5  [BATCH_SAFE]  rounds=504, quota=0, reserve=0\n  round_02/b6  [BATCH_SAFE]  rounds=-32768, quota=0, reserve=0\n  round_03/b0  [BATCH_SAFE]  rounds=128, quota=0, reserve=205\n  round_03/b1  [BATCH_SAFE]  rounds=205, quota=0, reserve=0\n  round_03/b2  [BATCH_SAFE]  rounds=256, quota=206, reserve=0\n  round_04/b0  [BATCH_SAFE]  rounds=201, quota=0, reserve=206\n  round_04/b1  [BATCH_SAFE]  rounds=128, quota=206, reserve=0\n  round_04/b2  [BATCH_SAFE]  rounds=206, quota=205, reserve=256\n  round_05/b0  [BATCH_SAFE]  rounds=128, quota=202, reserve=206\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 39\n  frontier_discovery_time_ms: 102\n  compile_time_ms: 9020\n  java_exec_time_ms: 1635\n  path_log_parse_time_ms: 324\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 3741\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 3755\n\nTest cases written to: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota/BoundaryStressQuota/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota/BoundaryStressQuota/BoundaryStressQuota_cct.dot\n  Stats: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota/BoundaryStressQuota/cct_stats.json\n  Counts: nodes=102, leaves=39, covered=15, infeasible=24, out_of_range=0, expanded=0, truncated=8\n  Render script: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota/BoundaryStressQuota/render_cct.sh\n  (render later with: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota/BoundaryStressQuota/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota/BoundaryStressQuota/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "original:BoundaryStressQuota:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota/BoundaryStressQuota",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/BoundaryStressQuota.java",
+        "--output",
+        "csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota/BoundaryStressQuota/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/FSF/BoundaryStressQuota_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota/BoundaryStressQuota/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota/BoundaryStressQuota/BoundaryStressQuota_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundaryStressQuota\n  CSC result:  csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota/BoundaryStressQuota\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/FSF/BoundaryStressQuota_FSF.txt\n  Report:      csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota/BoundaryStressQuota/refined_tbfv_report.json\n  Summary:     testcases=15, fsf_units=9, passed=13, failed=1, skipped=121, unsupported=0\n  CCT marked:  1\n  TBFV stats:  csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota/BoundaryStressQuota/cct_tbfv_stats.json\n  Counts:      nodes=102, leaves=39, fault_leaves=1, failure_cases=1\n  Fault DOT:    csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota/BoundaryStressQuota/BoundaryStressQuota_cct_tbfv_fault.dot\n  Localization: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota/BoundaryStressQuota/cct_failure_localization.json\n  Risk DOT:     csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota/BoundaryStressQuota/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=16, intervals=16, default_edge_strategy=statement_presence\n  Render script: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota/BoundaryStressQuota/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundaryStressQuota:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/BoundaryStressQuota_M1.java",
+        "--mode",
+        "original",
+        "--max-iter",
+        "1200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M1"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M1/BoundaryStressQuota/testcases.json"
+      ],
+      "stdout_tail": " |     |     |     (F) ->\n  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b2'} [TRUNCATED]  inputs: tc_4_b2(rounds=204, quota=206, reserve=205)\n  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     (T) ->\n  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(rounds=0, quota=0, reserve=502)\n  |     |     |     |     (T) ->\n  |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(rounds=0, quota=0, reserve=-32768)\n  |     |     |     (T) ->\n  |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(rounds=0, quota=16384, reserve=0)\n  |     |     (T) ->\n  |     |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(rounds=0, quota=-32768, reserve=0)\n  |     (T) ->\n  |     |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(rounds=504, quota=0, reserve=0)\n  (T) ->\n  |   [LEAF] Cases: {'tc_2_b6'}  inputs: tc_2_b6(rounds=-32768, quota=0, reserve=0)\n-----------------------------\n\nCCT DOT saved to: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M1/BoundaryStressQuota/BoundaryStressQuota_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 15 test cases generated in 7 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M1/BoundaryStressQuota/BoundaryStressQuota_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  rounds=256, quota=0, reserve=0\n  round_02/b1  [BATCH_SAFE]  rounds=0, quota=0, reserve=502\n  round_02/b2  [BATCH_SAFE]  rounds=0, quota=0, reserve=-32768\n  round_02/b3  [BATCH_SAFE]  rounds=0, quota=16384, reserve=0\n  round_02/b4  [BATCH_SAFE]  rounds=0, quota=-32768, reserve=0\n  round_02/b5  [BATCH_SAFE]  rounds=504, quota=0, reserve=0\n  round_02/b6  [BATCH_SAFE]  rounds=-32768, quota=0, reserve=0\n  round_03/b0  [BATCH_SAFE]  rounds=128, quota=0, reserve=0\n  round_03/b1  [BATCH_SAFE]  rounds=204, quota=12, reserve=205\n  round_03/b2  [BATCH_SAFE]  rounds=256, quota=206, reserve=0\n  round_04/b0  [BATCH_SAFE]  rounds=128, quota=0, reserve=206\n  round_04/b1  [BATCH_SAFE]  rounds=128, quota=206, reserve=0\n  round_04/b2  [BATCH_SAFE]  rounds=204, quota=206, reserve=205\n  round_05/b0  [BATCH_SAFE]  rounds=128, quota=201, reserve=206\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 50\n  frontier_discovery_time_ms: 116\n  compile_time_ms: 9060\n  java_exec_time_ms: 1840\n  path_log_parse_time_ms: 309\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 3717\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 3735\n\nTest cases written to: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M1/BoundaryStressQuota/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M1/BoundaryStressQuota/BoundaryStressQuota_cct.dot\n  Stats: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M1/BoundaryStressQuota/cct_stats.json\n  Counts: nodes=102, leaves=39, covered=15, infeasible=24, out_of_range=0, expanded=0, truncated=8\n  Render script: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M1/BoundaryStressQuota/render_cct.sh\n  (render later with: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M1/BoundaryStressQuota/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M1/BoundaryStressQuota/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundaryStressQuota:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M1/BoundaryStressQuota",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/BoundaryStressQuota_M1.java",
+        "--output",
+        "csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M1/BoundaryStressQuota/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/FSF/BoundaryStressQuota_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M1/BoundaryStressQuota/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M1/BoundaryStressQuota/BoundaryStressQuota_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundaryStressQuota\n  CSC result:  csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M1/BoundaryStressQuota\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/FSF/BoundaryStressQuota_FSF.txt\n  Report:      csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M1/BoundaryStressQuota/refined_tbfv_report.json\n  Summary:     testcases=15, fsf_units=9, passed=13, failed=3, skipped=119, unsupported=0\n  CCT marked:  3\n  TBFV stats:  csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M1/BoundaryStressQuota/cct_tbfv_stats.json\n  Counts:      nodes=102, leaves=39, fault_leaves=2, failure_cases=2\n  Fault DOT:    csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M1/BoundaryStressQuota/BoundaryStressQuota_cct_tbfv_fault.dot\n  Localization: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M1/BoundaryStressQuota/cct_failure_localization.json\n  Risk DOT:     csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M1/BoundaryStressQuota/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=16, intervals=17, default_edge_strategy=statement_presence\n  Render script: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M1/BoundaryStressQuota/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundaryStressQuota:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/BoundaryStressQuota_M2.java",
+        "--mode",
+        "original",
+        "--max-iter",
+        "1200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M2"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M2/BoundaryStressQuota/testcases.json"
+      ],
+      "stdout_tail": "   |     |     |     |     (F) ->\n  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b2'} [TRUNCATED]  inputs: tc_4_b2(rounds=206, quota=230, reserve=206)\n  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     (T) ->\n  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(rounds=0, quota=0, reserve=501)\n  |     |     |     |     (T) ->\n  |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(rounds=0, quota=0, reserve=-32768)\n  |     |     |     (T) ->\n  |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(rounds=0, quota=501, reserve=0)\n  |     |     (T) ->\n  |     |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(rounds=0, quota=-32768, reserve=0)\n  |     (T) ->\n  |     |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(rounds=504, quota=0, reserve=0)\n  (T) ->\n  |   [LEAF] Cases: {'tc_2_b6'}  inputs: tc_2_b6(rounds=-32768, quota=0, reserve=0)\n-----------------------------\n\nCCT DOT saved to: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M2/BoundaryStressQuota/BoundaryStressQuota_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 15 test cases generated in 7 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M2/BoundaryStressQuota/BoundaryStressQuota_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  rounds=5, quota=0, reserve=0\n  round_02/b1  [BATCH_SAFE]  rounds=0, quota=0, reserve=501\n  round_02/b2  [BATCH_SAFE]  rounds=0, quota=0, reserve=-32768\n  round_02/b3  [BATCH_SAFE]  rounds=0, quota=501, reserve=0\n  round_02/b4  [BATCH_SAFE]  rounds=0, quota=-32768, reserve=0\n  round_02/b5  [BATCH_SAFE]  rounds=504, quota=0, reserve=0\n  round_02/b6  [BATCH_SAFE]  rounds=-32768, quota=0, reserve=0\n  round_03/b0  [BATCH_SAFE]  rounds=64, quota=0, reserve=206\n  round_03/b1  [BATCH_SAFE]  rounds=201, quota=0, reserve=0\n  round_03/b2  [BATCH_SAFE]  rounds=256, quota=224, reserve=0\n  round_04/b0  [BATCH_SAFE]  rounds=206, quota=0, reserve=206\n  round_04/b1  [BATCH_SAFE]  rounds=128, quota=224, reserve=0\n  round_04/b2  [BATCH_SAFE]  rounds=206, quota=230, reserve=206\n  round_05/b0  [BATCH_SAFE]  rounds=128, quota=224, reserve=206\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 42\n  frontier_discovery_time_ms: 101\n  compile_time_ms: 8310\n  java_exec_time_ms: 1623\n  path_log_parse_time_ms: 205\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 3429\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 3442\n\nTest cases written to: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M2/BoundaryStressQuota/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M2/BoundaryStressQuota/BoundaryStressQuota_cct.dot\n  Stats: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M2/BoundaryStressQuota/cct_stats.json\n  Counts: nodes=102, leaves=39, covered=15, infeasible=24, out_of_range=0, expanded=0, truncated=8\n  Render script: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M2/BoundaryStressQuota/render_cct.sh\n  (render later with: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M2/BoundaryStressQuota/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M2/BoundaryStressQuota/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundaryStressQuota:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M2/BoundaryStressQuota",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/BoundaryStressQuota_M2.java",
+        "--output",
+        "csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M2/BoundaryStressQuota/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/FSF/BoundaryStressQuota_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M2/BoundaryStressQuota/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M2/BoundaryStressQuota/BoundaryStressQuota_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundaryStressQuota\n  CSC result:  csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M2/BoundaryStressQuota\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/FSF/BoundaryStressQuota_FSF.txt\n  Report:      csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M2/BoundaryStressQuota/refined_tbfv_report.json\n  Summary:     testcases=15, fsf_units=9, passed=15, failed=5, skipped=115, unsupported=0\n  CCT marked:  5\n  TBFV stats:  csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M2/BoundaryStressQuota/cct_tbfv_stats.json\n  Counts:      nodes=102, leaves=39, fault_leaves=4, failure_cases=4\n  Fault DOT:    csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M2/BoundaryStressQuota/BoundaryStressQuota_cct_tbfv_fault.dot\n  Localization: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M2/BoundaryStressQuota/cct_failure_localization.json\n  Risk DOT:     csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M2/BoundaryStressQuota/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=37, intervals=40, default_edge_strategy=statement_presence\n  Render script: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M2/BoundaryStressQuota/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundaryStressQuota:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/BoundaryStressQuota_M3.java",
+        "--mode",
+        "original",
+        "--max-iter",
+        "1200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M3"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M3/BoundaryStressQuota/testcases.json"
+      ],
+      "stdout_tail": "    |     |     |     |     (F) ->\n  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b2'} [TRUNCATED]  inputs: tc_4_b2(rounds=206, quota=205, reserve=256)\n  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     (T) ->\n  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(rounds=0, quota=0, reserve=502)\n  |     |     |     |     (T) ->\n  |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(rounds=0, quota=0, reserve=-32768)\n  |     |     |     (T) ->\n  |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(rounds=0, quota=501, reserve=0)\n  |     |     (T) ->\n  |     |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(rounds=0, quota=-32768, reserve=0)\n  |     (T) ->\n  |     |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(rounds=504, quota=0, reserve=0)\n  (T) ->\n  |   [LEAF] Cases: {'tc_2_b6'}  inputs: tc_2_b6(rounds=-32768, quota=0, reserve=0)\n-----------------------------\n\nCCT DOT saved to: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M3/BoundaryStressQuota/BoundaryStressQuota_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 15 test cases generated in 7 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M3/BoundaryStressQuota/BoundaryStressQuota_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  rounds=5, quota=0, reserve=0\n  round_02/b1  [BATCH_SAFE]  rounds=0, quota=0, reserve=502\n  round_02/b2  [BATCH_SAFE]  rounds=0, quota=0, reserve=-32768\n  round_02/b3  [BATCH_SAFE]  rounds=0, quota=501, reserve=0\n  round_02/b4  [BATCH_SAFE]  rounds=0, quota=-32768, reserve=0\n  round_02/b5  [BATCH_SAFE]  rounds=504, quota=0, reserve=0\n  round_02/b6  [BATCH_SAFE]  rounds=-32768, quota=0, reserve=0\n  round_03/b0  [BATCH_SAFE]  rounds=128, quota=0, reserve=206\n  round_03/b1  [BATCH_SAFE]  rounds=205, quota=0, reserve=0\n  round_03/b2  [BATCH_SAFE]  rounds=256, quota=205, reserve=0\n  round_04/b0  [BATCH_SAFE]  rounds=202, quota=0, reserve=205\n  round_04/b1  [BATCH_SAFE]  rounds=128, quota=206, reserve=0\n  round_04/b2  [BATCH_SAFE]  rounds=206, quota=205, reserve=256\n  round_05/b0  [BATCH_SAFE]  rounds=128, quota=202, reserve=206\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 42\n  frontier_discovery_time_ms: 99\n  compile_time_ms: 8328\n  java_exec_time_ms: 1666\n  path_log_parse_time_ms: 215\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 3464\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 3475\n\nTest cases written to: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M3/BoundaryStressQuota/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M3/BoundaryStressQuota/BoundaryStressQuota_cct.dot\n  Stats: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M3/BoundaryStressQuota/cct_stats.json\n  Counts: nodes=96, leaves=36, covered=15, infeasible=21, out_of_range=0, expanded=0, truncated=7\n  Render script: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M3/BoundaryStressQuota/render_cct.sh\n  (render later with: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M3/BoundaryStressQuota/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M3/BoundaryStressQuota/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundaryStressQuota:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M3/BoundaryStressQuota",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/BoundaryStressQuota_M3.java",
+        "--output",
+        "csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M3/BoundaryStressQuota/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/FSF/BoundaryStressQuota_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M3/BoundaryStressQuota/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M3/BoundaryStressQuota/BoundaryStressQuota_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundaryStressQuota\n  CSC result:  csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M3/BoundaryStressQuota\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/FSF/BoundaryStressQuota_FSF.txt\n  Report:      csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M3/BoundaryStressQuota/refined_tbfv_report.json\n  Summary:     testcases=15, fsf_units=9, passed=7, failed=7, skipped=121, unsupported=0\n  CCT marked:  7\n  TBFV stats:  csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M3/BoundaryStressQuota/cct_tbfv_stats.json\n  Counts:      nodes=96, leaves=36, fault_leaves=4, failure_cases=4\n  Fault DOT:    csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M3/BoundaryStressQuota/BoundaryStressQuota_cct_tbfv_fault.dot\n  Localization: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M3/BoundaryStressQuota/cct_failure_localization.json\n  Risk DOT:     csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M3/BoundaryStressQuota/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=27, intervals=30, default_edge_strategy=statement_presence\n  Render script: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M3/BoundaryStressQuota/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundaryStressQuota:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/BoundaryStressQuota_M4.java",
+        "--mode",
+        "original",
+        "--max-iter",
+        "1200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M4"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M4/BoundaryStressQuota/testcases.json"
+      ],
+      "stdout_tail": "   |     |     |     |     (F) ->\n  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b2'} [TRUNCATED]  inputs: tc_4_b2(rounds=206, quota=205, reserve=256)\n  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     (T) ->\n  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(rounds=0, quota=0, reserve=501)\n  |     |     |     |     (T) ->\n  |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(rounds=0, quota=0, reserve=-32768)\n  |     |     |     (T) ->\n  |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(rounds=0, quota=501, reserve=0)\n  |     |     (T) ->\n  |     |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(rounds=0, quota=-32768, reserve=0)\n  |     (T) ->\n  |     |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(rounds=504, quota=0, reserve=0)\n  (T) ->\n  |   [LEAF] Cases: {'tc_2_b6'}  inputs: tc_2_b6(rounds=-32768, quota=0, reserve=0)\n-----------------------------\n\nCCT DOT saved to: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M4/BoundaryStressQuota/BoundaryStressQuota_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 15 test cases generated in 7 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M4/BoundaryStressQuota/BoundaryStressQuota_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  rounds=5, quota=0, reserve=0\n  round_02/b1  [BATCH_SAFE]  rounds=0, quota=0, reserve=501\n  round_02/b2  [BATCH_SAFE]  rounds=0, quota=0, reserve=-32768\n  round_02/b3  [BATCH_SAFE]  rounds=0, quota=501, reserve=0\n  round_02/b4  [BATCH_SAFE]  rounds=0, quota=-32768, reserve=0\n  round_02/b5  [BATCH_SAFE]  rounds=504, quota=0, reserve=0\n  round_02/b6  [BATCH_SAFE]  rounds=-32768, quota=0, reserve=0\n  round_03/b0  [BATCH_SAFE]  rounds=128, quota=0, reserve=205\n  round_03/b1  [BATCH_SAFE]  rounds=205, quota=0, reserve=0\n  round_03/b2  [BATCH_SAFE]  rounds=256, quota=206, reserve=0\n  round_04/b0  [BATCH_SAFE]  rounds=201, quota=0, reserve=206\n  round_04/b1  [BATCH_SAFE]  rounds=128, quota=206, reserve=0\n  round_04/b2  [BATCH_SAFE]  rounds=206, quota=205, reserve=256\n  round_05/b0  [BATCH_SAFE]  rounds=128, quota=202, reserve=206\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 34\n  frontier_discovery_time_ms: 90\n  compile_time_ms: 7376\n  java_exec_time_ms: 1485\n  path_log_parse_time_ms: 233\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 3040\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 3052\n\nTest cases written to: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M4/BoundaryStressQuota/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M4/BoundaryStressQuota/BoundaryStressQuota_cct.dot\n  Stats: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M4/BoundaryStressQuota/cct_stats.json\n  Counts: nodes=102, leaves=39, covered=15, infeasible=24, out_of_range=0, expanded=0, truncated=8\n  Render script: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M4/BoundaryStressQuota/render_cct.sh\n  (render later with: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M4/BoundaryStressQuota/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M4/BoundaryStressQuota/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundaryStressQuota:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M4/BoundaryStressQuota",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/BoundaryStressQuota_M4.java",
+        "--output",
+        "csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M4/BoundaryStressQuota/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/FSF/BoundaryStressQuota_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M4/BoundaryStressQuota/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M4/BoundaryStressQuota/BoundaryStressQuota_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundaryStressQuota\n  CSC result:  csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M4/BoundaryStressQuota\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/FSF/BoundaryStressQuota_FSF.txt\n  Report:      csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M4/BoundaryStressQuota/refined_tbfv_report.json\n  Summary:     testcases=15, fsf_units=9, passed=11, failed=4, skipped=120, unsupported=0\n  CCT marked:  4\n  TBFV stats:  csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M4/BoundaryStressQuota/cct_tbfv_stats.json\n  Counts:      nodes=102, leaves=39, fault_leaves=3, failure_cases=3\n  Fault DOT:    csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M4/BoundaryStressQuota/BoundaryStressQuota_cct_tbfv_fault.dot\n  Localization: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M4/BoundaryStressQuota/cct_failure_localization.json\n  Risk DOT:     csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M4/BoundaryStressQuota/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=29, intervals=31, default_edge_strategy=statement_presence\n  Render script: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M4/BoundaryStressQuota/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundaryStressQuota:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/BoundaryStressQuota_M5.java",
+        "--mode",
+        "original",
+        "--max-iter",
+        "1200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M5"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M5/BoundaryStressQuota/testcases.json"
+      ],
+      "stdout_tail": "   |     |     |     |     (F) ->\n  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b2'} [TRUNCATED]  inputs: tc_4_b2(rounds=206, quota=205, reserve=256)\n  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     (T) ->\n  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(rounds=0, quota=0, reserve=501)\n  |     |     |     |     (T) ->\n  |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(rounds=0, quota=0, reserve=-32768)\n  |     |     |     (T) ->\n  |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(rounds=0, quota=501, reserve=0)\n  |     |     (T) ->\n  |     |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(rounds=0, quota=-32768, reserve=0)\n  |     (T) ->\n  |     |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(rounds=504, quota=0, reserve=0)\n  (T) ->\n  |   [LEAF] Cases: {'tc_2_b6'}  inputs: tc_2_b6(rounds=-32768, quota=0, reserve=0)\n-----------------------------\n\nCCT DOT saved to: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M5/BoundaryStressQuota/BoundaryStressQuota_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 15 test cases generated in 7 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M5/BoundaryStressQuota/BoundaryStressQuota_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  rounds=5, quota=0, reserve=0\n  round_02/b1  [BATCH_SAFE]  rounds=0, quota=0, reserve=501\n  round_02/b2  [BATCH_SAFE]  rounds=0, quota=0, reserve=-32768\n  round_02/b3  [BATCH_SAFE]  rounds=0, quota=501, reserve=0\n  round_02/b4  [BATCH_SAFE]  rounds=0, quota=-32768, reserve=0\n  round_02/b5  [BATCH_SAFE]  rounds=504, quota=0, reserve=0\n  round_02/b6  [BATCH_SAFE]  rounds=-32768, quota=0, reserve=0\n  round_03/b0  [BATCH_SAFE]  rounds=128, quota=0, reserve=205\n  round_03/b1  [BATCH_SAFE]  rounds=205, quota=0, reserve=0\n  round_03/b2  [BATCH_SAFE]  rounds=256, quota=206, reserve=0\n  round_04/b0  [BATCH_SAFE]  rounds=201, quota=0, reserve=206\n  round_04/b1  [BATCH_SAFE]  rounds=128, quota=206, reserve=0\n  round_04/b2  [BATCH_SAFE]  rounds=206, quota=205, reserve=256\n  round_05/b0  [BATCH_SAFE]  rounds=128, quota=202, reserve=206\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 36\n  frontier_discovery_time_ms: 90\n  compile_time_ms: 8654\n  java_exec_time_ms: 1663\n  path_log_parse_time_ms: 226\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 3426\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 3437\n\nTest cases written to: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M5/BoundaryStressQuota/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M5/BoundaryStressQuota/BoundaryStressQuota_cct.dot\n  Stats: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M5/BoundaryStressQuota/cct_stats.json\n  Counts: nodes=102, leaves=39, covered=15, infeasible=24, out_of_range=0, expanded=0, truncated=8\n  Render script: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M5/BoundaryStressQuota/render_cct.sh\n  (render later with: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M5/BoundaryStressQuota/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M5/BoundaryStressQuota/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundaryStressQuota:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M5/BoundaryStressQuota",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/BoundaryStressQuota_M5.java",
+        "--output",
+        "csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M5/BoundaryStressQuota/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/FSF/BoundaryStressQuota_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M5/BoundaryStressQuota/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M5/BoundaryStressQuota/BoundaryStressQuota_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundaryStressQuota\n  CSC result:  csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M5/BoundaryStressQuota\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/FSF/BoundaryStressQuota_FSF.txt\n  Report:      csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M5/BoundaryStressQuota/refined_tbfv_report.json\n  Summary:     testcases=15, fsf_units=9, passed=10, failed=4, skipped=121, unsupported=0\n  CCT marked:  4\n  TBFV stats:  csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M5/BoundaryStressQuota/cct_tbfv_stats.json\n  Counts:      nodes=102, leaves=39, fault_leaves=3, failure_cases=3\n  Fault DOT:    csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M5/BoundaryStressQuota/BoundaryStressQuota_cct_tbfv_fault.dot\n  Localization: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M5/BoundaryStressQuota/cct_failure_localization.json\n  Risk DOT:     csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M5/BoundaryStressQuota/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=29, intervals=31, default_edge_strategy=statement_presence\n  Render script: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M5/BoundaryStressQuota/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundaryStressQuota:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/BoundaryStressQuota_M6.java",
+        "--mode",
+        "original",
+        "--max-iter",
+        "1200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M6"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M6/BoundaryStressQuota/testcases.json"
+      ],
+      "stdout_tail": "   |     |     |     |     (F) ->\n  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b2'} [TRUNCATED]  inputs: tc_4_b2(rounds=206, quota=205, reserve=256)\n  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     (T) ->\n  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(rounds=0, quota=0, reserve=501)\n  |     |     |     |     (T) ->\n  |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(rounds=0, quota=0, reserve=-32768)\n  |     |     |     (T) ->\n  |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(rounds=0, quota=501, reserve=0)\n  |     |     (T) ->\n  |     |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(rounds=0, quota=-32768, reserve=0)\n  |     (T) ->\n  |     |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(rounds=504, quota=0, reserve=0)\n  (T) ->\n  |   [LEAF] Cases: {'tc_2_b6'}  inputs: tc_2_b6(rounds=-32768, quota=0, reserve=0)\n-----------------------------\n\nCCT DOT saved to: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M6/BoundaryStressQuota/BoundaryStressQuota_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 15 test cases generated in 7 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M6/BoundaryStressQuota/BoundaryStressQuota_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  rounds=5, quota=0, reserve=0\n  round_02/b1  [BATCH_SAFE]  rounds=0, quota=0, reserve=501\n  round_02/b2  [BATCH_SAFE]  rounds=0, quota=0, reserve=-32768\n  round_02/b3  [BATCH_SAFE]  rounds=0, quota=501, reserve=0\n  round_02/b4  [BATCH_SAFE]  rounds=0, quota=-32768, reserve=0\n  round_02/b5  [BATCH_SAFE]  rounds=504, quota=0, reserve=0\n  round_02/b6  [BATCH_SAFE]  rounds=-32768, quota=0, reserve=0\n  round_03/b0  [BATCH_SAFE]  rounds=128, quota=0, reserve=205\n  round_03/b1  [BATCH_SAFE]  rounds=205, quota=0, reserve=0\n  round_03/b2  [BATCH_SAFE]  rounds=256, quota=206, reserve=0\n  round_04/b0  [BATCH_SAFE]  rounds=201, quota=0, reserve=206\n  round_04/b1  [BATCH_SAFE]  rounds=128, quota=206, reserve=0\n  round_04/b2  [BATCH_SAFE]  rounds=206, quota=205, reserve=256\n  round_05/b0  [BATCH_SAFE]  rounds=128, quota=202, reserve=206\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 36\n  frontier_discovery_time_ms: 91\n  compile_time_ms: 8083\n  java_exec_time_ms: 1595\n  path_log_parse_time_ms: 265\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 3361\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 3371\n\nTest cases written to: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M6/BoundaryStressQuota/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M6/BoundaryStressQuota/BoundaryStressQuota_cct.dot\n  Stats: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M6/BoundaryStressQuota/cct_stats.json\n  Counts: nodes=102, leaves=39, covered=15, infeasible=24, out_of_range=0, expanded=0, truncated=8\n  Render script: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M6/BoundaryStressQuota/render_cct.sh\n  (render later with: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M6/BoundaryStressQuota/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M6/BoundaryStressQuota/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundaryStressQuota:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M6/BoundaryStressQuota",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/BoundaryStressQuota_M6.java",
+        "--output",
+        "csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M6/BoundaryStressQuota/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/FSF/BoundaryStressQuota_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M6/BoundaryStressQuota/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M6/BoundaryStressQuota/BoundaryStressQuota_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundaryStressQuota\n  CSC result:  csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M6/BoundaryStressQuota\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/FSF/BoundaryStressQuota_FSF.txt\n  Report:      csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M6/BoundaryStressQuota/refined_tbfv_report.json\n  Summary:     testcases=15, fsf_units=9, passed=12, failed=2, skipped=121, unsupported=0\n  CCT marked:  2\n  TBFV stats:  csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M6/BoundaryStressQuota/cct_tbfv_stats.json\n  Counts:      nodes=102, leaves=39, fault_leaves=2, failure_cases=2\n  Fault DOT:    csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M6/BoundaryStressQuota/BoundaryStressQuota_cct_tbfv_fault.dot\n  Localization: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M6/BoundaryStressQuota/cct_failure_localization.json\n  Risk DOT:     csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M6/BoundaryStressQuota/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=24, intervals=25, default_edge_strategy=statement_presence\n  Render script: csc_tmp/boundary_stress_0717_kill_csc_only_BoundaryStressQuota_M6/BoundaryStressQuota/render_cct.sh\n",
+      "stderr_tail": ""
+    }
+  ]
+}

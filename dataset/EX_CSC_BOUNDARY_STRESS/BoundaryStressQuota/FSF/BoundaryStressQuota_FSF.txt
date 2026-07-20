@@ -1,0 +1,35 @@
+[fsf_1]
+    T: rounds < 0 || rounds > 500 || quota < 0 || quota > 500 || reserve < 0 || reserve > 500
+    D: return_value == -1
+
+[fsf_2]
+    T: rounds >= 0 && rounds <= 200 && quota >= 0 && quota <= 200 && reserve >= 0 && reserve <= 200 && (((rounds + 2) / 3) <= 220)
+    D: return_value == ((rounds + 2) / 3)
+
+[fsf_3]
+    T: rounds >= 0 && rounds <= 200 && quota >= 0 && quota <= 200 && reserve >= 0 && reserve <= 200 && (((rounds + 2) / 3) > 220)
+    D: return_value == 220
+
+[fsf_4]
+    T: rounds >= 0 && rounds <= 200 && quota > 200 && quota <= 500 && reserve >= 0 && reserve <= 200 && (8 * ((rounds + 2) / 3)) <= 220
+    D: return_value == 8 * ((rounds + 2) / 3)
+
+[fsf_5]
+    T: rounds >= 0 && rounds <= 200 && quota > 200 && quota <= 500 && reserve >= 0 && reserve <= 200 && (8 * ((rounds + 2) / 3)) > 220
+    D: return_value == 220
+
+[fsf_6]
+    T: rounds > 200 && rounds <= 500 && quota >= 0 && quota <= 200 && reserve >= 0 && reserve <= 200 && (3 * ((rounds + 2) / 3)) <= 220
+    D: return_value == 3 * ((rounds + 2) / 3)
+
+[fsf_7]
+    T: rounds > 200 && rounds <= 500 && quota >= 0 && quota <= 200 && reserve >= 0 && reserve <= 200 && (3 * ((rounds + 2) / 3)) > 220
+    D: return_value == 220
+
+[fsf_8]
+    T: rounds >= 0 && rounds <= 200 && quota >= 0 && quota <= 200 && reserve > 200 && reserve <= 500 && (4 * ((rounds + 2) / 3)) <= 220
+    D: return_value == 4 * ((rounds + 2) / 3)
+
+[fsf_9]
+    T: rounds >= 0 && rounds <= 200 && quota >= 0 && quota <= 200 && reserve > 200 && reserve <= 500 && (4 * ((rounds + 2) / 3)) > 220
+    D: return_value == 220

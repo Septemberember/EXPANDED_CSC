@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csc-engine"
+version = "0.1.0"
+description = "Condition Sequence Coverage (CSC) test case generation engine with CCTree visualization"
+requires-python = ">=3.10"
+dependencies = [
+    "z3-solver>=4.15.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+]
+
+[tool.setuptools]
+packages = ["csc_engine"]

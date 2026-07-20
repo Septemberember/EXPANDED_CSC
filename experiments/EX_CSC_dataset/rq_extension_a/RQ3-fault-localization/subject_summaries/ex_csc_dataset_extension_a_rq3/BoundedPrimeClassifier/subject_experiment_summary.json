@@ -1,0 +1,754 @@
+{
+  "subject": "BoundedPrimeClassifier",
+  "subject_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier",
+  "fsf": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/FSF/BoundedPrimeClassifier_FSF.txt",
+  "manifest": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+  "mode": "expanded",
+  "strategy": "batch",
+  "max_iter": 100,
+  "dry_run": false,
+  "original": {
+    "role": "original",
+    "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/BoundedPrimeClassifier.java",
+    "class_name": "BoundedPrimeClassifier",
+    "mutant_id": null
+  },
+  "mutants": [
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/BoundedPrimeClassifier_M1.java",
+      "class_name": "BoundedPrimeClassifier",
+      "mutant_id": "BoundedPrimeClassifier_M1"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/BoundedPrimeClassifier_M2.java",
+      "class_name": "BoundedPrimeClassifier",
+      "mutant_id": "BoundedPrimeClassifier_M2"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/BoundedPrimeClassifier_M3.java",
+      "class_name": "BoundedPrimeClassifier",
+      "mutant_id": "BoundedPrimeClassifier_M3"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/BoundedPrimeClassifier_M4.java",
+      "class_name": "BoundedPrimeClassifier",
+      "mutant_id": "BoundedPrimeClassifier_M4"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/BoundedPrimeClassifier_M5.java",
+      "class_name": "BoundedPrimeClassifier",
+      "mutant_id": "BoundedPrimeClassifier_M5"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/BoundedPrimeClassifier_M6.java",
+      "class_name": "BoundedPrimeClassifier",
+      "mutant_id": "BoundedPrimeClassifier_M6"
+    }
+  ],
+  "step_count": 30,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "mutant:BoundedPrimeClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/BoundedPrimeClassifier_M1.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_BoundedPrimeClassifier_M1",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/testcases.json"
+      ],
+      "stdout_tail": "EXPAND] Promoted truncated leaf at 'number % divisor == 0' (cnt=35) \u2192 F:['tc_7_b8']\n  [EXPAND] Promoted truncated leaf at 'divisor <= number' (cnt=36) \u2192 T:['tc_7_b8']\n  [EXPAND] Promoted truncated leaf at 'number % divisor == 0' (cnt=36) \u2192 T:['tc_7_b8']\n  [EXPAND] Promoted truncated leaf at 'divisor <= number' (cnt=37) \u2192 F:['tc_7_b8']\n  [EXPAND] Promoted truncated leaf at 'divisorCount == 2' (cnt=1) \u2192 F:['tc_7_b8']\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/BoundedPrimeClassifier_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 50 test cases generated in 8 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/BoundedPrimeClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=3\n  round_03/b0  [BATCH_SAFE]  number=25\n  round_03/b1  [BATCH_SAFE]  number=27\n  round_03/b2  [BATCH_SAFE]  number=32\n  round_03/b3  [BATCH_SAFE]  number=51\n  round_04/b0  [BATCH_SAFE]  number=49\n  round_04/b1  [BATCH_SAFE]  number=5\n  round_04/b2  [BATCH_SAFE]  number=35\n  round_04/b3  [BATCH_SAFE]  number=33\n  round_04/b4  [BATCH_SAFE]  number=9\n  round_04/b5  [BATCH_SAFE]  number=21\n  round_04/b6  [BATCH_SAFE]  number=45\n  round_04/b7  [BATCH_SAFE]  number=34\n  round_04/b8  [BATCH_SAFE]  number=4\n  round_04/b9  [BATCH_SAFE]  number=44\n  round_04/b10  [BATCH_SAFE]  number=8\n  round_04/b11  [BATCH_SAFE]  number=16\n  round_04/b12  [BATCH_SAFE]  number=28\n  round_04/b13  [BATCH_SAFE]  number=20\n  round_04/b14  [BATCH_SAFE]  number=42\n  round_05/b0  [BATCH_SAFE]  number=13\n  round_05/b1  [BATCH_SAFE]  number=7\n  round_05/b2  [BATCH_SAFE]  number=39\n  round_05/b3  [BATCH_SAFE]  number=15\n  round_05/b4  [BATCH_SAFE]  number=38\n  round_05/b5  [BATCH_SAFE]  number=26\n  round_05/b6  [BATCH_SAFE]  number=22\n  round_05/b7  [BATCH_SAFE]  number=14\n  round_05/b8  [BATCH_SAFE]  number=10\n  round_05/b9  [BATCH_SAFE]  number=40\n  round_05/b10  [BATCH_SAFE]  number=6\n  round_05/b11  [BATCH_SAFE]  number=18\n  round_05/b12  [BATCH_SAFE]  number=30\n  round_05/b13  [BATCH_SAFE]  number=24\n  round_06/b0  [BATCH_SAFE]  number=43\n  round_06/b1  [BATCH_SAFE]  number=11\n  round_06/b2  [BATCH_SAFE]  number=46\n  round_06/b3  [BATCH_SAFE]  number=50\n  round_06/b4  [BATCH_SAFE]  number=12\n  round_06/b5  [BATCH_SAFE]  number=48\n  round_07/b0  [BATCH_SAFE]  number=47\n  round_07/b1  [BATCH_SAFE]  number=41\n  round_07/b2  [BATCH_SAFE]  number=37\n  round_07/b3  [BATCH_SAFE]  number=31\n  round_07/b4  [BATCH_SAFE]  number=29\n  round_07/b5  [BATCH_SAFE]  number=23\n  round_07/b6  [BATCH_SAFE]  number=19\n  round_07/b7  [BATCH_SAFE]  number=17\n  round_07/b8  [BATCH_SAFE]  number=36\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 304\n  frontier_discovery_time_ms: 57561\n  compile_time_ms: 27703\n  java_exec_time_ms: 5569\n  path_log_parse_time_ms: 205\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 9745\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 9781\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/BoundedPrimeClassifier_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/cct_stats.json\n  Counts: nodes=3055, leaves=1528, covered=50, infeasible=1478, out_of_range=0, expanded=1569, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPrimeClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/BoundedPrimeClassifier_M1.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/FSF/BoundedPrimeClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/BoundedPrimeClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedPrimeClassifier\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/FSF/BoundedPrimeClassifier_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/refined_tbfv_report.json\n  Summary:     testcases=50, fsf_units=3, passed=50, failed=1, skipped=99, unsupported=0\n  CCT marked:  1\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/cct_tbfv_stats.json\n  Counts:      nodes=3055, leaves=1528, fault_leaves=1, failure_cases=1\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/BoundedPrimeClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=1, intervals=1, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPrimeClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier\n  CCT:         csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/BoundedPrimeClassifier_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=50, failed=1, condition_nodes=1, condition_intervals=1\n  Top conditions:\n    #1 score=0.0139 fail=1/50 line=3 number <= 2\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[3, None] root.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPrimeClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedPrimeClassifier/BoundedPrimeClassifier_M1.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedPrimeClassifier/BoundedPrimeClassifier_M1.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  1 raw -> 1 aggregated\n  Intervals[cct_only]: 1 raw -> 1 aggregated\n  Intervals[statement_presence]: 1 raw -> 1 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 1 raw -> 1 aggregated\n  Intervals[edge_divergence_sibling_shared]: 1 raw -> 1 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPrimeClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedPrimeClassifier_M1",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M1/BoundedPrimeClassifier/fault_localization_eval.json\n  Mutant:    BoundedPrimeClassifier_M1\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPrimeClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/BoundedPrimeClassifier_M2.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_BoundedPrimeClassifier_M2",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/testcases.json"
+      ],
+      "stdout_tail": "r % divisor == 0' (cnt=23) \u2192 F:['tc_7_b6']\n  [EXPAND] Promoted truncated leaf at 'divisor < number' (cnt=24) \u2192 T:['tc_7_b6']\n  [EXPAND] Promoted truncated leaf at 'number % divisor == 0' (cnt=24) \u2192 F:['tc_7_b6']\n  [EXPAND] Promoted truncated leaf at 'divisor < number' (cnt=25) \u2192 F:['tc_7_b6']\n  [EXPAND] Promoted truncated leaf at 'divisorCount == 2' (cnt=1) \u2192 T:['tc_7_b6']\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/BoundedPrimeClassifier_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 51 test cases generated in 8 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/BoundedPrimeClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=32\n  round_04/b0  [BATCH_SAFE]  number=2\n  round_04/b1  [BATCH_SAFE]  number=33\n  round_04/b2  [BATCH_SAFE]  number=4\n  round_04/b3  [BATCH_SAFE]  number=50\n  round_04/b4  [BATCH_SAFE]  number=8\n  round_04/b5  [BATCH_SAFE]  number=44\n  round_04/b6  [BATCH_SAFE]  number=16\n  round_04/b7  [BATCH_SAFE]  number=28\n  round_04/b8  [BATCH_SAFE]  number=40\n  round_04/b9  [BATCH_SAFE]  number=36\n  round_05/b0  [BATCH_SAFE]  number=3\n  round_05/b1  [BATCH_SAFE]  number=19\n  round_05/b2  [BATCH_SAFE]  number=9\n  round_05/b3  [BATCH_SAFE]  number=39\n  round_05/b4  [BATCH_SAFE]  number=27\n  round_05/b5  [BATCH_SAFE]  number=21\n  round_05/b6  [BATCH_SAFE]  number=45\n  round_05/b7  [BATCH_SAFE]  number=46\n  round_05/b8  [BATCH_SAFE]  number=10\n  round_05/b9  [BATCH_SAFE]  number=20\n  round_05/b10  [BATCH_SAFE]  number=42\n  round_05/b11  [BATCH_SAFE]  number=12\n  round_05/b12  [BATCH_SAFE]  number=48\n  round_06/b0  [BATCH_SAFE]  number=5\n  round_06/b1  [BATCH_SAFE]  number=7\n  round_06/b2  [BATCH_SAFE]  number=11\n  round_06/b3  [BATCH_SAFE]  number=13\n  round_06/b4  [BATCH_SAFE]  number=17\n  round_06/b5  [BATCH_SAFE]  number=43\n  round_06/b6  [BATCH_SAFE]  number=49\n  round_06/b7  [BATCH_SAFE]  number=35\n  round_06/b8  [BATCH_SAFE]  number=15\n  round_06/b9  [BATCH_SAFE]  number=38\n  round_06/b10  [BATCH_SAFE]  number=34\n  round_06/b11  [BATCH_SAFE]  number=26\n  round_06/b12  [BATCH_SAFE]  number=22\n  round_06/b13  [BATCH_SAFE]  number=14\n  round_06/b14  [BATCH_SAFE]  number=6\n  round_06/b15  [BATCH_SAFE]  number=18\n  round_06/b16  [BATCH_SAFE]  number=30\n  round_06/b17  [BATCH_SAFE]  number=24\n  round_07/b0  [BATCH_SAFE]  number=23\n  round_07/b1  [BATCH_SAFE]  number=29\n  round_07/b2  [BATCH_SAFE]  number=31\n  round_07/b3  [BATCH_SAFE]  number=37\n  round_07/b4  [BATCH_SAFE]  number=41\n  round_07/b5  [BATCH_SAFE]  number=47\n  round_07/b6  [BATCH_SAFE]  number=25\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 242\n  frontier_discovery_time_ms: 48066\n  compile_time_ms: 24186\n  java_exec_time_ms: 4715\n  path_log_parse_time_ms: 160\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 8663\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 8691\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/BoundedPrimeClassifier_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/cct_stats.json\n  Counts: nodes=2921, leaves=1461, covered=51, infeasible=1410, out_of_range=0, expanded=1501, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPrimeClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/BoundedPrimeClassifier_M2.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/FSF/BoundedPrimeClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/BoundedPrimeClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedPrimeClassifier\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/FSF/BoundedPrimeClassifier_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/refined_tbfv_report.json\n  Summary:     testcases=51, fsf_units=3, passed=32, failed=19, skipped=102, unsupported=0\n  CCT marked:  19\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/cct_tbfv_stats.json\n  Counts:      nodes=2921, leaves=1461, fault_leaves=19, failure_cases=19\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/BoundedPrimeClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=250, intervals=268, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPrimeClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier\n  CCT:         csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/BoundedPrimeClassifier_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=51, failed=19, condition_nodes=250, condition_intervals=268\n  Top conditions:\n    #1 score=2.6391 fail=13/13 line=8 divisor < number\n    #2 score=2.6391 fail=13/13 line=9 number % divisor == 0\n    #3 score=2.6391 fail=13/13 line=8 divisor < number\n  Top intervals:\n    #1 score=2.2923 fail=13/13 line=[8, 9] root.F.F.T.T.T.F.T.F.T.F.T.F.T.FALSE\n    #2 score=2.1872 fail=15/16 line=[8, 9] root.F.F.T.T.T.F.T.F.T.FALSE\n    #3 score=2.1584 fail=11/11 line=[8, 9] root.F.F.T.T.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPrimeClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedPrimeClassifier/BoundedPrimeClassifier_M2.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedPrimeClassifier/BoundedPrimeClassifier_M2.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  250 raw -> 5 aggregated\n  Intervals[cct_only]: 268 raw -> 8 aggregated\n  Intervals[statement_presence]: 268 raw -> 8 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 268 raw -> 8 aggregated\n  Intervals[edge_divergence_sibling_shared]: 268 raw -> 8 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPrimeClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedPrimeClassifier_M2",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M2/BoundedPrimeClassifier/fault_localization_eval.json\n  Mutant:    BoundedPrimeClassifier_M2\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPrimeClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/BoundedPrimeClassifier_M3.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_BoundedPrimeClassifier_M3",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/testcases.json"
+      ],
+      "stdout_tail": "divisor == 0' (cnt=23) \u2192 F:['tc_7_b11']\n  [EXPAND] Promoted truncated leaf at 'divisor <= number' (cnt=24) \u2192 T:['tc_7_b11']\n  [EXPAND] Promoted truncated leaf at 'number % divisor == 0' (cnt=24) \u2192 T:['tc_7_b11']\n  [EXPAND] Promoted truncated leaf at 'divisor <= number' (cnt=25) \u2192 F:['tc_7_b11']\n  [EXPAND] Promoted truncated leaf at 'divisorCount >= 2' (cnt=1) \u2192 T:['tc_7_b11']\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/BoundedPrimeClassifier_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 51 test cases generated in 8 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/BoundedPrimeClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=32\n  round_04/b0  [BATCH_SAFE]  number=33\n  round_04/b1  [BATCH_SAFE]  number=2\n  round_04/b2  [BATCH_SAFE]  number=26\n  round_04/b3  [BATCH_SAFE]  number=4\n  round_04/b4  [BATCH_SAFE]  number=44\n  round_04/b5  [BATCH_SAFE]  number=8\n  round_04/b6  [BATCH_SAFE]  number=16\n  round_04/b7  [BATCH_SAFE]  number=28\n  round_04/b8  [BATCH_SAFE]  number=20\n  round_04/b9  [BATCH_SAFE]  number=30\n  round_05/b0  [BATCH_SAFE]  number=17\n  round_05/b1  [BATCH_SAFE]  number=3\n  round_05/b2  [BATCH_SAFE]  number=39\n  round_05/b3  [BATCH_SAFE]  number=9\n  round_05/b4  [BATCH_SAFE]  number=21\n  round_05/b5  [BATCH_SAFE]  number=45\n  round_05/b6  [BATCH_SAFE]  number=46\n  round_05/b7  [BATCH_SAFE]  number=22\n  round_05/b8  [BATCH_SAFE]  number=14\n  round_05/b9  [BATCH_SAFE]  number=50\n  round_05/b10  [BATCH_SAFE]  number=40\n  round_05/b11  [BATCH_SAFE]  number=6\n  round_05/b12  [BATCH_SAFE]  number=12\n  round_06/b0  [BATCH_SAFE]  number=43\n  round_06/b1  [BATCH_SAFE]  number=13\n  round_06/b2  [BATCH_SAFE]  number=11\n  round_06/b3  [BATCH_SAFE]  number=7\n  round_06/b4  [BATCH_SAFE]  number=25\n  round_06/b5  [BATCH_SAFE]  number=27\n  round_06/b6  [BATCH_SAFE]  number=15\n  round_06/b7  [BATCH_SAFE]  number=38\n  round_06/b8  [BATCH_SAFE]  number=34\n  round_06/b9  [BATCH_SAFE]  number=10\n  round_06/b10  [BATCH_SAFE]  number=18\n  round_06/b11  [BATCH_SAFE]  number=36\n  round_06/b12  [BATCH_SAFE]  number=48\n  round_07/b0  [BATCH_SAFE]  number=47\n  round_07/b1  [BATCH_SAFE]  number=41\n  round_07/b2  [BATCH_SAFE]  number=37\n  round_07/b3  [BATCH_SAFE]  number=31\n  round_07/b4  [BATCH_SAFE]  number=29\n  round_07/b5  [BATCH_SAFE]  number=23\n  round_07/b6  [BATCH_SAFE]  number=19\n  round_07/b7  [BATCH_SAFE]  number=49\n  round_07/b8  [BATCH_SAFE]  number=5\n  round_07/b9  [BATCH_SAFE]  number=35\n  round_07/b10  [BATCH_SAFE]  number=42\n  round_07/b11  [BATCH_SAFE]  number=24\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 274\n  frontier_discovery_time_ms: 51270\n  compile_time_ms: 21217\n  java_exec_time_ms: 4588\n  path_log_parse_time_ms: 171\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 7740\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 7766\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/BoundedPrimeClassifier_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/cct_stats.json\n  Counts: nodes=3057, leaves=1529, covered=51, infeasible=1478, out_of_range=0, expanded=1571, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPrimeClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/BoundedPrimeClassifier_M3.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/FSF/BoundedPrimeClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/BoundedPrimeClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedPrimeClassifier\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/FSF/BoundedPrimeClassifier_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/refined_tbfv_report.json\n  Summary:     testcases=51, fsf_units=3, passed=17, failed=34, skipped=102, unsupported=0\n  CCT marked:  34\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/cct_tbfv_stats.json\n  Counts:      nodes=3057, leaves=1529, fault_leaves=34, failure_cases=34\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/BoundedPrimeClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=1422, intervals=1455, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPrimeClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier\n  CCT:         csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/BoundedPrimeClassifier_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=51, failed=34, condition_nodes=1422, condition_intervals=1455\n  Top conditions:\n    #1 score=3.2189 fail=24/24 line=9 number % divisor == 0\n    #2 score=3.0901 fail=24/25 line=8 divisor <= number\n    #3 score=2.8332 fail=16/16 line=9 number % divisor == 0\n  Top intervals:\n    #1 score=2.0712 fail=24/25 line=[8, 9] root.F.F.T.T.T.TRUE\n    #2 score=1.8148 fail=34/49 line=[8, 9] root.F.F.T.TRUE\n    #3 score=1.8148 fail=34/49 line=[3, 8] root.F.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPrimeClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedPrimeClassifier/BoundedPrimeClassifier_M3.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedPrimeClassifier/BoundedPrimeClassifier_M3.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  1422 raw -> 5 aggregated\n  Intervals[cct_only]: 1455 raw -> 7 aggregated\n  Intervals[statement_presence]: 1455 raw -> 7 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 1455 raw -> 7 aggregated\n  Intervals[edge_divergence_sibling_shared]: 1455 raw -> 7 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPrimeClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedPrimeClassifier_M3",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M3/BoundedPrimeClassifier/fault_localization_eval.json\n  Mutant:    BoundedPrimeClassifier_M3\n  Operator:  ROR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=148, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=135, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=5, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=5, top1=miss, top3=miss, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPrimeClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/BoundedPrimeClassifier_M4.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_BoundedPrimeClassifier_M4",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/testcases.json"
+      ],
+      "stdout_tail": "t 'number % divisor == 0' (cnt=46) \u2192 T:['tc_9_b0']\n  [EXPAND] Promoted truncated leaf at 'divisor <= number' (cnt=47) \u2192 F:['tc_9_b0']\n  [EXPAND] Promoted truncated leaf at 'divisorCount == 2' (cnt=1) \u2192 F:['tc_9_b0']\n  [EXPAND] Promoted truncated leaf at 'divisor <= number' (cnt=41) \u2192 F:['tc_9_b1']\n  [EXPAND] Promoted truncated leaf at 'divisorCount == 2' (cnt=1) \u2192 F:['tc_9_b1']\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/BoundedPrimeClassifier_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 51 test cases generated in 10 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/BoundedPrimeClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=32\n  round_04/b0  [BATCH_SAFE]  number=33\n  round_04/b1  [BATCH_SAFE]  number=2\n  round_04/b2  [BATCH_SAFE]  number=26\n  round_04/b3  [BATCH_SAFE]  number=4\n  round_04/b4  [BATCH_SAFE]  number=44\n  round_04/b5  [BATCH_SAFE]  number=8\n  round_04/b6  [BATCH_SAFE]  number=16\n  round_04/b7  [BATCH_SAFE]  number=28\n  round_04/b8  [BATCH_SAFE]  number=40\n  round_04/b9  [BATCH_SAFE]  number=18\n  round_05/b0  [BATCH_SAFE]  number=25\n  round_05/b1  [BATCH_SAFE]  number=3\n  round_05/b2  [BATCH_SAFE]  number=39\n  round_05/b3  [BATCH_SAFE]  number=27\n  round_05/b4  [BATCH_SAFE]  number=21\n  round_05/b5  [BATCH_SAFE]  number=45\n  round_05/b6  [BATCH_SAFE]  number=38\n  round_05/b7  [BATCH_SAFE]  number=22\n  round_05/b8  [BATCH_SAFE]  number=14\n  round_05/b9  [BATCH_SAFE]  number=10\n  round_05/b10  [BATCH_SAFE]  number=20\n  round_05/b11  [BATCH_SAFE]  number=6\n  round_05/b12  [BATCH_SAFE]  number=42\n  round_05/b13  [BATCH_SAFE]  number=30\n  round_05/b14  [BATCH_SAFE]  number=12\n  round_06/b0  [BATCH_SAFE]  number=49\n  round_06/b1  [BATCH_SAFE]  number=5\n  round_06/b2  [BATCH_SAFE]  number=35\n  round_06/b3  [BATCH_SAFE]  number=9\n  round_06/b4  [BATCH_SAFE]  number=15\n  round_06/b5  [BATCH_SAFE]  number=46\n  round_06/b6  [BATCH_SAFE]  number=34\n  round_06/b7  [BATCH_SAFE]  number=50\n  round_06/b8  [BATCH_SAFE]  number=36\n  round_06/b9  [BATCH_SAFE]  number=48\n  round_07/b0  [BATCH_SAFE]  number=37\n  round_07/b1  [BATCH_SAFE]  number=7\n  round_07/b2  [BATCH_SAFE]  number=24\n  round_08/b0  [BATCH_SAFE]  number=43\n  round_08/b1  [BATCH_SAFE]  number=31\n  round_08/b2  [BATCH_SAFE]  number=29\n  round_08/b3  [BATCH_SAFE]  number=23\n  round_08/b4  [BATCH_SAFE]  number=19\n  round_08/b5  [BATCH_SAFE]  number=17\n  round_08/b6  [BATCH_SAFE]  number=13\n  round_08/b7  [BATCH_SAFE]  number=11\n  round_09/b0  [BATCH_SAFE]  number=47\n  round_09/b1  [BATCH_SAFE]  number=41\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 255\n  frontier_discovery_time_ms: 48213\n  compile_time_ms: 19516\n  java_exec_time_ms: 4109\n  path_log_parse_time_ms: 127\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 7218\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 7261\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/BoundedPrimeClassifier_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/cct_stats.json\n  Counts: nodes=3053, leaves=1527, covered=51, infeasible=1476, out_of_range=0, expanded=1565, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPrimeClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/BoundedPrimeClassifier_M4.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/FSF/BoundedPrimeClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/BoundedPrimeClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedPrimeClassifier\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/FSF/BoundedPrimeClassifier_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/refined_tbfv_report.json\n  Summary:     testcases=51, fsf_units=3, passed=32, failed=19, skipped=102, unsupported=0\n  CCT marked:  19\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/cct_tbfv_stats.json\n  Counts:      nodes=3053, leaves=1527, fault_leaves=19, failure_cases=19\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/BoundedPrimeClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=268, intervals=286, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPrimeClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier\n  CCT:         csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/BoundedPrimeClassifier_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=51, failed=19, condition_nodes=268, condition_intervals=286\n  Top conditions:\n    #1 score=2.6391 fail=13/13 line=9 number % divisor == 0\n    #2 score=2.6391 fail=13/13 line=8 divisor <= number\n    #3 score=2.6391 fail=13/13 line=9 number % divisor == 0\n  Top intervals:\n    #1 score=2.2923 fail=13/13 line=[8, 9] root.F.F.T.F.T.F.T.F.T.F.T.FALSE\n    #2 score=2.1872 fail=15/16 line=[8, 9] root.F.F.T.F.T.F.T.FALSE\n    #3 score=2.1584 fail=11/11 line=[8, 9] root.F.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPrimeClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedPrimeClassifier/BoundedPrimeClassifier_M4.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedPrimeClassifier/BoundedPrimeClassifier_M4.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  268 raw -> 5 aggregated\n  Intervals[cct_only]: 286 raw -> 8 aggregated\n  Intervals[statement_presence]: 286 raw -> 8 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 286 raw -> 8 aggregated\n  Intervals[edge_divergence_sibling_shared]: 286 raw -> 8 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPrimeClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedPrimeClassifier_M4",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M4/BoundedPrimeClassifier/fault_localization_eval.json\n  Mutant:    BoundedPrimeClassifier_M4\n  Operator:  CR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=81, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=39, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=81, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPrimeClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/BoundedPrimeClassifier_M5.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_BoundedPrimeClassifier_M5",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/testcases.json"
+      ],
+      "stdout_tail": "eaf at 'divisorCount == 2' (cnt=1) \u2192 F:['tc_9_b0']\n  [EXPAND] Promoted truncated leaf at 'divisor <= number' (cnt=42) \u2192 F:['tc_9_b1']\n  [EXPAND] Promoted truncated leaf at 'divisorCount == 2' (cnt=1) \u2192 F:['tc_9_b1']\n  [EXPAND] Promoted truncated leaf at 'divisor <= number' (cnt=38) \u2192 F:['tc_9_b2']\n  [EXPAND] Promoted truncated leaf at 'divisorCount == 2' (cnt=1) \u2192 F:['tc_9_b2']\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/BoundedPrimeClassifier_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 51 test cases generated in 10 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/BoundedPrimeClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=32\n  round_04/b0  [BATCH_SAFE]  number=33\n  round_04/b1  [BATCH_SAFE]  number=2\n  round_04/b2  [BATCH_SAFE]  number=26\n  round_04/b3  [BATCH_SAFE]  number=4\n  round_04/b4  [BATCH_SAFE]  number=44\n  round_04/b5  [BATCH_SAFE]  number=8\n  round_04/b6  [BATCH_SAFE]  number=16\n  round_04/b7  [BATCH_SAFE]  number=28\n  round_04/b8  [BATCH_SAFE]  number=20\n  round_04/b9  [BATCH_SAFE]  number=48\n  round_05/b0  [BATCH_SAFE]  number=25\n  round_05/b1  [BATCH_SAFE]  number=3\n  round_05/b2  [BATCH_SAFE]  number=39\n  round_05/b3  [BATCH_SAFE]  number=9\n  round_05/b4  [BATCH_SAFE]  number=21\n  round_05/b5  [BATCH_SAFE]  number=45\n  round_05/b6  [BATCH_SAFE]  number=46\n  round_05/b7  [BATCH_SAFE]  number=22\n  round_05/b8  [BATCH_SAFE]  number=14\n  round_05/b9  [BATCH_SAFE]  number=50\n  round_05/b10  [BATCH_SAFE]  number=40\n  round_05/b11  [BATCH_SAFE]  number=6\n  round_05/b12  [BATCH_SAFE]  number=36\n  round_05/b13  [BATCH_SAFE]  number=24\n  round_06/b0  [BATCH_SAFE]  number=7\n  round_06/b1  [BATCH_SAFE]  number=5\n  round_06/b2  [BATCH_SAFE]  number=35\n  round_06/b3  [BATCH_SAFE]  number=27\n  round_06/b4  [BATCH_SAFE]  number=15\n  round_06/b5  [BATCH_SAFE]  number=38\n  round_06/b6  [BATCH_SAFE]  number=34\n  round_06/b7  [BATCH_SAFE]  number=10\n  round_06/b8  [BATCH_SAFE]  number=42\n  round_06/b9  [BATCH_SAFE]  number=30\n  round_06/b10  [BATCH_SAFE]  number=12\n  round_07/b0  [BATCH_SAFE]  number=31\n  round_07/b1  [BATCH_SAFE]  number=49\n  round_07/b2  [BATCH_SAFE]  number=18\n  round_08/b0  [BATCH_SAFE]  number=43\n  round_08/b1  [BATCH_SAFE]  number=29\n  round_08/b2  [BATCH_SAFE]  number=23\n  round_08/b3  [BATCH_SAFE]  number=19\n  round_08/b4  [BATCH_SAFE]  number=17\n  round_08/b5  [BATCH_SAFE]  number=13\n  round_08/b6  [BATCH_SAFE]  number=11\n  round_09/b0  [BATCH_SAFE]  number=47\n  round_09/b1  [BATCH_SAFE]  number=41\n  round_09/b2  [BATCH_SAFE]  number=37\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 283\n  frontier_discovery_time_ms: 52042\n  compile_time_ms: 20541\n  java_exec_time_ms: 4286\n  path_log_parse_time_ms: 158\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 7640\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 7685\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/BoundedPrimeClassifier_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/cct_stats.json\n  Counts: nodes=3057, leaves=1529, covered=51, infeasible=1478, out_of_range=0, expanded=1571, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPrimeClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/BoundedPrimeClassifier_M5.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/FSF/BoundedPrimeClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/BoundedPrimeClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedPrimeClassifier\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/FSF/BoundedPrimeClassifier_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/refined_tbfv_report.json\n  Summary:     testcases=51, fsf_units=3, passed=36, failed=15, skipped=102, unsupported=0\n  CCT marked:  15\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/cct_tbfv_stats.json\n  Counts:      nodes=3057, leaves=1529, fault_leaves=15, failure_cases=15\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/BoundedPrimeClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=126, intervals=140, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPrimeClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier\n  CCT:         csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/BoundedPrimeClassifier_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=51, failed=15, condition_nodes=126, condition_intervals=140\n  Top conditions:\n    #1 score=2.4849 fail=11/11 line=9 number % divisor == 0\n    #2 score=2.4849 fail=11/11 line=8 divisor <= number\n    #3 score=2.4849 fail=11/11 line=9 number % divisor == 0\n  Top intervals:\n    #1 score=2.1584 fail=11/11 line=[8, 9] root.F.F.T.T.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.FALSE\n    #2 score=2.1584 fail=11/11 line=[8, 9] root.F.F.T.T.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.FALSE\n    #3 score=2.1584 fail=11/11 line=[8, 9] root.F.F.T.T.T.F.T.F.T.F.T.F.T.F.T.F.T.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPrimeClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedPrimeClassifier/BoundedPrimeClassifier_M5.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedPrimeClassifier/BoundedPrimeClassifier_M5.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  126 raw -> 5 aggregated\n  Intervals[cct_only]: 140 raw -> 7 aggregated\n  Intervals[statement_presence]: 140 raw -> 7 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 140 raw -> 7 aggregated\n  Intervals[edge_divergence_sibling_shared]: 140 raw -> 7 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPrimeClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedPrimeClassifier_M5",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M5/BoundedPrimeClassifier/fault_localization_eval.json\n  Mutant:    BoundedPrimeClassifier_M5\n  Operator:  AOR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=83, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=42, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=84, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=4, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=5, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPrimeClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/BoundedPrimeClassifier_M6.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_BoundedPrimeClassifier_M6",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/testcases.json"
+      ],
+      "stdout_tail": " 'divisor <= number' (cnt=25) \u2192 F:['tc_7_b1']\n  [EXPAND] Promoted truncated leaf at 'divisorCount == 2' (cnt=1) \u2192 T:['tc_7_b1']\n  [EXPAND] Promoted truncated leaf at 'divisorCount == 2' (cnt=1) \u2192 F:['tc_7_b2']\n  [EXPAND] Promoted truncated leaf at 'divisor <= number' (cnt=15) \u2192 F:['tc_7_b3']\n  [EXPAND] Promoted truncated leaf at 'divisorCount == 2' (cnt=1) \u2192 F:['tc_7_b3']\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/BoundedPrimeClassifier_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 51 test cases generated in 8 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/BoundedPrimeClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=32\n  round_04/b0  [BATCH_SAFE]  number=2\n  round_04/b1  [BATCH_SAFE]  number=4\n  round_04/b2  [BATCH_SAFE]  number=8\n  round_04/b3  [BATCH_SAFE]  number=16\n  round_04/b4  [BATCH_SAFE]  number=37\n  round_04/b5  [BATCH_SAFE]  number=31\n  round_04/b6  [BATCH_SAFE]  number=29\n  round_04/b7  [BATCH_SAFE]  number=46\n  round_04/b8  [BATCH_SAFE]  number=38\n  round_04/b9  [BATCH_SAFE]  number=17\n  round_04/b10  [BATCH_SAFE]  number=13\n  round_04/b11  [BATCH_SAFE]  number=22\n  round_04/b12  [BATCH_SAFE]  number=7\n  round_04/b13  [BATCH_SAFE]  number=50\n  round_04/b14  [BATCH_SAFE]  number=12\n  round_05/b0  [BATCH_SAFE]  number=47\n  round_05/b1  [BATCH_SAFE]  number=23\n  round_05/b2  [BATCH_SAFE]  number=19\n  round_05/b3  [BATCH_SAFE]  number=34\n  round_05/b4  [BATCH_SAFE]  number=26\n  round_05/b5  [BATCH_SAFE]  number=11\n  round_05/b6  [BATCH_SAFE]  number=44\n  round_05/b7  [BATCH_SAFE]  number=14\n  round_05/b8  [BATCH_SAFE]  number=5\n  round_05/b9  [BATCH_SAFE]  number=10\n  round_05/b10  [BATCH_SAFE]  number=20\n  round_05/b11  [BATCH_SAFE]  number=40\n  round_05/b12  [BATCH_SAFE]  number=25\n  round_05/b13  [BATCH_SAFE]  number=35\n  round_05/b14  [BATCH_SAFE]  number=3\n  round_05/b15  [BATCH_SAFE]  number=6\n  round_05/b16  [BATCH_SAFE]  number=39\n  round_05/b17  [BATCH_SAFE]  number=33\n  round_05/b18  [BATCH_SAFE]  number=9\n  round_05/b19  [BATCH_SAFE]  number=21\n  round_05/b20  [BATCH_SAFE]  number=30\n  round_06/b0  [BATCH_SAFE]  number=43\n  round_06/b1  [BATCH_SAFE]  number=41\n  round_06/b2  [BATCH_SAFE]  number=49\n  round_06/b3  [BATCH_SAFE]  number=24\n  round_06/b4  [BATCH_SAFE]  number=36\n  round_06/b5  [BATCH_SAFE]  number=42\n  round_06/b6  [BATCH_SAFE]  number=15\n  round_06/b7  [BATCH_SAFE]  number=45\n  round_07/b0  [BATCH_SAFE]  number=28\n  round_07/b1  [BATCH_SAFE]  number=48\n  round_07/b2  [BATCH_SAFE]  number=18\n  round_07/b3  [BATCH_SAFE]  number=27\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 201\n  frontier_discovery_time_ms: 11672\n  compile_time_ms: 23905\n  java_exec_time_ms: 4952\n  path_log_parse_time_ms: 46\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 8203\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 8218\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/BoundedPrimeClassifier_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/cct_stats.json\n  Counts: nodes=1125, leaves=563, covered=51, infeasible=512, out_of_range=0, expanded=603, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPrimeClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/BoundedPrimeClassifier_M6.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/FSF/BoundedPrimeClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/BoundedPrimeClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedPrimeClassifier\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPrimeClassifier/FSF/BoundedPrimeClassifier_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/refined_tbfv_report.json\n  Summary:     testcases=51, fsf_units=3, passed=35, failed=16, skipped=102, unsupported=0\n  CCT marked:  16\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/cct_tbfv_stats.json\n  Counts:      nodes=1125, leaves=563, fault_leaves=16, failure_cases=16\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/BoundedPrimeClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=248, intervals=263, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPrimeClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier\n  CCT:         csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/BoundedPrimeClassifier_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=51, failed=16, condition_nodes=248, condition_intervals=263\n  Top conditions:\n    #1 score=1.0986 fail=2/2 line=8 divisor <= number\n    #2 score=1.0986 fail=2/2 line=9 number % divisor == 0\n    #3 score=1.0986 fail=2/2 line=8 divisor <= number\n  Top intervals:\n    #1 score=0.9542 fail=2/2 line=[8, 9] root.F.F.T.T.T.T.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.FALSE\n    #2 score=0.9542 fail=2/2 line=[8, 9] root.F.F.T.T.T.F.T.F.T.F.T.F.T.T.T.F.T.F.T.F.T.F.T.FALSE\n    #3 score=0.9542 fail=2/2 line=[8, 9] root.F.F.T.T.T.T.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPrimeClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedPrimeClassifier/BoundedPrimeClassifier_M6.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedPrimeClassifier/BoundedPrimeClassifier_M6.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  248 raw -> 5 aggregated\n  Intervals[cct_only]: 263 raw -> 8 aggregated\n  Intervals[statement_presence]: 263 raw -> 8 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 263 raw -> 8 aggregated\n  Intervals[edge_divergence_sibling_shared]: 263 raw -> 8 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPrimeClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedPrimeClassifier_M6",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_BoundedPrimeClassifier_M6/BoundedPrimeClassifier/fault_localization_eval.json\n  Mutant:    BoundedPrimeClassifier_M6\n  Operator:  SUR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=24, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_shared: best_rank=7, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    }
+  ]
+}

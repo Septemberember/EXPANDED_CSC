@@ -1,0 +1,39 @@
+[fsf_1]
+    T: periods < 0 || periods > 500 || reserve < 0 || reserve > 500 || audit < 0 || audit > 500
+    D: return_value == -1
+
+[fsf_2]
+    T: periods >= 0 && periods <= 200 && reserve >= 0 && reserve <= 200 && audit >= 1 && audit <= 200 && (((periods + 2) / 3) <= 220)
+    D: return_value == ((periods + 2) / 3)
+
+[fsf_3]
+    T: periods >= 0 && periods <= 200 && reserve >= 0 && reserve <= 200 && audit >= 1 && audit <= 200 && (((periods + 2) / 3) > 220)
+    D: return_value == 220
+
+[fsf_4]
+    T: periods >= 0 && periods <= 200 && reserve > 200 && reserve <= 500 && audit >= 1 && audit <= 200 && (7 * ((periods + 2) / 3)) <= 220
+    D: return_value == 7 * ((periods + 2) / 3)
+
+[fsf_5]
+    T: periods >= 0 && periods <= 200 && reserve > 200 && reserve <= 500 && audit >= 1 && audit <= 200 && (7 * ((periods + 2) / 3)) > 220
+    D: return_value == 220
+
+[fsf_6]
+    T: periods > 200 && periods <= 500 && reserve >= 0 && reserve <= 200 && audit >= 1 && audit <= 200 && (3 * ((periods + 2) / 3)) <= 220
+    D: return_value == 3 * ((periods + 2) / 3)
+
+[fsf_7]
+    T: periods > 200 && periods <= 500 && reserve >= 0 && reserve <= 200 && audit >= 1 && audit <= 200 && (3 * ((periods + 2) / 3)) > 220
+    D: return_value == 220
+
+[fsf_8]
+    T: periods >= 0 && periods <= 200 && reserve >= 0 && reserve <= 200 && audit > 200 && audit <= 500 && (4 * ((periods + 2) / 3)) <= 220
+    D: return_value == 4 * ((periods + 2) / 3)
+
+[fsf_9]
+    T: periods >= 0 && periods <= 200 && reserve >= 0 && reserve <= 200 && audit > 200 && audit <= 500 && (4 * ((periods + 2) / 3)) > 220
+    D: return_value == 220
+
+[fsf_10]
+    T: periods >= 0 && periods <= 500 && reserve >= 0 && reserve <= 200 && audit == 0 && ((periods + 2) / 3) > 180
+    D: return_value == 180

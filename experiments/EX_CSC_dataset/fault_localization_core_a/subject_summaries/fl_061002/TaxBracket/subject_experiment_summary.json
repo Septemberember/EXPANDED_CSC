@@ -1,0 +1,754 @@
+{
+  "subject": "TaxBracket",
+  "subject_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket",
+  "fsf": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/FSF/TaxBracket_FSF.txt",
+  "manifest": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+  "mode": "expanded",
+  "strategy": "batch",
+  "max_iter": 100,
+  "dry_run": false,
+  "original": {
+    "role": "original",
+    "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/TaxBracket.java",
+    "class_name": "TaxBracket",
+    "mutant_id": null
+  },
+  "mutants": [
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/TaxBracket_M1.java",
+      "class_name": "TaxBracket",
+      "mutant_id": "TaxBracket_M1"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/TaxBracket_M2.java",
+      "class_name": "TaxBracket",
+      "mutant_id": "TaxBracket_M2"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/TaxBracket_M3.java",
+      "class_name": "TaxBracket",
+      "mutant_id": "TaxBracket_M3"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/TaxBracket_M4.java",
+      "class_name": "TaxBracket",
+      "mutant_id": "TaxBracket_M4"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/TaxBracket_M5.java",
+      "class_name": "TaxBracket",
+      "mutant_id": "TaxBracket_M5"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/TaxBracket_M6.java",
+      "class_name": "TaxBracket",
+      "mutant_id": "TaxBracket_M6"
+    }
+  ],
+  "step_count": 30,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "mutant:TaxBracket:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/TaxBracket_M1.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061002_TaxBracket_M1",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/testcases.json"
+      ],
+      "stdout_tail": "round_07/b14  [BATCH_SAFE]  income=67, deduction=35, resident=True\n  round_07/b15  [BATCH_SAFE]  income=44, deduction=36, resident=True\n  round_07/b16  [BATCH_SAFE]  income=78, deduction=37, resident=True\n  round_07/b17  [BATCH_SAFE]  income=64, deduction=38, resident=True\n  round_07/b18  [BATCH_SAFE]  income=67, deduction=39, resident=True\n  round_07/b19  [BATCH_SAFE]  income=66, deduction=40, resident=True\n  round_07/b20  [BATCH_SAFE]  income=55, deduction=41, resident=True\n  round_07/b21  [BATCH_SAFE]  income=64, deduction=42, resident=True\n  round_07/b22  [BATCH_SAFE]  income=47, deduction=43, resident=True\n  round_07/b23  [BATCH_SAFE]  income=54, deduction=44, resident=True\n  round_07/b24  [BATCH_SAFE]  income=64, deduction=45, resident=True\n  round_07/b25  [BATCH_SAFE]  income=62, deduction=46, resident=True\n  round_07/b26  [BATCH_SAFE]  income=67, deduction=47, resident=True\n  round_07/b27  [BATCH_SAFE]  income=64, deduction=48, resident=True\n  round_07/b28  [BATCH_SAFE]  income=53, deduction=49, resident=True\n  round_07/b29  [BATCH_SAFE]  income=50, deduction=50, resident=True\n  round_07/b30  [BATCH_SAFE]  income=52, deduction=51, resident=True\n  round_07/b31  [BATCH_SAFE]  income=70, deduction=52, resident=True\n  round_07/b32  [BATCH_SAFE]  income=64, deduction=53, resident=True\n  round_07/b33  [BATCH_SAFE]  income=64, deduction=54, resident=True\n  round_07/b34  [BATCH_SAFE]  income=64, deduction=55, resident=True\n  round_07/b35  [BATCH_SAFE]  income=64, deduction=56, resident=True\n  round_07/b36  [BATCH_SAFE]  income=64, deduction=57, resident=True\n  round_07/b37  [BATCH_SAFE]  income=58, deduction=58, resident=True\n  round_07/b38  [BATCH_SAFE]  income=59, deduction=59, resident=True\n  round_07/b39  [BATCH_SAFE]  income=62, deduction=60, resident=True\n  round_07/b40  [BATCH_SAFE]  income=70, deduction=61, resident=True\n  round_07/b41  [BATCH_SAFE]  income=64, deduction=62, resident=True\n  round_07/b42  [BATCH_SAFE]  income=63, deduction=63, resident=True\n  round_07/b43  [BATCH_SAFE]  income=74, deduction=64, resident=True\n  round_07/b44  [BATCH_SAFE]  income=79, deduction=65, resident=True\n  round_07/b45  [BATCH_SAFE]  income=78, deduction=66, resident=True\n  round_07/b46  [BATCH_SAFE]  income=79, deduction=67, resident=True\n  round_07/b47  [BATCH_SAFE]  income=78, deduction=68, resident=True\n  round_07/b48  [BATCH_SAFE]  income=72, deduction=69, resident=True\n  round_07/b49  [BATCH_SAFE]  income=72, deduction=70, resident=True\n  round_07/b50  [BATCH_SAFE]  income=79, deduction=71, resident=True\n  round_07/b51  [BATCH_SAFE]  income=78, deduction=72, resident=True\n  round_07/b52  [BATCH_SAFE]  income=79, deduction=73, resident=True\n  round_07/b53  [BATCH_SAFE]  income=78, deduction=74, resident=True\n  round_07/b54  [BATCH_SAFE]  income=76, deduction=75, resident=True\n  round_07/b55  [BATCH_SAFE]  income=78, deduction=76, resident=True\n  round_07/b56  [BATCH_SAFE]  income=79, deduction=77, resident=True\n  round_07/b57  [BATCH_SAFE]  income=78, deduction=78, resident=True\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 7024\n  frontier_discovery_time_ms: 21607\n  compile_time_ms: 206220\n  java_exec_time_ms: 39185\n  path_log_parse_time_ms: 3952\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 63791\n  merge_verify_wall_time_ms: 9\n  batch_total_wall_time_ms: 63815\n\nTest cases written to: csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/TaxBracket_cct.dot\n  Stats: csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/cct_stats.json\n  Counts: nodes=651, leaves=326, covered=324, infeasible=2, out_of_range=0, expanded=624, truncated=0\n  Render script: csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/render_cct.sh\n  (render later with: csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:TaxBracket:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_TaxBracket_M1/TaxBracket",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/TaxBracket_M1.java",
+        "--output",
+        "csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/FSF/TaxBracket_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/TaxBracket_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       TaxBracket\n  CSC result:  csc_tmp/fl_061002_TaxBracket_M1/TaxBracket\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/FSF/TaxBracket_FSF.txt\n  Report:      csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/refined_tbfv_report.json\n  Summary:     testcases=324, fsf_units=5, passed=324, failed=2, skipped=1294, unsupported=0\n  CCT marked:  2\n  TBFV stats:  csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/cct_tbfv_stats.json\n  Counts:      nodes=651, leaves=326, fault_leaves=1, failure_cases=1\n  Fault DOT:    csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/TaxBracket_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=2, intervals=2, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TaxBracket:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_TaxBracket_M1/TaxBracket",
+        "--output",
+        "csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061002_TaxBracket_M1/TaxBracket\n  CCT:         csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/TaxBracket_cct.pkl\n  Report:      csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=324, failed=1, condition_nodes=2, condition_intervals=2\n  Top conditions:\n    #1 score=0.0021 fail=1/323 line=3 income >= 80\n    #2 score=0.0021 fail=1/324 line=3 income < 0\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[3, None] root.F.TRUE\n    #2 score=0.0000 fail=1/323 line=[3, 3] root.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TaxBracket:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "TaxBracket/TaxBracket_M1.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/cct_failure_localization_aggregated.json\n  Source file: TaxBracket/TaxBracket_M1.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  2 raw -> 2 aggregated\n  Intervals[cct_only]: 2 raw -> 2 aggregated\n  Intervals[statement_presence]: 2 raw -> 2 aggregated\n  Intervals[edge_divergence_gated]: 2 raw -> 2 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TaxBracket:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "TaxBracket_M1",
+        "--report",
+        "csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061002_TaxBracket_M1/TaxBracket/fault_localization_eval.json\n  Mutant:    TaxBracket_M1\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:TaxBracket:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/TaxBracket_M2.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061002_TaxBracket_M2",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/testcases.json"
+      ],
+      "stdout_tail": "rue\n  round_07/b47  [BATCH_SAFE]  income=64, deduction=49, resident=True\n  round_07/b48  [BATCH_SAFE]  income=62, deduction=50, resident=True\n  round_07/b49  [BATCH_SAFE]  income=63, deduction=51, resident=True\n  round_07/b50  [BATCH_SAFE]  income=64, deduction=52, resident=True\n  round_07/b51  [BATCH_SAFE]  income=55, deduction=53, resident=True\n  round_07/b52  [BATCH_SAFE]  income=62, deduction=54, resident=True\n  round_07/b53  [BATCH_SAFE]  income=56, deduction=55, resident=True\n  round_07/b54  [BATCH_SAFE]  income=58, deduction=56, resident=True\n  round_07/b55  [BATCH_SAFE]  income=60, deduction=57, resident=True\n  round_07/b56  [BATCH_SAFE]  income=64, deduction=58, resident=True\n  round_07/b57  [BATCH_SAFE]  income=60, deduction=59, resident=True\n  round_07/b58  [BATCH_SAFE]  income=60, deduction=60, resident=True\n  round_07/b59  [BATCH_SAFE]  income=61, deduction=61, resident=True\n  round_07/b60  [BATCH_SAFE]  income=64, deduction=62, resident=True\n  round_07/b61  [BATCH_SAFE]  income=63, deduction=63, resident=True\n  round_07/b62  [BATCH_SAFE]  income=80, deduction=64, resident=True\n  round_07/b63  [BATCH_SAFE]  income=80, deduction=65, resident=True\n  round_07/b64  [BATCH_SAFE]  income=80, deduction=66, resident=True\n  round_07/b65  [BATCH_SAFE]  income=71, deduction=67, resident=True\n  round_07/b66  [BATCH_SAFE]  income=74, deduction=68, resident=True\n  round_07/b67  [BATCH_SAFE]  income=80, deduction=69, resident=True\n  round_07/b68  [BATCH_SAFE]  income=80, deduction=70, resident=True\n  round_07/b69  [BATCH_SAFE]  income=80, deduction=71, resident=True\n  round_07/b70  [BATCH_SAFE]  income=78, deduction=72, resident=True\n  round_07/b71  [BATCH_SAFE]  income=80, deduction=73, resident=True\n  round_07/b72  [BATCH_SAFE]  income=74, deduction=74, resident=True\n  round_07/b73  [BATCH_SAFE]  income=79, deduction=75, resident=True\n  round_07/b74  [BATCH_SAFE]  income=78, deduction=76, resident=True\n  round_07/b75  [BATCH_SAFE]  income=78, deduction=77, resident=True\n  round_07/b76  [BATCH_SAFE]  income=80, deduction=78, resident=True\n  round_07/b77  [BATCH_SAFE]  income=80, deduction=80, resident=True\n  round_08/b0  [BATCH_SAFE]  income=73, deduction=74, resident=False\n  round_08/b1  [BATCH_SAFE]  income=74, deduction=79, resident=False\n  round_08/b2  [BATCH_SAFE]  income=75, deduction=76, resident=False\n  round_08/b3  [BATCH_SAFE]  income=76, deduction=77, resident=False\n  round_08/b4  [BATCH_SAFE]  income=77, deduction=78, resident=False\n  round_08/b5  [BATCH_SAFE]  income=78, deduction=80, resident=False\n  round_08/b6  [BATCH_SAFE]  income=79, deduction=80, resident=True\n  round_09/b0  [BATCH_SAFE]  income=73, deduction=74, resident=True\n  round_09/b1  [BATCH_SAFE]  income=74, deduction=80, resident=True\n  round_09/b2  [BATCH_SAFE]  income=75, deduction=76, resident=True\n  round_09/b3  [BATCH_SAFE]  income=76, deduction=78, resident=True\n  round_09/b4  [BATCH_SAFE]  income=77, deduction=80, resident=True\n  round_09/b5  [BATCH_SAFE]  income=78, deduction=80, resident=True\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 7361\n  frontier_discovery_time_ms: 22128\n  compile_time_ms: 207649\n  java_exec_time_ms: 38579\n  path_log_parse_time_ms: 4265\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 64748\n  merge_verify_wall_time_ms: 10\n  batch_total_wall_time_ms: 64778\n\nTest cases written to: csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/TaxBracket_cct.dot\n  Stats: csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/cct_stats.json\n  Counts: nodes=653, leaves=327, covered=324, infeasible=3, out_of_range=0, expanded=628, truncated=0\n  Render script: csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/render_cct.sh\n  (render later with: csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:TaxBracket:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_TaxBracket_M2/TaxBracket",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/TaxBracket_M2.java",
+        "--output",
+        "csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/FSF/TaxBracket_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/TaxBracket_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       TaxBracket\n  CSC result:  csc_tmp/fl_061002_TaxBracket_M2/TaxBracket\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/FSF/TaxBracket_FSF.txt\n  Report:      csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/refined_tbfv_report.json\n  Summary:     testcases=324, fsf_units=5, passed=324, failed=2, skipped=1294, unsupported=0\n  CCT marked:  2\n  TBFV stats:  csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/cct_tbfv_stats.json\n  Counts:      nodes=653, leaves=327, fault_leaves=1, failure_cases=1\n  Fault DOT:    csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/TaxBracket_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=3, intervals=3, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TaxBracket:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_TaxBracket_M2/TaxBracket",
+        "--output",
+        "csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061002_TaxBracket_M2/TaxBracket\n  CCT:         csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/TaxBracket_cct.pkl\n  Report:      csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=324, failed=1, condition_nodes=3, condition_intervals=3\n  Top conditions:\n    #1 score=0.0022 fail=1/322 line=6 deduction <= 0\n    #2 score=0.0021 fail=1/323 line=3 income > 80\n    #3 score=0.0021 fail=1/324 line=3 income < 0\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[6, None] root.F.F.TRUE\n    #2 score=0.0000 fail=1/322 line=[3, 6] root.F.FALSE\n    #3 score=0.0000 fail=1/323 line=[3, 3] root.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TaxBracket:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "TaxBracket/TaxBracket_M2.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/cct_failure_localization_aggregated.json\n  Source file: TaxBracket/TaxBracket_M2.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  3 raw -> 3 aggregated\n  Intervals[cct_only]: 3 raw -> 3 aggregated\n  Intervals[statement_presence]: 3 raw -> 3 aggregated\n  Intervals[edge_divergence_gated]: 3 raw -> 3 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TaxBracket:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "TaxBracket_M2",
+        "--report",
+        "csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061002_TaxBracket_M2/TaxBracket/fault_localization_eval.json\n  Mutant:    TaxBracket_M2\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:TaxBracket:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/TaxBracket_M3.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061002_TaxBracket_M3",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/testcases.json"
+      ],
+      "stdout_tail": "rue\n  round_06/b40  [BATCH_SAFE]  income=57, deduction=64, resident=True\n  round_06/b41  [BATCH_SAFE]  income=58, deduction=60, resident=True\n  round_06/b42  [BATCH_SAFE]  income=59, deduction=63, resident=True\n  round_06/b43  [BATCH_SAFE]  income=60, deduction=60, resident=True\n  round_06/b44  [BATCH_SAFE]  income=61, deduction=64, resident=True\n  round_06/b45  [BATCH_SAFE]  income=62, deduction=62, resident=True\n  round_06/b46  [BATCH_SAFE]  income=63, deduction=63, resident=True\n  round_06/b47  [BATCH_SAFE]  income=64, deduction=80, resident=True\n  round_06/b48  [BATCH_SAFE]  income=65, deduction=80, resident=True\n  round_06/b49  [BATCH_SAFE]  income=66, deduction=80, resident=True\n  round_06/b50  [BATCH_SAFE]  income=67, deduction=71, resident=True\n  round_06/b51  [BATCH_SAFE]  income=68, deduction=80, resident=True\n  round_06/b52  [BATCH_SAFE]  income=69, deduction=80, resident=True\n  round_06/b53  [BATCH_SAFE]  income=70, deduction=80, resident=True\n  round_06/b54  [BATCH_SAFE]  income=71, deduction=75, resident=True\n  round_06/b55  [BATCH_SAFE]  income=72, deduction=78, resident=True\n  round_06/b56  [BATCH_SAFE]  income=73, deduction=79, resident=True\n  round_06/b57  [BATCH_SAFE]  income=74, deduction=80, resident=True\n  round_06/b58  [BATCH_SAFE]  income=75, deduction=79, resident=True\n  round_06/b59  [BATCH_SAFE]  income=76, deduction=80, resident=True\n  round_06/b60  [BATCH_SAFE]  income=77, deduction=79, resident=True\n  round_06/b61  [BATCH_SAFE]  income=78, deduction=78, resident=True\n  round_06/b62  [BATCH_SAFE]  income=79, deduction=79, resident=True\n  round_06/b63  [BATCH_SAFE]  income=66, deduction=65, resident=True\n  round_06/b64  [BATCH_SAFE]  income=71, deduction=66, resident=True\n  round_06/b65  [BATCH_SAFE]  income=71, deduction=67, resident=True\n  round_06/b66  [BATCH_SAFE]  income=70, deduction=68, resident=True\n  round_06/b67  [BATCH_SAFE]  income=75, deduction=69, resident=True\n  round_06/b68  [BATCH_SAFE]  income=80, deduction=70, resident=True\n  round_06/b69  [BATCH_SAFE]  income=73, deduction=72, resident=True\n  round_06/b70  [BATCH_SAFE]  income=74, deduction=73, resident=False\n  round_07/b0  [BATCH_SAFE]  income=76, deduction=73, resident=True\n  round_07/b1  [BATCH_SAFE]  income=76, deduction=75, resident=False\n  round_08/b0  [BATCH_SAFE]  income=80, deduction=74, resident=False\n  round_08/b1  [BATCH_SAFE]  income=80, deduction=75, resident=True\n  round_08/b2  [BATCH_SAFE]  income=80, deduction=79, resident=False\n  round_09/b0  [BATCH_SAFE]  income=75, deduction=74, resident=True\n  round_09/b1  [BATCH_SAFE]  income=78, deduction=76, resident=False\n  round_09/b2  [BATCH_SAFE]  income=80, deduction=77, resident=False\n  round_09/b3  [BATCH_SAFE]  income=80, deduction=78, resident=False\n  round_09/b4  [BATCH_SAFE]  income=80, deduction=79, resident=True\n  round_10/b0  [BATCH_SAFE]  income=80, deduction=76, resident=True\n  round_10/b1  [BATCH_SAFE]  income=80, deduction=77, resident=True\n  round_10/b2  [BATCH_SAFE]  income=79, deduction=78, resident=True\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 6723\n  frontier_discovery_time_ms: 20864\n  compile_time_ms: 200933\n  java_exec_time_ms: 37572\n  path_log_parse_time_ms: 3746\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 62640\n  merge_verify_wall_time_ms: 9\n  batch_total_wall_time_ms: 62676\n\nTest cases written to: csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/TaxBracket_cct.dot\n  Stats: csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/cct_stats.json\n  Counts: nodes=655, leaves=328, covered=326, infeasible=2, out_of_range=0, expanded=628, truncated=0\n  Render script: csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/render_cct.sh\n  (render later with: csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:TaxBracket:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_TaxBracket_M3/TaxBracket",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/TaxBracket_M3.java",
+        "--output",
+        "csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/FSF/TaxBracket_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/TaxBracket_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       TaxBracket\n  CSC result:  csc_tmp/fl_061002_TaxBracket_M3/TaxBracket\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/FSF/TaxBracket_FSF.txt\n  Report:      csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/refined_tbfv_report.json\n  Summary:     testcases=326, fsf_units=5, passed=486, failed=0, skipped=1144, unsupported=0\n  CCT marked:  0\n  TBFV stats:  csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/cct_tbfv_stats.json\n  Counts:      nodes=655, leaves=328, fault_leaves=0, failure_cases=0\n  Fault DOT:    csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/TaxBracket_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=0, intervals=0, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TaxBracket:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_TaxBracket_M3/TaxBracket",
+        "--output",
+        "csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061002_TaxBracket_M3/TaxBracket\n  CCT:         csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/TaxBracket_cct.pkl\n  Report:      csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=326, failed=0, condition_nodes=0, condition_intervals=0\n  Top conditions: <none>\n  Top intervals: <none>\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TaxBracket:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "TaxBracket/TaxBracket_M3.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/cct_failure_localization_aggregated.json\n  Source file: TaxBracket/TaxBracket_M3.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  0 raw -> 0 aggregated\n  Intervals[cct_only]: 0 raw -> 0 aggregated\n  Intervals[statement_presence]: 0 raw -> 0 aggregated\n  Intervals[edge_divergence_gated]: 0 raw -> 0 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TaxBracket:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "TaxBracket_M3",
+        "--report",
+        "csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061002_TaxBracket_M3/TaxBracket/fault_localization_eval.json\n  Mutant:    TaxBracket_M3\n  Operator:  ROR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:TaxBracket:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/TaxBracket_M4.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061002_TaxBracket_M4",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/testcases.json"
+      ],
+      "stdout_tail": "  [BATCH_SAFE]  income=78, deduction=64, resident=True\n  round_05/b127  [BATCH_SAFE]  income=80, deduction=65, resident=True\n  round_05/b128  [BATCH_SAFE]  income=80, deduction=66, resident=True\n  round_05/b129  [BATCH_SAFE]  income=71, deduction=67, resident=True\n  round_05/b130  [BATCH_SAFE]  income=80, deduction=68, resident=True\n  round_05/b131  [BATCH_SAFE]  income=80, deduction=69, resident=True\n  round_05/b132  [BATCH_SAFE]  income=78, deduction=70, resident=True\n  round_05/b133  [BATCH_SAFE]  income=80, deduction=71, resident=True\n  round_05/b134  [BATCH_SAFE]  income=80, deduction=73, resident=False\n  round_05/b135  [BATCH_SAFE]  income=80, deduction=74, resident=False\n  round_05/b136  [BATCH_SAFE]  income=80, deduction=75, resident=False\n  round_05/b137  [BATCH_SAFE]  income=80, deduction=76, resident=False\n  round_05/b138  [BATCH_SAFE]  income=79, deduction=77, resident=False\n  round_05/b139  [BATCH_SAFE]  income=80, deduction=78, resident=False\n  round_05/b140  [BATCH_SAFE]  income=79, deduction=79, resident=False\n  round_05/b141  [BATCH_SAFE]  income=80, deduction=80, resident=True\n  round_06/b0  [BATCH_SAFE]  income=65, deduction=66, resident=True\n  round_06/b1  [BATCH_SAFE]  income=66, deduction=71, resident=True\n  round_06/b2  [BATCH_SAFE]  income=67, deduction=80, resident=True\n  round_06/b3  [BATCH_SAFE]  income=68, deduction=80, resident=True\n  round_06/b4  [BATCH_SAFE]  income=69, deduction=75, resident=True\n  round_06/b5  [BATCH_SAFE]  income=70, deduction=75, resident=True\n  round_06/b6  [BATCH_SAFE]  income=72, deduction=80, resident=False\n  round_06/b7  [BATCH_SAFE]  income=73, deduction=74, resident=False\n  round_06/b8  [BATCH_SAFE]  income=74, deduction=75, resident=False\n  round_06/b9  [BATCH_SAFE]  income=75, deduction=76, resident=False\n  round_06/b10  [BATCH_SAFE]  income=76, deduction=80, resident=False\n  round_06/b11  [BATCH_SAFE]  income=77, deduction=79, resident=False\n  round_06/b12  [BATCH_SAFE]  income=78, deduction=80, resident=False\n  round_06/b13  [BATCH_SAFE]  income=79, deduction=80, resident=True\n  round_06/b14  [BATCH_SAFE]  income=80, deduction=73, resident=True\n  round_06/b15  [BATCH_SAFE]  income=80, deduction=74, resident=True\n  round_06/b16  [BATCH_SAFE]  income=79, deduction=75, resident=True\n  round_06/b17  [BATCH_SAFE]  income=80, deduction=76, resident=True\n  round_06/b18  [BATCH_SAFE]  income=77, deduction=77, resident=True\n  round_06/b19  [BATCH_SAFE]  income=80, deduction=78, resident=True\n  round_06/b20  [BATCH_SAFE]  income=80, deduction=79, resident=True\n  round_07/b0  [BATCH_SAFE]  income=72, deduction=73, resident=True\n  round_07/b1  [BATCH_SAFE]  income=73, deduction=76, resident=True\n  round_07/b2  [BATCH_SAFE]  income=74, deduction=80, resident=True\n  round_07/b3  [BATCH_SAFE]  income=75, deduction=80, resident=True\n  round_07/b4  [BATCH_SAFE]  income=76, deduction=80, resident=True\n  round_07/b5  [BATCH_SAFE]  income=77, deduction=78, resident=True\n  round_07/b6  [BATCH_SAFE]  income=78, deduction=80, resident=True\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 6792\n  frontier_discovery_time_ms: 20964\n  compile_time_ms: 206587\n  java_exec_time_ms: 40419\n  path_log_parse_time_ms: 4171\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 64364\n  merge_verify_wall_time_ms: 9\n  batch_total_wall_time_ms: 64391\n\nTest cases written to: csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/TaxBracket_cct.dot\n  Stats: csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/cct_stats.json\n  Counts: nodes=655, leaves=328, covered=326, infeasible=2, out_of_range=0, expanded=628, truncated=0\n  Render script: csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/render_cct.sh\n  (render later with: csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:TaxBracket:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_TaxBracket_M4/TaxBracket",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/TaxBracket_M4.java",
+        "--output",
+        "csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/FSF/TaxBracket_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/TaxBracket_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       TaxBracket\n  CSC result:  csc_tmp/fl_061002_TaxBracket_M4/TaxBracket\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/FSF/TaxBracket_FSF.txt\n  Report:      csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/refined_tbfv_report.json\n  Summary:     testcases=326, fsf_units=5, passed=166, failed=160, skipped=1304, unsupported=0\n  CCT marked:  160\n  TBFV stats:  csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/cct_tbfv_stats.json\n  Counts:      nodes=655, leaves=328, fault_leaves=160, failure_cases=160\n  Fault DOT:    csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/TaxBracket_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=166, intervals=325, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TaxBracket:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_TaxBracket_M4/TaxBracket",
+        "--output",
+        "csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061002_TaxBracket_M4/TaxBracket\n  CCT:         csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/TaxBracket_cct.pkl\n  Report:      csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=326, failed=160, condition_nodes=166, condition_intervals=325\n  Top conditions:\n    #1 score=5.0814 fail=160/160 line=14 n > 0\n    #2 score=5.0689 fail=158/158 line=14 n > 0\n    #3 score=5.0562 fail=156/156 line=14 n > 0\n  Top intervals:\n    #1 score=4.4137 fail=160/160 line=[14, 14] root.F.F.F.F.T.TRUE\n    #2 score=4.3323 fail=160/162 line=[12, 14] root.F.F.F.F.TRUE\n    #3 score=2.2014 fail=158/158 line=[14, 14] root.F.F.F.F.T.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TaxBracket:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "TaxBracket/TaxBracket_M4.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/cct_failure_localization_aggregated.json\n  Source file: TaxBracket/TaxBracket_M4.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  166 raw -> 7 aggregated\n  Intervals[cct_only]: 325 raw -> 9 aggregated\n  Intervals[statement_presence]: 325 raw -> 9 aggregated\n  Intervals[edge_divergence_gated]: 325 raw -> 9 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TaxBracket:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "TaxBracket_M4",
+        "--report",
+        "csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061002_TaxBracket_M4/TaxBracket/fault_localization_eval.json\n  Mutant:    TaxBracket_M4\n  Operator:  AOR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=83, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_gated: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=7, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_gated: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:TaxBracket:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/TaxBracket_M5.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061002_TaxBracket_M5",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/testcases.json"
+      ],
+      "stdout_tail": "  [BATCH_SAFE]  income=78, deduction=64, resident=True\n  round_05/b127  [BATCH_SAFE]  income=80, deduction=65, resident=True\n  round_05/b128  [BATCH_SAFE]  income=80, deduction=66, resident=True\n  round_05/b129  [BATCH_SAFE]  income=71, deduction=67, resident=True\n  round_05/b130  [BATCH_SAFE]  income=80, deduction=68, resident=True\n  round_05/b131  [BATCH_SAFE]  income=80, deduction=69, resident=True\n  round_05/b132  [BATCH_SAFE]  income=78, deduction=70, resident=True\n  round_05/b133  [BATCH_SAFE]  income=80, deduction=71, resident=True\n  round_05/b134  [BATCH_SAFE]  income=80, deduction=73, resident=False\n  round_05/b135  [BATCH_SAFE]  income=80, deduction=74, resident=False\n  round_05/b136  [BATCH_SAFE]  income=80, deduction=75, resident=False\n  round_05/b137  [BATCH_SAFE]  income=80, deduction=76, resident=False\n  round_05/b138  [BATCH_SAFE]  income=79, deduction=77, resident=False\n  round_05/b139  [BATCH_SAFE]  income=80, deduction=78, resident=False\n  round_05/b140  [BATCH_SAFE]  income=79, deduction=79, resident=False\n  round_05/b141  [BATCH_SAFE]  income=80, deduction=80, resident=True\n  round_06/b0  [BATCH_SAFE]  income=65, deduction=66, resident=True\n  round_06/b1  [BATCH_SAFE]  income=66, deduction=71, resident=True\n  round_06/b2  [BATCH_SAFE]  income=67, deduction=80, resident=True\n  round_06/b3  [BATCH_SAFE]  income=68, deduction=80, resident=True\n  round_06/b4  [BATCH_SAFE]  income=69, deduction=75, resident=True\n  round_06/b5  [BATCH_SAFE]  income=70, deduction=75, resident=True\n  round_06/b6  [BATCH_SAFE]  income=72, deduction=80, resident=False\n  round_06/b7  [BATCH_SAFE]  income=73, deduction=74, resident=False\n  round_06/b8  [BATCH_SAFE]  income=74, deduction=75, resident=False\n  round_06/b9  [BATCH_SAFE]  income=75, deduction=76, resident=False\n  round_06/b10  [BATCH_SAFE]  income=76, deduction=80, resident=False\n  round_06/b11  [BATCH_SAFE]  income=77, deduction=79, resident=False\n  round_06/b12  [BATCH_SAFE]  income=78, deduction=80, resident=False\n  round_06/b13  [BATCH_SAFE]  income=79, deduction=80, resident=True\n  round_06/b14  [BATCH_SAFE]  income=80, deduction=73, resident=True\n  round_06/b15  [BATCH_SAFE]  income=80, deduction=74, resident=True\n  round_06/b16  [BATCH_SAFE]  income=79, deduction=75, resident=True\n  round_06/b17  [BATCH_SAFE]  income=80, deduction=76, resident=True\n  round_06/b18  [BATCH_SAFE]  income=77, deduction=77, resident=True\n  round_06/b19  [BATCH_SAFE]  income=80, deduction=78, resident=True\n  round_06/b20  [BATCH_SAFE]  income=80, deduction=79, resident=True\n  round_07/b0  [BATCH_SAFE]  income=72, deduction=73, resident=True\n  round_07/b1  [BATCH_SAFE]  income=73, deduction=76, resident=True\n  round_07/b2  [BATCH_SAFE]  income=74, deduction=80, resident=True\n  round_07/b3  [BATCH_SAFE]  income=75, deduction=80, resident=True\n  round_07/b4  [BATCH_SAFE]  income=76, deduction=80, resident=True\n  round_07/b5  [BATCH_SAFE]  income=77, deduction=78, resident=True\n  round_07/b6  [BATCH_SAFE]  income=78, deduction=80, resident=True\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 6857\n  frontier_discovery_time_ms: 21490\n  compile_time_ms: 195500\n  java_exec_time_ms: 36160\n  path_log_parse_time_ms: 3797\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 60432\n  merge_verify_wall_time_ms: 9\n  batch_total_wall_time_ms: 60460\n\nTest cases written to: csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/TaxBracket_cct.dot\n  Stats: csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/cct_stats.json\n  Counts: nodes=655, leaves=328, covered=326, infeasible=2, out_of_range=0, expanded=628, truncated=0\n  Render script: csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/render_cct.sh\n  (render later with: csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:TaxBracket:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_TaxBracket_M5/TaxBracket",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/TaxBracket_M5.java",
+        "--output",
+        "csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/FSF/TaxBracket_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/TaxBracket_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       TaxBracket\n  CSC result:  csc_tmp/fl_061002_TaxBracket_M5/TaxBracket\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/FSF/TaxBracket_FSF.txt\n  Report:      csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/refined_tbfv_report.json\n  Summary:     testcases=326, fsf_units=5, passed=165, failed=161, skipped=1304, unsupported=0\n  CCT marked:  161\n  TBFV stats:  csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/cct_tbfv_stats.json\n  Counts:      nodes=655, leaves=328, fault_leaves=161, failure_cases=161\n  Fault DOT:    csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/TaxBracket_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=327, intervals=487, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TaxBracket:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_TaxBracket_M5/TaxBracket",
+        "--output",
+        "csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061002_TaxBracket_M5/TaxBracket\n  CCT:         csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/TaxBracket_cct.pkl\n  Report:      csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=326, failed=161, condition_nodes=327, condition_intervals=487\n  Top conditions:\n    #1 score=2.5438 fail=161/322 line=12 income >= deduction\n    #2 score=2.5359 fail=161/323 line=6 deduction > 80\n    #3 score=2.5281 fail=161/324 line=6 deduction < 0\n  Top intervals:\n    #1 score=1.6571 fail=161/322 line=[6, 12] root.F.F.F.FALSE\n    #2 score=0.9569 fail=81/162 line=[12, 14] root.F.F.F.F.TRUE\n    #3 score=0.9542 fail=80/160 line=[14, 14] root.F.F.F.F.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TaxBracket:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "TaxBracket/TaxBracket_M5.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/cct_failure_localization_aggregated.json\n  Source file: TaxBracket/TaxBracket_M5.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  327 raw -> 8 aggregated\n  Intervals[cct_only]: 487 raw -> 11 aggregated\n  Intervals[statement_presence]: 487 raw -> 11 aggregated\n  Intervals[edge_divergence_gated]: 487 raw -> 11 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TaxBracket:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "TaxBracket_M5",
+        "--report",
+        "csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061002_TaxBracket_M5/TaxBracket/fault_localization_eval.json\n  Mutant:    TaxBracket_M5\n  Operator:  AOR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=135, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=141, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.statement_presence: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.edge_divergence_gated: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:TaxBracket:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/TaxBracket_M6.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061002_TaxBracket_M6",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/testcases.json"
+      ],
+      "stdout_tail": "  [BATCH_SAFE]  income=78, deduction=64, resident=True\n  round_05/b127  [BATCH_SAFE]  income=80, deduction=65, resident=True\n  round_05/b128  [BATCH_SAFE]  income=80, deduction=66, resident=True\n  round_05/b129  [BATCH_SAFE]  income=71, deduction=67, resident=True\n  round_05/b130  [BATCH_SAFE]  income=80, deduction=68, resident=True\n  round_05/b131  [BATCH_SAFE]  income=80, deduction=69, resident=True\n  round_05/b132  [BATCH_SAFE]  income=78, deduction=70, resident=True\n  round_05/b133  [BATCH_SAFE]  income=80, deduction=71, resident=True\n  round_05/b134  [BATCH_SAFE]  income=80, deduction=73, resident=False\n  round_05/b135  [BATCH_SAFE]  income=80, deduction=74, resident=False\n  round_05/b136  [BATCH_SAFE]  income=80, deduction=75, resident=False\n  round_05/b137  [BATCH_SAFE]  income=80, deduction=76, resident=False\n  round_05/b138  [BATCH_SAFE]  income=79, deduction=77, resident=False\n  round_05/b139  [BATCH_SAFE]  income=80, deduction=78, resident=False\n  round_05/b140  [BATCH_SAFE]  income=79, deduction=79, resident=False\n  round_05/b141  [BATCH_SAFE]  income=80, deduction=80, resident=True\n  round_06/b0  [BATCH_SAFE]  income=65, deduction=66, resident=True\n  round_06/b1  [BATCH_SAFE]  income=66, deduction=71, resident=True\n  round_06/b2  [BATCH_SAFE]  income=67, deduction=80, resident=True\n  round_06/b3  [BATCH_SAFE]  income=68, deduction=80, resident=True\n  round_06/b4  [BATCH_SAFE]  income=69, deduction=75, resident=True\n  round_06/b5  [BATCH_SAFE]  income=70, deduction=75, resident=True\n  round_06/b6  [BATCH_SAFE]  income=72, deduction=80, resident=False\n  round_06/b7  [BATCH_SAFE]  income=73, deduction=74, resident=False\n  round_06/b8  [BATCH_SAFE]  income=74, deduction=75, resident=False\n  round_06/b9  [BATCH_SAFE]  income=75, deduction=76, resident=False\n  round_06/b10  [BATCH_SAFE]  income=76, deduction=80, resident=False\n  round_06/b11  [BATCH_SAFE]  income=77, deduction=79, resident=False\n  round_06/b12  [BATCH_SAFE]  income=78, deduction=80, resident=False\n  round_06/b13  [BATCH_SAFE]  income=79, deduction=80, resident=True\n  round_06/b14  [BATCH_SAFE]  income=80, deduction=73, resident=True\n  round_06/b15  [BATCH_SAFE]  income=80, deduction=74, resident=True\n  round_06/b16  [BATCH_SAFE]  income=79, deduction=75, resident=True\n  round_06/b17  [BATCH_SAFE]  income=80, deduction=76, resident=True\n  round_06/b18  [BATCH_SAFE]  income=77, deduction=77, resident=True\n  round_06/b19  [BATCH_SAFE]  income=80, deduction=78, resident=True\n  round_06/b20  [BATCH_SAFE]  income=80, deduction=79, resident=True\n  round_07/b0  [BATCH_SAFE]  income=72, deduction=73, resident=True\n  round_07/b1  [BATCH_SAFE]  income=73, deduction=76, resident=True\n  round_07/b2  [BATCH_SAFE]  income=74, deduction=80, resident=True\n  round_07/b3  [BATCH_SAFE]  income=75, deduction=80, resident=True\n  round_07/b4  [BATCH_SAFE]  income=76, deduction=80, resident=True\n  round_07/b5  [BATCH_SAFE]  income=77, deduction=78, resident=True\n  round_07/b6  [BATCH_SAFE]  income=78, deduction=80, resident=True\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 6358\n  frontier_discovery_time_ms: 19523\n  compile_time_ms: 185804\n  java_exec_time_ms: 35871\n  path_log_parse_time_ms: 4027\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 57975\n  merge_verify_wall_time_ms: 8\n  batch_total_wall_time_ms: 58000\n\nTest cases written to: csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/TaxBracket_cct.dot\n  Stats: csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/cct_stats.json\n  Counts: nodes=655, leaves=328, covered=326, infeasible=2, out_of_range=0, expanded=628, truncated=0\n  Render script: csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/render_cct.sh\n  (render later with: csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:TaxBracket:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_TaxBracket_M6/TaxBracket",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/TaxBracket_M6.java",
+        "--output",
+        "csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/FSF/TaxBracket_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/TaxBracket_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       TaxBracket\n  CSC result:  csc_tmp/fl_061002_TaxBracket_M6/TaxBracket\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/TaxBracket/FSF/TaxBracket_FSF.txt\n  Report:      csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/refined_tbfv_report.json\n  Summary:     testcases=326, fsf_units=5, passed=167, failed=159, skipped=1304, unsupported=0\n  CCT marked:  159\n  TBFV stats:  csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/cct_tbfv_stats.json\n  Counts:      nodes=655, leaves=328, fault_leaves=159, failure_cases=159\n  Fault DOT:    csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/TaxBracket_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=325, intervals=483, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TaxBracket:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_TaxBracket_M6/TaxBracket",
+        "--output",
+        "csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061002_TaxBracket_M6/TaxBracket\n  CCT:         csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/TaxBracket_cct.pkl\n  Report:      csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=326, failed=159, condition_nodes=325, condition_intervals=483\n  Top conditions:\n    #1 score=2.5061 fail=159/322 line=12 income >= deduction\n    #2 score=2.4983 fail=159/323 line=6 deduction > 80\n    #3 score=2.4906 fail=159/324 line=6 deduction < 0\n  Top intervals:\n    #1 score=1.6258 fail=159/322 line=[6, 12] root.F.F.F.FALSE\n    #2 score=1.4314 fail=80/160 line=[14, 14] root.F.F.F.F.T.TRUE\n    #3 score=1.4273 fail=79/158 line=[21, 21] root.F.F.F.F.F.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TaxBracket:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "TaxBracket/TaxBracket_M6.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/cct_failure_localization_aggregated.json\n  Source file: TaxBracket/TaxBracket_M6.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  325 raw -> 8 aggregated\n  Intervals[cct_only]: 483 raw -> 11 aggregated\n  Intervals[statement_presence]: 483 raw -> 11 aggregated\n  Intervals[edge_divergence_gated]: 483 raw -> 11 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "TaxBracket:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "TaxBracket_M6",
+        "--report",
+        "csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061002_TaxBracket_M6/TaxBracket/fault_localization_eval.json\n  Mutant:    TaxBracket_M6\n  Operator:  RVR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=135, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=141, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.statement_presence: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.edge_divergence_gated: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n",
+      "stderr_tail": ""
+    }
+  ]
+}

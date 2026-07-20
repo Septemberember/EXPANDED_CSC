@@ -1,0 +1,754 @@
+{
+  "subject": "BoundedPronicNumber",
+  "subject_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber",
+  "fsf": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/FSF/BoundedPronicNumber_FSF.txt",
+  "manifest": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+  "mode": "expanded",
+  "strategy": "batch",
+  "max_iter": 100,
+  "dry_run": false,
+  "original": {
+    "role": "original",
+    "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/BoundedPronicNumber.java",
+    "class_name": "BoundedPronicNumber",
+    "mutant_id": null
+  },
+  "mutants": [
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/BoundedPronicNumber_M1.java",
+      "class_name": "BoundedPronicNumber",
+      "mutant_id": "BoundedPronicNumber_M1"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/BoundedPronicNumber_M2.java",
+      "class_name": "BoundedPronicNumber",
+      "mutant_id": "BoundedPronicNumber_M2"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/BoundedPronicNumber_M3.java",
+      "class_name": "BoundedPronicNumber",
+      "mutant_id": "BoundedPronicNumber_M3"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/BoundedPronicNumber_M4.java",
+      "class_name": "BoundedPronicNumber",
+      "mutant_id": "BoundedPronicNumber_M4"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/BoundedPronicNumber_M5.java",
+      "class_name": "BoundedPronicNumber",
+      "mutant_id": "BoundedPronicNumber_M5"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/BoundedPronicNumber_M6.java",
+      "class_name": "BoundedPronicNumber",
+      "mutant_id": "BoundedPronicNumber_M6"
+    }
+  ],
+  "step_count": 30,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "mutant:BoundedPronicNumber:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/BoundedPronicNumber_M1.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_BoundedPronicNumber_M1",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/testcases.json"
+      ],
+      "stdout_tail": "s: {'bootstrap'}  inputs: bootstrap(number=0)\n  |     (T) ->\n  |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(number=56)\n  (T) ->\n  |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(number=-32768)\n-----------------------------\n\n  [EXPAND] Promoted truncated leaf at 'i * (i + 1) == number' (cnt=50) \u2192 F:['tc_9_b13']\n  [EXPAND] Promoted truncated leaf at 'i <= number' (cnt=51) \u2192 F:['tc_9_b13']\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/BoundedPronicNumber_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 52 test cases generated in 10 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/BoundedPronicNumber_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=1\n  round_02/b1  [BATCH_SAFE]  number=56\n  round_02/b2  [BATCH_SAFE]  number=-32768\n  round_03/b0  [BATCH_SAFE]  number=3\n  round_03/b1  [BATCH_SAFE]  number=2\n  round_04/b0  [BATCH_SAFE]  number=11\n  round_04/b1  [BATCH_SAFE]  number=12\n  round_04/b2  [BATCH_SAFE]  number=6\n  round_05/b0  [BATCH_SAFE]  number=4\n  round_05/b1  [BATCH_SAFE]  number=5\n  round_05/b2  [BATCH_SAFE]  number=7\n  round_05/b3  [BATCH_SAFE]  number=8\n  round_05/b4  [BATCH_SAFE]  number=9\n  round_05/b5  [BATCH_SAFE]  number=10\n  round_05/b6  [BATCH_SAFE]  number=31\n  round_05/b7  [BATCH_SAFE]  number=42\n  round_05/b8  [BATCH_SAFE]  number=30\n  round_05/b9  [BATCH_SAFE]  number=20\n  round_06/b0  [BATCH_SAFE]  number=13\n  round_06/b1  [BATCH_SAFE]  number=14\n  round_06/b2  [BATCH_SAFE]  number=15\n  round_06/b3  [BATCH_SAFE]  number=16\n  round_06/b4  [BATCH_SAFE]  number=17\n  round_06/b5  [BATCH_SAFE]  number=18\n  round_06/b6  [BATCH_SAFE]  number=19\n  round_06/b7  [BATCH_SAFE]  number=21\n  round_06/b8  [BATCH_SAFE]  number=22\n  round_06/b9  [BATCH_SAFE]  number=23\n  round_06/b10  [BATCH_SAFE]  number=24\n  round_06/b11  [BATCH_SAFE]  number=25\n  round_06/b12  [BATCH_SAFE]  number=26\n  round_06/b13  [BATCH_SAFE]  number=27\n  round_06/b14  [BATCH_SAFE]  number=28\n  round_06/b15  [BATCH_SAFE]  number=29\n  round_06/b16  [BATCH_SAFE]  number=32\n  round_07/b0  [BATCH_SAFE]  number=33\n  round_08/b0  [BATCH_SAFE]  number=48\n  round_09/b0  [BATCH_SAFE]  number=34\n  round_09/b1  [BATCH_SAFE]  number=35\n  round_09/b2  [BATCH_SAFE]  number=36\n  round_09/b3  [BATCH_SAFE]  number=37\n  round_09/b4  [BATCH_SAFE]  number=38\n  round_09/b5  [BATCH_SAFE]  number=39\n  round_09/b6  [BATCH_SAFE]  number=40\n  round_09/b7  [BATCH_SAFE]  number=41\n  round_09/b8  [BATCH_SAFE]  number=43\n  round_09/b9  [BATCH_SAFE]  number=44\n  round_09/b10  [BATCH_SAFE]  number=45\n  round_09/b11  [BATCH_SAFE]  number=46\n  round_09/b12  [BATCH_SAFE]  number=47\n  round_09/b13  [BATCH_SAFE]  number=49\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 934\n  frontier_discovery_time_ms: 7512\n  compile_time_ms: 27502\n  java_exec_time_ms: 5613\n  path_log_parse_time_ms: 152\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 10271\n  merge_verify_wall_time_ms: 1\n  batch_total_wall_time_ms: 10283\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/BoundedPronicNumber_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/cct_stats.json\n  Counts: nodes=221, leaves=111, covered=52, infeasible=59, out_of_range=0, expanded=150, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPronicNumber:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/BoundedPronicNumber_M1.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/FSF/BoundedPronicNumber_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/BoundedPronicNumber_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedPronicNumber\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/FSF/BoundedPronicNumber_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/refined_tbfv_report.json\n  Summary:     testcases=52, fsf_units=3, passed=52, failed=1, skipped=103, unsupported=0\n  CCT marked:  1\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/cct_tbfv_stats.json\n  Counts:      nodes=221, leaves=111, fault_leaves=1, failure_cases=1\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/BoundedPronicNumber_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=2, intervals=2, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPronicNumber:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber\n  CCT:         csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/BoundedPronicNumber_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=52, failed=1, condition_nodes=2, condition_intervals=2\n  Top conditions:\n    #1 score=0.0136 fail=1/51 line=3 number >= 50\n    #2 score=0.0133 fail=1/52 line=3 number < 0\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[3, None] root.F.TRUE\n    #2 score=0.0000 fail=1/51 line=[3, 3] root.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPronicNumber:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedPronicNumber/BoundedPronicNumber_M1.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/cct_failure_localization_aggregated.json\n  Source file: BoundedPronicNumber/BoundedPronicNumber_M1.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  2 raw -> 2 aggregated\n  Intervals[cct_only]: 2 raw -> 2 aggregated\n  Intervals[statement_presence]: 2 raw -> 2 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 2 raw -> 2 aggregated\n  Intervals[edge_divergence_sibling_shared]: 2 raw -> 2 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPronicNumber:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedPronicNumber_M1",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M1/BoundedPronicNumber/fault_localization_eval.json\n  Mutant:    BoundedPronicNumber_M1\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPronicNumber:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/BoundedPronicNumber_M2.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_BoundedPronicNumber_M2",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/testcases.json"
+      ],
+      "stdout_tail": "    (T) ->\n  |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(number=51)\n  (T) ->\n  |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(number=-32768)\n-----------------------------\n\n  [EXPAND] Promoted truncated leaf at 'i * (i + 1) == number' (cnt=50) \u2192 F:['tc_6_b0']\n  [EXPAND] Promoted truncated leaf at 'i < number' (cnt=51) \u2192 F:['tc_6_b0']\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/BoundedPronicNumber_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 53 test cases generated in 7 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/BoundedPronicNumber_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=2\n  round_02/b1  [BATCH_SAFE]  number=51\n  round_02/b2  [BATCH_SAFE]  number=-32768\n  round_03/b0  [BATCH_SAFE]  number=1\n  round_03/b1  [BATCH_SAFE]  number=34\n  round_04/b0  [BATCH_SAFE]  number=3\n  round_04/b1  [BATCH_SAFE]  number=4\n  round_04/b2  [BATCH_SAFE]  number=5\n  round_04/b3  [BATCH_SAFE]  number=7\n  round_04/b4  [BATCH_SAFE]  number=8\n  round_04/b5  [BATCH_SAFE]  number=9\n  round_04/b6  [BATCH_SAFE]  number=10\n  round_04/b7  [BATCH_SAFE]  number=11\n  round_04/b8  [BATCH_SAFE]  number=13\n  round_04/b9  [BATCH_SAFE]  number=14\n  round_04/b10  [BATCH_SAFE]  number=15\n  round_04/b11  [BATCH_SAFE]  number=16\n  round_04/b12  [BATCH_SAFE]  number=17\n  round_04/b13  [BATCH_SAFE]  number=18\n  round_04/b14  [BATCH_SAFE]  number=19\n  round_04/b15  [BATCH_SAFE]  number=21\n  round_04/b16  [BATCH_SAFE]  number=22\n  round_04/b17  [BATCH_SAFE]  number=23\n  round_04/b18  [BATCH_SAFE]  number=24\n  round_04/b19  [BATCH_SAFE]  number=25\n  round_04/b20  [BATCH_SAFE]  number=26\n  round_04/b21  [BATCH_SAFE]  number=27\n  round_04/b22  [BATCH_SAFE]  number=28\n  round_04/b23  [BATCH_SAFE]  number=29\n  round_04/b24  [BATCH_SAFE]  number=31\n  round_04/b25  [BATCH_SAFE]  number=32\n  round_04/b26  [BATCH_SAFE]  number=33\n  round_04/b27  [BATCH_SAFE]  number=48\n  round_04/b28  [BATCH_SAFE]  number=42\n  round_04/b29  [BATCH_SAFE]  number=30\n  round_04/b30  [BATCH_SAFE]  number=20\n  round_04/b31  [BATCH_SAFE]  number=12\n  round_04/b32  [BATCH_SAFE]  number=6\n  round_05/b0  [BATCH_SAFE]  number=35\n  round_05/b1  [BATCH_SAFE]  number=36\n  round_05/b2  [BATCH_SAFE]  number=37\n  round_05/b3  [BATCH_SAFE]  number=38\n  round_05/b4  [BATCH_SAFE]  number=39\n  round_05/b5  [BATCH_SAFE]  number=40\n  round_05/b6  [BATCH_SAFE]  number=41\n  round_05/b7  [BATCH_SAFE]  number=43\n  round_05/b8  [BATCH_SAFE]  number=44\n  round_05/b9  [BATCH_SAFE]  number=45\n  round_05/b10  [BATCH_SAFE]  number=46\n  round_05/b11  [BATCH_SAFE]  number=47\n  round_05/b12  [BATCH_SAFE]  number=49\n  round_06/b0  [BATCH_SAFE]  number=50\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 846\n  frontier_discovery_time_ms: 6706\n  compile_time_ms: 29963\n  java_exec_time_ms: 5589\n  path_log_parse_time_ms: 145\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 10187\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 10194\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/BoundedPronicNumber_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/cct_stats.json\n  Counts: nodes=221, leaves=111, covered=53, infeasible=58, out_of_range=0, expanded=150, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPronicNumber:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/BoundedPronicNumber_M2.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/FSF/BoundedPronicNumber_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/BoundedPronicNumber_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedPronicNumber\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/FSF/BoundedPronicNumber_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/refined_tbfv_report.json\n  Summary:     testcases=53, fsf_units=3, passed=53, failed=0, skipped=106, unsupported=0\n  CCT marked:  0\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/cct_tbfv_stats.json\n  Counts:      nodes=221, leaves=111, fault_leaves=0, failure_cases=0\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/BoundedPronicNumber_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=0, intervals=0, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPronicNumber:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber\n  CCT:         csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/BoundedPronicNumber_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=53, failed=0, condition_nodes=0, condition_intervals=0\n  Top conditions: <none>\n  Top intervals: <none>\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPronicNumber:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedPronicNumber/BoundedPronicNumber_M2.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/cct_failure_localization_aggregated.json\n  Source file: BoundedPronicNumber/BoundedPronicNumber_M2.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  0 raw -> 0 aggregated\n  Intervals[cct_only]: 0 raw -> 0 aggregated\n  Intervals[statement_presence]: 0 raw -> 0 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 0 raw -> 0 aggregated\n  Intervals[edge_divergence_sibling_shared]: 0 raw -> 0 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPronicNumber:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedPronicNumber_M2",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M2/BoundedPronicNumber/fault_localization_eval.json\n  Mutant:    BoundedPronicNumber_M2\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPronicNumber:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/BoundedPronicNumber_M3.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_BoundedPronicNumber_M3",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/testcases.json"
+      ],
+      "stdout_tail": "  |     (F) ->\n  |     |     |   [NODE] Condition: i <= number @L11 (WP: (0) <= number, Cnt: 1)\n  |     |     |     (F) ->\n  |     |     |     |   {\u00d8}\n  |     |     |     (T) ->\n  |     |     |     |   [NODE] Condition: i * (i + 1) == number @L12 (WP: (0) * ((0) + 1) == number, Cnt: 1)\n  |     |     |     |     (F) ->\n  |     |     |     |     |   [NODE] Condition: i != number @L12 (WP: (0) != number, Cnt: 1)\n  |     |     |     |     |     (F) ->\n  |     |     |     |     |     |   {\u00d8}\n  |     |     |     |     |     (T) ->\n  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(number=2)\n  |     |     |     |     (T) ->\n  |     |     |     |     |   {\u00d8}\n  |     |     (T) ->\n  |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(number=0)\n  |     (T) ->\n  |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(number=51)\n  (T) ->\n  |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(number=-32768)\n-----------------------------\n\n\n  [Batch Round 3] Discovering frontier branches\n\n--- Current CCT Structure ---\n  [Config: use_bounded_range=True, range_bound=200]\n[NODE] Condition: number < 0 @L3 (WP: number < 0, Cnt: 1)\n  (F) ->\n  |   [NODE] Condition: number > 50 @L3 (WP: number > 50, Cnt: 1)\n  |     (F) ->\n  |     |   [NODE] Condition: number == 0 @L6 (WP: number == 0, Cnt: 1)\n  |     |     (F) ->\n  |     |     |   [NODE] Condition: i <= number @L11 (WP: (0) <= number, Cnt: 1)\n  |     |     |     (F) ->\n  |     |     |     |   {\u00d8}\n  |     |     |     (T) ->\n  |     |     |     |   [NODE] Condition: i * (i + 1) == number @L12 (WP: (0) * ((0) + 1) == number, Cnt: 1)\n  |     |     |     |     (F) ->\n  |     |     |     |     |   [NODE] Condition: i != number @L12 (WP: (0) != number, Cnt: 1)\n  |     |     |     |     |     (F) ->\n  |     |     |     |     |     |   {\u00d8}\n  |     |     |     |     |     (T) ->\n  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(number=2)\n  |     |     |     |     (T) ->\n  |     |     |     |     |   {\u00d8}\n  |     |     (T) ->\n  |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(number=0)\n  |     (T) ->\n  |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(number=51)\n  (T) ->\n  |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(number=-32768)\n-----------------------------\n\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/BoundedPronicNumber_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 4 test cases generated in 3 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/BoundedPronicNumber_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=2\n  round_02/b1  [BATCH_SAFE]  number=51\n  round_02/b2  [BATCH_SAFE]  number=-32768\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 5\n  frontier_discovery_time_ms: 9\n  compile_time_ms: 1261\n  java_exec_time_ms: 268\n  path_log_parse_time_ms: 0\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 420\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 421\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/BoundedPronicNumber_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/cct_stats.json\n  Counts: nodes=13, leaves=7, covered=4, infeasible=3, out_of_range=0, expanded=0, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPronicNumber:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/BoundedPronicNumber_M3.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/FSF/BoundedPronicNumber_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/BoundedPronicNumber_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedPronicNumber\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/FSF/BoundedPronicNumber_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/refined_tbfv_report.json\n  Summary:     testcases=4, fsf_units=3, passed=4, failed=1, skipped=7, unsupported=0\n  CCT marked:  1\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/cct_tbfv_stats.json\n  Counts:      nodes=13, leaves=7, fault_leaves=1, failure_cases=1\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/BoundedPronicNumber_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=6, intervals=6, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPronicNumber:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber\n  CCT:         csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/BoundedPronicNumber_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=4, failed=1, condition_nodes=6, condition_intervals=6\n  Top conditions:\n    #1 score=0.6931 fail=1/1 line=12 i != number\n    #2 score=0.6931 fail=1/1 line=12 i * (i + 1) == number\n    #3 score=0.6931 fail=1/1 line=11 i <= number\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[12, None] root.F.F.F.T.F.TRUE\n    #2 score=0.6021 fail=1/1 line=[6, 11] root.F.F.FALSE\n    #3 score=0.0000 fail=1/1 line=[12, 12] root.F.F.F.T.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPronicNumber:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedPronicNumber/BoundedPronicNumber_M3.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/cct_failure_localization_aggregated.json\n  Source file: BoundedPronicNumber/BoundedPronicNumber_M3.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  6 raw -> 6 aggregated\n  Intervals[cct_only]: 6 raw -> 6 aggregated\n  Intervals[statement_presence]: 6 raw -> 6 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 6 raw -> 6 aggregated\n  Intervals[edge_divergence_sibling_shared]: 6 raw -> 6 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPronicNumber:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedPronicNumber_M3",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M3/BoundedPronicNumber/fault_localization_eval.json\n  Mutant:    BoundedPronicNumber_M3\n  Operator:  LOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPronicNumber:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/BoundedPronicNumber_M4.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_BoundedPronicNumber_M4",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/testcases.json"
+      ],
+      "stdout_tail": "     (T) ->\n  |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(number=51)\n  (T) ->\n  |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(number=-32768)\n-----------------------------\n\n  [EXPAND] Promoted truncated leaf at 'i * (i + 1) == number' (cnt=50) \u2192 F:['tc_7_b0']\n  [EXPAND] Promoted truncated leaf at 'i <= number' (cnt=51) \u2192 F:['tc_7_b0']\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/BoundedPronicNumber_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 53 test cases generated in 8 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/BoundedPronicNumber_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=2\n  round_02/b1  [BATCH_SAFE]  number=51\n  round_02/b2  [BATCH_SAFE]  number=-32768\n  round_03/b0  [BATCH_SAFE]  number=1\n  round_04/b0  [BATCH_SAFE]  number=34\n  round_05/b0  [BATCH_SAFE]  number=3\n  round_05/b1  [BATCH_SAFE]  number=4\n  round_05/b2  [BATCH_SAFE]  number=5\n  round_05/b3  [BATCH_SAFE]  number=7\n  round_05/b4  [BATCH_SAFE]  number=8\n  round_05/b5  [BATCH_SAFE]  number=9\n  round_05/b6  [BATCH_SAFE]  number=10\n  round_05/b7  [BATCH_SAFE]  number=11\n  round_05/b8  [BATCH_SAFE]  number=13\n  round_05/b9  [BATCH_SAFE]  number=14\n  round_05/b10  [BATCH_SAFE]  number=15\n  round_05/b11  [BATCH_SAFE]  number=16\n  round_05/b12  [BATCH_SAFE]  number=17\n  round_05/b13  [BATCH_SAFE]  number=18\n  round_05/b14  [BATCH_SAFE]  number=19\n  round_05/b15  [BATCH_SAFE]  number=21\n  round_05/b16  [BATCH_SAFE]  number=22\n  round_05/b17  [BATCH_SAFE]  number=23\n  round_05/b18  [BATCH_SAFE]  number=24\n  round_05/b19  [BATCH_SAFE]  number=25\n  round_05/b20  [BATCH_SAFE]  number=26\n  round_05/b21  [BATCH_SAFE]  number=27\n  round_05/b22  [BATCH_SAFE]  number=28\n  round_05/b23  [BATCH_SAFE]  number=29\n  round_05/b24  [BATCH_SAFE]  number=31\n  round_05/b25  [BATCH_SAFE]  number=32\n  round_05/b26  [BATCH_SAFE]  number=33\n  round_05/b27  [BATCH_SAFE]  number=48\n  round_05/b28  [BATCH_SAFE]  number=42\n  round_05/b29  [BATCH_SAFE]  number=30\n  round_05/b30  [BATCH_SAFE]  number=20\n  round_05/b31  [BATCH_SAFE]  number=12\n  round_05/b32  [BATCH_SAFE]  number=6\n  round_06/b0  [BATCH_SAFE]  number=35\n  round_06/b1  [BATCH_SAFE]  number=36\n  round_06/b2  [BATCH_SAFE]  number=37\n  round_06/b3  [BATCH_SAFE]  number=38\n  round_06/b4  [BATCH_SAFE]  number=39\n  round_06/b5  [BATCH_SAFE]  number=40\n  round_06/b6  [BATCH_SAFE]  number=41\n  round_06/b7  [BATCH_SAFE]  number=43\n  round_06/b8  [BATCH_SAFE]  number=44\n  round_06/b9  [BATCH_SAFE]  number=45\n  round_06/b10  [BATCH_SAFE]  number=46\n  round_06/b11  [BATCH_SAFE]  number=47\n  round_06/b12  [BATCH_SAFE]  number=49\n  round_07/b0  [BATCH_SAFE]  number=50\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 758\n  frontier_discovery_time_ms: 6094\n  compile_time_ms: 27384\n  java_exec_time_ms: 5338\n  path_log_parse_time_ms: 138\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 9770\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 9776\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/BoundedPronicNumber_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/cct_stats.json\n  Counts: nodes=221, leaves=111, covered=53, infeasible=58, out_of_range=0, expanded=148, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPronicNumber:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/BoundedPronicNumber_M4.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/FSF/BoundedPronicNumber_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/BoundedPronicNumber_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedPronicNumber\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/FSF/BoundedPronicNumber_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/refined_tbfv_report.json\n  Summary:     testcases=53, fsf_units=3, passed=53, failed=0, skipped=106, unsupported=0\n  CCT marked:  0\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/cct_tbfv_stats.json\n  Counts:      nodes=221, leaves=111, fault_leaves=0, failure_cases=0\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/BoundedPronicNumber_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=0, intervals=0, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPronicNumber:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber\n  CCT:         csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/BoundedPronicNumber_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=53, failed=0, condition_nodes=0, condition_intervals=0\n  Top conditions: <none>\n  Top intervals: <none>\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPronicNumber:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedPronicNumber/BoundedPronicNumber_M4.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/cct_failure_localization_aggregated.json\n  Source file: BoundedPronicNumber/BoundedPronicNumber_M4.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  0 raw -> 0 aggregated\n  Intervals[cct_only]: 0 raw -> 0 aggregated\n  Intervals[statement_presence]: 0 raw -> 0 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 0 raw -> 0 aggregated\n  Intervals[edge_divergence_sibling_shared]: 0 raw -> 0 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPronicNumber:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedPronicNumber_M4",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M4/BoundedPronicNumber/fault_localization_eval.json\n  Mutant:    BoundedPronicNumber_M4\n  Operator:  CR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPronicNumber:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/BoundedPronicNumber_M5.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_BoundedPronicNumber_M5",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/testcases.json"
+      ],
+      "stdout_tail": "    |     |     (T) ->\n  |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     (T) ->\n  |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(number=0)\n  |     (T) ->\n  |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(number=51)\n  (T) ->\n  |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(number=-32768)\n-----------------------------\n\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/BoundedPronicNumber_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 53 test cases generated in 9 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/BoundedPronicNumber_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=2\n  round_02/b1  [BATCH_SAFE]  number=51\n  round_02/b2  [BATCH_SAFE]  number=-32768\n  round_03/b0  [BATCH_SAFE]  number=1\n  round_03/b1  [BATCH_SAFE]  number=48\n  round_03/b2  [BATCH_SAFE]  number=8\n  round_03/b3  [BATCH_SAFE]  number=3\n  round_04/b0  [BATCH_SAFE]  number=4\n  round_04/b1  [BATCH_SAFE]  number=5\n  round_04/b2  [BATCH_SAFE]  number=14\n  round_04/b3  [BATCH_SAFE]  number=35\n  round_04/b4  [BATCH_SAFE]  number=24\n  round_04/b5  [BATCH_SAFE]  number=15\n  round_05/b0  [BATCH_SAFE]  number=6\n  round_05/b1  [BATCH_SAFE]  number=7\n  round_05/b2  [BATCH_SAFE]  number=9\n  round_05/b3  [BATCH_SAFE]  number=10\n  round_05/b4  [BATCH_SAFE]  number=11\n  round_05/b5  [BATCH_SAFE]  number=12\n  round_05/b6  [BATCH_SAFE]  number=13\n  round_05/b7  [BATCH_SAFE]  number=43\n  round_06/b0  [BATCH_SAFE]  number=16\n  round_06/b1  [BATCH_SAFE]  number=17\n  round_06/b2  [BATCH_SAFE]  number=18\n  round_06/b3  [BATCH_SAFE]  number=19\n  round_06/b4  [BATCH_SAFE]  number=20\n  round_06/b5  [BATCH_SAFE]  number=21\n  round_06/b6  [BATCH_SAFE]  number=22\n  round_06/b7  [BATCH_SAFE]  number=23\n  round_06/b8  [BATCH_SAFE]  number=25\n  round_06/b9  [BATCH_SAFE]  number=26\n  round_06/b10  [BATCH_SAFE]  number=27\n  round_06/b11  [BATCH_SAFE]  number=28\n  round_06/b12  [BATCH_SAFE]  number=29\n  round_06/b13  [BATCH_SAFE]  number=30\n  round_06/b14  [BATCH_SAFE]  number=31\n  round_06/b15  [BATCH_SAFE]  number=32\n  round_06/b16  [BATCH_SAFE]  number=33\n  round_06/b17  [BATCH_SAFE]  number=34\n  round_06/b18  [BATCH_SAFE]  number=36\n  round_06/b19  [BATCH_SAFE]  number=37\n  round_06/b20  [BATCH_SAFE]  number=38\n  round_06/b21  [BATCH_SAFE]  number=39\n  round_06/b22  [BATCH_SAFE]  number=40\n  round_06/b23  [BATCH_SAFE]  number=41\n  round_06/b24  [BATCH_SAFE]  number=42\n  round_06/b25  [BATCH_SAFE]  number=47\n  round_07/b0  [BATCH_SAFE]  number=44\n  round_07/b1  [BATCH_SAFE]  number=45\n  round_07/b2  [BATCH_SAFE]  number=46\n  round_07/b3  [BATCH_SAFE]  number=50\n  round_08/b0  [BATCH_SAFE]  number=49\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 846\n  frontier_discovery_time_ms: 6975\n  compile_time_ms: 27835\n  java_exec_time_ms: 5113\n  path_log_parse_time_ms: 153\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 9196\n  merge_verify_wall_time_ms: 1\n  batch_total_wall_time_ms: 9207\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/BoundedPronicNumber_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/cct_stats.json\n  Counts: nodes=225, leaves=113, covered=53, infeasible=60, out_of_range=0, expanded=153, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPronicNumber:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/BoundedPronicNumber_M5.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/FSF/BoundedPronicNumber_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/BoundedPronicNumber_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedPronicNumber\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/FSF/BoundedPronicNumber_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/refined_tbfv_report.json\n  Summary:     testcases=53, fsf_units=3, passed=41, failed=12, skipped=106, unsupported=0\n  CCT marked:  12\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/cct_tbfv_stats.json\n  Counts:      nodes=225, leaves=113, fault_leaves=12, failure_cases=12\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/BoundedPronicNumber_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=96, intervals=107, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPronicNumber:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber\n  CCT:         csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/BoundedPronicNumber_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=53, failed=12, condition_nodes=96, condition_intervals=107\n  Top conditions:\n    #1 score=0.6931 fail=1/1 line=12 i != number\n    #2 score=0.6931 fail=1/1 line=12 i != number\n    #3 score=0.6931 fail=1/1 line=12 i != number\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[11, None] root.F.F.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.FALSE\n    #2 score=0.6021 fail=1/1 line=[12, None] root.F.F.F.T.F.T.F.T.F.T.F.T.F.T.F.T.T.TRUE\n    #3 score=0.6021 fail=1/1 line=[12, None] root.F.F.F.T.F.T.F.T.F.T.F.T.F.T.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPronicNumber:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedPronicNumber/BoundedPronicNumber_M5.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/cct_failure_localization_aggregated.json\n  Source file: BoundedPronicNumber/BoundedPronicNumber_M5.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  96 raw -> 6 aggregated\n  Intervals[cct_only]: 107 raw -> 8 aggregated\n  Intervals[statement_presence]: 107 raw -> 8 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 107 raw -> 8 aggregated\n  Intervals[edge_divergence_sibling_shared]: 107 raw -> 8 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPronicNumber:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedPronicNumber_M5",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M5/BoundedPronicNumber/fault_localization_eval.json\n  Mutant:    BoundedPronicNumber_M5\n  Operator:  AOR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPronicNumber:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/BoundedPronicNumber_M6.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_BoundedPronicNumber_M6",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/testcases.json"
+      ],
+      "stdout_tail": "     (T) ->\n  |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(number=51)\n  (T) ->\n  |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(number=-32768)\n-----------------------------\n\n  [EXPAND] Promoted truncated leaf at 'i * (i + 1) == number' (cnt=51) \u2192 F:['tc_7_b0']\n  [EXPAND] Promoted truncated leaf at 'i <= number' (cnt=52) \u2192 F:['tc_7_b0']\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/BoundedPronicNumber_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 53 test cases generated in 8 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/BoundedPronicNumber_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=2\n  round_02/b1  [BATCH_SAFE]  number=51\n  round_02/b2  [BATCH_SAFE]  number=-32768\n  round_03/b0  [BATCH_SAFE]  number=1\n  round_04/b0  [BATCH_SAFE]  number=34\n  round_05/b0  [BATCH_SAFE]  number=3\n  round_05/b1  [BATCH_SAFE]  number=4\n  round_05/b2  [BATCH_SAFE]  number=5\n  round_05/b3  [BATCH_SAFE]  number=7\n  round_05/b4  [BATCH_SAFE]  number=8\n  round_05/b5  [BATCH_SAFE]  number=9\n  round_05/b6  [BATCH_SAFE]  number=10\n  round_05/b7  [BATCH_SAFE]  number=11\n  round_05/b8  [BATCH_SAFE]  number=13\n  round_05/b9  [BATCH_SAFE]  number=14\n  round_05/b10  [BATCH_SAFE]  number=15\n  round_05/b11  [BATCH_SAFE]  number=16\n  round_05/b12  [BATCH_SAFE]  number=17\n  round_05/b13  [BATCH_SAFE]  number=18\n  round_05/b14  [BATCH_SAFE]  number=19\n  round_05/b15  [BATCH_SAFE]  number=21\n  round_05/b16  [BATCH_SAFE]  number=22\n  round_05/b17  [BATCH_SAFE]  number=23\n  round_05/b18  [BATCH_SAFE]  number=24\n  round_05/b19  [BATCH_SAFE]  number=25\n  round_05/b20  [BATCH_SAFE]  number=26\n  round_05/b21  [BATCH_SAFE]  number=27\n  round_05/b22  [BATCH_SAFE]  number=28\n  round_05/b23  [BATCH_SAFE]  number=29\n  round_05/b24  [BATCH_SAFE]  number=31\n  round_05/b25  [BATCH_SAFE]  number=32\n  round_05/b26  [BATCH_SAFE]  number=33\n  round_05/b27  [BATCH_SAFE]  number=48\n  round_05/b28  [BATCH_SAFE]  number=42\n  round_05/b29  [BATCH_SAFE]  number=30\n  round_05/b30  [BATCH_SAFE]  number=20\n  round_05/b31  [BATCH_SAFE]  number=12\n  round_05/b32  [BATCH_SAFE]  number=6\n  round_06/b0  [BATCH_SAFE]  number=35\n  round_06/b1  [BATCH_SAFE]  number=36\n  round_06/b2  [BATCH_SAFE]  number=37\n  round_06/b3  [BATCH_SAFE]  number=38\n  round_06/b4  [BATCH_SAFE]  number=39\n  round_06/b5  [BATCH_SAFE]  number=40\n  round_06/b6  [BATCH_SAFE]  number=41\n  round_06/b7  [BATCH_SAFE]  number=43\n  round_06/b8  [BATCH_SAFE]  number=44\n  round_06/b9  [BATCH_SAFE]  number=45\n  round_06/b10  [BATCH_SAFE]  number=46\n  round_06/b11  [BATCH_SAFE]  number=47\n  round_06/b12  [BATCH_SAFE]  number=49\n  round_07/b0  [BATCH_SAFE]  number=50\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 800\n  frontier_discovery_time_ms: 6421\n  compile_time_ms: 26267\n  java_exec_time_ms: 5036\n  path_log_parse_time_ms: 148\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 9362\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 9368\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/BoundedPronicNumber_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/cct_stats.json\n  Counts: nodes=225, leaves=113, covered=53, infeasible=60, out_of_range=0, expanded=153, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedPronicNumber:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/BoundedPronicNumber_M6.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/FSF/BoundedPronicNumber_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/BoundedPronicNumber_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedPronicNumber\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedPronicNumber/FSF/BoundedPronicNumber_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/refined_tbfv_report.json\n  Summary:     testcases=53, fsf_units=3, passed=9, failed=44, skipped=106, unsupported=0\n  CCT marked:  44\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/cct_tbfv_stats.json\n  Counts:      nodes=225, leaves=113, fault_leaves=44, failure_cases=44\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/BoundedPronicNumber_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=106, intervals=149, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPronicNumber:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber\n  CCT:         csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/BoundedPronicNumber_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=53, failed=44, condition_nodes=106, condition_intervals=149\n  Top conditions:\n    #1 score=3.7136 fail=40/40 line=11 i <= number\n    #2 score=3.7136 fail=40/40 line=12 i * (i + 1) == number\n    #3 score=3.7136 fail=40/40 line=11 i <= number\n  Top intervals:\n    #1 score=3.2256 fail=40/40 line=[11, 12] root.F.F.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.FALSE\n    #2 score=3.2256 fail=40/40 line=[11, 12] root.F.F.F.T.F.T.F.T.F.T.F.T.F.T.F.T.FALSE\n    #3 score=3.2041 fail=39/39 line=[11, 12] root.F.F.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPronicNumber:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedPronicNumber/BoundedPronicNumber_M6.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/cct_failure_localization_aggregated.json\n  Source file: BoundedPronicNumber/BoundedPronicNumber_M6.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  106 raw -> 5 aggregated\n  Intervals[cct_only]: 149 raw -> 6 aggregated\n  Intervals[statement_presence]: 149 raw -> 6 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 149 raw -> 6 aggregated\n  Intervals[edge_divergence_sibling_shared]: 149 raw -> 6 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedPronicNumber:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedPronicNumber_M6",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_BoundedPronicNumber_M6/BoundedPronicNumber/fault_localization_eval.json\n  Mutant:    BoundedPronicNumber_M6\n  Operator:  RVR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=52, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=103, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.statement_presence: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "allow_existing_sessions": false,
+  "configurations": {
+    "csc_boundary": {
+      "mode": "expanded",
+      "range_bound": 200,
+      "strategy": "sequential"
+    },
+    "csc_only": {
+      "mode": "original",
+      "strategy": "sequential"
+    }
+  },
+  "created_at": "2026-07-17T05:12:12.396157+00:00",
+  "dataset_roots": [
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS"
+  ],
+  "dry_run": false,
+  "experiment_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/experiments/EX_CSC_dataset/boundary_stress/RQ1-full",
+  "max_iter": 1200,
+  "program_count": 4,
+  "programs": [
+    {
+      "class_name": "BoundaryStressCounter",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressCounter/BoundaryStressCounter.java",
+      "structural_class": "loop-bearing",
+      "subject": "BoundaryStressCounter"
+    },
+    {
+      "class_name": "BoundaryStressLedger",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressLedger/BoundaryStressLedger.java",
+      "structural_class": "loop-bearing",
+      "subject": "BoundaryStressLedger"
+    },
+    {
+      "class_name": "BoundaryStressMeter",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressMeter/BoundaryStressMeter.java",
+      "structural_class": "loop-bearing",
+      "subject": "BoundaryStressMeter"
+    },
+    {
+      "class_name": "BoundaryStressQuota",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_BOUNDARY_STRESS/BoundaryStressQuota/BoundaryStressQuota.java",
+      "structural_class": "loop-bearing",
+      "subject": "BoundaryStressQuota"
+    }
+  ],
+  "project_root": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+  "repeats": 3,
+  "session_prefix": "boundary_stress_0717_rq1_full",
+  "stage": "rq1_paired_experiment",
+  "timeout_s": 240
+}

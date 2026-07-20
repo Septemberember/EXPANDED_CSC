@@ -1,0 +1,754 @@
+{
+  "subject": "SubtractLoop",
+  "subject_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop",
+  "fsf": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/FSF/SubtractLoop_FSF.txt",
+  "manifest": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+  "mode": "expanded",
+  "strategy": "batch",
+  "max_iter": 100,
+  "dry_run": false,
+  "original": {
+    "role": "original",
+    "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/SubtractLoop.java",
+    "class_name": "SubtractLoop",
+    "mutant_id": null
+  },
+  "mutants": [
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/SubtractLoop_M1.java",
+      "class_name": "SubtractLoop",
+      "mutant_id": "SubtractLoop_M1"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/SubtractLoop_M2.java",
+      "class_name": "SubtractLoop",
+      "mutant_id": "SubtractLoop_M2"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/SubtractLoop_M3.java",
+      "class_name": "SubtractLoop",
+      "mutant_id": "SubtractLoop_M3"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/SubtractLoop_M4.java",
+      "class_name": "SubtractLoop",
+      "mutant_id": "SubtractLoop_M4"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/SubtractLoop_M5.java",
+      "class_name": "SubtractLoop",
+      "mutant_id": "SubtractLoop_M5"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/SubtractLoop_M6.java",
+      "class_name": "SubtractLoop",
+      "mutant_id": "SubtractLoop_M6"
+    }
+  ],
+  "step_count": 30,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "mutant:SubtractLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/SubtractLoop_M1.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061002_SubtractLoop_M1",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/testcases.json"
+      ],
+      "stdout_tail": "ound_03/b124  [BATCH_SAFE]  x=0, y=61\n  round_03/b125  [BATCH_SAFE]  x=0, y=62\n  round_03/b126  [BATCH_SAFE]  x=0, y=63\n  round_03/b127  [BATCH_SAFE]  x=-16, y=98\n  round_04/b0  [BATCH_SAFE]  x=0, y=-65\n  round_04/b1  [BATCH_SAFE]  x=0, y=-66\n  round_04/b2  [BATCH_SAFE]  x=0, y=-67\n  round_04/b3  [BATCH_SAFE]  x=0, y=-68\n  round_04/b4  [BATCH_SAFE]  x=0, y=-69\n  round_04/b5  [BATCH_SAFE]  x=0, y=-70\n  round_04/b6  [BATCH_SAFE]  x=0, y=-71\n  round_04/b7  [BATCH_SAFE]  x=0, y=-72\n  round_04/b8  [BATCH_SAFE]  x=0, y=-73\n  round_04/b9  [BATCH_SAFE]  x=0, y=-74\n  round_04/b10  [BATCH_SAFE]  x=-24, y=-75\n  round_04/b11  [BATCH_SAFE]  x=0, y=-76\n  round_04/b12  [BATCH_SAFE]  x=0, y=-93\n  round_04/b13  [BATCH_SAFE]  x=-3, y=65\n  round_04/b14  [BATCH_SAFE]  x=30, y=66\n  round_04/b15  [BATCH_SAFE]  x=5, y=67\n  round_04/b16  [BATCH_SAFE]  x=30, y=68\n  round_04/b17  [BATCH_SAFE]  x=-2, y=69\n  round_04/b18  [BATCH_SAFE]  x=0, y=70\n  round_04/b19  [BATCH_SAFE]  x=0, y=71\n  round_04/b20  [BATCH_SAFE]  x=-16, y=72\n  round_04/b21  [BATCH_SAFE]  x=0, y=73\n  round_04/b22  [BATCH_SAFE]  x=-3, y=74\n  round_04/b23  [BATCH_SAFE]  x=0, y=75\n  round_04/b24  [BATCH_SAFE]  x=0, y=76\n  round_04/b25  [BATCH_SAFE]  x=0, y=77\n  round_04/b26  [BATCH_SAFE]  x=0, y=78\n  round_04/b27  [BATCH_SAFE]  x=6, y=79\n  round_04/b28  [BATCH_SAFE]  x=0, y=80\n  round_04/b29  [BATCH_SAFE]  x=0, y=81\n  round_04/b30  [BATCH_SAFE]  x=0, y=82\n  round_04/b31  [BATCH_SAFE]  x=-3, y=83\n  round_04/b32  [BATCH_SAFE]  x=-3, y=84\n  round_04/b33  [BATCH_SAFE]  x=-3, y=85\n  round_04/b34  [BATCH_SAFE]  x=0, y=86\n  round_04/b35  [BATCH_SAFE]  x=-2, y=87\n  round_04/b36  [BATCH_SAFE]  x=-27, y=88\n  round_04/b37  [BATCH_SAFE]  x=-2, y=89\n  round_04/b38  [BATCH_SAFE]  x=-27, y=90\n  round_04/b39  [BATCH_SAFE]  x=-2, y=91\n  round_04/b40  [BATCH_SAFE]  x=-2, y=92\n  round_04/b41  [BATCH_SAFE]  x=-2, y=93\n  round_04/b42  [BATCH_SAFE]  x=-2, y=94\n  round_04/b43  [BATCH_SAFE]  x=-2, y=95\n  round_04/b44  [BATCH_SAFE]  x=-3, y=96\n  round_04/b45  [BATCH_SAFE]  x=-3, y=97\n  round_04/b46  [BATCH_SAFE]  x=0, y=100\n  round_05/b0  [BATCH_SAFE]  x=6, y=-78\n  round_05/b1  [BATCH_SAFE]  x=0, y=-79\n  round_05/b2  [BATCH_SAFE]  x=0, y=-80\n  round_05/b3  [BATCH_SAFE]  x=6, y=-81\n  round_05/b4  [BATCH_SAFE]  x=6, y=-82\n  round_05/b5  [BATCH_SAFE]  x=5, y=-83\n  round_05/b6  [BATCH_SAFE]  x=-27, y=-84\n  round_05/b7  [BATCH_SAFE]  x=6, y=-85\n  round_05/b8  [BATCH_SAFE]  x=-24, y=-86\n  round_05/b9  [BATCH_SAFE]  x=6, y=-87\n  round_05/b10  [BATCH_SAFE]  x=5, y=-88\n  round_05/b11  [BATCH_SAFE]  x=0, y=-89\n  round_05/b12  [BATCH_SAFE]  x=0, y=-90\n  round_05/b13  [BATCH_SAFE]  x=30, y=-91\n  round_05/b14  [BATCH_SAFE]  x=0, y=-92\n  round_05/b15  [BATCH_SAFE]  x=0, y=-95\n  round_05/b16  [BATCH_SAFE]  x=0, y=99\n  round_06/b0  [BATCH_SAFE]  x=0, y=-94\n  round_06/b1  [BATCH_SAFE]  x=30, y=-97\n  round_07/b0  [BATCH_SAFE]  x=-16, y=-96\n  round_07/b1  [BATCH_SAFE]  x=29, y=-100\n  round_08/b0  [BATCH_SAFE]  x=6, y=-98\n  round_08/b1  [BATCH_SAFE]  x=0, y=-99\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 7146\n  frontier_discovery_time_ms: 27767\n  compile_time_ms: 133638\n  java_exec_time_ms: 26526\n  path_log_parse_time_ms: 3440\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 42905\n  merge_verify_wall_time_ms: 9\n  batch_total_wall_time_ms: 42937\n\nTest cases written to: csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/SubtractLoop_cct.dot\n  Stats: csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/cct_stats.json\n  Counts: nodes=415, leaves=208, covered=205, infeasible=3, out_of_range=0, expanded=396, truncated=0\n  Render script: csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/render_cct.sh\n  (render later with: csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SubtractLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/SubtractLoop_M1.java",
+        "--output",
+        "csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/FSF/SubtractLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/SubtractLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       SubtractLoop\n  CSC result:  csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/FSF/SubtractLoop_FSF.txt\n  Report:      csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/refined_tbfv_report.json\n  Summary:     testcases=205, fsf_units=2, passed=205, failed=1, skipped=204, unsupported=0\n  CCT marked:  1\n  TBFV stats:  csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/cct_tbfv_stats.json\n  Counts:      nodes=415, leaves=208, fault_leaves=1, failure_cases=1\n  Fault DOT:    csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/SubtractLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=1, intervals=1, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SubtractLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop",
+        "--output",
+        "csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop\n  CCT:         csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/SubtractLoop_cct.pkl\n  Report:      csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=205, failed=1, condition_nodes=1, condition_intervals=1\n  Top conditions:\n    #1 score=0.0034 fail=1/205 line=3 x <= -100\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[3, None] root.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SubtractLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "SubtractLoop/SubtractLoop_M1.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/cct_failure_localization_aggregated.json\n  Source file: SubtractLoop/SubtractLoop_M1.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  1 raw -> 1 aggregated\n  Intervals[cct_only]: 1 raw -> 1 aggregated\n  Intervals[statement_presence]: 1 raw -> 1 aggregated\n  Intervals[edge_divergence_gated]: 1 raw -> 1 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SubtractLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "SubtractLoop_M1",
+        "--report",
+        "csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061002_SubtractLoop_M1/SubtractLoop/fault_localization_eval.json\n  Mutant:    SubtractLoop_M1\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SubtractLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/SubtractLoop_M2.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061002_SubtractLoop_M2",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/testcases.json"
+      ],
+      "stdout_tail": "ATCH_SAFE]  x=28, y=60\n  round_03/b124  [BATCH_SAFE]  x=0, y=61\n  round_03/b125  [BATCH_SAFE]  x=-24, y=62\n  round_03/b126  [BATCH_SAFE]  x=0, y=63\n  round_03/b127  [BATCH_SAFE]  x=-27, y=99\n  round_04/b0  [BATCH_SAFE]  x=5, y=-65\n  round_04/b1  [BATCH_SAFE]  x=0, y=-66\n  round_04/b2  [BATCH_SAFE]  x=5, y=-67\n  round_04/b3  [BATCH_SAFE]  x=0, y=-68\n  round_04/b4  [BATCH_SAFE]  x=0, y=-69\n  round_04/b5  [BATCH_SAFE]  x=0, y=-70\n  round_04/b6  [BATCH_SAFE]  x=0, y=-71\n  round_04/b7  [BATCH_SAFE]  x=0, y=-72\n  round_04/b8  [BATCH_SAFE]  x=0, y=-73\n  round_04/b9  [BATCH_SAFE]  x=-24, y=-74\n  round_04/b10  [BATCH_SAFE]  x=0, y=-75\n  round_04/b11  [BATCH_SAFE]  x=-16, y=-76\n  round_04/b12  [BATCH_SAFE]  x=0, y=-77\n  round_04/b13  [BATCH_SAFE]  x=0, y=-78\n  round_04/b14  [BATCH_SAFE]  x=0, y=-79\n  round_04/b15  [BATCH_SAFE]  x=-16, y=-80\n  round_04/b16  [BATCH_SAFE]  x=0, y=-81\n  round_04/b17  [BATCH_SAFE]  x=28, y=-82\n  round_04/b18  [BATCH_SAFE]  x=0, y=-83\n  round_04/b19  [BATCH_SAFE]  x=6, y=-84\n  round_04/b20  [BATCH_SAFE]  x=-4, y=-85\n  round_04/b21  [BATCH_SAFE]  x=-26, y=-86\n  round_04/b22  [BATCH_SAFE]  x=28, y=-87\n  round_04/b23  [BATCH_SAFE]  x=0, y=-88\n  round_04/b24  [BATCH_SAFE]  x=0, y=-89\n  round_04/b25  [BATCH_SAFE]  x=28, y=-90\n  round_04/b26  [BATCH_SAFE]  x=0, y=-91\n  round_04/b27  [BATCH_SAFE]  x=0, y=-92\n  round_04/b28  [BATCH_SAFE]  x=0, y=-93\n  round_04/b29  [BATCH_SAFE]  x=-16, y=-94\n  round_04/b30  [BATCH_SAFE]  x=0, y=-96\n  round_04/b31  [BATCH_SAFE]  x=-2, y=65\n  round_04/b32  [BATCH_SAFE]  x=0, y=66\n  round_04/b33  [BATCH_SAFE]  x=28, y=67\n  round_04/b34  [BATCH_SAFE]  x=-4, y=68\n  round_04/b35  [BATCH_SAFE]  x=29, y=69\n  round_04/b36  [BATCH_SAFE]  x=-16, y=70\n  round_04/b37  [BATCH_SAFE]  x=0, y=71\n  round_04/b38  [BATCH_SAFE]  x=0, y=72\n  round_04/b39  [BATCH_SAFE]  x=0, y=73\n  round_04/b40  [BATCH_SAFE]  x=0, y=74\n  round_04/b41  [BATCH_SAFE]  x=0, y=75\n  round_04/b42  [BATCH_SAFE]  x=0, y=76\n  round_04/b43  [BATCH_SAFE]  x=0, y=77\n  round_04/b44  [BATCH_SAFE]  x=-16, y=78\n  round_04/b45  [BATCH_SAFE]  x=6, y=79\n  round_04/b46  [BATCH_SAFE]  x=0, y=80\n  round_04/b47  [BATCH_SAFE]  x=0, y=81\n  round_04/b48  [BATCH_SAFE]  x=0, y=82\n  round_04/b49  [BATCH_SAFE]  x=-4, y=83\n  round_04/b50  [BATCH_SAFE]  x=28, y=84\n  round_04/b51  [BATCH_SAFE]  x=-3, y=85\n  round_04/b52  [BATCH_SAFE]  x=-16, y=86\n  round_04/b53  [BATCH_SAFE]  x=0, y=87\n  round_04/b54  [BATCH_SAFE]  x=-2, y=88\n  round_04/b55  [BATCH_SAFE]  x=-3, y=89\n  round_04/b56  [BATCH_SAFE]  x=-3, y=90\n  round_04/b57  [BATCH_SAFE]  x=-3, y=91\n  round_04/b58  [BATCH_SAFE]  x=-2, y=92\n  round_04/b59  [BATCH_SAFE]  x=-3, y=93\n  round_04/b60  [BATCH_SAFE]  x=-3, y=94\n  round_04/b61  [BATCH_SAFE]  x=0, y=95\n  round_04/b62  [BATCH_SAFE]  x=-2, y=96\n  round_04/b63  [BATCH_SAFE]  x=0, y=97\n  round_04/b64  [BATCH_SAFE]  x=0, y=98\n  round_05/b0  [BATCH_SAFE]  x=0, y=-97\n  round_06/b0  [BATCH_SAFE]  x=0, y=-98\n  round_07/b0  [BATCH_SAFE]  x=0, y=-100\n  round_08/b0  [BATCH_SAFE]  x=0, y=-99\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 7212\n  frontier_discovery_time_ms: 27713\n  compile_time_ms: 135423\n  java_exec_time_ms: 26915\n  path_log_parse_time_ms: 3020\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 43554\n  merge_verify_wall_time_ms: 8\n  batch_total_wall_time_ms: 43579\n\nTest cases written to: csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/SubtractLoop_cct.dot\n  Stats: csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/cct_stats.json\n  Counts: nodes=413, leaves=207, covered=204, infeasible=3, out_of_range=0, expanded=394, truncated=0\n  Render script: csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/render_cct.sh\n  (render later with: csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SubtractLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/SubtractLoop_M2.java",
+        "--output",
+        "csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/FSF/SubtractLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/SubtractLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       SubtractLoop\n  CSC result:  csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/FSF/SubtractLoop_FSF.txt\n  Report:      csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/refined_tbfv_report.json\n  Summary:     testcases=204, fsf_units=2, passed=204, failed=1, skipped=203, unsupported=0\n  CCT marked:  1\n  TBFV stats:  csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/cct_tbfv_stats.json\n  Counts:      nodes=413, leaves=207, fault_leaves=1, failure_cases=1\n  Fault DOT:    csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/SubtractLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=4, intervals=4, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SubtractLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop",
+        "--output",
+        "csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop\n  CCT:         csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/SubtractLoop_cct.pkl\n  Report:      csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=204, failed=1, condition_nodes=4, condition_intervals=4\n  Top conditions:\n    #1 score=0.0034 fail=1/201 line=6 y >= 100\n    #2 score=0.0034 fail=1/202 line=6 y < -100\n    #3 score=0.0034 fail=1/203 line=3 x > 100\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[6, None] root.F.F.F.TRUE\n    #2 score=0.0000 fail=1/201 line=[6, 6] root.F.F.FALSE\n    #3 score=0.0000 fail=1/202 line=[3, 6] root.F.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SubtractLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "SubtractLoop/SubtractLoop_M2.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/cct_failure_localization_aggregated.json\n  Source file: SubtractLoop/SubtractLoop_M2.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  4 raw -> 4 aggregated\n  Intervals[cct_only]: 4 raw -> 4 aggregated\n  Intervals[statement_presence]: 4 raw -> 4 aggregated\n  Intervals[edge_divergence_gated]: 4 raw -> 4 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SubtractLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "SubtractLoop_M2",
+        "--report",
+        "csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061002_SubtractLoop_M2/SubtractLoop/fault_localization_eval.json\n  Mutant:    SubtractLoop_M2\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SubtractLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/SubtractLoop_M3.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061002_SubtractLoop_M3",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/testcases.json"
+      ],
+      "stdout_tail": " x=5, y=26\n  round_03/b125  [BATCH_SAFE]  x=0, y=27\n  round_03/b126  [BATCH_SAFE]  x=0, y=28\n  round_03/b127  [BATCH_SAFE]  x=-26, y=29\n  round_03/b128  [BATCH_SAFE]  x=0, y=30\n  round_03/b129  [BATCH_SAFE]  x=-27, y=31\n  round_03/b130  [BATCH_SAFE]  x=-27, y=32\n  round_03/b131  [BATCH_SAFE]  x=-26, y=33\n  round_03/b132  [BATCH_SAFE]  x=0, y=34\n  round_03/b133  [BATCH_SAFE]  x=5, y=35\n  round_03/b134  [BATCH_SAFE]  x=0, y=36\n  round_03/b135  [BATCH_SAFE]  x=30, y=37\n  round_03/b136  [BATCH_SAFE]  x=-4, y=38\n  round_03/b137  [BATCH_SAFE]  x=0, y=39\n  round_03/b138  [BATCH_SAFE]  x=30, y=40\n  round_03/b139  [BATCH_SAFE]  x=-24, y=41\n  round_03/b140  [BATCH_SAFE]  x=30, y=42\n  round_03/b141  [BATCH_SAFE]  x=-27, y=43\n  round_03/b142  [BATCH_SAFE]  x=29, y=44\n  round_03/b143  [BATCH_SAFE]  x=30, y=45\n  round_03/b144  [BATCH_SAFE]  x=0, y=46\n  round_03/b145  [BATCH_SAFE]  x=0, y=47\n  round_03/b146  [BATCH_SAFE]  x=0, y=48\n  round_03/b147  [BATCH_SAFE]  x=6, y=49\n  round_03/b148  [BATCH_SAFE]  x=-24, y=50\n  round_03/b149  [BATCH_SAFE]  x=0, y=51\n  round_03/b150  [BATCH_SAFE]  x=0, y=52\n  round_03/b151  [BATCH_SAFE]  x=30, y=53\n  round_03/b152  [BATCH_SAFE]  x=0, y=54\n  round_03/b153  [BATCH_SAFE]  x=30, y=55\n  round_03/b154  [BATCH_SAFE]  x=28, y=56\n  round_03/b155  [BATCH_SAFE]  x=-3, y=57\n  round_03/b156  [BATCH_SAFE]  x=0, y=58\n  round_03/b157  [BATCH_SAFE]  x=6, y=59\n  round_03/b158  [BATCH_SAFE]  x=30, y=60\n  round_03/b159  [BATCH_SAFE]  x=29, y=61\n  round_03/b160  [BATCH_SAFE]  x=0, y=62\n  round_03/b161  [BATCH_SAFE]  x=-3, y=63\n  round_03/b162  [BATCH_SAFE]  x=-16, y=98\n  round_04/b0  [BATCH_SAFE]  x=-2, y=65\n  round_04/b1  [BATCH_SAFE]  x=0, y=66\n  round_04/b2  [BATCH_SAFE]  x=29, y=67\n  round_04/b3  [BATCH_SAFE]  x=-4, y=68\n  round_04/b4  [BATCH_SAFE]  x=-2, y=69\n  round_04/b5  [BATCH_SAFE]  x=0, y=70\n  round_04/b6  [BATCH_SAFE]  x=0, y=71\n  round_04/b7  [BATCH_SAFE]  x=-3, y=72\n  round_04/b8  [BATCH_SAFE]  x=0, y=73\n  round_04/b9  [BATCH_SAFE]  x=0, y=74\n  round_04/b10  [BATCH_SAFE]  x=0, y=75\n  round_04/b11  [BATCH_SAFE]  x=0, y=76\n  round_04/b12  [BATCH_SAFE]  x=0, y=77\n  round_04/b13  [BATCH_SAFE]  x=0, y=78\n  round_04/b14  [BATCH_SAFE]  x=0, y=79\n  round_04/b15  [BATCH_SAFE]  x=6, y=80\n  round_04/b16  [BATCH_SAFE]  x=0, y=81\n  round_04/b17  [BATCH_SAFE]  x=-3, y=82\n  round_04/b18  [BATCH_SAFE]  x=-26, y=83\n  round_04/b19  [BATCH_SAFE]  x=0, y=84\n  round_04/b20  [BATCH_SAFE]  x=-27, y=85\n  round_04/b21  [BATCH_SAFE]  x=0, y=86\n  round_04/b22  [BATCH_SAFE]  x=-3, y=87\n  round_04/b23  [BATCH_SAFE]  x=0, y=88\n  round_04/b24  [BATCH_SAFE]  x=-3, y=89\n  round_04/b25  [BATCH_SAFE]  x=-27, y=90\n  round_04/b26  [BATCH_SAFE]  x=0, y=91\n  round_04/b27  [BATCH_SAFE]  x=-3, y=92\n  round_04/b28  [BATCH_SAFE]  x=-3, y=93\n  round_04/b29  [BATCH_SAFE]  x=-26, y=94\n  round_04/b30  [BATCH_SAFE]  x=0, y=95\n  round_04/b31  [BATCH_SAFE]  x=-2, y=96\n  round_04/b32  [BATCH_SAFE]  x=-3, y=97\n  round_04/b33  [BATCH_SAFE]  x=0, y=100\n  round_05/b0  [BATCH_SAFE]  x=0, y=99\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 7054\n  frontier_discovery_time_ms: 21805\n  compile_time_ms: 130598\n  java_exec_time_ms: 26602\n  path_log_parse_time_ms: 3748\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 41735\n  merge_verify_wall_time_ms: 8\n  batch_total_wall_time_ms: 41754\n\nTest cases written to: csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/SubtractLoop_cct.dot\n  Stats: csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/cct_stats.json\n  Counts: nodes=415, leaves=208, covered=205, infeasible=3, out_of_range=0, expanded=396, truncated=0\n  Render script: csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/render_cct.sh\n  (render later with: csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SubtractLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/SubtractLoop_M3.java",
+        "--output",
+        "csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/FSF/SubtractLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/SubtractLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       SubtractLoop\n  CSC result:  csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/FSF/SubtractLoop_FSF.txt\n  Report:      csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/refined_tbfv_report.json\n  Summary:     testcases=205, fsf_units=2, passed=205, failed=0, skipped=205, unsupported=0\n  CCT marked:  0\n  TBFV stats:  csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/cct_tbfv_stats.json\n  Counts:      nodes=415, leaves=208, fault_leaves=0, failure_cases=0\n  Fault DOT:    csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/SubtractLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=0, intervals=0, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SubtractLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop",
+        "--output",
+        "csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop\n  CCT:         csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/SubtractLoop_cct.pkl\n  Report:      csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=205, failed=0, condition_nodes=0, condition_intervals=0\n  Top conditions: <none>\n  Top intervals: <none>\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SubtractLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "SubtractLoop/SubtractLoop_M3.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/cct_failure_localization_aggregated.json\n  Source file: SubtractLoop/SubtractLoop_M3.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  0 raw -> 0 aggregated\n  Intervals[cct_only]: 0 raw -> 0 aggregated\n  Intervals[statement_presence]: 0 raw -> 0 aggregated\n  Intervals[edge_divergence_gated]: 0 raw -> 0 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SubtractLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "SubtractLoop_M3",
+        "--report",
+        "csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061002_SubtractLoop_M3/SubtractLoop/fault_localization_eval.json\n  Mutant:    SubtractLoop_M3\n  Operator:  ROR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SubtractLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/SubtractLoop_M4.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061002_SubtractLoop_M4",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/testcases.json"
+      ],
+      "stdout_tail": "[BATCH_SAFE]  x=29, y=61\n  round_03/b125  [BATCH_SAFE]  x=5, y=62\n  round_03/b126  [BATCH_SAFE]  x=-3, y=63\n  round_03/b127  [BATCH_SAFE]  x=0, y=97\n  round_04/b0  [BATCH_SAFE]  x=5, y=-65\n  round_04/b1  [BATCH_SAFE]  x=0, y=-66\n  round_04/b2  [BATCH_SAFE]  x=0, y=-67\n  round_04/b3  [BATCH_SAFE]  x=0, y=-68\n  round_04/b4  [BATCH_SAFE]  x=6, y=-69\n  round_04/b5  [BATCH_SAFE]  x=0, y=-70\n  round_04/b6  [BATCH_SAFE]  x=0, y=-71\n  round_04/b7  [BATCH_SAFE]  x=-16, y=-72\n  round_04/b8  [BATCH_SAFE]  x=0, y=-73\n  round_04/b9  [BATCH_SAFE]  x=0, y=-74\n  round_04/b10  [BATCH_SAFE]  x=0, y=-75\n  round_04/b11  [BATCH_SAFE]  x=0, y=-76\n  round_04/b12  [BATCH_SAFE]  x=-24, y=-77\n  round_04/b13  [BATCH_SAFE]  x=-24, y=-78\n  round_04/b14  [BATCH_SAFE]  x=0, y=-79\n  round_04/b15  [BATCH_SAFE]  x=0, y=-80\n  round_04/b16  [BATCH_SAFE]  x=-16, y=-81\n  round_04/b17  [BATCH_SAFE]  x=0, y=-82\n  round_04/b18  [BATCH_SAFE]  x=0, y=-83\n  round_04/b19  [BATCH_SAFE]  x=6, y=-84\n  round_04/b20  [BATCH_SAFE]  x=0, y=-85\n  round_04/b21  [BATCH_SAFE]  x=-27, y=-86\n  round_04/b22  [BATCH_SAFE]  x=28, y=-87\n  round_04/b23  [BATCH_SAFE]  x=0, y=-88\n  round_04/b24  [BATCH_SAFE]  x=0, y=-89\n  round_04/b25  [BATCH_SAFE]  x=29, y=-90\n  round_04/b26  [BATCH_SAFE]  x=29, y=-91\n  round_04/b27  [BATCH_SAFE]  x=0, y=-92\n  round_04/b28  [BATCH_SAFE]  x=0, y=-93\n  round_04/b29  [BATCH_SAFE]  x=-16, y=-94\n  round_04/b30  [BATCH_SAFE]  x=0, y=-95\n  round_04/b31  [BATCH_SAFE]  x=0, y=-96\n  round_04/b32  [BATCH_SAFE]  x=0, y=-97\n  round_04/b33  [BATCH_SAFE]  x=0, y=-98\n  round_04/b34  [BATCH_SAFE]  x=0, y=-99\n  round_04/b35  [BATCH_SAFE]  x=-2, y=65\n  round_04/b36  [BATCH_SAFE]  x=29, y=66\n  round_04/b37  [BATCH_SAFE]  x=29, y=67\n  round_04/b38  [BATCH_SAFE]  x=-3, y=68\n  round_04/b39  [BATCH_SAFE]  x=5, y=69\n  round_04/b40  [BATCH_SAFE]  x=0, y=70\n  round_04/b41  [BATCH_SAFE]  x=-2, y=71\n  round_04/b42  [BATCH_SAFE]  x=0, y=72\n  round_04/b43  [BATCH_SAFE]  x=6, y=73\n  round_04/b44  [BATCH_SAFE]  x=0, y=74\n  round_04/b45  [BATCH_SAFE]  x=0, y=75\n  round_04/b46  [BATCH_SAFE]  x=4, y=76\n  round_04/b47  [BATCH_SAFE]  x=0, y=77\n  round_04/b48  [BATCH_SAFE]  x=0, y=78\n  round_04/b49  [BATCH_SAFE]  x=0, y=79\n  round_04/b50  [BATCH_SAFE]  x=-3, y=80\n  round_04/b51  [BATCH_SAFE]  x=-3, y=81\n  round_04/b52  [BATCH_SAFE]  x=-27, y=82\n  round_04/b53  [BATCH_SAFE]  x=-3, y=83\n  round_04/b54  [BATCH_SAFE]  x=0, y=84\n  round_04/b55  [BATCH_SAFE]  x=-3, y=85\n  round_04/b56  [BATCH_SAFE]  x=0, y=86\n  round_04/b57  [BATCH_SAFE]  x=-3, y=87\n  round_04/b58  [BATCH_SAFE]  x=-2, y=88\n  round_04/b59  [BATCH_SAFE]  x=-2, y=89\n  round_04/b60  [BATCH_SAFE]  x=0, y=90\n  round_04/b61  [BATCH_SAFE]  x=-2, y=91\n  round_04/b62  [BATCH_SAFE]  x=-3, y=92\n  round_04/b63  [BATCH_SAFE]  x=-2, y=93\n  round_04/b64  [BATCH_SAFE]  x=-2, y=94\n  round_04/b65  [BATCH_SAFE]  x=0, y=95\n  round_04/b66  [BATCH_SAFE]  x=-3, y=96\n  round_04/b67  [BATCH_SAFE]  x=-3, y=98\n  round_05/b0  [BATCH_SAFE]  x=0, y=99\n  round_06/b0  [BATCH_SAFE]  x=0, y=100\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 7279\n  frontier_discovery_time_ms: 27804\n  compile_time_ms: 132497\n  java_exec_time_ms: 25685\n  path_log_parse_time_ms: 3004\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 41686\n  merge_verify_wall_time_ms: 9\n  batch_total_wall_time_ms: 41707\n\nTest cases written to: csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/SubtractLoop_cct.dot\n  Stats: csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/cct_stats.json\n  Counts: nodes=415, leaves=208, covered=205, infeasible=3, out_of_range=0, expanded=396, truncated=0\n  Render script: csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/render_cct.sh\n  (render later with: csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SubtractLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/SubtractLoop_M4.java",
+        "--output",
+        "csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/FSF/SubtractLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/SubtractLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       SubtractLoop\n  CSC result:  csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/FSF/SubtractLoop_FSF.txt\n  Report:      csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/refined_tbfv_report.json\n  Summary:     testcases=205, fsf_units=2, passed=105, failed=100, skipped=205, unsupported=0\n  CCT marked:  100\n  TBFV stats:  csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/cct_tbfv_stats.json\n  Counts:      nodes=415, leaves=208, fault_leaves=100, failure_cases=100\n  Fault DOT:    csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/SubtractLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=106, intervals=205, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SubtractLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop",
+        "--output",
+        "csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop\n  CCT:         csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/SubtractLoop_cct.pkl\n  Report:      csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=205, failed=100, condition_nodes=106, condition_intervals=205\n  Top conditions:\n    #1 score=4.6151 fail=100/100 line=13 n > 0\n    #2 score=4.6151 fail=100/100 line=13 n > 0\n    #3 score=4.6052 fail=99/99 line=13 n > 0\n  Top intervals:\n    #1 score=4.0086 fail=100/100 line=[13, 13] root.F.F.F.F.T.TRUE\n    #2 score=4.0086 fail=100/100 line=[11, 13] root.F.F.F.F.TRUE\n    #3 score=2.0000 fail=99/99 line=[13, 13] root.F.F.F.F.T.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SubtractLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "SubtractLoop/SubtractLoop_M4.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/cct_failure_localization_aggregated.json\n  Source file: SubtractLoop/SubtractLoop_M4.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  106 raw -> 6 aggregated\n  Intervals[cct_only]: 205 raw -> 7 aggregated\n  Intervals[statement_presence]: 205 raw -> 7 aggregated\n  Intervals[edge_divergence_gated]: 205 raw -> 7 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SubtractLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "SubtractLoop_M4",
+        "--report",
+        "csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061002_SubtractLoop_M4/SubtractLoop/fault_localization_eval.json\n  Mutant:    SubtractLoop_M4\n  Operator:  AOR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_gated: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_gated: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SubtractLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/SubtractLoop_M5.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061002_SubtractLoop_M5",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/testcases.json"
+      ],
+      "stdout_tail": "  round_03/b74  [BATCH_SAFE]  x=0, y=22\n  round_03/b75  [BATCH_SAFE]  x=0, y=23\n  round_03/b76  [BATCH_SAFE]  x=0, y=26\n  round_03/b77  [BATCH_SAFE]  x=0, y=28\n  round_03/b78  [BATCH_SAFE]  x=-3, y=29\n  round_03/b79  [BATCH_SAFE]  x=0, y=31\n  round_03/b80  [BATCH_SAFE]  x=29, y=33\n  round_03/b81  [BATCH_SAFE]  x=-16, y=35\n  round_03/b82  [BATCH_SAFE]  x=-16, y=37\n  round_03/b83  [BATCH_SAFE]  x=-2, y=40\n  round_03/b84  [BATCH_SAFE]  x=-2, y=42\n  round_03/b85  [BATCH_SAFE]  x=0, y=44\n  round_03/b86  [BATCH_SAFE]  x=-3, y=45\n  round_03/b87  [BATCH_SAFE]  x=0, y=48\n  round_03/b88  [BATCH_SAFE]  x=0, y=50\n  round_03/b89  [BATCH_SAFE]  x=0, y=52\n  round_03/b90  [BATCH_SAFE]  x=0, y=53\n  round_03/b91  [BATCH_SAFE]  x=0, y=56\n  round_03/b92  [BATCH_SAFE]  x=0, y=58\n  round_03/b93  [BATCH_SAFE]  x=0, y=59\n  round_03/b94  [BATCH_SAFE]  x=5, y=62\n  round_03/b95  [BATCH_SAFE]  x=-2, y=74\n  round_04/b0  [BATCH_SAFE]  x=6, y=-65\n  round_04/b1  [BATCH_SAFE]  x=6, y=-66\n  round_04/b2  [BATCH_SAFE]  x=0, y=-67\n  round_04/b3  [BATCH_SAFE]  x=0, y=-68\n  round_04/b4  [BATCH_SAFE]  x=0, y=-69\n  round_04/b5  [BATCH_SAFE]  x=0, y=-70\n  round_04/b6  [BATCH_SAFE]  x=0, y=-71\n  round_04/b7  [BATCH_SAFE]  x=0, y=-72\n  round_04/b8  [BATCH_SAFE]  x=29, y=-73\n  round_04/b9  [BATCH_SAFE]  x=0, y=-74\n  round_04/b10  [BATCH_SAFE]  x=-24, y=-75\n  round_04/b11  [BATCH_SAFE]  x=-27, y=-76\n  round_04/b12  [BATCH_SAFE]  x=0, y=-77\n  round_04/b13  [BATCH_SAFE]  x=0, y=-78\n  round_04/b14  [BATCH_SAFE]  x=0, y=-79\n  round_04/b15  [BATCH_SAFE]  x=0, y=-80\n  round_04/b16  [BATCH_SAFE]  x=0, y=-81\n  round_04/b17  [BATCH_SAFE]  x=0, y=-82\n  round_04/b18  [BATCH_SAFE]  x=0, y=-83\n  round_04/b19  [BATCH_SAFE]  x=-24, y=-84\n  round_04/b20  [BATCH_SAFE]  x=28, y=-85\n  round_04/b21  [BATCH_SAFE]  x=0, y=-86\n  round_04/b22  [BATCH_SAFE]  x=0, y=-87\n  round_04/b23  [BATCH_SAFE]  x=30, y=-88\n  round_04/b24  [BATCH_SAFE]  x=29, y=-89\n  round_04/b25  [BATCH_SAFE]  x=0, y=-90\n  round_04/b26  [BATCH_SAFE]  x=0, y=-91\n  round_04/b27  [BATCH_SAFE]  x=0, y=-92\n  round_04/b28  [BATCH_SAFE]  x=0, y=-93\n  round_04/b29  [BATCH_SAFE]  x=0, y=-94\n  round_04/b30  [BATCH_SAFE]  x=30, y=-95\n  round_04/b31  [BATCH_SAFE]  x=0, y=-96\n  round_04/b32  [BATCH_SAFE]  x=28, y=-97\n  round_04/b33  [BATCH_SAFE]  x=28, y=-98\n  round_04/b34  [BATCH_SAFE]  x=0, y=-99\n  round_04/b35  [BATCH_SAFE]  x=0, y=66\n  round_04/b36  [BATCH_SAFE]  x=0, y=67\n  round_04/b37  [BATCH_SAFE]  x=0, y=70\n  round_04/b38  [BATCH_SAFE]  x=29, y=71\n  round_04/b39  [BATCH_SAFE]  x=-26, y=97\n  round_05/b0  [BATCH_SAFE]  x=0, y=76\n  round_05/b1  [BATCH_SAFE]  x=0, y=77\n  round_05/b2  [BATCH_SAFE]  x=-16, y=79\n  round_05/b3  [BATCH_SAFE]  x=0, y=81\n  round_05/b4  [BATCH_SAFE]  x=0, y=83\n  round_05/b5  [BATCH_SAFE]  x=-3, y=85\n  round_05/b6  [BATCH_SAFE]  x=28, y=87\n  round_05/b7  [BATCH_SAFE]  x=6, y=89\n  round_05/b8  [BATCH_SAFE]  x=0, y=92\n  round_05/b9  [BATCH_SAFE]  x=-2, y=94\n  round_05/b10  [BATCH_SAFE]  x=-16, y=95\n  round_05/b11  [BATCH_SAFE]  x=0, y=99\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 4428\n  frontier_discovery_time_ms: 18230\n  compile_time_ms: 100342\n  java_exec_time_ms: 19002\n  path_log_parse_time_ms: 2024\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 31013\n  merge_verify_wall_time_ms: 6\n  batch_total_wall_time_ms: 31028\n\nTest cases written to: csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/SubtractLoop_cct.dot\n  Stats: csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/cct_stats.json\n  Counts: nodes=315, leaves=158, covered=155, infeasible=3, out_of_range=0, expanded=296, truncated=0\n  Render script: csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/render_cct.sh\n  (render later with: csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SubtractLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/SubtractLoop_M5.java",
+        "--output",
+        "csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/FSF/SubtractLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/SubtractLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       SubtractLoop\n  CSC result:  csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/FSF/SubtractLoop_FSF.txt\n  Report:      csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/refined_tbfv_report.json\n  Summary:     testcases=155, fsf_units=2, passed=105, failed=50, skipped=155, unsupported=0\n  CCT marked:  50\n  TBFV stats:  csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/cct_tbfv_stats.json\n  Counts:      nodes=315, leaves=158, fault_leaves=50, failure_cases=50\n  Fault DOT:    csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/SubtractLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=56, intervals=105, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SubtractLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop",
+        "--output",
+        "csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop\n  CCT:         csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/SubtractLoop_cct.pkl\n  Report:      csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=155, failed=50, condition_nodes=56, condition_intervals=105\n  Top conditions:\n    #1 score=3.9318 fail=50/50 line=13 n > 0\n    #2 score=3.9318 fail=50/50 line=13 n > 0\n    #3 score=3.9120 fail=49/49 line=13 n > 0\n  Top intervals:\n    #1 score=3.4151 fail=50/50 line=[13, 13] root.F.F.F.F.T.TRUE\n    #2 score=3.4151 fail=50/50 line=[11, 13] root.F.F.F.F.TRUE\n    #3 score=1.6990 fail=49/49 line=[13, 13] root.F.F.F.F.T.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SubtractLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "SubtractLoop/SubtractLoop_M5.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/cct_failure_localization_aggregated.json\n  Source file: SubtractLoop/SubtractLoop_M5.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  56 raw -> 6 aggregated\n  Intervals[cct_only]: 105 raw -> 7 aggregated\n  Intervals[statement_presence]: 105 raw -> 7 aggregated\n  Intervals[edge_divergence_gated]: 105 raw -> 7 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SubtractLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "SubtractLoop_M5",
+        "--report",
+        "csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061002_SubtractLoop_M5/SubtractLoop/fault_localization_eval.json\n  Mutant:    SubtractLoop_M5\n  Operator:  SUR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_gated: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_gated: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SubtractLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/SubtractLoop_M6.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061002_SubtractLoop_M6",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/testcases.json"
+      ],
+      "stdout_tail": "[BATCH_SAFE]  x=29, y=61\n  round_03/b125  [BATCH_SAFE]  x=5, y=62\n  round_03/b126  [BATCH_SAFE]  x=-3, y=63\n  round_03/b127  [BATCH_SAFE]  x=0, y=97\n  round_04/b0  [BATCH_SAFE]  x=5, y=-65\n  round_04/b1  [BATCH_SAFE]  x=0, y=-66\n  round_04/b2  [BATCH_SAFE]  x=0, y=-67\n  round_04/b3  [BATCH_SAFE]  x=0, y=-68\n  round_04/b4  [BATCH_SAFE]  x=6, y=-69\n  round_04/b5  [BATCH_SAFE]  x=0, y=-70\n  round_04/b6  [BATCH_SAFE]  x=0, y=-71\n  round_04/b7  [BATCH_SAFE]  x=-16, y=-72\n  round_04/b8  [BATCH_SAFE]  x=0, y=-73\n  round_04/b9  [BATCH_SAFE]  x=0, y=-74\n  round_04/b10  [BATCH_SAFE]  x=0, y=-75\n  round_04/b11  [BATCH_SAFE]  x=0, y=-76\n  round_04/b12  [BATCH_SAFE]  x=-24, y=-77\n  round_04/b13  [BATCH_SAFE]  x=-24, y=-78\n  round_04/b14  [BATCH_SAFE]  x=0, y=-79\n  round_04/b15  [BATCH_SAFE]  x=0, y=-80\n  round_04/b16  [BATCH_SAFE]  x=-16, y=-81\n  round_04/b17  [BATCH_SAFE]  x=0, y=-82\n  round_04/b18  [BATCH_SAFE]  x=0, y=-83\n  round_04/b19  [BATCH_SAFE]  x=6, y=-84\n  round_04/b20  [BATCH_SAFE]  x=0, y=-85\n  round_04/b21  [BATCH_SAFE]  x=-27, y=-86\n  round_04/b22  [BATCH_SAFE]  x=28, y=-87\n  round_04/b23  [BATCH_SAFE]  x=0, y=-88\n  round_04/b24  [BATCH_SAFE]  x=0, y=-89\n  round_04/b25  [BATCH_SAFE]  x=29, y=-90\n  round_04/b26  [BATCH_SAFE]  x=29, y=-91\n  round_04/b27  [BATCH_SAFE]  x=0, y=-92\n  round_04/b28  [BATCH_SAFE]  x=0, y=-93\n  round_04/b29  [BATCH_SAFE]  x=-16, y=-94\n  round_04/b30  [BATCH_SAFE]  x=0, y=-95\n  round_04/b31  [BATCH_SAFE]  x=0, y=-96\n  round_04/b32  [BATCH_SAFE]  x=0, y=-97\n  round_04/b33  [BATCH_SAFE]  x=0, y=-98\n  round_04/b34  [BATCH_SAFE]  x=0, y=-99\n  round_04/b35  [BATCH_SAFE]  x=-2, y=65\n  round_04/b36  [BATCH_SAFE]  x=29, y=66\n  round_04/b37  [BATCH_SAFE]  x=29, y=67\n  round_04/b38  [BATCH_SAFE]  x=-3, y=68\n  round_04/b39  [BATCH_SAFE]  x=5, y=69\n  round_04/b40  [BATCH_SAFE]  x=0, y=70\n  round_04/b41  [BATCH_SAFE]  x=-2, y=71\n  round_04/b42  [BATCH_SAFE]  x=0, y=72\n  round_04/b43  [BATCH_SAFE]  x=6, y=73\n  round_04/b44  [BATCH_SAFE]  x=0, y=74\n  round_04/b45  [BATCH_SAFE]  x=0, y=75\n  round_04/b46  [BATCH_SAFE]  x=4, y=76\n  round_04/b47  [BATCH_SAFE]  x=0, y=77\n  round_04/b48  [BATCH_SAFE]  x=0, y=78\n  round_04/b49  [BATCH_SAFE]  x=0, y=79\n  round_04/b50  [BATCH_SAFE]  x=-3, y=80\n  round_04/b51  [BATCH_SAFE]  x=-3, y=81\n  round_04/b52  [BATCH_SAFE]  x=-27, y=82\n  round_04/b53  [BATCH_SAFE]  x=-3, y=83\n  round_04/b54  [BATCH_SAFE]  x=0, y=84\n  round_04/b55  [BATCH_SAFE]  x=-3, y=85\n  round_04/b56  [BATCH_SAFE]  x=0, y=86\n  round_04/b57  [BATCH_SAFE]  x=-3, y=87\n  round_04/b58  [BATCH_SAFE]  x=-2, y=88\n  round_04/b59  [BATCH_SAFE]  x=-2, y=89\n  round_04/b60  [BATCH_SAFE]  x=0, y=90\n  round_04/b61  [BATCH_SAFE]  x=-2, y=91\n  round_04/b62  [BATCH_SAFE]  x=-3, y=92\n  round_04/b63  [BATCH_SAFE]  x=-2, y=93\n  round_04/b64  [BATCH_SAFE]  x=-2, y=94\n  round_04/b65  [BATCH_SAFE]  x=0, y=95\n  round_04/b66  [BATCH_SAFE]  x=-3, y=96\n  round_04/b67  [BATCH_SAFE]  x=-3, y=98\n  round_05/b0  [BATCH_SAFE]  x=0, y=99\n  round_06/b0  [BATCH_SAFE]  x=0, y=100\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 7199\n  frontier_discovery_time_ms: 27586\n  compile_time_ms: 129995\n  java_exec_time_ms: 25935\n  path_log_parse_time_ms: 3155\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 41344\n  merge_verify_wall_time_ms: 9\n  batch_total_wall_time_ms: 41364\n\nTest cases written to: csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/SubtractLoop_cct.dot\n  Stats: csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/cct_stats.json\n  Counts: nodes=415, leaves=208, covered=205, infeasible=3, out_of_range=0, expanded=396, truncated=0\n  Render script: csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/render_cct.sh\n  (render later with: csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SubtractLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/SubtractLoop_M6.java",
+        "--output",
+        "csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/FSF/SubtractLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/SubtractLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       SubtractLoop\n  CSC result:  csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SubtractLoop/FSF/SubtractLoop_FSF.txt\n  Report:      csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/refined_tbfv_report.json\n  Summary:     testcases=205, fsf_units=2, passed=105, failed=100, skipped=205, unsupported=0\n  CCT marked:  100\n  TBFV stats:  csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/cct_tbfv_stats.json\n  Counts:      nodes=415, leaves=208, fault_leaves=100, failure_cases=100\n  Fault DOT:    csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/SubtractLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=106, intervals=205, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SubtractLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop",
+        "--output",
+        "csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop\n  CCT:         csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/SubtractLoop_cct.pkl\n  Report:      csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=205, failed=100, condition_nodes=106, condition_intervals=205\n  Top conditions:\n    #1 score=4.6151 fail=100/100 line=19 n > 0\n    #2 score=4.6052 fail=99/99 line=19 n > 0\n    #3 score=4.5951 fail=98/98 line=19 n > 0\n  Top intervals:\n    #1 score=4.0086 fail=100/100 line=[19, 19] root.F.F.F.F.F.TRUE\n    #2 score=3.9493 fail=100/101 line=[11, 19] root.F.F.F.F.FALSE\n    #3 score=2.0000 fail=99/99 line=[19, 19] root.F.F.F.F.F.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SubtractLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "SubtractLoop/SubtractLoop_M6.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/cct_failure_localization_aggregated.json\n  Source file: SubtractLoop/SubtractLoop_M6.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  106 raw -> 6 aggregated\n  Intervals[cct_only]: 205 raw -> 7 aggregated\n  Intervals[statement_presence]: 205 raw -> 7 aggregated\n  Intervals[edge_divergence_gated]: 205 raw -> 7 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SubtractLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "SubtractLoop_M6",
+        "--report",
+        "csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061002_SubtractLoop_M6/SubtractLoop/fault_localization_eval.json\n  Mutant:    SubtractLoop_M6\n  Operator:  AOR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_gated: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_gated: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    }
+  ]
+}

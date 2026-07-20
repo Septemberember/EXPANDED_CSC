@@ -1,0 +1,754 @@
+{
+  "subject": "BoundedAbundantNumber",
+  "subject_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber",
+  "fsf": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/FSF/BoundedAbundantNumber_FSF.txt",
+  "manifest": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+  "mode": "expanded",
+  "strategy": "batch",
+  "max_iter": 100,
+  "dry_run": false,
+  "original": {
+    "role": "original",
+    "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/BoundedAbundantNumber.java",
+    "class_name": "BoundedAbundantNumber",
+    "mutant_id": null
+  },
+  "mutants": [
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/BoundedAbundantNumber_M1.java",
+      "class_name": "BoundedAbundantNumber",
+      "mutant_id": "BoundedAbundantNumber_M1"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/BoundedAbundantNumber_M2.java",
+      "class_name": "BoundedAbundantNumber",
+      "mutant_id": "BoundedAbundantNumber_M2"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/BoundedAbundantNumber_M3.java",
+      "class_name": "BoundedAbundantNumber",
+      "mutant_id": "BoundedAbundantNumber_M3"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/BoundedAbundantNumber_M4.java",
+      "class_name": "BoundedAbundantNumber",
+      "mutant_id": "BoundedAbundantNumber_M4"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/BoundedAbundantNumber_M5.java",
+      "class_name": "BoundedAbundantNumber",
+      "mutant_id": "BoundedAbundantNumber_M5"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/BoundedAbundantNumber_M6.java",
+      "class_name": "BoundedAbundantNumber",
+      "mutant_id": "BoundedAbundantNumber_M6"
+    }
+  ],
+  "step_count": 30,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "mutant:BoundedAbundantNumber:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/BoundedAbundantNumber_M1.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_BoundedAbundantNumber_M1",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/testcases.json"
+      ],
+      "stdout_tail": " |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     (T) ->\n  |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(number=16384)\n  (T) ->\n  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(number=0)\n-----------------------------\n\n  [EXPAND] Promoted truncated leaf at 'sum > 2 * number' (cnt=1) \u2192 F:['tc_8_b0']\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/BoundedAbundantNumber_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 49 test cases generated in 9 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/BoundedAbundantNumber_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=32\n  round_04/b0  [BATCH_SAFE]  number=2\n  round_04/b1  [BATCH_SAFE]  number=33\n  round_04/b2  [BATCH_SAFE]  number=4\n  round_04/b3  [BATCH_SAFE]  number=26\n  round_04/b4  [BATCH_SAFE]  number=8\n  round_04/b5  [BATCH_SAFE]  number=44\n  round_04/b6  [BATCH_SAFE]  number=16\n  round_04/b7  [BATCH_SAFE]  number=28\n  round_04/b8  [BATCH_SAFE]  number=20\n  round_04/b9  [BATCH_SAFE]  number=12\n  round_05/b0  [BATCH_SAFE]  number=5\n  round_05/b1  [BATCH_SAFE]  number=31\n  round_05/b2  [BATCH_SAFE]  number=9\n  round_05/b3  [BATCH_SAFE]  number=39\n  round_05/b4  [BATCH_SAFE]  number=27\n  round_05/b5  [BATCH_SAFE]  number=21\n  round_05/b6  [BATCH_SAFE]  number=15\n  round_05/b7  [BATCH_SAFE]  number=46\n  round_05/b8  [BATCH_SAFE]  number=22\n  round_05/b9  [BATCH_SAFE]  number=14\n  round_05/b10  [BATCH_SAFE]  number=10\n  round_05/b11  [BATCH_SAFE]  number=40\n  round_05/b12  [BATCH_SAFE]  number=6\n  round_05/b13  [BATCH_SAFE]  number=42\n  round_05/b14  [BATCH_SAFE]  number=36\n  round_06/b0  [BATCH_SAFE]  number=7\n  round_06/b1  [BATCH_SAFE]  number=11\n  round_06/b2  [BATCH_SAFE]  number=13\n  round_06/b3  [BATCH_SAFE]  number=17\n  round_06/b4  [BATCH_SAFE]  number=19\n  round_06/b5  [BATCH_SAFE]  number=23\n  round_06/b6  [BATCH_SAFE]  number=29\n  round_06/b7  [BATCH_SAFE]  number=41\n  round_06/b8  [BATCH_SAFE]  number=49\n  round_06/b9  [BATCH_SAFE]  number=25\n  round_06/b10  [BATCH_SAFE]  number=45\n  round_06/b11  [BATCH_SAFE]  number=38\n  round_06/b12  [BATCH_SAFE]  number=34\n  round_06/b13  [BATCH_SAFE]  number=18\n  round_06/b14  [BATCH_SAFE]  number=30\n  round_06/b15  [BATCH_SAFE]  number=24\n  round_07/b0  [BATCH_SAFE]  number=37\n  round_07/b1  [BATCH_SAFE]  number=47\n  round_07/b2  [BATCH_SAFE]  number=35\n  round_07/b3  [BATCH_SAFE]  number=48\n  round_08/b0  [BATCH_SAFE]  number=43\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 253\n  frontier_discovery_time_ms: 11774\n  compile_time_ms: 26648\n  java_exec_time_ms: 5130\n  path_log_parse_time_ms: 36\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 9103\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 9123\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/BoundedAbundantNumber_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/cct_stats.json\n  Counts: nodes=1079, leaves=540, covered=49, infeasible=491, out_of_range=0, expanded=572, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedAbundantNumber:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/BoundedAbundantNumber_M1.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/FSF/BoundedAbundantNumber_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/BoundedAbundantNumber_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedAbundantNumber\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/FSF/BoundedAbundantNumber_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/refined_tbfv_report.json\n  Summary:     testcases=49, fsf_units=3, passed=49, failed=1, skipped=97, unsupported=0\n  CCT marked:  1\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/cct_tbfv_stats.json\n  Counts:      nodes=1079, leaves=540, fault_leaves=1, failure_cases=1\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/BoundedAbundantNumber_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=2, intervals=2, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAbundantNumber:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber\n  CCT:         csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/BoundedAbundantNumber_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=49, failed=1, condition_nodes=2, condition_intervals=2\n  Top conditions:\n    #1 score=0.0144 fail=1/48 line=3 number >= 50\n    #2 score=0.0141 fail=1/49 line=3 number < 1\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[3, None] root.F.TRUE\n    #2 score=0.0000 fail=1/48 line=[3, 3] root.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAbundantNumber:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedAbundantNumber/BoundedAbundantNumber_M1.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/cct_failure_localization_aggregated.json\n  Source file: BoundedAbundantNumber/BoundedAbundantNumber_M1.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  2 raw -> 2 aggregated\n  Intervals[cct_only]: 2 raw -> 2 aggregated\n  Intervals[statement_presence]: 2 raw -> 2 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 2 raw -> 2 aggregated\n  Intervals[edge_divergence_sibling_shared]: 2 raw -> 2 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAbundantNumber:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedAbundantNumber_M1",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M1/BoundedAbundantNumber/fault_localization_eval.json\n  Mutant:    BoundedAbundantNumber_M1\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedAbundantNumber:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/BoundedAbundantNumber_M2.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_BoundedAbundantNumber_M2",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/testcases.json"
+      ],
+      "stdout_tail": " |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     (T) ->\n  |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(number=16384)\n  (T) ->\n  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(number=0)\n-----------------------------\n\n  [EXPAND] Promoted truncated leaf at 'sum > 2 * number' (cnt=1) \u2192 F:['tc_13_b0']\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/BoundedAbundantNumber_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 48 test cases generated in 14 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/BoundedAbundantNumber_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=32\n  round_04/b0  [BATCH_SAFE]  number=4\n  round_04/b1  [BATCH_SAFE]  number=33\n  round_04/b2  [BATCH_SAFE]  number=6\n  round_04/b3  [BATCH_SAFE]  number=8\n  round_04/b4  [BATCH_SAFE]  number=50\n  round_04/b5  [BATCH_SAFE]  number=16\n  round_04/b6  [BATCH_SAFE]  number=44\n  round_04/b7  [BATCH_SAFE]  number=28\n  round_04/b8  [BATCH_SAFE]  number=20\n  round_04/b9  [BATCH_SAFE]  number=12\n  round_05/b0  [BATCH_SAFE]  number=7\n  round_05/b1  [BATCH_SAFE]  number=17\n  round_05/b2  [BATCH_SAFE]  number=9\n  round_05/b3  [BATCH_SAFE]  number=39\n  round_05/b4  [BATCH_SAFE]  number=27\n  round_05/b5  [BATCH_SAFE]  number=21\n  round_05/b6  [BATCH_SAFE]  number=45\n  round_05/b7  [BATCH_SAFE]  number=10\n  round_05/b8  [BATCH_SAFE]  number=46\n  round_05/b9  [BATCH_SAFE]  number=40\n  round_05/b10  [BATCH_SAFE]  number=30\n  round_05/b11  [BATCH_SAFE]  number=36\n  round_06/b0  [BATCH_SAFE]  number=11\n  round_06/b1  [BATCH_SAFE]  number=13\n  round_06/b2  [BATCH_SAFE]  number=19\n  round_06/b3  [BATCH_SAFE]  number=49\n  round_06/b4  [BATCH_SAFE]  number=25\n  round_06/b5  [BATCH_SAFE]  number=15\n  round_06/b6  [BATCH_SAFE]  number=14\n  round_06/b7  [BATCH_SAFE]  number=22\n  round_06/b8  [BATCH_SAFE]  number=26\n  round_06/b9  [BATCH_SAFE]  number=34\n  round_06/b10  [BATCH_SAFE]  number=38\n  round_06/b11  [BATCH_SAFE]  number=18\n  round_06/b12  [BATCH_SAFE]  number=24\n  round_07/b0  [BATCH_SAFE]  number=23\n  round_07/b1  [BATCH_SAFE]  number=35\n  round_07/b2  [BATCH_SAFE]  number=42\n  round_07/b3  [BATCH_SAFE]  number=48\n  round_08/b0  [BATCH_SAFE]  number=29\n  round_09/b0  [BATCH_SAFE]  number=31\n  round_10/b0  [BATCH_SAFE]  number=37\n  round_11/b0  [BATCH_SAFE]  number=41\n  round_12/b0  [BATCH_SAFE]  number=47\n  round_13/b0  [BATCH_SAFE]  number=43\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 184\n  frontier_discovery_time_ms: 9797\n  compile_time_ms: 22376\n  java_exec_time_ms: 4372\n  path_log_parse_time_ms: 28\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 9187\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 9219\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/BoundedAbundantNumber_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/cct_stats.json\n  Counts: nodes=1063, leaves=532, covered=48, infeasible=484, out_of_range=0, expanded=563, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedAbundantNumber:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/BoundedAbundantNumber_M2.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/FSF/BoundedAbundantNumber_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/BoundedAbundantNumber_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedAbundantNumber\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/FSF/BoundedAbundantNumber_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/refined_tbfv_report.json\n  Summary:     testcases=48, fsf_units=3, passed=41, failed=7, skipped=96, unsupported=0\n  CCT marked:  7\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/cct_tbfv_stats.json\n  Counts:      nodes=1063, leaves=532, fault_leaves=7, failure_cases=7\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/BoundedAbundantNumber_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=121, intervals=127, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAbundantNumber:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber\n  CCT:         csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/BoundedAbundantNumber_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=48, failed=7, condition_nodes=121, condition_intervals=127\n  Top conditions:\n    #1 score=1.3863 fail=3/3 line=10 number % i == 0\n    #2 score=1.3863 fail=3/3 line=9 i < number / 2\n    #3 score=1.2798 fail=5/7 line=10 number % i == 0\n  Top intervals:\n    #1 score=0.9542 fail=2/2 line=[9, 10] root.F.F.T.T.T.F.T.T.T.T.T.F.T.FALSE\n    #2 score=0.9542 fail=2/2 line=[9, 10] root.F.F.T.T.T.F.T.T.T.T.T.FALSE\n    #3 score=0.9542 fail=2/2 line=[9, 10] root.F.F.T.T.T.T.T.F.T.F.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAbundantNumber:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedAbundantNumber/BoundedAbundantNumber_M2.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/cct_failure_localization_aggregated.json\n  Source file: BoundedAbundantNumber/BoundedAbundantNumber_M2.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  121 raw -> 5 aggregated\n  Intervals[cct_only]: 127 raw -> 7 aggregated\n  Intervals[statement_presence]: 127 raw -> 7 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 127 raw -> 7 aggregated\n  Intervals[edge_divergence_sibling_shared]: 127 raw -> 7 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAbundantNumber:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedAbundantNumber_M2",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M2/BoundedAbundantNumber/fault_localization_eval.json\n  Mutant:    BoundedAbundantNumber_M2\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedAbundantNumber:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/BoundedAbundantNumber_M3.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_BoundedAbundantNumber_M3",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/testcases.json"
+      ],
+      "stdout_tail": "    |     |     |     |   [LEAF] Infeasible (X)\n  |     (T) ->\n  |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(number=16384)\n  (T) ->\n  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(number=0)\n-----------------------------\n\n  [EXPAND] Promoted truncated leaf at 'sum >= 2 * number' (cnt=1) \u2192 F:['tc_10_b0']\n  [EXPAND] Promoted truncated leaf at 'sum >= 2 * number' (cnt=1) \u2192 F:['tc_10_b1']\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/BoundedAbundantNumber_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 51 test cases generated in 11 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/BoundedAbundantNumber_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=32\n  round_04/b0  [BATCH_SAFE]  number=2\n  round_04/b1  [BATCH_SAFE]  number=33\n  round_04/b2  [BATCH_SAFE]  number=4\n  round_04/b3  [BATCH_SAFE]  number=50\n  round_04/b4  [BATCH_SAFE]  number=8\n  round_04/b5  [BATCH_SAFE]  number=44\n  round_04/b6  [BATCH_SAFE]  number=16\n  round_04/b7  [BATCH_SAFE]  number=28\n  round_04/b8  [BATCH_SAFE]  number=20\n  round_04/b9  [BATCH_SAFE]  number=42\n  round_05/b0  [BATCH_SAFE]  number=1\n  round_05/b1  [BATCH_SAFE]  number=5\n  round_05/b2  [BATCH_SAFE]  number=17\n  round_05/b3  [BATCH_SAFE]  number=9\n  round_05/b4  [BATCH_SAFE]  number=39\n  round_05/b5  [BATCH_SAFE]  number=27\n  round_05/b6  [BATCH_SAFE]  number=21\n  round_05/b7  [BATCH_SAFE]  number=45\n  round_05/b8  [BATCH_SAFE]  number=38\n  round_05/b9  [BATCH_SAFE]  number=10\n  round_05/b10  [BATCH_SAFE]  number=40\n  round_05/b11  [BATCH_SAFE]  number=6\n  round_05/b12  [BATCH_SAFE]  number=18\n  round_05/b13  [BATCH_SAFE]  number=30\n  round_05/b14  [BATCH_SAFE]  number=12\n  round_06/b0  [BATCH_SAFE]  number=7\n  round_06/b1  [BATCH_SAFE]  number=11\n  round_06/b2  [BATCH_SAFE]  number=13\n  round_06/b3  [BATCH_SAFE]  number=29\n  round_06/b4  [BATCH_SAFE]  number=49\n  round_06/b5  [BATCH_SAFE]  number=35\n  round_06/b6  [BATCH_SAFE]  number=15\n  round_06/b7  [BATCH_SAFE]  number=46\n  round_06/b8  [BATCH_SAFE]  number=34\n  round_06/b9  [BATCH_SAFE]  number=26\n  round_06/b10  [BATCH_SAFE]  number=22\n  round_06/b11  [BATCH_SAFE]  number=14\n  round_06/b12  [BATCH_SAFE]  number=48\n  round_07/b0  [BATCH_SAFE]  number=19\n  round_07/b1  [BATCH_SAFE]  number=23\n  round_07/b2  [BATCH_SAFE]  number=31\n  round_07/b3  [BATCH_SAFE]  number=25\n  round_07/b4  [BATCH_SAFE]  number=36\n  round_07/b5  [BATCH_SAFE]  number=24\n  round_08/b0  [BATCH_SAFE]  number=37\n  round_09/b0  [BATCH_SAFE]  number=47\n  round_10/b0  [BATCH_SAFE]  number=41\n  round_10/b1  [BATCH_SAFE]  number=43\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 203\n  frontier_discovery_time_ms: 11273\n  compile_time_ms: 22962\n  java_exec_time_ms: 4757\n  path_log_parse_time_ms: 30\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 9104\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 9131\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/BoundedAbundantNumber_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/cct_stats.json\n  Counts: nodes=1161, leaves=581, covered=51, infeasible=530, out_of_range=0, expanded=614, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedAbundantNumber:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/BoundedAbundantNumber_M3.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/FSF/BoundedAbundantNumber_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/BoundedAbundantNumber_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedAbundantNumber\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/FSF/BoundedAbundantNumber_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/refined_tbfv_report.json\n  Summary:     testcases=51, fsf_units=3, passed=48, failed=3, skipped=102, unsupported=0\n  CCT marked:  3\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/cct_tbfv_stats.json\n  Counts:      nodes=1161, leaves=581, fault_leaves=3, failure_cases=3\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/BoundedAbundantNumber_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=33, intervals=35, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAbundantNumber:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber\n  CCT:         csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/BoundedAbundantNumber_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=51, failed=3, condition_nodes=33, condition_intervals=35\n  Top conditions:\n    #1 score=0.6931 fail=1/1 line=16 sum >= 2 * number\n    #2 score=0.6931 fail=1/1 line=9 i <= number / 2\n    #3 score=0.6931 fail=1/1 line=10 number % i == 0\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[16, None] root.F.F.T.T.T.F.T.T.T.F.T.F.T.T.T.F.T.F.T.F.T.F.T.F.T.F.T.T.F.TRUE\n    #2 score=0.6021 fail=1/1 line=[9, 10] root.F.F.T.T.T.F.T.T.T.F.T.F.T.T.T.F.T.F.T.F.T.F.T.F.T.F.T.TRUE\n    #3 score=0.6021 fail=1/1 line=[9, 10] root.F.F.T.T.T.F.T.T.T.F.T.F.T.T.T.F.T.F.T.F.T.F.T.F.T.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAbundantNumber:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedAbundantNumber/BoundedAbundantNumber_M3.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/cct_failure_localization_aggregated.json\n  Source file: BoundedAbundantNumber/BoundedAbundantNumber_M3.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  33 raw -> 5 aggregated\n  Intervals[cct_only]: 35 raw -> 7 aggregated\n  Intervals[statement_presence]: 35 raw -> 7 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 35 raw -> 7 aggregated\n  Intervals[edge_divergence_sibling_shared]: 35 raw -> 7 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAbundantNumber:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedAbundantNumber_M3",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M3/BoundedAbundantNumber/fault_localization_eval.json\n  Mutant:    BoundedAbundantNumber_M3\n  Operator:  ROR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedAbundantNumber:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/BoundedAbundantNumber_M4.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_BoundedAbundantNumber_M4",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/testcases.json"
+      ],
+      "stdout_tail": "/ 2' (cnt=22) \u2192 T:['tc_7_b10']\n  [EXPAND] Promoted truncated leaf at 'number % i == 0' (cnt=22) \u2192 T:['tc_7_b10']\n  [EXPAND] Promoted truncated leaf at 'i <= number / 2' (cnt=23) \u2192 F:['tc_7_b10']\n  [EXPAND] Promoted truncated leaf at 'sum > 2 * number' (cnt=1) \u2192 F:['tc_7_b10']\n  [EXPAND] Promoted truncated leaf at 'i <= number / 2' (cnt=17) \u2192 F:['tc_7_b11']\n  [EXPAND] Promoted truncated leaf at 'sum > 2 * number' (cnt=1) \u2192 F:['tc_7_b11']\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/BoundedAbundantNumber_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 50 test cases generated in 8 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/BoundedAbundantNumber_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=32\n  round_04/b0  [BATCH_SAFE]  number=2\n  round_04/b1  [BATCH_SAFE]  number=33\n  round_04/b2  [BATCH_SAFE]  number=4\n  round_04/b3  [BATCH_SAFE]  number=50\n  round_04/b4  [BATCH_SAFE]  number=8\n  round_04/b5  [BATCH_SAFE]  number=44\n  round_04/b6  [BATCH_SAFE]  number=16\n  round_04/b7  [BATCH_SAFE]  number=28\n  round_04/b8  [BATCH_SAFE]  number=20\n  round_04/b9  [BATCH_SAFE]  number=24\n  round_05/b0  [BATCH_SAFE]  number=5\n  round_05/b1  [BATCH_SAFE]  number=13\n  round_05/b2  [BATCH_SAFE]  number=9\n  round_05/b3  [BATCH_SAFE]  number=39\n  round_05/b4  [BATCH_SAFE]  number=27\n  round_05/b5  [BATCH_SAFE]  number=21\n  round_05/b6  [BATCH_SAFE]  number=45\n  round_05/b7  [BATCH_SAFE]  number=26\n  round_05/b8  [BATCH_SAFE]  number=10\n  round_05/b9  [BATCH_SAFE]  number=40\n  round_05/b10  [BATCH_SAFE]  number=6\n  round_05/b11  [BATCH_SAFE]  number=42\n  round_05/b12  [BATCH_SAFE]  number=12\n  round_05/b13  [BATCH_SAFE]  number=36\n  round_05/b14  [BATCH_SAFE]  number=48\n  round_06/b0  [BATCH_SAFE]  number=7\n  round_06/b1  [BATCH_SAFE]  number=11\n  round_06/b2  [BATCH_SAFE]  number=47\n  round_06/b3  [BATCH_SAFE]  number=25\n  round_06/b4  [BATCH_SAFE]  number=15\n  round_06/b5  [BATCH_SAFE]  number=38\n  round_06/b6  [BATCH_SAFE]  number=22\n  round_06/b7  [BATCH_SAFE]  number=14\n  round_06/b8  [BATCH_SAFE]  number=18\n  round_06/b9  [BATCH_SAFE]  number=30\n  round_07/b0  [BATCH_SAFE]  number=17\n  round_07/b1  [BATCH_SAFE]  number=19\n  round_07/b2  [BATCH_SAFE]  number=23\n  round_07/b3  [BATCH_SAFE]  number=29\n  round_07/b4  [BATCH_SAFE]  number=31\n  round_07/b5  [BATCH_SAFE]  number=37\n  round_07/b6  [BATCH_SAFE]  number=41\n  round_07/b7  [BATCH_SAFE]  number=43\n  round_07/b8  [BATCH_SAFE]  number=49\n  round_07/b9  [BATCH_SAFE]  number=35\n  round_07/b10  [BATCH_SAFE]  number=46\n  round_07/b11  [BATCH_SAFE]  number=34\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 202\n  frontier_discovery_time_ms: 10829\n  compile_time_ms: 22831\n  java_exec_time_ms: 4575\n  path_log_parse_time_ms: 38\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 7988\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 8003\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/BoundedAbundantNumber_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/cct_stats.json\n  Counts: nodes=1161, leaves=581, covered=50, infeasible=531, out_of_range=0, expanded=614, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedAbundantNumber:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/BoundedAbundantNumber_M4.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/FSF/BoundedAbundantNumber_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/BoundedAbundantNumber_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedAbundantNumber\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/FSF/BoundedAbundantNumber_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/refined_tbfv_report.json\n  Summary:     testcases=50, fsf_units=3, passed=50, failed=0, skipped=100, unsupported=0\n  CCT marked:  0\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/cct_tbfv_stats.json\n  Counts:      nodes=1161, leaves=581, fault_leaves=0, failure_cases=0\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/BoundedAbundantNumber_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=0, intervals=0, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAbundantNumber:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber\n  CCT:         csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/BoundedAbundantNumber_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=50, failed=0, condition_nodes=0, condition_intervals=0\n  Top conditions: <none>\n  Top intervals: <none>\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAbundantNumber:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedAbundantNumber/BoundedAbundantNumber_M4.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/cct_failure_localization_aggregated.json\n  Source file: BoundedAbundantNumber/BoundedAbundantNumber_M4.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  0 raw -> 0 aggregated\n  Intervals[cct_only]: 0 raw -> 0 aggregated\n  Intervals[statement_presence]: 0 raw -> 0 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 0 raw -> 0 aggregated\n  Intervals[edge_divergence_sibling_shared]: 0 raw -> 0 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAbundantNumber:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedAbundantNumber_M4",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M4/BoundedAbundantNumber/fault_localization_eval.json\n  Mutant:    BoundedAbundantNumber_M4\n  Operator:  CR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedAbundantNumber:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/BoundedAbundantNumber_M5.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_BoundedAbundantNumber_M5",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/testcases.json"
+      ],
+      "stdout_tail": " (X)\n  |     (T) ->\n  |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(number=16384)\n  (T) ->\n  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(number=0)\n-----------------------------\n\n  [EXPAND] Promoted truncated leaf at 'sum > 2 * number' (cnt=1) \u2192 F:['tc_10_b0']\n  [EXPAND] Promoted truncated leaf at 'sum > 2 * number' (cnt=1) \u2192 F:['tc_10_b1']\n  [EXPAND] Promoted truncated leaf at 'sum > 2 * number' (cnt=1) \u2192 F:['tc_10_b2']\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/BoundedAbundantNumber_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 50 test cases generated in 11 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/BoundedAbundantNumber_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=32\n  round_04/b0  [BATCH_SAFE]  number=2\n  round_04/b1  [BATCH_SAFE]  number=33\n  round_04/b2  [BATCH_SAFE]  number=4\n  round_04/b3  [BATCH_SAFE]  number=50\n  round_04/b4  [BATCH_SAFE]  number=8\n  round_04/b5  [BATCH_SAFE]  number=44\n  round_04/b6  [BATCH_SAFE]  number=16\n  round_04/b7  [BATCH_SAFE]  number=28\n  round_04/b8  [BATCH_SAFE]  number=40\n  round_04/b9  [BATCH_SAFE]  number=30\n  round_05/b0  [BATCH_SAFE]  number=5\n  round_05/b1  [BATCH_SAFE]  number=17\n  round_05/b2  [BATCH_SAFE]  number=9\n  round_05/b3  [BATCH_SAFE]  number=39\n  round_05/b4  [BATCH_SAFE]  number=27\n  round_05/b5  [BATCH_SAFE]  number=21\n  round_05/b6  [BATCH_SAFE]  number=15\n  round_05/b7  [BATCH_SAFE]  number=46\n  round_05/b8  [BATCH_SAFE]  number=10\n  round_05/b9  [BATCH_SAFE]  number=20\n  round_05/b10  [BATCH_SAFE]  number=6\n  round_05/b11  [BATCH_SAFE]  number=18\n  round_05/b12  [BATCH_SAFE]  number=24\n  round_06/b0  [BATCH_SAFE]  number=7\n  round_06/b1  [BATCH_SAFE]  number=11\n  round_06/b2  [BATCH_SAFE]  number=13\n  round_06/b3  [BATCH_SAFE]  number=23\n  round_06/b4  [BATCH_SAFE]  number=49\n  round_06/b5  [BATCH_SAFE]  number=25\n  round_06/b6  [BATCH_SAFE]  number=45\n  round_06/b7  [BATCH_SAFE]  number=38\n  round_06/b8  [BATCH_SAFE]  number=34\n  round_06/b9  [BATCH_SAFE]  number=26\n  round_06/b10  [BATCH_SAFE]  number=22\n  round_06/b11  [BATCH_SAFE]  number=14\n  round_06/b12  [BATCH_SAFE]  number=42\n  round_06/b13  [BATCH_SAFE]  number=12\n  round_06/b14  [BATCH_SAFE]  number=36\n  round_06/b15  [BATCH_SAFE]  number=48\n  round_07/b0  [BATCH_SAFE]  number=19\n  round_07/b1  [BATCH_SAFE]  number=29\n  round_07/b2  [BATCH_SAFE]  number=35\n  round_08/b0  [BATCH_SAFE]  number=31\n  round_09/b0  [BATCH_SAFE]  number=47\n  round_10/b0  [BATCH_SAFE]  number=37\n  round_10/b1  [BATCH_SAFE]  number=41\n  round_10/b2  [BATCH_SAFE]  number=43\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 189\n  frontier_discovery_time_ms: 10847\n  compile_time_ms: 21735\n  java_exec_time_ms: 4530\n  path_log_parse_time_ms: 34\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 8295\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 8320\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/BoundedAbundantNumber_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/cct_stats.json\n  Counts: nodes=1161, leaves=581, covered=50, infeasible=531, out_of_range=0, expanded=614, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedAbundantNumber:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/BoundedAbundantNumber_M5.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/FSF/BoundedAbundantNumber_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/BoundedAbundantNumber_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedAbundantNumber\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/FSF/BoundedAbundantNumber_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/refined_tbfv_report.json\n  Summary:     testcases=50, fsf_units=3, passed=41, failed=9, skipped=100, unsupported=0\n  CCT marked:  9\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/cct_tbfv_stats.json\n  Counts:      nodes=1161, leaves=581, fault_leaves=9, failure_cases=9\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/BoundedAbundantNumber_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=180, intervals=188, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAbundantNumber:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber\n  CCT:         csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/BoundedAbundantNumber_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=50, failed=9, condition_nodes=180, condition_intervals=188\n  Top conditions:\n    #1 score=2.0794 fail=7/7 line=10 number % i == 0\n    #2 score=1.8195 fail=7/8 line=9 i <= number / 2\n    #3 score=1.6094 fail=4/4 line=9 i <= number / 2\n  Top intervals:\n    #1 score=1.3979 fail=4/4 line=[9, 10] root.F.F.T.T.T.T.T.T.T.F.T.TRUE\n    #2 score=1.3979 fail=4/4 line=[9, 10] root.F.F.T.T.T.T.T.T.T.FALSE\n    #3 score=1.3763 fail=7/8 line=[9, 10] root.F.F.T.T.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAbundantNumber:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedAbundantNumber/BoundedAbundantNumber_M5.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/cct_failure_localization_aggregated.json\n  Source file: BoundedAbundantNumber/BoundedAbundantNumber_M5.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  180 raw -> 5 aggregated\n  Intervals[cct_only]: 188 raw -> 7 aggregated\n  Intervals[statement_presence]: 188 raw -> 7 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 188 raw -> 7 aggregated\n  Intervals[edge_divergence_sibling_shared]: 188 raw -> 7 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAbundantNumber:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedAbundantNumber_M5",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M5/BoundedAbundantNumber/fault_localization_eval.json\n  Mutant:    BoundedAbundantNumber_M5\n  Operator:  AOR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=31, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=5, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedAbundantNumber:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/BoundedAbundantNumber_M6.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_BoundedAbundantNumber_M6",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/testcases.json"
+      ],
+      "stdout_tail": "t=8) \u2192 T:['tc_6_b6']\n  [EXPAND] Promoted truncated leaf at 'number % i == 0' (cnt=8) \u2192 T:['tc_6_b6']\n  [EXPAND] Promoted truncated leaf at 'i <= number / 2' (cnt=9) \u2192 T:['tc_6_b6']\n  [EXPAND] Promoted truncated leaf at 'number % i == 0' (cnt=9) \u2192 F:['tc_6_b6']\n  [EXPAND] Promoted truncated leaf at 'i <= number / 2' (cnt=10) \u2192 T:['tc_6_b6']\n  [EXPAND] Promoted truncated leaf at 'number % i == 0' (cnt=10) \u2192 F:['tc_6_b6']\n  [EXPAND] Promoted truncated leaf at 'i <= number / 2' (cnt=11) \u2192 T:['tc_6_b6']\n  [EXPAND] Promoted truncated leaf at 'number % i == 0' (cnt=11) \u2192 F:['tc_6_b6']\n  [EXPAND] Promoted truncated leaf at 'i <= number / 2' (cnt=12) \u2192 T:['tc_6_b6']\n  [EXPAND] Promoted truncated leaf at 'number % i == 0' (cnt=12) \u2192 T:['tc_6_b6']\n  [EXPAND] Promoted truncated leaf at 'i <= number / 2' (cnt=13) \u2192 F:['tc_6_b6']\n  [EXPAND] Promoted truncated leaf at 'sum > 2 * number' (cnt=1) \u2192 T:['tc_6_b6']\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/BoundedAbundantNumber_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 38 test cases generated in 7 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/BoundedAbundantNumber_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=32\n  round_04/b0  [BATCH_SAFE]  number=2\n  round_04/b1  [BATCH_SAFE]  number=33\n  round_04/b2  [BATCH_SAFE]  number=4\n  round_04/b3  [BATCH_SAFE]  number=34\n  round_04/b4  [BATCH_SAFE]  number=8\n  round_04/b5  [BATCH_SAFE]  number=44\n  round_04/b6  [BATCH_SAFE]  number=16\n  round_04/b7  [BATCH_SAFE]  number=40\n  round_04/b8  [BATCH_SAFE]  number=36\n  round_05/b0  [BATCH_SAFE]  number=5\n  round_05/b1  [BATCH_SAFE]  number=9\n  round_05/b2  [BATCH_SAFE]  number=13\n  round_05/b3  [BATCH_SAFE]  number=17\n  round_05/b4  [BATCH_SAFE]  number=21\n  round_05/b5  [BATCH_SAFE]  number=25\n  round_05/b6  [BATCH_SAFE]  number=29\n  round_05/b7  [BATCH_SAFE]  number=49\n  round_05/b8  [BATCH_SAFE]  number=10\n  round_05/b9  [BATCH_SAFE]  number=14\n  round_05/b10  [BATCH_SAFE]  number=22\n  round_05/b11  [BATCH_SAFE]  number=26\n  round_05/b12  [BATCH_SAFE]  number=38\n  round_05/b13  [BATCH_SAFE]  number=50\n  round_05/b14  [BATCH_SAFE]  number=30\n  round_05/b15  [BATCH_SAFE]  number=28\n  round_05/b16  [BATCH_SAFE]  number=20\n  round_05/b17  [BATCH_SAFE]  number=12\n  round_05/b18  [BATCH_SAFE]  number=24\n  round_06/b0  [BATCH_SAFE]  number=37\n  round_06/b1  [BATCH_SAFE]  number=41\n  round_06/b2  [BATCH_SAFE]  number=45\n  round_06/b3  [BATCH_SAFE]  number=46\n  round_06/b4  [BATCH_SAFE]  number=18\n  round_06/b5  [BATCH_SAFE]  number=42\n  round_06/b6  [BATCH_SAFE]  number=48\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 97\n  frontier_discovery_time_ms: 2074\n  compile_time_ms: 16662\n  java_exec_time_ms: 3440\n  path_log_parse_time_ms: 4\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 6000\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 6005\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/BoundedAbundantNumber_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/cct_stats.json\n  Counts: nodes=381, leaves=191, covered=38, infeasible=153, out_of_range=0, expanded=212, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedAbundantNumber:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/BoundedAbundantNumber_M6.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/FSF/BoundedAbundantNumber_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/BoundedAbundantNumber_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedAbundantNumber\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedAbundantNumber/FSF/BoundedAbundantNumber_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/refined_tbfv_report.json\n  Summary:     testcases=38, fsf_units=3, passed=34, failed=4, skipped=76, unsupported=0\n  CCT marked:  4\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/cct_tbfv_stats.json\n  Counts:      nodes=381, leaves=191, fault_leaves=4, failure_cases=4\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/BoundedAbundantNumber_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=39, intervals=42, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAbundantNumber:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber\n  CCT:         csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/BoundedAbundantNumber_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=38, failed=4, condition_nodes=39, condition_intervals=42\n  Top conditions:\n    #1 score=1.3863 fail=3/3 line=9 i <= number / 2\n    #2 score=1.3863 fail=3/3 line=10 number % i == 0\n    #3 score=1.3863 fail=3/3 line=9 i <= number / 2\n  Top intervals:\n    #1 score=1.2041 fail=3/3 line=[9, 10] root.F.F.T.T.T.F.T.T.T.FALSE\n    #2 score=1.2041 fail=3/3 line=[9, 10] root.F.F.T.T.T.F.T.TRUE\n    #3 score=0.6021 fail=1/1 line=[16, None] root.F.F.T.T.T.F.T.T.T.F.T.F.T.F.T.T.T.F.T.F.T.F.F.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAbundantNumber:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedAbundantNumber/BoundedAbundantNumber_M6.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/cct_failure_localization_aggregated.json\n  Source file: BoundedAbundantNumber/BoundedAbundantNumber_M6.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  39 raw -> 5 aggregated\n  Intervals[cct_only]: 42 raw -> 7 aggregated\n  Intervals[statement_presence]: 42 raw -> 7 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 42 raw -> 7 aggregated\n  Intervals[edge_divergence_sibling_shared]: 42 raw -> 7 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedAbundantNumber:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedAbundantNumber_M6",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_BoundedAbundantNumber_M6/BoundedAbundantNumber/fault_localization_eval.json\n  Mutant:    BoundedAbundantNumber_M6\n  Operator:  SUR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=5, top1=miss, top3=miss, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_shared: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=5, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    }
+  ]
+}

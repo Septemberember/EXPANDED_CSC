@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fault Localization Experiment Kit Guide</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+      color: #202124;
+      background: #f6f7f9;
+    }
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 40px 24px 72px;
+      background: #fff;
+      min-height: 100vh;
+    }
+    h1, h2 {
+      line-height: 1.2;
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 32px;
+    }
+    h2 {
+      margin-top: 34px;
+      font-size: 22px;
+      border-top: 1px solid #e1e4e8;
+      padding-top: 24px;
+    }
+    code, pre {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 13px;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 14px 16px;
+      background: #f1f3f4;
+      border: 1px solid #dfe3e6;
+      border-radius: 6px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 12px;
+    }
+    th, td {
+      border: 1px solid #dfe3e6;
+      padding: 8px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #f1f3f4;
+    }
+    .note {
+      padding: 12px 14px;
+      background: #eef6ff;
+      border-left: 4px solid #2f80ed;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Fault Localization Experiment Kit Guide</h1>
+  <p>
+    This guide explains how to run the portable dataset-level wrapper for CSC,
+    Refined TBFV, CCT-based failure localization, aggregation, and evaluation.
+    The wrapper preserves the existing input and output formats.
+  </p>
+
+  <div class="note">
+    The package is portable as part of the <code>CSC_EXPANDED</code> project.
+    Copying only the runner script is not enough because it reuses the current
+    CSC, TBFV, localization, Java bridge, and bundled SFL baseline
+    implementation.
+  </div>
+
+  <h2>Environment</h2>
+  <p>Install or verify these dependencies on the target machine:</p>
+  <ul>
+    <li>Python 3.10 or newer</li>
+    <li>JDK with <code>java</code> and <code>javac</code></li>
+    <li>Maven, if the Java bridge must be rebuilt</li>
+    <li><code>z3-solver</code> Python package</li>
+    <li><code>numpy</code> Python package, required by the optional SFL baseline</li>
+    <li>Graphviz <code>dot</code>, optional for rendering CCT images</li>
+  </ul>
+  <pre><code>pip install -r fault_localization_experiment_kit/requirements.txt
+python run_fault_localization_experiment.py --check-env
+python run_fault_localization_experiment.py --build-java-bridge</code></pre>
+
+  <h2>Input Dataset</h2>
+  <pre><code>DATASET_ROOT/
+  mutants_manifest.jsonl
+  quality_report.md
+  SubjectName/
+    SubjectName.java
+    SubjectName_M1.java
+    SubjectName_M2.java
+    FSF/
+      SubjectName_FSF.txt</code></pre>
+  <p>
+    The manifest schema is the same one used by
+    <code>validate_fault_localization_dataset.py</code> and
+    <code>evaluate_fault_localization.py</code>.
+  </p>
+
+  <h2>Full Experiment</h2>
+  <pre><code>python run_fault_localization_experiment.py \
+  --dataset-root dataset/EX_CSC_dataset \
+  --experiment-root experiments/FL-EX_CSC_dataset \
+  --session-prefix fl_061002 \
+  --mode expanded \
+  --range-bound 200 \
+  --strategy batch \
+  --workers 4 \
+  --max-iter 100</code></pre>
+  <p>
+    The default behavior runs mutant programs only. Add
+    <code>--include-original</code> if original programs should also be executed.
+  </p>
+
+  <h2>Optional SFL Baseline</h2>
+  <p>
+    Add <code>--run-sfl-baseline</code> to compute the line-level SFL baseline
+    from the same archived traces and Refined TBFV pass/fail labels. This stage
+    runs after CCT localization and artifact archiving, and writes its own
+    row-level files under <code>baseline-SFL/</code>.
+  </p>
+  <pre><code>python run_fault_localization_experiment.py \
+  --dataset-root dataset/EX_CSC_dataset \
+  --experiment-root experiments/FL-EX_CSC_dataset-sfl \
+  --session-prefix fl_061003 \
+  --mode expanded \
+  --range-bound 200 \
+  --strategy batch \
+  --workers 4 \
+  --max-iter 100 \
+  --run-sfl-baseline</code></pre>
+  <p>
+    SFL rankings are recomputed by default to avoid stale or top-k-truncated
+    reports. Use <code>--reuse-existing-sfl</code> only when intentionally
+    reusing existing per-mutant <code>sfl_localization.json</code> files. The
+    runner first looks for the bundled baseline at
+    <code>CSC_EXPANDED/baseline/run_sfl_baseline_experiment.py</code>, then
+    falls back to the older source-checkout layout at <code>CSC_EXT/baseline/</code>.
+  </p>
+
+  <h2>Selective Runs</h2>
+  <pre><code>python run_fault_localization_experiment.py \
+  --dataset-root dataset/EX_CSC_dataset \
+  --experiment-root experiments/FL-debug \
+  --session-prefix fl_debug \
+  --subjects GradePolicy,InventoryReorder \
+  --mutants GradePolicy_M1,InventoryReorder_M2 \
+  --resume</code></pre>
+
+  <h2>Output Directory</h2>
+  <pre><code>EXPERIMENT_ROOT/
+  experiment_config.json
+  experiment_run_summary.json
+  dataset_validation.json
+  dataset_validation.md
+  subject_run_records.jsonl
+  subject_logs/
+  subject_summaries/
+  fault_localization_rows.jsonl
+  fault_localization_rows.csv
+  fault_localization_summary.md
+  baseline-SFL/
+    sfl_fault_localization_rows.jsonl
+    sfl_fault_localization_rows.csv
+    sfl_fault_localization_summary.md
+  artifacts/
+    csc_tmp/
+  dataset_snapshot/</code></pre>
+
+  <h2>Important Options</h2>
+  <table>
+    <thead>
+      <tr><th>Option</th><th>Meaning</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><code>--dataset-root</code></td><td>Dataset root containing subject directories and the mutant manifest.</td></tr>
+      <tr><td><code>--experiment-root</code></td><td>Directory where experiment reports and archived artifacts are written.</td></tr>
+      <tr><td><code>--session-prefix</code></td><td>Prefix for generated <code>csc_tmp</code> sessions and summary discovery.</td></tr>
+      <tr><td><code>--mode expanded</code></td><td>Boundary-enabled CSC mode used in current experiments.</td></tr>
+      <tr><td><code>--range-bound</code></td><td>Boundary exploration range bound.</td></tr>
+      <tr><td><code>--strategy batch</code></td><td>Batch test-case generation strategy.</td></tr>
+      <tr><td><code>--workers</code></td><td>Number of worker processes used by batch generation.</td></tr>
+      <tr><td><code>--max-iter</code></td><td>Maximum CSC expansion iterations per program.</td></tr>
+      <tr><td><code>--run-sfl-baseline</code></td><td>Run the line-level SFL baseline after CCT localization and write <code>baseline-SFL</code> outputs.</td></tr>
+      <tr><td><code>--reuse-existing-sfl</code></td><td>Reuse existing per-mutant SFL reports instead of recomputing rankings.</td></tr>
+      <tr><td><code>--resume</code></td><td>Skip mutants that already have matching evaluation reports under <code>csc_tmp</code>.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Output Compatibility</h2>
+  <p>
+    The runner writes the same key files as the manual workflow:
+    <code>fault_localization_rows.jsonl</code>,
+    <code>fault_localization_rows.csv</code>, and
+    <code>fault_localization_summary.md</code>. The archived
+    <code>artifacts/csc_tmp</code> directory preserves per-mutant intermediate
+    files for later inspection.
+  </p>
+  <p>
+    When <code>--run-sfl-baseline</code> is used, the runner also writes
+    <code>baseline-SFL/sfl_fault_localization_rows.jsonl</code>,
+    <code>baseline-SFL/sfl_fault_localization_rows.csv</code>, and
+    <code>baseline-SFL/sfl_fault_localization_summary.md</code>. These SFL rows
+    use a compatible row-level schema for later cross-dataset aggregation.
+  </p>
+
+  <h2>Post-Experiment Reporting Check</h2>
+  <p>
+    A complete fault-localization report should include an overall
+    category-agnostic table and two fault-category tables:
+    condition/control-flow mutants and statement/data-flow mutants. The overall
+    table reflects the practical unknown-fault-type workflow, while the split
+    tables explain which CCT view is responsible for each fault mechanism.
+  </p>
+  <ul>
+    <li>Condition/control-flow mutants should show the CCT composite and condition-node view.</li>
+    <li>Statement/data-flow mutants should show the CCT composite and edge-divergence-gated interval view.</li>
+    <li>If <code>fault_localization_summary.md</code> only has the overall table, regenerate the summary from <code>fault_localization_rows.jsonl</code> or <code>fault_localization_rows.csv</code>; the CSC/TBFV runs do not need to be repeated.</li>
+  </ul>
+</main>
+</body>
+</html>

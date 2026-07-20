@@ -1,0 +1,754 @@
+{
+  "subject": "GradePolicy",
+  "subject_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy",
+  "fsf": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/FSF/GradePolicy_FSF.txt",
+  "manifest": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+  "mode": "expanded",
+  "strategy": "batch",
+  "max_iter": 100,
+  "dry_run": false,
+  "original": {
+    "role": "original",
+    "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/GradePolicy.java",
+    "class_name": "GradePolicy",
+    "mutant_id": null
+  },
+  "mutants": [
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/GradePolicy_M1.java",
+      "class_name": "GradePolicy",
+      "mutant_id": "GradePolicy_M1"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/GradePolicy_M2.java",
+      "class_name": "GradePolicy",
+      "mutant_id": "GradePolicy_M2"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/GradePolicy_M3.java",
+      "class_name": "GradePolicy",
+      "mutant_id": "GradePolicy_M3"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/GradePolicy_M4.java",
+      "class_name": "GradePolicy",
+      "mutant_id": "GradePolicy_M4"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/GradePolicy_M5.java",
+      "class_name": "GradePolicy",
+      "mutant_id": "GradePolicy_M5"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/GradePolicy_M6.java",
+      "class_name": "GradePolicy",
+      "mutant_id": "GradePolicy_M6"
+    }
+  ],
+  "step_count": 30,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "mutant:GradePolicy:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/GradePolicy_M1.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061002_GradePolicy_M1",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/testcases.json"
+      ],
+      "stdout_tail": "7, strictMode=False\n  round_05/b31  [BATCH_SAFE]  exam=0, penalty=17, strictMode=True\n  round_05/b32  [BATCH_SAFE]  exam=40, penalty=18, strictMode=False\n  round_05/b33  [BATCH_SAFE]  exam=0, penalty=18, strictMode=True\n  round_05/b34  [BATCH_SAFE]  exam=38, penalty=19, strictMode=False\n  round_05/b35  [BATCH_SAFE]  exam=0, penalty=19, strictMode=True\n  round_05/b36  [BATCH_SAFE]  exam=50, penalty=20, strictMode=True\n  round_05/b37  [BATCH_SAFE]  exam=46, penalty=20, strictMode=True\n  round_05/b38  [BATCH_SAFE]  exam=64, penalty=1, strictMode=True\n  round_05/b39  [BATCH_SAFE]  exam=60, penalty=2, strictMode=True\n  round_05/b40  [BATCH_SAFE]  exam=64, penalty=3, strictMode=True\n  round_05/b41  [BATCH_SAFE]  exam=64, penalty=4, strictMode=True\n  round_05/b42  [BATCH_SAFE]  exam=64, penalty=5, strictMode=True\n  round_05/b43  [BATCH_SAFE]  exam=64, penalty=7, strictMode=False\n  round_05/b44  [BATCH_SAFE]  exam=64, penalty=8, strictMode=False\n  round_05/b45  [BATCH_SAFE]  exam=64, penalty=9, strictMode=False\n  round_05/b46  [BATCH_SAFE]  exam=60, penalty=10, strictMode=False\n  round_05/b47  [BATCH_SAFE]  exam=64, penalty=11, strictMode=False\n  round_05/b48  [BATCH_SAFE]  exam=64, penalty=12, strictMode=False\n  round_05/b49  [BATCH_SAFE]  exam=64, penalty=13, strictMode=False\n  round_05/b50  [BATCH_SAFE]  exam=60, penalty=14, strictMode=False\n  round_05/b51  [BATCH_SAFE]  exam=60, penalty=15, strictMode=False\n  round_05/b52  [BATCH_SAFE]  exam=60, penalty=16, strictMode=True\n  round_05/b53  [BATCH_SAFE]  exam=64, penalty=20, strictMode=False\n  round_06/b0  [BATCH_SAFE]  exam=52, penalty=17, strictMode=True\n  round_06/b1  [BATCH_SAFE]  exam=39, penalty=17, strictMode=True\n  round_06/b2  [BATCH_SAFE]  exam=56, penalty=18, strictMode=True\n  round_06/b3  [BATCH_SAFE]  exam=41, penalty=18, strictMode=True\n  round_06/b4  [BATCH_SAFE]  exam=56, penalty=19, strictMode=True\n  round_06/b5  [BATCH_SAFE]  exam=43, penalty=19, strictMode=True\n  round_06/b6  [BATCH_SAFE]  exam=64, penalty=7, strictMode=True\n  round_06/b7  [BATCH_SAFE]  exam=64, penalty=8, strictMode=True\n  round_06/b8  [BATCH_SAFE]  exam=64, penalty=9, strictMode=True\n  round_06/b9  [BATCH_SAFE]  exam=60, penalty=10, strictMode=True\n  round_06/b10  [BATCH_SAFE]  exam=60, penalty=11, strictMode=True\n  round_06/b11  [BATCH_SAFE]  exam=60, penalty=12, strictMode=True\n  round_06/b12  [BATCH_SAFE]  exam=64, penalty=13, strictMode=True\n  round_06/b13  [BATCH_SAFE]  exam=60, penalty=14, strictMode=True\n  round_06/b14  [BATCH_SAFE]  exam=60, penalty=15, strictMode=True\n  round_06/b15  [BATCH_SAFE]  exam=60, penalty=17, strictMode=False\n  round_06/b16  [BATCH_SAFE]  exam=60, penalty=18, strictMode=False\n  round_06/b17  [BATCH_SAFE]  exam=60, penalty=19, strictMode=False\n  round_06/b18  [BATCH_SAFE]  exam=64, penalty=20, strictMode=True\n  round_07/b0  [BATCH_SAFE]  exam=60, penalty=17, strictMode=True\n  round_07/b1  [BATCH_SAFE]  exam=60, penalty=18, strictMode=True\n  round_07/b2  [BATCH_SAFE]  exam=60, penalty=19, strictMode=True\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 651\n  frontier_discovery_time_ms: 2933\n  compile_time_ms: 81461\n  java_exec_time_ms: 14779\n  path_log_parse_time_ms: 126\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 24843\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 24858\n\nTest cases written to: csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/GradePolicy_cct.dot\n  Stats: csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/cct_stats.json\n  Counts: nodes=539, leaves=270, covered=148, infeasible=122, out_of_range=0, expanded=378, truncated=0\n  Render script: csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/render_cct.sh\n  (render later with: csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:GradePolicy:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_GradePolicy_M1/GradePolicy",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/GradePolicy_M1.java",
+        "--output",
+        "csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/FSF/GradePolicy_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/GradePolicy_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       GradePolicy\n  CSC result:  csc_tmp/fl_061002_GradePolicy_M1/GradePolicy\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/FSF/GradePolicy_FSF.txt\n  Report:      csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/refined_tbfv_report.json\n  Summary:     testcases=148, fsf_units=8, passed=171, failed=1, skipped=1012, unsupported=0\n  CCT marked:  1\n  TBFV stats:  csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/cct_tbfv_stats.json\n  Counts:      nodes=539, leaves=270, fault_leaves=1, failure_cases=1\n  Fault DOT:    csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/GradePolicy_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=2, intervals=2, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "GradePolicy:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_GradePolicy_M1/GradePolicy",
+        "--output",
+        "csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061002_GradePolicy_M1/GradePolicy\n  CCT:         csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/GradePolicy_cct.pkl\n  Report:      csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=148, failed=1, condition_nodes=2, condition_intervals=2\n  Top conditions:\n    #1 score=0.0047 fail=1/147 line=3 exam >= 100\n    #2 score=0.0047 fail=1/148 line=3 exam < 0\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[3, None] root.F.TRUE\n    #2 score=0.0000 fail=1/147 line=[3, 3] root.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "GradePolicy:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "GradePolicy/GradePolicy_M1.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/cct_failure_localization_aggregated.json\n  Source file: GradePolicy/GradePolicy_M1.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  2 raw -> 2 aggregated\n  Intervals[cct_only]: 2 raw -> 2 aggregated\n  Intervals[statement_presence]: 2 raw -> 2 aggregated\n  Intervals[edge_divergence_gated]: 2 raw -> 2 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "GradePolicy:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "GradePolicy_M1",
+        "--report",
+        "csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061002_GradePolicy_M1/GradePolicy/fault_localization_eval.json\n  Mutant:    GradePolicy_M1\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:GradePolicy:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/GradePolicy_M2.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061002_GradePolicy_M2",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/testcases.json"
+      ],
+      "stdout_tail": "xam=48, penalty=19, strictMode=False\n  round_06/b19  [BATCH_SAFE]  exam=0, penalty=19, strictMode=True\n  round_06/b20  [BATCH_SAFE]  exam=64, penalty=17, strictMode=True\n  round_06/b21  [BATCH_SAFE]  exam=64, penalty=19, strictMode=True\n  round_07/b0  [BATCH_SAFE]  exam=52, penalty=6, strictMode=True\n  round_07/b1  [BATCH_SAFE]  exam=32, penalty=6, strictMode=True\n  round_07/b2  [BATCH_SAFE]  exam=50, penalty=7, strictMode=True\n  round_07/b3  [BATCH_SAFE]  exam=19, penalty=7, strictMode=True\n  round_07/b4  [BATCH_SAFE]  exam=50, penalty=8, strictMode=True\n  round_07/b5  [BATCH_SAFE]  exam=22, penalty=8, strictMode=True\n  round_07/b6  [BATCH_SAFE]  exam=50, penalty=9, strictMode=True\n  round_07/b7  [BATCH_SAFE]  exam=24, penalty=9, strictMode=True\n  round_07/b8  [BATCH_SAFE]  exam=32, penalty=11, strictMode=False\n  round_07/b9  [BATCH_SAFE]  exam=0, penalty=11, strictMode=True\n  round_07/b10  [BATCH_SAFE]  exam=32, penalty=12, strictMode=False\n  round_07/b11  [BATCH_SAFE]  exam=0, penalty=12, strictMode=True\n  round_07/b12  [BATCH_SAFE]  exam=28, penalty=13, strictMode=False\n  round_07/b13  [BATCH_SAFE]  exam=0, penalty=13, strictMode=True\n  round_07/b14  [BATCH_SAFE]  exam=28, penalty=14, strictMode=False\n  round_07/b15  [BATCH_SAFE]  exam=0, penalty=14, strictMode=True\n  round_07/b16  [BATCH_SAFE]  exam=30, penalty=15, strictMode=False\n  round_07/b17  [BATCH_SAFE]  exam=0, penalty=15, strictMode=True\n  round_07/b18  [BATCH_SAFE]  exam=32, penalty=16, strictMode=False\n  round_07/b19  [BATCH_SAFE]  exam=0, penalty=16, strictMode=True\n  round_07/b20  [BATCH_SAFE]  exam=48, penalty=17, strictMode=False\n  round_07/b21  [BATCH_SAFE]  exam=0, penalty=17, strictMode=True\n  round_07/b22  [BATCH_SAFE]  exam=48, penalty=18, strictMode=False\n  round_07/b23  [BATCH_SAFE]  exam=0, penalty=18, strictMode=True\n  round_07/b24  [BATCH_SAFE]  exam=56, penalty=19, strictMode=True\n  round_07/b25  [BATCH_SAFE]  exam=43, penalty=19, strictMode=True\n  round_08/b0  [BATCH_SAFE]  exam=50, penalty=11, strictMode=True\n  round_08/b1  [BATCH_SAFE]  exam=27, penalty=11, strictMode=True\n  round_08/b2  [BATCH_SAFE]  exam=50, penalty=12, strictMode=True\n  round_08/b3  [BATCH_SAFE]  exam=32, penalty=12, strictMode=True\n  round_08/b4  [BATCH_SAFE]  exam=52, penalty=13, strictMode=True\n  round_08/b5  [BATCH_SAFE]  exam=32, penalty=13, strictMode=True\n  round_08/b6  [BATCH_SAFE]  exam=52, penalty=14, strictMode=True\n  round_08/b7  [BATCH_SAFE]  exam=48, penalty=14, strictMode=True\n  round_08/b8  [BATCH_SAFE]  exam=52, penalty=15, strictMode=True\n  round_08/b9  [BATCH_SAFE]  exam=35, penalty=15, strictMode=True\n  round_08/b10  [BATCH_SAFE]  exam=50, penalty=16, strictMode=True\n  round_08/b11  [BATCH_SAFE]  exam=38, penalty=16, strictMode=True\n  round_08/b12  [BATCH_SAFE]  exam=56, penalty=17, strictMode=True\n  round_08/b13  [BATCH_SAFE]  exam=39, penalty=17, strictMode=True\n  round_08/b14  [BATCH_SAFE]  exam=56, penalty=18, strictMode=True\n  round_08/b15  [BATCH_SAFE]  exam=48, penalty=18, strictMode=True\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 690\n  frontier_discovery_time_ms: 3049\n  compile_time_ms: 93199\n  java_exec_time_ms: 16034\n  path_log_parse_time_ms: 135\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 28407\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 28425\n\nTest cases written to: csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/GradePolicy_cct.dot\n  Stats: csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/cct_stats.json\n  Counts: nodes=513, leaves=257, covered=141, infeasible=116, out_of_range=0, expanded=358, truncated=0\n  Render script: csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/render_cct.sh\n  (render later with: csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:GradePolicy:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_GradePolicy_M2/GradePolicy",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/GradePolicy_M2.java",
+        "--output",
+        "csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/FSF/GradePolicy_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/GradePolicy_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       GradePolicy\n  CSC result:  csc_tmp/fl_061002_GradePolicy_M2/GradePolicy\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/FSF/GradePolicy_FSF.txt\n  Report:      csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/refined_tbfv_report.json\n  Summary:     testcases=141, fsf_units=8, passed=163, failed=6, skipped=959, unsupported=0\n  CCT marked:  6\n  TBFV stats:  csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/cct_tbfv_stats.json\n  Counts:      nodes=513, leaves=257, fault_leaves=1, failure_cases=1\n  Fault DOT:    csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/GradePolicy_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=4, intervals=4, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "GradePolicy:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_GradePolicy_M2/GradePolicy",
+        "--output",
+        "csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061002_GradePolicy_M2/GradePolicy\n  CCT:         csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/GradePolicy_cct.pkl\n  Report:      csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=141, failed=1, condition_nodes=4, condition_intervals=4\n  Top conditions:\n    #1 score=0.0050 fail=1/138 line=6 penalty >= 20\n    #2 score=0.0050 fail=1/139 line=6 penalty < 0\n    #3 score=0.0050 fail=1/140 line=3 exam > 100\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[6, None] root.F.F.F.TRUE\n    #2 score=0.0000 fail=1/138 line=[6, 6] root.F.F.FALSE\n    #3 score=0.0000 fail=1/139 line=[3, 6] root.F.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "GradePolicy:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "GradePolicy/GradePolicy_M2.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/cct_failure_localization_aggregated.json\n  Source file: GradePolicy/GradePolicy_M2.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  4 raw -> 4 aggregated\n  Intervals[cct_only]: 4 raw -> 4 aggregated\n  Intervals[statement_presence]: 4 raw -> 4 aggregated\n  Intervals[edge_divergence_gated]: 4 raw -> 4 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "GradePolicy:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "GradePolicy_M2",
+        "--report",
+        "csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061002_GradePolicy_M2/GradePolicy/fault_localization_eval.json\n  Mutant:    GradePolicy_M2\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:GradePolicy:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/GradePolicy_M3.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061002_GradePolicy_M3",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/testcases.json"
+      ],
+      "stdout_tail": "ty=11, strictMode=True\n  round_05/b21  [BATCH_SAFE]  exam=28, penalty=11, strictMode=True\n  round_05/b22  [BATCH_SAFE]  exam=56, penalty=12, strictMode=True\n  round_05/b23  [BATCH_SAFE]  exam=32, penalty=12, strictMode=True\n  round_05/b24  [BATCH_SAFE]  exam=56, penalty=13, strictMode=True\n  round_05/b25  [BATCH_SAFE]  exam=31, penalty=13, strictMode=True\n  round_05/b26  [BATCH_SAFE]  exam=56, penalty=14, strictMode=True\n  round_05/b27  [BATCH_SAFE]  exam=33, penalty=14, strictMode=True\n  round_05/b28  [BATCH_SAFE]  exam=52, penalty=15, strictMode=True\n  round_05/b29  [BATCH_SAFE]  exam=35, penalty=15, strictMode=True\n  round_05/b30  [BATCH_SAFE]  exam=40, penalty=17, strictMode=False\n  round_05/b31  [BATCH_SAFE]  exam=0, penalty=17, strictMode=True\n  round_05/b32  [BATCH_SAFE]  exam=36, penalty=18, strictMode=False\n  round_05/b33  [BATCH_SAFE]  exam=0, penalty=18, strictMode=True\n  round_05/b34  [BATCH_SAFE]  exam=38, penalty=19, strictMode=False\n  round_05/b35  [BATCH_SAFE]  exam=0, penalty=19, strictMode=True\n  round_05/b36  [BATCH_SAFE]  exam=56, penalty=20, strictMode=True\n  round_05/b37  [BATCH_SAFE]  exam=46, penalty=20, strictMode=True\n  round_05/b38  [BATCH_SAFE]  exam=61, penalty=1, strictMode=True\n  round_05/b39  [BATCH_SAFE]  exam=64, penalty=2, strictMode=True\n  round_05/b40  [BATCH_SAFE]  exam=64, penalty=3, strictMode=True\n  round_05/b41  [BATCH_SAFE]  exam=64, penalty=4, strictMode=True\n  round_05/b42  [BATCH_SAFE]  exam=64, penalty=5, strictMode=True\n  round_05/b43  [BATCH_SAFE]  exam=70, penalty=6, strictMode=True\n  round_05/b44  [BATCH_SAFE]  exam=64, penalty=7, strictMode=True\n  round_05/b45  [BATCH_SAFE]  exam=62, penalty=8, strictMode=True\n  round_05/b46  [BATCH_SAFE]  exam=61, penalty=9, strictMode=True\n  round_05/b47  [BATCH_SAFE]  exam=64, penalty=10, strictMode=True\n  round_05/b48  [BATCH_SAFE]  exam=64, penalty=11, strictMode=True\n  round_05/b49  [BATCH_SAFE]  exam=61, penalty=12, strictMode=True\n  round_05/b50  [BATCH_SAFE]  exam=61, penalty=13, strictMode=True\n  round_05/b51  [BATCH_SAFE]  exam=64, penalty=14, strictMode=True\n  round_05/b52  [BATCH_SAFE]  exam=64, penalty=15, strictMode=True\n  round_05/b53  [BATCH_SAFE]  exam=61, penalty=17, strictMode=False\n  round_05/b54  [BATCH_SAFE]  exam=64, penalty=18, strictMode=False\n  round_05/b55  [BATCH_SAFE]  exam=64, penalty=19, strictMode=False\n  round_05/b56  [BATCH_SAFE]  exam=61, penalty=20, strictMode=True\n  round_06/b0  [BATCH_SAFE]  exam=56, penalty=17, strictMode=True\n  round_06/b1  [BATCH_SAFE]  exam=39, penalty=17, strictMode=True\n  round_06/b2  [BATCH_SAFE]  exam=52, penalty=18, strictMode=True\n  round_06/b3  [BATCH_SAFE]  exam=44, penalty=18, strictMode=True\n  round_06/b4  [BATCH_SAFE]  exam=50, penalty=19, strictMode=True\n  round_06/b5  [BATCH_SAFE]  exam=43, penalty=19, strictMode=True\n  round_06/b6  [BATCH_SAFE]  exam=62, penalty=17, strictMode=True\n  round_06/b7  [BATCH_SAFE]  exam=64, penalty=18, strictMode=True\n  round_06/b8  [BATCH_SAFE]  exam=61, penalty=19, strictMode=True\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 730\n  frontier_discovery_time_ms: 3157\n  compile_time_ms: 92388\n  java_exec_time_ms: 17288\n  path_log_parse_time_ms: 138\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 28488\n  merge_verify_wall_time_ms: 2\n  batch_total_wall_time_ms: 28500\n\nTest cases written to: csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/GradePolicy_cct.dot\n  Stats: csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/cct_stats.json\n  Counts: nodes=539, leaves=270, covered=148, infeasible=122, out_of_range=0, expanded=378, truncated=0\n  Render script: csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/render_cct.sh\n  (render later with: csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:GradePolicy:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_GradePolicy_M3/GradePolicy",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/GradePolicy_M3.java",
+        "--output",
+        "csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/FSF/GradePolicy_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/GradePolicy_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       GradePolicy\n  CSC result:  csc_tmp/fl_061002_GradePolicy_M3/GradePolicy\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/FSF/GradePolicy_FSF.txt\n  Report:      csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/refined_tbfv_report.json\n  Summary:     testcases=148, fsf_units=8, passed=171, failed=40, skipped=973, unsupported=0\n  CCT marked:  40\n  TBFV stats:  csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/cct_tbfv_stats.json\n  Counts:      nodes=539, leaves=270, fault_leaves=40, failure_cases=40\n  Fault DOT:    csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/GradePolicy_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=125, intervals=164, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "GradePolicy:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_GradePolicy_M3/GradePolicy",
+        "--output",
+        "csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061002_GradePolicy_M3/GradePolicy\n  CCT:         csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/GradePolicy_cct.pkl\n  Report:      csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=148, failed=40, condition_nodes=125, condition_intervals=164\n  Top conditions:\n    #1 score=1.4854 fail=40/100 line=12 remaining > 0\n    #2 score=1.4654 fail=38/95 line=12 remaining > 0\n    #3 score=1.4654 fail=38/95 line=13 exam > 60\n  Top intervals:\n    #1 score=0.9032 fail=40/100 line=[12, 13] root.F.F.F.F.T.FALSE\n    #2 score=0.8910 fail=38/95 line=[12, 13] root.F.F.F.F.T.F.T.FALSE\n    #3 score=0.8782 fail=36/90 line=[12, 13] root.F.F.F.F.T.F.T.F.T.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "GradePolicy:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "GradePolicy/GradePolicy_M3.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/cct_failure_localization_aggregated.json\n  Source file: GradePolicy/GradePolicy_M3.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  125 raw -> 9 aggregated\n  Intervals[cct_only]: 164 raw -> 11 aggregated\n  Intervals[statement_presence]: 164 raw -> 11 aggregated\n  Intervals[edge_divergence_gated]: 164 raw -> 11 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "GradePolicy:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "GradePolicy_M3",
+        "--report",
+        "csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061002_GradePolicy_M3/GradePolicy/fault_localization_eval.json\n  Mutant:    GradePolicy_M3\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:GradePolicy:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/GradePolicy_M4.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061002_GradePolicy_M4",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/testcases.json"
+      ],
+      "stdout_tail": "ty=11, strictMode=True\n  round_05/b21  [BATCH_SAFE]  exam=27, penalty=11, strictMode=True\n  round_05/b22  [BATCH_SAFE]  exam=56, penalty=12, strictMode=True\n  round_05/b23  [BATCH_SAFE]  exam=32, penalty=12, strictMode=True\n  round_05/b24  [BATCH_SAFE]  exam=52, penalty=13, strictMode=True\n  round_05/b25  [BATCH_SAFE]  exam=32, penalty=13, strictMode=True\n  round_05/b26  [BATCH_SAFE]  exam=56, penalty=14, strictMode=True\n  round_05/b27  [BATCH_SAFE]  exam=48, penalty=14, strictMode=True\n  round_05/b28  [BATCH_SAFE]  exam=50, penalty=15, strictMode=True\n  round_05/b29  [BATCH_SAFE]  exam=35, penalty=15, strictMode=True\n  round_05/b30  [BATCH_SAFE]  exam=48, penalty=17, strictMode=False\n  round_05/b31  [BATCH_SAFE]  exam=0, penalty=17, strictMode=True\n  round_05/b32  [BATCH_SAFE]  exam=40, penalty=18, strictMode=False\n  round_05/b33  [BATCH_SAFE]  exam=0, penalty=18, strictMode=True\n  round_05/b34  [BATCH_SAFE]  exam=38, penalty=19, strictMode=False\n  round_05/b35  [BATCH_SAFE]  exam=0, penalty=19, strictMode=True\n  round_05/b36  [BATCH_SAFE]  exam=50, penalty=20, strictMode=True\n  round_05/b37  [BATCH_SAFE]  exam=46, penalty=20, strictMode=True\n  round_05/b38  [BATCH_SAFE]  exam=61, penalty=1, strictMode=True\n  round_05/b39  [BATCH_SAFE]  exam=64, penalty=2, strictMode=True\n  round_05/b40  [BATCH_SAFE]  exam=70, penalty=3, strictMode=True\n  round_05/b41  [BATCH_SAFE]  exam=64, penalty=4, strictMode=True\n  round_05/b42  [BATCH_SAFE]  exam=64, penalty=5, strictMode=True\n  round_05/b43  [BATCH_SAFE]  exam=69, penalty=6, strictMode=True\n  round_05/b44  [BATCH_SAFE]  exam=69, penalty=7, strictMode=True\n  round_05/b45  [BATCH_SAFE]  exam=61, penalty=8, strictMode=True\n  round_05/b46  [BATCH_SAFE]  exam=60, penalty=9, strictMode=True\n  round_05/b47  [BATCH_SAFE]  exam=62, penalty=10, strictMode=True\n  round_05/b48  [BATCH_SAFE]  exam=61, penalty=11, strictMode=True\n  round_05/b49  [BATCH_SAFE]  exam=62, penalty=12, strictMode=True\n  round_05/b50  [BATCH_SAFE]  exam=62, penalty=13, strictMode=True\n  round_05/b51  [BATCH_SAFE]  exam=64, penalty=14, strictMode=True\n  round_05/b52  [BATCH_SAFE]  exam=64, penalty=15, strictMode=True\n  round_05/b53  [BATCH_SAFE]  exam=61, penalty=17, strictMode=False\n  round_05/b54  [BATCH_SAFE]  exam=64, penalty=18, strictMode=False\n  round_05/b55  [BATCH_SAFE]  exam=62, penalty=19, strictMode=False\n  round_05/b56  [BATCH_SAFE]  exam=62, penalty=20, strictMode=True\n  round_06/b0  [BATCH_SAFE]  exam=56, penalty=17, strictMode=True\n  round_06/b1  [BATCH_SAFE]  exam=39, penalty=17, strictMode=True\n  round_06/b2  [BATCH_SAFE]  exam=50, penalty=18, strictMode=True\n  round_06/b3  [BATCH_SAFE]  exam=44, penalty=18, strictMode=True\n  round_06/b4  [BATCH_SAFE]  exam=56, penalty=19, strictMode=True\n  round_06/b5  [BATCH_SAFE]  exam=43, penalty=19, strictMode=True\n  round_06/b6  [BATCH_SAFE]  exam=62, penalty=17, strictMode=True\n  round_06/b7  [BATCH_SAFE]  exam=64, penalty=18, strictMode=True\n  round_06/b8  [BATCH_SAFE]  exam=62, penalty=19, strictMode=True\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 709\n  frontier_discovery_time_ms: 3115\n  compile_time_ms: 91429\n  java_exec_time_ms: 16932\n  path_log_parse_time_ms: 155\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 28255\n  merge_verify_wall_time_ms: 2\n  batch_total_wall_time_ms: 28274\n\nTest cases written to: csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/GradePolicy_cct.dot\n  Stats: csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/cct_stats.json\n  Counts: nodes=539, leaves=270, covered=148, infeasible=122, out_of_range=0, expanded=378, truncated=0\n  Render script: csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/render_cct.sh\n  (render later with: csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:GradePolicy:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_GradePolicy_M4/GradePolicy",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/GradePolicy_M4.java",
+        "--output",
+        "csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/FSF/GradePolicy_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/GradePolicy_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       GradePolicy\n  CSC result:  csc_tmp/fl_061002_GradePolicy_M4/GradePolicy\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/FSF/GradePolicy_FSF.txt\n  Report:      csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/refined_tbfv_report.json\n  Summary:     testcases=148, fsf_units=8, passed=131, failed=40, skipped=1013, unsupported=0\n  CCT marked:  40\n  TBFV stats:  csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/cct_tbfv_stats.json\n  Counts:      nodes=539, leaves=270, fault_leaves=40, failure_cases=40\n  Fault DOT:    csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/GradePolicy_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=125, intervals=164, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "GradePolicy:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_GradePolicy_M4/GradePolicy",
+        "--output",
+        "csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061002_GradePolicy_M4/GradePolicy\n  CCT:         csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/GradePolicy_cct.pkl\n  Report:      csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=148, failed=40, condition_nodes=125, condition_intervals=164\n  Top conditions:\n    #1 score=3.7136 fail=40/40 line=12 remaining > 0\n    #2 score=3.6636 fail=38/38 line=12 remaining > 0\n    #3 score=3.6636 fail=38/38 line=13 exam >= 60\n  Top intervals:\n    #1 score=3.2256 fail=40/40 line=[12, 13] root.F.F.F.F.T.TRUE\n    #2 score=3.1821 fail=38/38 line=[12, 13] root.F.F.F.F.T.T.T.TRUE\n    #3 score=3.1364 fail=36/36 line=[12, 13] root.F.F.F.F.T.T.T.T.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "GradePolicy:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "GradePolicy/GradePolicy_M4.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/cct_failure_localization_aggregated.json\n  Source file: GradePolicy/GradePolicy_M4.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  125 raw -> 9 aggregated\n  Intervals[cct_only]: 164 raw -> 11 aggregated\n  Intervals[statement_presence]: 164 raw -> 11 aggregated\n  Intervals[edge_divergence_gated]: 164 raw -> 11 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "GradePolicy:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "GradePolicy_M4",
+        "--report",
+        "csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061002_GradePolicy_M4/GradePolicy/fault_localization_eval.json\n  Mutant:    GradePolicy_M4\n  Operator:  AOR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=36, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_gated: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_gated: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:GradePolicy:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/GradePolicy_M5.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061002_GradePolicy_M5",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/testcases.json"
+      ],
+      "stdout_tail": "ty=11, strictMode=True\n  round_05/b21  [BATCH_SAFE]  exam=28, penalty=11, strictMode=True\n  round_05/b22  [BATCH_SAFE]  exam=56, penalty=12, strictMode=True\n  round_05/b23  [BATCH_SAFE]  exam=32, penalty=12, strictMode=True\n  round_05/b24  [BATCH_SAFE]  exam=56, penalty=13, strictMode=True\n  round_05/b25  [BATCH_SAFE]  exam=32, penalty=13, strictMode=True\n  round_05/b26  [BATCH_SAFE]  exam=52, penalty=14, strictMode=True\n  round_05/b27  [BATCH_SAFE]  exam=32, penalty=14, strictMode=True\n  round_05/b28  [BATCH_SAFE]  exam=56, penalty=15, strictMode=True\n  round_05/b29  [BATCH_SAFE]  exam=48, penalty=15, strictMode=True\n  round_05/b30  [BATCH_SAFE]  exam=48, penalty=17, strictMode=False\n  round_05/b31  [BATCH_SAFE]  exam=0, penalty=17, strictMode=True\n  round_05/b32  [BATCH_SAFE]  exam=36, penalty=18, strictMode=False\n  round_05/b33  [BATCH_SAFE]  exam=0, penalty=18, strictMode=True\n  round_05/b34  [BATCH_SAFE]  exam=38, penalty=19, strictMode=False\n  round_05/b35  [BATCH_SAFE]  exam=0, penalty=19, strictMode=True\n  round_05/b36  [BATCH_SAFE]  exam=56, penalty=20, strictMode=True\n  round_05/b37  [BATCH_SAFE]  exam=48, penalty=20, strictMode=True\n  round_05/b38  [BATCH_SAFE]  exam=62, penalty=1, strictMode=True\n  round_05/b39  [BATCH_SAFE]  exam=64, penalty=2, strictMode=True\n  round_05/b40  [BATCH_SAFE]  exam=64, penalty=3, strictMode=True\n  round_05/b41  [BATCH_SAFE]  exam=64, penalty=4, strictMode=True\n  round_05/b42  [BATCH_SAFE]  exam=64, penalty=5, strictMode=True\n  round_05/b43  [BATCH_SAFE]  exam=69, penalty=6, strictMode=True\n  round_05/b44  [BATCH_SAFE]  exam=60, penalty=7, strictMode=True\n  round_05/b45  [BATCH_SAFE]  exam=60, penalty=8, strictMode=True\n  round_05/b46  [BATCH_SAFE]  exam=62, penalty=9, strictMode=True\n  round_05/b47  [BATCH_SAFE]  exam=61, penalty=10, strictMode=True\n  round_05/b48  [BATCH_SAFE]  exam=62, penalty=11, strictMode=True\n  round_05/b49  [BATCH_SAFE]  exam=61, penalty=12, strictMode=True\n  round_05/b50  [BATCH_SAFE]  exam=61, penalty=13, strictMode=True\n  round_05/b51  [BATCH_SAFE]  exam=64, penalty=14, strictMode=True\n  round_05/b52  [BATCH_SAFE]  exam=64, penalty=15, strictMode=True\n  round_05/b53  [BATCH_SAFE]  exam=61, penalty=17, strictMode=False\n  round_05/b54  [BATCH_SAFE]  exam=60, penalty=18, strictMode=False\n  round_05/b55  [BATCH_SAFE]  exam=62, penalty=19, strictMode=False\n  round_05/b56  [BATCH_SAFE]  exam=61, penalty=20, strictMode=True\n  round_06/b0  [BATCH_SAFE]  exam=56, penalty=17, strictMode=True\n  round_06/b1  [BATCH_SAFE]  exam=38, penalty=17, strictMode=True\n  round_06/b2  [BATCH_SAFE]  exam=52, penalty=18, strictMode=True\n  round_06/b3  [BATCH_SAFE]  exam=48, penalty=18, strictMode=True\n  round_06/b4  [BATCH_SAFE]  exam=50, penalty=19, strictMode=True\n  round_06/b5  [BATCH_SAFE]  exam=44, penalty=19, strictMode=True\n  round_06/b6  [BATCH_SAFE]  exam=61, penalty=17, strictMode=True\n  round_06/b7  [BATCH_SAFE]  exam=60, penalty=18, strictMode=True\n  round_06/b8  [BATCH_SAFE]  exam=62, penalty=19, strictMode=True\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 695\n  frontier_discovery_time_ms: 3071\n  compile_time_ms: 91619\n  java_exec_time_ms: 16546\n  path_log_parse_time_ms: 141\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 28252\n  merge_verify_wall_time_ms: 2\n  batch_total_wall_time_ms: 28265\n\nTest cases written to: csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/GradePolicy_cct.dot\n  Stats: csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/cct_stats.json\n  Counts: nodes=539, leaves=270, covered=148, infeasible=122, out_of_range=0, expanded=378, truncated=0\n  Render script: csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/render_cct.sh\n  (render later with: csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:GradePolicy:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_GradePolicy_M5/GradePolicy",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/GradePolicy_M5.java",
+        "--output",
+        "csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/FSF/GradePolicy_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/GradePolicy_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       GradePolicy\n  CSC result:  csc_tmp/fl_061002_GradePolicy_M5/GradePolicy\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/FSF/GradePolicy_FSF.txt\n  Report:      csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/refined_tbfv_report.json\n  Summary:     testcases=148, fsf_units=8, passed=171, failed=21, skipped=992, unsupported=0\n  CCT marked:  21\n  TBFV stats:  csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/cct_tbfv_stats.json\n  Counts:      nodes=539, leaves=270, fault_leaves=21, failure_cases=21\n  Fault DOT:    csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/GradePolicy_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=108, intervals=128, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "GradePolicy:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_GradePolicy_M5/GradePolicy",
+        "--output",
+        "csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061002_GradePolicy_M5/GradePolicy\n  CCT:         csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/GradePolicy_cct.pkl\n  Report:      csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=148, failed=21, condition_nodes=108, condition_intervals=128\n  Top conditions:\n    #1 score=0.6089 fail=20/100 line=12 remaining > 0\n    #2 score=0.5991 fail=19/95 line=12 remaining > 0\n    #3 score=0.5991 fail=19/95 line=13 exam >= 60\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[24, None] root.F.F.F.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.F.T.T.FALSE\n    #2 score=0.6021 fail=1/1 line=[24, None] root.F.F.F.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.F.T.T.FALSE\n    #3 score=0.6021 fail=1/1 line=[24, None] root.F.F.F.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.T.F.F.T.T.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "GradePolicy:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "GradePolicy/GradePolicy_M5.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/cct_failure_localization_aggregated.json\n  Source file: GradePolicy/GradePolicy_M5.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  108 raw -> 9 aggregated\n  Intervals[cct_only]: 128 raw -> 10 aggregated\n  Intervals[statement_presence]: 128 raw -> 10 aggregated\n  Intervals[edge_divergence_gated]: 128 raw -> 10 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "GradePolicy:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "GradePolicy_M5",
+        "--report",
+        "csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061002_GradePolicy_M5/GradePolicy/fault_localization_eval.json\n  Mutant:    GradePolicy_M5\n  Operator:  AOR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=42, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=35, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=38, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=4, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_gated: best_rank=4, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=4, top1=miss, top3=miss, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:GradePolicy:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/GradePolicy_M6.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061002_GradePolicy_M6",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/testcases.json"
+      ],
+      "stdout_tail": "ty=11, strictMode=True\n  round_05/b21  [BATCH_SAFE]  exam=27, penalty=11, strictMode=True\n  round_05/b22  [BATCH_SAFE]  exam=56, penalty=12, strictMode=True\n  round_05/b23  [BATCH_SAFE]  exam=32, penalty=12, strictMode=True\n  round_05/b24  [BATCH_SAFE]  exam=52, penalty=13, strictMode=True\n  round_05/b25  [BATCH_SAFE]  exam=32, penalty=13, strictMode=True\n  round_05/b26  [BATCH_SAFE]  exam=56, penalty=14, strictMode=True\n  round_05/b27  [BATCH_SAFE]  exam=48, penalty=14, strictMode=True\n  round_05/b28  [BATCH_SAFE]  exam=50, penalty=15, strictMode=True\n  round_05/b29  [BATCH_SAFE]  exam=35, penalty=15, strictMode=True\n  round_05/b30  [BATCH_SAFE]  exam=48, penalty=17, strictMode=False\n  round_05/b31  [BATCH_SAFE]  exam=0, penalty=17, strictMode=True\n  round_05/b32  [BATCH_SAFE]  exam=48, penalty=18, strictMode=False\n  round_05/b33  [BATCH_SAFE]  exam=0, penalty=18, strictMode=True\n  round_05/b34  [BATCH_SAFE]  exam=38, penalty=19, strictMode=False\n  round_05/b35  [BATCH_SAFE]  exam=0, penalty=19, strictMode=True\n  round_05/b36  [BATCH_SAFE]  exam=50, penalty=20, strictMode=True\n  round_05/b37  [BATCH_SAFE]  exam=46, penalty=20, strictMode=True\n  round_05/b38  [BATCH_SAFE]  exam=61, penalty=1, strictMode=True\n  round_05/b39  [BATCH_SAFE]  exam=64, penalty=2, strictMode=True\n  round_05/b40  [BATCH_SAFE]  exam=69, penalty=3, strictMode=True\n  round_05/b41  [BATCH_SAFE]  exam=64, penalty=4, strictMode=True\n  round_05/b42  [BATCH_SAFE]  exam=64, penalty=5, strictMode=True\n  round_05/b43  [BATCH_SAFE]  exam=69, penalty=6, strictMode=True\n  round_05/b44  [BATCH_SAFE]  exam=69, penalty=7, strictMode=True\n  round_05/b45  [BATCH_SAFE]  exam=61, penalty=8, strictMode=True\n  round_05/b46  [BATCH_SAFE]  exam=62, penalty=9, strictMode=True\n  round_05/b47  [BATCH_SAFE]  exam=60, penalty=10, strictMode=True\n  round_05/b48  [BATCH_SAFE]  exam=64, penalty=11, strictMode=True\n  round_05/b49  [BATCH_SAFE]  exam=61, penalty=12, strictMode=True\n  round_05/b50  [BATCH_SAFE]  exam=60, penalty=13, strictMode=True\n  round_05/b51  [BATCH_SAFE]  exam=64, penalty=14, strictMode=True\n  round_05/b52  [BATCH_SAFE]  exam=64, penalty=15, strictMode=True\n  round_05/b53  [BATCH_SAFE]  exam=61, penalty=17, strictMode=False\n  round_05/b54  [BATCH_SAFE]  exam=64, penalty=18, strictMode=False\n  round_05/b55  [BATCH_SAFE]  exam=62, penalty=19, strictMode=False\n  round_05/b56  [BATCH_SAFE]  exam=64, penalty=20, strictMode=True\n  round_06/b0  [BATCH_SAFE]  exam=56, penalty=17, strictMode=True\n  round_06/b1  [BATCH_SAFE]  exam=39, penalty=17, strictMode=True\n  round_06/b2  [BATCH_SAFE]  exam=56, penalty=18, strictMode=True\n  round_06/b3  [BATCH_SAFE]  exam=41, penalty=18, strictMode=True\n  round_06/b4  [BATCH_SAFE]  exam=52, penalty=19, strictMode=True\n  round_06/b5  [BATCH_SAFE]  exam=43, penalty=19, strictMode=True\n  round_06/b6  [BATCH_SAFE]  exam=61, penalty=17, strictMode=True\n  round_06/b7  [BATCH_SAFE]  exam=64, penalty=18, strictMode=True\n  round_06/b8  [BATCH_SAFE]  exam=61, penalty=19, strictMode=True\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 677\n  frontier_discovery_time_ms: 2973\n  compile_time_ms: 91016\n  java_exec_time_ms: 16030\n  path_log_parse_time_ms: 138\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 27864\n  merge_verify_wall_time_ms: 2\n  batch_total_wall_time_ms: 27878\n\nTest cases written to: csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/GradePolicy_cct.dot\n  Stats: csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/cct_stats.json\n  Counts: nodes=539, leaves=270, covered=148, infeasible=122, out_of_range=0, expanded=378, truncated=0\n  Render script: csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/render_cct.sh\n  (render later with: csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:GradePolicy:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_GradePolicy_M6/GradePolicy",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/GradePolicy_M6.java",
+        "--output",
+        "csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/FSF/GradePolicy_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/GradePolicy_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       GradePolicy\n  CSC result:  csc_tmp/fl_061002_GradePolicy_M6/GradePolicy\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/GradePolicy/FSF/GradePolicy_FSF.txt\n  Report:      csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/refined_tbfv_report.json\n  Summary:     testcases=148, fsf_units=8, passed=45, failed=126, skipped=1013, unsupported=0\n  CCT marked:  126\n  TBFV stats:  csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/cct_tbfv_stats.json\n  Counts:      nodes=539, leaves=270, fault_leaves=103, failure_cases=103\n  Fault DOT:    csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/GradePolicy_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=269, intervals=371, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "GradePolicy:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_GradePolicy_M6/GradePolicy",
+        "--output",
+        "csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061002_GradePolicy_M6/GradePolicy\n  CCT:         csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/GradePolicy_cct.pkl\n  Report:      csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=148, failed=103, condition_nodes=269, condition_intervals=371\n  Top conditions:\n    #1 score=3.7136 fail=40/40 line=12 remaining > 0\n    #2 score=3.6636 fail=38/38 line=12 remaining > 0\n    #3 score=3.6636 fail=38/38 line=13 exam >= 60\n  Top intervals:\n    #1 score=3.1821 fail=38/38 line=[12, 13] root.F.F.F.F.T.T.T.TRUE\n    #2 score=3.1364 fail=36/36 line=[12, 13] root.F.F.F.F.T.T.T.T.T.TRUE\n    #3 score=3.0881 fail=34/34 line=[12, 13] root.F.F.F.F.T.T.T.T.T.T.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "GradePolicy:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "GradePolicy/GradePolicy_M6.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/cct_failure_localization_aggregated.json\n  Source file: GradePolicy/GradePolicy_M6.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  269 raw -> 9 aggregated\n  Intervals[cct_only]: 371 raw -> 13 aggregated\n  Intervals[statement_presence]: 371 raw -> 13 aggregated\n  Intervals[edge_divergence_gated]: 371 raw -> 13 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "GradePolicy:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "GradePolicy_M6",
+        "--report",
+        "csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061002_GradePolicy_M6/GradePolicy/fault_localization_eval.json\n  Mutant:    GradePolicy_M6\n  Operator:  RVR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=41, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=42, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.statement_presence: best_rank=4, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_gated: best_rank=4, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=4, top1=miss, top3=miss, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    }
+  ]
+}

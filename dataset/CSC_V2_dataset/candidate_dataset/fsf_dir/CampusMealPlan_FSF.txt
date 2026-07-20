@@ -1,0 +1,47 @@
+[fsf_1]
+T: mealsPerWeek < 0
+D: return_value == -1
+
+[fsf_2]
+T: mealsPerWeek > 21
+D: return_value == -1
+
+[fsf_3]
+T: mealsPerWeek >= 0 && mealsPerWeek <= 21 && diningDollars < 0
+D: return_value == -1
+
+[fsf_4]
+T: mealsPerWeek >= 0 && mealsPerWeek <= 21 && diningDollars > 500
+D: return_value == -1
+
+[fsf_5]
+T: mealsPerWeek >= 0 && mealsPerWeek <= 21 && diningDollars >= 0 && diningDollars <= 500 && age < 16
+D: return_value == -1
+
+[fsf_6]
+T: mealsPerWeek >= 0 && mealsPerWeek <= 21 && diningDollars >= 0 && diningDollars <= 500 && age > 80
+D: return_value == -1
+
+[fsf_7]
+T: mealsPerWeek >= 0 && mealsPerWeek <= 21 && diningDollars >= 0 && diningDollars <= 500 && age >= 16 && age <= 80 && commuteMiles < 0
+D: return_value == -1
+
+[fsf_8]
+T: mealsPerWeek >= 0 && mealsPerWeek <= 21 && diningDollars >= 0 && diningDollars <= 500 && age >= 16 && age <= 80 && commuteMiles > 100
+D: return_value == -1
+
+[fsf_9]
+T: mealsPerWeek >= 17 && mealsPerWeek <= 21 && diningDollars >= 350 && diningDollars <= 500 && age >= 16 && age <= 18 && commuteMiles >= 40 && commuteMiles <= 100 && athlete == true && vegetarian == true && lateNight == true && scholarship == false
+D: return_value == 4
+
+[fsf_10]
+T: mealsPerWeek >= 12 && mealsPerWeek <= 16 && diningDollars >= 200 && diningDollars <= 349 && age >= 19 && age <= 24 && commuteMiles >= 15 && commuteMiles <= 39 && athlete == false && vegetarian == false && lateNight == true && scholarship == false
+D: return_value == 3
+
+[fsf_11]
+T: mealsPerWeek >= 6 && mealsPerWeek <= 11 && diningDollars >= 80 && diningDollars <= 199 && age >= 25 && age <= 39 && commuteMiles >= 3 && commuteMiles <= 14 && athlete == false && vegetarian == true && lateNight == false && scholarship == true
+D: return_value == 2
+
+[fsf_12]
+T: mealsPerWeek >= 0 && mealsPerWeek <= 5 && diningDollars >= 0 && diningDollars <= 79 && age >= 40 && age <= 80 && commuteMiles >= 0 && commuteMiles <= 2 && athlete == false && vegetarian == false && lateNight == false && scholarship == true
+D: return_value == 1

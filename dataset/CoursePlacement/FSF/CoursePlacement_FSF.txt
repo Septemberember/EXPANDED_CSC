@@ -1,0 +1,71 @@
+[fsf_1]
+T: examScore < 0
+D: return_value == -1
+
+[fsf_2]
+T: examScore > 100
+D: return_value == -1
+
+[fsf_3]
+T: examScore >= 0 && examScore <= 100 && homeworkScore < 0
+D: return_value == -1
+
+[fsf_4]
+T: examScore >= 0 && examScore <= 100 && homeworkScore > 100
+D: return_value == -1
+
+[fsf_5]
+T: examScore >= 0 && examScore <= 100 && homeworkScore >= 0 && homeworkScore <= 100 && projectScore < 0
+D: return_value == -1
+
+[fsf_6]
+T: examScore >= 0 && examScore <= 100 && homeworkScore >= 0 && homeworkScore <= 100 && projectScore > 100
+D: return_value == -1
+
+[fsf_7]
+T: examScore >= 0 && examScore <= 100 && homeworkScore >= 0 && homeworkScore <= 100 && projectScore >= 0 && projectScore <= 100 && absences < 0
+D: return_value == -1
+
+[fsf_8]
+T: examScore >= 0 && examScore <= 100 && homeworkScore >= 0 && homeworkScore <= 100 && projectScore >= 0 && projectScore <= 100 && absences > 30
+D: return_value == -1
+
+[fsf_9]
+T: examScore >= 90 && examScore <= 100 && homeworkScore >= 85 && homeworkScore <= 100 && projectScore >= 90 && projectScore <= 100 && absences >= 0 && absences <= 2 && honorsRequest == true && transfer == false && needsSupport == false && summerTerm == false
+D: return_value == 4
+
+[fsf_10]
+T: examScore >= 85 && examScore <= 100 && homeworkScore >= 75 && homeworkScore <= 100 && projectScore >= 75 && projectScore <= 100 && absences >= 3 && absences <= 5 && honorsRequest == false && transfer == false && needsSupport == false && summerTerm == false
+D: return_value >= 3
+
+[fsf_11]
+T: examScore >= 60 && examScore <= 74 && homeworkScore >= 50 && homeworkScore <= 74 && projectScore >= 45 && projectScore <= 74 && absences >= 6 && absences <= 10 && honorsRequest == false && transfer == true && needsSupport == false && summerTerm == false
+D: return_value >= 2
+
+[fsf_12]
+T: examScore >= 0 && examScore <= 44 && homeworkScore >= 0 && homeworkScore <= 49 && projectScore >= 0 && projectScore <= 44 && absences >= 11 && absences <= 30 && honorsRequest == false && transfer == true && needsSupport == true && summerTerm == true
+D: return_value == 1
+
+[fsf_13]
+T: examScore >= 85 && examScore <= 100 && homeworkScore >= 0 && homeworkScore <= 49 && projectScore >= 0 && projectScore <= 44 && absences >= 0 && absences <= 5 && honorsRequest == false && transfer == false && needsSupport == true && summerTerm == false
+D: return_value >= 2
+
+[fsf_14]
+T: examScore >= 45 && examScore <= 59 && homeworkScore >= 75 && homeworkScore <= 100 && projectScore >= 75 && projectScore <= 100 && absences >= 0 && absences <= 5 && honorsRequest == false && transfer == false && needsSupport == false && summerTerm == false
+D: return_value >= 2
+
+[fsf_15]
+T: examScore >= 60 && examScore <= 84 && homeworkScore >= 50 && homeworkScore <= 74 && projectScore >= 45 && projectScore <= 74 && absences >= 0 && absences <= 5 && honorsRequest == true && transfer == false && needsSupport == false && summerTerm == false
+D: return_value >= 3
+
+[fsf_16]
+T: examScore >= 60 && examScore <= 84 && homeworkScore >= 50 && homeworkScore <= 74 && projectScore >= 45 && projectScore <= 74 && absences >= 6 && absences <= 10 && honorsRequest == false && transfer == false && needsSupport == true && summerTerm == true
+D: return_value >= 2
+
+[fsf_17]
+T: examScore >= 85 && examScore <= 100 && homeworkScore >= 75 && homeworkScore <= 100 && projectScore >= 75 && projectScore <= 100 && absences >= 11 && absences <= 30 && honorsRequest == false && transfer == true && needsSupport == false && summerTerm == true
+D: return_value >= 2
+
+[fsf_18]
+T: examScore >= 45 && examScore <= 59 && homeworkScore >= 50 && homeworkScore <= 74 && projectScore >= 45 && projectScore <= 74 && absences >= 6 && absences <= 10 && honorsRequest == false && transfer == false && needsSupport == false && summerTerm == false
+D: return_value >= 2

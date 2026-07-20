@@ -1,0 +1,27 @@
+[fsf_1]
+T: price < 0
+D: return_value == -1
+
+[fsf_2]
+T: price > 1000
+D: return_value == -1
+
+[fsf_3]
+T: price >= 0 && price <= 1000 && customerYears < 0
+D: return_value == -1
+
+[fsf_4]
+T: price >= 0 && price <= 1000 && customerYears > 30
+D: return_value == -1
+
+[fsf_5]
+T: price >= 0 && price < 100 && customerYears == 0 && coupon == false
+D: return_value == 0
+
+[fsf_6]
+T: price >= 200 && price < 500 && customerYears == 3 && coupon == false
+D: return_value == 21
+
+[fsf_7]
+T: price == 500 && customerYears == 12 && coupon == true
+D: return_value == 70

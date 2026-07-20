@@ -1,0 +1,7 @@
+[fsf_1]
+    T: c < 'F' || c > 'Z'
+    D: return_value == '0'
+
+[fsf_2]
+    T: c >= 'F' && c <= 'Z'
+    D: return_value == c - 'A' + 'a'

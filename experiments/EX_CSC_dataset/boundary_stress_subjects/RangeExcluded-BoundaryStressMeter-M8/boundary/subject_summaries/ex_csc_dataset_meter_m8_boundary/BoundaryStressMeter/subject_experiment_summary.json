@@ -1,0 +1,130 @@
+{
+  "subject": "BoundaryStressMeter",
+  "subject_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter",
+  "fsf": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/FSF/BoundaryStressMeter_FSF.txt",
+  "manifest": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+  "mode": "expanded",
+  "strategy": "batch",
+  "max_iter": 1200,
+  "dry_run": false,
+  "original": {
+    "role": "original",
+    "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/BoundaryStressMeter.java",
+    "class_name": "BoundaryStressMeter",
+    "mutant_id": null
+  },
+  "mutants": [
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/BoundaryStressMeter_M8.java",
+      "class_name": "BoundaryStressMeter",
+      "mutant_id": "BoundaryStressMeter_M8"
+    }
+  ],
+  "step_count": 4,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "original:BoundaryStressMeter:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/BoundaryStressMeter.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "1200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter/BoundaryStressMeter/testcases.json"
+      ],
+      "stdout_tail": "ound_05/b11  [BATCH_SAFE]  days=53, limit=0, surge=0\n  round_05/b12  [BATCH_SAFE]  days=57, limit=0, surge=0\n  round_05/b13  [BATCH_SAFE]  days=60, limit=0, surge=0\n  round_05/b14  [BATCH_SAFE]  days=63, limit=12, surge=0\n  round_05/b15  [BATCH_SAFE]  days=66, limit=0, surge=0\n  round_05/b16  [BATCH_SAFE]  days=69, limit=0, surge=0\n  round_05/b17  [BATCH_SAFE]  days=70, limit=0, surge=0\n  round_05/b18  [BATCH_SAFE]  days=74, limit=0, surge=0\n  round_05/b19  [BATCH_SAFE]  days=76, limit=12, surge=0\n  round_05/b20  [BATCH_SAFE]  days=79, limit=0, surge=0\n  round_05/b21  [BATCH_SAFE]  days=84, limit=0, surge=0\n  round_05/b22  [BATCH_SAFE]  days=87, limit=12, surge=0\n  round_05/b23  [BATCH_SAFE]  days=90, limit=12, surge=12\n  round_05/b24  [BATCH_SAFE]  days=91, limit=0, surge=0\n  round_05/b25  [BATCH_SAFE]  days=96, limit=0, surge=0\n  round_05/b26  [BATCH_SAFE]  days=97, limit=0, surge=0\n  round_05/b27  [BATCH_SAFE]  days=100, limit=0, surge=0\n  round_05/b28  [BATCH_SAFE]  days=103, limit=0, surge=0\n  round_05/b29  [BATCH_SAFE]  days=107, limit=0, surge=0\n  round_05/b30  [BATCH_SAFE]  days=111, limit=0, surge=0\n  round_05/b31  [BATCH_SAFE]  days=112, limit=0, surge=0\n  round_05/b32  [BATCH_SAFE]  days=116, limit=0, surge=12\n  round_05/b33  [BATCH_SAFE]  days=118, limit=0, surge=12\n  round_05/b34  [BATCH_SAFE]  days=123, limit=0, surge=0\n  round_05/b35  [BATCH_SAFE]  days=125, limit=12, surge=0\n  round_05/b36  [BATCH_SAFE]  days=200, limit=12, surge=0\n  round_05/b37  [BATCH_SAFE]  days=128, limit=201, surge=206\n  round_06/b0  [BATCH_SAFE]  days=130, limit=0, surge=0\n  round_06/b1  [BATCH_SAFE]  days=135, limit=10, surge=0\n  round_06/b2  [BATCH_SAFE]  days=138, limit=0, surge=0\n  round_06/b3  [BATCH_SAFE]  days=139, limit=12, surge=0\n  round_06/b4  [BATCH_SAFE]  days=142, limit=0, surge=0\n  round_06/b5  [BATCH_SAFE]  days=147, limit=0, surge=0\n  round_06/b6  [BATCH_SAFE]  days=149, limit=0, surge=12\n  round_06/b7  [BATCH_SAFE]  days=153, limit=0, surge=0\n  round_06/b8  [BATCH_SAFE]  days=156, limit=0, surge=0\n  round_06/b9  [BATCH_SAFE]  days=158, limit=0, surge=0\n  round_06/b10  [BATCH_SAFE]  days=161, limit=0, surge=0\n  round_06/b11  [BATCH_SAFE]  days=163, limit=0, surge=0\n  round_06/b12  [BATCH_SAFE]  days=166, limit=0, surge=0\n  round_06/b13  [BATCH_SAFE]  days=171, limit=0, surge=0\n  round_06/b14  [BATCH_SAFE]  days=173, limit=0, surge=0\n  round_06/b15  [BATCH_SAFE]  days=176, limit=0, surge=0\n  round_06/b16  [BATCH_SAFE]  days=180, limit=0, surge=0\n  round_06/b17  [BATCH_SAFE]  days=183, limit=0, surge=10\n  round_06/b18  [BATCH_SAFE]  days=186, limit=0, surge=12\n  round_06/b19  [BATCH_SAFE]  days=187, limit=0, surge=0\n  round_06/b20  [BATCH_SAFE]  days=192, limit=0, surge=0\n  round_06/b21  [BATCH_SAFE]  days=194, limit=0, surge=0\n  round_06/b22  [BATCH_SAFE]  days=198, limit=0, surge=0\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 1904\n  frontier_discovery_time_ms: 31449\n  compile_time_ms: 39096\n  java_exec_time_ms: 7406\n  path_log_parse_time_ms: 1182\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 12965\n  merge_verify_wall_time_ms: 8\n  batch_total_wall_time_ms: 12985\n\nTest cases written to: csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter/BoundaryStressMeter/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter/BoundaryStressMeter/BoundaryStressMeter_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter/BoundaryStressMeter/cct_stats.json\n  Counts: nodes=913, leaves=457, covered=74, infeasible=373, out_of_range=10, expanded=458, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter/BoundaryStressMeter/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter/BoundaryStressMeter/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter/BoundaryStressMeter/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "original:BoundaryStressMeter:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter/BoundaryStressMeter",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/BoundaryStressMeter.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter/BoundaryStressMeter/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/FSF/BoundaryStressMeter_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter/BoundaryStressMeter/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter/BoundaryStressMeter/BoundaryStressMeter_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundaryStressMeter\n  CSC result:  csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter/BoundaryStressMeter\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/FSF/BoundaryStressMeter_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter/BoundaryStressMeter/refined_tbfv_report.json\n  Summary:     testcases=81, fsf_units=9, passed=79, failed=0, skipped=650, unsupported=0\n  CCT marked:  0\n  TBFV stats:  csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter/BoundaryStressMeter/cct_tbfv_stats.json\n  Counts:      nodes=913, leaves=457, fault_leaves=0, failure_cases=0\n  Fault DOT:    csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter/BoundaryStressMeter/BoundaryStressMeter_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter/BoundaryStressMeter/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter/BoundaryStressMeter/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=0, intervals=0, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter/BoundaryStressMeter/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundaryStressMeter:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/BoundaryStressMeter_M8.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "1200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter_M8",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter_M8/BoundaryStressMeter/testcases.json"
+      ],
+      "stdout_tail": "TCH_SAFE]  days=53, limit=0, surge=0\n  round_05/b12  [BATCH_SAFE]  days=57, limit=0, surge=0\n  round_05/b13  [BATCH_SAFE]  days=60, limit=0, surge=0\n  round_05/b14  [BATCH_SAFE]  days=63, limit=12, surge=0\n  round_05/b15  [BATCH_SAFE]  days=66, limit=0, surge=0\n  round_05/b16  [BATCH_SAFE]  days=69, limit=0, surge=0\n  round_05/b17  [BATCH_SAFE]  days=72, limit=0, surge=0\n  round_05/b18  [BATCH_SAFE]  days=74, limit=0, surge=0\n  round_05/b19  [BATCH_SAFE]  days=76, limit=0, surge=0\n  round_05/b20  [BATCH_SAFE]  days=81, limit=0, surge=0\n  round_05/b21  [BATCH_SAFE]  days=84, limit=0, surge=0\n  round_05/b22  [BATCH_SAFE]  days=87, limit=0, surge=0\n  round_05/b23  [BATCH_SAFE]  days=88, limit=0, surge=0\n  round_05/b24  [BATCH_SAFE]  days=93, limit=0, surge=0\n  round_05/b25  [BATCH_SAFE]  days=96, limit=0, surge=0\n  round_05/b26  [BATCH_SAFE]  days=97, limit=0, surge=0\n  round_05/b27  [BATCH_SAFE]  days=102, limit=0, surge=0\n  round_05/b28  [BATCH_SAFE]  days=103, limit=12, surge=0\n  round_05/b29  [BATCH_SAFE]  days=106, limit=0, surge=0\n  round_05/b30  [BATCH_SAFE]  days=109, limit=0, surge=0\n  round_05/b31  [BATCH_SAFE]  days=112, limit=0, surge=0\n  round_05/b32  [BATCH_SAFE]  days=116, limit=0, surge=12\n  round_05/b33  [BATCH_SAFE]  days=118, limit=0, surge=12\n  round_05/b34  [BATCH_SAFE]  days=121, limit=0, surge=0\n  round_05/b35  [BATCH_SAFE]  days=125, limit=12, surge=0\n  round_05/b36  [BATCH_SAFE]  days=200, limit=12, surge=0\n  round_05/b37  [BATCH_SAFE]  days=128, limit=201, surge=205\n  round_06/b0  [BATCH_SAFE]  days=132, limit=0, surge=0\n  round_06/b1  [BATCH_SAFE]  days=133, limit=0, surge=0\n  round_06/b2  [BATCH_SAFE]  days=136, limit=12, surge=0\n  round_06/b3  [BATCH_SAFE]  days=141, limit=0, surge=0\n  round_06/b4  [BATCH_SAFE]  days=142, limit=0, surge=0\n  round_06/b5  [BATCH_SAFE]  days=145, limit=0, surge=12\n  round_06/b6  [BATCH_SAFE]  days=150, limit=0, surge=0\n  round_06/b7  [BATCH_SAFE]  days=153, limit=10, surge=0\n  round_06/b8  [BATCH_SAFE]  days=156, limit=0, surge=0\n  round_06/b9  [BATCH_SAFE]  days=157, limit=0, surge=0\n  round_06/b10  [BATCH_SAFE]  days=161, limit=0, surge=0\n  round_06/b11  [BATCH_SAFE]  days=165, limit=0, surge=0\n  round_06/b12  [BATCH_SAFE]  days=168, limit=0, surge=0\n  round_06/b13  [BATCH_SAFE]  days=170, limit=0, surge=0\n  round_06/b14  [BATCH_SAFE]  days=173, limit=0, surge=0\n  round_06/b15  [BATCH_SAFE]  days=176, limit=0, surge=0\n  round_06/b16  [BATCH_SAFE]  days=180, limit=0, surge=0\n  round_06/b17  [BATCH_SAFE]  days=181, limit=0, surge=0\n  round_06/b18  [BATCH_SAFE]  days=184, limit=12, surge=12\n  round_06/b19  [BATCH_SAFE]  days=189, limit=0, surge=0\n  round_06/b20  [BATCH_SAFE]  days=192, limit=0, surge=0\n  round_06/b21  [BATCH_SAFE]  days=193, limit=0, surge=0\n  round_06/b22  [BATCH_SAFE]  days=198, limit=0, surge=0\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 2450\n  frontier_discovery_time_ms: 35608\n  compile_time_ms: 51780\n  java_exec_time_ms: 9689\n  path_log_parse_time_ms: 2136\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 17288\n  merge_verify_wall_time_ms: 11\n  batch_total_wall_time_ms: 17314\n\nTest cases written to: csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter_M8/BoundaryStressMeter/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter_M8/BoundaryStressMeter/BoundaryStressMeter_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter_M8/BoundaryStressMeter/cct_stats.json\n  Counts: nodes=913, leaves=457, covered=74, infeasible=373, out_of_range=10, expanded=458, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter_M8/BoundaryStressMeter/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter_M8/BoundaryStressMeter/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter_M8/BoundaryStressMeter/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundaryStressMeter:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter_M8/BoundaryStressMeter",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/BoundaryStressMeter_M8.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter_M8/BoundaryStressMeter/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/FSF/BoundaryStressMeter_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter_M8/BoundaryStressMeter/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter_M8/BoundaryStressMeter/BoundaryStressMeter_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundaryStressMeter\n  CSC result:  csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter_M8/BoundaryStressMeter\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/FSF/BoundaryStressMeter_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter_M8/BoundaryStressMeter/refined_tbfv_report.json\n  Summary:     testcases=81, fsf_units=9, passed=79, failed=0, skipped=650, unsupported=0\n  CCT marked:  0\n  TBFV stats:  csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter_M8/BoundaryStressMeter/cct_tbfv_stats.json\n  Counts:      nodes=913, leaves=457, fault_leaves=0, failure_cases=0\n  Fault DOT:    csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter_M8/BoundaryStressMeter/BoundaryStressMeter_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter_M8/BoundaryStressMeter/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter_M8/BoundaryStressMeter/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=0, intervals=0, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_meter_m8_boundary_BoundaryStressMeter_M8/BoundaryStressMeter/render_cct.sh\n",
+      "stderr_tail": ""
+    }
+  ]
+}

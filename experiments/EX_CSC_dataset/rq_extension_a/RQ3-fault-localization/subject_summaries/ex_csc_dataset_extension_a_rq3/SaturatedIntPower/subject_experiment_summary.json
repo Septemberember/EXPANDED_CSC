@@ -1,0 +1,754 @@
+{
+  "subject": "SaturatedIntPower",
+  "subject_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower",
+  "fsf": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/FSF/SaturatedIntPower_FSF.txt",
+  "manifest": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+  "mode": "expanded",
+  "strategy": "batch",
+  "max_iter": 100,
+  "dry_run": false,
+  "original": {
+    "role": "original",
+    "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/SaturatedIntPower.java",
+    "class_name": "SaturatedIntPower",
+    "mutant_id": null
+  },
+  "mutants": [
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/SaturatedIntPower_M1.java",
+      "class_name": "SaturatedIntPower",
+      "mutant_id": "SaturatedIntPower_M1"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/SaturatedIntPower_M2.java",
+      "class_name": "SaturatedIntPower",
+      "mutant_id": "SaturatedIntPower_M2"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/SaturatedIntPower_M3.java",
+      "class_name": "SaturatedIntPower",
+      "mutant_id": "SaturatedIntPower_M3"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/SaturatedIntPower_M4.java",
+      "class_name": "SaturatedIntPower",
+      "mutant_id": "SaturatedIntPower_M4"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/SaturatedIntPower_M5.java",
+      "class_name": "SaturatedIntPower",
+      "mutant_id": "SaturatedIntPower_M5"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/SaturatedIntPower_M6.java",
+      "class_name": "SaturatedIntPower",
+      "mutant_id": "SaturatedIntPower_M6"
+    }
+  ],
+  "step_count": 30,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "mutant:SaturatedIntPower:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/SaturatedIntPower_M1.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_SaturatedIntPower_M1",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/testcases.json"
+      ],
+      "stdout_tail": "nent=0, highCap=False)\n  (T) ->\n  |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(base=-32768, exponent=0, highCap=False)\n-----------------------------\n\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/SaturatedIntPower_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 37 test cases generated in 8 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/SaturatedIntPower_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  base=0, exponent=0, highCap=False\n  round_02/b1  [BATCH_SAFE]  base=-3, exponent=4, highCap=True\n  round_02/b2  [BATCH_SAFE]  base=-1, exponent=16384, highCap=False\n  round_02/b3  [BATCH_SAFE]  base=0, exponent=-32768, highCap=False\n  round_02/b4  [BATCH_SAFE]  base=6, exponent=0, highCap=False\n  round_02/b5  [BATCH_SAFE]  base=-32768, exponent=0, highCap=False\n  round_03/b0  [BATCH_SAFE]  base=-2, exponent=4, highCap=False\n  round_03/b1  [BATCH_SAFE]  base=2, exponent=1, highCap=True\n  round_03/b2  [BATCH_SAFE]  base=-1, exponent=2, highCap=True\n  round_03/b3  [BATCH_SAFE]  base=3, exponent=3, highCap=True\n  round_03/b4  [BATCH_SAFE]  base=-4, exponent=4, highCap=True\n  round_03/b5  [BATCH_SAFE]  base=-1, exponent=6, highCap=True\n  round_03/b6  [BATCH_SAFE]  base=0, exponent=4, highCap=True\n  round_04/b0  [BATCH_SAFE]  base=2, exponent=1, highCap=False\n  round_04/b1  [BATCH_SAFE]  base=-1, exponent=2, highCap=False\n  round_04/b2  [BATCH_SAFE]  base=3, exponent=3, highCap=False\n  round_04/b3  [BATCH_SAFE]  base=4, exponent=4, highCap=False\n  round_04/b4  [BATCH_SAFE]  base=-1, exponent=5, highCap=False\n  round_04/b5  [BATCH_SAFE]  base=0, exponent=4, highCap=False\n  round_04/b6  [BATCH_SAFE]  base=-5, exponent=3, highCap=True\n  round_04/b7  [BATCH_SAFE]  base=4, exponent=5, highCap=True\n  round_04/b8  [BATCH_SAFE]  base=-4, exponent=6, highCap=True\n  round_04/b9  [BATCH_SAFE]  base=-1, exponent=7, highCap=True\n  round_05/b0  [BATCH_SAFE]  base=-4, exponent=3, highCap=False\n  round_05/b1  [BATCH_SAFE]  base=4, exponent=3, highCap=False\n  round_05/b2  [BATCH_SAFE]  base=-5, exponent=5, highCap=False\n  round_05/b3  [BATCH_SAFE]  base=3, exponent=5, highCap=False\n  round_05/b4  [BATCH_SAFE]  base=-1, exponent=6, highCap=False\n  round_05/b5  [BATCH_SAFE]  base=-1, exponent=5, highCap=True\n  round_05/b6  [BATCH_SAFE]  base=-2, exponent=7, highCap=True\n  round_05/b7  [BATCH_SAFE]  base=3, exponent=7, highCap=True\n  round_06/b0  [BATCH_SAFE]  base=4, exponent=6, highCap=False\n  round_06/b1  [BATCH_SAFE]  base=-1, exponent=7, highCap=False\n  round_06/b2  [BATCH_SAFE]  base=-5, exponent=5, highCap=True\n  round_07/b0  [BATCH_SAFE]  base=-5, exponent=7, highCap=False\n  round_07/b1  [BATCH_SAFE]  base=3, exponent=7, highCap=False\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 178\n  frontier_discovery_time_ms: 522\n  compile_time_ms: 13614\n  java_exec_time_ms: 2206\n  path_log_parse_time_ms: 0\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 4674\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 4678\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/SaturatedIntPower_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/cct_stats.json\n  Counts: nodes=107, leaves=54, covered=37, infeasible=17, out_of_range=0, expanded=63, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SaturatedIntPower:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/SaturatedIntPower_M1.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/FSF/SaturatedIntPower_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/SaturatedIntPower_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       SaturatedIntPower\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/FSF/SaturatedIntPower_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/refined_tbfv_report.json\n  Summary:     testcases=37, fsf_units=33, passed=37, failed=15, skipped=1169, unsupported=0\n  CCT marked:  15\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/cct_tbfv_stats.json\n  Counts:      nodes=107, leaves=54, fault_leaves=1, failure_cases=1\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/SaturatedIntPower_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=2, intervals=2, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatedIntPower:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower\n  CCT:         csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/SaturatedIntPower_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=37, failed=1, condition_nodes=2, condition_intervals=2\n  Top conditions:\n    #1 score=0.0193 fail=1/36 line=3 base >= 5\n    #2 score=0.0187 fail=1/37 line=3 base < -5\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[3, None] root.F.TRUE\n    #2 score=0.0000 fail=1/36 line=[3, 3] root.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatedIntPower:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "SaturatedIntPower/SaturatedIntPower_M1.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/cct_failure_localization_aggregated.json\n  Source file: SaturatedIntPower/SaturatedIntPower_M1.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  2 raw -> 2 aggregated\n  Intervals[cct_only]: 2 raw -> 2 aggregated\n  Intervals[statement_presence]: 2 raw -> 2 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 2 raw -> 2 aggregated\n  Intervals[edge_divergence_sibling_shared]: 2 raw -> 2 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatedIntPower:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "SaturatedIntPower_M1",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M1/SaturatedIntPower/fault_localization_eval.json\n  Mutant:    SaturatedIntPower_M1\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SaturatedIntPower:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/SaturatedIntPower_M2.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_SaturatedIntPower_M2",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/testcases.json"
+      ],
+      "stdout_tail": "ts: tc_2_b5(base=-32768, exponent=0, highCap=False)\n-----------------------------\n\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/SaturatedIntPower_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 38 test cases generated in 9 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/SaturatedIntPower_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  base=-1, exponent=0, highCap=False\n  round_02/b1  [BATCH_SAFE]  base=-1, exponent=1, highCap=True\n  round_02/b2  [BATCH_SAFE]  base=-1, exponent=16384, highCap=False\n  round_02/b3  [BATCH_SAFE]  base=-1, exponent=-32768, highCap=False\n  round_02/b4  [BATCH_SAFE]  base=16384, exponent=0, highCap=False\n  round_02/b5  [BATCH_SAFE]  base=-32768, exponent=0, highCap=False\n  round_03/b0  [BATCH_SAFE]  base=-1, exponent=1, highCap=False\n  round_03/b1  [BATCH_SAFE]  base=-1, exponent=4, highCap=True\n  round_03/b2  [BATCH_SAFE]  base=0, exponent=4, highCap=True\n  round_04/b0  [BATCH_SAFE]  base=-1, exponent=4, highCap=False\n  round_04/b1  [BATCH_SAFE]  base=0, exponent=4, highCap=False\n  round_04/b2  [BATCH_SAFE]  base=2, exponent=2, highCap=True\n  round_04/b3  [BATCH_SAFE]  base=1, exponent=3, highCap=True\n  round_04/b4  [BATCH_SAFE]  base=-4, exponent=4, highCap=True\n  round_04/b5  [BATCH_SAFE]  base=-1, exponent=6, highCap=True\n  round_05/b0  [BATCH_SAFE]  base=1, exponent=2, highCap=False\n  round_05/b1  [BATCH_SAFE]  base=3, exponent=3, highCap=False\n  round_05/b2  [BATCH_SAFE]  base=-4, exponent=4, highCap=False\n  round_05/b3  [BATCH_SAFE]  base=-1, exponent=5, highCap=False\n  round_05/b4  [BATCH_SAFE]  base=-4, exponent=3, highCap=True\n  round_05/b5  [BATCH_SAFE]  base=5, exponent=3, highCap=True\n  round_05/b6  [BATCH_SAFE]  base=3, exponent=5, highCap=True\n  round_05/b7  [BATCH_SAFE]  base=-2, exponent=6, highCap=True\n  round_05/b8  [BATCH_SAFE]  base=-1, exponent=7, highCap=True\n  round_06/b0  [BATCH_SAFE]  base=-5, exponent=3, highCap=False\n  round_06/b1  [BATCH_SAFE]  base=5, exponent=3, highCap=False\n  round_06/b2  [BATCH_SAFE]  base=-4, exponent=5, highCap=False\n  round_06/b3  [BATCH_SAFE]  base=5, exponent=5, highCap=False\n  round_06/b4  [BATCH_SAFE]  base=1, exponent=6, highCap=False\n  round_06/b5  [BATCH_SAFE]  base=-1, exponent=5, highCap=True\n  round_06/b6  [BATCH_SAFE]  base=-3, exponent=7, highCap=True\n  round_06/b7  [BATCH_SAFE]  base=4, exponent=7, highCap=True\n  round_07/b0  [BATCH_SAFE]  base=-5, exponent=6, highCap=False\n  round_07/b1  [BATCH_SAFE]  base=-1, exponent=7, highCap=False\n  round_07/b2  [BATCH_SAFE]  base=-4, exponent=5, highCap=True\n  round_08/b0  [BATCH_SAFE]  base=-4, exponent=7, highCap=False\n  round_08/b1  [BATCH_SAFE]  base=3, exponent=7, highCap=False\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 208\n  frontier_discovery_time_ms: 622\n  compile_time_ms: 15046\n  java_exec_time_ms: 2761\n  path_log_parse_time_ms: 0\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 5441\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 5447\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/SaturatedIntPower_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/cct_stats.json\n  Counts: nodes=107, leaves=54, covered=38, infeasible=16, out_of_range=0, expanded=64, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SaturatedIntPower:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/SaturatedIntPower_M2.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/FSF/SaturatedIntPower_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/SaturatedIntPower_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       SaturatedIntPower\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/FSF/SaturatedIntPower_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/refined_tbfv_report.json\n  Summary:     testcases=38, fsf_units=33, passed=22, failed=24, skipped=1208, unsupported=0\n  CCT marked:  24\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/cct_tbfv_stats.json\n  Counts:      nodes=107, leaves=54, fault_leaves=19, failure_cases=19\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/SaturatedIntPower_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=43, intervals=61, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatedIntPower:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower\n  CCT:         csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/SaturatedIntPower_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=38, failed=19, condition_nodes=43, condition_intervals=61\n  Top conditions:\n    #1 score=2.1026 fail=11/13 line=25 n > 0\n    #2 score=1.9524 fail=11/14 line=25 n > 0\n    #3 score=1.8223 fail=11/15 line=25 n > 0\n  Top intervals:\n    #1 score=1.6858 fail=11/13 line=[25, 25] root.F.F.F.F.F.F.F.T.T.TRUE\n    #2 score=1.5142 fail=11/14 line=[25, 25] root.F.F.F.F.F.F.F.T.TRUE\n    #3 score=1.3718 fail=11/15 line=[25, 25] root.F.F.F.F.F.F.F.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatedIntPower:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "SaturatedIntPower/SaturatedIntPower_M2.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/cct_failure_localization_aggregated.json\n  Source file: SaturatedIntPower/SaturatedIntPower_M2.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  43 raw -> 10 aggregated\n  Intervals[cct_only]: 61 raw -> 14 aggregated\n  Intervals[statement_presence]: 61 raw -> 14 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 61 raw -> 14 aggregated\n  Intervals[edge_divergence_sibling_shared]: 61 raw -> 14 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatedIntPower:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "SaturatedIntPower_M2",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M2/SaturatedIntPower/fault_localization_eval.json\n  Mutant:    SaturatedIntPower_M2\n  Operator:  ROR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=7, top1=miss, top3=miss, top5=miss, top10=hit\n  raw.interval.cct_only: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=4, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SaturatedIntPower:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/SaturatedIntPower_M3.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_SaturatedIntPower_M3",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/testcases.json"
+      ],
+      "stdout_tail": "puts: tc_2_b5(base=-32768, exponent=0, highCap=False)\n-----------------------------\n\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/SaturatedIntPower_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 38 test cases generated in 9 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/SaturatedIntPower_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  base=-1, exponent=0, highCap=False\n  round_02/b1  [BATCH_SAFE]  base=-1, exponent=1, highCap=True\n  round_02/b2  [BATCH_SAFE]  base=-1, exponent=16384, highCap=False\n  round_02/b3  [BATCH_SAFE]  base=-1, exponent=-32768, highCap=False\n  round_02/b4  [BATCH_SAFE]  base=16384, exponent=0, highCap=False\n  round_02/b5  [BATCH_SAFE]  base=-32768, exponent=0, highCap=False\n  round_03/b0  [BATCH_SAFE]  base=-1, exponent=1, highCap=False\n  round_03/b1  [BATCH_SAFE]  base=-1, exponent=4, highCap=True\n  round_03/b2  [BATCH_SAFE]  base=0, exponent=4, highCap=True\n  round_04/b0  [BATCH_SAFE]  base=-1, exponent=4, highCap=False\n  round_04/b1  [BATCH_SAFE]  base=0, exponent=4, highCap=False\n  round_04/b2  [BATCH_SAFE]  base=2, exponent=2, highCap=True\n  round_04/b3  [BATCH_SAFE]  base=1, exponent=3, highCap=True\n  round_04/b4  [BATCH_SAFE]  base=4, exponent=4, highCap=True\n  round_04/b5  [BATCH_SAFE]  base=-1, exponent=6, highCap=True\n  round_05/b0  [BATCH_SAFE]  base=1, exponent=2, highCap=False\n  round_05/b1  [BATCH_SAFE]  base=3, exponent=3, highCap=False\n  round_05/b2  [BATCH_SAFE]  base=3, exponent=4, highCap=False\n  round_05/b3  [BATCH_SAFE]  base=-1, exponent=6, highCap=False\n  round_05/b4  [BATCH_SAFE]  base=-5, exponent=3, highCap=True\n  round_05/b5  [BATCH_SAFE]  base=5, exponent=3, highCap=True\n  round_05/b6  [BATCH_SAFE]  base=3, exponent=5, highCap=True\n  round_05/b7  [BATCH_SAFE]  base=-5, exponent=6, highCap=True\n  round_05/b8  [BATCH_SAFE]  base=-1, exponent=7, highCap=True\n  round_06/b0  [BATCH_SAFE]  base=-4, exponent=3, highCap=False\n  round_06/b1  [BATCH_SAFE]  base=5, exponent=3, highCap=False\n  round_06/b2  [BATCH_SAFE]  base=3, exponent=5, highCap=False\n  round_06/b3  [BATCH_SAFE]  base=-3, exponent=6, highCap=False\n  round_06/b4  [BATCH_SAFE]  base=-1, exponent=7, highCap=False\n  round_06/b5  [BATCH_SAFE]  base=-2, exponent=5, highCap=True\n  round_06/b6  [BATCH_SAFE]  base=-3, exponent=7, highCap=True\n  round_06/b7  [BATCH_SAFE]  base=4, exponent=7, highCap=True\n  round_07/b0  [BATCH_SAFE]  base=2, exponent=5, highCap=False\n  round_07/b1  [BATCH_SAFE]  base=-4, exponent=7, highCap=False\n  round_07/b2  [BATCH_SAFE]  base=2, exponent=7, highCap=False\n  round_07/b3  [BATCH_SAFE]  base=-4, exponent=5, highCap=True\n  round_08/b0  [BATCH_SAFE]  base=-4, exponent=5, highCap=False\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 215\n  frontier_discovery_time_ms: 643\n  compile_time_ms: 15740\n  java_exec_time_ms: 2691\n  path_log_parse_time_ms: 1\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 5523\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 5527\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/SaturatedIntPower_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/cct_stats.json\n  Counts: nodes=107, leaves=54, covered=38, infeasible=16, out_of_range=0, expanded=64, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SaturatedIntPower:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/SaturatedIntPower_M3.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/FSF/SaturatedIntPower_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/SaturatedIntPower_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       SaturatedIntPower\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/FSF/SaturatedIntPower_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/refined_tbfv_report.json\n  Summary:     testcases=38, fsf_units=33, passed=38, failed=0, skipped=1216, unsupported=0\n  CCT marked:  0\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/cct_tbfv_stats.json\n  Counts:      nodes=107, leaves=54, fault_leaves=0, failure_cases=0\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/SaturatedIntPower_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=0, intervals=0, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatedIntPower:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower\n  CCT:         csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/SaturatedIntPower_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=38, failed=0, condition_nodes=0, condition_intervals=0\n  Top conditions: <none>\n  Top intervals: <none>\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatedIntPower:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "SaturatedIntPower/SaturatedIntPower_M3.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/cct_failure_localization_aggregated.json\n  Source file: SaturatedIntPower/SaturatedIntPower_M3.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  0 raw -> 0 aggregated\n  Intervals[cct_only]: 0 raw -> 0 aggregated\n  Intervals[statement_presence]: 0 raw -> 0 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 0 raw -> 0 aggregated\n  Intervals[edge_divergence_sibling_shared]: 0 raw -> 0 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatedIntPower:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "SaturatedIntPower_M3",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M3/SaturatedIntPower/fault_localization_eval.json\n  Mutant:    SaturatedIntPower_M3\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SaturatedIntPower:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/SaturatedIntPower_M4.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_SaturatedIntPower_M4",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/testcases.json"
+      ],
+      "stdout_tail": "puts: tc_2_b5(base=-32768, exponent=0, highCap=False)\n-----------------------------\n\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/SaturatedIntPower_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 38 test cases generated in 9 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/SaturatedIntPower_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  base=-1, exponent=0, highCap=False\n  round_02/b1  [BATCH_SAFE]  base=-1, exponent=1, highCap=True\n  round_02/b2  [BATCH_SAFE]  base=-1, exponent=16384, highCap=False\n  round_02/b3  [BATCH_SAFE]  base=-1, exponent=-32768, highCap=False\n  round_02/b4  [BATCH_SAFE]  base=16384, exponent=0, highCap=False\n  round_02/b5  [BATCH_SAFE]  base=-32768, exponent=0, highCap=False\n  round_03/b0  [BATCH_SAFE]  base=-1, exponent=1, highCap=False\n  round_03/b1  [BATCH_SAFE]  base=-1, exponent=4, highCap=True\n  round_03/b2  [BATCH_SAFE]  base=0, exponent=4, highCap=True\n  round_04/b0  [BATCH_SAFE]  base=-1, exponent=4, highCap=False\n  round_04/b1  [BATCH_SAFE]  base=0, exponent=4, highCap=False\n  round_04/b2  [BATCH_SAFE]  base=2, exponent=2, highCap=True\n  round_04/b3  [BATCH_SAFE]  base=1, exponent=3, highCap=True\n  round_04/b4  [BATCH_SAFE]  base=-5, exponent=4, highCap=True\n  round_04/b5  [BATCH_SAFE]  base=-1, exponent=6, highCap=True\n  round_05/b0  [BATCH_SAFE]  base=2, exponent=2, highCap=False\n  round_05/b1  [BATCH_SAFE]  base=1, exponent=3, highCap=False\n  round_05/b2  [BATCH_SAFE]  base=4, exponent=4, highCap=False\n  round_05/b3  [BATCH_SAFE]  base=-1, exponent=6, highCap=False\n  round_05/b4  [BATCH_SAFE]  base=-5, exponent=3, highCap=True\n  round_05/b5  [BATCH_SAFE]  base=5, exponent=3, highCap=True\n  round_05/b6  [BATCH_SAFE]  base=3, exponent=5, highCap=True\n  round_05/b7  [BATCH_SAFE]  base=4, exponent=6, highCap=True\n  round_05/b8  [BATCH_SAFE]  base=-1, exponent=7, highCap=True\n  round_06/b0  [BATCH_SAFE]  base=-5, exponent=3, highCap=False\n  round_06/b1  [BATCH_SAFE]  base=4, exponent=3, highCap=False\n  round_06/b2  [BATCH_SAFE]  base=3, exponent=5, highCap=False\n  round_06/b3  [BATCH_SAFE]  base=-3, exponent=6, highCap=False\n  round_06/b4  [BATCH_SAFE]  base=-1, exponent=7, highCap=False\n  round_06/b5  [BATCH_SAFE]  base=2, exponent=5, highCap=True\n  round_06/b6  [BATCH_SAFE]  base=-4, exponent=7, highCap=True\n  round_06/b7  [BATCH_SAFE]  base=4, exponent=7, highCap=True\n  round_07/b0  [BATCH_SAFE]  base=-2, exponent=5, highCap=False\n  round_07/b1  [BATCH_SAFE]  base=-4, exponent=7, highCap=False\n  round_07/b2  [BATCH_SAFE]  base=3, exponent=7, highCap=False\n  round_07/b3  [BATCH_SAFE]  base=-4, exponent=5, highCap=True\n  round_08/b0  [BATCH_SAFE]  base=-3, exponent=5, highCap=False\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 210\n  frontier_discovery_time_ms: 629\n  compile_time_ms: 15486\n  java_exec_time_ms: 2833\n  path_log_parse_time_ms: 2\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 5518\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 5526\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/SaturatedIntPower_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/cct_stats.json\n  Counts: nodes=107, leaves=54, covered=38, infeasible=16, out_of_range=0, expanded=64, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SaturatedIntPower:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/SaturatedIntPower_M4.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/FSF/SaturatedIntPower_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/SaturatedIntPower_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       SaturatedIntPower\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/FSF/SaturatedIntPower_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/refined_tbfv_report.json\n  Summary:     testcases=38, fsf_units=33, passed=30, failed=8, skipped=1216, unsupported=0\n  CCT marked:  8\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/cct_tbfv_stats.json\n  Counts:      nodes=107, leaves=54, fault_leaves=8, failure_cases=8\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/SaturatedIntPower_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=23, intervals=30, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatedIntPower:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower\n  CCT:         csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/SaturatedIntPower_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=38, failed=8, condition_nodes=23, condition_intervals=30\n  Top conditions:\n    #1 score=1.3521 fail=8/13 line=25 n > 0\n    #2 score=1.2556 fail=8/14 line=25 n > 0\n    #3 score=1.1719 fail=8/15 line=25 n > 0\n  Top intervals:\n    #1 score=0.9486 fail=8/13 line=[25, 25] root.F.F.F.F.F.F.F.T.T.TRUE\n    #2 score=0.8569 fail=8/14 line=[25, 25] root.F.F.F.F.F.F.F.T.TRUE\n    #3 score=0.7804 fail=8/15 line=[25, 25] root.F.F.F.F.F.F.F.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatedIntPower:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "SaturatedIntPower/SaturatedIntPower_M4.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/cct_failure_localization_aggregated.json\n  Source file: SaturatedIntPower/SaturatedIntPower_M4.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  23 raw -> 10 aggregated\n  Intervals[cct_only]: 30 raw -> 12 aggregated\n  Intervals[statement_presence]: 30 raw -> 12 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 30 raw -> 12 aggregated\n  Intervals[edge_divergence_sibling_shared]: 30 raw -> 12 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatedIntPower:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "SaturatedIntPower_M4",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M4/SaturatedIntPower/fault_localization_eval.json\n  Mutant:    SaturatedIntPower_M4\n  Operator:  CR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=22, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=18, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=22, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=8, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.statement_presence: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=8, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SaturatedIntPower:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/SaturatedIntPower_M5.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_SaturatedIntPower_M5",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/testcases.json"
+      ],
+      "stdout_tail": "   |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b2'}  inputs: tc_3_b2(base=0, exponent=4, highCap=True)\n  |     |     |     |     |     (T) ->\n  |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(base=0, exponent=0, highCap=True)\n  |     |     |     (T) ->\n  |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(base=-1, exponent=16384, highCap=False)\n  |     |     (T) ->\n  |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(base=-1, exponent=-32768, highCap=False)\n  |     (T) ->\n  |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(base=16384, exponent=0, highCap=False)\n  (T) ->\n  |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(base=-32768, exponent=0, highCap=False)\n-----------------------------\n\n  [EXPAND] Promoted truncated leaf at 'n > 0' (cnt=8) \u2192 F:['tc_7_b0']\n  [EXPAND] Promoted truncated leaf at 'result > limit' (cnt=1) \u2192 F:['tc_7_b0']\n  [EXPAND] Promoted truncated leaf at 'result < floor' (cnt=1) \u2192 F:['tc_7_b0']\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/SaturatedIntPower_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 22 test cases generated in 8 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/SaturatedIntPower_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  base=-1, exponent=0, highCap=False\n  round_02/b1  [BATCH_SAFE]  base=-1, exponent=1, highCap=True\n  round_02/b2  [BATCH_SAFE]  base=-1, exponent=16384, highCap=False\n  round_02/b3  [BATCH_SAFE]  base=-1, exponent=-32768, highCap=False\n  round_02/b4  [BATCH_SAFE]  base=16384, exponent=0, highCap=False\n  round_02/b5  [BATCH_SAFE]  base=-32768, exponent=0, highCap=False\n  round_03/b0  [BATCH_SAFE]  base=-1, exponent=1, highCap=False\n  round_03/b1  [BATCH_SAFE]  base=-1, exponent=4, highCap=True\n  round_03/b2  [BATCH_SAFE]  base=0, exponent=4, highCap=True\n  round_04/b0  [BATCH_SAFE]  base=-1, exponent=4, highCap=False\n  round_04/b1  [BATCH_SAFE]  base=0, exponent=4, highCap=False\n  round_04/b2  [BATCH_SAFE]  base=1, exponent=2, highCap=True\n  round_04/b3  [BATCH_SAFE]  base=3, exponent=3, highCap=True\n  round_04/b4  [BATCH_SAFE]  base=-1, exponent=5, highCap=True\n  round_05/b0  [BATCH_SAFE]  base=1, exponent=2, highCap=False\n  round_05/b1  [BATCH_SAFE]  base=1, exponent=3, highCap=False\n  round_05/b2  [BATCH_SAFE]  base=-1, exponent=5, highCap=False\n  round_05/b3  [BATCH_SAFE]  base=1, exponent=6, highCap=True\n  round_06/b0  [BATCH_SAFE]  base=1, exponent=6, highCap=False\n  round_06/b1  [BATCH_SAFE]  base=-1, exponent=7, highCap=True\n  round_07/b0  [BATCH_SAFE]  base=-1, exponent=7, highCap=False\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 30\n  frontier_discovery_time_ms: 229\n  compile_time_ms: 7745\n  java_exec_time_ms: 1305\n  path_log_parse_time_ms: 0\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 3113\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 3117\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/SaturatedIntPower_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/cct_stats.json\n  Counts: nodes=107, leaves=54, covered=22, infeasible=32, out_of_range=0, expanded=48, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SaturatedIntPower:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/SaturatedIntPower_M5.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/FSF/SaturatedIntPower_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/SaturatedIntPower_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       SaturatedIntPower\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/FSF/SaturatedIntPower_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/refined_tbfv_report.json\n  Summary:     testcases=22, fsf_units=33, passed=8, failed=30, skipped=688, unsupported=0\n  CCT marked:  30\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/cct_tbfv_stats.json\n  Counts:      nodes=107, leaves=54, fault_leaves=14, failure_cases=14\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/SaturatedIntPower_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=53, intervals=66, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatedIntPower:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower\n  CCT:         csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/SaturatedIntPower_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=22, failed=14, condition_nodes=53, condition_intervals=66\n  Top conditions:\n    #1 score=2.1063 fail=14/18 line=11 highCap\n    #2 score=2.0794 fail=7/7 line=25 n > 0\n    #3 score=2.0794 fail=7/7 line=25 n > 0\n  Top intervals:\n    #1 score=1.8062 fail=7/7 line=[25, 25] root.F.F.F.F.F.F.F.TRUE\n    #2 score=1.8062 fail=7/7 line=[25, 25] root.F.F.F.F.T.F.F.TRUE\n    #3 score=1.8062 fail=7/7 line=[19, 25] root.F.F.F.F.F.F.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatedIntPower:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "SaturatedIntPower/SaturatedIntPower_M5.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/cct_failure_localization_aggregated.json\n  Source file: SaturatedIntPower/SaturatedIntPower_M5.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  53 raw -> 10 aggregated\n  Intervals[cct_only]: 66 raw -> 12 aggregated\n  Intervals[statement_presence]: 66 raw -> 12 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 66 raw -> 12 aggregated\n  Intervals[edge_divergence_sibling_shared]: 66 raw -> 12 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatedIntPower:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "SaturatedIntPower_M5",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M5/SaturatedIntPower/fault_localization_eval.json\n  Mutant:    SaturatedIntPower_M5\n  Operator:  AOR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=29, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=12, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SaturatedIntPower:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/SaturatedIntPower_M6.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "ex_csc_dataset_rq3_SaturatedIntPower_M6",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/testcases.json"
+      ],
+      "stdout_tail": "     |     |     |   [LEAF] Cases: {'tc_6_b3'} [EXPANDED]  inputs: tc_6_b3(base=-4, exponent=7, highCap=True)\n  |     |     |     |     |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b2'}  inputs: tc_3_b2(base=0, exponent=4, highCap=True)\n  |     |     |     |     |     (T) ->\n  |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(base=0, exponent=0, highCap=True)\n  |     |     |     (T) ->\n  |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(base=-1, exponent=16384, highCap=False)\n  |     |     (T) ->\n  |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(base=-1, exponent=-32768, highCap=False)\n  |     (T) ->\n  |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(base=16384, exponent=0, highCap=False)\n  (T) ->\n  |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(base=-32768, exponent=0, highCap=False)\n-----------------------------\n\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/SaturatedIntPower_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 22 test cases generated in 8 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/SaturatedIntPower_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  base=-1, exponent=0, highCap=False\n  round_02/b1  [BATCH_SAFE]  base=-1, exponent=1, highCap=True\n  round_02/b2  [BATCH_SAFE]  base=-1, exponent=16384, highCap=False\n  round_02/b3  [BATCH_SAFE]  base=-1, exponent=-32768, highCap=False\n  round_02/b4  [BATCH_SAFE]  base=16384, exponent=0, highCap=False\n  round_02/b5  [BATCH_SAFE]  base=-32768, exponent=0, highCap=False\n  round_03/b0  [BATCH_SAFE]  base=-1, exponent=1, highCap=False\n  round_03/b1  [BATCH_SAFE]  base=-1, exponent=3, highCap=True\n  round_03/b2  [BATCH_SAFE]  base=0, exponent=4, highCap=True\n  round_04/b0  [BATCH_SAFE]  base=-1, exponent=3, highCap=False\n  round_04/b1  [BATCH_SAFE]  base=0, exponent=4, highCap=False\n  round_04/b2  [BATCH_SAFE]  base=-1, exponent=6, highCap=True\n  round_05/b0  [BATCH_SAFE]  base=-1, exponent=6, highCap=False\n  round_05/b1  [BATCH_SAFE]  base=-5, exponent=5, highCap=True\n  round_05/b2  [BATCH_SAFE]  base=5, exponent=5, highCap=True\n  round_05/b3  [BATCH_SAFE]  base=-1, exponent=7, highCap=True\n  round_06/b0  [BATCH_SAFE]  base=-4, exponent=5, highCap=False\n  round_06/b1  [BATCH_SAFE]  base=5, exponent=5, highCap=False\n  round_06/b2  [BATCH_SAFE]  base=-1, exponent=7, highCap=False\n  round_06/b3  [BATCH_SAFE]  base=-4, exponent=7, highCap=True\n  round_07/b0  [BATCH_SAFE]  base=3, exponent=7, highCap=False\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 71\n  frontier_discovery_time_ms: 263\n  compile_time_ms: 8284\n  java_exec_time_ms: 1668\n  path_log_parse_time_ms: 0\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 3112\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 3119\n\nTest cases written to: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/SaturatedIntPower_cct.dot\n  Stats: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/cct_stats.json\n  Counts: nodes=71, leaves=36, covered=22, infeasible=14, out_of_range=0, expanded=30, truncated=0\n  Render script: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/render_cct.sh\n  (render later with: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SaturatedIntPower:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/SaturatedIntPower_M6.java",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/FSF/SaturatedIntPower_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/SaturatedIntPower_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       SaturatedIntPower\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatedIntPower/FSF/SaturatedIntPower_FSF.txt\n  Report:      csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/refined_tbfv_report.json\n  Summary:     testcases=22, fsf_units=33, passed=18, failed=32, skipped=676, unsupported=0\n  CCT marked:  32\n  TBFV stats:  csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/cct_tbfv_stats.json\n  Counts:      nodes=71, leaves=36, fault_leaves=12, failure_cases=12\n  Fault DOT:    csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/SaturatedIntPower_cct_tbfv_fault.dot\n  Localization: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/cct_failure_localization.json\n  Risk DOT:     csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=35, intervals=46, default_edge_strategy=statement_presence\n  Render script: csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatedIntPower:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower\n  CCT:         csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/SaturatedIntPower_cct.pkl\n  Report:      csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/cct_failure_localization.json\n  Risk DOT:    csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=22, failed=12, condition_nodes=35, condition_intervals=46\n  Top conditions:\n    #1 score=1.7100 fail=12/18 line=11 highCap\n    #2 score=1.6679 fail=6/7 line=25 n > 0\n    #3 score=1.6679 fail=6/7 line=25 n > 0\n  Top intervals:\n    #1 score=1.3453 fail=6/7 line=[25, 25] root.F.F.F.F.F.F.F.TRUE\n    #2 score=1.3453 fail=6/7 line=[25, 25] root.F.F.F.F.T.F.F.TRUE\n    #3 score=1.3453 fail=6/7 line=[19, 25] root.F.F.F.F.F.F.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatedIntPower:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "SaturatedIntPower/SaturatedIntPower_M6.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/cct_failure_localization_aggregated.json\n  Source file: SaturatedIntPower/SaturatedIntPower_M6.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  35 raw -> 10 aggregated\n  Intervals[cct_only]: 46 raw -> 14 aggregated\n  Intervals[statement_presence]: 46 raw -> 14 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 46 raw -> 14 aggregated\n  Intervals[edge_divergence_sibling_shared]: 46 raw -> 14 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatedIntPower:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "SaturatedIntPower_M6",
+        "--report",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/ex_csc_dataset_rq3_SaturatedIntPower_M6/SaturatedIntPower/fault_localization_eval.json\n  Mutant:    SaturatedIntPower_M6\n  Operator:  SUR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=12, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=9, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    }
+  ]
+}

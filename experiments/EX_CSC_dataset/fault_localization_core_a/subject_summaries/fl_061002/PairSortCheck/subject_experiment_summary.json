@@ -1,0 +1,754 @@
+{
+  "subject": "PairSortCheck",
+  "subject_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck",
+  "fsf": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/FSF/PairSortCheck_FSF.txt",
+  "manifest": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+  "mode": "expanded",
+  "strategy": "batch",
+  "max_iter": 100,
+  "dry_run": false,
+  "original": {
+    "role": "original",
+    "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/PairSortCheck.java",
+    "class_name": "PairSortCheck",
+    "mutant_id": null
+  },
+  "mutants": [
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/PairSortCheck_M1.java",
+      "class_name": "PairSortCheck",
+      "mutant_id": "PairSortCheck_M1"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/PairSortCheck_M2.java",
+      "class_name": "PairSortCheck",
+      "mutant_id": "PairSortCheck_M2"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/PairSortCheck_M3.java",
+      "class_name": "PairSortCheck",
+      "mutant_id": "PairSortCheck_M3"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/PairSortCheck_M4.java",
+      "class_name": "PairSortCheck",
+      "mutant_id": "PairSortCheck_M4"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/PairSortCheck_M5.java",
+      "class_name": "PairSortCheck",
+      "mutant_id": "PairSortCheck_M5"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/PairSortCheck_M6.java",
+      "class_name": "PairSortCheck",
+      "mutant_id": "PairSortCheck_M6"
+    }
+  ],
+  "step_count": 30,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "mutant:PairSortCheck:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/PairSortCheck_M1.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061002_PairSortCheck_M1",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/testcases.json"
+      ],
+      "stdout_tail": "1, b=-1, c=-32768, d=-2, e=-32768\n  round_04/b13  [BATCH_SAFE]  a=0, b=0, c=32751, d=32751, e=0\n  round_04/b14  [BATCH_SAFE]  a=32767, b=0, c=2, d=32767, e=0\n  round_04/b15  [BATCH_SAFE]  a=30175, b=24539, c=11994, d=11994, e=1112\n  round_04/b16  [BATCH_SAFE]  a=-511, b=-32768, c=3, d=1, e=-512\n  round_04/b17  [BATCH_SAFE]  a=0, b=0, c=0, d=-1, e=-32768\n  round_04/b18  [BATCH_SAFE]  a=511, b=513, c=0, d=32767, e=32767\n  round_04/b19  [BATCH_SAFE]  a=-1599, b=29171, c=-13888, d=-13888, e=-13888\n  round_04/b20  [BATCH_SAFE]  a=1, b=32767, c=-16, d=0, e=32767\n  round_04/b21  [BATCH_SAFE]  a=1, b=2, c=-32768, d=-1, e=0\n  round_04/b22  [BATCH_SAFE]  a=0, b=1, c=32767, d=0, e=32767\n  round_04/b23  [BATCH_SAFE]  a=0, b=3, c=2, d=0, e=32766\n  round_04/b24  [BATCH_SAFE]  a=-28674, b=-28672, c=1, d=0, e=0\n  round_04/b25  [BATCH_SAFE]  a=1, b=32767, c=32767, d=0, e=0\n  round_04/b26  [BATCH_SAFE]  a=37, b=39, c=36, d=34, e=34\n  round_04/b27  [BATCH_SAFE]  a=0, b=1, c=1, d=-1, e=0\n  round_04/b28  [BATCH_SAFE]  a=0, b=1, c=0, d=32767, e=32750\n  round_04/b29  [BATCH_SAFE]  a=25453, b=32639, c=17744, d=28151, e=17744\n  round_04/b30  [BATCH_SAFE]  a=1, b=2, c=-16386, d=0, e=-16386\n  round_04/b31  [BATCH_SAFE]  a=-2, b=2, c=0, d=32510, e=1\n  round_04/b32  [BATCH_SAFE]  a=0, b=1, c=0, d=0, e=-2\n  round_04/b33  [BATCH_SAFE]  a=0, b=1, c=0, d=-34, e=-32706\n  round_05/b0  [BATCH_SAFE]  a=32767, b=1, c=0, d=0, e=0\n  round_05/b1  [BATCH_SAFE]  a=1, b=0, c=32767, d=32767, e=0\n  round_05/b2  [BATCH_SAFE]  a=-1, b=-32765, c=-32766, d=-1, e=-32768\n  round_05/b3  [BATCH_SAFE]  a=32767, b=0, c=32767, d=32766, e=0\n  round_05/b4  [BATCH_SAFE]  a=32527, b=3, c=2, d=0, e=-2\n  round_05/b5  [BATCH_SAFE]  a=-16331, b=-1922, c=-32576, d=-20240, e=-20240\n  round_05/b6  [BATCH_SAFE]  a=-1, b=0, c=-2, d=-32767, e=0\n  round_05/b7  [BATCH_SAFE]  a=-16383, b=-16381, c=-32766, d=-32767, e=-16384\n  round_05/b8  [BATCH_SAFE]  a=-32768, b=-32767, c=0, d=-32768, e=-1\n  round_05/b9  [BATCH_SAFE]  a=3, b=32767, c=32767, d=0, e=2\n  round_05/b10  [BATCH_SAFE]  a=32592, b=32657, c=22400, d=-20817, e=18656\n  round_05/b11  [BATCH_SAFE]  a=1022, b=1024, c=32766, d=32767, e=32766\n  round_05/b12  [BATCH_SAFE]  a=3, b=32764, c=0, d=32767, e=2\n  round_05/b13  [BATCH_SAFE]  a=-1, b=0, c=-32768, d=-16, e=-17\n  round_05/b14  [BATCH_SAFE]  a=0, b=1, c=32767, d=32767, e=0\n  round_05/b15  [BATCH_SAFE]  a=1, b=32767, c=0, d=1, e=-1\n  round_05/b16  [BATCH_SAFE]  a=1027, b=1031, c=2, d=1026, e=0\n  round_05/b17  [BATCH_SAFE]  a=-32768, b=-32767, c=0, d=-1, e=-32768\n  round_05/b18  [BATCH_SAFE]  a=-2071, b=15, c=6271, d=14, e=0\n  round_05/b19  [BATCH_SAFE]  a=3, b=5, c=2, d=0, e=-2\n  round_06/b0  [BATCH_SAFE]  a=-32641, b=-125, c=-32766, d=-32768, e=-32766\n  round_06/b1  [BATCH_SAFE]  a=-32768, b=-32765, c=2, d=0, e=1\n  round_06/b2  [BATCH_SAFE]  a=0, b=1, c=32767, d=32767, e=32766\n  round_06/b3  [BATCH_SAFE]  a=-32765, b=-1, c=-32766, d=-32766, e=-32768\n  round_06/b4  [BATCH_SAFE]  a=-32768, b=-32767, c=1, d=0, e=-1\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 376\n  frontier_discovery_time_ms: 1138\n  compile_time_ms: 60673\n  java_exec_time_ms: 10857\n  path_log_parse_time_ms: 10\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 2\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 19164\n  merge_verify_wall_time_ms: 2\n  batch_total_wall_time_ms: 19177\n\nTest cases written to: csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/PairSortCheck_cct.dot\n  Stats: csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/cct_stats.json\n  Counts: nodes=451, leaves=226, covered=88, infeasible=138, out_of_range=0, expanded=0, truncated=0\n  Render script: csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/render_cct.sh\n  (render later with: csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:PairSortCheck:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/PairSortCheck_M1.java",
+        "--output",
+        "csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/FSF/PairSortCheck_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/PairSortCheck_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       PairSortCheck\n  CSC result:  csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/FSF/PairSortCheck_FSF.txt\n  Report:      csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/refined_tbfv_report.json\n  Summary:     testcases=88, fsf_units=1, passed=0, failed=88, skipped=0, unsupported=0\n  CCT marked:  88\n  TBFV stats:  csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/cct_tbfv_stats.json\n  Counts:      nodes=451, leaves=226, fault_leaves=88, failure_cases=88\n  Fault DOT:    csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/PairSortCheck_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=225, intervals=312, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "PairSortCheck:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck",
+        "--output",
+        "csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck\n  CCT:         csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/PairSortCheck_cct.pkl\n  Report:      csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=88, failed=88, condition_nodes=225, condition_intervals=312\n  Top conditions:\n    #1 score=4.4886 fail=88/88 line=3 a < b\n    #2 score=3.8067 fail=44/44 line=8 d > e\n    #3 score=3.8067 fail=44/44 line=8 d > e\n  Top intervals:\n    #1 score=1.6532 fail=44/44 line=[3, 8] root.TRUE\n    #2 score=1.5563 fail=5/5 line=[18, 23] root.F.T.T.TRUE\n    #3 score=1.5563 fail=5/5 line=[18, 23] root.T.T.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "PairSortCheck:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "PairSortCheck/PairSortCheck_M1.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/cct_failure_localization_aggregated.json\n  Source file: PairSortCheck/PairSortCheck_M1.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  225 raw -> 9 aggregated\n  Intervals[cct_only]: 312 raw -> 17 aggregated\n  Intervals[statement_presence]: 312 raw -> 17 aggregated\n  Intervals[edge_divergence_gated]: 312 raw -> 17 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "PairSortCheck:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "PairSortCheck_M1",
+        "--report",
+        "csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061002_PairSortCheck_M1/PairSortCheck/fault_localization_eval.json\n  Mutant:    PairSortCheck_M1\n  Operator:  ROR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:PairSortCheck:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/PairSortCheck_M2.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061002_PairSortCheck_M2",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/testcases.json"
+      ],
+      "stdout_tail": "/b5  [BATCH_SAFE]  a=-32768, b=-2, c=-3, d=-4, e=0\n  round_04/b6  [BATCH_SAFE]  a=-32767, b=-32766, c=-2, d=-32768, e=-1\n  round_04/b7  [BATCH_SAFE]  a=12, b=32478, c=13, d=2, e=32743\n  round_04/b8  [BATCH_SAFE]  a=-32767, b=0, c=32767, d=32767, e=0\n  round_04/b9  [BATCH_SAFE]  a=1, b=32767, c=32767, d=1, e=0\n  round_04/b10  [BATCH_SAFE]  a=32643, b=32767, c=32642, d=3, e=0\n  round_04/b11  [BATCH_SAFE]  a=-32768, b=-32255, c=-128, d=-1, e=-32256\n  round_04/b12  [BATCH_SAFE]  a=1, b=2, c=32766, d=32767, e=0\n  round_04/b13  [BATCH_SAFE]  a=-2, b=0, c=-1, d=0, e=-4\n  round_04/b14  [BATCH_SAFE]  a=-32767, b=-32768, c=-1, d=-32768, e=-1\n  round_04/b15  [BATCH_SAFE]  a=-32767, b=-32768, c=-1, d=-32768, e=-32768\n  round_04/b16  [BATCH_SAFE]  a=2, b=1, c=32767, d=0, e=0\n  round_04/b17  [BATCH_SAFE]  a=4, b=3, c=2, d=0, e=0\n  round_04/b18  [BATCH_SAFE]  a=1, b=0, c=0, d=1, e=1\n  round_04/b19  [BATCH_SAFE]  a=-32767, b=-32768, c=-2, d=-2, e=-1\n  round_04/b20  [BATCH_SAFE]  a=-32253, b=-32509, c=-32255, d=-32256, e=-1\n  round_04/b21  [BATCH_SAFE]  a=0, b=-129, c=-32768, d=-32768, e=-129\n  round_04/b22  [BATCH_SAFE]  a=0, b=-1, c=-32768, d=-32768, e=-2\n  round_04/b23  [BATCH_SAFE]  a=1, b=0, c=32767, d=1, e=0\n  round_04/b24  [BATCH_SAFE]  a=1, b=0, c=32766, d=32767, e=32766\n  round_04/b25  [BATCH_SAFE]  a=3, b=0, c=1, d=32767, e=0\n  round_04/b26  [BATCH_SAFE]  a=0, b=-3, c=-32768, d=-1, e=-32768\n  round_04/b27  [BATCH_SAFE]  a=4, b=3, c=0, d=2, e=0\n  round_05/b0  [BATCH_SAFE]  a=-32768, b=-2, c=-1, d=-12, e=-11\n  round_05/b1  [BATCH_SAFE]  a=-32767, b=-32767, c=-2, d=-32768, e=-1\n  round_05/b2  [BATCH_SAFE]  a=-32768, b=-1, c=0, d=-1, e=-2\n  round_05/b3  [BATCH_SAFE]  a=1, b=1, c=32767, d=32255, e=0\n  round_05/b4  [BATCH_SAFE]  a=-28676, b=-2, c=-4096, d=-28675, e=-28677\n  round_05/b5  [BATCH_SAFE]  a=-4097, b=-4097, c=0, d=1, e=-4098\n  round_05/b6  [BATCH_SAFE]  a=3, b=0, c=32767, d=0, e=1\n  round_05/b7  [BATCH_SAFE]  a=-32766, b=-32767, c=-1, d=-32768, e=-2\n  round_05/b8  [BATCH_SAFE]  a=3, b=0, c=1, d=-1, e=1\n  round_05/b9  [BATCH_SAFE]  a=1, b=0, c=16382, d=16383, e=16383\n  round_05/b10  [BATCH_SAFE]  a=26646, b=22699, c=16384, d=22014, e=22014\n  round_05/b11  [BATCH_SAFE]  a=7, b=2, c=32760, d=4, e=32767\n  round_05/b12  [BATCH_SAFE]  a=-32766, b=-32767, c=-2, d=-32768, e=-1\n  round_05/b13  [BATCH_SAFE]  a=0, b=-2050, c=-2049, d=-32768, e=-2047\n  round_05/b14  [BATCH_SAFE]  a=-32767, b=-32768, c=-1, d=-1, e=-2\n  round_05/b15  [BATCH_SAFE]  a=-255, b=-32768, c=0, d=-256, e=-258\n  round_05/b16  [BATCH_SAFE]  a=2, b=1, c=32767, d=1, e=0\n  round_05/b17  [BATCH_SAFE]  a=16384, b=16383, c=16382, d=1, e=0\n  round_05/b18  [BATCH_SAFE]  a=1, b=0, c=32766, d=32767, e=0\n  round_05/b19  [BATCH_SAFE]  a=2, b=1, c=32766, d=32767, e=0\n  round_05/b20  [BATCH_SAFE]  a=7, b=4, c=5, d=32767, e=2\n  round_06/b0  [BATCH_SAFE]  a=-32766, b=-32765, c=-1, d=-1, e=-32768\n  round_06/b1  [BATCH_SAFE]  a=-2, b=-3, c=0, d=-1, e=-4\n  round_06/b2  [BATCH_SAFE]  a=-1, b=-4, c=0, d=-3, e=-5\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 337\n  frontier_discovery_time_ms: 901\n  compile_time_ms: 48125\n  java_exec_time_ms: 8458\n  path_log_parse_time_ms: 1\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 15088\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 15098\n\nTest cases written to: csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/PairSortCheck_cct.dot\n  Stats: csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/cct_stats.json\n  Counts: nodes=375, leaves=188, covered=78, infeasible=110, out_of_range=0, expanded=0, truncated=0\n  Render script: csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/render_cct.sh\n  (render later with: csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:PairSortCheck:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/PairSortCheck_M2.java",
+        "--output",
+        "csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/FSF/PairSortCheck_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/PairSortCheck_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       PairSortCheck\n  CSC result:  csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/FSF/PairSortCheck_FSF.txt\n  Report:      csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/refined_tbfv_report.json\n  Summary:     testcases=78, fsf_units=1, passed=10, failed=68, skipped=0, unsupported=0\n  CCT marked:  68\n  TBFV stats:  csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/cct_tbfv_stats.json\n  Counts:      nodes=375, leaves=188, fault_leaves=68, failure_cases=68\n  Fault DOT:    csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/PairSortCheck_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=149, intervals=216, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "PairSortCheck:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck",
+        "--output",
+        "csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck\n  CCT:         csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/PairSortCheck_cct.pkl\n  Report:      csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=78, failed=68, condition_nodes=149, condition_intervals=216\n  Top conditions:\n    #1 score=3.6913 fail=68/78 line=3 a > b\n    #2 score=3.1706 fail=36/41 line=8 d > e\n    #3 score=3.0240 fail=32/37 line=8 d > e\n  Top intervals:\n    #1 score=2.0000 fail=9/9 line=[18, 23] root.F.T.T.TRUE\n    #2 score=1.9085 fail=8/8 line=[18, 23] root.T.T.T.TRUE\n    #3 score=1.6022 fail=8/9 line=[18, 23] root.F.F.F.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "PairSortCheck:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "PairSortCheck/PairSortCheck_M2.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/cct_failure_localization_aggregated.json\n  Source file: PairSortCheck/PairSortCheck_M2.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  149 raw -> 9 aggregated\n  Intervals[cct_only]: 216 raw -> 17 aggregated\n  Intervals[statement_presence]: 216 raw -> 17 aggregated\n  Intervals[edge_divergence_gated]: 216 raw -> 17 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "PairSortCheck:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "PairSortCheck_M2",
+        "--report",
+        "csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061002_PairSortCheck_M2/PairSortCheck/fault_localization_eval.json\n  Mutant:    PairSortCheck_M2\n  Operator:  ROR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=4, top1=miss, top3=miss, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=8, top1=miss, top3=miss, top5=miss, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:PairSortCheck:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/PairSortCheck_M3.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061002_PairSortCheck_M3",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/testcases.json"
+      ],
+      "stdout_tail": "AFE]  a=0, b=-1, c=-32765, d=-32768, e=-32766\n  round_05/b34  [BATCH_SAFE]  a=-3, b=-32768, c=-32768, d=-1, e=-2\n  round_05/b35  [BATCH_SAFE]  a=3, b=1, c=0, d=32767, e=2\n  round_05/b36  [BATCH_SAFE]  a=7, b=-7, c=-32760, d=6, e=5\n  round_05/b37  [BATCH_SAFE]  a=1, b=-1, c=-16386, d=0, e=-16386\n  round_05/b38  [BATCH_SAFE]  a=0, b=-2, c=-32768, d=-258, e=-259\n  round_05/b39  [BATCH_SAFE]  a=1, b=0, c=32767, d=32767, e=32766\n  round_05/b40  [BATCH_SAFE]  a=0, b=-1, c=-1, d=4, e=-2\n  round_05/b41  [BATCH_SAFE]  a=131, b=128, c=128, d=129, e=127\n  round_05/b42  [BATCH_SAFE]  a=16384, b=16383, c=2, d=32767, e=0\n  round_05/b43  [BATCH_SAFE]  a=-32767, b=-32768, c=0, d=-1, e=-32768\n  round_05/b44  [BATCH_SAFE]  a=0, b=-1, c=0, d=-2, e=-32768\n  round_05/b45  [BATCH_SAFE]  a=7, b=4, c=5, d=3, e=0\n  round_06/b0  [BATCH_SAFE]  a=3, b=131, c=130, d=0, e=32767\n  round_06/b1  [BATCH_SAFE]  a=0, b=4096, c=32767, d=4096, e=4096\n  round_06/b2  [BATCH_SAFE]  a=1, b=1, c=32767, d=0, e=0\n  round_06/b3  [BATCH_SAFE]  a=28671, b=28679, c=0, d=2, e=0\n  round_06/b4  [BATCH_SAFE]  a=-32768, b=-32768, c=-1, d=0, e=-3\n  round_06/b5  [BATCH_SAFE]  a=-32767, b=-32253, c=-32254, d=-1, e=-32256\n  round_06/b6  [BATCH_SAFE]  a=-16385, b=-5, c=-6, d=0, e=-16392\n  round_06/b7  [BATCH_SAFE]  a=-32767, b=-1, c=-3, d=-2, e=-32768\n  round_06/b8  [BATCH_SAFE]  a=-32767, b=-32765, c=-257, d=-32766, e=-32768\n  round_06/b9  [BATCH_SAFE]  a=2, b=3, c=32767, d=0, e=-2\n  round_06/b10  [BATCH_SAFE]  a=-4745, b=-17351, c=-6666, d=-32768, e=-6666\n  round_06/b11  [BATCH_SAFE]  a=3, b=1, c=0, d=-1, e=0\n  round_06/b12  [BATCH_SAFE]  a=32765, b=0, c=32767, d=8, e=32765\n  round_06/b13  [BATCH_SAFE]  a=0, b=-2, c=0, d=-2, e=-1\n  round_06/b14  [BATCH_SAFE]  a=-32765, b=-32768, c=-32766, d=-32768, e=-32767\n  round_06/b15  [BATCH_SAFE]  a=0, b=-1, c=0, d=-32768, e=-130\n  round_06/b16  [BATCH_SAFE]  a=4329, b=4300, c=4301, d=4095, e=4206\n  round_06/b17  [BATCH_SAFE]  a=-32761, b=-32765, c=-32768, d=-32766, e=-32768\n  round_06/b18  [BATCH_SAFE]  a=-1, b=-2, c=-32768, d=0, e=-3\n  round_06/b19  [BATCH_SAFE]  a=135, b=132, c=127, d=133, e=128\n  round_06/b20  [BATCH_SAFE]  a=-1, b=-32768, c=-1, d=-1, e=-32768\n  round_06/b21  [BATCH_SAFE]  a=3, b=0, c=2, d=32767, e=0\n  round_06/b22  [BATCH_SAFE]  a=1, b=-259, c=-1, d=0, e=-258\n  round_06/b23  [BATCH_SAFE]  a=-1, b=-3, c=0, d=0, e=-4\n  round_06/b24  [BATCH_SAFE]  a=1031, b=3, c=2, d=1030, e=0\n  round_06/b25  [BATCH_SAFE]  a=4, b=2, c=32767, d=32766, e=32765\n  round_06/b26  [BATCH_SAFE]  a=3, b=-1, c=32511, d=2, e=0\n  round_06/b27  [BATCH_SAFE]  a=3, b=0, c=2, d=1, e=0\n  round_06/b28  [BATCH_SAFE]  a=0, b=-1, c=1, d=0, e=-2\n  round_07/b0  [BATCH_SAFE]  a=6195, b=15847, c=13267, d=13267, e=34\n  round_07/b1  [BATCH_SAFE]  a=-4097, b=-16283, c=-7818, d=-7818, e=-16127\n  round_07/b2  [BATCH_SAFE]  a=-32249, b=-32253, c=-32766, d=-32762, e=-32768\n  round_07/b3  [BATCH_SAFE]  a=1, b=-1, c=24575, d=0, e=-2\n  round_07/b4  [BATCH_SAFE]  a=1043, b=1, c=1040, d=1039, e=0\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 717\n  frontier_discovery_time_ms: 1426\n  compile_time_ms: 104311\n  java_exec_time_ms: 17295\n  path_log_parse_time_ms: 9\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 32079\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 32096\n\nTest cases written to: csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/PairSortCheck_cct.dot\n  Stats: csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/cct_stats.json\n  Counts: nodes=685, leaves=343, covered=167, infeasible=176, out_of_range=0, expanded=0, truncated=0\n  Render script: csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/render_cct.sh\n  (render later with: csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:PairSortCheck:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/PairSortCheck_M3.java",
+        "--output",
+        "csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/FSF/PairSortCheck_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/PairSortCheck_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       PairSortCheck\n  CSC result:  csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/FSF/PairSortCheck_FSF.txt\n  Report:      csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/refined_tbfv_report.json\n  Summary:     testcases=167, fsf_units=1, passed=167, failed=0, skipped=0, unsupported=0\n  CCT marked:  0\n  TBFV stats:  csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/cct_tbfv_stats.json\n  Counts:      nodes=685, leaves=343, fault_leaves=0, failure_cases=0\n  Fault DOT:    csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/PairSortCheck_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=0, intervals=0, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "PairSortCheck:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck",
+        "--output",
+        "csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck\n  CCT:         csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/PairSortCheck_cct.pkl\n  Report:      csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=167, failed=0, condition_nodes=0, condition_intervals=0\n  Top conditions: <none>\n  Top intervals: <none>\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "PairSortCheck:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "PairSortCheck/PairSortCheck_M3.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/cct_failure_localization_aggregated.json\n  Source file: PairSortCheck/PairSortCheck_M3.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  0 raw -> 0 aggregated\n  Intervals[cct_only]: 0 raw -> 0 aggregated\n  Intervals[statement_presence]: 0 raw -> 0 aggregated\n  Intervals[edge_divergence_gated]: 0 raw -> 0 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "PairSortCheck:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "PairSortCheck_M3",
+        "--report",
+        "csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061002_PairSortCheck_M3/PairSortCheck/fault_localization_eval.json\n  Mutant:    PairSortCheck_M3\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:PairSortCheck:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/PairSortCheck_M4.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061002_PairSortCheck_M4",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/testcases.json"
+      ],
+      "stdout_tail": "32768, e=-2\n  round_05/b14  [BATCH_SAFE]  a=-32768, b=-32766, c=-32768, d=-2, e=-32767\n  round_05/b15  [BATCH_SAFE]  a=1, b=1, c=0, d=32767, e=32766\n  round_05/b16  [BATCH_SAFE]  a=-31231, b=513, c=-32256, d=32767, e=0\n  round_05/b17  [BATCH_SAFE]  a=4097, b=4097, c=4096, d=32767, e=4096\n  round_05/b18  [BATCH_SAFE]  a=-32767, b=-1, c=-32768, d=-2, e=-32768\n  round_05/b19  [BATCH_SAFE]  a=-32706, b=-32705, c=-32768, d=-64, e=-32707\n  round_05/b20  [BATCH_SAFE]  a=-32765, b=0, c=1, d=32767, e=0\n  round_05/b21  [BATCH_SAFE]  a=-32768, b=32767, c=-1, d=0, e=-2\n  round_05/b22  [BATCH_SAFE]  a=1, b=32767, c=32767, d=32767, e=0\n  round_05/b23  [BATCH_SAFE]  a=-1, b=0, c=-2, d=0, e=-4\n  round_05/b24  [BATCH_SAFE]  a=1, b=1, c=32767, d=32766, e=0\n  round_05/b25  [BATCH_SAFE]  a=-32767, b=-1, c=-32766, d=-32767, e=-32768\n  round_05/b26  [BATCH_SAFE]  a=3, b=3, c=32767, d=2, e=0\n  round_05/b27  [BATCH_SAFE]  a=4, b=32766, c=5, d=3, e=0\n  round_05/b28  [BATCH_SAFE]  a=1, b=0, c=0, d=31743, e=32767\n  round_05/b29  [BATCH_SAFE]  a=30703, b=22612, c=16330, d=12235, e=16330\n  round_05/b30  [BATCH_SAFE]  a=1, b=0, c=32767, d=0, e=32765\n  round_05/b31  [BATCH_SAFE]  a=3, b=-1, c=2, d=0, e=1\n  round_05/b32  [BATCH_SAFE]  a=1, b=0, c=32765, d=32767, e=32766\n  round_05/b33  [BATCH_SAFE]  a=3, b=-1, c=0, d=2, e=1\n  round_05/b34  [BATCH_SAFE]  a=1, b=0, c=1, d=32767, e=0\n  round_05/b35  [BATCH_SAFE]  a=19, b=0, c=16, d=17, e=15\n  round_05/b36  [BATCH_SAFE]  a=1, b=0, c=1, d=-1, e=-32768\n  round_06/b0  [BATCH_SAFE]  a=2, b=3, c=32767, d=0, e=32767\n  round_06/b1  [BATCH_SAFE]  a=3, b=131, c=130, d=0, e=32767\n  round_06/b2  [BATCH_SAFE]  a=-1, b=0, c=-1, d=-32768, e=-1\n  round_06/b3  [BATCH_SAFE]  a=1, b=1, c=32767, d=0, e=0\n  round_06/b4  [BATCH_SAFE]  a=-16678, b=-5299, c=7949, d=-24578, e=-16678\n  round_06/b5  [BATCH_SAFE]  a=24162, b=24467, c=8961, d=28927, e=24162\n  round_06/b6  [BATCH_SAFE]  a=28671, b=28679, c=0, d=2, e=0\n  round_06/b7  [BATCH_SAFE]  a=-32768, b=-1, c=-1, d=0, e=-2\n  round_06/b8  [BATCH_SAFE]  a=-32767, b=-32253, c=-32254, d=-1, e=-32256\n  round_06/b9  [BATCH_SAFE]  a=3, b=3, c=32753, d=32767, e=0\n  round_06/b10  [BATCH_SAFE]  a=-16385, b=-5, c=-6, d=0, e=-16392\n  round_06/b11  [BATCH_SAFE]  a=-32767, b=-1, c=-3, d=-2, e=-32768\n  round_06/b12  [BATCH_SAFE]  a=-1, b=0, c=32767, d=0, e=-4\n  round_06/b13  [BATCH_SAFE]  a=-32767, b=-32765, c=-257, d=-32766, e=-32768\n  round_06/b14  [BATCH_SAFE]  a=2, b=3, c=32767, d=0, e=-2\n  round_06/b15  [BATCH_SAFE]  a=3, b=0, c=2, d=32767, e=0\n  round_06/b16  [BATCH_SAFE]  a=1, b=0, c=32767, d=32766, e=0\n  round_07/b0  [BATCH_SAFE]  a=-1, b=0, c=-1, d=-32768, e=32767\n  round_07/b1  [BATCH_SAFE]  a=11635, b=16475, c=11635, d=16497, e=2304\n  round_07/b2  [BATCH_SAFE]  a=6195, b=15847, c=13267, d=13267, e=34\n  round_07/b3  [BATCH_SAFE]  a=-7144, b=-38, c=-7144, d=-2407, e=-31725\n  round_07/b4  [BATCH_SAFE]  a=19078, b=25539, c=26111, d=19078, e=16384\n  round_08/b0  [BATCH_SAFE]  a=19564, b=19966, c=19564, d=19564, e=0\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 681\n  frontier_discovery_time_ms: 1000\n  compile_time_ms: 91337\n  java_exec_time_ms: 15236\n  path_log_parse_time_ms: 5\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 28632\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 28651\n\nTest cases written to: csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/PairSortCheck_cct.dot\n  Stats: csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/cct_stats.json\n  Counts: nodes=479, leaves=240, covered=148, infeasible=92, out_of_range=0, expanded=0, truncated=0\n  Render script: csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/render_cct.sh\n  (render later with: csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:PairSortCheck:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/PairSortCheck_M4.java",
+        "--output",
+        "csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/FSF/PairSortCheck_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/PairSortCheck_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       PairSortCheck\n  CSC result:  csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/FSF/PairSortCheck_FSF.txt\n  Report:      csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/refined_tbfv_report.json\n  Summary:     testcases=148, fsf_units=1, passed=141, failed=7, skipped=0, unsupported=0\n  CCT marked:  7\n  TBFV stats:  csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/cct_tbfv_stats.json\n  Counts:      nodes=479, leaves=240, fault_leaves=7, failure_cases=7\n  Fault DOT:    csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/PairSortCheck_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=43, intervals=49, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "PairSortCheck:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck",
+        "--output",
+        "csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck\n  CCT:         csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/PairSortCheck_cct.pkl\n  Report:      csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=148, failed=7, condition_nodes=43, condition_intervals=49\n  Top conditions:\n    #1 score=0.6931 fail=1/1 line=43 b > c\n    #2 score=0.6931 fail=1/1 line=43 b > c\n    #3 score=0.4696 fail=7/31 line=8 d > e\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[43, None] root.T.F.F.F.F.F.F.F.FALSE\n    #2 score=0.6021 fail=1/1 line=[43, None] root.T.F.F.T.F.T.F.F.FALSE\n    #3 score=0.6021 fail=1/1 line=[43, None] root.T.F.T.F.T.F.F.F.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "PairSortCheck:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "PairSortCheck/PairSortCheck_M4.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/cct_failure_localization_aggregated.json\n  Source file: PairSortCheck/PairSortCheck_M4.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  43 raw -> 9 aggregated\n  Intervals[cct_only]: 49 raw -> 14 aggregated\n  Intervals[statement_presence]: 49 raw -> 14 aggregated\n  Intervals[edge_divergence_gated]: 49 raw -> 14 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "PairSortCheck:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "PairSortCheck_M4",
+        "--report",
+        "csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061002_PairSortCheck_M4/PairSortCheck/fault_localization_eval.json\n  Mutant:    PairSortCheck_M4\n  Operator:  SUR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=10, top1=miss, top3=miss, top5=miss, top10=hit\n  raw.interval.statement_presence: best_rank=8, top1=miss, top3=miss, top5=miss, top10=hit\n  raw.interval.edge_divergence_gated: best_rank=8, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_gated: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:PairSortCheck:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/PairSortCheck_M5.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061002_PairSortCheck_M5",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/testcases.json"
+      ],
+      "stdout_tail": "FE]  a=131, b=128, c=128, d=129, e=127\n  round_05/b48  [BATCH_SAFE]  a=16384, b=16383, c=2, d=32767, e=0\n  round_05/b49  [BATCH_SAFE]  a=-32767, b=-32768, c=0, d=-1, e=-32768\n  round_05/b50  [BATCH_SAFE]  a=0, b=-1, c=0, d=-2, e=-32768\n  round_05/b51  [BATCH_SAFE]  a=7, b=4, c=5, d=3, e=0\n  round_06/b0  [BATCH_SAFE]  a=2, b=3, c=32767, d=0, e=32767\n  round_06/b1  [BATCH_SAFE]  a=3, b=131, c=130, d=0, e=32767\n  round_06/b2  [BATCH_SAFE]  a=-1, b=0, c=-1, d=-32768, e=-1\n  round_06/b3  [BATCH_SAFE]  a=1, b=1, c=32767, d=0, e=0\n  round_06/b4  [BATCH_SAFE]  a=28671, b=28679, c=0, d=2, e=0\n  round_06/b5  [BATCH_SAFE]  a=-32768, b=-1, c=-1, d=0, e=-2\n  round_06/b6  [BATCH_SAFE]  a=-32767, b=-32253, c=-32254, d=-1, e=-32256\n  round_06/b7  [BATCH_SAFE]  a=3, b=3, c=32753, d=32767, e=0\n  round_06/b8  [BATCH_SAFE]  a=-16385, b=-5, c=-6, d=0, e=-16392\n  round_06/b9  [BATCH_SAFE]  a=-32767, b=-1, c=-3, d=-2, e=-32768\n  round_06/b10  [BATCH_SAFE]  a=-1, b=0, c=32767, d=0, e=-4\n  round_06/b11  [BATCH_SAFE]  a=-32767, b=-32765, c=-257, d=-32766, e=-32768\n  round_06/b12  [BATCH_SAFE]  a=2, b=3, c=32767, d=0, e=-2\n  round_06/b13  [BATCH_SAFE]  a=1, b=0, c=-1, d=0, e=0\n  round_06/b14  [BATCH_SAFE]  a=-4745, b=-17351, c=-6666, d=-32768, e=-6666\n  round_06/b15  [BATCH_SAFE]  a=3, b=1, c=0, d=-1, e=0\n  round_06/b16  [BATCH_SAFE]  a=11, b=2, c=32767, d=8, e=32765\n  round_06/b17  [BATCH_SAFE]  a=0, b=-2, c=0, d=-2, e=-1\n  round_06/b18  [BATCH_SAFE]  a=-32765, b=-32768, c=-32766, d=-32768, e=-32767\n  round_06/b19  [BATCH_SAFE]  a=0, b=-1, c=0, d=-32768, e=-130\n  round_06/b20  [BATCH_SAFE]  a=4329, b=4300, c=4301, d=4095, e=4206\n  round_06/b21  [BATCH_SAFE]  a=-32761, b=-32765, c=-32768, d=-32766, e=-32768\n  round_06/b22  [BATCH_SAFE]  a=-1, b=-2, c=-32768, d=0, e=-3\n  round_06/b23  [BATCH_SAFE]  a=135, b=132, c=127, d=133, e=128\n  round_06/b24  [BATCH_SAFE]  a=-32767, b=-32768, c=-1, d=-1, e=-32768\n  round_06/b25  [BATCH_SAFE]  a=3, b=0, c=2, d=32767, e=0\n  round_06/b26  [BATCH_SAFE]  a=1, b=-259, c=-1, d=0, e=-258\n  round_06/b27  [BATCH_SAFE]  a=-1, b=-3, c=0, d=0, e=-4\n  round_06/b28  [BATCH_SAFE]  a=1031, b=3, c=2, d=1030, e=0\n  round_06/b29  [BATCH_SAFE]  a=199, b=128, c=32767, d=32318, e=32317\n  round_06/b30  [BATCH_SAFE]  a=3, b=-1, c=32511, d=2, e=0\n  round_06/b31  [BATCH_SAFE]  a=3, b=0, c=2, d=1, e=0\n  round_06/b32  [BATCH_SAFE]  a=0, b=-1, c=1, d=0, e=-2\n  round_07/b0  [BATCH_SAFE]  a=6195, b=15847, c=13267, d=13267, e=34\n  round_07/b1  [BATCH_SAFE]  a=-1069, b=-9939, c=-9939, d=-11826, e=-9939\n  round_07/b2  [BATCH_SAFE]  a=6, b=5, c=4, d=2, e=5\n  round_07/b3  [BATCH_SAFE]  a=-4097, b=-16283, c=-7818, d=-7818, e=-16127\n  round_07/b4  [BATCH_SAFE]  a=-32249, b=-32253, c=-32766, d=-32762, e=-32768\n  round_07/b5  [BATCH_SAFE]  a=1, b=-1, c=24575, d=0, e=-2\n  round_07/b6  [BATCH_SAFE]  a=1043, b=1, c=1040, d=1039, e=0\n  round_08/b0  [BATCH_SAFE]  a=19564, b=19966, c=19564, d=19564, e=0\n  round_08/b1  [BATCH_SAFE]  a=-32761, b=-32765, c=-32766, d=-32766, e=-32768\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 778\n  frontier_discovery_time_ms: 1590\n  compile_time_ms: 115128\n  java_exec_time_ms: 19251\n  path_log_parse_time_ms: 16\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 35271\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 35293\n\nTest cases written to: csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/PairSortCheck_cct.dot\n  Stats: csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/cct_stats.json\n  Counts: nodes=685, leaves=343, covered=187, infeasible=156, out_of_range=0, expanded=0, truncated=0\n  Render script: csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/render_cct.sh\n  (render later with: csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:PairSortCheck:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/PairSortCheck_M5.java",
+        "--output",
+        "csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/FSF/PairSortCheck_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/PairSortCheck_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       PairSortCheck\n  CSC result:  csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/FSF/PairSortCheck_FSF.txt\n  Report:      csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/refined_tbfv_report.json\n  Summary:     testcases=187, fsf_units=1, passed=99, failed=88, skipped=0, unsupported=0\n  CCT marked:  88\n  TBFV stats:  csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/cct_tbfv_stats.json\n  Counts:      nodes=685, leaves=343, fault_leaves=88, failure_cases=88\n  Fault DOT:    csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/PairSortCheck_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=277, intervals=364, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "PairSortCheck:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck",
+        "--output",
+        "csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck\n  CCT:         csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/PairSortCheck_cct.pkl\n  Report:      csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=187, failed=88, condition_nodes=277, condition_intervals=364\n  Top conditions:\n    #1 score=2.1123 fail=88/187 line=3 a > b\n    #2 score=1.9476 fail=44/86 line=8 d > e\n    #3 score=1.6583 fail=44/101 line=8 d > e\n  Top intervals:\n    #1 score=0.9101 fail=44/86 line=[3, 8] root.TRUE\n    #2 score=0.8113 fail=6/10 line=[18, 23] root.T.T.T.TRUE\n    #3 score=0.7815 fail=10/16 line=[13, 18] root.T.F.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "PairSortCheck:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "PairSortCheck/PairSortCheck_M5.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/cct_failure_localization_aggregated.json\n  Source file: PairSortCheck/PairSortCheck_M5.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  277 raw -> 9 aggregated\n  Intervals[cct_only]: 364 raw -> 16 aggregated\n  Intervals[statement_presence]: 364 raw -> 16 aggregated\n  Intervals[edge_divergence_gated]: 364 raw -> 16 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "PairSortCheck:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "PairSortCheck_M5",
+        "--report",
+        "csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061002_PairSortCheck_M5/PairSortCheck/fault_localization_eval.json\n  Mutant:    PairSortCheck_M5\n  Operator:  SUR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=100, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=96, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=96, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=10, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.statement_presence: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.edge_divergence_gated: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:PairSortCheck:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/PairSortCheck_M6.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061002_PairSortCheck_M6",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/testcases.json"
+      ],
+      "stdout_tail": "/b12  [BATCH_SAFE]  a=-1, b=0, c=32767, d=0, e=-4\n  round_06/b13  [BATCH_SAFE]  a=-32767, b=-32765, c=-257, d=-32766, e=-32768\n  round_06/b14  [BATCH_SAFE]  a=2, b=3, c=32767, d=0, e=-2\n  round_06/b15  [BATCH_SAFE]  a=1, b=0, c=-1, d=0, e=0\n  round_06/b16  [BATCH_SAFE]  a=29887, b=25077, c=25077, d=0, e=30207\n  round_06/b17  [BATCH_SAFE]  a=-4745, b=-17351, c=-6666, d=-32768, e=-6666\n  round_06/b18  [BATCH_SAFE]  a=0, b=-2052, c=-3, d=-32765, e=-1\n  round_06/b19  [BATCH_SAFE]  a=3, b=1, c=0, d=-1, e=0\n  round_06/b20  [BATCH_SAFE]  a=11, b=2, c=32767, d=8, e=32765\n  round_06/b21  [BATCH_SAFE]  a=0, b=-2, c=0, d=-2, e=-1\n  round_06/b22  [BATCH_SAFE]  a=-32765, b=-32768, c=-32766, d=-32768, e=-32767\n  round_06/b23  [BATCH_SAFE]  a=-5, b=-8913, c=-4326, d=-28605, e=-8913\n  round_06/b24  [BATCH_SAFE]  a=0, b=-1, c=0, d=-32768, e=-130\n  round_06/b25  [BATCH_SAFE]  a=4329, b=4300, c=4301, d=4095, e=4206\n  round_06/b26  [BATCH_SAFE]  a=-3589, b=-15494, c=-24576, d=8575, e=-15494\n  round_06/b27  [BATCH_SAFE]  a=-32765, b=-32767, c=-32768, d=-32766, e=-32767\n  round_06/b28  [BATCH_SAFE]  a=-32761, b=-32765, c=-32768, d=-32766, e=-32768\n  round_06/b29  [BATCH_SAFE]  a=-1, b=-2, c=-32768, d=0, e=-3\n  round_06/b30  [BATCH_SAFE]  a=135, b=132, c=127, d=133, e=128\n  round_06/b31  [BATCH_SAFE]  a=-32767, b=-32768, c=-1, d=-1, e=-32768\n  round_06/b32  [BATCH_SAFE]  a=3, b=0, c=2, d=32767, e=0\n  round_06/b33  [BATCH_SAFE]  a=1, b=-259, c=-1, d=0, e=-258\n  round_06/b34  [BATCH_SAFE]  a=-1, b=-3, c=0, d=0, e=-4\n  round_06/b35  [BATCH_SAFE]  a=17986, b=-7546, c=-7281, d=24076, e=-32767\n  round_06/b36  [BATCH_SAFE]  a=0, b=-16, c=-15, d=-1, e=-32753\n  round_06/b37  [BATCH_SAFE]  a=1031, b=3, c=2, d=1030, e=0\n  round_06/b38  [BATCH_SAFE]  a=199, b=128, c=32767, d=32318, e=32317\n  round_06/b39  [BATCH_SAFE]  a=3, b=-1, c=32511, d=2, e=0\n  round_06/b40  [BATCH_SAFE]  a=3, b=0, c=2, d=1, e=0\n  round_06/b41  [BATCH_SAFE]  a=0, b=-1, c=1, d=0, e=-2\n  round_07/b0  [BATCH_SAFE]  a=-1, b=0, c=-1, d=-32768, e=32767\n  round_07/b1  [BATCH_SAFE]  a=11635, b=16475, c=11635, d=16497, e=2304\n  round_07/b2  [BATCH_SAFE]  a=6195, b=15847, c=13267, d=13267, e=34\n  round_07/b3  [BATCH_SAFE]  a=-7144, b=-38, c=-7144, d=-2407, e=-31725\n  round_07/b4  [BATCH_SAFE]  a=19078, b=25539, c=26111, d=19078, e=16384\n  round_07/b5  [BATCH_SAFE]  a=-1069, b=-9939, c=-9939, d=-11922, e=-9939\n  round_07/b6  [BATCH_SAFE]  a=6, b=5, c=4, d=2, e=5\n  round_07/b7  [BATCH_SAFE]  a=-4097, b=-16283, c=-7818, d=-7818, e=-16127\n  round_07/b8  [BATCH_SAFE]  a=-32249, b=-32253, c=-32766, d=-32762, e=-32768\n  round_07/b9  [BATCH_SAFE]  a=1, b=-1, c=24575, d=0, e=-2\n  round_07/b10  [BATCH_SAFE]  a=1043, b=1, c=1040, d=1039, e=0\n  round_08/b0  [BATCH_SAFE]  a=7482, b=12284, c=7482, d=7482, e=4096\n  round_08/b1  [BATCH_SAFE]  a=-32761, b=-32765, c=-32766, d=-32766, e=-32768\n  round_08/b2  [BATCH_SAFE]  a=-1025, b=-9242, c=-17, d=-9242, e=-17407\n  round_08/b3  [BATCH_SAFE]  a=28573, b=-8901, c=3644, d=-8901, e=-19454\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 958\n  frontier_discovery_time_ms: 1429\n  compile_time_ms: 136364\n  java_exec_time_ms: 23086\n  path_log_parse_time_ms: 16\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 41389\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 41412\n\nTest cases written to: csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/PairSortCheck_cct.dot\n  Stats: csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/cct_stats.json\n  Counts: nodes=685, leaves=343, covered=219, infeasible=124, out_of_range=0, expanded=0, truncated=0\n  Render script: csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/render_cct.sh\n  (render later with: csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:PairSortCheck:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/PairSortCheck_M6.java",
+        "--output",
+        "csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/FSF/PairSortCheck_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/PairSortCheck_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       PairSortCheck\n  CSC result:  csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/PairSortCheck/FSF/PairSortCheck_FSF.txt\n  Report:      csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/refined_tbfv_report.json\n  Summary:     testcases=219, fsf_units=1, passed=219, failed=0, skipped=0, unsupported=0\n  CCT marked:  0\n  TBFV stats:  csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/cct_tbfv_stats.json\n  Counts:      nodes=685, leaves=343, fault_leaves=0, failure_cases=0\n  Fault DOT:    csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/PairSortCheck_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=0, intervals=0, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "PairSortCheck:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck",
+        "--output",
+        "csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck\n  CCT:         csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/PairSortCheck_cct.pkl\n  Report:      csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=219, failed=0, condition_nodes=0, condition_intervals=0\n  Top conditions: <none>\n  Top intervals: <none>\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "PairSortCheck:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "PairSortCheck/PairSortCheck_M6.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/cct_failure_localization_aggregated.json\n  Source file: PairSortCheck/PairSortCheck_M6.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  0 raw -> 0 aggregated\n  Intervals[cct_only]: 0 raw -> 0 aggregated\n  Intervals[statement_presence]: 0 raw -> 0 aggregated\n  Intervals[edge_divergence_gated]: 0 raw -> 0 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "PairSortCheck:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "PairSortCheck_M6",
+        "--report",
+        "csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061002_PairSortCheck_M6/PairSortCheck/fault_localization_eval.json\n  Mutant:    PairSortCheck_M6\n  Operator:  RVR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n",
+      "stderr_tail": ""
+    }
+  ]
+}

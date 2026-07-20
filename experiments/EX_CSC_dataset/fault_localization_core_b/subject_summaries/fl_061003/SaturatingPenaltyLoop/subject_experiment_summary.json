@@ -1,0 +1,754 @@
+{
+  "subject": "SaturatingPenaltyLoop",
+  "subject_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop",
+  "fsf": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/FSF/SaturatingPenaltyLoop_FSF.txt",
+  "manifest": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+  "mode": "expanded",
+  "strategy": "batch",
+  "max_iter": 100,
+  "dry_run": false,
+  "original": {
+    "role": "original",
+    "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/SaturatingPenaltyLoop.java",
+    "class_name": "SaturatingPenaltyLoop",
+    "mutant_id": null
+  },
+  "mutants": [
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/SaturatingPenaltyLoop_M1.java",
+      "class_name": "SaturatingPenaltyLoop",
+      "mutant_id": "SaturatingPenaltyLoop_M1"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/SaturatingPenaltyLoop_M2.java",
+      "class_name": "SaturatingPenaltyLoop",
+      "mutant_id": "SaturatingPenaltyLoop_M2"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/SaturatingPenaltyLoop_M3.java",
+      "class_name": "SaturatingPenaltyLoop",
+      "mutant_id": "SaturatingPenaltyLoop_M3"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/SaturatingPenaltyLoop_M4.java",
+      "class_name": "SaturatingPenaltyLoop",
+      "mutant_id": "SaturatingPenaltyLoop_M4"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/SaturatingPenaltyLoop_M5.java",
+      "class_name": "SaturatingPenaltyLoop",
+      "mutant_id": "SaturatingPenaltyLoop_M5"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/SaturatingPenaltyLoop_M6.java",
+      "class_name": "SaturatingPenaltyLoop",
+      "mutant_id": "SaturatingPenaltyLoop_M6"
+    }
+  ],
+  "step_count": 30,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "mutant:SaturatingPenaltyLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/SaturatingPenaltyLoop_M1.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_SaturatingPenaltyLoop_M1",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/testcases.json"
+      ],
+      "stdout_tail": "und_04/b7  [BATCH_SAFE]  score=64, penalty=8, strict=False\n  round_04/b8  [BATCH_SAFE]  score=24, penalty=9, strict=False\n  round_04/b9  [BATCH_SAFE]  score=24, penalty=10, strict=False\n  round_04/b10  [BATCH_SAFE]  score=22, penalty=11, strict=False\n  round_04/b11  [BATCH_SAFE]  score=64, penalty=12, strict=False\n  round_04/b12  [BATCH_SAFE]  score=26, penalty=13, strict=False\n  round_04/b13  [BATCH_SAFE]  score=32, penalty=14, strict=False\n  round_04/b14  [BATCH_SAFE]  score=32, penalty=15, strict=False\n  round_04/b15  [BATCH_SAFE]  score=48, penalty=17, strict=False\n  round_04/b16  [BATCH_SAFE]  score=0, penalty=18, strict=False\n  round_04/b17  [BATCH_SAFE]  score=0, penalty=1, strict=True\n  round_04/b18  [BATCH_SAFE]  score=0, penalty=2, strict=True\n  round_04/b19  [BATCH_SAFE]  score=0, penalty=3, strict=True\n  round_04/b20  [BATCH_SAFE]  score=0, penalty=4, strict=True\n  round_04/b21  [BATCH_SAFE]  score=0, penalty=5, strict=True\n  round_04/b22  [BATCH_SAFE]  score=0, penalty=6, strict=True\n  round_04/b23  [BATCH_SAFE]  score=0, penalty=7, strict=True\n  round_04/b24  [BATCH_SAFE]  score=0, penalty=8, strict=True\n  round_04/b25  [BATCH_SAFE]  score=0, penalty=9, strict=True\n  round_04/b26  [BATCH_SAFE]  score=0, penalty=10, strict=True\n  round_04/b27  [BATCH_SAFE]  score=0, penalty=11, strict=True\n  round_04/b28  [BATCH_SAFE]  score=0, penalty=12, strict=True\n  round_04/b29  [BATCH_SAFE]  score=0, penalty=13, strict=True\n  round_04/b30  [BATCH_SAFE]  score=0, penalty=14, strict=True\n  round_04/b31  [BATCH_SAFE]  score=0, penalty=15, strict=True\n  round_04/b32  [BATCH_SAFE]  score=48, penalty=16, strict=True\n  round_04/b33  [BATCH_SAFE]  score=0, penalty=18, strict=True\n  round_05/b0  [BATCH_SAFE]  score=48, penalty=18, strict=False\n  round_05/b1  [BATCH_SAFE]  score=3, penalty=1, strict=True\n  round_05/b2  [BATCH_SAFE]  score=8, penalty=2, strict=True\n  round_05/b3  [BATCH_SAFE]  score=64, penalty=3, strict=True\n  round_05/b4  [BATCH_SAFE]  score=12, penalty=4, strict=True\n  round_05/b5  [BATCH_SAFE]  score=15, penalty=5, strict=True\n  round_05/b6  [BATCH_SAFE]  score=24, penalty=6, strict=True\n  round_05/b7  [BATCH_SAFE]  score=22, penalty=7, strict=True\n  round_05/b8  [BATCH_SAFE]  score=64, penalty=8, strict=True\n  round_05/b9  [BATCH_SAFE]  score=88, penalty=9, strict=True\n  round_05/b10  [BATCH_SAFE]  score=30, penalty=10, strict=True\n  round_05/b11  [BATCH_SAFE]  score=48, penalty=11, strict=True\n  round_05/b12  [BATCH_SAFE]  score=40, penalty=12, strict=True\n  round_05/b13  [BATCH_SAFE]  score=39, penalty=13, strict=True\n  round_05/b14  [BATCH_SAFE]  score=42, penalty=14, strict=True\n  round_05/b15  [BATCH_SAFE]  score=45, penalty=15, strict=True\n  round_05/b16  [BATCH_SAFE]  score=0, penalty=17, strict=True\n  round_05/b17  [BATCH_SAFE]  score=54, penalty=18, strict=True\n  round_06/b0  [BATCH_SAFE]  score=51, penalty=17, strict=True\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 308\n  frontier_discovery_time_ms: 1296\n  compile_time_ms: 42373\n  java_exec_time_ms: 7880\n  path_log_parse_time_ms: 60\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 13926\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 13935\n\nTest cases written to: csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/SaturatingPenaltyLoop_cct.dot\n  Stats: csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/cct_stats.json\n  Counts: nodes=227, leaves=114, covered=77, infeasible=37, out_of_range=0, expanded=168, truncated=0\n  Render script: csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/render_cct.sh\n  (render later with: csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SaturatingPenaltyLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/SaturatingPenaltyLoop_M1.java",
+        "--output",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/FSF/SaturatingPenaltyLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/SaturatingPenaltyLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       SaturatingPenaltyLoop\n  CSC result:  csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/FSF/SaturatingPenaltyLoop_FSF.txt\n  Report:      csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/refined_tbfv_report.json\n  Summary:     testcases=77, fsf_units=5, passed=78, failed=2, skipped=305, unsupported=0\n  CCT marked:  2\n  TBFV stats:  csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/cct_tbfv_stats.json\n  Counts:      nodes=227, leaves=114, fault_leaves=1, failure_cases=1\n  Fault DOT:    csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/SaturatingPenaltyLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=2, intervals=2, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatingPenaltyLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop",
+        "--output",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop\n  CCT:         csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/SaturatingPenaltyLoop_cct.pkl\n  Report:      csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=77, failed=1, condition_nodes=2, condition_intervals=2\n  Top conditions:\n    #1 score=0.0091 fail=1/76 line=3 score >= 120\n    #2 score=0.0090 fail=1/77 line=3 score < 0\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[3, None] root.F.TRUE\n    #2 score=0.0000 fail=1/76 line=[3, 3] root.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatingPenaltyLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "SaturatingPenaltyLoop/SaturatingPenaltyLoop_M1.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/cct_failure_localization_aggregated.json\n  Source file: SaturatingPenaltyLoop/SaturatingPenaltyLoop_M1.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  2 raw -> 2 aggregated\n  Intervals[cct_only]: 2 raw -> 2 aggregated\n  Intervals[statement_presence]: 2 raw -> 2 aggregated\n  Intervals[edge_divergence_gated]: 2 raw -> 2 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatingPenaltyLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "SaturatingPenaltyLoop_M1",
+        "--report",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_SaturatingPenaltyLoop_M1/SaturatingPenaltyLoop/fault_localization_eval.json\n  Mutant:    SaturatingPenaltyLoop_M1\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SaturatingPenaltyLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/SaturatingPenaltyLoop_M2.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_SaturatingPenaltyLoop_M2",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/testcases.json"
+      ],
+      "stdout_tail": " round_04/b3  [BATCH_SAFE]  score=64, penalty=4, strict=False\n  round_04/b4  [BATCH_SAFE]  score=12, penalty=5, strict=False\n  round_04/b5  [BATCH_SAFE]  score=12, penalty=6, strict=False\n  round_04/b6  [BATCH_SAFE]  score=14, penalty=7, strict=False\n  round_04/b7  [BATCH_SAFE]  score=32, penalty=8, strict=False\n  round_04/b8  [BATCH_SAFE]  score=18, penalty=9, strict=False\n  round_04/b9  [BATCH_SAFE]  score=24, penalty=10, strict=False\n  round_04/b10  [BATCH_SAFE]  score=24, penalty=11, strict=False\n  round_04/b11  [BATCH_SAFE]  score=32, penalty=12, strict=False\n  round_04/b12  [BATCH_SAFE]  score=28, penalty=13, strict=False\n  round_04/b13  [BATCH_SAFE]  score=28, penalty=14, strict=False\n  round_04/b14  [BATCH_SAFE]  score=30, penalty=15, strict=False\n  round_04/b15  [BATCH_SAFE]  score=57, penalty=17, strict=False\n  round_04/b16  [BATCH_SAFE]  score=0, penalty=1, strict=True\n  round_04/b17  [BATCH_SAFE]  score=0, penalty=2, strict=True\n  round_04/b18  [BATCH_SAFE]  score=0, penalty=3, strict=True\n  round_04/b19  [BATCH_SAFE]  score=0, penalty=4, strict=True\n  round_04/b20  [BATCH_SAFE]  score=0, penalty=5, strict=True\n  round_04/b21  [BATCH_SAFE]  score=0, penalty=6, strict=True\n  round_04/b22  [BATCH_SAFE]  score=0, penalty=7, strict=True\n  round_04/b23  [BATCH_SAFE]  score=0, penalty=8, strict=True\n  round_04/b24  [BATCH_SAFE]  score=0, penalty=9, strict=True\n  round_04/b25  [BATCH_SAFE]  score=0, penalty=10, strict=True\n  round_04/b26  [BATCH_SAFE]  score=0, penalty=11, strict=True\n  round_04/b27  [BATCH_SAFE]  score=0, penalty=12, strict=True\n  round_04/b28  [BATCH_SAFE]  score=0, penalty=13, strict=True\n  round_04/b29  [BATCH_SAFE]  score=0, penalty=14, strict=True\n  round_04/b30  [BATCH_SAFE]  score=0, penalty=15, strict=True\n  round_04/b31  [BATCH_SAFE]  score=48, penalty=16, strict=True\n  round_04/b32  [BATCH_SAFE]  score=0, penalty=17, strict=True\n  round_05/b0  [BATCH_SAFE]  score=3, penalty=1, strict=True\n  round_05/b1  [BATCH_SAFE]  score=6, penalty=2, strict=True\n  round_05/b2  [BATCH_SAFE]  score=32, penalty=3, strict=True\n  round_05/b3  [BATCH_SAFE]  score=64, penalty=4, strict=True\n  round_05/b4  [BATCH_SAFE]  score=32, penalty=5, strict=True\n  round_05/b5  [BATCH_SAFE]  score=24, penalty=6, strict=True\n  round_05/b6  [BATCH_SAFE]  score=22, penalty=7, strict=True\n  round_05/b7  [BATCH_SAFE]  score=24, penalty=8, strict=True\n  round_05/b8  [BATCH_SAFE]  score=27, penalty=9, strict=True\n  round_05/b9  [BATCH_SAFE]  score=64, penalty=10, strict=True\n  round_05/b10  [BATCH_SAFE]  score=40, penalty=11, strict=True\n  round_05/b11  [BATCH_SAFE]  score=48, penalty=12, strict=True\n  round_05/b12  [BATCH_SAFE]  score=39, penalty=13, strict=True\n  round_05/b13  [BATCH_SAFE]  score=64, penalty=14, strict=True\n  round_05/b14  [BATCH_SAFE]  score=46, penalty=15, strict=True\n  round_05/b15  [BATCH_SAFE]  score=59, penalty=17, strict=True\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 265\n  frontier_discovery_time_ms: 1083\n  compile_time_ms: 39959\n  java_exec_time_ms: 7406\n  path_log_parse_time_ms: 35\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 12698\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 12703\n\nTest cases written to: csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/SaturatingPenaltyLoop_cct.dot\n  Stats: csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/cct_stats.json\n  Counts: nodes=215, leaves=108, covered=73, infeasible=35, out_of_range=0, expanded=158, truncated=0\n  Render script: csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/render_cct.sh\n  (render later with: csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SaturatingPenaltyLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/SaturatingPenaltyLoop_M2.java",
+        "--output",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/FSF/SaturatingPenaltyLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/SaturatingPenaltyLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       SaturatingPenaltyLoop\n  CSC result:  csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/FSF/SaturatingPenaltyLoop_FSF.txt\n  Report:      csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/refined_tbfv_report.json\n  Summary:     testcases=73, fsf_units=5, passed=74, failed=4, skipped=287, unsupported=0\n  CCT marked:  4\n  TBFV stats:  csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/cct_tbfv_stats.json\n  Counts:      nodes=215, leaves=108, fault_leaves=1, failure_cases=1\n  Fault DOT:    csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/SaturatingPenaltyLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=4, intervals=4, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatingPenaltyLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop",
+        "--output",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop\n  CCT:         csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/SaturatingPenaltyLoop_cct.pkl\n  Report:      csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=73, failed=1, condition_nodes=4, condition_intervals=4\n  Top conditions:\n    #1 score=0.0099 fail=1/70 line=6 penalty >= 18\n    #2 score=0.0098 fail=1/71 line=6 penalty < 0\n    #3 score=0.0096 fail=1/72 line=3 score > 120\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[6, None] root.F.F.F.TRUE\n    #2 score=0.0000 fail=1/70 line=[6, 6] root.F.F.FALSE\n    #3 score=0.0000 fail=1/71 line=[3, 6] root.F.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatingPenaltyLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "SaturatingPenaltyLoop/SaturatingPenaltyLoop_M2.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/cct_failure_localization_aggregated.json\n  Source file: SaturatingPenaltyLoop/SaturatingPenaltyLoop_M2.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  4 raw -> 4 aggregated\n  Intervals[cct_only]: 4 raw -> 4 aggregated\n  Intervals[statement_presence]: 4 raw -> 4 aggregated\n  Intervals[edge_divergence_gated]: 4 raw -> 4 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatingPenaltyLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "SaturatingPenaltyLoop_M2",
+        "--report",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_SaturatingPenaltyLoop_M2/SaturatingPenaltyLoop/fault_localization_eval.json\n  Mutant:    SaturatingPenaltyLoop_M2\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_gated: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SaturatingPenaltyLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/SaturatingPenaltyLoop_M3.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_SaturatingPenaltyLoop_M3",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/testcases.json"
+      ],
+      "stdout_tail": "_04/b7  [BATCH_SAFE]  score=64, penalty=8, strict=False\n  round_04/b8  [BATCH_SAFE]  score=80, penalty=9, strict=False\n  round_04/b9  [BATCH_SAFE]  score=64, penalty=10, strict=False\n  round_04/b10  [BATCH_SAFE]  score=80, penalty=11, strict=False\n  round_04/b11  [BATCH_SAFE]  score=56, penalty=12, strict=False\n  round_04/b12  [BATCH_SAFE]  score=76, penalty=13, strict=False\n  round_04/b13  [BATCH_SAFE]  score=76, penalty=14, strict=False\n  round_04/b14  [BATCH_SAFE]  score=64, penalty=15, strict=False\n  round_04/b15  [BATCH_SAFE]  score=68, penalty=17, strict=False\n  round_04/b16  [BATCH_SAFE]  score=0, penalty=18, strict=False\n  round_04/b17  [BATCH_SAFE]  score=0, penalty=1, strict=True\n  round_04/b18  [BATCH_SAFE]  score=0, penalty=2, strict=True\n  round_04/b19  [BATCH_SAFE]  score=0, penalty=3, strict=True\n  round_04/b20  [BATCH_SAFE]  score=0, penalty=4, strict=True\n  round_04/b21  [BATCH_SAFE]  score=0, penalty=5, strict=True\n  round_04/b22  [BATCH_SAFE]  score=0, penalty=6, strict=True\n  round_04/b23  [BATCH_SAFE]  score=0, penalty=7, strict=True\n  round_04/b24  [BATCH_SAFE]  score=0, penalty=8, strict=True\n  round_04/b25  [BATCH_SAFE]  score=0, penalty=9, strict=True\n  round_04/b26  [BATCH_SAFE]  score=0, penalty=10, strict=True\n  round_04/b27  [BATCH_SAFE]  score=0, penalty=11, strict=True\n  round_04/b28  [BATCH_SAFE]  score=0, penalty=12, strict=True\n  round_04/b29  [BATCH_SAFE]  score=0, penalty=13, strict=True\n  round_04/b30  [BATCH_SAFE]  score=0, penalty=14, strict=True\n  round_04/b31  [BATCH_SAFE]  score=0, penalty=15, strict=True\n  round_04/b32  [BATCH_SAFE]  score=64, penalty=16, strict=True\n  round_04/b33  [BATCH_SAFE]  score=0, penalty=17, strict=True\n  round_05/b0  [BATCH_SAFE]  score=72, penalty=18, strict=False\n  round_05/b1  [BATCH_SAFE]  score=71, penalty=1, strict=True\n  round_05/b2  [BATCH_SAFE]  score=16, penalty=2, strict=True\n  round_05/b3  [BATCH_SAFE]  score=64, penalty=3, strict=True\n  round_05/b4  [BATCH_SAFE]  score=32, penalty=4, strict=True\n  round_05/b5  [BATCH_SAFE]  score=71, penalty=5, strict=True\n  round_05/b6  [BATCH_SAFE]  score=64, penalty=6, strict=True\n  round_05/b7  [BATCH_SAFE]  score=64, penalty=7, strict=True\n  round_05/b8  [BATCH_SAFE]  score=32, penalty=8, strict=True\n  round_05/b9  [BATCH_SAFE]  score=75, penalty=9, strict=True\n  round_05/b10  [BATCH_SAFE]  score=78, penalty=10, strict=True\n  round_05/b11  [BATCH_SAFE]  score=48, penalty=11, strict=True\n  round_05/b12  [BATCH_SAFE]  score=112, penalty=12, strict=True\n  round_05/b13  [BATCH_SAFE]  score=51, penalty=13, strict=True\n  round_05/b14  [BATCH_SAFE]  score=60, penalty=14, strict=True\n  round_05/b15  [BATCH_SAFE]  score=98, penalty=15, strict=True\n  round_05/b16  [BATCH_SAFE]  score=72, penalty=17, strict=True\n  round_05/b17  [BATCH_SAFE]  score=0, penalty=18, strict=True\n  round_06/b0  [BATCH_SAFE]  score=80, penalty=18, strict=True\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 301\n  frontier_discovery_time_ms: 1225\n  compile_time_ms: 40491\n  java_exec_time_ms: 7455\n  path_log_parse_time_ms: 53\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 13318\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 13327\n\nTest cases written to: csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/SaturatingPenaltyLoop_cct.dot\n  Stats: csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/cct_stats.json\n  Counts: nodes=227, leaves=114, covered=78, infeasible=36, out_of_range=0, expanded=168, truncated=0\n  Render script: csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/render_cct.sh\n  (render later with: csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SaturatingPenaltyLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/SaturatingPenaltyLoop_M3.java",
+        "--output",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/FSF/SaturatingPenaltyLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/SaturatingPenaltyLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       SaturatingPenaltyLoop\n  CSC result:  csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/FSF/SaturatingPenaltyLoop_FSF.txt\n  Report:      csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/refined_tbfv_report.json\n  Summary:     testcases=78, fsf_units=5, passed=116, failed=0, skipped=274, unsupported=0\n  CCT marked:  0\n  TBFV stats:  csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/cct_tbfv_stats.json\n  Counts:      nodes=227, leaves=114, fault_leaves=0, failure_cases=0\n  Fault DOT:    csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/SaturatingPenaltyLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=0, intervals=0, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatingPenaltyLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop",
+        "--output",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop\n  CCT:         csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/SaturatingPenaltyLoop_cct.pkl\n  Report:      csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=78, failed=0, condition_nodes=0, condition_intervals=0\n  Top conditions: <none>\n  Top intervals: <none>\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatingPenaltyLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "SaturatingPenaltyLoop/SaturatingPenaltyLoop_M3.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/cct_failure_localization_aggregated.json\n  Source file: SaturatingPenaltyLoop/SaturatingPenaltyLoop_M3.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  0 raw -> 0 aggregated\n  Intervals[cct_only]: 0 raw -> 0 aggregated\n  Intervals[statement_presence]: 0 raw -> 0 aggregated\n  Intervals[edge_divergence_gated]: 0 raw -> 0 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatingPenaltyLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "SaturatingPenaltyLoop_M3",
+        "--report",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_SaturatingPenaltyLoop_M3/SaturatingPenaltyLoop/fault_localization_eval.json\n  Mutant:    SaturatingPenaltyLoop_M3\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SaturatingPenaltyLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/SaturatingPenaltyLoop_M4.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_SaturatingPenaltyLoop_M4",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/testcases.json"
+      ],
+      "stdout_tail": "d_04/b7  [BATCH_SAFE]  score=64, penalty=8, strict=False\n  round_04/b8  [BATCH_SAFE]  score=18, penalty=9, strict=False\n  round_04/b9  [BATCH_SAFE]  score=24, penalty=10, strict=False\n  round_04/b10  [BATCH_SAFE]  score=22, penalty=11, strict=False\n  round_04/b11  [BATCH_SAFE]  score=32, penalty=12, strict=False\n  round_04/b12  [BATCH_SAFE]  score=28, penalty=13, strict=False\n  round_04/b13  [BATCH_SAFE]  score=32, penalty=14, strict=False\n  round_04/b14  [BATCH_SAFE]  score=30, penalty=15, strict=False\n  round_04/b15  [BATCH_SAFE]  score=48, penalty=17, strict=False\n  round_04/b16  [BATCH_SAFE]  score=0, penalty=18, strict=False\n  round_04/b17  [BATCH_SAFE]  score=0, penalty=1, strict=True\n  round_04/b18  [BATCH_SAFE]  score=0, penalty=2, strict=True\n  round_04/b19  [BATCH_SAFE]  score=0, penalty=3, strict=True\n  round_04/b20  [BATCH_SAFE]  score=0, penalty=4, strict=True\n  round_04/b21  [BATCH_SAFE]  score=0, penalty=5, strict=True\n  round_04/b22  [BATCH_SAFE]  score=0, penalty=6, strict=True\n  round_04/b23  [BATCH_SAFE]  score=0, penalty=7, strict=True\n  round_04/b24  [BATCH_SAFE]  score=0, penalty=8, strict=True\n  round_04/b25  [BATCH_SAFE]  score=0, penalty=9, strict=True\n  round_04/b26  [BATCH_SAFE]  score=0, penalty=10, strict=True\n  round_04/b27  [BATCH_SAFE]  score=0, penalty=11, strict=True\n  round_04/b28  [BATCH_SAFE]  score=0, penalty=12, strict=True\n  round_04/b29  [BATCH_SAFE]  score=0, penalty=13, strict=True\n  round_04/b30  [BATCH_SAFE]  score=0, penalty=14, strict=True\n  round_04/b31  [BATCH_SAFE]  score=0, penalty=15, strict=True\n  round_04/b32  [BATCH_SAFE]  score=64, penalty=16, strict=True\n  round_04/b33  [BATCH_SAFE]  score=0, penalty=18, strict=True\n  round_05/b0  [BATCH_SAFE]  score=48, penalty=18, strict=False\n  round_05/b1  [BATCH_SAFE]  score=64, penalty=1, strict=True\n  round_05/b2  [BATCH_SAFE]  score=16, penalty=2, strict=True\n  round_05/b3  [BATCH_SAFE]  score=32, penalty=3, strict=True\n  round_05/b4  [BATCH_SAFE]  score=64, penalty=4, strict=True\n  round_05/b5  [BATCH_SAFE]  score=24, penalty=5, strict=True\n  round_05/b6  [BATCH_SAFE]  score=64, penalty=6, strict=True\n  round_05/b7  [BATCH_SAFE]  score=28, penalty=7, strict=True\n  round_05/b8  [BATCH_SAFE]  score=64, penalty=8, strict=True\n  round_05/b9  [BATCH_SAFE]  score=48, penalty=9, strict=True\n  round_05/b10  [BATCH_SAFE]  score=48, penalty=10, strict=True\n  round_05/b11  [BATCH_SAFE]  score=44, penalty=11, strict=True\n  round_05/b12  [BATCH_SAFE]  score=64, penalty=12, strict=True\n  round_05/b13  [BATCH_SAFE]  score=56, penalty=13, strict=True\n  round_05/b14  [BATCH_SAFE]  score=64, penalty=14, strict=True\n  round_05/b15  [BATCH_SAFE]  score=64, penalty=15, strict=True\n  round_05/b16  [BATCH_SAFE]  score=0, penalty=17, strict=True\n  round_05/b17  [BATCH_SAFE]  score=96, penalty=18, strict=True\n  round_06/b0  [BATCH_SAFE]  score=96, penalty=17, strict=True\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 288\n  frontier_discovery_time_ms: 1217\n  compile_time_ms: 41936\n  java_exec_time_ms: 7650\n  path_log_parse_time_ms: 50\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 13727\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 13734\n\nTest cases written to: csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/SaturatingPenaltyLoop_cct.dot\n  Stats: csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/cct_stats.json\n  Counts: nodes=227, leaves=114, covered=77, infeasible=37, out_of_range=0, expanded=168, truncated=0\n  Render script: csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/render_cct.sh\n  (render later with: csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SaturatingPenaltyLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/SaturatingPenaltyLoop_M4.java",
+        "--output",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/FSF/SaturatingPenaltyLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/SaturatingPenaltyLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       SaturatingPenaltyLoop\n  CSC result:  csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/FSF/SaturatingPenaltyLoop_FSF.txt\n  Report:      csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/refined_tbfv_report.json\n  Summary:     testcases=77, fsf_units=5, passed=61, failed=35, skipped=289, unsupported=0\n  CCT marked:  35\n  TBFV stats:  csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/cct_tbfv_stats.json\n  Counts:      nodes=227, leaves=114, fault_leaves=35, failure_cases=35\n  Fault DOT:    csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/SaturatingPenaltyLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=59, intervals=93, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatingPenaltyLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop",
+        "--output",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop\n  CCT:         csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/SaturatingPenaltyLoop_cct.pkl\n  Report:      csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=77, failed=35, condition_nodes=59, condition_intervals=93\n  Top conditions:\n    #1 score=3.5553 fail=34/34 line=12 remaining > 0\n    #2 score=3.5553 fail=34/34 line=13 strict\n    #3 score=3.4965 fail=32/32 line=12 remaining > 0\n  Top intervals:\n    #1 score=3.0881 fail=34/34 line=[12, 13] root.F.F.F.F.T.T.T.TRUE\n    #2 score=3.0370 fail=32/32 line=[12, 13] root.F.F.F.F.T.T.T.T.T.TRUE\n    #3 score=2.9841 fail=35/36 line=[12, 13] root.F.F.F.F.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatingPenaltyLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "SaturatingPenaltyLoop/SaturatingPenaltyLoop_M4.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/cct_failure_localization_aggregated.json\n  Source file: SaturatingPenaltyLoop/SaturatingPenaltyLoop_M4.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  59 raw -> 7 aggregated\n  Intervals[cct_only]: 93 raw -> 9 aggregated\n  Intervals[statement_presence]: 93 raw -> 9 aggregated\n  Intervals[edge_divergence_gated]: 93 raw -> 9 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatingPenaltyLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "SaturatingPenaltyLoop_M4",
+        "--report",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_SaturatingPenaltyLoop_M4/SaturatingPenaltyLoop/fault_localization_eval.json\n  Mutant:    SaturatingPenaltyLoop_M4\n  Operator:  AOR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=37, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_gated: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=7, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_gated: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SaturatingPenaltyLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/SaturatingPenaltyLoop_M5.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_SaturatingPenaltyLoop_M5",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/testcases.json"
+      ],
+      "stdout_tail": "nd_04/b7  [BATCH_SAFE]  score=64, penalty=8, strict=False\n  round_04/b8  [BATCH_SAFE]  score=12, penalty=9, strict=False\n  round_04/b9  [BATCH_SAFE]  score=64, penalty=10, strict=False\n  round_04/b10  [BATCH_SAFE]  score=11, penalty=11, strict=False\n  round_04/b11  [BATCH_SAFE]  score=12, penalty=12, strict=False\n  round_04/b12  [BATCH_SAFE]  score=13, penalty=13, strict=False\n  round_04/b13  [BATCH_SAFE]  score=32, penalty=14, strict=False\n  round_04/b14  [BATCH_SAFE]  score=15, penalty=15, strict=False\n  round_04/b15  [BATCH_SAFE]  score=24, penalty=17, strict=False\n  round_04/b16  [BATCH_SAFE]  score=0, penalty=18, strict=False\n  round_04/b17  [BATCH_SAFE]  score=0, penalty=1, strict=True\n  round_04/b18  [BATCH_SAFE]  score=0, penalty=2, strict=True\n  round_04/b19  [BATCH_SAFE]  score=0, penalty=3, strict=True\n  round_04/b20  [BATCH_SAFE]  score=0, penalty=4, strict=True\n  round_04/b21  [BATCH_SAFE]  score=0, penalty=5, strict=True\n  round_04/b22  [BATCH_SAFE]  score=0, penalty=6, strict=True\n  round_04/b23  [BATCH_SAFE]  score=0, penalty=7, strict=True\n  round_04/b24  [BATCH_SAFE]  score=0, penalty=8, strict=True\n  round_04/b25  [BATCH_SAFE]  score=0, penalty=9, strict=True\n  round_04/b26  [BATCH_SAFE]  score=0, penalty=10, strict=True\n  round_04/b27  [BATCH_SAFE]  score=0, penalty=11, strict=True\n  round_04/b28  [BATCH_SAFE]  score=0, penalty=12, strict=True\n  round_04/b29  [BATCH_SAFE]  score=0, penalty=13, strict=True\n  round_04/b30  [BATCH_SAFE]  score=0, penalty=14, strict=True\n  round_04/b31  [BATCH_SAFE]  score=0, penalty=15, strict=True\n  round_04/b32  [BATCH_SAFE]  score=48, penalty=16, strict=True\n  round_04/b33  [BATCH_SAFE]  score=0, penalty=18, strict=True\n  round_05/b0  [BATCH_SAFE]  score=24, penalty=18, strict=False\n  round_05/b1  [BATCH_SAFE]  score=3, penalty=1, strict=True\n  round_05/b2  [BATCH_SAFE]  score=32, penalty=2, strict=True\n  round_05/b3  [BATCH_SAFE]  score=64, penalty=3, strict=True\n  round_05/b4  [BATCH_SAFE]  score=12, penalty=4, strict=True\n  round_05/b5  [BATCH_SAFE]  score=64, penalty=5, strict=True\n  round_05/b6  [BATCH_SAFE]  score=24, penalty=6, strict=True\n  round_05/b7  [BATCH_SAFE]  score=22, penalty=7, strict=True\n  round_05/b8  [BATCH_SAFE]  score=32, penalty=8, strict=True\n  round_05/b9  [BATCH_SAFE]  score=27, penalty=9, strict=True\n  round_05/b10  [BATCH_SAFE]  score=30, penalty=10, strict=True\n  round_05/b11  [BATCH_SAFE]  score=48, penalty=11, strict=True\n  round_05/b12  [BATCH_SAFE]  score=40, penalty=12, strict=True\n  round_05/b13  [BATCH_SAFE]  score=39, penalty=13, strict=True\n  round_05/b14  [BATCH_SAFE]  score=64, penalty=14, strict=True\n  round_05/b15  [BATCH_SAFE]  score=46, penalty=15, strict=True\n  round_05/b16  [BATCH_SAFE]  score=0, penalty=17, strict=True\n  round_05/b17  [BATCH_SAFE]  score=64, penalty=18, strict=True\n  round_06/b0  [BATCH_SAFE]  score=51, penalty=17, strict=True\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 278\n  frontier_discovery_time_ms: 1167\n  compile_time_ms: 39638\n  java_exec_time_ms: 7356\n  path_log_parse_time_ms: 48\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 13038\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 13046\n\nTest cases written to: csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/SaturatingPenaltyLoop_cct.dot\n  Stats: csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/cct_stats.json\n  Counts: nodes=227, leaves=114, covered=77, infeasible=37, out_of_range=0, expanded=168, truncated=0\n  Render script: csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/render_cct.sh\n  (render later with: csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SaturatingPenaltyLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/SaturatingPenaltyLoop_M5.java",
+        "--output",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/FSF/SaturatingPenaltyLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/SaturatingPenaltyLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       SaturatingPenaltyLoop\n  CSC result:  csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/FSF/SaturatingPenaltyLoop_FSF.txt\n  Report:      csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/refined_tbfv_report.json\n  Summary:     testcases=77, fsf_units=5, passed=61, failed=35, skipped=289, unsupported=0\n  CCT marked:  35\n  TBFV stats:  csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/cct_tbfv_stats.json\n  Counts:      nodes=227, leaves=114, fault_leaves=18, failure_cases=18\n  Fault DOT:    csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/SaturatingPenaltyLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=59, intervals=76, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatingPenaltyLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop",
+        "--output",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop\n  CCT:         csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/SaturatingPenaltyLoop_cct.pkl\n  Report:      csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=77, failed=18, condition_nodes=59, condition_intervals=76\n  Top conditions:\n    #1 score=1.4722 fail=18/36 line=12 remaining > 0\n    #2 score=1.4452 fail=17/34 line=12 remaining > 0\n    #3 score=1.4452 fail=17/34 line=13 strict\n  Top intervals:\n    #1 score=0.9591 fail=18/36 line=[12, 13] root.F.F.F.F.T.FALSE\n    #2 score=0.9415 fail=17/34 line=[12, 13] root.F.F.F.F.T.F.T.FALSE\n    #3 score=0.9228 fail=16/32 line=[12, 13] root.F.F.F.F.T.F.T.F.T.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatingPenaltyLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "SaturatingPenaltyLoop/SaturatingPenaltyLoop_M5.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/cct_failure_localization_aggregated.json\n  Source file: SaturatingPenaltyLoop/SaturatingPenaltyLoop_M5.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  59 raw -> 7 aggregated\n  Intervals[cct_only]: 76 raw -> 8 aggregated\n  Intervals[statement_presence]: 76 raw -> 8 aggregated\n  Intervals[edge_divergence_gated]: 76 raw -> 8 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatingPenaltyLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "SaturatingPenaltyLoop_M5",
+        "--report",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_SaturatingPenaltyLoop_M5/SaturatingPenaltyLoop/fault_localization_eval.json\n  Mutant:    SaturatingPenaltyLoop_M5\n  Operator:  AOR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=57, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_gated: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=8, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_gated: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SaturatingPenaltyLoop:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/SaturatingPenaltyLoop_M6.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "100",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "fl_061003_SaturatingPenaltyLoop_M6",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/testcases.json"
+      ],
+      "stdout_tail": "nd_04/b7  [BATCH_SAFE]  score=64, penalty=8, strict=False\n  round_04/b8  [BATCH_SAFE]  score=18, penalty=9, strict=False\n  round_04/b9  [BATCH_SAFE]  score=24, penalty=10, strict=False\n  round_04/b10  [BATCH_SAFE]  score=22, penalty=11, strict=False\n  round_04/b11  [BATCH_SAFE]  score=32, penalty=12, strict=False\n  round_04/b12  [BATCH_SAFE]  score=28, penalty=13, strict=False\n  round_04/b13  [BATCH_SAFE]  score=32, penalty=14, strict=False\n  round_04/b14  [BATCH_SAFE]  score=30, penalty=15, strict=False\n  round_04/b15  [BATCH_SAFE]  score=48, penalty=17, strict=False\n  round_04/b16  [BATCH_SAFE]  score=0, penalty=18, strict=False\n  round_04/b17  [BATCH_SAFE]  score=0, penalty=1, strict=True\n  round_04/b18  [BATCH_SAFE]  score=0, penalty=2, strict=True\n  round_04/b19  [BATCH_SAFE]  score=0, penalty=3, strict=True\n  round_04/b20  [BATCH_SAFE]  score=0, penalty=4, strict=True\n  round_04/b21  [BATCH_SAFE]  score=0, penalty=5, strict=True\n  round_04/b22  [BATCH_SAFE]  score=0, penalty=6, strict=True\n  round_04/b23  [BATCH_SAFE]  score=0, penalty=7, strict=True\n  round_04/b24  [BATCH_SAFE]  score=0, penalty=8, strict=True\n  round_04/b25  [BATCH_SAFE]  score=0, penalty=9, strict=True\n  round_04/b26  [BATCH_SAFE]  score=0, penalty=10, strict=True\n  round_04/b27  [BATCH_SAFE]  score=0, penalty=11, strict=True\n  round_04/b28  [BATCH_SAFE]  score=0, penalty=12, strict=True\n  round_04/b29  [BATCH_SAFE]  score=0, penalty=13, strict=True\n  round_04/b30  [BATCH_SAFE]  score=0, penalty=14, strict=True\n  round_04/b31  [BATCH_SAFE]  score=0, penalty=15, strict=True\n  round_04/b32  [BATCH_SAFE]  score=48, penalty=16, strict=True\n  round_04/b33  [BATCH_SAFE]  score=0, penalty=18, strict=True\n  round_05/b0  [BATCH_SAFE]  score=48, penalty=18, strict=False\n  round_05/b1  [BATCH_SAFE]  score=3, penalty=1, strict=True\n  round_05/b2  [BATCH_SAFE]  score=32, penalty=2, strict=True\n  round_05/b3  [BATCH_SAFE]  score=32, penalty=3, strict=True\n  round_05/b4  [BATCH_SAFE]  score=12, penalty=4, strict=True\n  round_05/b5  [BATCH_SAFE]  score=64, penalty=5, strict=True\n  round_05/b6  [BATCH_SAFE]  score=24, penalty=6, strict=True\n  round_05/b7  [BATCH_SAFE]  score=21, penalty=7, strict=True\n  round_05/b8  [BATCH_SAFE]  score=24, penalty=8, strict=True\n  round_05/b9  [BATCH_SAFE]  score=27, penalty=9, strict=True\n  round_05/b10  [BATCH_SAFE]  score=32, penalty=10, strict=True\n  round_05/b11  [BATCH_SAFE]  score=48, penalty=11, strict=True\n  round_05/b12  [BATCH_SAFE]  score=40, penalty=12, strict=True\n  round_05/b13  [BATCH_SAFE]  score=39, penalty=13, strict=True\n  round_05/b14  [BATCH_SAFE]  score=44, penalty=14, strict=True\n  round_05/b15  [BATCH_SAFE]  score=46, penalty=15, strict=True\n  round_05/b16  [BATCH_SAFE]  score=0, penalty=17, strict=True\n  round_05/b17  [BATCH_SAFE]  score=64, penalty=18, strict=True\n  round_06/b0  [BATCH_SAFE]  score=51, penalty=17, strict=True\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 282\n  frontier_discovery_time_ms: 1175\n  compile_time_ms: 39300\n  java_exec_time_ms: 7656\n  path_log_parse_time_ms: 47\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 13042\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 13049\n\nTest cases written to: csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/SaturatingPenaltyLoop_cct.dot\n  Stats: csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/cct_stats.json\n  Counts: nodes=227, leaves=114, covered=77, infeasible=37, out_of_range=0, expanded=168, truncated=0\n  Render script: csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/render_cct.sh\n  (render later with: csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:SaturatingPenaltyLoop:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/SaturatingPenaltyLoop_M6.java",
+        "--output",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/FSF/SaturatingPenaltyLoop_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/SaturatingPenaltyLoop_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       SaturatingPenaltyLoop\n  CSC result:  csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/SaturatingPenaltyLoop/FSF/SaturatingPenaltyLoop_FSF.txt\n  Report:      csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/refined_tbfv_report.json\n  Summary:     testcases=77, fsf_units=5, passed=40, failed=38, skipped=307, unsupported=0\n  CCT marked:  38\n  TBFV stats:  csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/cct_tbfv_stats.json\n  Counts:      nodes=227, leaves=114, fault_leaves=37, failure_cases=37\n  Fault DOT:    csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/SaturatingPenaltyLoop_cct_tbfv_fault.dot\n  Localization: csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/cct_failure_localization.json\n  Risk DOT:     csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=113, intervals=149, default_edge_strategy=statement_presence\n  Render script: csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatingPenaltyLoop:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop",
+        "--output",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop\n  CCT:         csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/SaturatingPenaltyLoop_cct.pkl\n  Report:      csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/cct_failure_localization.json\n  Risk DOT:    csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=77, failed=37, condition_nodes=113, condition_intervals=149\n  Top conditions:\n    #1 score=1.8437 fail=37/73 line=12 remaining > 0\n    #2 score=1.8188 fail=37/74 line=6 penalty > 18\n    #3 score=1.8055 fail=36/72 line=13 strict\n  Top intervals:\n    #1 score=1.2066 fail=37/73 line=[6, 12] root.F.F.F.FALSE\n    #2 score=0.9415 fail=17/34 line=[12, 13] root.F.F.F.F.T.F.T.FALSE\n    #3 score=0.9415 fail=17/34 line=[12, 13] root.F.F.F.F.T.T.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatingPenaltyLoop:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "SaturatingPenaltyLoop/SaturatingPenaltyLoop_M6.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/cct_failure_localization_aggregated.json\n  Source file: SaturatingPenaltyLoop/SaturatingPenaltyLoop_M6.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_gated\n  Conditions:  113 raw -> 7 aggregated\n  Intervals[cct_only]: 149 raw -> 9 aggregated\n  Intervals[statement_presence]: 149 raw -> 9 aggregated\n  Intervals[edge_divergence_gated]: 149 raw -> 9 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "SaturatingPenaltyLoop:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "SaturatingPenaltyLoop_M6",
+        "--report",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/fl_061003_SaturatingPenaltyLoop_M6/SaturatingPenaltyLoop/fault_localization_eval.json\n  Mutant:    SaturatingPenaltyLoop_M6\n  Operator:  RVR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=28, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_gated: best_rank=30, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.statement_presence: best_rank=4, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_gated: best_rank=4, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=4, top1=miss, top3=miss, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+[fsf_1]
+T: monthsOwned < 0
+D: return_value == -1
+
+[fsf_2]
+T: monthsOwned > 120
+D: return_value == -1
+
+[fsf_3]
+T: monthsOwned >= 0 && monthsOwned <= 120 && repairCost < 0
+D: return_value == -1
+
+[fsf_4]
+T: monthsOwned >= 0 && monthsOwned <= 120 && repairCost > 5000
+D: return_value == -1
+
+[fsf_5]
+T: monthsOwned >= 0 && monthsOwned <= 120 && repairCost >= 0 && repairCost <= 5000 && deviceTier < 1
+D: return_value == -1
+
+[fsf_6]
+T: monthsOwned >= 0 && monthsOwned <= 120 && repairCost >= 0 && repairCost <= 5000 && deviceTier > 4
+D: return_value == -1
+
+[fsf_7]
+T: monthsOwned >= 0 && monthsOwned <= 120 && repairCost >= 0 && repairCost <= 5000 && deviceTier >= 1 && deviceTier <= 4 && incidents < 0
+D: return_value == -1
+
+[fsf_8]
+T: monthsOwned >= 0 && monthsOwned <= 120 && repairCost >= 0 && repairCost <= 5000 && deviceTier >= 1 && deviceTier <= 4 && incidents > 8
+D: return_value == -1
+
+[fsf_9]
+T: monthsOwned >= 0 && monthsOwned <= 24 && repairCost >= 0 && repairCost <= 399 && deviceTier == 4 && incidents == 0 && express == false && refurbished == false && member == true && accidental == false
+D: return_value == 4
+
+[fsf_10]
+T: monthsOwned >= 0 && monthsOwned <= 24 && repairCost >= 0 && repairCost <= 399 && deviceTier == 4 && incidents == 0 && express == true && refurbished == false && member == true && accidental == true
+D: return_value >= 3
+
+[fsf_11]
+T: monthsOwned >= 0 && monthsOwned <= 24 && repairCost >= 400 && repairCost <= 999 && deviceTier == 3 && incidents >= 1 && incidents <= 2 && express == false && refurbished == false && member == true && accidental == false
+D: return_value >= 3
+
+[fsf_12]
+T: monthsOwned >= 0 && monthsOwned <= 24 && repairCost >= 400 && repairCost <= 1499 && deviceTier == 2 && incidents >= 1 && incidents <= 3 && express == false && refurbished == false && member == false && accidental == false
+D: return_value >= 2
+
+[fsf_13]
+T: monthsOwned >= 25 && monthsOwned <= 60 && repairCost >= 0 && repairCost <= 399 && deviceTier == 3 && incidents == 0 && express == false && refurbished == false && member == false && accidental == false
+D: return_value >= 3
+
+[fsf_14]
+T: monthsOwned >= 25 && monthsOwned <= 60 && repairCost >= 400 && repairCost <= 1499 && deviceTier == 4 && incidents >= 1 && incidents <= 3 && express == false && refurbished == false && member == true && accidental == false
+D: return_value >= 3
+
+[fsf_15]
+T: monthsOwned >= 25 && monthsOwned <= 60 && repairCost >= 1500 && repairCost <= 1999 && deviceTier == 2 && incidents >= 2 && incidents <= 3 && express == false && refurbished == false && member == false && accidental == false
+D: return_value <= 2
+
+[fsf_16]
+T: monthsOwned >= 61 && monthsOwned <= 120 && repairCost >= 2000 && repairCost <= 5000 && deviceTier == 1 && incidents >= 5 && incidents <= 8 && express == false && refurbished == true && member == false && accidental == true
+D: return_value == 1
+
+[fsf_17]
+T: monthsOwned >= 61 && monthsOwned <= 120 && repairCost >= 1500 && repairCost <= 5000 && deviceTier == 2 && incidents >= 4 && incidents <= 8 && express == false && refurbished == false && member == false && accidental == false
+D: return_value <= 2
+
+[fsf_18]
+T: monthsOwned >= 61 && monthsOwned <= 120 && repairCost >= 0 && repairCost <= 399 && deviceTier == 4 && incidents == 0 && express == false && refurbished == false && member == true && accidental == false
+D: return_value >= 3
+
+[fsf_19]
+T: monthsOwned >= 0 && monthsOwned <= 24 && repairCost >= 1500 && repairCost <= 5000 && deviceTier == 1 && incidents >= 4 && incidents <= 8 && express == true && refurbished == true && member == false && accidental == true
+D: return_value <= 2
+
+[fsf_20]
+T: monthsOwned >= 25 && monthsOwned <= 60 && repairCost >= 400 && repairCost <= 1499 && deviceTier == 1 && incidents >= 4 && incidents <= 8 && express == false && refurbished == true && member == false && accidental == false
+D: return_value <= 2

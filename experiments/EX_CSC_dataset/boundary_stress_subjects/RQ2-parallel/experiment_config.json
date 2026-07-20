@@ -1,0 +1,39 @@
+{
+  "allow_existing_sessions": false,
+  "append": false,
+  "created_at": "2026-07-18T10:36:30.876818+08:00",
+  "dataset_root": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset",
+  "dry_run": false,
+  "experiment_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/experiments/EX_CSC_dataset/boundary_stress_subjects/RQ2-parallel",
+  "experiment_name": "RQ2-parallel-generation",
+  "max_iter": 100,
+  "mode": "expanded",
+  "output_root": "experiments",
+  "program_count": 2,
+  "programs": [
+    {
+      "class_name": "BoundaryStressCounter",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressCounter/BoundaryStressCounter.java",
+      "subject": "BoundaryStressCounter"
+    },
+    {
+      "class_name": "BoundaryStressMeter",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundaryStressMeter/BoundaryStressMeter.java",
+      "subject": "BoundaryStressMeter"
+    }
+  ],
+  "project_root": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+  "range_bound": 200,
+  "repeats": 3,
+  "session_prefix": "ex_csc_dataset_rq2",
+  "stage": "rq2_parallel_experiment",
+  "subjects_manifest": null,
+  "summarize": true,
+  "timeout_s": 600,
+  "workers": [
+    1,
+    2,
+    4,
+    8
+  ]
+}

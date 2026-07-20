@@ -1,0 +1,754 @@
+{
+  "subject": "BoundedSquareFreeClassifier",
+  "subject_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier",
+  "fsf": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/FSF/BoundedSquareFreeClassifier_FSF.txt",
+  "manifest": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+  "mode": "expanded",
+  "strategy": "batch",
+  "max_iter": 50,
+  "dry_run": false,
+  "original": {
+    "role": "original",
+    "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier.java",
+    "class_name": "BoundedSquareFreeClassifier",
+    "mutant_id": null
+  },
+  "mutants": [
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M1.java",
+      "class_name": "BoundedSquareFreeClassifier",
+      "mutant_id": "BoundedSquareFreeClassifier_M1"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M2.java",
+      "class_name": "BoundedSquareFreeClassifier",
+      "mutant_id": "BoundedSquareFreeClassifier_M2"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M3.java",
+      "class_name": "BoundedSquareFreeClassifier",
+      "mutant_id": "BoundedSquareFreeClassifier_M3"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M4.java",
+      "class_name": "BoundedSquareFreeClassifier",
+      "mutant_id": "BoundedSquareFreeClassifier_M4"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M5.java",
+      "class_name": "BoundedSquareFreeClassifier",
+      "mutant_id": "BoundedSquareFreeClassifier_M5"
+    },
+    {
+      "role": "mutant",
+      "java_file": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M6.java",
+      "class_name": "BoundedSquareFreeClassifier",
+      "mutant_id": "BoundedSquareFreeClassifier_M6"
+    }
+  ],
+  "step_count": 30,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "mutant:BoundedSquareFreeClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M1.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/testcases.json"
+      ],
+      "stdout_tail": "     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     (T) ->\n  |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(number=16384)\n  (T) ->\n  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(number=0)\n-----------------------------\n\n  [EXPAND] Promoted truncated leaf at 'repeatedSquareFactor == 0' (cnt=1) \u2192 F:['tc_7_b0']\n  [EXPAND] Promoted truncated leaf at 'repeatedSquareFactor == 0' (cnt=1) \u2192 F:['tc_7_b1']\n  [EXPAND] Promoted truncated leaf at 'divisor * divisor <= number' (cnt=9) \u2192 F:['tc_7_b2']\n  [EXPAND] Promoted truncated leaf at 'repeatedSquareFactor == 0' (cnt=1) \u2192 F:['tc_7_b2']\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 39 test cases generated in 8 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=64\n  round_04/b0  [BATCH_SAFE]  number=1\n  round_04/b1  [BATCH_SAFE]  number=65\n  round_04/b2  [BATCH_SAFE]  number=8\n  round_04/b3  [BATCH_SAFE]  number=12\n  round_04/b4  [BATCH_SAFE]  number=84\n  round_04/b5  [BATCH_SAFE]  number=16\n  round_04/b6  [BATCH_SAFE]  number=32\n  round_04/b7  [BATCH_SAFE]  number=48\n  round_04/b8  [BATCH_SAFE]  number=96\n  round_04/b9  [BATCH_SAFE]  number=36\n  round_05/b0  [BATCH_SAFE]  number=6\n  round_05/b1  [BATCH_SAFE]  number=10\n  round_05/b2  [BATCH_SAFE]  number=17\n  round_05/b3  [BATCH_SAFE]  number=29\n  round_05/b4  [BATCH_SAFE]  number=42\n  round_05/b5  [BATCH_SAFE]  number=51\n  round_05/b6  [BATCH_SAFE]  number=82\n  round_05/b7  [BATCH_SAFE]  number=98\n  round_05/b8  [BATCH_SAFE]  number=25\n  round_05/b9  [BATCH_SAFE]  number=45\n  round_05/b10  [BATCH_SAFE]  number=24\n  round_05/b11  [BATCH_SAFE]  number=28\n  round_05/b12  [BATCH_SAFE]  number=40\n  round_05/b13  [BATCH_SAFE]  number=52\n  round_05/b14  [BATCH_SAFE]  number=76\n  round_05/b15  [BATCH_SAFE]  number=80\n  round_05/b16  [BATCH_SAFE]  number=72\n  round_06/b0  [BATCH_SAFE]  number=49\n  round_06/b1  [BATCH_SAFE]  number=75\n  round_06/b2  [BATCH_SAFE]  number=9\n  round_06/b3  [BATCH_SAFE]  number=18\n  round_06/b4  [BATCH_SAFE]  number=27\n  round_06/b5  [BATCH_SAFE]  number=90\n  round_07/b0  [BATCH_SAFE]  number=50\n  round_07/b1  [BATCH_SAFE]  number=54\n  round_07/b2  [BATCH_SAFE]  number=81\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 74\n  frontier_discovery_time_ms: 815\n  compile_time_ms: 12070\n  java_exec_time_ms: 2317\n  path_log_parse_time_ms: 1\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 4517\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 4521\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/cct_stats.json\n  Counts: nodes=241, leaves=121, covered=39, infeasible=82, out_of_range=0, expanded=143, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedSquareFreeClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M1.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/FSF/BoundedSquareFreeClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedSquareFreeClassifier\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/FSF/BoundedSquareFreeClassifier_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/refined_tbfv_report.json\n  Summary:     testcases=39, fsf_units=3, passed=39, failed=1, skipped=77, unsupported=0\n  CCT marked:  1\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/cct_tbfv_stats.json\n  Counts:      nodes=241, leaves=121, fault_leaves=1, failure_cases=1\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=2, intervals=2, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedSquareFreeClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=39, failed=1, condition_nodes=2, condition_intervals=2\n  Top conditions:\n    #1 score=0.0182 fail=1/38 line=3 number >= 100\n    #2 score=0.0178 fail=1/39 line=3 number < 1\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[3, None] root.F.TRUE\n    #2 score=0.0000 fail=1/38 line=[3, 3] root.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedSquareFreeClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M1.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M1.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  2 raw -> 2 aggregated\n  Intervals[cct_only]: 2 raw -> 2 aggregated\n  Intervals[statement_presence]: 2 raw -> 2 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 2 raw -> 2 aggregated\n  Intervals[edge_divergence_sibling_shared]: 2 raw -> 2 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedSquareFreeClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedSquareFreeClassifier_M1",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M1/BoundedSquareFreeClassifier/fault_localization_eval.json\n  Mutant:    BoundedSquareFreeClassifier_M1\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedSquareFreeClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M2.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/testcases.json"
+      ],
+      "stdout_tail": "     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     (T) ->\n  |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(number=16384)\n  (T) ->\n  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(number=0)\n-----------------------------\n\n  [EXPAND] Promoted truncated leaf at 'repeatedSquareFactor == 0' (cnt=1) \u2192 F:['tc_7_b0']\n  [EXPAND] Promoted truncated leaf at 'repeatedSquareFactor == 0' (cnt=1) \u2192 F:['tc_7_b1']\n  [EXPAND] Promoted truncated leaf at 'repeatedSquareFactor == 0' (cnt=1) \u2192 F:['tc_7_b2']\n  [EXPAND] Promoted truncated leaf at 'repeatedSquareFactor == 0' (cnt=1) \u2192 F:['tc_7_b3']\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 36 test cases generated in 8 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=64\n  round_04/b0  [BATCH_SAFE]  number=4\n  round_04/b1  [BATCH_SAFE]  number=66\n  round_04/b2  [BATCH_SAFE]  number=8\n  round_04/b3  [BATCH_SAFE]  number=12\n  round_04/b4  [BATCH_SAFE]  number=88\n  round_04/b5  [BATCH_SAFE]  number=32\n  round_04/b6  [BATCH_SAFE]  number=48\n  round_04/b7  [BATCH_SAFE]  number=96\n  round_04/b8  [BATCH_SAFE]  number=36\n  round_05/b0  [BATCH_SAFE]  number=9\n  round_05/b1  [BATCH_SAFE]  number=13\n  round_05/b2  [BATCH_SAFE]  number=21\n  round_05/b3  [BATCH_SAFE]  number=33\n  round_05/b4  [BATCH_SAFE]  number=49\n  round_05/b5  [BATCH_SAFE]  number=58\n  round_05/b6  [BATCH_SAFE]  number=97\n  round_05/b7  [BATCH_SAFE]  number=98\n  round_05/b8  [BATCH_SAFE]  number=75\n  round_05/b9  [BATCH_SAFE]  number=18\n  round_05/b10  [BATCH_SAFE]  number=24\n  round_05/b11  [BATCH_SAFE]  number=28\n  round_05/b12  [BATCH_SAFE]  number=44\n  round_05/b13  [BATCH_SAFE]  number=56\n  round_05/b14  [BATCH_SAFE]  number=76\n  round_05/b15  [BATCH_SAFE]  number=100\n  round_05/b16  [BATCH_SAFE]  number=80\n  round_05/b17  [BATCH_SAFE]  number=72\n  round_06/b0  [BATCH_SAFE]  number=50\n  round_06/b1  [BATCH_SAFE]  number=90\n  round_07/b0  [BATCH_SAFE]  number=27\n  round_07/b1  [BATCH_SAFE]  number=45\n  round_07/b2  [BATCH_SAFE]  number=54\n  round_07/b3  [BATCH_SAFE]  number=81\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 79\n  frontier_discovery_time_ms: 1010\n  compile_time_ms: 14194\n  java_exec_time_ms: 2585\n  path_log_parse_time_ms: 1\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 5213\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 5218\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/cct_stats.json\n  Counts: nodes=249, leaves=125, covered=36, infeasible=89, out_of_range=0, expanded=144, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedSquareFreeClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M2.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/FSF/BoundedSquareFreeClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedSquareFreeClassifier\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/FSF/BoundedSquareFreeClassifier_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/refined_tbfv_report.json\n  Summary:     testcases=36, fsf_units=3, passed=36, failed=4, skipped=68, unsupported=0\n  CCT marked:  4\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/cct_tbfv_stats.json\n  Counts:      nodes=249, leaves=125, fault_leaves=4, failure_cases=4\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=17, intervals=20, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedSquareFreeClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=36, failed=4, condition_nodes=17, condition_intervals=20\n  Top conditions:\n    #1 score=0.6931 fail=1/1 line=14 repeatedSquareFactor == 0\n    #2 score=0.6931 fail=1/1 line=14 repeatedSquareFactor == 0\n    #3 score=0.6931 fail=1/1 line=14 repeatedSquareFactor == 0\n  Top intervals:\n    #1 score=0.6021 fail=1/1 line=[14, None] root.F.F.T.F.T.F.T.F.T.F.T.F.F.TRUE\n    #2 score=0.6021 fail=1/1 line=[14, None] root.F.F.T.F.T.F.T.F.F.TRUE\n    #3 score=0.6021 fail=1/1 line=[14, None] root.F.F.T.F.F.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedSquareFreeClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M2.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M2.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  17 raw -> 5 aggregated\n  Intervals[cct_only]: 20 raw -> 6 aggregated\n  Intervals[statement_presence]: 20 raw -> 6 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 20 raw -> 6 aggregated\n  Intervals[edge_divergence_sibling_shared]: 20 raw -> 6 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedSquareFreeClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedSquareFreeClassifier_M2",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M2/BoundedSquareFreeClassifier/fault_localization_eval.json\n  Mutant:    BoundedSquareFreeClassifier_M2\n  Operator:  BOR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=5, top1=miss, top3=miss, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedSquareFreeClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M3.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/testcases.json"
+      ],
+      "stdout_tail": " |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     (T) ->\n  |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(number=16384)\n  (T) ->\n  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(number=0)\n-----------------------------\n\n  [EXPAND] Promoted truncated leaf at 'divisor * divisor <= number' (cnt=9) \u2192 F:['tc_8_b0']\n  [EXPAND] Promoted truncated leaf at 'repeatedSquareFactor == 0' (cnt=1) \u2192 F:['tc_8_b0']\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 40 test cases generated in 9 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=64\n  round_04/b0  [BATCH_SAFE]  number=1\n  round_04/b1  [BATCH_SAFE]  number=4\n  round_04/b2  [BATCH_SAFE]  number=36\n  round_04/b3  [BATCH_SAFE]  number=12\n  round_04/b4  [BATCH_SAFE]  number=16\n  round_04/b5  [BATCH_SAFE]  number=32\n  round_04/b6  [BATCH_SAFE]  number=48\n  round_04/b7  [BATCH_SAFE]  number=80\n  round_04/b8  [BATCH_SAFE]  number=44\n  round_04/b9  [BATCH_SAFE]  number=66\n  round_05/b0  [BATCH_SAFE]  number=72\n  round_05/b1  [BATCH_SAFE]  number=96\n  round_05/b2  [BATCH_SAFE]  number=20\n  round_05/b3  [BATCH_SAFE]  number=100\n  round_05/b4  [BATCH_SAFE]  number=28\n  round_05/b5  [BATCH_SAFE]  number=76\n  round_05/b6  [BATCH_SAFE]  number=5\n  round_05/b7  [BATCH_SAFE]  number=45\n  round_05/b8  [BATCH_SAFE]  number=10\n  round_05/b9  [BATCH_SAFE]  number=19\n  round_05/b10  [BATCH_SAFE]  number=50\n  round_05/b11  [BATCH_SAFE]  number=26\n  round_05/b12  [BATCH_SAFE]  number=42\n  round_05/b13  [BATCH_SAFE]  number=49\n  round_05/b14  [BATCH_SAFE]  number=62\n  round_05/b15  [BATCH_SAFE]  number=97\n  round_06/b0  [BATCH_SAFE]  number=52\n  round_06/b1  [BATCH_SAFE]  number=84\n  round_06/b2  [BATCH_SAFE]  number=9\n  round_06/b3  [BATCH_SAFE]  number=18\n  round_06/b4  [BATCH_SAFE]  number=27\n  round_06/b5  [BATCH_SAFE]  number=54\n  round_06/b6  [BATCH_SAFE]  number=25\n  round_06/b7  [BATCH_SAFE]  number=75\n  round_06/b8  [BATCH_SAFE]  number=98\n  round_07/b0  [BATCH_SAFE]  number=81\n  round_08/b0  [BATCH_SAFE]  number=90\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 86\n  frontier_discovery_time_ms: 1066\n  compile_time_ms: 15644\n  java_exec_time_ms: 2850\n  path_log_parse_time_ms: 4\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 5825\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 5832\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/cct_stats.json\n  Counts: nodes=265, leaves=133, covered=40, infeasible=93, out_of_range=0, expanded=156, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedSquareFreeClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M3.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/FSF/BoundedSquareFreeClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedSquareFreeClassifier\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/FSF/BoundedSquareFreeClassifier_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/refined_tbfv_report.json\n  Summary:     testcases=40, fsf_units=3, passed=31, failed=9, skipped=80, unsupported=0\n  CCT marked:  9\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/cct_tbfv_stats.json\n  Counts:      nodes=265, leaves=133, fault_leaves=9, failure_cases=9\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=29, intervals=37, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedSquareFreeClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=40, failed=9, condition_nodes=29, condition_intervals=37\n  Top conditions:\n    #1 score=1.3863 fail=3/3 line=8 divisor * divisor <= number\n    #2 score=1.2798 fail=5/7 line=8 divisor * divisor <= number\n    #3 score=1.2130 fail=7/12 line=8 divisor * divisor <= number\n  Top intervals:\n    #1 score=1.2041 fail=3/3 line=[8, 9] root.F.F.T.T.T.T.T.T.T.T.T.T.T.TRUE\n    #2 score=0.9542 fail=2/2 line=[8, 9] root.F.F.T.T.T.T.T.T.T.T.T.T.T.T.T.TRUE\n    #3 score=0.9528 fail=5/7 line=[8, 9] root.F.F.T.T.T.T.T.T.T.TRUE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedSquareFreeClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M3.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M3.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  29 raw -> 5 aggregated\n  Intervals[cct_only]: 37 raw -> 8 aggregated\n  Intervals[statement_presence]: 37 raw -> 8 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 37 raw -> 8 aggregated\n  Intervals[edge_divergence_sibling_shared]: 37 raw -> 8 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedSquareFreeClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedSquareFreeClassifier_M3",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M3/BoundedSquareFreeClassifier/fault_localization_eval.json\n  Mutant:    BoundedSquareFreeClassifier_M3\n  Operator:  ROR\n  Fault:     control-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=5, top1=miss, top3=miss, top5=hit, top10=hit\n  raw.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.cct_only: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedSquareFreeClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M4.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/testcases.json"
+      ],
+      "stdout_tail": " leaf at 'repeatedSquareFactor == 0' (cnt=1) \u2192 T:['tc_7_b1']\n  [EXPAND] Promoted truncated leaf at 'repeatedSquareFactor == 0' (cnt=1) \u2192 T:['tc_7_b2']\n  [EXPAND] Promoted truncated leaf at 'repeatedSquareFactor == 0' (cnt=1) \u2192 T:['tc_7_b3']\n  [EXPAND] Promoted truncated leaf at 'divisor * divisor <= number' (cnt=9) \u2192 F:['tc_7_b4']\n  [EXPAND] Promoted truncated leaf at 'repeatedSquareFactor == 0' (cnt=1) \u2192 T:['tc_7_b4']\n  [EXPAND] Promoted truncated leaf at 'number % (divisor * divisor) == 0' (cnt=8) \u2192 F:['tc_7_b5']\n  [EXPAND] Promoted truncated leaf at 'divisor * divisor <= number' (cnt=9) \u2192 F:['tc_7_b5']\n  [EXPAND] Promoted truncated leaf at 'repeatedSquareFactor == 0' (cnt=1) \u2192 T:['tc_7_b5']\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 40 test cases generated in 8 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=64\n  round_04/b0  [BATCH_SAFE]  number=1\n  round_04/b1  [BATCH_SAFE]  number=66\n  round_04/b2  [BATCH_SAFE]  number=4\n  round_04/b3  [BATCH_SAFE]  number=12\n  round_04/b4  [BATCH_SAFE]  number=44\n  round_04/b5  [BATCH_SAFE]  number=16\n  round_04/b6  [BATCH_SAFE]  number=32\n  round_04/b7  [BATCH_SAFE]  number=48\n  round_04/b8  [BATCH_SAFE]  number=80\n  round_04/b9  [BATCH_SAFE]  number=72\n  round_05/b0  [BATCH_SAFE]  number=5\n  round_05/b1  [BATCH_SAFE]  number=10\n  round_05/b2  [BATCH_SAFE]  number=19\n  round_05/b3  [BATCH_SAFE]  number=29\n  round_05/b4  [BATCH_SAFE]  number=41\n  round_05/b5  [BATCH_SAFE]  number=57\n  round_05/b6  [BATCH_SAFE]  number=97\n  round_05/b7  [BATCH_SAFE]  number=98\n  round_05/b8  [BATCH_SAFE]  number=75\n  round_05/b9  [BATCH_SAFE]  number=9\n  round_05/b10  [BATCH_SAFE]  number=20\n  round_05/b11  [BATCH_SAFE]  number=28\n  round_05/b12  [BATCH_SAFE]  number=52\n  round_05/b13  [BATCH_SAFE]  number=100\n  round_05/b14  [BATCH_SAFE]  number=96\n  round_05/b15  [BATCH_SAFE]  number=36\n  round_06/b0  [BATCH_SAFE]  number=49\n  round_06/b1  [BATCH_SAFE]  number=25\n  round_06/b2  [BATCH_SAFE]  number=50\n  round_06/b3  [BATCH_SAFE]  number=99\n  round_06/b4  [BATCH_SAFE]  number=68\n  round_07/b0  [BATCH_SAFE]  number=18\n  round_07/b1  [BATCH_SAFE]  number=27\n  round_07/b2  [BATCH_SAFE]  number=45\n  round_07/b3  [BATCH_SAFE]  number=54\n  round_07/b4  [BATCH_SAFE]  number=81\n  round_07/b5  [BATCH_SAFE]  number=84\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 90\n  frontier_discovery_time_ms: 1055\n  compile_time_ms: 15762\n  java_exec_time_ms: 2870\n  path_log_parse_time_ms: 2\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 5634\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 5640\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/cct_stats.json\n  Counts: nodes=265, leaves=133, covered=40, infeasible=93, out_of_range=0, expanded=156, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedSquareFreeClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M4.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/FSF/BoundedSquareFreeClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedSquareFreeClassifier\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/FSF/BoundedSquareFreeClassifier_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/refined_tbfv_report.json\n  Summary:     testcases=40, fsf_units=3, passed=11, failed=29, skipped=80, unsupported=0\n  CCT marked:  29\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/cct_tbfv_stats.json\n  Counts:      nodes=265, leaves=133, fault_leaves=29, failure_cases=29\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=118, intervals=146, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedSquareFreeClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=40, failed=29, condition_nodes=118, condition_intervals=146\n  Top conditions:\n    #1 score=2.8904 fail=17/17 line=8 divisor * divisor <= number\n    #2 score=2.8332 fail=16/16 line=9 number % (divisor * divisor) == 0\n    #3 score=2.7081 fail=14/14 line=8 divisor * divisor <= number\n  Top intervals:\n    #1 score=1.9876 fail=29/38 line=[3, 8] root.F.FALSE\n    #2 score=1.7574 fail=17/17 line=[8, 9] root.F.F.T.TRUE\n    #3 score=1.6902 fail=6/6 line=[8, 9] root.F.F.T.F.T.T.T.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedSquareFreeClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M4.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M4.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  118 raw -> 5 aggregated\n  Intervals[cct_only]: 146 raw -> 7 aggregated\n  Intervals[statement_presence]: 146 raw -> 7 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 146 raw -> 7 aggregated\n  Intervals[edge_divergence_sibling_shared]: 146 raw -> 7 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedSquareFreeClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedSquareFreeClassifier_M4",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M4/BoundedSquareFreeClassifier/fault_localization_eval.json\n  Mutant:    BoundedSquareFreeClassifier_M4\n  Operator:  SUR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=49, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=4, top1=miss, top3=miss, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=7, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.statement_presence: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=4, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedSquareFreeClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M5.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/testcases.json"
+      ],
+      "stdout_tail": "     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: divisor * divisor <= number @L8 (WP: (((((2) + 2) + 2) + 2) + 2) * (((((2) + 2) + 2) + 2) + 2) <= number, Cnt: 5) [EXPANDED]\n  |     |     |     |     |     |     |     |     |     |     (F) ->\n  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: repeatedSquareFactor == 0 @L14 (WP: (1) == 0, Cnt: 1) [EXPANDED]\n  |     |     |     |     |     |     |     |     |     |     |     (F) ->\n  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'} [EXPANDED]  inputs: tc_3_b0(number=64)\n  |     |     |     |     |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     |     |     |     |     |     |     (T) ->\n  |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)\n  |     (T) ->\n  |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(number=16384)\n  (T) ->\n  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(number=0)\n-----------------------------\n\n  [EXPAND] Promoted truncated leaf at 'number % (divisor * divisor) == 0' (cnt=4) \u2192 F:['tc_6_b0']\n  [EXPAND] Promoted truncated leaf at 'divisor * divisor <= number' (cnt=5) \u2192 F:['tc_6_b0']\n  [EXPAND] Promoted truncated leaf at 'repeatedSquareFactor == 0' (cnt=1) \u2192 F:['tc_6_b0']\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 18 test cases generated in 7 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=64\n  round_04/b0  [BATCH_SAFE]  number=1\n  round_04/b1  [BATCH_SAFE]  number=66\n  round_04/b2  [BATCH_SAFE]  number=8\n  round_04/b3  [BATCH_SAFE]  number=68\n  round_04/b4  [BATCH_SAFE]  number=16\n  round_04/b5  [BATCH_SAFE]  number=48\n  round_04/b6  [BATCH_SAFE]  number=80\n  round_05/b0  [BATCH_SAFE]  number=9\n  round_05/b1  [BATCH_SAFE]  number=34\n  round_05/b2  [BATCH_SAFE]  number=42\n  round_05/b3  [BATCH_SAFE]  number=20\n  round_05/b4  [BATCH_SAFE]  number=40\n  round_05/b5  [BATCH_SAFE]  number=100\n  round_05/b6  [BATCH_SAFE]  number=36\n  round_06/b0  [BATCH_SAFE]  number=72\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 25\n  frontier_discovery_time_ms: 177\n  compile_time_ms: 5927\n  java_exec_time_ms: 1046\n  path_log_parse_time_ms: 0\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 2504\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 2507\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/cct_stats.json\n  Counts: nodes=91, leaves=46, covered=18, infeasible=28, out_of_range=0, expanded=47, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedSquareFreeClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M5.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/FSF/BoundedSquareFreeClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedSquareFreeClassifier\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/FSF/BoundedSquareFreeClassifier_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/refined_tbfv_report.json\n  Summary:     testcases=18, fsf_units=3, passed=18, failed=4, skipped=32, unsupported=0\n  CCT marked:  4\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/cct_tbfv_stats.json\n  Counts:      nodes=91, leaves=46, fault_leaves=4, failure_cases=4\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=15, intervals=18, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedSquareFreeClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=18, failed=4, condition_nodes=15, condition_intervals=18\n  Top conditions:\n    #1 score=1.6094 fail=4/4 line=8 divisor * divisor <= number\n    #2 score=1.3863 fail=3/3 line=8 divisor * divisor <= number\n    #3 score=1.3863 fail=3/3 line=9 number % (divisor * divisor) == 0\n  Top intervals:\n    #1 score=1.3979 fail=4/4 line=[8, 9] root.F.F.T.FALSE\n    #2 score=1.2041 fail=3/3 line=[8, 9] root.F.F.T.F.T.FALSE\n    #3 score=0.9542 fail=2/2 line=[8, 9] root.F.F.T.F.T.F.T.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedSquareFreeClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M5.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M5.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  15 raw -> 5 aggregated\n  Intervals[cct_only]: 18 raw -> 6 aggregated\n  Intervals[statement_presence]: 18 raw -> 6 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 18 raw -> 6 aggregated\n  Intervals[edge_divergence_sibling_shared]: 18 raw -> 6 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedSquareFreeClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedSquareFreeClassifier_M5",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M5/BoundedSquareFreeClassifier/fault_localization_eval.json\n  Mutant:    BoundedSquareFreeClassifier_M5\n  Operator:  AOR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n  raw.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=2, top1=miss, top3=hit, top5=hit, top10=hit\n  raw.interval.edge_divergence_sibling_shared: best_rank=18, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.interval.statement_presence: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=1, top1=hit, top3=hit, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=3, top1=miss, top3=hit, top5=hit, top10=hit\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedSquareFreeClassifier:csc",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M6.java",
+        "--mode",
+        "expanded",
+        "--max-iter",
+        "50",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--session",
+        "rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6",
+        "--range-bound",
+        "200"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/testcases.json"
+      ],
+      "stdout_tail": "af at 'repeatedSquareFactor == 0' (cnt=1) \u2192 F:['tc_6_b6']\n  [EXPAND] Promoted truncated leaf at 'repeatedSquareFactor == 0' (cnt=1) \u2192 F:['tc_6_b7']\n  [EXPAND] Promoted truncated leaf at 'divisor * divisor <= number' (cnt=9) \u2192 F:['tc_6_b8']\n  [EXPAND] Promoted truncated leaf at 'repeatedSquareFactor == 0' (cnt=1) \u2192 F:['tc_6_b8']\n  [EXPAND] Promoted truncated leaf at 'repeatedSquareFactor == 0' (cnt=1) \u2192 F:['tc_6_b9']\n  [EXPAND] Promoted truncated leaf at 'number % (divisor * divisor) == 0' (cnt=8) \u2192 F:['tc_6_b10']\n  [EXPAND] Promoted truncated leaf at 'divisor * divisor <= number' (cnt=9) \u2192 F:['tc_6_b10']\n  [EXPAND] Promoted truncated leaf at 'repeatedSquareFactor == 0' (cnt=1) \u2192 F:['tc_6_b10']\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct.dot\n  -> CCT is FULL \u2014 all branches covered!\n\n=======================================================\n  Done! 40 test cases generated in 7 iterations.\n=======================================================\nCCT DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct.dot\n\nGenerated Test Cases:\n---------------------------------------------\n  [BOOTSTRAP]  (bootstrap)\n  round_02/b0  [BATCH_SAFE]  number=16384\n  round_03/b0  [BATCH_SAFE]  number=64\n  round_04/b0  [BATCH_SAFE]  number=1\n  round_04/b1  [BATCH_SAFE]  number=66\n  round_04/b2  [BATCH_SAFE]  number=4\n  round_04/b3  [BATCH_SAFE]  number=12\n  round_04/b4  [BATCH_SAFE]  number=44\n  round_04/b5  [BATCH_SAFE]  number=16\n  round_04/b6  [BATCH_SAFE]  number=32\n  round_04/b7  [BATCH_SAFE]  number=48\n  round_04/b8  [BATCH_SAFE]  number=80\n  round_04/b9  [BATCH_SAFE]  number=72\n  round_05/b0  [BATCH_SAFE]  number=6\n  round_05/b1  [BATCH_SAFE]  number=10\n  round_05/b2  [BATCH_SAFE]  number=19\n  round_05/b3  [BATCH_SAFE]  number=33\n  round_05/b4  [BATCH_SAFE]  number=37\n  round_05/b5  [BATCH_SAFE]  number=53\n  round_05/b6  [BATCH_SAFE]  number=97\n  round_05/b7  [BATCH_SAFE]  number=98\n  round_05/b8  [BATCH_SAFE]  number=50\n  round_05/b9  [BATCH_SAFE]  number=81\n  round_05/b10  [BATCH_SAFE]  number=20\n  round_05/b11  [BATCH_SAFE]  number=28\n  round_05/b12  [BATCH_SAFE]  number=68\n  round_05/b13  [BATCH_SAFE]  number=100\n  round_05/b14  [BATCH_SAFE]  number=96\n  round_05/b15  [BATCH_SAFE]  number=36\n  round_06/b0  [BATCH_SAFE]  number=49\n  round_06/b1  [BATCH_SAFE]  number=25\n  round_06/b2  [BATCH_SAFE]  number=75\n  round_06/b3  [BATCH_SAFE]  number=9\n  round_06/b4  [BATCH_SAFE]  number=18\n  round_06/b5  [BATCH_SAFE]  number=27\n  round_06/b6  [BATCH_SAFE]  number=45\n  round_06/b7  [BATCH_SAFE]  number=54\n  round_06/b8  [BATCH_SAFE]  number=90\n  round_06/b9  [BATCH_SAFE]  number=52\n  round_06/b10  [BATCH_SAFE]  number=84\n\nTiming Summary (ms):\n---------------------------------------------\n  solver_time_ms: 76\n  frontier_discovery_time_ms: 953\n  compile_time_ms: 14978\n  java_exec_time_ms: 2564\n  path_log_parse_time_ms: 0\n  cct_path_build_time_ms: 0\n  cct_merge_time_ms: 0\n  verification_solver_time_ms: 0\n  parallel_exec_wall_time_ms: 5058\n  merge_verify_wall_time_ms: 0\n  batch_total_wall_time_ms: 5060\n\nTest cases written to: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/testcases.json\n\nCCT visualization:\n  DOT: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct.dot\n  Stats: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/cct_stats.json\n  Counts: nodes=265, leaves=133, covered=40, infeasible=93, out_of_range=0, expanded=156, truncated=0\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/render_cct.sh\n  (render later with: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/render_cct.sh)\n\nRun log:\n  JSONL: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/run_log.jsonl\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mutant:BoundedSquareFreeClassifier:refined_tbfv",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier",
+        "--java-file",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M6.java",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/refined_tbfv_report.json",
+        "--fsf",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/FSF/BoundedSquareFreeClassifier_FSF.txt"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/refined_tbfv_report.json"
+      ],
+      "stdout_tail": "TBFV fault DOT saved to: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct_tbfv_fault.dot\nRefined TBFV complete\n  Class:       BoundedSquareFreeClassifier\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier\n  FSF:         /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/BoundedSquareFreeClassifier/FSF/BoundedSquareFreeClassifier_FSF.txt\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/refined_tbfv_report.json\n  Summary:     testcases=40, fsf_units=3, passed=11, failed=29, skipped=80, unsupported=0\n  CCT marked:  29\n  TBFV stats:  csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/cct_tbfv_stats.json\n  Counts:      nodes=265, leaves=133, fault_leaves=29, failure_cases=29\n  Fault DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct_tbfv_fault.dot\n  Localization: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/cct_failure_localization.json\n  Risk DOT:     csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/cct_failure_localization_statement_presence.dot\n  Risk counts:  conditions=118, intervals=146, default_edge_strategy=statement_presence\n  Render script: csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/render_cct.sh\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedSquareFreeClassifier:failure_localization",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_tool.py",
+        "--csc-result-dir",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/cct_failure_localization.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/cct_failure_localization.json"
+      ],
+      "stdout_tail": "Failure localization complete\n  CSC result:  csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier\n  CCT:         csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_cct.pkl\n  Report:      csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/cct_failure_localization.json\n  Risk DOT:    csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/cct_failure_localization_statement_presence.dot\n  Edge strategy: statement_presence\n  Summary:     executed=40, failed=29, condition_nodes=118, condition_intervals=146\n  Top conditions:\n    #1 score=2.8904 fail=17/17 line=8 divisor * divisor <= number\n    #2 score=2.8332 fail=16/16 line=9 number % (divisor * divisor) == 0\n    #3 score=2.7081 fail=14/14 line=8 divisor * divisor <= number\n  Top intervals:\n    #1 score=1.9876 fail=29/38 line=[3, 8] root.F.FALSE\n    #2 score=1.7574 fail=17/17 line=[8, 9] root.F.F.T.TRUE\n    #3 score=1.6902 fail=6/6 line=[8, 9] root.F.F.T.F.T.T.T.FALSE\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedSquareFreeClassifier:failure_localization_aggregate",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/failure_localization_aggregate_tool.py",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/cct_failure_localization.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/cct_failure_localization_aggregated.json",
+        "--source-file",
+        "BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M6.java"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/cct_failure_localization_aggregated.json"
+      ],
+      "stdout_tail": "Failure localization aggregation complete\n  Output:      csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/cct_failure_localization_aggregated.json\n  Source file: BoundedSquareFreeClassifier/BoundedSquareFreeClassifier_M6.java\n  Targets:     condition_node_ranking, interval_rankings.cct_only, interval_rankings.statement_presence, interval_rankings.edge_divergence_sibling_exclusive, interval_rankings.edge_divergence_sibling_shared\n  Conditions:  118 raw -> 5 aggregated\n  Intervals[cct_only]: 146 raw -> 7 aggregated\n  Intervals[statement_presence]: 146 raw -> 7 aggregated\n  Intervals[edge_divergence_sibling_exclusive]: 146 raw -> 7 aggregated\n  Intervals[edge_divergence_sibling_shared]: 146 raw -> 7 aggregated\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "BoundedSquareFreeClassifier:failure_localization_eval",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/evaluate_fault_localization.py",
+        "--manifest",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/dataset/EX_CSC_dataset/mutants_manifest.jsonl",
+        "--mutant-id",
+        "BoundedSquareFreeClassifier_M6",
+        "--report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/cct_failure_localization.json",
+        "--aggregated-report",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/cct_failure_localization_aggregated.json",
+        "--output",
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/fault_localization_eval.json"
+      ],
+      "cwd": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+      "status": "completed",
+      "returncode": 0,
+      "expected_outputs": [
+        "csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/fault_localization_eval.json"
+      ],
+      "stdout_tail": "Fault localization evaluation complete\n  Output:    csc_tmp/rq_ex_csc_dataset_fl_BoundedSquareFreeClassifier_M6/BoundedSquareFreeClassifier/fault_localization_eval.json\n  Mutant:    BoundedSquareFreeClassifier_M6\n  Operator:  CR\n  Fault:     data-flow\n  Top-k:     1, 3, 5, 10\n  raw.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.statement_presence: best_rank=27, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_exclusive: best_rank=48, top1=miss, top3=miss, top5=miss, top10=miss\n  raw.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.condition_node: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.cct_only: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.interval.statement_presence: best_rank=4, top1=miss, top3=miss, top5=hit, top10=hit\n  aggregated.interval.edge_divergence_sibling_exclusive: best_rank=6, top1=miss, top3=miss, top5=miss, top10=hit\n  aggregated.interval.edge_divergence_sibling_shared: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n  aggregated.composite.condition_or_interval: best_rank=-, top1=miss, top3=miss, top5=miss, top10=miss\n",
+      "stderr_tail": ""
+    }
+  ]
+}
