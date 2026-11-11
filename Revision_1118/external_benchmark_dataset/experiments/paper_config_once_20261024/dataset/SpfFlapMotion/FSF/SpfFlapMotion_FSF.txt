@@ -1,0 +1,15 @@
+[fsf_1]
+T: goal < 0 || goal > 40 || position < 0 || position > 40
+D: return_value == -1
+
+[fsf_2]
+T: !(goal < 0 || goal > 40 || position < 0 || position > 40) && ((emergency && (position == 20 || position == 30 || position == 40)))
+D: return_value == 30
+
+[fsf_3]
+T: !(goal < 0 || goal > 40 || position < 0 || position > 40) && ((!emergency && (position == goal || position + 1 == goal || position - 1 == goal)))
+D: return_value == goal
+
+[fsf_4]
+T: !(goal < 0 || goal > 40 || position < 0 || position > 40) && (!(emergency && (position == 20 || position == 30 || position == 40)) && !(!emergency && (position == goal || position + 1 == goal || position - 1 == goal)))
+D: return_value == -2

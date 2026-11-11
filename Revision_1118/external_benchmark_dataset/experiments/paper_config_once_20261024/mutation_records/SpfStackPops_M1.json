@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SpfStackPops_M1",
+  "subject": "SpfStackPops",
+  "operator": "BOR",
+  "fault_kind": "control-flow",
+  "fault_category": "condition",
+  "original_file": "SpfStackPops/SpfStackPops.java",
+  "mutant_file": "SpfStackPops/SpfStackPops_M1.java",
+  "original_location": {
+    "line": 21,
+    "code": "        if (a < 0 || a > 9 || b < 0 || b > 9 || c < 0 || c > 9 || pops < 0 || pops > 4) { return -1; }"
+  },
+  "mutant_location": {
+    "line": 21,
+    "code": "        if (a <= 0 || a > 9 || b < 0 || b > 9 || c < 0 || c > 9 || pops < 0 || pops > 4) { return -1; }"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      938,
+      939
+    ],
+    "from_text": "<",
+    "to_text": "<=",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SpfStackPops/SpfStackPops_M1.java",
+    "primary_line": 21,
+    "acceptable_files": [
+      "SpfStackPops/SpfStackPops_M1.java"
+    ],
+    "acceptable_lines": [
+      21
+    ],
+    "acceptable_line_window": {
+      "start": 21,
+      "end": 21
+    },
+    "operator": "BOR",
+    "fault_category": "condition"
+  },
+  "bound_fsf": "SpfStackPops/FSF/SpfStackPops_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "a1bc48db20b7285970f9af337cd55edc7831fc2d7c7d799cfe258e245d54b414",
+  "mutant_sha256": "c8c1c0e91cf0f3289861950b5127fb2a6323bfd2f79045baafb06cf70a09b91d"
+}

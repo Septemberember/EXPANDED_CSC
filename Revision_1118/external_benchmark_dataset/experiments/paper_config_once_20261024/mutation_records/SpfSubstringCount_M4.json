@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SpfSubstringCount_M4",
+  "subject": "SpfSubstringCount",
+  "operator": "RVR",
+  "fault_kind": "data-flow",
+  "fault_category": "statement",
+  "original_file": "SpfSubstringCount/SpfSubstringCount.java",
+  "mutant_file": "SpfSubstringCount/SpfSubstringCount_M4.java",
+  "original_location": {
+    "line": 25,
+    "code": "return count;"
+  },
+  "mutant_location": {
+    "line": 25,
+    "code": "return (count) + 1;"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      748,
+      753
+    ],
+    "from_text": "count",
+    "to_text": "(count) + 1",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SpfSubstringCount/SpfSubstringCount_M4.java",
+    "primary_line": 25,
+    "acceptable_files": [
+      "SpfSubstringCount/SpfSubstringCount_M4.java"
+    ],
+    "acceptable_lines": [
+      25
+    ],
+    "acceptable_line_window": {
+      "start": 25,
+      "end": 25
+    },
+    "operator": "RVR",
+    "fault_category": "statement"
+  },
+  "bound_fsf": "SpfSubstringCount/FSF/SpfSubstringCount_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "f9f4b44a79fc889d23dc4f3b2fd4193b0a1e3ed717600cd5f6e825f459d20060",
+  "mutant_sha256": "e121d69840518467083524169d3f3279da02fac56fa4fdaec65e4d1a0ef84444"
+}

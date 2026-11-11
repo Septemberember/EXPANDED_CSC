@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SpfDelimiterSearch_M3",
+  "subject": "SpfDelimiterSearch",
+  "operator": "ROR",
+  "fault_kind": "control-flow",
+  "fault_category": "condition",
+  "original_file": "SpfDelimiterSearch/SpfDelimiterSearch.java",
+  "mutant_file": "SpfDelimiterSearch/SpfDelimiterSearch_M3.java",
+  "original_location": {
+    "line": 10,
+    "code": " if (i == 2) { ch = c; }"
+  },
+  "mutant_location": {
+    "line": 10,
+    "code": " if (i != 2) { ch = c; }"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      424,
+      426
+    ],
+    "from_text": "==",
+    "to_text": "!=",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SpfDelimiterSearch/SpfDelimiterSearch_M3.java",
+    "primary_line": 10,
+    "acceptable_files": [
+      "SpfDelimiterSearch/SpfDelimiterSearch_M3.java"
+    ],
+    "acceptable_lines": [
+      10
+    ],
+    "acceptable_line_window": {
+      "start": 10,
+      "end": 10
+    },
+    "operator": "ROR",
+    "fault_category": "condition"
+  },
+  "bound_fsf": "SpfDelimiterSearch/FSF/SpfDelimiterSearch_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "a3903755ad87184ac305147ce5fc5d265c1e9eaf1df141c818c0c2c2d15ff895",
+  "mutant_sha256": "923ebf5e20738fc58e0e73f13ab5ad29c7c7917cbbdf3f73a0aed9dff5fa381e"
+}

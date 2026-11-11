@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SvReplaceAtom_M1",
+  "subject": "SvReplaceAtom",
+  "operator": "BOR",
+  "fault_kind": "control-flow",
+  "fault_category": "condition",
+  "original_file": "SvReplaceAtom/SvReplaceAtom.java",
+  "mutant_file": "SvReplaceAtom/SvReplaceAtom_M1.java",
+  "original_location": {
+    "line": 5,
+    "code": "if (kind < 0 || kind > 3 || ch < 0 || ch > 10 || a < 0 || a > 10 || b < 0 || b > 10 || index < 0 || index > 1) { return -99; }"
+  },
+  "mutant_location": {
+    "line": 5,
+    "code": "if (kind <= 0 || kind > 3 || ch < 0 || ch > 10 || a < 0 || a > 10 || b < 0 || b > 10 || index < 0 || index > 1) { return -99; }"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      314,
+      315
+    ],
+    "from_text": "<",
+    "to_text": "<=",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SvReplaceAtom/SvReplaceAtom_M1.java",
+    "primary_line": 5,
+    "acceptable_files": [
+      "SvReplaceAtom/SvReplaceAtom_M1.java"
+    ],
+    "acceptable_lines": [
+      5
+    ],
+    "acceptable_line_window": {
+      "start": 5,
+      "end": 5
+    },
+    "operator": "BOR",
+    "fault_category": "condition"
+  },
+  "bound_fsf": "SvReplaceAtom/FSF/SvReplaceAtom_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "785ca3623c176ecac2a5919da2cb7aba72b58be6611563b4124fa05a8e23bf84",
+  "mutant_sha256": "8d4ad90e5a1c4a26bf149ef554fa0fa1e6e44699f6f152f49c6ba33461e3740e"
+}

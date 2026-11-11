@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SpfBankWithdrawal_M2",
+  "subject": "SpfBankWithdrawal",
+  "operator": "BOR",
+  "fault_kind": "control-flow",
+  "fault_category": "condition",
+  "original_file": "SpfBankWithdrawal/SpfBankWithdrawal.java",
+  "mutant_file": "SpfBankWithdrawal/SpfBankWithdrawal_M2.java",
+  "original_location": {
+    "line": 23,
+    "code": "if (deposit > 0) { currentBalance = currentBalance + deposit; }"
+  },
+  "mutant_location": {
+    "line": 23,
+    "code": "if (deposit >= 0) { currentBalance = currentBalance + deposit; }"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      1151,
+      1152
+    ],
+    "from_text": ">",
+    "to_text": ">=",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SpfBankWithdrawal/SpfBankWithdrawal_M2.java",
+    "primary_line": 23,
+    "acceptable_files": [
+      "SpfBankWithdrawal/SpfBankWithdrawal_M2.java"
+    ],
+    "acceptable_lines": [
+      23
+    ],
+    "acceptable_line_window": {
+      "start": 23,
+      "end": 23
+    },
+    "operator": "BOR",
+    "fault_category": "condition"
+  },
+  "bound_fsf": "SpfBankWithdrawal/FSF/SpfBankWithdrawal_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "aabe212fa4d201430aa72bdeac432aac8fd235b47643b8ee87d6ec5e598611f7",
+  "mutant_sha256": "73dac76625f28c03db9d237b9900ffb738a8185def98698f9f7d10e890a71df2"
+}

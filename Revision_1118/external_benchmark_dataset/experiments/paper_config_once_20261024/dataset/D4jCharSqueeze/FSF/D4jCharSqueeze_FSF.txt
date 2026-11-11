@@ -1,0 +1,35 @@
+[fsf_1]
+T: a < 1 || a > 3 || b < 1 || b > 3 || c < 1 || c > 3 || d < 1 || d > 3 || low < 1 || low > 3 || high < 1 || high > 3 || low > high
+D: return_value == -99
+
+[fsf_2]
+T: !(a < 1 || a > 3 || b < 1 || b > 3 || c < 1 || c > 3 || d < 1 || d > 3 || low < 1 || low > 3 || high < 1 || high > 3 || low > high) && (!(b == a && b >= low && b <= high) && !(c == b && c >= low && c <= high) && !(d == c && d >= low && d <= high))
+D: return_value == a * 1000 + b * 100 + c * 10 + d * 1
+
+[fsf_3]
+T: !(a < 1 || a > 3 || b < 1 || b > 3 || c < 1 || c > 3 || d < 1 || d > 3 || low < 1 || low > 3 || high < 1 || high > 3 || low > high) && (!(b == a && b >= low && b <= high) && !(c == b && c >= low && c <= high) && (d == c && d >= low && d <= high))
+D: return_value == a * 100 + b * 10 + c * 1
+
+[fsf_4]
+T: !(a < 1 || a > 3 || b < 1 || b > 3 || c < 1 || c > 3 || d < 1 || d > 3 || low < 1 || low > 3 || high < 1 || high > 3 || low > high) && (!(b == a && b >= low && b <= high) && (c == b && c >= low && c <= high) && !(d == c && d >= low && d <= high))
+D: return_value == a * 100 + b * 10 + d * 1
+
+[fsf_5]
+T: !(a < 1 || a > 3 || b < 1 || b > 3 || c < 1 || c > 3 || d < 1 || d > 3 || low < 1 || low > 3 || high < 1 || high > 3 || low > high) && (!(b == a && b >= low && b <= high) && (c == b && c >= low && c <= high) && (d == c && d >= low && d <= high))
+D: return_value == a * 10 + b * 1
+
+[fsf_6]
+T: !(a < 1 || a > 3 || b < 1 || b > 3 || c < 1 || c > 3 || d < 1 || d > 3 || low < 1 || low > 3 || high < 1 || high > 3 || low > high) && ((b == a && b >= low && b <= high) && !(c == b && c >= low && c <= high) && !(d == c && d >= low && d <= high))
+D: return_value == a * 100 + c * 10 + d * 1
+
+[fsf_7]
+T: !(a < 1 || a > 3 || b < 1 || b > 3 || c < 1 || c > 3 || d < 1 || d > 3 || low < 1 || low > 3 || high < 1 || high > 3 || low > high) && ((b == a && b >= low && b <= high) && !(c == b && c >= low && c <= high) && (d == c && d >= low && d <= high))
+D: return_value == a * 10 + c * 1
+
+[fsf_8]
+T: !(a < 1 || a > 3 || b < 1 || b > 3 || c < 1 || c > 3 || d < 1 || d > 3 || low < 1 || low > 3 || high < 1 || high > 3 || low > high) && ((b == a && b >= low && b <= high) && (c == b && c >= low && c <= high) && !(d == c && d >= low && d <= high))
+D: return_value == a * 10 + d * 1
+
+[fsf_9]
+T: !(a < 1 || a > 3 || b < 1 || b > 3 || c < 1 || c > 3 || d < 1 || d > 3 || low < 1 || low > 3 || high < 1 || high > 3 || low > high) && ((b == a && b >= low && b <= high) && (c == b && c >= low && c <= high) && (d == c && d >= low && d <= high))
+D: return_value == a * 1

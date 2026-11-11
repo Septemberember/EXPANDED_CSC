@@ -1,0 +1,52 @@
+{
+  "mutant_id": "D4jLevenshtein23_M5",
+  "subject": "D4jLevenshtein23",
+  "operator": "AOR",
+  "fault_kind": "data-flow",
+  "fault_category": "statement",
+  "original_file": "D4jLevenshtein23/D4jLevenshtein23.java",
+  "mutant_file": "D4jLevenshtein23/D4jLevenshtein23_M5.java",
+  "original_location": {
+    "line": 37,
+    "code": "  if (diagonal + cost < value) { value = diagonal + cost; }"
+  },
+  "mutant_location": {
+    "line": 37,
+    "code": "  if (diagonal + cost < value) { value = diagonal - cost; }"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      1565,
+      1566
+    ],
+    "from_text": "+",
+    "to_text": "-",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "D4jLevenshtein23/D4jLevenshtein23_M5.java",
+    "primary_line": 37,
+    "acceptable_files": [
+      "D4jLevenshtein23/D4jLevenshtein23_M5.java"
+    ],
+    "acceptable_lines": [
+      37
+    ],
+    "acceptable_line_window": {
+      "start": 37,
+      "end": 37
+    },
+    "operator": "AOR",
+    "fault_category": "statement"
+  },
+  "bound_fsf": "D4jLevenshtein23/FSF/D4jLevenshtein23_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "5f35e6f815c25fdc1e485f8c6c8ded5708eeed11b58d610760d5d46a3818dca3",
+  "mutant_sha256": "0301e9b2f04b8c14bfce49a4715bb2b5a503c9769a3d397dc96963b199cc2c26"
+}

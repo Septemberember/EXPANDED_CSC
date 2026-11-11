@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SvBellmanFord3_M2",
+  "subject": "SvBellmanFord3",
+  "operator": "ROR",
+  "fault_kind": "control-flow",
+  "fault_category": "condition",
+  "original_file": "SvBellmanFord3/SvBellmanFord3.java",
+  "mutant_file": "SvBellmanFord3/SvBellmanFord3_M2.java",
+  "original_location": {
+    "line": 56,
+    "code": " if (!relaxed) { return d1 * 10 + d2; }"
+  },
+  "mutant_location": {
+    "line": 56,
+    "code": " if ((!relaxed) == false) { return d1 * 10 + d2; }"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      2607,
+      2615
+    ],
+    "from_text": "!relaxed",
+    "to_text": "(!relaxed) == false",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SvBellmanFord3/SvBellmanFord3_M2.java",
+    "primary_line": 56,
+    "acceptable_files": [
+      "SvBellmanFord3/SvBellmanFord3_M2.java"
+    ],
+    "acceptable_lines": [
+      56
+    ],
+    "acceptable_line_window": {
+      "start": 56,
+      "end": 56
+    },
+    "operator": "ROR",
+    "fault_category": "condition"
+  },
+  "bound_fsf": "SvBellmanFord3/FSF/SvBellmanFord3_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "d356314669c94ad70c0c53a91b6f03632b3cf84fba4b74adb93a8bd20b69bd57",
+  "mutant_sha256": "71de91c44f5556535ca14f50d227647e881f5d194f9947c79031bef948eb8285"
+}

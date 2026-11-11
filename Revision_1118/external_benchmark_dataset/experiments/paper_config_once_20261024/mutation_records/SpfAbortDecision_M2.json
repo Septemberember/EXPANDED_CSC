@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SpfAbortDecision_M2",
+  "subject": "SpfAbortDecision",
+  "operator": "ROR",
+  "fault_kind": "control-flow",
+  "fault_category": "condition",
+  "original_file": "SpfAbortDecision/SpfAbortDecision.java",
+  "mutant_file": "SpfAbortDecision/SpfAbortDecision_M2.java",
+  "original_location": {
+    "line": 25,
+    "code": "if (!fired) { failure = 10; }"
+  },
+  "mutant_location": {
+    "line": 25,
+    "code": "if ((!fired) == false) { failure = 10; }"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      1070,
+      1076
+    ],
+    "from_text": "!fired",
+    "to_text": "(!fired) == false",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SpfAbortDecision/SpfAbortDecision_M2.java",
+    "primary_line": 25,
+    "acceptable_files": [
+      "SpfAbortDecision/SpfAbortDecision_M2.java"
+    ],
+    "acceptable_lines": [
+      25
+    ],
+    "acceptable_line_window": {
+      "start": 25,
+      "end": 25
+    },
+    "operator": "ROR",
+    "fault_category": "condition"
+  },
+  "bound_fsf": "SpfAbortDecision/FSF/SpfAbortDecision_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "0cef8ca392d4f68cadfc4637e7881d77425348422bb6cd1aa956676df6f1f1ff",
+  "mutant_sha256": "5ae3d2bfafbdf5b0d14654832f8ce7684b8bff0cd9a46a57b9478249c1608cbd"
+}

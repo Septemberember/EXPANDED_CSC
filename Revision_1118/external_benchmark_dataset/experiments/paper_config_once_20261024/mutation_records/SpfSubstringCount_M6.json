@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SpfSubstringCount_M6",
+  "subject": "SpfSubstringCount",
+  "operator": "CR",
+  "fault_kind": "data-flow",
+  "fault_category": "statement",
+  "original_file": "SpfSubstringCount/SpfSubstringCount.java",
+  "mutant_file": "SpfSubstringCount/SpfSubstringCount_M6.java",
+  "original_location": {
+    "line": 22,
+    "code": " if (found) { count = count + 1; }"
+  },
+  "mutant_location": {
+    "line": 22,
+    "code": " if (found) { count = count + 2; }"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      722,
+      723
+    ],
+    "from_text": "1",
+    "to_text": "2",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SpfSubstringCount/SpfSubstringCount_M6.java",
+    "primary_line": 22,
+    "acceptable_files": [
+      "SpfSubstringCount/SpfSubstringCount_M6.java"
+    ],
+    "acceptable_lines": [
+      22
+    ],
+    "acceptable_line_window": {
+      "start": 22,
+      "end": 22
+    },
+    "operator": "CR",
+    "fault_category": "statement"
+  },
+  "bound_fsf": "SpfSubstringCount/FSF/SpfSubstringCount_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "f9f4b44a79fc889d23dc4f3b2fd4193b0a1e3ed717600cd5f6e825f459d20060",
+  "mutant_sha256": "39ab3da227418eb5923cf2f9b811b0095c3b093c87fc406d1c2256ef2c8e271b"
+}

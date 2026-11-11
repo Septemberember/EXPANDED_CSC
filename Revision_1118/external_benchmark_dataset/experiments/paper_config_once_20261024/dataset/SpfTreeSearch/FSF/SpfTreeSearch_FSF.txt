@@ -1,0 +1,11 @@
+[fsf_1]
+T: left < 0 || root <= left || right <= root || right > 9 || key < 0 || key > 9
+D: return_value == -1
+
+[fsf_2]
+T: !(left < 0 || root <= left || right <= root || right > 9 || key < 0 || key > 9) && ((key == left || key == root || key == right))
+D: return_value == 1
+
+[fsf_3]
+T: !(left < 0 || root <= left || right <= root || right > 9 || key < 0 || key > 9) && (!(key == left || key == root || key == right))
+D: return_value == 0

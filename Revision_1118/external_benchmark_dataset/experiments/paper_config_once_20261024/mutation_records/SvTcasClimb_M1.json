@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SvTcasClimb_M1",
+  "subject": "SvTcasClimb",
+  "operator": "BOR",
+  "fault_kind": "control-flow",
+  "fault_category": "condition",
+  "original_file": "SvTcasClimb/SvTcasClimb.java",
+  "mutant_file": "SvTcasClimb/SvTcasClimb_M1.java",
+  "original_location": {
+    "line": 5,
+    "code": "if (layer < 0 || layer > 3 || upDelta < -2 || upDelta > 2 || downDelta < -2 || downDelta > 2 || separation < 0 || separation > 2) { return -99; }"
+  },
+  "mutant_location": {
+    "line": 5,
+    "code": "if (layer <= 0 || layer > 3 || upDelta < -2 || upDelta > 2 || downDelta < -2 || downDelta > 2 || separation < 0 || separation > 2) { return -99; }"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      345,
+      346
+    ],
+    "from_text": "<",
+    "to_text": "<=",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SvTcasClimb/SvTcasClimb_M1.java",
+    "primary_line": 5,
+    "acceptable_files": [
+      "SvTcasClimb/SvTcasClimb_M1.java"
+    ],
+    "acceptable_lines": [
+      5
+    ],
+    "acceptable_line_window": {
+      "start": 5,
+      "end": 5
+    },
+    "operator": "BOR",
+    "fault_category": "condition"
+  },
+  "bound_fsf": "SvTcasClimb/FSF/SvTcasClimb_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "2109853e947a318de19ad8c9461166f5539d5ea0ffdc940bd2537a3319c0da75",
+  "mutant_sha256": "ad3c7f093f2e548150e113c4bb794cf4b95a4e7bae1de4c543a948678396cff2"
+}

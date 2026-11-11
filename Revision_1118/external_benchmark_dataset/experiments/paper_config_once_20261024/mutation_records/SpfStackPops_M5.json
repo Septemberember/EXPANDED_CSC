@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SpfStackPops_M5",
+  "subject": "SpfStackPops",
+  "operator": "RVR",
+  "fault_kind": "data-flow",
+  "fault_category": "statement",
+  "original_file": "SpfStackPops/SpfStackPops.java",
+  "mutant_file": "SpfStackPops/SpfStackPops_M5.java",
+  "original_location": {
+    "line": 26,
+    "code": " if (depth == 0) { return -2; }"
+  },
+  "mutant_location": {
+    "line": 26,
+    "code": " if (depth == 0) { return (-2) + 1; }"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      1114,
+      1116
+    ],
+    "from_text": "-2",
+    "to_text": "(-2) + 1",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SpfStackPops/SpfStackPops_M5.java",
+    "primary_line": 26,
+    "acceptable_files": [
+      "SpfStackPops/SpfStackPops_M5.java"
+    ],
+    "acceptable_lines": [
+      26
+    ],
+    "acceptable_line_window": {
+      "start": 26,
+      "end": 26
+    },
+    "operator": "RVR",
+    "fault_category": "statement"
+  },
+  "bound_fsf": "SpfStackPops/FSF/SpfStackPops_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "a1bc48db20b7285970f9af337cd55edc7831fc2d7c7d799cfe258e245d54b414",
+  "mutant_sha256": "f411ee3c27899863d873cdf808bde49bee26dbeb2fe4666b126702d30aa26a21"
+}

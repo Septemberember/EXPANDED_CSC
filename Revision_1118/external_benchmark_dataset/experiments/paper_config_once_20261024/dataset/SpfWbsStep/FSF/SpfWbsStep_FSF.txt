@@ -1,0 +1,163 @@
+[fsf_1]
+T: PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5
+D: return_value == -1
+
+[fsf_2]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 0 && !AutoBrake && !Skid && !(prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 0
+
+[fsf_3]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 0 && !AutoBrake && !Skid && (prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 100
+
+[fsf_4]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 0 && !AutoBrake && Skid && !(prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 0
+
+[fsf_5]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 0 && !AutoBrake && Skid && (prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 100
+
+[fsf_6]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 0 && AutoBrake && !Skid && !(prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 1
+
+[fsf_7]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 0 && AutoBrake && !Skid && (prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 100
+
+[fsf_8]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 0 && AutoBrake && Skid && !(prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 0
+
+[fsf_9]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 0 && AutoBrake && Skid && (prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 100
+
+[fsf_10]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 1 && !AutoBrake && !Skid && !(prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 1
+
+[fsf_11]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 1 && !AutoBrake && !Skid && (prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 110
+
+[fsf_12]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 1 && !AutoBrake && Skid && !(prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 0
+
+[fsf_13]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 1 && !AutoBrake && Skid && (prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 100
+
+[fsf_14]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 1 && AutoBrake && !Skid && !(prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 2
+
+[fsf_15]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 1 && AutoBrake && !Skid && (prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 110
+
+[fsf_16]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 1 && AutoBrake && Skid && !(prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 0
+
+[fsf_17]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 1 && AutoBrake && Skid && (prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 100
+
+[fsf_18]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 2 && !AutoBrake && !Skid && !(prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 2
+
+[fsf_19]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 2 && !AutoBrake && !Skid && (prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 120
+
+[fsf_20]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 2 && !AutoBrake && Skid && !(prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 0
+
+[fsf_21]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 2 && !AutoBrake && Skid && (prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 100
+
+[fsf_22]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 2 && AutoBrake && !Skid && !(prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 3
+
+[fsf_23]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 2 && AutoBrake && !Skid && (prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 120
+
+[fsf_24]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 2 && AutoBrake && Skid && !(prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 0
+
+[fsf_25]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 2 && AutoBrake && Skid && (prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 100
+
+[fsf_26]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 3 && !AutoBrake && !Skid && !(prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 3
+
+[fsf_27]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 3 && !AutoBrake && !Skid && (prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 130
+
+[fsf_28]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 3 && !AutoBrake && Skid && !(prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 0
+
+[fsf_29]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 3 && !AutoBrake && Skid && (prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 100
+
+[fsf_30]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 3 && AutoBrake && !Skid && !(prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 5
+
+[fsf_31]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 3 && AutoBrake && !Skid && (prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 130
+
+[fsf_32]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 3 && AutoBrake && Skid && !(prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 0
+
+[fsf_33]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 3 && AutoBrake && Skid && (prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 100
+
+[fsf_34]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 4 && !AutoBrake && !Skid && !(prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 5
+
+[fsf_35]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 4 && !AutoBrake && !Skid && (prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 150
+
+[fsf_36]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 4 && !AutoBrake && Skid && !(prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 0
+
+[fsf_37]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 4 && !AutoBrake && Skid && (prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 100
+
+[fsf_38]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 4 && AutoBrake && !Skid && !(prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 5
+
+[fsf_39]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 4 && AutoBrake && !Skid && (prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 150
+
+[fsf_40]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 4 && AutoBrake && Skid && !(prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 0
+
+[fsf_41]
+T: !(PedalPos < 0 || PedalPos > 4 || prevMode < 0 || prevMode > 1 || prevCommand < 0 || prevCommand > 4 || prevPressure < 0 || prevPressure > 5) && (PedalPos == 4 && AutoBrake && Skid && (prevMode != 0 || (prevCommand != 0 && prevPressure <= 0)))
+D: return_value == 100

@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SvReplaceAtom_M4",
+  "subject": "SvReplaceAtom",
+  "operator": "RVR",
+  "fault_kind": "data-flow",
+  "fault_category": "statement",
+  "original_file": "SvReplaceAtom/SvReplaceAtom.java",
+  "mutant_file": "SvReplaceAtom/SvReplaceAtom_M4.java",
+  "original_location": {
+    "line": 24,
+    "code": "return -1;"
+  },
+  "mutant_location": {
+    "line": 24,
+    "code": "return (-1) + 1;"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      916,
+      918
+    ],
+    "from_text": "-1",
+    "to_text": "(-1) + 1",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SvReplaceAtom/SvReplaceAtom_M4.java",
+    "primary_line": 24,
+    "acceptable_files": [
+      "SvReplaceAtom/SvReplaceAtom_M4.java"
+    ],
+    "acceptable_lines": [
+      24
+    ],
+    "acceptable_line_window": {
+      "start": 24,
+      "end": 24
+    },
+    "operator": "RVR",
+    "fault_category": "statement"
+  },
+  "bound_fsf": "SvReplaceAtom/FSF/SvReplaceAtom_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "785ca3623c176ecac2a5919da2cb7aba72b58be6611563b4124fa05a8e23bf84",
+  "mutant_sha256": "9bba0b1b3aaa4b3a084967c4597af5154490e5a08591bcb5b9d55092689877d2"
+}

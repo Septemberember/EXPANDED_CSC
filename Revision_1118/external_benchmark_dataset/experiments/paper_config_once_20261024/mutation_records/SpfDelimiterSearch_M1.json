@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SpfDelimiterSearch_M1",
+  "subject": "SpfDelimiterSearch",
+  "operator": "BOR",
+  "fault_kind": "control-flow",
+  "fault_category": "condition",
+  "original_file": "SpfDelimiterSearch/SpfDelimiterSearch.java",
+  "mutant_file": "SpfDelimiterSearch/SpfDelimiterSearch_M1.java",
+  "original_location": {
+    "line": 5,
+    "code": "        if (a < 0 || a > 9 || b < 0 || b > 9 || c < 0 || c > 9 || d < 0 || d > 9 || e < 0 || e > 9) { return -1; }"
+  },
+  "mutant_location": {
+    "line": 5,
+    "code": "        if (a <= 0 || a > 9 || b < 0 || b > 9 || c < 0 || c > 9 || d < 0 || d > 9 || e < 0 || e > 9) { return -1; }"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      251,
+      252
+    ],
+    "from_text": "<",
+    "to_text": "<=",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SpfDelimiterSearch/SpfDelimiterSearch_M1.java",
+    "primary_line": 5,
+    "acceptable_files": [
+      "SpfDelimiterSearch/SpfDelimiterSearch_M1.java"
+    ],
+    "acceptable_lines": [
+      5
+    ],
+    "acceptable_line_window": {
+      "start": 5,
+      "end": 5
+    },
+    "operator": "BOR",
+    "fault_category": "condition"
+  },
+  "bound_fsf": "SpfDelimiterSearch/FSF/SpfDelimiterSearch_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "a3903755ad87184ac305147ce5fc5d265c1e9eaf1df141c818c0c2c2d15ff895",
+  "mutant_sha256": "d08357af454a504f160ac08a011554b5d93894f8afbd7a1043a660a2dd610374"
+}

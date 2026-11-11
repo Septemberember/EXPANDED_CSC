@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SpfSortedInsertion_M1",
+  "subject": "SpfSortedInsertion",
+  "operator": "BOR",
+  "fault_kind": "control-flow",
+  "fault_category": "condition",
+  "original_file": "SpfSortedInsertion/SpfSortedInsertion.java",
+  "mutant_file": "SpfSortedInsertion/SpfSortedInsertion_M1.java",
+  "original_location": {
+    "line": 21,
+    "code": "        if (a < 0 || a > 9 || b < a || b > 9 || c < b || c > 9 || value < 0 || value > 9) { return -1; }"
+  },
+  "mutant_location": {
+    "line": 21,
+    "code": "        if (a <= 0 || a > 9 || b < a || b > 9 || c < b || c > 9 || value < 0 || value > 9) { return -1; }"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      945,
+      946
+    ],
+    "from_text": "<",
+    "to_text": "<=",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SpfSortedInsertion/SpfSortedInsertion_M1.java",
+    "primary_line": 21,
+    "acceptable_files": [
+      "SpfSortedInsertion/SpfSortedInsertion_M1.java"
+    ],
+    "acceptable_lines": [
+      21
+    ],
+    "acceptable_line_window": {
+      "start": 21,
+      "end": 21
+    },
+    "operator": "BOR",
+    "fault_category": "condition"
+  },
+  "bound_fsf": "SpfSortedInsertion/FSF/SpfSortedInsertion_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "9119056001e84b4f878830e7052f87f17a96ae1235c62518af89d5bc4f701b45",
+  "mutant_sha256": "e8e5e315e7c4ad69c0e30e5a84f67a2a5a325c80b5b38d0c52773845a45a3e7b"
+}

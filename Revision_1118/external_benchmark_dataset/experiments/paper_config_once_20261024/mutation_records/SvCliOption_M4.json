@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SvCliOption_M4",
+  "subject": "SvCliOption",
+  "operator": "RVR",
+  "fault_kind": "data-flow",
+  "fault_category": "statement",
+  "original_file": "SvCliOption/SvCliOption.java",
+  "mutant_file": "SvCliOption/SvCliOption_M4.java",
+  "original_location": {
+    "line": 17,
+    "code": "return 1;"
+  },
+  "mutant_location": {
+    "line": 17,
+    "code": "return (1) + 1;"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      637,
+      638
+    ],
+    "from_text": "1",
+    "to_text": "(1) + 1",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SvCliOption/SvCliOption_M4.java",
+    "primary_line": 17,
+    "acceptable_files": [
+      "SvCliOption/SvCliOption_M4.java"
+    ],
+    "acceptable_lines": [
+      17
+    ],
+    "acceptable_line_window": {
+      "start": 17,
+      "end": 17
+    },
+    "operator": "RVR",
+    "fault_category": "statement"
+  },
+  "bound_fsf": "SvCliOption/FSF/SvCliOption_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "5c42a7e324218f42a5b439ba732a8f565d70569bda51afba6b3b9a8edc8ac834",
+  "mutant_sha256": "2695df6f68459271f6aa8db91a31edf1b704600dfa921ce6be87281b410ed646"
+}

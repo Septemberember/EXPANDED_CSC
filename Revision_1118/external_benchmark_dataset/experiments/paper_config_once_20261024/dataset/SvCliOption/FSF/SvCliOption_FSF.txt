@@ -1,0 +1,11 @@
+[fsf_1]
+T: code < 0 || code > 127
+D: return_value == -99
+
+[fsf_2]
+T: !(code < 0 || code > 127) && (((code >= 97 && code <= 122) || (code >= 65 && code <= 90) || code == 95 || code == 46 || code == 32 || code == 63 || code == 64))
+D: return_value == 1
+
+[fsf_3]
+T: !(code < 0 || code > 127) && (!((code >= 97 && code <= 122) || (code >= 65 && code <= 90) || code == 95 || code == 46 || code == 32 || code == 63 || code == 64))
+D: return_value == -1

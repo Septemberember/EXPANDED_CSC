@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SpfSortedInsertion_M5",
+  "subject": "SpfSortedInsertion",
+  "operator": "RVR",
+  "fault_kind": "data-flow",
+  "fault_category": "statement",
+  "original_file": "SpfSortedInsertion/SpfSortedInsertion.java",
+  "mutant_file": "SpfSortedInsertion/SpfSortedInsertion_M5.java",
+  "original_location": {
+    "line": 31,
+    "code": "if (cursor == 2) { return a * 1000 + b * 100 + value * 10 + c; }"
+  },
+  "mutant_location": {
+    "line": 31,
+    "code": "if (cursor == 2) { return (a * 1000 + b * 100 + value * 10 + c) + 1; }"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      1348,
+      1383
+    ],
+    "from_text": "a * 1000 + b * 100 + value * 10 + c",
+    "to_text": "(a * 1000 + b * 100 + value * 10 + c) + 1",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SpfSortedInsertion/SpfSortedInsertion_M5.java",
+    "primary_line": 31,
+    "acceptable_files": [
+      "SpfSortedInsertion/SpfSortedInsertion_M5.java"
+    ],
+    "acceptable_lines": [
+      31
+    ],
+    "acceptable_line_window": {
+      "start": 31,
+      "end": 31
+    },
+    "operator": "RVR",
+    "fault_category": "statement"
+  },
+  "bound_fsf": "SpfSortedInsertion/FSF/SpfSortedInsertion_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "9119056001e84b4f878830e7052f87f17a96ae1235c62518af89d5bc4f701b45",
+  "mutant_sha256": "6515564552cc28f8b3985a1a23abca43c94d682f3f1ac28be15ac7a0107fcd57"
+}

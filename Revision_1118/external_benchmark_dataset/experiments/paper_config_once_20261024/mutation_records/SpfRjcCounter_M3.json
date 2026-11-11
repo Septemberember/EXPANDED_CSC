@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SpfRjcCounter_M3",
+  "subject": "SpfRjcCounter",
+  "operator": "ROR",
+  "fault_kind": "control-flow",
+  "fault_category": "condition",
+  "original_file": "SpfRjcCounter/SpfRjcCounter.java",
+  "mutant_file": "SpfRjcCounter/SpfRjcCounter_M3.java",
+  "original_location": {
+    "line": 28,
+    "code": "  if (active == 1) {"
+  },
+  "mutant_location": {
+    "line": 28,
+    "code": "  if (active != 1) {"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      1079,
+      1081
+    ],
+    "from_text": "==",
+    "to_text": "!=",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SpfRjcCounter/SpfRjcCounter_M3.java",
+    "primary_line": 28,
+    "acceptable_files": [
+      "SpfRjcCounter/SpfRjcCounter_M3.java"
+    ],
+    "acceptable_lines": [
+      28
+    ],
+    "acceptable_line_window": {
+      "start": 28,
+      "end": 28
+    },
+    "operator": "ROR",
+    "fault_category": "condition"
+  },
+  "bound_fsf": "SpfRjcCounter/FSF/SpfRjcCounter_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "a8e5fd77d62ecef51ad450631dead8fd04be1d5459d1e532081d2bcc46cd3ab8",
+  "mutant_sha256": "a6f3bfb7839ad923904a13e921c592d5c8f5eb6d7d8184462ce807bd0996df2b"
+}

@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SpfWbsStep_M5",
+  "subject": "SpfWbsStep",
+  "operator": "AOR",
+  "fault_kind": "data-flow",
+  "fault_category": "statement",
+  "original_file": "SpfWbsStep/SpfWbsStep.java",
+  "mutant_file": "SpfWbsStep/SpfWbsStep_M5.java",
+  "original_location": {
+    "line": 212,
+    "code": "\t\t\t\t      Alt_Pressure = ((WBS_Node_WBS_AS_MeterValve_Switch / 4) * 3);"
+  },
+  "mutant_location": {
+    "line": 212,
+    "code": "\t\t\t\t      Alt_Pressure = ((WBS_Node_WBS_AS_MeterValve_Switch / 4) + 3);"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      8076,
+      8077
+    ],
+    "from_text": "*",
+    "to_text": "+",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SpfWbsStep/SpfWbsStep_M5.java",
+    "primary_line": 212,
+    "acceptable_files": [
+      "SpfWbsStep/SpfWbsStep_M5.java"
+    ],
+    "acceptable_lines": [
+      212
+    ],
+    "acceptable_line_window": {
+      "start": 212,
+      "end": 212
+    },
+    "operator": "AOR",
+    "fault_category": "statement"
+  },
+  "bound_fsf": "SpfWbsStep/FSF/SpfWbsStep_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "7f1b41fe8900f9218a35eb70217826dad59eeaa4945bc224fb63e2e38bae8fe0",
+  "mutant_sha256": "c0f4ff7f12f661b19de9fe5b3306b0b2e71653fa3e5a9b2da1ac12bf9813f16a"
+}

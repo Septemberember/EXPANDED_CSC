@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SpfTreeSearch_M1",
+  "subject": "SpfTreeSearch",
+  "operator": "BOR",
+  "fault_kind": "control-flow",
+  "fault_category": "condition",
+  "original_file": "SpfTreeSearch/SpfTreeSearch.java",
+  "mutant_file": "SpfTreeSearch/SpfTreeSearch_M1.java",
+  "original_location": {
+    "line": 21,
+    "code": "        if (left < 0 || root <= left || right <= root || right > 9 || key < 0 || key > 9) { return -1; }"
+  },
+  "mutant_location": {
+    "line": 21,
+    "code": "        if (left <= 0 || root <= left || right <= root || right > 9 || key < 0 || key > 9) { return -1; }"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      951,
+      952
+    ],
+    "from_text": "<",
+    "to_text": "<=",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SpfTreeSearch/SpfTreeSearch_M1.java",
+    "primary_line": 21,
+    "acceptable_files": [
+      "SpfTreeSearch/SpfTreeSearch_M1.java"
+    ],
+    "acceptable_lines": [
+      21
+    ],
+    "acceptable_line_window": {
+      "start": 21,
+      "end": 21
+    },
+    "operator": "BOR",
+    "fault_category": "condition"
+  },
+  "bound_fsf": "SpfTreeSearch/FSF/SpfTreeSearch_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "eb47f41512c2db3461cbb1789a79e53f9066de24e73a888da60178919114679f",
+  "mutant_sha256": "b0030700e2df0da48432dddb30d138b2aaf8e87a56d23bb6763e2874ef92e305"
+}

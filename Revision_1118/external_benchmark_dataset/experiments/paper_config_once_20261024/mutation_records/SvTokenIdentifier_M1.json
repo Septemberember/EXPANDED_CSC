@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SvTokenIdentifier_M1",
+  "subject": "SvTokenIdentifier",
+  "operator": "BOR",
+  "fault_kind": "control-flow",
+  "fault_category": "condition",
+  "original_file": "SvTokenIdentifier/SvTokenIdentifier.java",
+  "mutant_file": "SvTokenIdentifier/SvTokenIdentifier_M1.java",
+  "original_location": {
+    "line": 5,
+    "code": "if (a < 32 || a > 126 || b < 32 || b > 126 || c < 32 || c > 126) { return -99; }"
+  },
+  "mutant_location": {
+    "line": 5,
+    "code": "if (a <= 32 || a > 126 || b < 32 || b > 126 || c < 32 || c > 126) { return -99; }"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      301,
+      302
+    ],
+    "from_text": "<",
+    "to_text": "<=",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SvTokenIdentifier/SvTokenIdentifier_M1.java",
+    "primary_line": 5,
+    "acceptable_files": [
+      "SvTokenIdentifier/SvTokenIdentifier_M1.java"
+    ],
+    "acceptable_lines": [
+      5
+    ],
+    "acceptable_line_window": {
+      "start": 5,
+      "end": 5
+    },
+    "operator": "BOR",
+    "fault_category": "condition"
+  },
+  "bound_fsf": "SvTokenIdentifier/FSF/SvTokenIdentifier_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "d9d06e0c81a28ba555c08974ee51aca0f10466ed44684ca838ffc2091f7be6b5",
+  "mutant_sha256": "1f501c0ac8dc4c8f1f74f3dac29b085ff47b94385d6559ef9c78b79edeaaea6d"
+}

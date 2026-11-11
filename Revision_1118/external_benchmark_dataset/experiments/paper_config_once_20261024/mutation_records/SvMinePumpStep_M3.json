@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SvMinePumpStep_M3",
+  "subject": "SvMinePumpStep",
+  "operator": "LOR",
+  "fault_kind": "control-flow",
+  "fault_category": "condition",
+  "original_file": "SvMinePumpStep/SvMinePumpStep.java",
+  "mutant_file": "SvMinePumpStep/SvMinePumpStep_M3.java",
+  "original_location": {
+    "line": 12,
+    "code": " if (pump && methane) { pump = false; }"
+  },
+  "mutant_location": {
+    "line": 12,
+    "code": " if (pump || methane) { pump = false; }"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      521,
+      523
+    ],
+    "from_text": "&&",
+    "to_text": "||",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SvMinePumpStep/SvMinePumpStep_M3.java",
+    "primary_line": 12,
+    "acceptable_files": [
+      "SvMinePumpStep/SvMinePumpStep_M3.java"
+    ],
+    "acceptable_lines": [
+      12
+    ],
+    "acceptable_line_window": {
+      "start": 12,
+      "end": 12
+    },
+    "operator": "LOR",
+    "fault_category": "condition"
+  },
+  "bound_fsf": "SvMinePumpStep/FSF/SvMinePumpStep_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "c99eb8e72a2dd29839425d2c423e621ea657cad1cc4259977fcb4001845fc38b",
+  "mutant_sha256": "bef47a2f1cd65478905bd4bfe95c5102ff27c79c58c8c1afa9da2f25ee33f767"
+}

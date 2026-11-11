@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SpfAbortDecision_M5",
+  "subject": "SpfAbortDecision",
+  "operator": "RVR",
+  "fault_kind": "data-flow",
+  "fault_category": "statement",
+  "original_file": "SpfAbortDecision/SpfAbortDecision.java",
+  "mutant_file": "SpfAbortDecision/SpfAbortDecision_M5.java",
+  "original_location": {
+    "line": 31,
+    "code": " if (selected) { return -2; }"
+  },
+  "mutant_location": {
+    "line": 31,
+    "code": " if (selected) { return (-2) + 1; }"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      1241,
+      1243
+    ],
+    "from_text": "-2",
+    "to_text": "(-2) + 1",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SpfAbortDecision/SpfAbortDecision_M5.java",
+    "primary_line": 31,
+    "acceptable_files": [
+      "SpfAbortDecision/SpfAbortDecision_M5.java"
+    ],
+    "acceptable_lines": [
+      31
+    ],
+    "acceptable_line_window": {
+      "start": 31,
+      "end": 31
+    },
+    "operator": "RVR",
+    "fault_category": "statement"
+  },
+  "bound_fsf": "SpfAbortDecision/FSF/SpfAbortDecision_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "0cef8ca392d4f68cadfc4637e7881d77425348422bb6cd1aa956676df6f1f1ff",
+  "mutant_sha256": "1d64473c974188f26d760a46edb31d474019e363d2de4d58eb7fc4741919cbbc"
+}

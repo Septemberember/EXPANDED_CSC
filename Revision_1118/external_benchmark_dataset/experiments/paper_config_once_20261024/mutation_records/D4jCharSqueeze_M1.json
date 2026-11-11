@@ -1,0 +1,52 @@
+{
+  "mutant_id": "D4jCharSqueeze_M1",
+  "subject": "D4jCharSqueeze",
+  "operator": "BOR",
+  "fault_kind": "control-flow",
+  "fault_category": "condition",
+  "original_file": "D4jCharSqueeze/D4jCharSqueeze.java",
+  "mutant_file": "D4jCharSqueeze/D4jCharSqueeze_M1.java",
+  "original_location": {
+    "line": 20,
+    "code": "if (a < 1 || a > 3 || b < 1 || b > 3 || c < 1 || c > 3 || d < 1 || d > 3 || low < 1 || low > 3 || high < 1 || high > 3 || low > high) { return -99; }"
+  },
+  "mutant_location": {
+    "line": 20,
+    "code": "if (a <= 1 || a > 3 || b < 1 || b > 3 || c < 1 || c > 3 || d < 1 || d > 3 || low < 1 || low > 3 || high < 1 || high > 3 || low > high) { return -99; }"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      985,
+      986
+    ],
+    "from_text": "<",
+    "to_text": "<=",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "D4jCharSqueeze/D4jCharSqueeze_M1.java",
+    "primary_line": 20,
+    "acceptable_files": [
+      "D4jCharSqueeze/D4jCharSqueeze_M1.java"
+    ],
+    "acceptable_lines": [
+      20
+    ],
+    "acceptable_line_window": {
+      "start": 20,
+      "end": 20
+    },
+    "operator": "BOR",
+    "fault_category": "condition"
+  },
+  "bound_fsf": "D4jCharSqueeze/FSF/D4jCharSqueeze_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "6e5935a4f36a131c832b1c7fc6be745f51dff8b1b26fb9a8c79743e15effaa2d",
+  "mutant_sha256": "260e02162c02476b6368cf6a88d108035819c48e03893312c9074963476779f4"
+}

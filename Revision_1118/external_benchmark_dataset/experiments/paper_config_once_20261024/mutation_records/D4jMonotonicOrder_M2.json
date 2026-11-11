@@ -1,0 +1,52 @@
+{
+  "mutant_id": "D4jMonotonicOrder_M2",
+  "subject": "D4jMonotonicOrder",
+  "operator": "ROR",
+  "fault_kind": "control-flow",
+  "fault_category": "condition",
+  "original_file": "D4jMonotonicOrder/D4jMonotonicOrder.java",
+  "mutant_file": "D4jMonotonicOrder/D4jMonotonicOrder_M2.java",
+  "original_location": {
+    "line": 25,
+    "code": " if (i == 2) { value = c; }"
+  },
+  "mutant_location": {
+    "line": 25,
+    "code": " if (i != 2) { value = c; }"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      1133,
+      1135
+    ],
+    "from_text": "==",
+    "to_text": "!=",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "D4jMonotonicOrder/D4jMonotonicOrder_M2.java",
+    "primary_line": 25,
+    "acceptable_files": [
+      "D4jMonotonicOrder/D4jMonotonicOrder_M2.java"
+    ],
+    "acceptable_lines": [
+      25
+    ],
+    "acceptable_line_window": {
+      "start": 25,
+      "end": 25
+    },
+    "operator": "ROR",
+    "fault_category": "condition"
+  },
+  "bound_fsf": "D4jMonotonicOrder/FSF/D4jMonotonicOrder_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "248d71f8101481bdfa2b4fb221d4c09186424cedc1c08f2b081b9ed5bcdd5531",
+  "mutant_sha256": "13af383cee128bef08dc2a66250e896b2f352cdc28d1f59e70c7e77c09a2fe46"
+}

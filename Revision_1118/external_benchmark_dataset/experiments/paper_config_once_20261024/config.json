@@ -1,0 +1,73 @@
+{
+  "subject_count": 20,
+  "repeats": 1,
+  "range_bound": 200,
+  "bootstrap": "tool default, as in original experiment commands; no per-subject override",
+  "rq1_completion": {
+    "strategy": "sequential",
+    "max_iter": 2000,
+    "modes": [
+      "original",
+      "expanded"
+    ]
+  },
+  "rq1_mutant_killing": {
+    "strategy": "batch",
+    "workers": 4,
+    "max_iter": 100,
+    "modes": [
+      "original",
+      "expanded"
+    ],
+    "scope": "loop-bearing subjects for aggregate; loop-free also recorded"
+  },
+  "rq2": {
+    "strategy": "batch",
+    "max_iter": 100,
+    "mode": "expanded",
+    "workers": [
+      1,
+      2,
+      4,
+      8
+    ]
+  },
+  "rq3": {
+    "generation": "reuse expanded mutant batch-W4-R100 evidence",
+    "score": "coverage_x_purity (paper Eq. folded-risk and archived paper_sources/rq3/*_budget_rows.csv)",
+    "top_k": [
+      1,
+      2,
+      3
+    ],
+    "sbfl": [
+      "ochiai",
+      "dstar",
+      "tarantula",
+      "barinel",
+      "op2"
+    ],
+    "budget": "same union of top-k condition nodes and edge-partition statement lines; same source-line budget for SBFL"
+  },
+  "timeouts": {
+    "generation_s": 240,
+    "postprocess_s": 180
+  },
+  "mutants_per_subject": 6,
+  "policy": "one attempt per configured cell; on error/timeout/partial, record and skip dependent steps; no subject/FSF/tool repair or tuning",
+  "tool_root": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED",
+  "host": "macOS-15.5-arm64-arm-64bit-Mach-O",
+  "python": "3.13.3 (v3.13.3:6280bb54784, Apr  8 2025, 10:47:54) [Clang 15.0.0 (clang-1500.3.9.4)]",
+  "java": "openjdk version \"17.0.15\" 2025-04-15 LTS\nOpenJDK Runtime Environment Microsoft-11369864 (build 17.0.15+6-LTS)\nOpenJDK 64-Bit Server VM Microsoft-11369864 (build 17.0.15+6-LTS, mixed mode, sharing)\n",
+  "source_references": [
+    "JSS2026/overleaf/main.tex:2100-2145,2375-2405",
+    "project/CSC_EXPANDED/experiments/EX_CSC_dataset/CORE_rerun/experiment_config.json",
+    "project/CSC_EXPANDED/experiments/EX_CSC_dataset/rq_extension_b/RQ2-parallel/experiment_config.json"
+  ],
+  "tool_sha256": {
+    "csc_tool.py": "11fa3e4df163e945615cf20887a1c2175e201f07909976806ec15fbb6579ea60",
+    "refined_tbfv_tool.py": "7fb9ba05b0f9c87ee4d602b6349685a1ecc7140c0431bb2f37c1f0561bc0d2e0",
+    "csc_engine/cct.py": "6c77dba97f20b4bf8bffaf88024aece313a78c512d6cfda313a9beb48f323025",
+    "csc_engine/z3_helpers.py": "d4086e21587f6a15728ca1621dcb4728e77d368ae3bb95d9c765680c5b4d5d34"
+  }
+}

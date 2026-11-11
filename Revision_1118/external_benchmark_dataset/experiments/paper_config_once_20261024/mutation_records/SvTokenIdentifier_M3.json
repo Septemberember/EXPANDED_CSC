@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SvTokenIdentifier_M3",
+  "subject": "SvTokenIdentifier",
+  "operator": "ROR",
+  "fault_kind": "control-flow",
+  "fault_category": "condition",
+  "original_file": "SvTokenIdentifier/SvTokenIdentifier.java",
+  "mutant_file": "SvTokenIdentifier/SvTokenIdentifier_M3.java",
+  "original_location": {
+    "line": 11,
+    "code": "  if (i == 2) { ch = c; }"
+  },
+  "mutant_location": {
+    "line": 11,
+    "code": "  if (i != 2) { ch = c; }"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      506,
+      508
+    ],
+    "from_text": "==",
+    "to_text": "!=",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SvTokenIdentifier/SvTokenIdentifier_M3.java",
+    "primary_line": 11,
+    "acceptable_files": [
+      "SvTokenIdentifier/SvTokenIdentifier_M3.java"
+    ],
+    "acceptable_lines": [
+      11
+    ],
+    "acceptable_line_window": {
+      "start": 11,
+      "end": 11
+    },
+    "operator": "ROR",
+    "fault_category": "condition"
+  },
+  "bound_fsf": "SvTokenIdentifier/FSF/SvTokenIdentifier_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "d9d06e0c81a28ba555c08974ee51aca0f10466ed44684ca838ffc2091f7be6b5",
+  "mutant_sha256": "3931463db96a1e27c51d56e4c1db73533174906b61ef8d212722522a88076903"
+}

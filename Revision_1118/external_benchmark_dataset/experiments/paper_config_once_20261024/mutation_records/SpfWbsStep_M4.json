@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SpfWbsStep_M4",
+  "subject": "SpfWbsStep",
+  "operator": "RVR",
+  "fault_kind": "data-flow",
+  "fault_category": "statement",
+  "original_file": "SpfWbsStep/SpfWbsStep.java",
+  "mutant_file": "SpfWbsStep/SpfWbsStep_M4.java",
+  "original_location": {
+    "line": 231,
+    "code": "return Nor_Pressure + 10 * Alt_Pressure + 100 * Sys_Mode;"
+  },
+  "mutant_location": {
+    "line": 231,
+    "code": "return (Nor_Pressure + 10 * Alt_Pressure + 100 * Sys_Mode) + 1;"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      8436,
+      8485
+    ],
+    "from_text": "Nor_Pressure + 10 * Alt_Pressure + 100 * Sys_Mode",
+    "to_text": "(Nor_Pressure + 10 * Alt_Pressure + 100 * Sys_Mode) + 1",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SpfWbsStep/SpfWbsStep_M4.java",
+    "primary_line": 231,
+    "acceptable_files": [
+      "SpfWbsStep/SpfWbsStep_M4.java"
+    ],
+    "acceptable_lines": [
+      231
+    ],
+    "acceptable_line_window": {
+      "start": 231,
+      "end": 231
+    },
+    "operator": "RVR",
+    "fault_category": "statement"
+  },
+  "bound_fsf": "SpfWbsStep/FSF/SpfWbsStep_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "7f1b41fe8900f9218a35eb70217826dad59eeaa4945bc224fb63e2e38bae8fe0",
+  "mutant_sha256": "3ae4476a39e91a6fa10c03e0df7252d1426ce79071fdb12424e45873c15bf611"
+}

@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SvMinePumpStep_M4",
+  "subject": "SvMinePumpStep",
+  "operator": "RVR",
+  "fault_kind": "data-flow",
+  "fault_category": "statement",
+  "original_file": "SvMinePumpStep/SvMinePumpStep.java",
+  "mutant_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+  "original_location": {
+    "line": 22,
+    "code": "return state + level;"
+  },
+  "mutant_location": {
+    "line": 22,
+    "code": "return (state + level) + 1;"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      732,
+      745
+    ],
+    "from_text": "state + level",
+    "to_text": "(state + level) + 1",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+    "primary_line": 22,
+    "acceptable_files": [
+      "SvMinePumpStep/SvMinePumpStep_M4.java"
+    ],
+    "acceptable_lines": [
+      22
+    ],
+    "acceptable_line_window": {
+      "start": 22,
+      "end": 22
+    },
+    "operator": "RVR",
+    "fault_category": "statement"
+  },
+  "bound_fsf": "SvMinePumpStep/FSF/SvMinePumpStep_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "c99eb8e72a2dd29839425d2c423e621ea657cad1cc4259977fcb4001845fc38b",
+  "mutant_sha256": "5dec942919c38eaf93272dd544a74e4ab2d3f8cbd50fb786be905400432a1caa"
+}

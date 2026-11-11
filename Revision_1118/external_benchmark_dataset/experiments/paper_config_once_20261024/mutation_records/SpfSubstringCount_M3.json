@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SpfSubstringCount_M3",
+  "subject": "SpfSubstringCount",
+  "operator": "ROR",
+  "fault_kind": "control-flow",
+  "fault_category": "condition",
+  "original_file": "SpfSubstringCount/SpfSubstringCount.java",
+  "mutant_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+  "original_location": {
+    "line": 15,
+    "code": "  if (index == 2) { ch = c; }"
+  },
+  "mutant_location": {
+    "line": 15,
+    "code": "  if (index != 2) { ch = c; }"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      547,
+      549
+    ],
+    "from_text": "==",
+    "to_text": "!=",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+    "primary_line": 15,
+    "acceptable_files": [
+      "SpfSubstringCount/SpfSubstringCount_M3.java"
+    ],
+    "acceptable_lines": [
+      15
+    ],
+    "acceptable_line_window": {
+      "start": 15,
+      "end": 15
+    },
+    "operator": "ROR",
+    "fault_category": "condition"
+  },
+  "bound_fsf": "SpfSubstringCount/FSF/SpfSubstringCount_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "f9f4b44a79fc889d23dc4f3b2fd4193b0a1e3ed717600cd5f6e825f459d20060",
+  "mutant_sha256": "a914b2c82e60dc23e6626ce357e14d3863d639917a6fccf28830e47090840cb8"
+}

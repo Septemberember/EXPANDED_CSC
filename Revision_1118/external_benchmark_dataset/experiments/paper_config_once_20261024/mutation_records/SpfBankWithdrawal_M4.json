@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SpfBankWithdrawal_M4",
+  "subject": "SpfBankWithdrawal",
+  "operator": "RVR",
+  "fault_kind": "data-flow",
+  "fault_category": "statement",
+  "original_file": "SpfBankWithdrawal/SpfBankWithdrawal.java",
+  "mutant_file": "SpfBankWithdrawal/SpfBankWithdrawal_M4.java",
+  "original_location": {
+    "line": 28,
+    "code": "return currentBalance;"
+  },
+  "mutant_location": {
+    "line": 28,
+    "code": "return (currentBalance) + 1;"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      1384,
+      1398
+    ],
+    "from_text": "currentBalance",
+    "to_text": "(currentBalance) + 1",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SpfBankWithdrawal/SpfBankWithdrawal_M4.java",
+    "primary_line": 28,
+    "acceptable_files": [
+      "SpfBankWithdrawal/SpfBankWithdrawal_M4.java"
+    ],
+    "acceptable_lines": [
+      28
+    ],
+    "acceptable_line_window": {
+      "start": 28,
+      "end": 28
+    },
+    "operator": "RVR",
+    "fault_category": "statement"
+  },
+  "bound_fsf": "SpfBankWithdrawal/FSF/SpfBankWithdrawal_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "aabe212fa4d201430aa72bdeac432aac8fd235b47643b8ee87d6ec5e598611f7",
+  "mutant_sha256": "81211632223cfc7e948d9aa74f1fa36ed24be1817d6860911ef98af4c5c58aae"
+}

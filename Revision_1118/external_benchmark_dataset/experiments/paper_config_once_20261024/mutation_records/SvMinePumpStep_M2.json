@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SvMinePumpStep_M2",
+  "subject": "SvMinePumpStep",
+  "operator": "ROR",
+  "fault_kind": "control-flow",
+  "fault_category": "condition",
+  "original_file": "SvMinePumpStep/SvMinePumpStep.java",
+  "mutant_file": "SvMinePumpStep/SvMinePumpStep_M2.java",
+  "original_location": {
+    "line": 8,
+    "code": "if (pump) {"
+  },
+  "mutant_location": {
+    "line": 8,
+    "code": "if ((pump) == false) {"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      415,
+      419
+    ],
+    "from_text": "pump",
+    "to_text": "(pump) == false",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SvMinePumpStep/SvMinePumpStep_M2.java",
+    "primary_line": 8,
+    "acceptable_files": [
+      "SvMinePumpStep/SvMinePumpStep_M2.java"
+    ],
+    "acceptable_lines": [
+      8
+    ],
+    "acceptable_line_window": {
+      "start": 8,
+      "end": 8
+    },
+    "operator": "ROR",
+    "fault_category": "condition"
+  },
+  "bound_fsf": "SvMinePumpStep/FSF/SvMinePumpStep_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "c99eb8e72a2dd29839425d2c423e621ea657cad1cc4259977fcb4001845fc38b",
+  "mutant_sha256": "d98e1c9191c500b8564dc6bd7810050f1e2d87be20d056f6c4d853ccf6a5f011"
+}

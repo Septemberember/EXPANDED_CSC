@@ -1,0 +1,52 @@
+{
+  "mutant_id": "D4jArrayLastIndex_M5",
+  "subject": "D4jArrayLastIndex",
+  "operator": "RVR",
+  "fault_kind": "data-flow",
+  "fault_category": "statement",
+  "original_file": "D4jArrayLastIndex/D4jArrayLastIndex.java",
+  "mutant_file": "D4jArrayLastIndex/D4jArrayLastIndex_M5.java",
+  "original_location": {
+    "line": 28,
+    "code": " if (key == value) { return i; }"
+  },
+  "mutant_location": {
+    "line": 28,
+    "code": " if (key == value) { return (i) + 1; }"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      1336,
+      1337
+    ],
+    "from_text": "i",
+    "to_text": "(i) + 1",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "D4jArrayLastIndex/D4jArrayLastIndex_M5.java",
+    "primary_line": 28,
+    "acceptable_files": [
+      "D4jArrayLastIndex/D4jArrayLastIndex_M5.java"
+    ],
+    "acceptable_lines": [
+      28
+    ],
+    "acceptable_line_window": {
+      "start": 28,
+      "end": 28
+    },
+    "operator": "RVR",
+    "fault_category": "statement"
+  },
+  "bound_fsf": "D4jArrayLastIndex/FSF/D4jArrayLastIndex_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "76178f7e7f3c7cc6106c3056955b9855967000ac977e90abf4fe933d71173f37",
+  "mutant_sha256": "552140eff412e52ed540646b6d7e3a63013c89cefdc80f46ef3ae81900223179"
+}

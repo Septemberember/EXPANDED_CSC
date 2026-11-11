@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SpfRjcCounter_M5",
+  "subject": "SpfRjcCounter",
+  "operator": "AOR",
+  "fault_kind": "data-flow",
+  "fault_category": "statement",
+  "original_file": "SpfRjcCounter/SpfRjcCounter.java",
+  "mutant_file": "SpfRjcCounter/SpfRjcCounter_M5.java",
+  "original_location": {
+    "line": 29,
+    "code": "   counter = counter + 1;"
+  },
+  "mutant_location": {
+    "line": 29,
+    "code": "   counter = counter - 1;"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      1108,
+      1109
+    ],
+    "from_text": "+",
+    "to_text": "-",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SpfRjcCounter/SpfRjcCounter_M5.java",
+    "primary_line": 29,
+    "acceptable_files": [
+      "SpfRjcCounter/SpfRjcCounter_M5.java"
+    ],
+    "acceptable_lines": [
+      29
+    ],
+    "acceptable_line_window": {
+      "start": 29,
+      "end": 29
+    },
+    "operator": "AOR",
+    "fault_category": "statement"
+  },
+  "bound_fsf": "SpfRjcCounter/FSF/SpfRjcCounter_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "a8e5fd77d62ecef51ad450631dead8fd04be1d5459d1e532081d2bcc46cd3ab8",
+  "mutant_sha256": "eb93d0c62e7cc4d009209c1f1dd1836161ed5885d80084570fb3afade59e7268"
+}

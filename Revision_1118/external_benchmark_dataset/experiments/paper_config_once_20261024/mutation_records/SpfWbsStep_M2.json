@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SpfWbsStep_M2",
+  "subject": "SpfWbsStep",
+  "operator": "ROR",
+  "fault_kind": "control-flow",
+  "fault_category": "condition",
+  "original_file": "SpfWbsStep/SpfWbsStep.java",
+  "mutant_file": "SpfWbsStep/SpfWbsStep_M2.java",
+  "original_location": {
+    "line": 46,
+    "code": "\t   if ((PedalPos == 0)) {"
+  },
+  "mutant_location": {
+    "line": 46,
+    "code": "\t   if ((PedalPos != 0)) {"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      2228,
+      2230
+    ],
+    "from_text": "==",
+    "to_text": "!=",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SpfWbsStep/SpfWbsStep_M2.java",
+    "primary_line": 46,
+    "acceptable_files": [
+      "SpfWbsStep/SpfWbsStep_M2.java"
+    ],
+    "acceptable_lines": [
+      46
+    ],
+    "acceptable_line_window": {
+      "start": 46,
+      "end": 46
+    },
+    "operator": "ROR",
+    "fault_category": "condition"
+  },
+  "bound_fsf": "SpfWbsStep/FSF/SpfWbsStep_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "7f1b41fe8900f9218a35eb70217826dad59eeaa4945bc224fb63e2e38bae8fe0",
+  "mutant_sha256": "1d92459a2051c04cd9a57807825fac637bae37ea81cc3fd057828e65df740f0f"
+}

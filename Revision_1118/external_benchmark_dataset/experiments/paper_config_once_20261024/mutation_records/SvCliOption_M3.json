@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SvCliOption_M3",
+  "subject": "SvCliOption",
+  "operator": "LOR",
+  "fault_kind": "control-flow",
+  "fault_category": "condition",
+  "original_file": "SvCliOption/SvCliOption.java",
+  "mutant_file": "SvCliOption/SvCliOption_M3.java",
+  "original_location": {
+    "line": 15,
+    "code": "if (valid || code == 32 || code == 63 || code == 64) { option = true; }"
+  },
+  "mutant_location": {
+    "line": 15,
+    "code": "if (valid && code == 32 || code == 63 || code == 64) { option = true; }"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      540,
+      542
+    ],
+    "from_text": "||",
+    "to_text": "&&",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SvCliOption/SvCliOption_M3.java",
+    "primary_line": 15,
+    "acceptable_files": [
+      "SvCliOption/SvCliOption_M3.java"
+    ],
+    "acceptable_lines": [
+      15
+    ],
+    "acceptable_line_window": {
+      "start": 15,
+      "end": 15
+    },
+    "operator": "LOR",
+    "fault_category": "condition"
+  },
+  "bound_fsf": "SvCliOption/FSF/SvCliOption_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "5c42a7e324218f42a5b439ba732a8f565d70569bda51afba6b3b9a8edc8ac834",
+  "mutant_sha256": "e0687b0e5c5959bd69337ce9f1d9aa1783336b763227d6aee3e643fefbc55909"
+}

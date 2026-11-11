@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SvTcasClimb_M5",
+  "subject": "SvTcasClimb",
+  "operator": "AOR",
+  "fault_kind": "data-flow",
+  "fault_category": "statement",
+  "original_file": "SvTcasClimb/SvTcasClimb.java",
+  "mutant_file": "SvTcasClimb/SvTcasClimb_M5.java",
+  "original_location": {
+    "line": 12,
+    "code": "if (inhibit) { biased = up + 100; }"
+  },
+  "mutant_location": {
+    "line": 12,
+    "code": "if (inhibit) { biased = up - 100; }"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      755,
+      756
+    ],
+    "from_text": "+",
+    "to_text": "-",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SvTcasClimb/SvTcasClimb_M5.java",
+    "primary_line": 12,
+    "acceptable_files": [
+      "SvTcasClimb/SvTcasClimb_M5.java"
+    ],
+    "acceptable_lines": [
+      12
+    ],
+    "acceptable_line_window": {
+      "start": 12,
+      "end": 12
+    },
+    "operator": "AOR",
+    "fault_category": "statement"
+  },
+  "bound_fsf": "SvTcasClimb/FSF/SvTcasClimb_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "2109853e947a318de19ad8c9461166f5539d5ea0ffdc940bd2537a3319c0da75",
+  "mutant_sha256": "c92d7701186e21a6f7ab97291cb627c714bc5f6db0f3c2693cb0d0710f6fb078"
+}

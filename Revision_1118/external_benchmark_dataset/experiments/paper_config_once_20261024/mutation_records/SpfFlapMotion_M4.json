@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SpfFlapMotion_M4",
+  "subject": "SpfFlapMotion",
+  "operator": "RVR",
+  "fault_kind": "data-flow",
+  "fault_category": "statement",
+  "original_file": "SpfFlapMotion/SpfFlapMotion.java",
+  "mutant_file": "SpfFlapMotion/SpfFlapMotion_M4.java",
+  "original_location": {
+    "line": 33,
+    "code": "return position;"
+  },
+  "mutant_location": {
+    "line": 33,
+    "code": "return (position) + 1;"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      1353,
+      1361
+    ],
+    "from_text": "position",
+    "to_text": "(position) + 1",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SpfFlapMotion/SpfFlapMotion_M4.java",
+    "primary_line": 33,
+    "acceptable_files": [
+      "SpfFlapMotion/SpfFlapMotion_M4.java"
+    ],
+    "acceptable_lines": [
+      33
+    ],
+    "acceptable_line_window": {
+      "start": 33,
+      "end": 33
+    },
+    "operator": "RVR",
+    "fault_category": "statement"
+  },
+  "bound_fsf": "SpfFlapMotion/FSF/SpfFlapMotion_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "0034db7a09fe835e100975a372c57ca2005665e4f24b7af6a1c10e507d84a0f5",
+  "mutant_sha256": "e7581063657ed237141dfa1add38f5c6b7294f4defb46692a3c3c4d80d332570"
+}

@@ -1,0 +1,52 @@
+{
+  "mutant_id": "D4jArrayLastIndex_M1",
+  "subject": "D4jArrayLastIndex",
+  "operator": "BOR",
+  "fault_kind": "control-flow",
+  "fault_category": "condition",
+  "original_file": "D4jArrayLastIndex/D4jArrayLastIndex.java",
+  "mutant_file": "D4jArrayLastIndex/D4jArrayLastIndex_M1.java",
+  "original_location": {
+    "line": 20,
+    "code": "if (a < 0 || a > 4 || b < 0 || b > 4 || c < 0 || c > 4 || key < 0 || key > 4 || startIndex < -1 || startIndex > 4) { return -99; }"
+  },
+  "mutant_location": {
+    "line": 20,
+    "code": "if (a <= 0 || a > 4 || b < 0 || b > 4 || c < 0 || c > 4 || key < 0 || key > 4 || startIndex < -1 || startIndex > 4) { return -99; }"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      985,
+      986
+    ],
+    "from_text": "<",
+    "to_text": "<=",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "D4jArrayLastIndex/D4jArrayLastIndex_M1.java",
+    "primary_line": 20,
+    "acceptable_files": [
+      "D4jArrayLastIndex/D4jArrayLastIndex_M1.java"
+    ],
+    "acceptable_lines": [
+      20
+    ],
+    "acceptable_line_window": {
+      "start": 20,
+      "end": 20
+    },
+    "operator": "BOR",
+    "fault_category": "condition"
+  },
+  "bound_fsf": "D4jArrayLastIndex/FSF/D4jArrayLastIndex_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "76178f7e7f3c7cc6106c3056955b9855967000ac977e90abf4fe933d71173f37",
+  "mutant_sha256": "3e95646cf7fc1e3ecbb4cdeca1b958c69a07a2ebf25aaa214202484bdeaf4da6"
+}

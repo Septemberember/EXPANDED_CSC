@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SpfSubstringCount_M1",
+  "subject": "SpfSubstringCount",
+  "operator": "BOR",
+  "fault_kind": "control-flow",
+  "fault_category": "condition",
+  "original_file": "SpfSubstringCount/SpfSubstringCount.java",
+  "mutant_file": "SpfSubstringCount/SpfSubstringCount_M1.java",
+  "original_location": {
+    "line": 5,
+    "code": "        if (a < 0 || a > 9 || b < 0 || b > 9 || c < 0 || c > 9 || d < 0 || d > 9 || p < 0 || p > 9 || q < 0 || q > 9) { return -1; }"
+  },
+  "mutant_location": {
+    "line": 5,
+    "code": "        if (a <= 0 || a > 9 || b < 0 || b > 9 || c < 0 || c > 9 || d < 0 || d > 9 || p < 0 || p > 9 || q < 0 || q > 9) { return -1; }"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      257,
+      258
+    ],
+    "from_text": "<",
+    "to_text": "<=",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SpfSubstringCount/SpfSubstringCount_M1.java",
+    "primary_line": 5,
+    "acceptable_files": [
+      "SpfSubstringCount/SpfSubstringCount_M1.java"
+    ],
+    "acceptable_lines": [
+      5
+    ],
+    "acceptable_line_window": {
+      "start": 5,
+      "end": 5
+    },
+    "operator": "BOR",
+    "fault_category": "condition"
+  },
+  "bound_fsf": "SpfSubstringCount/FSF/SpfSubstringCount_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "f9f4b44a79fc889d23dc4f3b2fd4193b0a1e3ed717600cd5f6e825f459d20060",
+  "mutant_sha256": "c49ea95c6f3ad82f2aacab6f73362f87c9faccd0b06cecf51c4bebf083e8018e"
+}

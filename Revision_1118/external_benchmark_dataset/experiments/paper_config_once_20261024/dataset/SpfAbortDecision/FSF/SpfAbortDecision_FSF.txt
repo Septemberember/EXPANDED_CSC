@@ -1,0 +1,23 @@
+[fsf_1]
+T: altitudeOffset < -1000 || altitudeOffset > 1000
+D: return_value == -1
+
+[fsf_2]
+T: !(altitudeOffset < -1000 || altitudeOffset > 1000) && (altitudeOffset == 0)
+D: return_value == -2
+
+[fsf_3]
+T: !(altitudeOffset < -1000 || altitudeOffset > 1000) && (altitudeOffset < 0 && fired)
+D: return_value == 1
+
+[fsf_4]
+T: !(altitudeOffset < -1000 || altitudeOffset > 1000) && (altitudeOffset < 0 && !fired)
+D: return_value == 12
+
+[fsf_5]
+T: !(altitudeOffset < -1000 || altitudeOffset > 1000) && (altitudeOffset > 0 && fired)
+D: return_value == 3
+
+[fsf_6]
+T: !(altitudeOffset < -1000 || altitudeOffset > 1000) && (altitudeOffset > 0 && !fired)
+D: return_value == 13

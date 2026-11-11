@@ -1,0 +1,52 @@
+{
+  "mutant_id": "SpfTreeSearch_M5",
+  "subject": "SpfTreeSearch",
+  "operator": "RVR",
+  "fault_kind": "data-flow",
+  "fault_category": "statement",
+  "original_file": "SpfTreeSearch/SpfTreeSearch.java",
+  "mutant_file": "SpfTreeSearch/SpfTreeSearch_M5.java",
+  "original_location": {
+    "line": 27,
+    "code": " if (value == key) { return 1; }"
+  },
+  "mutant_location": {
+    "line": 27,
+    "code": " if (value == key) { return (1) + 1; }"
+  },
+  "change": {
+    "type": "single-token-or-expression-replacement",
+    "original_span": [
+      1201,
+      1202
+    ],
+    "from_text": "1",
+    "to_text": "(1) + 1",
+    "description": "Pre-registered atomic mutation; class-name change is only packaging"
+  },
+  "ground_truth": {
+    "primary_file": "SpfTreeSearch/SpfTreeSearch_M5.java",
+    "primary_line": 27,
+    "acceptable_files": [
+      "SpfTreeSearch/SpfTreeSearch_M5.java"
+    ],
+    "acceptable_lines": [
+      27
+    ],
+    "acceptable_line_window": {
+      "start": 27,
+      "end": 27
+    },
+    "operator": "RVR",
+    "fault_category": "statement"
+  },
+  "bound_fsf": "SpfTreeSearch/FSF/SpfTreeSearch_FSF.txt",
+  "validation": {
+    "compiles": null,
+    "instrumentable": null,
+    "terminates": null,
+    "detected": null
+  },
+  "original_sha256": "eb47f41512c2db3461cbb1789a79e53f9066de24e73a888da60178919114679f",
+  "mutant_sha256": "e74fd83c1b5f35c01ab7e1bd76ffffe52b35994a8f9082e263d4a4a0b1daaeac"
+}
