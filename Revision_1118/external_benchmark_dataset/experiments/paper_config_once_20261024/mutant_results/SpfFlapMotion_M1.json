@@ -1,0 +1,333 @@
+{
+  "mutant_id": "SpfFlapMotion_M1",
+  "subject": "SpfFlapMotion",
+  "operator": "BOR",
+  "fault_category": "condition",
+  "loop_bearing": true,
+  "modes": {
+    "original": {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfFlapMotion/SpfFlapMotion_M1.java",
+        "--mode",
+        "original",
+        "--range-bound",
+        "200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--max-iter",
+        "100",
+        "--session",
+        "extpaper_kill_original_SpfFlapMotion_M1_1792783921051004000",
+        "--keep-artifacts"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "wall_time_s": 3.409992125001736,
+      "started_at": "2026-10-23T19:32:01.051090+00:00",
+      "finished_at": "2026-10-23T19:32:04.461108+00:00",
+      "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfFlapMotion_M1/generation.stdout",
+      "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfFlapMotion_M1/generation.stderr",
+      "stderr_tail": "",
+      "subject": "SpfFlapMotion",
+      "class_name": "SpfFlapMotion_M1",
+      "session": "extpaper_kill_original_SpfFlapMotion_M1_1792783921051004000",
+      "result_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_original_SpfFlapMotion_M1_1792783921051004000/SpfFlapMotion_M1",
+      "folder": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfFlapMotion_M1",
+      "mode": "original",
+      "strategy": "batch",
+      "workers": 4,
+      "max_iter": 100,
+      "range_bound": 200,
+      "tag": "kill_original",
+      "cct": {
+        "total_nodes": 56,
+        "internal_nodes": 32,
+        "leaf_nodes": 24,
+        "empty_leaves": 9,
+        "covered_leaves": 13,
+        "valid_testcases": 13,
+        "infeasible_leaves": 11,
+        "out_of_range_leaves": 0,
+        "truncated_leaves": 0,
+        "expanded_nodes": 0,
+        "expanded_internal_nodes": 0,
+        "expanded_leaves": 0,
+        "tbfv_fault_leaves": 0,
+        "tbfv_failure_cases": 0,
+        "tbfv_failure_count": 0,
+        "max_depth": 13
+      },
+      "testcase_stats": {
+        "generated_records": 13,
+        "executable_records": 13,
+        "trace_backed_records": 13,
+        "status_counts": {
+          "bootstrap": 1,
+          "batch_safe": 12
+        }
+      },
+      "full_event": true,
+      "error_events": [],
+      "fresh": true,
+      "status": "completed",
+      "fingerprint": {
+        "stage": "generation_fingerprint",
+        "schema_version": 1,
+        "condition_identity": "line+normalized-text+occurrence",
+        "testcase_ids_ignored": true,
+        "cct_structure_sha256": "64e1fcca806bbae99d091903235bd83b75ec85a8e303c309a45301cfeee8c5a1",
+        "cct_semantic_sha256": "eb0ef77ec6a430cdee1e32879c774bb510681ae774245df4d25df8b581d0ee9a",
+        "test_inputs_sha256": "b6631019e8346b2785f0da46f946391ff73bfee21ae93ac1bebf67ef2eeec64c",
+        "concrete_input_count": 13
+      },
+      "frontier_mean": 2.0,
+      "frontier_max": 6,
+      "verification": {
+        "command": [
+          "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+          "--csc-result-dir",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_original_SpfFlapMotion_M1_1792783921051004000/SpfFlapMotion_M1",
+          "--java-file",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfFlapMotion/SpfFlapMotion_M1.java",
+          "--fsf",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfFlapMotion/FSF/SpfFlapMotion_FSF.txt",
+          "--output",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfFlapMotion_M1/verification.json"
+        ],
+        "returncode": 0,
+        "timed_out": false,
+        "wall_time_s": 0.2936082920059562,
+        "started_at": "2026-10-23T19:32:04.472642+00:00",
+        "finished_at": "2026-10-23T19:32:04.766256+00:00",
+        "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfFlapMotion_M1/verification.stdout",
+        "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfFlapMotion_M1/verification.stderr",
+        "stderr_tail": "",
+        "summary": {
+          "testcases": 13,
+          "fsf_units": 4,
+          "passed": 13,
+          "failed": 3,
+          "skipped": 36,
+          "unsupported": 0
+        },
+        "status": "completed",
+        "killed": true
+      }
+    },
+    "expanded": {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfFlapMotion/SpfFlapMotion_M1.java",
+        "--mode",
+        "expanded",
+        "--range-bound",
+        "200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--max-iter",
+        "100",
+        "--session",
+        "extpaper_kill_expanded_SpfFlapMotion_M1_1792783924777138000",
+        "--keep-artifacts"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "wall_time_s": 4.371001458028331,
+      "started_at": "2026-10-23T19:32:04.777254+00:00",
+      "finished_at": "2026-10-23T19:32:09.148279+00:00",
+      "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfFlapMotion_M1/generation.stdout",
+      "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfFlapMotion_M1/generation.stderr",
+      "stderr_tail": "",
+      "subject": "SpfFlapMotion",
+      "class_name": "SpfFlapMotion_M1",
+      "session": "extpaper_kill_expanded_SpfFlapMotion_M1_1792783924777138000",
+      "result_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_expanded_SpfFlapMotion_M1_1792783924777138000/SpfFlapMotion_M1",
+      "folder": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfFlapMotion_M1",
+      "mode": "expanded",
+      "strategy": "batch",
+      "workers": 4,
+      "max_iter": 100,
+      "range_bound": 200,
+      "tag": "kill_expanded",
+      "cct": {
+        "total_nodes": 65,
+        "internal_nodes": 32,
+        "leaf_nodes": 33,
+        "empty_leaves": 0,
+        "covered_leaves": 15,
+        "valid_testcases": 15,
+        "infeasible_leaves": 18,
+        "out_of_range_leaves": 0,
+        "truncated_leaves": 0,
+        "expanded_nodes": 0,
+        "expanded_internal_nodes": 0,
+        "expanded_leaves": 0,
+        "tbfv_fault_leaves": 0,
+        "tbfv_failure_cases": 0,
+        "tbfv_failure_count": 0,
+        "max_depth": 13
+      },
+      "testcase_stats": {
+        "generated_records": 15,
+        "executable_records": 15,
+        "trace_backed_records": 15,
+        "status_counts": {
+          "bootstrap": 1,
+          "batch_safe": 14
+        }
+      },
+      "full_event": true,
+      "error_events": [],
+      "fresh": true,
+      "status": "completed",
+      "fingerprint": {
+        "stage": "generation_fingerprint",
+        "schema_version": 1,
+        "condition_identity": "line+normalized-text+occurrence",
+        "testcase_ids_ignored": true,
+        "cct_structure_sha256": "33713cfc1120bcf9e31150d8423701ecd025a7500405c76aad4907521a45087a",
+        "cct_semantic_sha256": "82575511ded98cddee28f908100bcf31d6aed9482c06c4af49ad59888192b0fa",
+        "test_inputs_sha256": "0b37f1db5395b041505d66d8f19b386f3c97d0d5f08dce896ddb4dbb808e0761",
+        "concrete_input_count": 15
+      },
+      "frontier_mean": 2.3333333333333335,
+      "frontier_max": 6,
+      "verification": {
+        "command": [
+          "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+          "--csc-result-dir",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_expanded_SpfFlapMotion_M1_1792783924777138000/SpfFlapMotion_M1",
+          "--java-file",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfFlapMotion/SpfFlapMotion_M1.java",
+          "--fsf",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfFlapMotion/FSF/SpfFlapMotion_FSF.txt",
+          "--output",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfFlapMotion_M1/verification.json"
+        ],
+        "returncode": 0,
+        "timed_out": false,
+        "wall_time_s": 0.18710512499092147,
+        "started_at": "2026-10-23T19:32:09.154848+00:00",
+        "finished_at": "2026-10-23T19:32:09.341960+00:00",
+        "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfFlapMotion_M1/verification.stdout",
+        "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfFlapMotion_M1/verification.stderr",
+        "stderr_tail": "",
+        "summary": {
+          "testcases": 15,
+          "fsf_units": 4,
+          "passed": 15,
+          "failed": 3,
+          "skipped": 42,
+          "unsupported": 0
+        },
+        "status": "completed",
+        "killed": true
+      }
+    }
+  },
+  "localization": {
+    "mutant_id": "SpfFlapMotion_M1",
+    "subject": "SpfFlapMotion",
+    "operator": "BOR",
+    "fault_kind": "control-flow",
+    "fault_category": "condition",
+    "primary_line": 21,
+    "scoring_strategy": "coverage_x_purity",
+    "status": "evaluated",
+    "F_total": 1,
+    "P_total": 14,
+    "top1_budget": 1,
+    "top1_folded_hit": true,
+    "top1_sfl_hit": true,
+    "top2_budget": 1,
+    "top2_folded_hit": true,
+    "top2_sfl_hit": true,
+    "top3_budget": 1,
+    "top3_folded_hit": true,
+    "top3_sfl_hit": true,
+    "top1_condition_hit": true,
+    "top1_edge_partition_hit": true,
+    "top1_folded_region_lines": [
+      21
+    ],
+    "top1_ochiai_hit": true,
+    "top1_ochiai_region_lines": [
+      21
+    ],
+    "top1_tarantula_hit": true,
+    "top1_tarantula_region_lines": [
+      21
+    ],
+    "top1_dstar_hit": true,
+    "top1_dstar_region_lines": [
+      21
+    ],
+    "top1_barinel_hit": true,
+    "top1_barinel_region_lines": [
+      21
+    ],
+    "top1_op2_hit": true,
+    "top1_op2_region_lines": [
+      21
+    ],
+    "top2_condition_hit": true,
+    "top2_edge_partition_hit": true,
+    "top2_folded_region_lines": [
+      21
+    ],
+    "top2_ochiai_hit": true,
+    "top2_ochiai_region_lines": [
+      21
+    ],
+    "top2_tarantula_hit": true,
+    "top2_tarantula_region_lines": [
+      21
+    ],
+    "top2_dstar_hit": true,
+    "top2_dstar_region_lines": [
+      21
+    ],
+    "top2_barinel_hit": true,
+    "top2_barinel_region_lines": [
+      21
+    ],
+    "top2_op2_hit": true,
+    "top2_op2_region_lines": [
+      21
+    ],
+    "top3_condition_hit": true,
+    "top3_edge_partition_hit": true,
+    "top3_folded_region_lines": [
+      21
+    ],
+    "top3_ochiai_hit": true,
+    "top3_ochiai_region_lines": [
+      21
+    ],
+    "top3_tarantula_hit": true,
+    "top3_tarantula_region_lines": [
+      21
+    ],
+    "top3_dstar_hit": true,
+    "top3_dstar_region_lines": [
+      21
+    ],
+    "top3_barinel_hit": true,
+    "top3_barinel_region_lines": [
+      21
+    ],
+    "top3_op2_hit": true,
+    "top3_op2_region_lines": [
+      21
+    ]
+  }
+}

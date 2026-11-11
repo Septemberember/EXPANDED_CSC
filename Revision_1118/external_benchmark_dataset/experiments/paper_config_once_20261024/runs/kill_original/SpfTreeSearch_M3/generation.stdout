@@ -1,0 +1,794 @@
+=======================================================
+  CSC Engine — Test Case Generator
+=======================================================
+  Source:       /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfTreeSearch/SpfTreeSearch_M3.java
+  Mode:         Original CSC
+  Max iter:     100
+  Strategy:     batch
+  Workers:      4
+  Session:      extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000
+  CCT render:   no
+
+[1/3] Auto-instrumenting Java source...
+  [instrument] /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfTreeSearch/SpfTreeSearch_M3.java -> /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfTreeSearch/SpfTreeSearch_M3_instrumented.java
+  Class:        SpfTreeSearch_M3
+  Params:       {'return_value': 'int', 'left': 'int', 'root': 'int', 'right': 'int', 'key': 'int'}
+  Run log:      csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/run_log.jsonl
+
+[2/3] Compiling...
+  [compile] SpfTreeSearch_M3.class
+[3/3] CSC Loop
+---------------------------------------------
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+{Ø}
+-----------------------------
+
+
+  [Batch Round 1] CCT not initialized — running bootstrap
+  Bootstrap inputs: {'left': 0, 'root': 0, 'right': 0, 'key': 0}
+  Execution path: 3 steps, 2 conditions
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/SpfTreeSearch_M3_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: left < 0 @L21 (WP: left < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: root <= left @L21 (WP: root <= left, Cnt: 1)
+  |     (F) ->
+  |     |   {Ø}
+  |     (T) ->
+  |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(left=0, root=0, right=0, key=0)
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Batch Round 2] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: left < 0 @L21 (WP: left < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: root <= left @L21 (WP: root <= left, Cnt: 1)
+  |     (F) ->
+  |     |   {Ø}
+  |     (T) ->
+  |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(left=0, root=0, right=0, key=0)
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/SpfTreeSearch_M3_cct.dot
+  -> Executing 2 candidates with 4 workers; merging 0 terminal updates
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/SpfTreeSearch_M3_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: left < 0 @L21 (WP: left < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: root <= left @L21 (WP: root <= left, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: right <= root @L21 (WP: right <= root, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(left=1022, root=1024, right=0, key=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(left=0, root=0, right=0, key=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(left=-32768, root=0, right=0, key=0)
+-----------------------------
+
+
+  [Batch Round 3] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: left < 0 @L21 (WP: left < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: root <= left @L21 (WP: root <= left, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: right <= root @L21 (WP: right <= root, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(left=1022, root=1024, right=0, key=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(left=0, root=0, right=0, key=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(left=-32768, root=0, right=0, key=0)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/SpfTreeSearch_M3_cct.dot
+  -> Executing 1 candidates with 4 workers; merging 0 terminal updates
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/SpfTreeSearch_M3_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: left < 0 @L21 (WP: left < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: root <= left @L21 (WP: root <= left, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: right <= root @L21 (WP: right <= root, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: right > 9 @L21 (WP: right > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(left=16382, root=16384, right=16385, key=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(left=1022, root=1024, right=0, key=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(left=0, root=0, right=0, key=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(left=-32768, root=0, right=0, key=0)
+-----------------------------
+
+
+  [Batch Round 4] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: left < 0 @L21 (WP: left < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: root <= left @L21 (WP: root <= left, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: right <= root @L21 (WP: right <= root, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: right > 9 @L21 (WP: right > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(left=16382, root=16384, right=16385, key=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(left=1022, root=1024, right=0, key=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(left=0, root=0, right=0, key=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(left=-32768, root=0, right=0, key=0)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/SpfTreeSearch_M3_cct.dot
+  -> Executing 1 candidates with 4 workers; merging 0 terminal updates
+Path Truncation: loop count 3 exceeds bound 2.
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/SpfTreeSearch_M3_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: left < 0 @L21 (WP: left < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: root <= left @L21 (WP: root <= left, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: right <= root @L21 (WP: right <= root, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: right > 9 @L21 (WP: right > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: key < 0 @L21 (WP: key < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: key > 9 @L21 (WP: key > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: current >= 0 @L23 (WP: (0) >= 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: current == 1 @L25 (WP: (0) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: current != 2 @L26 (WP: (0) != 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: value == key @L27 (WP: (right) == key, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: key < value @L28 (WP: key < (right), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 0 @L29 (WP: (0) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current >= 0 @L23 (WP: (1) >= 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 1 @L25 (WP: (1) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current != 2 @L26 (WP: (1) != 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: value == key @L27 (WP: (right) == key, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: key < value @L28 (WP: key < (right), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 0 @L29 (WP: (1) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'} [TRUNCATED]  inputs: tc_4_b0(left=0, root=1, right=2, key=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(left=16382, root=16384, right=16385, key=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(left=1022, root=1024, right=0, key=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(left=0, root=0, right=0, key=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(left=-32768, root=0, right=0, key=0)
+-----------------------------
+
+
+  [Batch Round 5] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: left < 0 @L21 (WP: left < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: root <= left @L21 (WP: root <= left, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: right <= root @L21 (WP: right <= root, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: right > 9 @L21 (WP: right > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: key < 0 @L21 (WP: key < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: key > 9 @L21 (WP: key > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: current >= 0 @L23 (WP: (0) >= 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: current == 1 @L25 (WP: (0) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: current != 2 @L26 (WP: (0) != 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: value == key @L27 (WP: (right) == key, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: key < value @L28 (WP: key < (right), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 0 @L29 (WP: (0) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current >= 0 @L23 (WP: (1) >= 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 1 @L25 (WP: (1) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current != 2 @L26 (WP: (1) != 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: value == key @L27 (WP: (right) == key, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: key < value @L28 (WP: key < (right), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 0 @L29 (WP: (1) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'} [TRUNCATED]  inputs: tc_4_b0(left=0, root=1, right=2, key=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(left=16382, root=16384, right=16385, key=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(left=1022, root=1024, right=0, key=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(left=0, root=0, right=0, key=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(left=-32768, root=0, right=0, key=0)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/SpfTreeSearch_M3_cct.dot
+  -> Executing 4 candidates with 4 workers; merging 8 terminal updates
+Path Truncation: loop count 3 exceeds bound 2.
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/SpfTreeSearch_M3_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: left < 0 @L21 (WP: left < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: root <= left @L21 (WP: root <= left, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: right <= root @L21 (WP: right <= root, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: right > 9 @L21 (WP: right > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: key < 0 @L21 (WP: key < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: key > 9 @L21 (WP: key > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: current >= 0 @L23 (WP: (0) >= 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: current == 1 @L25 (WP: (0) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: current != 2 @L26 (WP: (0) != 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: value == key @L27 (WP: (right) == key, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: key < value @L28 (WP: key < (right), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 0 @L31 (WP: (0) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current >= 0 @L23 (WP: (2) >= 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 1 @L25 (WP: (2) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current != 2 @L26 (WP: (2) != 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: value == key @L27 (WP: (root) == key, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: key < value @L28 (WP: key < (root), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 0 @L31 (WP: (2) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b0'} [TRUNCATED]  inputs: tc_5_b0(left=0, root=3, right=4, key=7)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 0 @L29 (WP: (0) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current >= 0 @L23 (WP: (1) >= 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 1 @L25 (WP: (1) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current != 2 @L26 (WP: (1) != 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: value == key @L27 (WP: (right) == key, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: key < value @L28 (WP: key < (right), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 0 @L29 (WP: (1) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'} [TRUNCATED]  inputs: tc_4_b0(left=0, root=1, right=2, key=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b1'}  inputs: tc_5_b1(left=0, root=1, right=2, key=2)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b2'}  inputs: tc_5_b2(left=0, root=1, right=2, key=12)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_5_b3'}  inputs: tc_5_b3(left=0, root=1, right=2, key=-32768)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(left=16382, root=16384, right=16385, key=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(left=1022, root=1024, right=0, key=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(left=0, root=0, right=0, key=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(left=-32768, root=0, right=0, key=0)
+-----------------------------
+
+
+  [Batch Round 6] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: left < 0 @L21 (WP: left < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: root <= left @L21 (WP: root <= left, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: right <= root @L21 (WP: right <= root, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: right > 9 @L21 (WP: right > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: key < 0 @L21 (WP: key < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: key > 9 @L21 (WP: key > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: current >= 0 @L23 (WP: (0) >= 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: current == 1 @L25 (WP: (0) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: current != 2 @L26 (WP: (0) != 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: value == key @L27 (WP: (right) == key, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: key < value @L28 (WP: key < (right), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 0 @L31 (WP: (0) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current >= 0 @L23 (WP: (2) >= 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 1 @L25 (WP: (2) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current != 2 @L26 (WP: (2) != 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: value == key @L27 (WP: (root) == key, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: key < value @L28 (WP: key < (root), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 0 @L31 (WP: (2) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b0'} [TRUNCATED]  inputs: tc_5_b0(left=0, root=3, right=4, key=7)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 0 @L29 (WP: (0) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current >= 0 @L23 (WP: (1) >= 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 1 @L25 (WP: (1) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current != 2 @L26 (WP: (1) != 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: value == key @L27 (WP: (right) == key, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: key < value @L28 (WP: key < (right), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 0 @L29 (WP: (1) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'} [TRUNCATED]  inputs: tc_4_b0(left=0, root=1, right=2, key=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b1'}  inputs: tc_5_b1(left=0, root=1, right=2, key=2)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b2'}  inputs: tc_5_b2(left=0, root=1, right=2, key=12)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_5_b3'}  inputs: tc_5_b3(left=0, root=1, right=2, key=-32768)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(left=16382, root=16384, right=16385, key=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(left=1022, root=1024, right=0, key=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(left=0, root=0, right=0, key=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(left=-32768, root=0, right=0, key=0)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/SpfTreeSearch_M3_cct.dot
+  -> Executing 0 candidates with 4 workers; merging 3 terminal updates
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/SpfTreeSearch_M3_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: left < 0 @L21 (WP: left < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: root <= left @L21 (WP: root <= left, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: right <= root @L21 (WP: right <= root, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: right > 9 @L21 (WP: right > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: key < 0 @L21 (WP: key < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: key > 9 @L21 (WP: key > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: current >= 0 @L23 (WP: (0) >= 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: current == 1 @L25 (WP: (0) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: current != 2 @L26 (WP: (0) != 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: value == key @L27 (WP: (right) == key, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: key < value @L28 (WP: key < (right), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 0 @L31 (WP: (0) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current >= 0 @L23 (WP: (2) >= 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 1 @L25 (WP: (2) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current != 2 @L26 (WP: (2) != 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: value == key @L27 (WP: (root) == key, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: key < value @L28 (WP: key < (root), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 0 @L31 (WP: (2) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b0'} [TRUNCATED]  inputs: tc_5_b0(left=0, root=3, right=4, key=7)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 0 @L29 (WP: (0) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current >= 0 @L23 (WP: (1) >= 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 1 @L25 (WP: (1) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current != 2 @L26 (WP: (1) != 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: value == key @L27 (WP: (right) == key, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: key < value @L28 (WP: key < (right), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 0 @L29 (WP: (1) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'} [TRUNCATED]  inputs: tc_4_b0(left=0, root=1, right=2, key=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b1'}  inputs: tc_5_b1(left=0, root=1, right=2, key=2)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b2'}  inputs: tc_5_b2(left=0, root=1, right=2, key=12)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_5_b3'}  inputs: tc_5_b3(left=0, root=1, right=2, key=-32768)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(left=16382, root=16384, right=16385, key=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(left=1022, root=1024, right=0, key=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(left=0, root=0, right=0, key=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(left=-32768, root=0, right=0, key=0)
+-----------------------------
+
+
+  [Batch Round 7] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: left < 0 @L21 (WP: left < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: root <= left @L21 (WP: root <= left, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: right <= root @L21 (WP: right <= root, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: right > 9 @L21 (WP: right > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: key < 0 @L21 (WP: key < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: key > 9 @L21 (WP: key > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: current >= 0 @L23 (WP: (0) >= 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: current == 1 @L25 (WP: (0) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: current != 2 @L26 (WP: (0) != 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: value == key @L27 (WP: (right) == key, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: key < value @L28 (WP: key < (right), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 0 @L31 (WP: (0) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current >= 0 @L23 (WP: (2) >= 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 1 @L25 (WP: (2) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current != 2 @L26 (WP: (2) != 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: value == key @L27 (WP: (root) == key, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: key < value @L28 (WP: key < (root), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 0 @L31 (WP: (2) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b0'} [TRUNCATED]  inputs: tc_5_b0(left=0, root=3, right=4, key=7)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 0 @L29 (WP: (0) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current >= 0 @L23 (WP: (1) >= 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 1 @L25 (WP: (1) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current != 2 @L26 (WP: (1) != 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: value == key @L27 (WP: (right) == key, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: key < value @L28 (WP: key < (right), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: current == 0 @L29 (WP: (1) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'} [TRUNCATED]  inputs: tc_4_b0(left=0, root=1, right=2, key=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b1'}  inputs: tc_5_b1(left=0, root=1, right=2, key=2)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b2'}  inputs: tc_5_b2(left=0, root=1, right=2, key=12)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_5_b3'}  inputs: tc_5_b3(left=0, root=1, right=2, key=-32768)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(left=16382, root=16384, right=16385, key=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(left=1022, root=1024, right=0, key=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(left=0, root=0, right=0, key=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(left=-32768, root=0, right=0, key=0)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/SpfTreeSearch_M3_cct.dot
+  -> CCT is FULL — all branches covered!
+
+=======================================================
+  Done! 9 test cases generated in 7 iterations.
+=======================================================
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/SpfTreeSearch_M3_cct.dot
+
+Generated Test Cases:
+---------------------------------------------
+  [BOOTSTRAP]  (bootstrap)
+  round_02/b0  [BATCH_SAFE]  left=1022, root=1024, right=0, key=0
+  round_02/b1  [BATCH_SAFE]  left=-32768, root=0, right=0, key=0
+  round_03/b0  [BATCH_SAFE]  left=16382, root=16384, right=16385, key=0
+  round_04/b0  [BATCH_SAFE]  left=0, root=1, right=2, key=0
+  round_05/b0  [BATCH_SAFE]  left=0, root=3, right=4, key=7
+  round_05/b1  [BATCH_SAFE]  left=0, root=1, right=2, key=2
+  round_05/b2  [BATCH_SAFE]  left=0, root=1, right=2, key=12
+  round_05/b3  [BATCH_SAFE]  left=0, root=1, right=2, key=-32768
+
+Timing Summary (ms):
+---------------------------------------------
+  solver_time_ms: 23
+  frontier_discovery_time_ms: 37
+  compile_time_ms: 3561
+  java_exec_time_ms: 696
+  path_log_parse_time_ms: 0
+  cct_path_build_time_ms: 0
+  cct_merge_time_ms: 0
+  verification_solver_time_ms: 0
+  parallel_exec_wall_time_ms: 1774
+  merge_verify_wall_time_ms: 0
+  batch_total_wall_time_ms: 1775
+
+Test cases written to: csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/testcases.json
+
+CCT visualization:
+  DOT: csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/SpfTreeSearch_M3_cct.dot
+  Stats: csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/cct_stats.json
+  Counts: nodes=45, leaves=20, covered=9, infeasible=11, out_of_range=0, expanded=0, truncated=2
+  Render script: csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/render_cct.sh
+  (render later with: csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/render_cct.sh)
+
+Run log:
+  JSONL: csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/run_log.jsonl

@@ -1,0 +1,2441 @@
+{
+  "summary": {
+    "aggregation": "source_transition_v1",
+    "score_aggregation": "max",
+    "per_target_aggregation": {
+      "condition_node_ranking": "max",
+      "interval_rankings.folded_seed_e": "max",
+      "interval_rankings.folded_seed_s": "max",
+      "interval_rankings.folded_edge_partition": "max"
+    },
+    "source_report": null,
+    "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+    "targets": [
+      "condition_node_ranking",
+      "interval_rankings.folded_seed_e",
+      "interval_rankings.folded_seed_s",
+      "interval_rankings.folded_edge_partition"
+    ],
+    "condition_node_count_raw": 19,
+    "condition_node_count_aggregated": 19,
+    "interval_count_raw": {
+      "folded_seed_e": 12,
+      "folded_seed_s": 1,
+      "folded_edge_partition": 13
+    },
+    "interval_count_aggregated": {
+      "folded_seed_e": 12,
+      "folded_seed_s": 1,
+      "folded_edge_partition": 12
+    },
+    "average_interval_region_size": {
+      "folded_seed_e": 1.5833333333333333,
+      "folded_seed_s": 1.0,
+      "folded_edge_partition": 1.5833333333333333
+    },
+    "raw_summary": {
+      "strategy": "folded_source_candidate_v1",
+      "scoring_strategy": "coverage_x_purity",
+      "F_total": 6,
+      "P_total": 12,
+      "condition_candidates": 19,
+      "seed_e_candidates": 12,
+      "seed_s_candidates": 1,
+      "edge_partition_candidates": 13,
+      "unstable_segment_variants": 1,
+      "total_edge_transitions": 50
+    }
+  },
+  "aggregated_condition_node_ranking": [
+    {
+      "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+      "line": 8,
+      "condition": "i < 3",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 1,
+      "raw_ranks": [
+        1
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 1,
+        "risk_score": 1.0,
+        "line": 8,
+        "condition": "i < 3",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 1.0,
+      "exec_count": 6,
+      "fail_count": 6,
+      "pass_count": 0,
+      "failure_density": 1.0,
+      "min_exec_count": 6,
+      "min_fail_count": 6,
+      "min_pass_count": 0,
+      "min_failure_density": 1.0,
+      "rank": 1
+    },
+    {
+      "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+      "line": 11,
+      "condition": "j < 2",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 2,
+      "raw_ranks": [
+        2
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 2,
+        "risk_score": 1.0,
+        "line": 11,
+        "condition": "j < 2",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 1.0,
+      "exec_count": 6,
+      "fail_count": 6,
+      "pass_count": 0,
+      "failure_density": 1.0,
+      "min_exec_count": 6,
+      "min_fail_count": 6,
+      "min_pass_count": 0,
+      "min_failure_density": 1.0,
+      "rank": 2
+    },
+    {
+      "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+      "line": 14,
+      "condition": "index == 1",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 3,
+      "raw_ranks": [
+        3
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 3,
+        "risk_score": 1.0,
+        "line": 14,
+        "condition": "index == 1",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 1.0,
+      "exec_count": 6,
+      "fail_count": 6,
+      "pass_count": 0,
+      "failure_density": 1.0,
+      "min_exec_count": 6,
+      "min_fail_count": 6,
+      "min_pass_count": 0,
+      "min_failure_density": 1.0,
+      "rank": 3
+    },
+    {
+      "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+      "line": 15,
+      "condition": "index != 2",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 4,
+      "raw_ranks": [
+        4
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 4,
+        "risk_score": 1.0,
+        "line": 15,
+        "condition": "index != 2",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 1.0,
+      "exec_count": 6,
+      "fail_count": 6,
+      "pass_count": 0,
+      "failure_density": 1.0,
+      "min_exec_count": 6,
+      "min_fail_count": 6,
+      "min_pass_count": 0,
+      "min_failure_density": 1.0,
+      "rank": 4
+    },
+    {
+      "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+      "line": 16,
+      "condition": "index == 3",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 5,
+      "raw_ranks": [
+        5
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 5,
+        "risk_score": 1.0,
+        "line": 16,
+        "condition": "index == 3",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 1.0,
+      "exec_count": 6,
+      "fail_count": 6,
+      "pass_count": 0,
+      "failure_density": 1.0,
+      "min_exec_count": 6,
+      "min_fail_count": 6,
+      "min_pass_count": 0,
+      "min_failure_density": 1.0,
+      "rank": 5
+    },
+    {
+      "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+      "line": 18,
+      "condition": "j == 1",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 6,
+      "raw_ranks": [
+        6
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 6,
+        "risk_score": 1.0,
+        "line": 18,
+        "condition": "j == 1",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 1.0,
+      "exec_count": 6,
+      "fail_count": 6,
+      "pass_count": 0,
+      "failure_density": 1.0,
+      "min_exec_count": 6,
+      "min_fail_count": 6,
+      "min_pass_count": 0,
+      "min_failure_density": 1.0,
+      "rank": 6
+    },
+    {
+      "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+      "line": 22,
+      "condition": "found",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 7,
+      "raw_ranks": [
+        7
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 7,
+        "risk_score": 1.0,
+        "line": 22,
+        "condition": "found",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 1.0,
+      "exec_count": 6,
+      "fail_count": 6,
+      "pass_count": 0,
+      "failure_density": 1.0,
+      "min_exec_count": 6,
+      "min_fail_count": 6,
+      "min_pass_count": 0,
+      "min_failure_density": 1.0,
+      "rank": 7
+    },
+    {
+      "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+      "line": 5,
+      "condition": "q > 9",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 8,
+      "raw_ranks": [
+        8
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 8,
+        "risk_score": 0.8571428571428571,
+        "line": 5,
+        "condition": "q > 9",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.8571428571428571,
+      "exec_count": 7,
+      "fail_count": 6,
+      "pass_count": 1,
+      "failure_density": 0.8571428571428571,
+      "min_exec_count": 7,
+      "min_fail_count": 6,
+      "min_pass_count": 1,
+      "min_failure_density": 0.8571428571428571,
+      "rank": 8
+    },
+    {
+      "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+      "line": 5,
+      "condition": "q < 0",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 9,
+      "raw_ranks": [
+        9
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 9,
+        "risk_score": 0.75,
+        "line": 5,
+        "condition": "q < 0",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.75,
+      "exec_count": 8,
+      "fail_count": 6,
+      "pass_count": 2,
+      "failure_density": 0.75,
+      "min_exec_count": 8,
+      "min_fail_count": 6,
+      "min_pass_count": 2,
+      "min_failure_density": 0.75,
+      "rank": 9
+    },
+    {
+      "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+      "line": 5,
+      "condition": "p > 9",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 10,
+      "raw_ranks": [
+        10
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 10,
+        "risk_score": 0.6666666666666666,
+        "line": 5,
+        "condition": "p > 9",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.6666666666666666,
+      "exec_count": 9,
+      "fail_count": 6,
+      "pass_count": 3,
+      "failure_density": 0.6666666666666666,
+      "min_exec_count": 9,
+      "min_fail_count": 6,
+      "min_pass_count": 3,
+      "min_failure_density": 0.6666666666666666,
+      "rank": 10
+    },
+    {
+      "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+      "line": 5,
+      "condition": "p < 0",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 11,
+      "raw_ranks": [
+        11
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 11,
+        "risk_score": 0.6,
+        "line": 5,
+        "condition": "p < 0",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.6,
+      "exec_count": 10,
+      "fail_count": 6,
+      "pass_count": 4,
+      "failure_density": 0.6,
+      "min_exec_count": 10,
+      "min_fail_count": 6,
+      "min_pass_count": 4,
+      "min_failure_density": 0.6,
+      "rank": 11
+    },
+    {
+      "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+      "line": 5,
+      "condition": "d > 9",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 12,
+      "raw_ranks": [
+        12
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 12,
+        "risk_score": 0.5454545454545454,
+        "line": 5,
+        "condition": "d > 9",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.5454545454545454,
+      "exec_count": 11,
+      "fail_count": 6,
+      "pass_count": 5,
+      "failure_density": 0.5454545454545454,
+      "min_exec_count": 11,
+      "min_fail_count": 6,
+      "min_pass_count": 5,
+      "min_failure_density": 0.5454545454545454,
+      "rank": 12
+    },
+    {
+      "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+      "line": 5,
+      "condition": "d < 0",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 13,
+      "raw_ranks": [
+        13
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 13,
+        "risk_score": 0.5,
+        "line": 5,
+        "condition": "d < 0",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.5,
+      "exec_count": 12,
+      "fail_count": 6,
+      "pass_count": 6,
+      "failure_density": 0.5,
+      "min_exec_count": 12,
+      "min_fail_count": 6,
+      "min_pass_count": 6,
+      "min_failure_density": 0.5,
+      "rank": 13
+    },
+    {
+      "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+      "line": 5,
+      "condition": "c > 9",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 14,
+      "raw_ranks": [
+        14
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 14,
+        "risk_score": 0.46153846153846156,
+        "line": 5,
+        "condition": "c > 9",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.46153846153846156,
+      "exec_count": 13,
+      "fail_count": 6,
+      "pass_count": 7,
+      "failure_density": 0.46153846153846156,
+      "min_exec_count": 13,
+      "min_fail_count": 6,
+      "min_pass_count": 7,
+      "min_failure_density": 0.46153846153846156,
+      "rank": 14
+    },
+    {
+      "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+      "line": 5,
+      "condition": "c < 0",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 15,
+      "raw_ranks": [
+        15
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 15,
+        "risk_score": 0.42857142857142855,
+        "line": 5,
+        "condition": "c < 0",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.42857142857142855,
+      "exec_count": 14,
+      "fail_count": 6,
+      "pass_count": 8,
+      "failure_density": 0.42857142857142855,
+      "min_exec_count": 14,
+      "min_fail_count": 6,
+      "min_pass_count": 8,
+      "min_failure_density": 0.42857142857142855,
+      "rank": 15
+    },
+    {
+      "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+      "line": 5,
+      "condition": "b > 9",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 16,
+      "raw_ranks": [
+        16
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 16,
+        "risk_score": 0.4,
+        "line": 5,
+        "condition": "b > 9",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.4,
+      "exec_count": 15,
+      "fail_count": 6,
+      "pass_count": 9,
+      "failure_density": 0.4,
+      "min_exec_count": 15,
+      "min_fail_count": 6,
+      "min_pass_count": 9,
+      "min_failure_density": 0.4,
+      "rank": 16
+    },
+    {
+      "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+      "line": 5,
+      "condition": "b < 0",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 17,
+      "raw_ranks": [
+        17
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 17,
+        "risk_score": 0.375,
+        "line": 5,
+        "condition": "b < 0",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.375,
+      "exec_count": 16,
+      "fail_count": 6,
+      "pass_count": 10,
+      "failure_density": 0.375,
+      "min_exec_count": 16,
+      "min_fail_count": 6,
+      "min_pass_count": 10,
+      "min_failure_density": 0.375,
+      "rank": 17
+    },
+    {
+      "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+      "line": 5,
+      "condition": "a > 9",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 18,
+      "raw_ranks": [
+        18
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 18,
+        "risk_score": 0.35294117647058826,
+        "line": 5,
+        "condition": "a > 9",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.35294117647058826,
+      "exec_count": 17,
+      "fail_count": 6,
+      "pass_count": 11,
+      "failure_density": 0.35294117647058826,
+      "min_exec_count": 17,
+      "min_fail_count": 6,
+      "min_pass_count": 11,
+      "min_failure_density": 0.35294117647058826,
+      "rank": 18
+    },
+    {
+      "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+      "line": 5,
+      "condition": "a < 0",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 19,
+      "raw_ranks": [
+        19
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 19,
+        "risk_score": 0.3333333333333333,
+        "line": 5,
+        "condition": "a < 0",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.3333333333333333,
+      "exec_count": 18,
+      "fail_count": 6,
+      "pass_count": 12,
+      "failure_density": 0.3333333333333333,
+      "min_exec_count": 18,
+      "min_fail_count": 6,
+      "min_pass_count": 12,
+      "min_failure_density": 0.3333333333333333,
+      "rank": 19
+    }
+  ],
+  "aggregated_interval_rankings": {
+    "folded_seed_e": [
+      {
+        "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+        "from_line": 14,
+        "from_condition": "index == 1",
+        "outcome": "true",
+        "to_line": 15,
+        "to_condition": "index != 2",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          14
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            14
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 1,
+        "raw_ranks": [
+          1
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 1,
+          "risk_score": 1.0,
+          "from_line": 14,
+          "from_condition": "index == 1",
+          "outcome": "true",
+          "to_line": 15,
+          "to_condition": "index != 2",
+          "statement_lines": [
+            14
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 6,
+        "fail_count": 6,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 6,
+        "min_fail_count": 6,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 1
+      },
+      {
+        "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+        "from_line": 15,
+        "from_condition": "index != 2",
+        "outcome": "true",
+        "to_line": 16,
+        "to_condition": "index == 3",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          15
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            15
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 2,
+        "raw_ranks": [
+          2
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 2,
+          "risk_score": 1.0,
+          "from_line": 15,
+          "from_condition": "index != 2",
+          "outcome": "true",
+          "to_line": 16,
+          "to_condition": "index == 3",
+          "statement_lines": [
+            15
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 6,
+        "fail_count": 6,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 6,
+        "min_fail_count": 6,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 2
+      },
+      {
+        "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+        "from_line": 16,
+        "from_condition": "index == 3",
+        "outcome": "false",
+        "to_line": 18,
+        "to_condition": "j == 1",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          17
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            17
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 3,
+        "raw_ranks": [
+          3
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 3,
+          "risk_score": 1.0,
+          "from_line": 16,
+          "from_condition": "index == 3",
+          "outcome": "false",
+          "to_line": 18,
+          "to_condition": "j == 1",
+          "statement_lines": [
+            17
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 6,
+        "fail_count": 6,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 6,
+        "min_fail_count": 6,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 3
+      },
+      {
+        "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+        "from_line": 8,
+        "from_condition": "i < 3",
+        "outcome": "false",
+        "to_line": null,
+        "to_condition": null,
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          25
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            25
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 5,
+        "raw_ranks": [
+          5
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 5,
+          "risk_score": 1.0,
+          "from_line": 8,
+          "from_condition": "i < 3",
+          "outcome": "false",
+          "to_line": null,
+          "to_condition": null,
+          "statement_lines": [
+            25
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 6,
+        "fail_count": 6,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 6,
+        "min_fail_count": 6,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 4
+      },
+      {
+        "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+        "from_line": 5,
+        "from_condition": "q > 9",
+        "outcome": "false",
+        "to_line": 8,
+        "to_condition": "i < 3",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          6,
+          7
+        ],
+        "statement_line_count": 2,
+        "region_size": 2,
+        "statement_line_variants": [
+          [
+            6,
+            7
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 6,
+        "raw_ranks": [
+          6
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 6,
+          "risk_score": 1.0,
+          "from_line": 5,
+          "from_condition": "q > 9",
+          "outcome": "false",
+          "to_line": 8,
+          "to_condition": "i < 3",
+          "statement_lines": [
+            6,
+            7
+          ],
+          "region_size": 2,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 6,
+        "fail_count": 6,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 6,
+        "min_fail_count": 6,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 5
+      },
+      {
+        "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+        "from_line": 8,
+        "from_condition": "i < 3",
+        "outcome": "true",
+        "to_line": 11,
+        "to_condition": "j < 2",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          9,
+          10
+        ],
+        "statement_line_count": 2,
+        "region_size": 2,
+        "statement_line_variants": [
+          [
+            9,
+            10
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 7,
+        "raw_ranks": [
+          7
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 7,
+          "risk_score": 1.0,
+          "from_line": 8,
+          "from_condition": "i < 3",
+          "outcome": "true",
+          "to_line": 11,
+          "to_condition": "j < 2",
+          "statement_lines": [
+            9,
+            10
+          ],
+          "region_size": 2,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 6,
+        "fail_count": 6,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 6,
+        "min_fail_count": 6,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 6
+      },
+      {
+        "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+        "from_line": 11,
+        "from_condition": "j < 2",
+        "outcome": "true",
+        "to_line": 14,
+        "to_condition": "index == 1",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          12,
+          13
+        ],
+        "statement_line_count": 2,
+        "region_size": 2,
+        "statement_line_variants": [
+          [
+            12,
+            13
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 8,
+        "raw_ranks": [
+          8
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 8,
+          "risk_score": 1.0,
+          "from_line": 11,
+          "from_condition": "j < 2",
+          "outcome": "true",
+          "to_line": 14,
+          "to_condition": "index == 1",
+          "statement_lines": [
+            12,
+            13
+          ],
+          "region_size": 2,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 6,
+        "fail_count": 6,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 6,
+        "min_fail_count": 6,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 7
+      },
+      {
+        "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+        "from_line": 16,
+        "from_condition": "index == 3",
+        "outcome": "true",
+        "to_line": 18,
+        "to_condition": "j == 1",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          16,
+          17
+        ],
+        "statement_line_count": 2,
+        "region_size": 2,
+        "statement_line_variants": [
+          [
+            16,
+            17
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 9,
+        "raw_ranks": [
+          9
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 9,
+          "risk_score": 1.0,
+          "from_line": 16,
+          "from_condition": "index == 3",
+          "outcome": "true",
+          "to_line": 18,
+          "to_condition": "j == 1",
+          "statement_lines": [
+            16,
+            17
+          ],
+          "region_size": 2,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 6,
+        "fail_count": 6,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 6,
+        "min_fail_count": 6,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 8
+      },
+      {
+        "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+        "from_line": 18,
+        "from_condition": "j == 1",
+        "outcome": "false",
+        "to_line": 11,
+        "to_condition": "j < 2",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          19,
+          20
+        ],
+        "statement_line_count": 2,
+        "region_size": 2,
+        "statement_line_variants": [
+          [
+            19,
+            20
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 10,
+        "raw_ranks": [
+          10
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 10,
+          "risk_score": 1.0,
+          "from_line": 18,
+          "from_condition": "j == 1",
+          "outcome": "false",
+          "to_line": 11,
+          "to_condition": "j < 2",
+          "statement_lines": [
+            19,
+            20
+          ],
+          "region_size": 2,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 6,
+        "fail_count": 6,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 6,
+        "min_fail_count": 6,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 9
+      },
+      {
+        "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+        "from_line": 18,
+        "from_condition": "j == 1",
+        "outcome": "true",
+        "to_line": 11,
+        "to_condition": "j < 2",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          18,
+          19,
+          20
+        ],
+        "statement_line_count": 3,
+        "region_size": 3,
+        "statement_line_variants": [
+          [
+            18,
+            19,
+            20
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 11,
+        "raw_ranks": [
+          11
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 11,
+          "risk_score": 1.0,
+          "from_line": 18,
+          "from_condition": "j == 1",
+          "outcome": "true",
+          "to_line": 11,
+          "to_condition": "j < 2",
+          "statement_lines": [
+            18,
+            19,
+            20
+          ],
+          "region_size": 3,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 6,
+        "fail_count": 6,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 6,
+        "min_fail_count": 6,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 10
+      },
+      {
+        "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+        "from_line": 22,
+        "from_condition": "found",
+        "outcome": "true",
+        "to_line": 8,
+        "to_condition": "i < 3",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          22
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            22
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 12,
+        "raw_ranks": [
+          12
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 12,
+          "risk_score": 0.8333333333333334,
+          "from_line": 22,
+          "from_condition": "found",
+          "outcome": "true",
+          "to_line": 8,
+          "to_condition": "i < 3",
+          "statement_lines": [
+            22
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.8333333333333334,
+        "base_risk_score": 0.8333333333333334,
+        "exec_count": 5,
+        "fail_count": 5,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 5,
+        "min_fail_count": 5,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 11
+      },
+      {
+        "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+        "from_line": 22,
+        "from_condition": "found",
+        "outcome": "false",
+        "to_line": 8,
+        "to_condition": "i < 3",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          23
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            23
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 13,
+        "raw_ranks": [
+          13
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 13,
+          "risk_score": 0.3333333333333333,
+          "from_line": 22,
+          "from_condition": "found",
+          "outcome": "false",
+          "to_line": 8,
+          "to_condition": "i < 3",
+          "statement_lines": [
+            23
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.3333333333333333,
+        "base_risk_score": 0.3333333333333333,
+        "exec_count": 2,
+        "fail_count": 2,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 2,
+        "min_fail_count": 2,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 12
+      }
+    ],
+    "folded_seed_s": [
+      {
+        "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+        "from_line": 22,
+        "from_condition": "found",
+        "outcome": "false",
+        "to_line": 8,
+        "to_condition": "i < 3",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          23
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            23
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 4,
+        "raw_ranks": [
+          4
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 4,
+          "risk_score": 1.0,
+          "from_line": 22,
+          "from_condition": "found",
+          "outcome": "false",
+          "to_line": 8,
+          "to_condition": "i < 3",
+          "statement_lines": [
+            23
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 6,
+        "fail_count": 6,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 6,
+        "min_fail_count": 6,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 1
+      }
+    ],
+    "folded_edge_partition": [
+      {
+        "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+        "from_line": 22,
+        "from_condition": "found",
+        "outcome": "false",
+        "to_line": 8,
+        "to_condition": "i < 3",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          23
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            23
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 2,
+        "best_raw_rank": 4,
+        "raw_ranks": [
+          4,
+          13
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 4,
+          "risk_score": 1.0,
+          "from_line": 22,
+          "from_condition": "found",
+          "outcome": "false",
+          "to_line": 8,
+          "to_condition": "i < 3",
+          "statement_lines": [
+            23
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 6,
+        "fail_count": 6,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 2,
+        "min_fail_count": 2,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 1
+      },
+      {
+        "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+        "from_line": 14,
+        "from_condition": "index == 1",
+        "outcome": "true",
+        "to_line": 15,
+        "to_condition": "index != 2",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          14
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            14
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 1,
+        "raw_ranks": [
+          1
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 1,
+          "risk_score": 1.0,
+          "from_line": 14,
+          "from_condition": "index == 1",
+          "outcome": "true",
+          "to_line": 15,
+          "to_condition": "index != 2",
+          "statement_lines": [
+            14
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 6,
+        "fail_count": 6,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 6,
+        "min_fail_count": 6,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 2
+      },
+      {
+        "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+        "from_line": 15,
+        "from_condition": "index != 2",
+        "outcome": "true",
+        "to_line": 16,
+        "to_condition": "index == 3",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          15
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            15
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 2,
+        "raw_ranks": [
+          2
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 2,
+          "risk_score": 1.0,
+          "from_line": 15,
+          "from_condition": "index != 2",
+          "outcome": "true",
+          "to_line": 16,
+          "to_condition": "index == 3",
+          "statement_lines": [
+            15
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 6,
+        "fail_count": 6,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 6,
+        "min_fail_count": 6,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 3
+      },
+      {
+        "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+        "from_line": 16,
+        "from_condition": "index == 3",
+        "outcome": "false",
+        "to_line": 18,
+        "to_condition": "j == 1",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          17
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            17
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 3,
+        "raw_ranks": [
+          3
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 3,
+          "risk_score": 1.0,
+          "from_line": 16,
+          "from_condition": "index == 3",
+          "outcome": "false",
+          "to_line": 18,
+          "to_condition": "j == 1",
+          "statement_lines": [
+            17
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 6,
+        "fail_count": 6,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 6,
+        "min_fail_count": 6,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 4
+      },
+      {
+        "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+        "from_line": 8,
+        "from_condition": "i < 3",
+        "outcome": "false",
+        "to_line": null,
+        "to_condition": null,
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          25
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            25
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 5,
+        "raw_ranks": [
+          5
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 5,
+          "risk_score": 1.0,
+          "from_line": 8,
+          "from_condition": "i < 3",
+          "outcome": "false",
+          "to_line": null,
+          "to_condition": null,
+          "statement_lines": [
+            25
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 6,
+        "fail_count": 6,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 6,
+        "min_fail_count": 6,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 5
+      },
+      {
+        "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+        "from_line": 5,
+        "from_condition": "q > 9",
+        "outcome": "false",
+        "to_line": 8,
+        "to_condition": "i < 3",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          6,
+          7
+        ],
+        "statement_line_count": 2,
+        "region_size": 2,
+        "statement_line_variants": [
+          [
+            6,
+            7
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 6,
+        "raw_ranks": [
+          6
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 6,
+          "risk_score": 1.0,
+          "from_line": 5,
+          "from_condition": "q > 9",
+          "outcome": "false",
+          "to_line": 8,
+          "to_condition": "i < 3",
+          "statement_lines": [
+            6,
+            7
+          ],
+          "region_size": 2,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 6,
+        "fail_count": 6,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 6,
+        "min_fail_count": 6,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 6
+      },
+      {
+        "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+        "from_line": 8,
+        "from_condition": "i < 3",
+        "outcome": "true",
+        "to_line": 11,
+        "to_condition": "j < 2",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          9,
+          10
+        ],
+        "statement_line_count": 2,
+        "region_size": 2,
+        "statement_line_variants": [
+          [
+            9,
+            10
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 7,
+        "raw_ranks": [
+          7
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 7,
+          "risk_score": 1.0,
+          "from_line": 8,
+          "from_condition": "i < 3",
+          "outcome": "true",
+          "to_line": 11,
+          "to_condition": "j < 2",
+          "statement_lines": [
+            9,
+            10
+          ],
+          "region_size": 2,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 6,
+        "fail_count": 6,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 6,
+        "min_fail_count": 6,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 7
+      },
+      {
+        "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+        "from_line": 11,
+        "from_condition": "j < 2",
+        "outcome": "true",
+        "to_line": 14,
+        "to_condition": "index == 1",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          12,
+          13
+        ],
+        "statement_line_count": 2,
+        "region_size": 2,
+        "statement_line_variants": [
+          [
+            12,
+            13
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 8,
+        "raw_ranks": [
+          8
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 8,
+          "risk_score": 1.0,
+          "from_line": 11,
+          "from_condition": "j < 2",
+          "outcome": "true",
+          "to_line": 14,
+          "to_condition": "index == 1",
+          "statement_lines": [
+            12,
+            13
+          ],
+          "region_size": 2,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 6,
+        "fail_count": 6,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 6,
+        "min_fail_count": 6,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 8
+      },
+      {
+        "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+        "from_line": 16,
+        "from_condition": "index == 3",
+        "outcome": "true",
+        "to_line": 18,
+        "to_condition": "j == 1",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          16,
+          17
+        ],
+        "statement_line_count": 2,
+        "region_size": 2,
+        "statement_line_variants": [
+          [
+            16,
+            17
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 9,
+        "raw_ranks": [
+          9
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 9,
+          "risk_score": 1.0,
+          "from_line": 16,
+          "from_condition": "index == 3",
+          "outcome": "true",
+          "to_line": 18,
+          "to_condition": "j == 1",
+          "statement_lines": [
+            16,
+            17
+          ],
+          "region_size": 2,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 6,
+        "fail_count": 6,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 6,
+        "min_fail_count": 6,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 9
+      },
+      {
+        "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+        "from_line": 18,
+        "from_condition": "j == 1",
+        "outcome": "false",
+        "to_line": 11,
+        "to_condition": "j < 2",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          19,
+          20
+        ],
+        "statement_line_count": 2,
+        "region_size": 2,
+        "statement_line_variants": [
+          [
+            19,
+            20
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 10,
+        "raw_ranks": [
+          10
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 10,
+          "risk_score": 1.0,
+          "from_line": 18,
+          "from_condition": "j == 1",
+          "outcome": "false",
+          "to_line": 11,
+          "to_condition": "j < 2",
+          "statement_lines": [
+            19,
+            20
+          ],
+          "region_size": 2,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 6,
+        "fail_count": 6,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 6,
+        "min_fail_count": 6,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 10
+      },
+      {
+        "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+        "from_line": 18,
+        "from_condition": "j == 1",
+        "outcome": "true",
+        "to_line": 11,
+        "to_condition": "j < 2",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          18,
+          19,
+          20
+        ],
+        "statement_line_count": 3,
+        "region_size": 3,
+        "statement_line_variants": [
+          [
+            18,
+            19,
+            20
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 11,
+        "raw_ranks": [
+          11
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 11,
+          "risk_score": 1.0,
+          "from_line": 18,
+          "from_condition": "j == 1",
+          "outcome": "true",
+          "to_line": 11,
+          "to_condition": "j < 2",
+          "statement_lines": [
+            18,
+            19,
+            20
+          ],
+          "region_size": 3,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 6,
+        "fail_count": 6,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 6,
+        "min_fail_count": 6,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 11
+      },
+      {
+        "source_file": "SpfSubstringCount/SpfSubstringCount_M3.java",
+        "from_line": 22,
+        "from_condition": "found",
+        "outcome": "true",
+        "to_line": 8,
+        "to_condition": "i < 3",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          22
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            22
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 12,
+        "raw_ranks": [
+          12
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 12,
+          "risk_score": 0.8333333333333334,
+          "from_line": 22,
+          "from_condition": "found",
+          "outcome": "true",
+          "to_line": 8,
+          "to_condition": "i < 3",
+          "statement_lines": [
+            22
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.8333333333333334,
+        "base_risk_score": 0.8333333333333334,
+        "exec_count": 5,
+        "fail_count": 5,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 5,
+        "min_fail_count": 5,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 12
+      }
+    ]
+  }
+}

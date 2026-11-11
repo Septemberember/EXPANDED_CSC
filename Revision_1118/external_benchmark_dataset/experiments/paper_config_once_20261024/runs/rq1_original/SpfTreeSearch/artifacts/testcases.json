@@ -1,0 +1,328 @@
+[
+  {
+    "iteration": 0,
+    "inputs": {
+      "left": 0,
+      "root": 0,
+      "right": 0,
+      "key": 0
+    },
+    "path_constraint": "bootstrap",
+    "trace_path": "csc_tmp/extpaper_rq1_original_SpfTreeSearch_1792783119362393000/SpfTreeSearch/traces/bootstrap/trace.jsonl",
+    "status": "bootstrap",
+    "timings": {
+      "compile_time_ms": 251,
+      "java_exec_time_ms": 47,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 2,
+    "inputs": {
+      "left": "1022",
+      "root": "1024",
+      "right": "0",
+      "key": "0"
+    },
+    "path_constraint": "(!(left < 0)) && (!(root <= left))",
+    "trace_path": "csc_tmp/extpaper_rq1_original_SpfTreeSearch_1792783119362393000/SpfTreeSearch/traces/t2/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 267,
+      "java_exec_time_ms": 61,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 5
+    }
+  },
+  {
+    "iteration": 3,
+    "inputs": {
+      "left": "16382",
+      "root": "16384",
+      "right": "16385",
+      "key": "0"
+    },
+    "path_constraint": "(!(left < 0)) && (!(root <= left)) && (!(right <= root))",
+    "trace_path": "csc_tmp/extpaper_rq1_original_SpfTreeSearch_1792783119362393000/SpfTreeSearch/traces/t3/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 296,
+      "java_exec_time_ms": 51,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 4
+    }
+  },
+  {
+    "iteration": 4,
+    "inputs": {
+      "left": "0",
+      "root": "1",
+      "right": "2",
+      "key": "0"
+    },
+    "path_constraint": "(!(left < 0)) && (!(root <= left)) && (!(right <= root)) && (!(right > 9))",
+    "trace_path": "csc_tmp/extpaper_rq1_original_SpfTreeSearch_1792783119362393000/SpfTreeSearch/traces/t4/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 271,
+      "java_exec_time_ms": 64,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 4
+    }
+  },
+  {
+    "iteration": 5,
+    "inputs": null,
+    "path_constraint": "(!(left < 0)) && (!(root <= left)) && (!(right <= root)) && (!(right > 9)) && (!(key < 0)) && (!(key > 9)) && (!((0) >= 0))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 6,
+    "inputs": {
+      "left": "0",
+      "root": "1",
+      "right": "2",
+      "key": "9"
+    },
+    "path_constraint": "(!(left < 0)) && (!(root <= left)) && (!(right <= root)) && (!(right > 9)) && (!(key < 0)) && (!(key > 9)) && ((0) >= 0) && (!((0) == 1)) && (!((0) == 2)) && (!((root) == key)) && (!(key < (root)))",
+    "trace_path": "csc_tmp/extpaper_rq1_original_SpfTreeSearch_1792783119362393000/SpfTreeSearch/traces/t6/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 251,
+      "java_exec_time_ms": 51,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 7,
+    "inputs": null,
+    "path_constraint": "(!(left < 0)) && (!(root <= left)) && (!(right <= root)) && (!(right > 9)) && (!(key < 0)) && (!(key > 9)) && ((0) >= 0) && (!((0) == 1)) && (!((0) == 2)) && (!((root) == key)) && (!(key < (root))) && (!((0) == 0))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 8,
+    "inputs": null,
+    "path_constraint": "(!(left < 0)) && (!(root <= left)) && (!(right <= root)) && (!(right > 9)) && (!(key < 0)) && (!(key > 9)) && ((0) >= 0) && (!((0) == 1)) && (!((0) == 2)) && (!((root) == key)) && (!(key < (root))) && ((0) == 0) && (!((2) >= 0))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 9,
+    "inputs": {
+      "left": "0",
+      "root": "1",
+      "right": "9",
+      "key": "9"
+    },
+    "path_constraint": "(!(left < 0)) && (!(root <= left)) && (!(right <= root)) && (!(right > 9)) && (!(key < 0)) && (!(key > 9)) && ((0) >= 0) && (!((0) == 1)) && (!((0) == 2)) && (!((root) == key)) && (!(key < (root))) && ((0) == 0) && ((2) >= 0) && (!((2) == 1)) && ((2) == 2) && ((right) == key)",
+    "trace_path": "csc_tmp/extpaper_rq1_original_SpfTreeSearch_1792783119362393000/SpfTreeSearch/traces/t9/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 253,
+      "java_exec_time_ms": 49,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 10,
+    "inputs": null,
+    "path_constraint": "(!(left < 0)) && (!(root <= left)) && (!(right <= root)) && (!(right > 9)) && (!(key < 0)) && (!(key > 9)) && ((0) >= 0) && (!((0) == 1)) && (!((0) == 2)) && (!((root) == key)) && (!(key < (root))) && ((0) == 0) && ((2) >= 0) && ((2) == 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 11,
+    "inputs": null,
+    "path_constraint": "(!(left < 0)) && (!(root <= left)) && (!(right <= root)) && (!(right > 9)) && (!(key < 0)) && (!(key > 9)) && ((0) >= 0) && (!((0) == 1)) && (!((0) == 2)) && (!((root) == key)) && (key < (root)) && (!((0) == 0))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 12,
+    "inputs": null,
+    "path_constraint": "(!(left < 0)) && (!(root <= left)) && (!(right <= root)) && (!(right > 9)) && (!(key < 0)) && (!(key > 9)) && ((0) >= 0) && (!((0) == 1)) && (!((0) == 2)) && (!((root) == key)) && (key < (root)) && ((0) == 0) && (!((1) >= 0))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 13,
+    "inputs": null,
+    "path_constraint": "(!(left < 0)) && (!(root <= left)) && (!(right <= root)) && (!(right > 9)) && (!(key < 0)) && (!(key > 9)) && ((0) >= 0) && (!((0) == 1)) && (!((0) == 2)) && (!((root) == key)) && (key < (root)) && ((0) == 0) && ((1) >= 0) && ((1) == 1) && ((1) == 2)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 14,
+    "inputs": {
+      "left": "0",
+      "root": "7",
+      "right": "8",
+      "key": "7"
+    },
+    "path_constraint": "(!(left < 0)) && (!(root <= left)) && (!(right <= root)) && (!(right > 9)) && (!(key < 0)) && (!(key > 9)) && ((0) >= 0) && (!((0) == 1)) && (!((0) == 2)) && ((root) == key)",
+    "trace_path": "csc_tmp/extpaper_rq1_original_SpfTreeSearch_1792783119362393000/SpfTreeSearch/traces/t14/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 252,
+      "java_exec_time_ms": 49,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 15,
+    "inputs": null,
+    "path_constraint": "(!(left < 0)) && (!(root <= left)) && (!(right <= root)) && (!(right > 9)) && (!(key < 0)) && (!(key > 9)) && ((0) >= 0) && (!((0) == 1)) && ((0) == 2)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 16,
+    "inputs": null,
+    "path_constraint": "(!(left < 0)) && (!(root <= left)) && (!(right <= root)) && (!(right > 9)) && (!(key < 0)) && (!(key > 9)) && ((0) >= 0) && ((0) == 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 17,
+    "inputs": {
+      "left": "0",
+      "root": "1",
+      "right": "2",
+      "key": "10"
+    },
+    "path_constraint": "(!(left < 0)) && (!(root <= left)) && (!(right <= root)) && (!(right > 9)) && (!(key < 0)) && (key > 9)",
+    "trace_path": "csc_tmp/extpaper_rq1_original_SpfTreeSearch_1792783119362393000/SpfTreeSearch/traces/t17/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 247,
+      "java_exec_time_ms": 46,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 18,
+    "inputs": {
+      "left": "0",
+      "root": "1",
+      "right": "2",
+      "key": "-32768"
+    },
+    "path_constraint": "(!(left < 0)) && (!(root <= left)) && (!(right <= root)) && (!(right > 9)) && (key < 0)",
+    "trace_path": "csc_tmp/extpaper_rq1_original_SpfTreeSearch_1792783119362393000/SpfTreeSearch/traces/t18/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 243,
+      "java_exec_time_ms": 58,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 19,
+    "inputs": {
+      "left": "-32768",
+      "root": "0",
+      "right": "0",
+      "key": "0"
+    },
+    "path_constraint": "(left < 0)",
+    "trace_path": "csc_tmp/extpaper_rq1_original_SpfTreeSearch_1792783119362393000/SpfTreeSearch/traces/t19/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 242,
+      "java_exec_time_ms": 45,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  }
+]

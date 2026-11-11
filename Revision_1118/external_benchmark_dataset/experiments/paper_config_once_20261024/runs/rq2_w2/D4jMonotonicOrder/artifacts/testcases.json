@@ -1,0 +1,721 @@
+[
+  {
+    "iteration": 0,
+    "inputs": {
+      "a": 0,
+      "b": 0,
+      "c": 0,
+      "increasing": true,
+      "strict": true
+    },
+    "path_constraint": "bootstrap",
+    "trace_path": "csc_tmp/extpaper_rq2_w2_D4jMonotonicOrder_1792783670415179000/D4jMonotonicOrder/traces/bootstrap/trace.jsonl",
+    "status": "bootstrap",
+    "strategy": "batch",
+    "timings": {
+      "compile_time_ms": 270,
+      "java_exec_time_ms": 66,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "test_case_id": "tc_2_b0",
+    "iteration": 2,
+    "branch_idx": 0,
+    "inputs": {
+      "a": "0",
+      "b": "0",
+      "c": "0",
+      "increasing": "False",
+      "strict": "False"
+    },
+    "path_constraint": "(!(a < -3)) && (!(a > 3)) && (!(b < -3)) && (!(b > 3)) && (!(c < -3)) && (!(c > 3)) && ((1) < 3) && (!((1) == 2)) && (!(increasing))",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_rq2_w2_D4jMonotonicOrder_1792783670415179000/D4jMonotonicOrder/traces/round_02/b0/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 373,
+      "java_exec_time_ms": 64,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 439,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 2140,
+      "max_workers": 2,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 2141,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 3304,
+        "java_exec_time_ms": 611,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 3925,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_2_b1",
+    "iteration": 2,
+    "branch_idx": 1,
+    "inputs": {
+      "a": "0",
+      "b": "0",
+      "c": "0",
+      "increasing": "True",
+      "strict": "False"
+    },
+    "path_constraint": "(!(a < -3)) && (!(a > 3)) && (!(b < -3)) && (!(b > 3)) && (!(c < -3)) && (!(c > 3)) && ((1) < 3) && (!((1) == 2)) && (increasing) && (!(strict))",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_rq2_w2_D4jMonotonicOrder_1792783670415179000/D4jMonotonicOrder/traces/round_02/b1/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 361,
+      "java_exec_time_ms": 79,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 442,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 2140,
+      "max_workers": 2,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 2141,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 3304,
+        "java_exec_time_ms": 611,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 3925,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_2_b2",
+    "iteration": 2,
+    "branch_idx": 2,
+    "inputs": {
+      "a": "-2",
+      "b": "0",
+      "c": "0",
+      "increasing": "True",
+      "strict": "True"
+    },
+    "path_constraint": "(!(a < -3)) && (!(a > 3)) && (!(b < -3)) && (!(b > 3)) && (!(c < -3)) && (!(c > 3)) && ((1) < 3) && (!((1) == 2)) && (increasing) && (strict) && (!(b) <= (a))",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_rq2_w2_D4jMonotonicOrder_1792783670415179000/D4jMonotonicOrder/traces/round_02/b2/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 367,
+      "java_exec_time_ms": 80,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 448,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 2140,
+      "max_workers": 2,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 2141,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 3304,
+        "java_exec_time_ms": 611,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 3925,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_2_b3",
+    "iteration": 2,
+    "branch_idx": 3,
+    "inputs": {
+      "a": "0",
+      "b": "0",
+      "c": "16384",
+      "increasing": "False",
+      "strict": "False"
+    },
+    "path_constraint": "(!(a < -3)) && (!(a > 3)) && (!(b < -3)) && (!(b > 3)) && (!(c < -3)) && (c > 3)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_rq2_w2_D4jMonotonicOrder_1792783670415179000/D4jMonotonicOrder/traces/round_02/b3/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 373,
+      "java_exec_time_ms": 74,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 448,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 2140,
+      "max_workers": 2,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 2141,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 3304,
+        "java_exec_time_ms": 611,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 3925,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_2_b4",
+    "iteration": 2,
+    "branch_idx": 4,
+    "inputs": {
+      "a": "0",
+      "b": "0",
+      "c": "-32768",
+      "increasing": "False",
+      "strict": "False"
+    },
+    "path_constraint": "(!(a < -3)) && (!(a > 3)) && (!(b < -3)) && (!(b > 3)) && (c < -3)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_rq2_w2_D4jMonotonicOrder_1792783670415179000/D4jMonotonicOrder/traces/round_02/b4/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 368,
+      "java_exec_time_ms": 65,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 434,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 2140,
+      "max_workers": 2,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 2141,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 3304,
+        "java_exec_time_ms": 611,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 3925,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_2_b5",
+    "iteration": 2,
+    "branch_idx": 5,
+    "inputs": {
+      "a": "0",
+      "b": "16384",
+      "c": "0",
+      "increasing": "False",
+      "strict": "False"
+    },
+    "path_constraint": "(!(a < -3)) && (!(a > 3)) && (!(b < -3)) && (b > 3)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_rq2_w2_D4jMonotonicOrder_1792783670415179000/D4jMonotonicOrder/traces/round_02/b5/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 378,
+      "java_exec_time_ms": 64,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 444,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 2140,
+      "max_workers": 2,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 2141,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 3304,
+        "java_exec_time_ms": 611,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 3925,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_2_b6",
+    "iteration": 2,
+    "branch_idx": 6,
+    "inputs": {
+      "a": "0",
+      "b": "-32768",
+      "c": "0",
+      "increasing": "False",
+      "strict": "False"
+    },
+    "path_constraint": "(!(a < -3)) && (!(a > 3)) && (b < -3)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_rq2_w2_D4jMonotonicOrder_1792783670415179000/D4jMonotonicOrder/traces/round_02/b6/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 371,
+      "java_exec_time_ms": 66,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 437,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 2140,
+      "max_workers": 2,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 2141,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 3304,
+        "java_exec_time_ms": 611,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 3925,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_2_b7",
+    "iteration": 2,
+    "branch_idx": 7,
+    "inputs": {
+      "a": "16384",
+      "b": "0",
+      "c": "0",
+      "increasing": "False",
+      "strict": "False"
+    },
+    "path_constraint": "(!(a < -3)) && (a > 3)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_rq2_w2_D4jMonotonicOrder_1792783670415179000/D4jMonotonicOrder/traces/round_02/b7/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 388,
+      "java_exec_time_ms": 66,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 454,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 2140,
+      "max_workers": 2,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 2141,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 3304,
+        "java_exec_time_ms": 611,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 3925,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_2_b8",
+    "iteration": 2,
+    "branch_idx": 8,
+    "inputs": {
+      "a": "-32768",
+      "b": "0",
+      "c": "0",
+      "increasing": "False",
+      "strict": "False"
+    },
+    "path_constraint": "(a < -3)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_rq2_w2_D4jMonotonicOrder_1792783670415179000/D4jMonotonicOrder/traces/round_02/b8/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 325,
+      "java_exec_time_ms": 53,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 379,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 2140,
+      "max_workers": 2,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 2141,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 3304,
+        "java_exec_time_ms": 611,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 3925,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_3_b0",
+    "iteration": 3,
+    "branch_idx": 0,
+    "inputs": {
+      "a": "2",
+      "b": "-2",
+      "c": "0",
+      "increasing": "False",
+      "strict": "False"
+    },
+    "path_constraint": "(!(a < -3)) && (!(a > 3)) && (!(b < -3)) && (!(b > 3)) && (!(c < -3)) && (!(c > 3)) && ((1) < 3) && (!((1) == 2)) && (!(increasing)) && (!(strict)) && (!(b) > (a)) && (((1) + 1) < 3) && (((1) + 1) == 2) && (!(increasing)) && (!(strict)) && (c) > ((b))",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_rq2_w2_D4jMonotonicOrder_1792783670415179000/D4jMonotonicOrder/traces/round_03/b0/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 344,
+      "java_exec_time_ms": 62,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 407,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 1299,
+      "max_workers": 2,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 1300,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 2143,
+        "java_exec_time_ms": 413,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 2563,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_3_b1",
+    "iteration": 3,
+    "branch_idx": 1,
+    "inputs": {
+      "a": "-2",
+      "b": "0",
+      "c": "0",
+      "increasing": "False",
+      "strict": "False"
+    },
+    "path_constraint": "(!(a < -3)) && (!(a > 3)) && (!(b < -3)) && (!(b > 3)) && (!(c < -3)) && (!(c > 3)) && ((1) < 3) && (!((1) == 2)) && (!(increasing)) && (!(strict)) && (b) > (a)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_rq2_w2_D4jMonotonicOrder_1792783670415179000/D4jMonotonicOrder/traces/round_03/b1/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 331,
+      "java_exec_time_ms": 67,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 399,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 1299,
+      "max_workers": 2,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 1300,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 2143,
+        "java_exec_time_ms": 413,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 2563,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_3_b2",
+    "iteration": 3,
+    "branch_idx": 2,
+    "inputs": {
+      "a": "0",
+      "b": "0",
+      "c": "0",
+      "increasing": "False",
+      "strict": "True"
+    },
+    "path_constraint": "(!(a < -3)) && (!(a > 3)) && (!(b < -3)) && (!(b > 3)) && (!(c < -3)) && (!(c > 3)) && ((1) < 3) && (!((1) == 2)) && (!(increasing)) && (strict)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_rq2_w2_D4jMonotonicOrder_1792783670415179000/D4jMonotonicOrder/traces/round_03/b2/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 380,
+      "java_exec_time_ms": 77,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 458,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 1299,
+      "max_workers": 2,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 1300,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 2143,
+        "java_exec_time_ms": 413,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 2563,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_3_b3",
+    "iteration": 3,
+    "branch_idx": 3,
+    "inputs": {
+      "a": "0",
+      "b": "0",
+      "c": "-2",
+      "increasing": "True",
+      "strict": "False"
+    },
+    "path_constraint": "(!(a < -3)) && (!(a > 3)) && (!(b < -3)) && (!(b > 3)) && (!(c < -3)) && (!(c > 3)) && ((1) < 3) && (!((1) == 2)) && (increasing) && (!(strict)) && (!(b) < (a)) && (((1) + 1) < 3) && (((1) + 1) == 2) && (increasing) && (!(strict)) && (c) < ((b))",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_rq2_w2_D4jMonotonicOrder_1792783670415179000/D4jMonotonicOrder/traces/round_03/b3/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 368,
+      "java_exec_time_ms": 67,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 436,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 1299,
+      "max_workers": 2,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 1300,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 2143,
+        "java_exec_time_ms": 413,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 2563,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_3_b4",
+    "iteration": 3,
+    "branch_idx": 4,
+    "inputs": {
+      "a": "0",
+      "b": "-2",
+      "c": "0",
+      "increasing": "True",
+      "strict": "False"
+    },
+    "path_constraint": "(!(a < -3)) && (!(a > 3)) && (!(b < -3)) && (!(b > 3)) && (!(c < -3)) && (!(c > 3)) && ((1) < 3) && (!((1) == 2)) && (increasing) && (!(strict)) && (b) < (a)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_rq2_w2_D4jMonotonicOrder_1792783670415179000/D4jMonotonicOrder/traces/round_03/b4/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 358,
+      "java_exec_time_ms": 64,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 423,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 1299,
+      "max_workers": 2,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 1300,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 2143,
+        "java_exec_time_ms": 413,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 2563,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_3_b5",
+    "iteration": 3,
+    "branch_idx": 5,
+    "inputs": {
+      "a": "0",
+      "b": "2",
+      "c": "3",
+      "increasing": "True",
+      "strict": "True"
+    },
+    "path_constraint": "(!(a < -3)) && (!(a > 3)) && (!(b < -3)) && (!(b > 3)) && (!(c < -3)) && (!(c > 3)) && ((1) < 3) && (!((1) == 2)) && (increasing) && (strict) && (!(b) <= (a)) && (((1) + 1) < 3) && (((1) + 1) == 2) && (increasing) && (strict) && (!(c) <= ((b)))",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_rq2_w2_D4jMonotonicOrder_1792783670415179000/D4jMonotonicOrder/traces/round_03/b5/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 362,
+      "java_exec_time_ms": 76,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 440,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 1299,
+      "max_workers": 2,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 1300,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 2143,
+        "java_exec_time_ms": 413,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 2563,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_4_b0",
+    "iteration": 4,
+    "branch_idx": 0,
+    "inputs": {
+      "a": "0",
+      "b": "-2",
+      "c": "0",
+      "increasing": "False",
+      "strict": "True"
+    },
+    "path_constraint": "(!(a < -3)) && (!(a > 3)) && (!(b < -3)) && (!(b > 3)) && (!(c < -3)) && (!(c > 3)) && ((1) < 3) && (!((1) == 2)) && (!(increasing)) && (strict) && (!(b) >= (a))",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_rq2_w2_D4jMonotonicOrder_1792783670415179000/D4jMonotonicOrder/traces/round_04/b0/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 301,
+      "java_exec_time_ms": 56,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 359,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 359,
+      "max_workers": 2,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 359,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 301,
+        "java_exec_time_ms": 56,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 359,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_5_b0",
+    "iteration": 5,
+    "branch_idx": 0,
+    "inputs": {
+      "a": "2",
+      "b": "1",
+      "c": "0",
+      "increasing": "False",
+      "strict": "True"
+    },
+    "path_constraint": "(!(a < -3)) && (!(a > 3)) && (!(b < -3)) && (!(b > 3)) && (!(c < -3)) && (!(c > 3)) && ((1) < 3) && (!((1) == 2)) && (!(increasing)) && (strict) && (!(b) >= (a)) && (((1) + 1) < 3) && (((1) + 1) == 2) && (!(increasing)) && (strict) && (!(c) >= ((b)))",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_rq2_w2_D4jMonotonicOrder_1792783670415179000/D4jMonotonicOrder/traces/round_05/b0/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 275,
+      "java_exec_time_ms": 52,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 327,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 328,
+      "max_workers": 2,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 328,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 275,
+        "java_exec_time_ms": 52,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 327,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  }
+]

@@ -1,0 +1,995 @@
+=======================================================
+  CSC Engine — Test Case Generator
+=======================================================
+  Source:       /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SvMinePumpStep/SvMinePumpStep_M3.java
+  Mode:         Expanded CSC
+  Range bound:  +/- 200
+  Max iter:     100
+  Strategy:     batch
+  Workers:      4
+  Session:      extpaper_kill_expanded_SvMinePumpStep_M3_1792784327843557000
+  CCT render:   no
+
+[1/3] Auto-instrumenting Java source...
+  [instrument] /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SvMinePumpStep/SvMinePumpStep_M3.java -> /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SvMinePumpStep/SvMinePumpStep_M3_instrumented.java
+  Class:        SvMinePumpStep_M3
+  Params:       {'return_value': 'int', 'water': 'int', 'running': 'boolean', 'active': 'boolean', 'methane': 'boolean'}
+  Run log:      csc_tmp/extpaper_kill_expanded_SvMinePumpStep_M3_1792784327843557000/SvMinePumpStep_M3/run_log.jsonl
+
+[2/3] Compiling...
+  [compile] SvMinePumpStep_M3.class
+[3/3] CSC Loop
+---------------------------------------------
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+{Ø}
+-----------------------------
+
+
+  [Batch Round 1] CCT not initialized — running bootstrap
+  Bootstrap inputs: {'water': 0, 'running': True, 'active': True, 'methane': True}
+  Execution path: 13 steps, 8 conditions
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvMinePumpStep_M3_1792784327843557000/SvMinePumpStep_M3/SvMinePumpStep_M3_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: water < 0 @L5 (WP: water < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: water > 2 @L5 (WP: water > 2, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: pump @L8 (WP: (running), Cnt: 1)
+  |     |     (F) ->
+  |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: level == 2 @L9 (WP: (water) == 2, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: level == 1 @L9 (WP: (water) == 1, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L12 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (false), Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(water=0, running=True, active=True, methane=True)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Batch Round 2] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: water < 0 @L5 (WP: water < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: water > 2 @L5 (WP: water > 2, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: pump @L8 (WP: (running), Cnt: 1)
+  |     |     (F) ->
+  |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: level == 2 @L9 (WP: (water) == 2, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: level == 1 @L9 (WP: (water) == 1, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L12 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (false), Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(water=0, running=True, active=True, methane=True)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvMinePumpStep_M3_1792784327843557000/SvMinePumpStep_M3/SvMinePumpStep_M3_cct.dot
+  -> Executing 6 candidates with 4 workers; merging 2 terminal updates
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvMinePumpStep_M3_1792784327843557000/SvMinePumpStep_M3/SvMinePumpStep_M3_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: water < 0 @L5 (WP: water < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: water > 2 @L5 (WP: water > 2, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: pump @L8 (WP: (running), Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(water=0, running=False, active=False, methane=False)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: level == 2 @L9 (WP: (water) == 2, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: level == 1 @L9 (WP: (water) == 1, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(water=0, running=True, active=False, methane=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L12 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (false), Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(water=0, running=True, active=True, methane=True)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(water=1, running=True, active=False, methane=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(water=2, running=True, active=False, methane=False)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(water=3, running=False, active=False, methane=False)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(water=-32768, running=False, active=False, methane=False)
+-----------------------------
+
+
+  [Batch Round 3] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: water < 0 @L5 (WP: water < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: water > 2 @L5 (WP: water > 2, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: pump @L8 (WP: (running), Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(water=0, running=False, active=False, methane=False)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: level == 2 @L9 (WP: (water) == 2, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: level == 1 @L9 (WP: (water) == 1, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(water=0, running=True, active=False, methane=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L12 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (false), Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(water=0, running=True, active=True, methane=True)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(water=1, running=True, active=False, methane=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(water=2, running=True, active=False, methane=False)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(water=3, running=False, active=False, methane=False)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(water=-32768, running=False, active=False, methane=False)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvMinePumpStep_M3_1792784327843557000/SvMinePumpStep_M3/SvMinePumpStep_M3_cct.dot
+  -> Executing 3 candidates with 4 workers; merging 4 terminal updates
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvMinePumpStep_M3_1792784327843557000/SvMinePumpStep_M3/SvMinePumpStep_M3_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: water < 0 @L5 (WP: water < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: water > 2 @L5 (WP: water > 2, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: pump @L8 (WP: (running), Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(water=0, running=False, active=False, methane=False)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: pump @L12 (WP: (running), Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: methane @L12 (WP: methane, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L14 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pump @L16 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: level == 2 @L16 (WP: (water) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(water=0, running=False, active=True, methane=False)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: level == 2 @L9 (WP: (water) == 2, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: level == 1 @L9 (WP: (water) == 1, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(water=0, running=True, active=False, methane=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L12 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (false), Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(water=0, running=True, active=True, methane=True)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(water=1, running=True, active=False, methane=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L12 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (false), Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(water=1, running=True, active=True, methane=False)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(water=2, running=True, active=False, methane=False)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: pump @L12 (WP: (running), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (false), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b2'}  inputs: tc_3_b2(water=2, running=True, active=True, methane=False)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(water=3, running=False, active=False, methane=False)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(water=-32768, running=False, active=False, methane=False)
+-----------------------------
+
+
+  [Batch Round 4] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: water < 0 @L5 (WP: water < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: water > 2 @L5 (WP: water > 2, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: pump @L8 (WP: (running), Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(water=0, running=False, active=False, methane=False)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: pump @L12 (WP: (running), Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: methane @L12 (WP: methane, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L14 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pump @L16 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: level == 2 @L16 (WP: (water) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(water=0, running=False, active=True, methane=False)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: level == 2 @L9 (WP: (water) == 2, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: level == 1 @L9 (WP: (water) == 1, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(water=0, running=True, active=False, methane=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L12 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (false), Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(water=0, running=True, active=True, methane=True)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(water=1, running=True, active=False, methane=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L12 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (false), Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(water=1, running=True, active=True, methane=False)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(water=2, running=True, active=False, methane=False)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: pump @L12 (WP: (running), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (false), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b2'}  inputs: tc_3_b2(water=2, running=True, active=True, methane=False)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(water=3, running=False, active=False, methane=False)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(water=-32768, running=False, active=False, methane=False)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvMinePumpStep_M3_1792784327843557000/SvMinePumpStep_M3/SvMinePumpStep_M3_cct.dot
+  -> Executing 2 candidates with 4 workers; merging 8 terminal updates
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvMinePumpStep_M3_1792784327843557000/SvMinePumpStep_M3/SvMinePumpStep_M3_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: water < 0 @L5 (WP: water < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: water > 2 @L5 (WP: water > 2, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: pump @L8 (WP: (running), Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(water=0, running=False, active=False, methane=False)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: pump @L12 (WP: (running), Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: methane @L12 (WP: methane, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L14 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pump @L16 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: level == 2 @L16 (WP: (water) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(water=0, running=False, active=True, methane=False)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: methane @L16 (WP: methane, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'}  inputs: tc_4_b0(water=2, running=False, active=True, methane=False)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (false), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b1'}  inputs: tc_4_b1(water=0, running=False, active=True, methane=True)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: level == 2 @L9 (WP: (water) == 2, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: level == 1 @L9 (WP: (water) == 1, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(water=0, running=True, active=False, methane=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L12 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (false), Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(water=0, running=True, active=True, methane=True)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(water=1, running=True, active=False, methane=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L12 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (false), Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(water=1, running=True, active=True, methane=False)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(water=2, running=True, active=False, methane=False)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: pump @L12 (WP: (running), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (false), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b2'}  inputs: tc_3_b2(water=2, running=True, active=True, methane=False)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(water=3, running=False, active=False, methane=False)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(water=-32768, running=False, active=False, methane=False)
+-----------------------------
+
+
+  [Batch Round 5] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: water < 0 @L5 (WP: water < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: water > 2 @L5 (WP: water > 2, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: pump @L8 (WP: (running), Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(water=0, running=False, active=False, methane=False)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: pump @L12 (WP: (running), Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: methane @L12 (WP: methane, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L14 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pump @L16 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: level == 2 @L16 (WP: (water) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(water=0, running=False, active=True, methane=False)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: methane @L16 (WP: methane, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'}  inputs: tc_4_b0(water=2, running=False, active=True, methane=False)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (false), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b1'}  inputs: tc_4_b1(water=0, running=False, active=True, methane=True)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: level == 2 @L9 (WP: (water) == 2, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: level == 1 @L9 (WP: (water) == 1, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(water=0, running=True, active=False, methane=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L12 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (false), Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(water=0, running=True, active=True, methane=True)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(water=1, running=True, active=False, methane=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L12 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (false), Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(water=1, running=True, active=True, methane=False)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(water=2, running=True, active=False, methane=False)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: pump @L12 (WP: (running), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (false), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b2'}  inputs: tc_3_b2(water=2, running=True, active=True, methane=False)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(water=3, running=False, active=False, methane=False)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(water=-32768, running=False, active=False, methane=False)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvMinePumpStep_M3_1792784327843557000/SvMinePumpStep_M3/SvMinePumpStep_M3_cct.dot
+  -> Executing 0 candidates with 4 workers; merging 3 terminal updates
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvMinePumpStep_M3_1792784327843557000/SvMinePumpStep_M3/SvMinePumpStep_M3_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: water < 0 @L5 (WP: water < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: water > 2 @L5 (WP: water > 2, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: pump @L8 (WP: (running), Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(water=0, running=False, active=False, methane=False)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: pump @L12 (WP: (running), Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: methane @L12 (WP: methane, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L14 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pump @L16 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: level == 2 @L16 (WP: (water) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(water=0, running=False, active=True, methane=False)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: methane @L16 (WP: methane, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'}  inputs: tc_4_b0(water=2, running=False, active=True, methane=False)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (false), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b1'}  inputs: tc_4_b1(water=0, running=False, active=True, methane=True)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: level == 2 @L9 (WP: (water) == 2, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: level == 1 @L9 (WP: (water) == 1, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(water=0, running=True, active=False, methane=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L12 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (false), Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(water=0, running=True, active=True, methane=True)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(water=1, running=True, active=False, methane=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L12 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (false), Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(water=1, running=True, active=True, methane=False)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(water=2, running=True, active=False, methane=False)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: pump @L12 (WP: (running), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (false), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b2'}  inputs: tc_3_b2(water=2, running=True, active=True, methane=False)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(water=3, running=False, active=False, methane=False)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(water=-32768, running=False, active=False, methane=False)
+-----------------------------
+
+
+  [Batch Round 6] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: water < 0 @L5 (WP: water < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: water > 2 @L5 (WP: water > 2, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: pump @L8 (WP: (running), Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(water=0, running=False, active=False, methane=False)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: pump @L12 (WP: (running), Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: methane @L12 (WP: methane, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L14 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pump @L16 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: level == 2 @L16 (WP: (water) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(water=0, running=False, active=True, methane=False)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: methane @L16 (WP: methane, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'}  inputs: tc_4_b0(water=2, running=False, active=True, methane=False)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (false), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b1'}  inputs: tc_4_b1(water=0, running=False, active=True, methane=True)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: level == 2 @L9 (WP: (water) == 2, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: level == 1 @L9 (WP: (water) == 1, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(water=0, running=True, active=False, methane=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L12 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (false), Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(water=0, running=True, active=True, methane=True)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(water=1, running=True, active=False, methane=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L12 (WP: (running), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (false), Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(water=1, running=True, active=True, methane=False)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: active @L11 (WP: active, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (running), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(water=2, running=True, active=False, methane=False)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: pump @L12 (WP: (running), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: pump @L21 (WP: (false), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b2'}  inputs: tc_3_b2(water=2, running=True, active=True, methane=False)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(water=3, running=False, active=False, methane=False)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(water=-32768, running=False, active=False, methane=False)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvMinePumpStep_M3_1792784327843557000/SvMinePumpStep_M3/SvMinePumpStep_M3_cct.dot
+  -> CCT is FULL — all branches covered!
+
+=======================================================
+  Done! 12 test cases generated in 6 iterations.
+=======================================================
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvMinePumpStep_M3_1792784327843557000/SvMinePumpStep_M3/SvMinePumpStep_M3_cct.dot
+
+Generated Test Cases:
+---------------------------------------------
+  [BOOTSTRAP]  (bootstrap)
+  round_02/b0  [BATCH_SAFE]  water=0, running=False, active=False, methane=False
+  round_02/b1  [BATCH_SAFE]  water=0, running=True, active=False, methane=False
+  round_02/b2  [BATCH_SAFE]  water=1, running=True, active=False, methane=False
+  round_02/b3  [BATCH_SAFE]  water=2, running=True, active=False, methane=False
+  round_02/b4  [BATCH_SAFE]  water=3, running=False, active=False, methane=False
+  round_02/b5  [BATCH_SAFE]  water=-32768, running=False, active=False, methane=False
+  round_03/b0  [BATCH_SAFE]  water=0, running=False, active=True, methane=False
+  round_03/b1  [BATCH_SAFE]  water=1, running=True, active=True, methane=False
+  round_03/b2  [BATCH_SAFE]  water=2, running=True, active=True, methane=False
+  round_04/b0  [BATCH_SAFE]  water=2, running=False, active=True, methane=False
+  round_04/b1  [BATCH_SAFE]  water=0, running=False, active=True, methane=True
+
+Timing Summary (ms):
+---------------------------------------------
+  solver_time_ms: 19
+  frontier_discovery_time_ms: 42
+  compile_time_ms: 7136
+  java_exec_time_ms: 1129
+  path_log_parse_time_ms: 1
+  cct_path_build_time_ms: 0
+  cct_merge_time_ms: 0
+  verification_solver_time_ms: 0
+  parallel_exec_wall_time_ms: 2866
+  merge_verify_wall_time_ms: 0
+  batch_total_wall_time_ms: 2869
+
+Test cases written to: csc_tmp/extpaper_kill_expanded_SvMinePumpStep_M3_1792784327843557000/SvMinePumpStep_M3/testcases.json
+
+CCT visualization:
+  DOT: csc_tmp/extpaper_kill_expanded_SvMinePumpStep_M3_1792784327843557000/SvMinePumpStep_M3/SvMinePumpStep_M3_cct.dot
+  Stats: csc_tmp/extpaper_kill_expanded_SvMinePumpStep_M3_1792784327843557000/SvMinePumpStep_M3/cct_stats.json
+  Counts: nodes=57, leaves=29, covered=12, infeasible=17, out_of_range=0, expanded=0, truncated=0
+  Render script: csc_tmp/extpaper_kill_expanded_SvMinePumpStep_M3_1792784327843557000/SvMinePumpStep_M3/render_cct.sh
+  (render later with: csc_tmp/extpaper_kill_expanded_SvMinePumpStep_M3_1792784327843557000/SvMinePumpStep_M3/render_cct.sh)
+
+Run log:
+  JSONL: csc_tmp/extpaper_kill_expanded_SvMinePumpStep_M3_1792784327843557000/SvMinePumpStep_M3/run_log.jsonl

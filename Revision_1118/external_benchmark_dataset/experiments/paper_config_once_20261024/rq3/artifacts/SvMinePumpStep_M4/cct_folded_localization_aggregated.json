@@ -1,0 +1,1712 @@
+{
+  "summary": {
+    "aggregation": "source_transition_v1",
+    "score_aggregation": "max",
+    "per_target_aggregation": {
+      "condition_node_ranking": "max",
+      "interval_rankings.folded_seed_e": "max",
+      "interval_rankings.folded_seed_s": "max",
+      "interval_rankings.folded_edge_partition": "max"
+    },
+    "source_report": null,
+    "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+    "targets": [
+      "condition_node_ranking",
+      "interval_rankings.folded_seed_e",
+      "interval_rankings.folded_seed_s",
+      "interval_rankings.folded_edge_partition"
+    ],
+    "condition_node_count_raw": 14,
+    "condition_node_count_aggregated": 14,
+    "interval_count_raw": {
+      "folded_seed_e": 8,
+      "folded_seed_s": 1,
+      "folded_edge_partition": 9
+    },
+    "interval_count_aggregated": {
+      "folded_seed_e": 8,
+      "folded_seed_s": 1,
+      "folded_edge_partition": 8
+    },
+    "average_interval_region_size": {
+      "folded_seed_e": 1.5,
+      "folded_seed_s": 1.0,
+      "folded_edge_partition": 1.625
+    },
+    "raw_summary": {
+      "strategy": "folded_source_candidate_v1",
+      "scoring_strategy": "coverage_x_purity",
+      "F_total": 13,
+      "P_total": 2,
+      "condition_candidates": 14,
+      "seed_e_candidates": 8,
+      "seed_s_candidates": 1,
+      "edge_partition_candidates": 9,
+      "unstable_segment_variants": 2,
+      "total_edge_transitions": 36
+    }
+  },
+  "aggregated_condition_node_ranking": [
+    {
+      "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+      "line": 8,
+      "condition": "pump",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 1,
+      "raw_ranks": [
+        1
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 1,
+        "risk_score": 1.0,
+        "line": 8,
+        "condition": "pump",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 1.0,
+      "exec_count": 13,
+      "fail_count": 13,
+      "pass_count": 0,
+      "failure_density": 1.0,
+      "min_exec_count": 13,
+      "min_fail_count": 13,
+      "min_pass_count": 0,
+      "min_failure_density": 1.0,
+      "rank": 1
+    },
+    {
+      "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+      "line": 11,
+      "condition": "active",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 2,
+      "raw_ranks": [
+        2
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 2,
+        "risk_score": 1.0,
+        "line": 11,
+        "condition": "active",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 1.0,
+      "exec_count": 13,
+      "fail_count": 13,
+      "pass_count": 0,
+      "failure_density": 1.0,
+      "min_exec_count": 13,
+      "min_fail_count": 13,
+      "min_pass_count": 0,
+      "min_failure_density": 1.0,
+      "rank": 2
+    },
+    {
+      "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+      "line": 21,
+      "condition": "pump",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 3,
+      "raw_ranks": [
+        3
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 3,
+        "risk_score": 1.0,
+        "line": 21,
+        "condition": "pump",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 1.0,
+      "exec_count": 13,
+      "fail_count": 13,
+      "pass_count": 0,
+      "failure_density": 1.0,
+      "min_exec_count": 13,
+      "min_fail_count": 13,
+      "min_pass_count": 0,
+      "min_failure_density": 1.0,
+      "rank": 3
+    },
+    {
+      "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+      "line": 5,
+      "condition": "water > 2",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 4,
+      "raw_ranks": [
+        4
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 4,
+        "risk_score": 0.9285714285714286,
+        "line": 5,
+        "condition": "water > 2",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.9285714285714286,
+      "exec_count": 14,
+      "fail_count": 13,
+      "pass_count": 1,
+      "failure_density": 0.9285714285714286,
+      "min_exec_count": 14,
+      "min_fail_count": 13,
+      "min_pass_count": 1,
+      "min_failure_density": 0.9285714285714286,
+      "rank": 4
+    },
+    {
+      "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+      "line": 5,
+      "condition": "water < 0",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 5,
+      "raw_ranks": [
+        5
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 5,
+        "risk_score": 0.8666666666666667,
+        "line": 5,
+        "condition": "water < 0",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.8666666666666667,
+      "exec_count": 15,
+      "fail_count": 13,
+      "pass_count": 2,
+      "failure_density": 0.8666666666666667,
+      "min_exec_count": 15,
+      "min_fail_count": 13,
+      "min_pass_count": 2,
+      "min_failure_density": 0.8666666666666667,
+      "rank": 5
+    },
+    {
+      "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+      "line": 9,
+      "condition": "level == 2",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 6,
+      "raw_ranks": [
+        6
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 6,
+        "risk_score": 0.6923076923076923,
+        "line": 9,
+        "condition": "level == 2",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.6923076923076923,
+      "exec_count": 9,
+      "fail_count": 9,
+      "pass_count": 0,
+      "failure_density": 1.0,
+      "min_exec_count": 9,
+      "min_fail_count": 9,
+      "min_pass_count": 0,
+      "min_failure_density": 1.0,
+      "rank": 6
+    },
+    {
+      "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+      "line": 12,
+      "condition": "pump",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 7,
+      "raw_ranks": [
+        7
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 7,
+        "risk_score": 0.6923076923076923,
+        "line": 12,
+        "condition": "pump",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.6923076923076923,
+      "exec_count": 9,
+      "fail_count": 9,
+      "pass_count": 0,
+      "failure_density": 1.0,
+      "min_exec_count": 9,
+      "min_fail_count": 9,
+      "min_pass_count": 0,
+      "min_failure_density": 1.0,
+      "rank": 7
+    },
+    {
+      "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+      "line": 9,
+      "condition": "level == 1",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 8,
+      "raw_ranks": [
+        8
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 8,
+        "risk_score": 0.46153846153846156,
+        "line": 9,
+        "condition": "level == 1",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.46153846153846156,
+      "exec_count": 6,
+      "fail_count": 6,
+      "pass_count": 0,
+      "failure_density": 1.0,
+      "min_exec_count": 6,
+      "min_fail_count": 6,
+      "min_pass_count": 0,
+      "min_failure_density": 1.0,
+      "rank": 8
+    },
+    {
+      "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+      "line": 12,
+      "condition": "methane",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 9,
+      "raw_ranks": [
+        9
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 9,
+        "risk_score": 0.46153846153846156,
+        "line": 12,
+        "condition": "methane",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.46153846153846156,
+      "exec_count": 6,
+      "fail_count": 6,
+      "pass_count": 0,
+      "failure_density": 1.0,
+      "min_exec_count": 6,
+      "min_fail_count": 6,
+      "min_pass_count": 0,
+      "min_failure_density": 1.0,
+      "rank": 9
+    },
+    {
+      "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+      "line": 14,
+      "condition": "pump",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 10,
+      "raw_ranks": [
+        10
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 10,
+        "risk_score": 0.46153846153846156,
+        "line": 14,
+        "condition": "pump",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.46153846153846156,
+      "exec_count": 6,
+      "fail_count": 6,
+      "pass_count": 0,
+      "failure_density": 1.0,
+      "min_exec_count": 6,
+      "min_fail_count": 6,
+      "min_pass_count": 0,
+      "min_failure_density": 1.0,
+      "rank": 10
+    },
+    {
+      "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+      "line": 16,
+      "condition": "pump",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 11,
+      "raw_ranks": [
+        11
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 11,
+        "risk_score": 0.38461538461538464,
+        "line": 16,
+        "condition": "pump",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.38461538461538464,
+      "exec_count": 5,
+      "fail_count": 5,
+      "pass_count": 0,
+      "failure_density": 1.0,
+      "min_exec_count": 5,
+      "min_fail_count": 5,
+      "min_pass_count": 0,
+      "min_failure_density": 1.0,
+      "rank": 11
+    },
+    {
+      "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+      "line": 14,
+      "condition": "level != 0",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 12,
+      "raw_ranks": [
+        12
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 12,
+        "risk_score": 0.23076923076923078,
+        "line": 14,
+        "condition": "level != 0",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.23076923076923078,
+      "exec_count": 3,
+      "fail_count": 3,
+      "pass_count": 0,
+      "failure_density": 1.0,
+      "min_exec_count": 3,
+      "min_fail_count": 3,
+      "min_pass_count": 0,
+      "min_failure_density": 1.0,
+      "rank": 12
+    },
+    {
+      "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+      "line": 16,
+      "condition": "level == 2",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 13,
+      "raw_ranks": [
+        13
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 13,
+        "risk_score": 0.23076923076923078,
+        "line": 16,
+        "condition": "level == 2",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.23076923076923078,
+      "exec_count": 3,
+      "fail_count": 3,
+      "pass_count": 0,
+      "failure_density": 1.0,
+      "min_exec_count": 3,
+      "min_fail_count": 3,
+      "min_pass_count": 0,
+      "min_failure_density": 1.0,
+      "rank": 13
+    },
+    {
+      "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+      "line": 16,
+      "condition": "methane",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 14,
+      "raw_ranks": [
+        14
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 14,
+        "risk_score": 0.15384615384615385,
+        "line": 16,
+        "condition": "methane",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.15384615384615385,
+      "exec_count": 2,
+      "fail_count": 2,
+      "pass_count": 0,
+      "failure_density": 1.0,
+      "min_exec_count": 2,
+      "min_fail_count": 2,
+      "min_pass_count": 0,
+      "min_failure_density": 1.0,
+      "rank": 14
+    }
+  ],
+  "aggregated_interval_rankings": {
+    "folded_seed_e": [
+      {
+        "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+        "from_line": 5,
+        "from_condition": "water > 2",
+        "outcome": "false",
+        "to_line": 8,
+        "to_condition": "pump",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          6,
+          7
+        ],
+        "statement_line_count": 2,
+        "region_size": 2,
+        "statement_line_variants": [
+          [
+            6,
+            7
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 1,
+        "raw_ranks": [
+          1
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 1,
+          "risk_score": 1.0,
+          "from_line": 5,
+          "from_condition": "water > 2",
+          "outcome": "false",
+          "to_line": 8,
+          "to_condition": "pump",
+          "statement_lines": [
+            6,
+            7
+          ],
+          "region_size": 2,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 13,
+        "fail_count": 13,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 13,
+        "min_fail_count": 13,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 1
+      },
+      {
+        "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+        "from_line": 11,
+        "from_condition": "active",
+        "outcome": "false",
+        "to_line": 21,
+        "to_condition": "pump",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          20
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            20
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 2,
+        "raw_ranks": [
+          2
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 2,
+          "risk_score": 0.5384615384615384,
+          "from_line": 11,
+          "from_condition": "active",
+          "outcome": "false",
+          "to_line": 21,
+          "to_condition": "pump",
+          "statement_lines": [
+            20
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.5384615384615384,
+        "base_risk_score": 0.5384615384615384,
+        "exec_count": 7,
+        "fail_count": 7,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 7,
+        "min_fail_count": 7,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 2
+      },
+      {
+        "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+        "from_line": 21,
+        "from_condition": "pump",
+        "outcome": "false",
+        "to_line": null,
+        "to_condition": null,
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          22
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            22
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 3,
+        "raw_ranks": [
+          3
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 3,
+          "risk_score": 0.5384615384615384,
+          "from_line": 21,
+          "from_condition": "pump",
+          "outcome": "false",
+          "to_line": null,
+          "to_condition": null,
+          "statement_lines": [
+            22
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.5384615384615384,
+        "base_risk_score": 0.5384615384615384,
+        "exec_count": 7,
+        "fail_count": 7,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 7,
+        "min_fail_count": 7,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 3
+      },
+      {
+        "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+        "from_line": 9,
+        "from_condition": "level == 1",
+        "outcome": "true",
+        "to_line": 11,
+        "to_condition": "active",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          9
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            9
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 4,
+        "raw_ranks": [
+          4
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 4,
+          "risk_score": 0.46153846153846156,
+          "from_line": 9,
+          "from_condition": "level == 1",
+          "outcome": "true",
+          "to_line": 11,
+          "to_condition": "active",
+          "statement_lines": [
+            9
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.46153846153846156,
+        "base_risk_score": 0.46153846153846156,
+        "exec_count": 6,
+        "fail_count": 6,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 6,
+        "min_fail_count": 6,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 4
+      },
+      {
+        "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+        "from_line": 21,
+        "from_condition": "pump",
+        "outcome": "true",
+        "to_line": null,
+        "to_condition": null,
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          21,
+          22
+        ],
+        "statement_line_count": 2,
+        "region_size": 2,
+        "statement_line_variants": [
+          [
+            21,
+            22
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 5,
+        "raw_ranks": [
+          5
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 5,
+          "risk_score": 0.46153846153846156,
+          "from_line": 21,
+          "from_condition": "pump",
+          "outcome": "true",
+          "to_line": null,
+          "to_condition": null,
+          "statement_lines": [
+            21,
+            22
+          ],
+          "region_size": 2,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.46153846153846156,
+        "base_risk_score": 0.46153846153846156,
+        "exec_count": 6,
+        "fail_count": 6,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 6,
+        "min_fail_count": 6,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 5
+      },
+      {
+        "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+        "from_line": 12,
+        "from_condition": "methane",
+        "outcome": "true",
+        "to_line": 21,
+        "to_condition": "pump",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          12,
+          20
+        ],
+        "statement_line_count": 2,
+        "region_size": 2,
+        "statement_line_variants": [
+          [
+            12,
+            20
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 6,
+        "raw_ranks": [
+          6
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 6,
+          "risk_score": 0.23076923076923078,
+          "from_line": 12,
+          "from_condition": "methane",
+          "outcome": "true",
+          "to_line": 21,
+          "to_condition": "pump",
+          "statement_lines": [
+            12,
+            20
+          ],
+          "region_size": 2,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.23076923076923078,
+        "base_risk_score": 0.23076923076923078,
+        "exec_count": 3,
+        "fail_count": 3,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 3,
+        "min_fail_count": 3,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 6
+      },
+      {
+        "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+        "from_line": 16,
+        "from_condition": "methane",
+        "outcome": "false",
+        "to_line": 21,
+        "to_condition": "pump",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          16
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            16
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 8,
+        "raw_ranks": [
+          8
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 8,
+          "risk_score": 0.07692307692307693,
+          "from_line": 16,
+          "from_condition": "methane",
+          "outcome": "false",
+          "to_line": 21,
+          "to_condition": "pump",
+          "statement_lines": [
+            16
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.07692307692307693,
+        "base_risk_score": 0.07692307692307693,
+        "exec_count": 1,
+        "fail_count": 1,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 1,
+        "min_fail_count": 1,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 7
+      },
+      {
+        "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+        "from_line": 14,
+        "from_condition": "level != 0",
+        "outcome": "true",
+        "to_line": 21,
+        "to_condition": "pump",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          14,
+          20
+        ],
+        "statement_line_count": 2,
+        "region_size": 2,
+        "statement_line_variants": [
+          [
+            14,
+            20
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 9,
+        "raw_ranks": [
+          9
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 9,
+          "risk_score": 0.07692307692307693,
+          "from_line": 14,
+          "from_condition": "level != 0",
+          "outcome": "true",
+          "to_line": 21,
+          "to_condition": "pump",
+          "statement_lines": [
+            14,
+            20
+          ],
+          "region_size": 2,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.07692307692307693,
+        "base_risk_score": 0.07692307692307693,
+        "exec_count": 1,
+        "fail_count": 1,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 1,
+        "min_fail_count": 1,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 8
+      }
+    ],
+    "folded_seed_s": [
+      {
+        "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+        "from_line": 16,
+        "from_condition": "methane",
+        "outcome": "false",
+        "to_line": 21,
+        "to_condition": "pump",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          20
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            20
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 7,
+        "raw_ranks": [
+          7
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 7,
+          "risk_score": 0.15384615384615385,
+          "from_line": 16,
+          "from_condition": "methane",
+          "outcome": "false",
+          "to_line": 21,
+          "to_condition": "pump",
+          "statement_lines": [
+            20
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.15384615384615385,
+        "base_risk_score": 0.15384615384615385,
+        "exec_count": 2,
+        "fail_count": 2,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 2,
+        "min_fail_count": 2,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 1
+      }
+    ],
+    "folded_edge_partition": [
+      {
+        "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+        "from_line": 5,
+        "from_condition": "water > 2",
+        "outcome": "false",
+        "to_line": 8,
+        "to_condition": "pump",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          6,
+          7
+        ],
+        "statement_line_count": 2,
+        "region_size": 2,
+        "statement_line_variants": [
+          [
+            6,
+            7
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 1,
+        "raw_ranks": [
+          1
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 1,
+          "risk_score": 1.0,
+          "from_line": 5,
+          "from_condition": "water > 2",
+          "outcome": "false",
+          "to_line": 8,
+          "to_condition": "pump",
+          "statement_lines": [
+            6,
+            7
+          ],
+          "region_size": 2,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 13,
+        "fail_count": 13,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 13,
+        "min_fail_count": 13,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 1
+      },
+      {
+        "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+        "from_line": 11,
+        "from_condition": "active",
+        "outcome": "false",
+        "to_line": 21,
+        "to_condition": "pump",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          20
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            20
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 2,
+        "raw_ranks": [
+          2
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 2,
+          "risk_score": 0.5384615384615384,
+          "from_line": 11,
+          "from_condition": "active",
+          "outcome": "false",
+          "to_line": 21,
+          "to_condition": "pump",
+          "statement_lines": [
+            20
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.5384615384615384,
+        "base_risk_score": 0.5384615384615384,
+        "exec_count": 7,
+        "fail_count": 7,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 7,
+        "min_fail_count": 7,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 2
+      },
+      {
+        "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+        "from_line": 21,
+        "from_condition": "pump",
+        "outcome": "false",
+        "to_line": null,
+        "to_condition": null,
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          22
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            22
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 3,
+        "raw_ranks": [
+          3
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 3,
+          "risk_score": 0.5384615384615384,
+          "from_line": 21,
+          "from_condition": "pump",
+          "outcome": "false",
+          "to_line": null,
+          "to_condition": null,
+          "statement_lines": [
+            22
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.5384615384615384,
+        "base_risk_score": 0.5384615384615384,
+        "exec_count": 7,
+        "fail_count": 7,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 7,
+        "min_fail_count": 7,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 3
+      },
+      {
+        "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+        "from_line": 9,
+        "from_condition": "level == 1",
+        "outcome": "true",
+        "to_line": 11,
+        "to_condition": "active",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          9
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            9
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 4,
+        "raw_ranks": [
+          4
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 4,
+          "risk_score": 0.46153846153846156,
+          "from_line": 9,
+          "from_condition": "level == 1",
+          "outcome": "true",
+          "to_line": 11,
+          "to_condition": "active",
+          "statement_lines": [
+            9
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.46153846153846156,
+        "base_risk_score": 0.46153846153846156,
+        "exec_count": 6,
+        "fail_count": 6,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 6,
+        "min_fail_count": 6,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 4
+      },
+      {
+        "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+        "from_line": 21,
+        "from_condition": "pump",
+        "outcome": "true",
+        "to_line": null,
+        "to_condition": null,
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          21,
+          22
+        ],
+        "statement_line_count": 2,
+        "region_size": 2,
+        "statement_line_variants": [
+          [
+            21,
+            22
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 5,
+        "raw_ranks": [
+          5
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 5,
+          "risk_score": 0.46153846153846156,
+          "from_line": 21,
+          "from_condition": "pump",
+          "outcome": "true",
+          "to_line": null,
+          "to_condition": null,
+          "statement_lines": [
+            21,
+            22
+          ],
+          "region_size": 2,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.46153846153846156,
+        "base_risk_score": 0.46153846153846156,
+        "exec_count": 6,
+        "fail_count": 6,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 6,
+        "min_fail_count": 6,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 5
+      },
+      {
+        "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+        "from_line": 12,
+        "from_condition": "methane",
+        "outcome": "true",
+        "to_line": 21,
+        "to_condition": "pump",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          12,
+          20
+        ],
+        "statement_line_count": 2,
+        "region_size": 2,
+        "statement_line_variants": [
+          [
+            12,
+            20
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 6,
+        "raw_ranks": [
+          6
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 6,
+          "risk_score": 0.23076923076923078,
+          "from_line": 12,
+          "from_condition": "methane",
+          "outcome": "true",
+          "to_line": 21,
+          "to_condition": "pump",
+          "statement_lines": [
+            12,
+            20
+          ],
+          "region_size": 2,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.23076923076923078,
+        "base_risk_score": 0.23076923076923078,
+        "exec_count": 3,
+        "fail_count": 3,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 3,
+        "min_fail_count": 3,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 6
+      },
+      {
+        "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+        "from_line": 16,
+        "from_condition": "methane",
+        "outcome": "false",
+        "to_line": 21,
+        "to_condition": "pump",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          16,
+          20
+        ],
+        "statement_line_count": 2,
+        "region_size": 2,
+        "statement_line_variants": [
+          [
+            20
+          ],
+          [
+            16
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 2,
+        "best_raw_rank": 7,
+        "raw_ranks": [
+          7,
+          8
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 7,
+          "risk_score": 0.15384615384615385,
+          "from_line": 16,
+          "from_condition": "methane",
+          "outcome": "false",
+          "to_line": 21,
+          "to_condition": "pump",
+          "statement_lines": [
+            20
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.15384615384615385,
+        "base_risk_score": 0.15384615384615385,
+        "exec_count": 2,
+        "fail_count": 2,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 1,
+        "min_fail_count": 1,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 7
+      },
+      {
+        "source_file": "SvMinePumpStep/SvMinePumpStep_M4.java",
+        "from_line": 14,
+        "from_condition": "level != 0",
+        "outcome": "true",
+        "to_line": 21,
+        "to_condition": "pump",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          14,
+          20
+        ],
+        "statement_line_count": 2,
+        "region_size": 2,
+        "statement_line_variants": [
+          [
+            14,
+            20
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 9,
+        "raw_ranks": [
+          9
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 9,
+          "risk_score": 0.07692307692307693,
+          "from_line": 14,
+          "from_condition": "level != 0",
+          "outcome": "true",
+          "to_line": 21,
+          "to_condition": "pump",
+          "statement_lines": [
+            14,
+            20
+          ],
+          "region_size": 2,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.07692307692307693,
+        "base_risk_score": 0.07692307692307693,
+        "exec_count": 1,
+        "fail_count": 1,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 1,
+        "min_fail_count": 1,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 8
+      }
+    ]
+  }
+}

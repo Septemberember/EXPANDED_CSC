@@ -1,0 +1,1260 @@
+=======================================================
+  CSC Engine — Test Case Generator
+=======================================================
+  Source:       /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SvBellmanFord3/SvBellmanFord3_M3.java
+  Mode:         Expanded CSC
+  Range bound:  +/- 200
+  Max iter:     100
+  Strategy:     batch
+  Workers:      4
+  Session:      extpaper_kill_expanded_SvBellmanFord3_M3_1792784515384093000
+  CCT render:   no
+
+[1/3] Auto-instrumenting Java source...
+  [instrument] /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SvBellmanFord3/SvBellmanFord3_M3.java -> /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SvBellmanFord3/SvBellmanFord3_M3_instrumented.java
+  Class:        SvBellmanFord3_M3
+  Params:       {'return_value': 'int', 'w01': 'int', 'w02': 'int', 'w12': 'int', 'w21': 'int'}
+  Run log:      csc_tmp/extpaper_kill_expanded_SvBellmanFord3_M3_1792784515384093000/SvBellmanFord3_M3/run_log.jsonl
+
+[2/3] Compiling...
+  [compile] SvBellmanFord3_M3.class
+[3/3] CSC Loop
+---------------------------------------------
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+{Ø}
+-----------------------------
+
+
+  [Batch Round 1] CCT not initialized — running bootstrap
+  Bootstrap inputs: {'w01': 0, 'w02': 0, 'w12': 0, 'w21': 0}
+  Execution path: 52 steps, 33 conditions
+Path Truncation: loop count 3 exceeds bound 2.
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvBellmanFord3_M3_1792784515384093000/SvBellmanFord3_M3/SvBellmanFord3_M3_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: w01 < 0 @L43 (WP: w01 < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: w01 > 4 @L43 (WP: w01 > 4, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: w02 < 0 @L43 (WP: w02 < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: w02 > 4 @L43 (WP: w02 > 4, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: w12 < 0 @L43 (WP: w12 < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: w12 > 4 @L43 (WP: w12 > 4, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: w21 < 0 @L43 (WP: w21 < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: w21 > 4 @L43 (WP: w21 > 4, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: (0) < 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 >= d0 + w01 @L50 (WP: (2147483647) >= (0) + w01, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d0 + w02 @L51 (WP: (2147483647) > (0) + w02, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d1 + 4 @L52 (WP: (0) > ((0) + w01) + 4, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d1 + w12 @L53 (WP: ((0) + w02) > ((0) + w01) + w12, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > ((0) + w02) + 4, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: ((0) + w01) > ((0) + w02) + w21, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: ((0) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 >= d0 + w01 @L50 (WP: ((0) + w01) >= (0) + w01, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d0 + w02 @L51 (WP: ((0) + w02) > (0) + w02, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d1 + 4 @L52 (WP: (0) > ((0) + w01) + 4, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d1 + w12 @L53 (WP: ((0) + w02) > ((0) + w01) + w12, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > ((0) + w02) + 4, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: ((0) + w01) > ((0) + w02) + w21, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'} [TRUNCATED]  inputs: bootstrap(w01=0, w02=0, w12=0, w21=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Batch Round 2] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: w01 < 0 @L43 (WP: w01 < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: w01 > 4 @L43 (WP: w01 > 4, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: w02 < 0 @L43 (WP: w02 < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: w02 > 4 @L43 (WP: w02 > 4, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: w12 < 0 @L43 (WP: w12 < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: w12 > 4 @L43 (WP: w12 > 4, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: w21 < 0 @L43 (WP: w21 < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: w21 > 4 @L43 (WP: w21 > 4, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: (0) < 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 >= d0 + w01 @L50 (WP: (2147483647) >= (0) + w01, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d0 + w02 @L51 (WP: (2147483647) > (0) + w02, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d1 + 4 @L52 (WP: (0) > ((0) + w01) + 4, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d1 + w12 @L53 (WP: ((0) + w02) > ((0) + w01) + w12, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > ((0) + w02) + 4, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: ((0) + w01) > ((0) + w02) + w21, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: ((0) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 >= d0 + w01 @L50 (WP: ((0) + w01) >= (0) + w01, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d0 + w02 @L51 (WP: ((0) + w02) > (0) + w02, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d1 + 4 @L52 (WP: (0) > ((0) + w01) + 4, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d1 + w12 @L53 (WP: ((0) + w02) > ((0) + w01) + w12, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > ((0) + w02) + 4, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: ((0) + w01) > ((0) + w02) + w21, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'} [TRUNCATED]  inputs: bootstrap(w01=0, w02=0, w12=0, w21=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+  [EXPAND] Promoted truncated leaf at 'k < 3' (cnt=3) → T:['bootstrap']
+  [EXPAND] Promoted truncated leaf at 'd1 >= d0 + w01' (cnt=3) → T:['bootstrap']
+  [EXPAND] Promoted truncated leaf at 'd2 > d0 + w02' (cnt=3) → F:['bootstrap']
+  [EXPAND] Promoted truncated leaf at 'd0 > d1 + 4' (cnt=3) → F:['bootstrap']
+  [EXPAND] Promoted truncated leaf at 'd2 > d1 + w12' (cnt=3) → F:['bootstrap']
+  [EXPAND] Promoted truncated leaf at 'd0 > d2 + 4' (cnt=3) → F:['bootstrap']
+  [EXPAND] Promoted truncated leaf at 'd1 > d2 + w21' (cnt=3) → F:['bootstrap']
+  [EXPAND] Promoted truncated leaf at 'relaxed' (cnt=3) → T:['bootstrap']
+  [EXPAND] Promoted truncated leaf at 'k < 3' (cnt=4) → F:['bootstrap']
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvBellmanFord3_M3_1792784515384093000/SvBellmanFord3_M3/SvBellmanFord3_M3_cct.dot
+  -> Executing 10 candidates with 4 workers; merging 22 terminal updates
+Path Truncation: loop count 3 exceeds bound 2.
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvBellmanFord3_M3_1792784515384093000/SvBellmanFord3_M3/SvBellmanFord3_M3_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: w01 < 0 @L43 (WP: w01 < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: w01 > 4 @L43 (WP: w01 > 4, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: w02 < 0 @L43 (WP: w02 < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: w02 > 4 @L43 (WP: w02 > 4, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: w12 < 0 @L43 (WP: w12 < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: w12 > 4 @L43 (WP: w12 > 4, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: w21 < 0 @L43 (WP: w21 < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: w21 > 4 @L43 (WP: w21 > 4, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: (0) < 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 >= d0 + w01 @L50 (WP: (2147483647) >= (0) + w01, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d0 + w02 @L51 (WP: (2147483647) > (0) + w02, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d1 + 4 @L52 (WP: (0) > ((0) + w01) + 4, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d1 + w12 @L53 (WP: ((0) + w02) > ((0) + w01) + w12, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > ((0) + w02) + 4, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: ((0) + w01) > ((0) + w02) + w21, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: ((0) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 >= d0 + w01 @L50 (WP: ((0) + w01) >= (0) + w01, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d0 + w02 @L51 (WP: ((0) + w02) > (0) + w02, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d1 + 4 @L52 (WP: (0) > ((0) + w01) + 4, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d1 + w12 @L53 (WP: ((0) + w02) > ((0) + w01) + w12, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > ((0) + w02) + 4, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: ((0) + w01) > ((0) + w02) + w21, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: (((0) + 1) + 1) < 3, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 >= d0 + w01 @L50 (WP: ((0) + w01) >= (0) + w01, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d0 + w02 @L51 (WP: ((0) + w02) > (0) + w02, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d1 + 4 @L52 (WP: (0) > ((0) + w01) + 4, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d1 + w12 @L53 (WP: ((0) + w02) > ((0) + w01) + w12, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > ((0) + w02) + 4, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: ((0) + w01) > ((0) + w02) + w21, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: ((((0) + 1) + 1) + 1) < 3, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'} [EXPANDED]  inputs: bootstrap(w01=0, w02=0, w12=0, w21=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: ((0) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 >= d0 + w01 @L50 (WP: (((0) + w02) + w21) >= (0) + w01, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d0 + w02 @L51 (WP: ((0) + w02) > (0) + w02, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d1 + 4 @L52 (WP: (0) > (((0) + w02) + w21) + 4, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d1 + w12 @L53 (WP: ((0) + w02) > (((0) + w02) + w21) + w12, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > ((0) + w02) + 4, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: (((0) + w02) + w21) > ((0) + w02) + w21, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (false), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(w01=3, w02=2, w12=3, w21=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > (((0) + w01) + w12) + 4, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: ((0) + w01) > (((0) + w01) + w12) + w21, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: ((0) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 >= d0 + w01 @L50 (WP: ((0) + w01) >= (0) + w01, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d0 + w02 @L51 (WP: (((0) + w01) + w12) > (0) + w02, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d1 + 4 @L52 (WP: (0) > ((0) + w01) + 4, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d1 + w12 @L53 (WP: (((0) + w01) + w12) > ((0) + w01) + w12, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > (((0) + w01) + w12) + 4, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: ((0) + w01) > (((0) + w01) + w12) + w21, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'} [TRUNCATED]  inputs: tc_2_b1(w01=2, w02=3, w12=0, w21=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(w01=0, w02=0, w12=0, w21=6)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(w01=0, w02=0, w12=0, w21=-32768)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(w01=0, w02=0, w12=6, w21=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(w01=0, w02=0, w12=-32768, w21=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_2_b6'}  inputs: tc_2_b6(w01=0, w02=5, w12=0, w21=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b7'}  inputs: tc_2_b7(w01=0, w02=-32768, w12=0, w21=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b8'}  inputs: tc_2_b8(w01=16384, w02=0, w12=0, w21=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b9'}  inputs: tc_2_b9(w01=-32768, w02=0, w12=0, w21=0)
+-----------------------------
+
+
+  [Batch Round 3] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: w01 < 0 @L43 (WP: w01 < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: w01 > 4 @L43 (WP: w01 > 4, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: w02 < 0 @L43 (WP: w02 < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: w02 > 4 @L43 (WP: w02 > 4, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: w12 < 0 @L43 (WP: w12 < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: w12 > 4 @L43 (WP: w12 > 4, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: w21 < 0 @L43 (WP: w21 < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: w21 > 4 @L43 (WP: w21 > 4, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: (0) < 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 >= d0 + w01 @L50 (WP: (2147483647) >= (0) + w01, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d0 + w02 @L51 (WP: (2147483647) > (0) + w02, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d1 + 4 @L52 (WP: (0) > ((0) + w01) + 4, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d1 + w12 @L53 (WP: ((0) + w02) > ((0) + w01) + w12, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > ((0) + w02) + 4, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: ((0) + w01) > ((0) + w02) + w21, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: ((0) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 >= d0 + w01 @L50 (WP: ((0) + w01) >= (0) + w01, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d0 + w02 @L51 (WP: ((0) + w02) > (0) + w02, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d1 + 4 @L52 (WP: (0) > ((0) + w01) + 4, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d1 + w12 @L53 (WP: ((0) + w02) > ((0) + w01) + w12, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > ((0) + w02) + 4, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: ((0) + w01) > ((0) + w02) + w21, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: (((0) + 1) + 1) < 3, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 >= d0 + w01 @L50 (WP: ((0) + w01) >= (0) + w01, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d0 + w02 @L51 (WP: ((0) + w02) > (0) + w02, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d1 + 4 @L52 (WP: (0) > ((0) + w01) + 4, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d1 + w12 @L53 (WP: ((0) + w02) > ((0) + w01) + w12, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > ((0) + w02) + 4, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: ((0) + w01) > ((0) + w02) + w21, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: ((((0) + 1) + 1) + 1) < 3, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'} [EXPANDED]  inputs: bootstrap(w01=0, w02=0, w12=0, w21=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: ((0) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 >= d0 + w01 @L50 (WP: (((0) + w02) + w21) >= (0) + w01, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d0 + w02 @L51 (WP: ((0) + w02) > (0) + w02, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d1 + 4 @L52 (WP: (0) > (((0) + w02) + w21) + 4, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d1 + w12 @L53 (WP: ((0) + w02) > (((0) + w02) + w21) + w12, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > ((0) + w02) + 4, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: (((0) + w02) + w21) > ((0) + w02) + w21, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (false), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(w01=3, w02=2, w12=3, w21=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > (((0) + w01) + w12) + 4, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: ((0) + w01) > (((0) + w01) + w12) + w21, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: ((0) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 >= d0 + w01 @L50 (WP: ((0) + w01) >= (0) + w01, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d0 + w02 @L51 (WP: (((0) + w01) + w12) > (0) + w02, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d1 + 4 @L52 (WP: (0) > ((0) + w01) + 4, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d1 + w12 @L53 (WP: (((0) + w01) + w12) > ((0) + w01) + w12, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > (((0) + w01) + w12) + 4, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: ((0) + w01) > (((0) + w01) + w12) + w21, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'} [TRUNCATED]  inputs: tc_2_b1(w01=2, w02=3, w12=0, w21=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(w01=0, w02=0, w12=0, w21=6)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(w01=0, w02=0, w12=0, w21=-32768)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(w01=0, w02=0, w12=6, w21=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(w01=0, w02=0, w12=-32768, w21=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_2_b6'}  inputs: tc_2_b6(w01=0, w02=5, w12=0, w21=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b7'}  inputs: tc_2_b7(w01=0, w02=-32768, w12=0, w21=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b8'}  inputs: tc_2_b8(w01=16384, w02=0, w12=0, w21=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b9'}  inputs: tc_2_b9(w01=-32768, w02=0, w12=0, w21=0)
+-----------------------------
+
+  [EXPAND] Promoted truncated leaf at 'k < 3' (cnt=3) → T:['tc_2_b1']
+  [EXPAND] Promoted truncated leaf at 'd1 >= d0 + w01' (cnt=3) → T:['tc_2_b1']
+  [EXPAND] Promoted truncated leaf at 'd2 > d0 + w02' (cnt=3) → F:['tc_2_b1']
+  [EXPAND] Promoted truncated leaf at 'd0 > d1 + 4' (cnt=3) → F:['tc_2_b1']
+  [EXPAND] Promoted truncated leaf at 'd2 > d1 + w12' (cnt=3) → F:['tc_2_b1']
+  [EXPAND] Promoted truncated leaf at 'd0 > d2 + 4' (cnt=3) → F:['tc_2_b1']
+  [EXPAND] Promoted truncated leaf at 'd1 > d2 + w21' (cnt=3) → F:['tc_2_b1']
+  [EXPAND] Promoted truncated leaf at 'relaxed' (cnt=3) → T:['tc_2_b1']
+  [EXPAND] Promoted truncated leaf at 'k < 3' (cnt=4) → F:['tc_2_b1']
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvBellmanFord3_M3_1792784515384093000/SvBellmanFord3_M3/SvBellmanFord3_M3_cct.dot
+  -> Executing 0 candidates with 4 workers; merging 28 terminal updates
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvBellmanFord3_M3_1792784515384093000/SvBellmanFord3_M3/SvBellmanFord3_M3_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: w01 < 0 @L43 (WP: w01 < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: w01 > 4 @L43 (WP: w01 > 4, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: w02 < 0 @L43 (WP: w02 < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: w02 > 4 @L43 (WP: w02 > 4, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: w12 < 0 @L43 (WP: w12 < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: w12 > 4 @L43 (WP: w12 > 4, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: w21 < 0 @L43 (WP: w21 < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: w21 > 4 @L43 (WP: w21 > 4, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: (0) < 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 >= d0 + w01 @L50 (WP: (2147483647) >= (0) + w01, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d0 + w02 @L51 (WP: (2147483647) > (0) + w02, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d1 + 4 @L52 (WP: (0) > ((0) + w01) + 4, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d1 + w12 @L53 (WP: ((0) + w02) > ((0) + w01) + w12, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > ((0) + w02) + 4, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: ((0) + w01) > ((0) + w02) + w21, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: ((0) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 >= d0 + w01 @L50 (WP: ((0) + w01) >= (0) + w01, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d0 + w02 @L51 (WP: ((0) + w02) > (0) + w02, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d1 + 4 @L52 (WP: (0) > ((0) + w01) + 4, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d1 + w12 @L53 (WP: ((0) + w02) > ((0) + w01) + w12, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > ((0) + w02) + 4, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: ((0) + w01) > ((0) + w02) + w21, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: (((0) + 1) + 1) < 3, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 >= d0 + w01 @L50 (WP: ((0) + w01) >= (0) + w01, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d0 + w02 @L51 (WP: ((0) + w02) > (0) + w02, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d1 + 4 @L52 (WP: (0) > ((0) + w01) + 4, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d1 + w12 @L53 (WP: ((0) + w02) > ((0) + w01) + w12, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > ((0) + w02) + 4, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: ((0) + w01) > ((0) + w02) + w21, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: ((((0) + 1) + 1) + 1) < 3, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'} [EXPANDED]  inputs: bootstrap(w01=0, w02=0, w12=0, w21=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: ((0) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 >= d0 + w01 @L50 (WP: (((0) + w02) + w21) >= (0) + w01, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d0 + w02 @L51 (WP: ((0) + w02) > (0) + w02, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d1 + 4 @L52 (WP: (0) > (((0) + w02) + w21) + 4, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d1 + w12 @L53 (WP: ((0) + w02) > (((0) + w02) + w21) + w12, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > ((0) + w02) + 4, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: (((0) + w02) + w21) > ((0) + w02) + w21, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (false), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(w01=3, w02=2, w12=3, w21=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > (((0) + w01) + w12) + 4, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: ((0) + w01) > (((0) + w01) + w12) + w21, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: ((0) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 >= d0 + w01 @L50 (WP: ((0) + w01) >= (0) + w01, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d0 + w02 @L51 (WP: (((0) + w01) + w12) > (0) + w02, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d1 + 4 @L52 (WP: (0) > ((0) + w01) + 4, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d1 + w12 @L53 (WP: (((0) + w01) + w12) > ((0) + w01) + w12, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > (((0) + w01) + w12) + 4, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: ((0) + w01) > (((0) + w01) + w12) + w21, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: (((0) + 1) + 1) < 3, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 >= d0 + w01 @L50 (WP: ((0) + w01) >= (0) + w01, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d0 + w02 @L51 (WP: (((0) + w01) + w12) > (0) + w02, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d1 + 4 @L52 (WP: (0) > ((0) + w01) + 4, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d1 + w12 @L53 (WP: (((0) + w01) + w12) > ((0) + w01) + w12, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > (((0) + w01) + w12) + 4, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: ((0) + w01) > (((0) + w01) + w12) + w21, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: ((((0) + 1) + 1) + 1) < 3, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'} [EXPANDED]  inputs: tc_2_b1(w01=2, w02=3, w12=0, w21=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(w01=0, w02=0, w12=0, w21=6)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(w01=0, w02=0, w12=0, w21=-32768)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(w01=0, w02=0, w12=6, w21=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(w01=0, w02=0, w12=-32768, w21=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_2_b6'}  inputs: tc_2_b6(w01=0, w02=5, w12=0, w21=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b7'}  inputs: tc_2_b7(w01=0, w02=-32768, w12=0, w21=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b8'}  inputs: tc_2_b8(w01=16384, w02=0, w12=0, w21=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b9'}  inputs: tc_2_b9(w01=-32768, w02=0, w12=0, w21=0)
+-----------------------------
+
+
+  [Batch Round 4] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: w01 < 0 @L43 (WP: w01 < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: w01 > 4 @L43 (WP: w01 > 4, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: w02 < 0 @L43 (WP: w02 < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: w02 > 4 @L43 (WP: w02 > 4, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: w12 < 0 @L43 (WP: w12 < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: w12 > 4 @L43 (WP: w12 > 4, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: w21 < 0 @L43 (WP: w21 < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: w21 > 4 @L43 (WP: w21 > 4, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: (0) < 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 >= d0 + w01 @L50 (WP: (2147483647) >= (0) + w01, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d0 + w02 @L51 (WP: (2147483647) > (0) + w02, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d1 + 4 @L52 (WP: (0) > ((0) + w01) + 4, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d1 + w12 @L53 (WP: ((0) + w02) > ((0) + w01) + w12, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > ((0) + w02) + 4, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: ((0) + w01) > ((0) + w02) + w21, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: ((0) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 >= d0 + w01 @L50 (WP: ((0) + w01) >= (0) + w01, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d0 + w02 @L51 (WP: ((0) + w02) > (0) + w02, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d1 + 4 @L52 (WP: (0) > ((0) + w01) + 4, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d1 + w12 @L53 (WP: ((0) + w02) > ((0) + w01) + w12, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > ((0) + w02) + 4, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: ((0) + w01) > ((0) + w02) + w21, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: (((0) + 1) + 1) < 3, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 >= d0 + w01 @L50 (WP: ((0) + w01) >= (0) + w01, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d0 + w02 @L51 (WP: ((0) + w02) > (0) + w02, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d1 + 4 @L52 (WP: (0) > ((0) + w01) + 4, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d1 + w12 @L53 (WP: ((0) + w02) > ((0) + w01) + w12, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > ((0) + w02) + 4, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: ((0) + w01) > ((0) + w02) + w21, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: ((((0) + 1) + 1) + 1) < 3, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'} [EXPANDED]  inputs: bootstrap(w01=0, w02=0, w12=0, w21=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: ((0) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 >= d0 + w01 @L50 (WP: (((0) + w02) + w21) >= (0) + w01, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d0 + w02 @L51 (WP: ((0) + w02) > (0) + w02, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d1 + 4 @L52 (WP: (0) > (((0) + w02) + w21) + 4, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d1 + w12 @L53 (WP: ((0) + w02) > (((0) + w02) + w21) + w12, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > ((0) + w02) + 4, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: (((0) + w02) + w21) > ((0) + w02) + w21, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (false), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(w01=3, w02=2, w12=3, w21=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > (((0) + w01) + w12) + 4, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: ((0) + w01) > (((0) + w01) + w12) + w21, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: ((0) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 >= d0 + w01 @L50 (WP: ((0) + w01) >= (0) + w01, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d0 + w02 @L51 (WP: (((0) + w01) + w12) > (0) + w02, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d1 + 4 @L52 (WP: (0) > ((0) + w01) + 4, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d1 + w12 @L53 (WP: (((0) + w01) + w12) > ((0) + w01) + w12, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > (((0) + w01) + w12) + 4, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: ((0) + w01) > (((0) + w01) + w12) + w21, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: (((0) + 1) + 1) < 3, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 >= d0 + w01 @L50 (WP: ((0) + w01) >= (0) + w01, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d0 + w02 @L51 (WP: (((0) + w01) + w12) > (0) + w02, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d1 + 4 @L52 (WP: (0) > ((0) + w01) + 4, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d2 > d1 + w12 @L53 (WP: (((0) + w01) + w12) > ((0) + w01) + w12, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d0 > d2 + 4 @L54 (WP: (0) > (((0) + w01) + w12) + 4, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: d1 > d2 + w21 @L55 (WP: ((0) + w01) > (((0) + w01) + w12) + w21, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: relaxed @L56 (WP: (true), Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: k < 3 @L48 (WP: ((((0) + 1) + 1) + 1) < 3, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'} [EXPANDED]  inputs: tc_2_b1(w01=2, w02=3, w12=0, w21=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(w01=0, w02=0, w12=0, w21=6)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(w01=0, w02=0, w12=0, w21=-32768)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(w01=0, w02=0, w12=6, w21=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(w01=0, w02=0, w12=-32768, w21=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_2_b6'}  inputs: tc_2_b6(w01=0, w02=5, w12=0, w21=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b7'}  inputs: tc_2_b7(w01=0, w02=-32768, w12=0, w21=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b8'}  inputs: tc_2_b8(w01=16384, w02=0, w12=0, w21=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b9'}  inputs: tc_2_b9(w01=-32768, w02=0, w12=0, w21=0)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvBellmanFord3_M3_1792784515384093000/SvBellmanFord3_M3/SvBellmanFord3_M3_cct.dot
+  -> CCT is FULL — all branches covered!
+
+=======================================================
+  Done! 11 test cases generated in 4 iterations.
+=======================================================
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvBellmanFord3_M3_1792784515384093000/SvBellmanFord3_M3/SvBellmanFord3_M3_cct.dot
+
+Generated Test Cases:
+---------------------------------------------
+  [BOOTSTRAP]  (bootstrap)
+  round_02/b0  [BATCH_SAFE]  w01=3, w02=2, w12=3, w21=0
+  round_02/b1  [BATCH_SAFE]  w01=2, w02=3, w12=0, w21=0
+  round_02/b2  [BATCH_SAFE]  w01=0, w02=0, w12=0, w21=6
+  round_02/b3  [BATCH_SAFE]  w01=0, w02=0, w12=0, w21=-32768
+  round_02/b4  [BATCH_SAFE]  w01=0, w02=0, w12=6, w21=0
+  round_02/b5  [BATCH_SAFE]  w01=0, w02=0, w12=-32768, w21=0
+  round_02/b6  [BATCH_SAFE]  w01=0, w02=5, w12=0, w21=0
+  round_02/b7  [BATCH_SAFE]  w01=0, w02=-32768, w12=0, w21=0
+  round_02/b8  [BATCH_SAFE]  w01=16384, w02=0, w12=0, w21=0
+  round_02/b9  [BATCH_SAFE]  w01=-32768, w02=0, w12=0, w21=0
+
+Timing Summary (ms):
+---------------------------------------------
+  solver_time_ms: 12
+  frontier_discovery_time_ms: 245
+  compile_time_ms: 6536
+  java_exec_time_ms: 1085
+  path_log_parse_time_ms: 5
+  cct_path_build_time_ms: 0
+  cct_merge_time_ms: 0
+  verification_solver_time_ms: 0
+  parallel_exec_wall_time_ms: 2153
+  merge_verify_wall_time_ms: 0
+  batch_total_wall_time_ms: 2154
+
+Test cases written to: csc_tmp/extpaper_kill_expanded_SvBellmanFord3_M3_1792784515384093000/SvBellmanFord3_M3/testcases.json
+
+CCT visualization:
+  DOT: csc_tmp/extpaper_kill_expanded_SvBellmanFord3_M3_1792784515384093000/SvBellmanFord3_M3/SvBellmanFord3_M3_cct.dot
+  Stats: csc_tmp/extpaper_kill_expanded_SvBellmanFord3_M3_1792784515384093000/SvBellmanFord3_M3/cct_stats.json
+  Counts: nodes=125, leaves=63, covered=11, infeasible=52, out_of_range=0, expanded=20, truncated=0
+  Render script: csc_tmp/extpaper_kill_expanded_SvBellmanFord3_M3_1792784515384093000/SvBellmanFord3_M3/render_cct.sh
+  (render later with: csc_tmp/extpaper_kill_expanded_SvBellmanFord3_M3_1792784515384093000/SvBellmanFord3_M3/render_cct.sh)
+
+Run log:
+  JSONL: csc_tmp/extpaper_kill_expanded_SvBellmanFord3_M3_1792784515384093000/SvBellmanFord3_M3/run_log.jsonl

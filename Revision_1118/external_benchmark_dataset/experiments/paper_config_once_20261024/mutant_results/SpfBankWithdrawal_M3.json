@@ -1,0 +1,369 @@
+{
+  "mutant_id": "SpfBankWithdrawal_M3",
+  "subject": "SpfBankWithdrawal",
+  "operator": "BOR",
+  "fault_category": "condition",
+  "loop_bearing": false,
+  "modes": {
+    "original": {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfBankWithdrawal/SpfBankWithdrawal_M3.java",
+        "--mode",
+        "original",
+        "--range-bound",
+        "200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--max-iter",
+        "100",
+        "--session",
+        "extpaper_kill_original_SpfBankWithdrawal_M3_1792783983635276000",
+        "--keep-artifacts"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "wall_time_s": 3.7079094579676166,
+      "started_at": "2026-10-23T19:33:03.635352+00:00",
+      "finished_at": "2026-10-23T19:33:07.343285+00:00",
+      "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfBankWithdrawal_M3/generation.stdout",
+      "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfBankWithdrawal_M3/generation.stderr",
+      "stderr_tail": "",
+      "subject": "SpfBankWithdrawal",
+      "class_name": "SpfBankWithdrawal_M3",
+      "session": "extpaper_kill_original_SpfBankWithdrawal_M3_1792783983635276000",
+      "result_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_original_SpfBankWithdrawal_M3_1792783983635276000/SpfBankWithdrawal_M3",
+      "folder": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfBankWithdrawal_M3",
+      "mode": "original",
+      "strategy": "batch",
+      "workers": 4,
+      "max_iter": 100,
+      "range_bound": 200,
+      "tag": "kill_original",
+      "cct": {
+        "total_nodes": 27,
+        "internal_nodes": 13,
+        "leaf_nodes": 14,
+        "empty_leaves": 0,
+        "covered_leaves": 14,
+        "valid_testcases": 14,
+        "infeasible_leaves": 0,
+        "out_of_range_leaves": 0,
+        "truncated_leaves": 0,
+        "expanded_nodes": 0,
+        "expanded_internal_nodes": 0,
+        "expanded_leaves": 0,
+        "tbfv_fault_leaves": 0,
+        "tbfv_failure_cases": 0,
+        "tbfv_failure_count": 0,
+        "max_depth": 11
+      },
+      "testcase_stats": {
+        "generated_records": 14,
+        "executable_records": 14,
+        "trace_backed_records": 14,
+        "status_counts": {
+          "bootstrap": 1,
+          "batch_safe": 13
+        }
+      },
+      "full_event": true,
+      "error_events": [],
+      "fresh": true,
+      "status": "completed",
+      "fingerprint": {
+        "stage": "generation_fingerprint",
+        "schema_version": 1,
+        "condition_identity": "line+normalized-text+occurrence",
+        "testcase_ids_ignored": true,
+        "cct_structure_sha256": "542a2897418241886fc4539df763e4ab9fbe4cc1ad2b8f6cad502dbb42fd54ac",
+        "cct_semantic_sha256": "d94b1fa5afd1c13de4be14cb09514b63eb38c710aa65e19a6e84a72e5a9530e8",
+        "test_inputs_sha256": "5814ec5c5a898b5b02302387135c0886102dbada11052eade4ade6202e8b3223",
+        "concrete_input_count": 14
+      },
+      "frontier_mean": 3.25,
+      "frontier_max": 10,
+      "verification": {
+        "command": [
+          "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+          "--csc-result-dir",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_original_SpfBankWithdrawal_M3_1792783983635276000/SpfBankWithdrawal_M3",
+          "--java-file",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfBankWithdrawal/SpfBankWithdrawal_M3.java",
+          "--fsf",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfBankWithdrawal/FSF/SpfBankWithdrawal_FSF.txt",
+          "--output",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfBankWithdrawal_M3/verification.json"
+        ],
+        "returncode": 0,
+        "timed_out": false,
+        "wall_time_s": 0.23876254196511582,
+        "started_at": "2026-10-23T19:33:07.350123+00:00",
+        "finished_at": "2026-10-23T19:33:07.588891+00:00",
+        "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfBankWithdrawal_M3/verification.stdout",
+        "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfBankWithdrawal_M3/verification.stderr",
+        "stderr_tail": "",
+        "summary": {
+          "testcases": 14,
+          "fsf_units": 7,
+          "passed": 14,
+          "failed": 4,
+          "skipped": 80,
+          "unsupported": 0
+        },
+        "status": "completed",
+        "killed": true
+      }
+    },
+    "expanded": {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfBankWithdrawal/SpfBankWithdrawal_M3.java",
+        "--mode",
+        "expanded",
+        "--range-bound",
+        "200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--max-iter",
+        "100",
+        "--session",
+        "extpaper_kill_expanded_SpfBankWithdrawal_M3_1792783987597415000",
+        "--keep-artifacts"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "wall_time_s": 3.456796124984976,
+      "started_at": "2026-10-23T19:33:07.597496+00:00",
+      "finished_at": "2026-10-23T19:33:11.054313+00:00",
+      "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfBankWithdrawal_M3/generation.stdout",
+      "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfBankWithdrawal_M3/generation.stderr",
+      "stderr_tail": "",
+      "subject": "SpfBankWithdrawal",
+      "class_name": "SpfBankWithdrawal_M3",
+      "session": "extpaper_kill_expanded_SpfBankWithdrawal_M3_1792783987597415000",
+      "result_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M3_1792783987597415000/SpfBankWithdrawal_M3",
+      "folder": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfBankWithdrawal_M3",
+      "mode": "expanded",
+      "strategy": "batch",
+      "workers": 4,
+      "max_iter": 100,
+      "range_bound": 200,
+      "tag": "kill_expanded",
+      "cct": {
+        "total_nodes": 27,
+        "internal_nodes": 13,
+        "leaf_nodes": 14,
+        "empty_leaves": 0,
+        "covered_leaves": 14,
+        "valid_testcases": 14,
+        "infeasible_leaves": 0,
+        "out_of_range_leaves": 0,
+        "truncated_leaves": 0,
+        "expanded_nodes": 0,
+        "expanded_internal_nodes": 0,
+        "expanded_leaves": 0,
+        "tbfv_fault_leaves": 0,
+        "tbfv_failure_cases": 0,
+        "tbfv_failure_count": 0,
+        "max_depth": 11
+      },
+      "testcase_stats": {
+        "generated_records": 14,
+        "executable_records": 14,
+        "trace_backed_records": 14,
+        "status_counts": {
+          "bootstrap": 1,
+          "batch_safe": 13
+        }
+      },
+      "full_event": true,
+      "error_events": [],
+      "fresh": true,
+      "status": "completed",
+      "fingerprint": {
+        "stage": "generation_fingerprint",
+        "schema_version": 1,
+        "condition_identity": "line+normalized-text+occurrence",
+        "testcase_ids_ignored": true,
+        "cct_structure_sha256": "542a2897418241886fc4539df763e4ab9fbe4cc1ad2b8f6cad502dbb42fd54ac",
+        "cct_semantic_sha256": "d94b1fa5afd1c13de4be14cb09514b63eb38c710aa65e19a6e84a72e5a9530e8",
+        "test_inputs_sha256": "5814ec5c5a898b5b02302387135c0886102dbada11052eade4ade6202e8b3223",
+        "concrete_input_count": 14
+      },
+      "frontier_mean": 3.25,
+      "frontier_max": 10,
+      "verification": {
+        "command": [
+          "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+          "--csc-result-dir",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M3_1792783987597415000/SpfBankWithdrawal_M3",
+          "--java-file",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfBankWithdrawal/SpfBankWithdrawal_M3.java",
+          "--fsf",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfBankWithdrawal/FSF/SpfBankWithdrawal_FSF.txt",
+          "--output",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfBankWithdrawal_M3/verification.json"
+        ],
+        "returncode": 0,
+        "timed_out": false,
+        "wall_time_s": 0.24115458398591727,
+        "started_at": "2026-10-23T19:33:11.060510+00:00",
+        "finished_at": "2026-10-23T19:33:11.301671+00:00",
+        "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfBankWithdrawal_M3/verification.stdout",
+        "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfBankWithdrawal_M3/verification.stderr",
+        "stderr_tail": "",
+        "summary": {
+          "testcases": 14,
+          "fsf_units": 7,
+          "passed": 14,
+          "failed": 4,
+          "skipped": 80,
+          "unsupported": 0
+        },
+        "status": "completed",
+        "killed": true
+      }
+    }
+  },
+  "localization": {
+    "mutant_id": "SpfBankWithdrawal_M3",
+    "subject": "SpfBankWithdrawal",
+    "operator": "BOR",
+    "fault_kind": "control-flow",
+    "fault_category": "condition",
+    "primary_line": 24,
+    "scoring_strategy": "coverage_x_purity",
+    "status": "evaluated",
+    "F_total": 2,
+    "P_total": 12,
+    "top1_budget": 2,
+    "top1_folded_hit": true,
+    "top1_sfl_hit": false,
+    "top2_budget": 3,
+    "top2_folded_hit": true,
+    "top2_sfl_hit": true,
+    "top3_budget": 4,
+    "top3_folded_hit": true,
+    "top3_sfl_hit": true,
+    "top1_condition_hit": false,
+    "top1_edge_partition_hit": true,
+    "top1_folded_region_lines": [
+      23,
+      24
+    ],
+    "top1_ochiai_hit": false,
+    "top1_ochiai_region_lines": [
+      22,
+      23
+    ],
+    "top1_tarantula_hit": false,
+    "top1_tarantula_region_lines": [
+      22,
+      23
+    ],
+    "top1_dstar_hit": false,
+    "top1_dstar_region_lines": [
+      22,
+      23
+    ],
+    "top1_barinel_hit": false,
+    "top1_barinel_region_lines": [
+      22,
+      23
+    ],
+    "top1_op2_hit": false,
+    "top1_op2_region_lines": [
+      22,
+      23
+    ],
+    "top2_condition_hit": true,
+    "top2_edge_partition_hit": true,
+    "top2_folded_region_lines": [
+      22,
+      23,
+      24
+    ],
+    "top2_ochiai_hit": true,
+    "top2_ochiai_region_lines": [
+      22,
+      23,
+      24
+    ],
+    "top2_tarantula_hit": true,
+    "top2_tarantula_region_lines": [
+      22,
+      23,
+      24
+    ],
+    "top2_dstar_hit": true,
+    "top2_dstar_region_lines": [
+      22,
+      23,
+      24
+    ],
+    "top2_barinel_hit": true,
+    "top2_barinel_region_lines": [
+      22,
+      23,
+      24
+    ],
+    "top2_op2_hit": true,
+    "top2_op2_region_lines": [
+      22,
+      23,
+      24
+    ],
+    "top3_condition_hit": true,
+    "top3_edge_partition_hit": true,
+    "top3_folded_region_lines": [
+      21,
+      22,
+      23,
+      24
+    ],
+    "top3_ochiai_hit": true,
+    "top3_ochiai_region_lines": [
+      22,
+      23,
+      24,
+      21
+    ],
+    "top3_tarantula_hit": true,
+    "top3_tarantula_region_lines": [
+      22,
+      23,
+      24,
+      21
+    ],
+    "top3_dstar_hit": true,
+    "top3_dstar_region_lines": [
+      22,
+      23,
+      24,
+      21
+    ],
+    "top3_barinel_hit": true,
+    "top3_barinel_region_lines": [
+      22,
+      23,
+      24,
+      21
+    ],
+    "top3_op2_hit": true,
+    "top3_op2_region_lines": [
+      22,
+      23,
+      24,
+      21
+    ]
+  }
+}

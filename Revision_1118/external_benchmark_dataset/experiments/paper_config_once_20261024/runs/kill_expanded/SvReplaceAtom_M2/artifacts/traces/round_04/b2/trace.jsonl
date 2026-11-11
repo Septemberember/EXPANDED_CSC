@@ -1,0 +1,29 @@
+{"type":"COND","line":5,"kind":"if","order":1,"expr":"kind < 0","value":false}
+{"type":"COND","line":5,"kind":"if","order":2,"expr":"kind > 3","value":false}
+{"type":"COND","line":5,"kind":"if","order":3,"expr":"ch < 0","value":false}
+{"type":"COND","line":5,"kind":"if","order":4,"expr":"ch > 10","value":false}
+{"type":"COND","line":5,"kind":"if","order":5,"expr":"a < 0","value":false}
+{"type":"COND","line":5,"kind":"if","order":6,"expr":"a > 10","value":false}
+{"type":"COND","line":5,"kind":"if","order":7,"expr":"b < 0","value":false}
+{"type":"COND","line":5,"kind":"if","order":8,"expr":"b > 10","value":false}
+{"type":"COND","line":5,"kind":"if","order":9,"expr":"index < 0","value":false}
+{"type":"COND","line":5,"kind":"if","order":10,"expr":"index > 1","value":false}
+{"type":"ASSIGN","line":6,"kind":"var_decl","target":"advance","rhs":"-1","value":"-1"}
+{"type":"COND","line":7,"kind":"if","order":1,"expr":"ch == 0","value":true}
+{"type":"COND","line":8,"kind":"if","order":1,"expr":"kind == 0","value":false}
+{"type":"COND","line":9,"kind":"if","order":1,"expr":"kind == 1","value":false}
+{"type":"ASSIGN","line":11,"kind":"var_decl","target":"found","rhs":"false","value":"false"}
+{"type":"ASSIGN","line":12,"kind":"var_decl","target":"i","rhs":"2","value":"2"}
+{"type":"COND","line":13,"kind":"while","order":1,"expr":"i > 0","value":true}
+{"type":"ASSIGN","line":14,"kind":"var_decl","target":"value","rhs":"a","value":"0"}
+{"type":"COND","line":15,"kind":"if","order":1,"expr":"i == 2","value":true}
+{"type":"ASSIGN","line":15,"kind":"assign","target":"value","rhs":"b","value":"0"}
+{"type":"COND","line":16,"kind":"if","order":1,"expr":"ch == value","value":true}
+{"type":"ASSIGN","line":16,"kind":"assign","target":"found","rhs":"true","value":"true"}
+{"type":"ASSIGN","line":16,"kind":"assign","target":"i","rhs":"0","value":"0"}
+{"type":"COND","line":13,"kind":"while","order":1,"expr":"i > 0","value":false}
+{"type":"COND","line":18,"kind":"if","order":1,"expr":"kind == 2","value":true}
+{"type":"COND","line":18,"kind":"if","order":1,"expr":"found","value":true}
+{"type":"ASSIGN","line":18,"kind":"assign","target":"advance","rhs":"1","value":"1"}
+{"type":"COND","line":23,"kind":"if","order":1,"expr":"advance >= 0","value":true}
+{"type":"RETURN","line":23,"target":"return_value","rhs":"index + advance","value":"1"}

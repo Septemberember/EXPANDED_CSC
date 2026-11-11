@@ -1,0 +1,1308 @@
+{
+  "summary": {
+    "aggregation": "source_transition_v1",
+    "score_aggregation": "max",
+    "per_target_aggregation": {
+      "condition_node_ranking": "max",
+      "interval_rankings.folded_seed_e": "max",
+      "interval_rankings.folded_seed_s": "max",
+      "interval_rankings.folded_edge_partition": "max"
+    },
+    "source_report": null,
+    "source_file": "SvCliOption/SvCliOption_M4.java",
+    "targets": [
+      "condition_node_ranking",
+      "interval_rankings.folded_seed_e",
+      "interval_rankings.folded_seed_s",
+      "interval_rankings.folded_edge_partition"
+    ],
+    "condition_node_count_raw": 13,
+    "condition_node_count_aggregated": 13,
+    "interval_count_raw": {
+      "folded_seed_e": 5,
+      "folded_seed_s": 1,
+      "folded_edge_partition": 6
+    },
+    "interval_count_aggregated": {
+      "folded_seed_e": 5,
+      "folded_seed_s": 1,
+      "folded_edge_partition": 6
+    },
+    "average_interval_region_size": {
+      "folded_seed_e": 1.2,
+      "folded_seed_s": 1.0,
+      "folded_edge_partition": 1.1666666666666667
+    },
+    "raw_summary": {
+      "strategy": "folded_source_candidate_v1",
+      "scoring_strategy": "coverage_x_purity",
+      "F_total": 7,
+      "P_total": 5,
+      "condition_candidates": 13,
+      "seed_e_candidates": 5,
+      "seed_s_candidates": 1,
+      "edge_partition_candidates": 6,
+      "unstable_segment_variants": 2,
+      "total_edge_transitions": 35
+    }
+  },
+  "aggregated_condition_node_ranking": [
+    {
+      "source_file": "SvCliOption/SvCliOption_M4.java",
+      "line": 13,
+      "condition": "code >= 97",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 1,
+      "raw_ranks": [
+        1
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 1,
+        "risk_score": 0.7,
+        "line": 13,
+        "condition": "code >= 97",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.7,
+      "exec_count": 10,
+      "fail_count": 7,
+      "pass_count": 3,
+      "failure_density": 0.7,
+      "min_exec_count": 10,
+      "min_fail_count": 7,
+      "min_pass_count": 3,
+      "min_failure_density": 0.7,
+      "rank": 1
+    },
+    {
+      "source_file": "SvCliOption/SvCliOption_M4.java",
+      "line": 15,
+      "condition": "valid",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 2,
+      "raw_ranks": [
+        2
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 2,
+        "risk_score": 0.7,
+        "line": 15,
+        "condition": "valid",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.7,
+      "exec_count": 10,
+      "fail_count": 7,
+      "pass_count": 3,
+      "failure_density": 0.7,
+      "min_exec_count": 10,
+      "min_fail_count": 7,
+      "min_pass_count": 3,
+      "min_failure_density": 0.7,
+      "rank": 2
+    },
+    {
+      "source_file": "SvCliOption/SvCliOption_M4.java",
+      "line": 16,
+      "condition": "option",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 3,
+      "raw_ranks": [
+        3
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 3,
+        "risk_score": 0.7,
+        "line": 16,
+        "condition": "option",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.7,
+      "exec_count": 10,
+      "fail_count": 7,
+      "pass_count": 3,
+      "failure_density": 0.7,
+      "min_exec_count": 10,
+      "min_fail_count": 7,
+      "min_pass_count": 3,
+      "min_failure_density": 0.7,
+      "rank": 3
+    },
+    {
+      "source_file": "SvCliOption/SvCliOption_M4.java",
+      "line": 11,
+      "condition": "code > 127",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 4,
+      "raw_ranks": [
+        4
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 4,
+        "risk_score": 0.6363636363636364,
+        "line": 11,
+        "condition": "code > 127",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.6363636363636364,
+      "exec_count": 11,
+      "fail_count": 7,
+      "pass_count": 4,
+      "failure_density": 0.6363636363636364,
+      "min_exec_count": 11,
+      "min_fail_count": 7,
+      "min_pass_count": 4,
+      "min_failure_density": 0.6363636363636364,
+      "rank": 4
+    },
+    {
+      "source_file": "SvCliOption/SvCliOption_M4.java",
+      "line": 11,
+      "condition": "code < 0",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 5,
+      "raw_ranks": [
+        5
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 5,
+        "risk_score": 0.5833333333333334,
+        "line": 11,
+        "condition": "code < 0",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.5833333333333334,
+      "exec_count": 12,
+      "fail_count": 7,
+      "pass_count": 5,
+      "failure_density": 0.5833333333333334,
+      "min_exec_count": 12,
+      "min_fail_count": 7,
+      "min_pass_count": 5,
+      "min_failure_density": 0.5833333333333334,
+      "rank": 5
+    },
+    {
+      "source_file": "SvCliOption/SvCliOption_M4.java",
+      "line": 13,
+      "condition": "code >= 65",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 6,
+      "raw_ranks": [
+        6
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 6,
+        "risk_score": 0.5714285714285714,
+        "line": 13,
+        "condition": "code >= 65",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.5714285714285714,
+      "exec_count": 9,
+      "fail_count": 6,
+      "pass_count": 3,
+      "failure_density": 0.6666666666666666,
+      "min_exec_count": 9,
+      "min_fail_count": 6,
+      "min_pass_count": 3,
+      "min_failure_density": 0.6666666666666666,
+      "rank": 6
+    },
+    {
+      "source_file": "SvCliOption/SvCliOption_M4.java",
+      "line": 13,
+      "condition": "code == 95",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 7,
+      "raw_ranks": [
+        7
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 7,
+        "risk_score": 0.44642857142857145,
+        "line": 13,
+        "condition": "code == 95",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.44642857142857145,
+      "exec_count": 8,
+      "fail_count": 5,
+      "pass_count": 3,
+      "failure_density": 0.625,
+      "min_exec_count": 8,
+      "min_fail_count": 5,
+      "min_pass_count": 3,
+      "min_failure_density": 0.625,
+      "rank": 7
+    },
+    {
+      "source_file": "SvCliOption/SvCliOption_M4.java",
+      "line": 13,
+      "condition": "code == 46",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 8,
+      "raw_ranks": [
+        8
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 8,
+        "risk_score": 0.32653061224489793,
+        "line": 13,
+        "condition": "code == 46",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.32653061224489793,
+      "exec_count": 7,
+      "fail_count": 4,
+      "pass_count": 3,
+      "failure_density": 0.5714285714285714,
+      "min_exec_count": 7,
+      "min_fail_count": 4,
+      "min_pass_count": 3,
+      "min_failure_density": 0.5714285714285714,
+      "rank": 8
+    },
+    {
+      "source_file": "SvCliOption/SvCliOption_M4.java",
+      "line": 15,
+      "condition": "code == 32",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 9,
+      "raw_ranks": [
+        9
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 9,
+        "risk_score": 0.21428571428571427,
+        "line": 15,
+        "condition": "code == 32",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.21428571428571427,
+      "exec_count": 6,
+      "fail_count": 3,
+      "pass_count": 3,
+      "failure_density": 0.5,
+      "min_exec_count": 6,
+      "min_fail_count": 3,
+      "min_pass_count": 3,
+      "min_failure_density": 0.5,
+      "rank": 9
+    },
+    {
+      "source_file": "SvCliOption/SvCliOption_M4.java",
+      "line": 13,
+      "condition": "code <= 90",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 10,
+      "raw_ranks": [
+        10
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 10,
+        "risk_score": 0.14285714285714285,
+        "line": 13,
+        "condition": "code <= 90",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.14285714285714285,
+      "exec_count": 4,
+      "fail_count": 2,
+      "pass_count": 2,
+      "failure_density": 0.5,
+      "min_exec_count": 4,
+      "min_fail_count": 2,
+      "min_pass_count": 2,
+      "min_failure_density": 0.5,
+      "rank": 10
+    },
+    {
+      "source_file": "SvCliOption/SvCliOption_M4.java",
+      "line": 15,
+      "condition": "code == 63",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 11,
+      "raw_ranks": [
+        11
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 11,
+        "risk_score": 0.11428571428571428,
+        "line": 15,
+        "condition": "code == 63",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.11428571428571428,
+      "exec_count": 5,
+      "fail_count": 2,
+      "pass_count": 3,
+      "failure_density": 0.4,
+      "min_exec_count": 5,
+      "min_fail_count": 2,
+      "min_pass_count": 3,
+      "min_failure_density": 0.4,
+      "rank": 11
+    },
+    {
+      "source_file": "SvCliOption/SvCliOption_M4.java",
+      "line": 13,
+      "condition": "code <= 122",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 12,
+      "raw_ranks": [
+        12
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 12,
+        "risk_score": 0.07142857142857142,
+        "line": 13,
+        "condition": "code <= 122",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.07142857142857142,
+      "exec_count": 2,
+      "fail_count": 1,
+      "pass_count": 1,
+      "failure_density": 0.5,
+      "min_exec_count": 2,
+      "min_fail_count": 1,
+      "min_pass_count": 1,
+      "min_failure_density": 0.5,
+      "rank": 12
+    },
+    {
+      "source_file": "SvCliOption/SvCliOption_M4.java",
+      "line": 15,
+      "condition": "code == 64",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 13,
+      "raw_ranks": [
+        13
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 13,
+        "risk_score": 0.03571428571428571,
+        "line": 15,
+        "condition": "code == 64",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.03571428571428571,
+      "exec_count": 4,
+      "fail_count": 1,
+      "pass_count": 3,
+      "failure_density": 0.25,
+      "min_exec_count": 4,
+      "min_fail_count": 1,
+      "min_pass_count": 3,
+      "min_failure_density": 0.25,
+      "rank": 13
+    }
+  ],
+  "aggregated_interval_rankings": {
+    "folded_seed_e": [
+      {
+        "source_file": "SvCliOption/SvCliOption_M4.java",
+        "from_line": 15,
+        "from_condition": "code == 64",
+        "outcome": "true",
+        "to_line": 16,
+        "to_condition": "option",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          15
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            15
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 1,
+        "raw_ranks": [
+          1
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 1,
+          "risk_score": 1.0,
+          "from_line": 15,
+          "from_condition": "code == 64",
+          "outcome": "true",
+          "to_line": 16,
+          "to_condition": "option",
+          "statement_lines": [
+            15
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 7,
+        "fail_count": 7,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 7,
+        "min_fail_count": 7,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 1
+      },
+      {
+        "source_file": "SvCliOption/SvCliOption_M4.java",
+        "from_line": 16,
+        "from_condition": "option",
+        "outcome": "true",
+        "to_line": null,
+        "to_condition": null,
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          17
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            17
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 2,
+        "raw_ranks": [
+          2
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 2,
+          "risk_score": 1.0,
+          "from_line": 16,
+          "from_condition": "option",
+          "outcome": "true",
+          "to_line": null,
+          "to_condition": null,
+          "statement_lines": [
+            17
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 7,
+        "fail_count": 7,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 7,
+        "min_fail_count": 7,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 2
+      },
+      {
+        "source_file": "SvCliOption/SvCliOption_M4.java",
+        "from_line": 11,
+        "from_condition": "code > 127",
+        "outcome": "false",
+        "to_line": 13,
+        "to_condition": "code >= 97",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          12
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            12
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 3,
+        "raw_ranks": [
+          3
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 3,
+          "risk_score": 0.7,
+          "from_line": 11,
+          "from_condition": "code > 127",
+          "outcome": "false",
+          "to_line": 13,
+          "to_condition": "code >= 97",
+          "statement_lines": [
+            12
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.7,
+        "base_risk_score": 0.7,
+        "exec_count": 10,
+        "fail_count": 7,
+        "pass_count": 3,
+        "failure_density": 0.7,
+        "min_exec_count": 10,
+        "min_fail_count": 7,
+        "min_pass_count": 3,
+        "min_failure_density": 0.7,
+        "rank": 3
+      },
+      {
+        "source_file": "SvCliOption/SvCliOption_M4.java",
+        "from_line": 13,
+        "from_condition": "code == 95",
+        "outcome": "true",
+        "to_line": 15,
+        "to_condition": "valid",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          13,
+          14
+        ],
+        "statement_line_count": 2,
+        "region_size": 2,
+        "statement_line_variants": [
+          [
+            13,
+            14
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 5,
+        "raw_ranks": [
+          5
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 5,
+          "risk_score": 0.42857142857142855,
+          "from_line": 13,
+          "from_condition": "code == 95",
+          "outcome": "true",
+          "to_line": 15,
+          "to_condition": "valid",
+          "statement_lines": [
+            13,
+            14
+          ],
+          "region_size": 2,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.42857142857142855,
+        "base_risk_score": 0.42857142857142855,
+        "exec_count": 3,
+        "fail_count": 3,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 3,
+        "min_fail_count": 3,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 4
+      },
+      {
+        "source_file": "SvCliOption/SvCliOption_M4.java",
+        "from_line": 13,
+        "from_condition": "code == 46",
+        "outcome": "true",
+        "to_line": 15,
+        "to_condition": "valid",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          13
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            13
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 6,
+        "raw_ranks": [
+          6
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 6,
+          "risk_score": 0.14285714285714285,
+          "from_line": 13,
+          "from_condition": "code == 46",
+          "outcome": "true",
+          "to_line": 15,
+          "to_condition": "valid",
+          "statement_lines": [
+            13
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.14285714285714285,
+        "base_risk_score": 0.14285714285714285,
+        "exec_count": 1,
+        "fail_count": 1,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 1,
+        "min_fail_count": 1,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 5
+      }
+    ],
+    "folded_seed_s": [
+      {
+        "source_file": "SvCliOption/SvCliOption_M4.java",
+        "from_line": 13,
+        "from_condition": "code == 46",
+        "outcome": "false",
+        "to_line": 15,
+        "to_condition": "valid",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          14
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            14
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 4,
+        "raw_ranks": [
+          4
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 4,
+          "risk_score": 0.45714285714285713,
+          "from_line": 13,
+          "from_condition": "code == 46",
+          "outcome": "false",
+          "to_line": 15,
+          "to_condition": "valid",
+          "statement_lines": [
+            14
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.45714285714285713,
+        "base_risk_score": 0.45714285714285713,
+        "exec_count": 5,
+        "fail_count": 4,
+        "pass_count": 1,
+        "failure_density": 0.8,
+        "min_exec_count": 5,
+        "min_fail_count": 4,
+        "min_pass_count": 1,
+        "min_failure_density": 0.8,
+        "rank": 1
+      }
+    ],
+    "folded_edge_partition": [
+      {
+        "source_file": "SvCliOption/SvCliOption_M4.java",
+        "from_line": 15,
+        "from_condition": "code == 64",
+        "outcome": "true",
+        "to_line": 16,
+        "to_condition": "option",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          15
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            15
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 1,
+        "raw_ranks": [
+          1
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 1,
+          "risk_score": 1.0,
+          "from_line": 15,
+          "from_condition": "code == 64",
+          "outcome": "true",
+          "to_line": 16,
+          "to_condition": "option",
+          "statement_lines": [
+            15
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 7,
+        "fail_count": 7,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 7,
+        "min_fail_count": 7,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 1
+      },
+      {
+        "source_file": "SvCliOption/SvCliOption_M4.java",
+        "from_line": 16,
+        "from_condition": "option",
+        "outcome": "true",
+        "to_line": null,
+        "to_condition": null,
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          17
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            17
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 2,
+        "raw_ranks": [
+          2
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 2,
+          "risk_score": 1.0,
+          "from_line": 16,
+          "from_condition": "option",
+          "outcome": "true",
+          "to_line": null,
+          "to_condition": null,
+          "statement_lines": [
+            17
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 7,
+        "fail_count": 7,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 7,
+        "min_fail_count": 7,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 2
+      },
+      {
+        "source_file": "SvCliOption/SvCliOption_M4.java",
+        "from_line": 11,
+        "from_condition": "code > 127",
+        "outcome": "false",
+        "to_line": 13,
+        "to_condition": "code >= 97",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          12
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            12
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 3,
+        "raw_ranks": [
+          3
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 3,
+          "risk_score": 0.7,
+          "from_line": 11,
+          "from_condition": "code > 127",
+          "outcome": "false",
+          "to_line": 13,
+          "to_condition": "code >= 97",
+          "statement_lines": [
+            12
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.7,
+        "base_risk_score": 0.7,
+        "exec_count": 10,
+        "fail_count": 7,
+        "pass_count": 3,
+        "failure_density": 0.7,
+        "min_exec_count": 10,
+        "min_fail_count": 7,
+        "min_pass_count": 3,
+        "min_failure_density": 0.7,
+        "rank": 3
+      },
+      {
+        "source_file": "SvCliOption/SvCliOption_M4.java",
+        "from_line": 13,
+        "from_condition": "code == 46",
+        "outcome": "false",
+        "to_line": 15,
+        "to_condition": "valid",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          14
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            14
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 4,
+        "raw_ranks": [
+          4
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 4,
+          "risk_score": 0.45714285714285713,
+          "from_line": 13,
+          "from_condition": "code == 46",
+          "outcome": "false",
+          "to_line": 15,
+          "to_condition": "valid",
+          "statement_lines": [
+            14
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.45714285714285713,
+        "base_risk_score": 0.45714285714285713,
+        "exec_count": 5,
+        "fail_count": 4,
+        "pass_count": 1,
+        "failure_density": 0.8,
+        "min_exec_count": 5,
+        "min_fail_count": 4,
+        "min_pass_count": 1,
+        "min_failure_density": 0.8,
+        "rank": 4
+      },
+      {
+        "source_file": "SvCliOption/SvCliOption_M4.java",
+        "from_line": 13,
+        "from_condition": "code == 95",
+        "outcome": "true",
+        "to_line": 15,
+        "to_condition": "valid",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          13,
+          14
+        ],
+        "statement_line_count": 2,
+        "region_size": 2,
+        "statement_line_variants": [
+          [
+            13,
+            14
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 5,
+        "raw_ranks": [
+          5
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 5,
+          "risk_score": 0.42857142857142855,
+          "from_line": 13,
+          "from_condition": "code == 95",
+          "outcome": "true",
+          "to_line": 15,
+          "to_condition": "valid",
+          "statement_lines": [
+            13,
+            14
+          ],
+          "region_size": 2,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.42857142857142855,
+        "base_risk_score": 0.42857142857142855,
+        "exec_count": 3,
+        "fail_count": 3,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 3,
+        "min_fail_count": 3,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 5
+      },
+      {
+        "source_file": "SvCliOption/SvCliOption_M4.java",
+        "from_line": 13,
+        "from_condition": "code == 46",
+        "outcome": "true",
+        "to_line": 15,
+        "to_condition": "valid",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          13
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            13
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 6,
+        "raw_ranks": [
+          6
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 6,
+          "risk_score": 0.14285714285714285,
+          "from_line": 13,
+          "from_condition": "code == 46",
+          "outcome": "true",
+          "to_line": 15,
+          "to_condition": "valid",
+          "statement_lines": [
+            13
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.14285714285714285,
+        "base_risk_score": 0.14285714285714285,
+        "exec_count": 1,
+        "fail_count": 1,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 1,
+        "min_fail_count": 1,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 6
+      }
+    ]
+  }
+}

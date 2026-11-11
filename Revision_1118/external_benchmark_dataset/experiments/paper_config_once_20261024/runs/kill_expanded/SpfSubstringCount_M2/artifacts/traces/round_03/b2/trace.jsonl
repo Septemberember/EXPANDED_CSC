@@ -1,0 +1,106 @@
+{"type":"COND","line":5,"kind":"if","order":1,"expr":"a < 0","value":false}
+{"type":"COND","line":5,"kind":"if","order":2,"expr":"a > 9","value":false}
+{"type":"COND","line":5,"kind":"if","order":3,"expr":"b < 0","value":false}
+{"type":"COND","line":5,"kind":"if","order":4,"expr":"b > 9","value":false}
+{"type":"COND","line":5,"kind":"if","order":5,"expr":"c < 0","value":false}
+{"type":"COND","line":5,"kind":"if","order":6,"expr":"c > 9","value":false}
+{"type":"COND","line":5,"kind":"if","order":7,"expr":"d < 0","value":false}
+{"type":"COND","line":5,"kind":"if","order":8,"expr":"d > 9","value":false}
+{"type":"COND","line":5,"kind":"if","order":9,"expr":"p < 0","value":false}
+{"type":"COND","line":5,"kind":"if","order":10,"expr":"p > 9","value":false}
+{"type":"COND","line":5,"kind":"if","order":11,"expr":"q < 0","value":false}
+{"type":"COND","line":5,"kind":"if","order":12,"expr":"q > 9","value":false}
+{"type":"ASSIGN","line":6,"kind":"var_decl","target":"count","rhs":"0","value":"0"}
+{"type":"ASSIGN","line":7,"kind":"var_decl","target":"i","rhs":"0","value":"0"}
+{"type":"COND","line":8,"kind":"while","order":1,"expr":"i < 3","value":true}
+{"type":"ASSIGN","line":9,"kind":"var_decl","target":"found","rhs":"true","value":"true"}
+{"type":"ASSIGN","line":10,"kind":"var_decl","target":"j","rhs":"0","value":"0"}
+{"type":"COND","line":11,"kind":"while","order":1,"expr":"j < 2","value":true}
+{"type":"ASSIGN","line":12,"kind":"var_decl","target":"index","rhs":"i + j","value":"0"}
+{"type":"ASSIGN","line":13,"kind":"var_decl","target":"ch","rhs":"a","value":"9"}
+{"type":"COND","line":14,"kind":"if","order":1,"expr":"index != 1","value":true}
+{"type":"ASSIGN","line":14,"kind":"assign","target":"ch","rhs":"b","value":"6"}
+{"type":"COND","line":15,"kind":"if","order":1,"expr":"index == 2","value":false}
+{"type":"COND","line":16,"kind":"if","order":1,"expr":"index == 3","value":false}
+{"type":"ASSIGN","line":17,"kind":"var_decl","target":"needle","rhs":"p","value":"6"}
+{"type":"COND","line":18,"kind":"if","order":1,"expr":"j == 1","value":false}
+{"type":"ASSIGN","line":19,"kind":"assign","target":"found","rhs":"found && ch == needle","value":"true"}
+{"type":"ASSIGN","line":20,"kind":"assign","target":"j","rhs":"j + 1","value":"1"}
+{"type":"COND","line":11,"kind":"while","order":1,"expr":"j < 2","value":true}
+{"type":"ASSIGN","line":12,"kind":"var_decl","target":"index","rhs":"i + j","value":"1"}
+{"type":"ASSIGN","line":13,"kind":"var_decl","target":"ch","rhs":"a","value":"9"}
+{"type":"COND","line":14,"kind":"if","order":1,"expr":"index != 1","value":false}
+{"type":"COND","line":15,"kind":"if","order":1,"expr":"index == 2","value":false}
+{"type":"COND","line":16,"kind":"if","order":1,"expr":"index == 3","value":false}
+{"type":"ASSIGN","line":17,"kind":"var_decl","target":"needle","rhs":"p","value":"6"}
+{"type":"COND","line":18,"kind":"if","order":1,"expr":"j == 1","value":true}
+{"type":"ASSIGN","line":18,"kind":"assign","target":"needle","rhs":"q","value":"9"}
+{"type":"ASSIGN","line":19,"kind":"assign","target":"found","rhs":"found && ch == needle","value":"true"}
+{"type":"ASSIGN","line":20,"kind":"assign","target":"j","rhs":"j + 1","value":"2"}
+{"type":"COND","line":11,"kind":"while","order":1,"expr":"j < 2","value":false}
+{"type":"COND","line":22,"kind":"if","order":1,"expr":"found","value":true}
+{"type":"ASSIGN","line":22,"kind":"assign","target":"count","rhs":"count + 1","value":"1"}
+{"type":"ASSIGN","line":23,"kind":"assign","target":"i","rhs":"i + 1","value":"1"}
+{"type":"COND","line":8,"kind":"while","order":1,"expr":"i < 3","value":true}
+{"type":"ASSIGN","line":9,"kind":"var_decl","target":"found","rhs":"true","value":"true"}
+{"type":"ASSIGN","line":10,"kind":"var_decl","target":"j","rhs":"0","value":"0"}
+{"type":"COND","line":11,"kind":"while","order":1,"expr":"j < 2","value":true}
+{"type":"ASSIGN","line":12,"kind":"var_decl","target":"index","rhs":"i + j","value":"1"}
+{"type":"ASSIGN","line":13,"kind":"var_decl","target":"ch","rhs":"a","value":"9"}
+{"type":"COND","line":14,"kind":"if","order":1,"expr":"index != 1","value":false}
+{"type":"COND","line":15,"kind":"if","order":1,"expr":"index == 2","value":false}
+{"type":"COND","line":16,"kind":"if","order":1,"expr":"index == 3","value":false}
+{"type":"ASSIGN","line":17,"kind":"var_decl","target":"needle","rhs":"p","value":"6"}
+{"type":"COND","line":18,"kind":"if","order":1,"expr":"j == 1","value":false}
+{"type":"ASSIGN","line":19,"kind":"assign","target":"found","rhs":"found && ch == needle","value":"false"}
+{"type":"ASSIGN","line":20,"kind":"assign","target":"j","rhs":"j + 1","value":"1"}
+{"type":"COND","line":11,"kind":"while","order":1,"expr":"j < 2","value":true}
+{"type":"ASSIGN","line":12,"kind":"var_decl","target":"index","rhs":"i + j","value":"2"}
+{"type":"ASSIGN","line":13,"kind":"var_decl","target":"ch","rhs":"a","value":"9"}
+{"type":"COND","line":14,"kind":"if","order":1,"expr":"index != 1","value":true}
+{"type":"ASSIGN","line":14,"kind":"assign","target":"ch","rhs":"b","value":"6"}
+{"type":"COND","line":15,"kind":"if","order":1,"expr":"index == 2","value":true}
+{"type":"ASSIGN","line":15,"kind":"assign","target":"ch","rhs":"c","value":"6"}
+{"type":"COND","line":16,"kind":"if","order":1,"expr":"index == 3","value":false}
+{"type":"ASSIGN","line":17,"kind":"var_decl","target":"needle","rhs":"p","value":"6"}
+{"type":"COND","line":18,"kind":"if","order":1,"expr":"j == 1","value":true}
+{"type":"ASSIGN","line":18,"kind":"assign","target":"needle","rhs":"q","value":"9"}
+{"type":"ASSIGN","line":19,"kind":"assign","target":"found","rhs":"found && ch == needle","value":"false"}
+{"type":"ASSIGN","line":20,"kind":"assign","target":"j","rhs":"j + 1","value":"2"}
+{"type":"COND","line":11,"kind":"while","order":1,"expr":"j < 2","value":false}
+{"type":"COND","line":22,"kind":"if","order":1,"expr":"found","value":false}
+{"type":"ASSIGN","line":23,"kind":"assign","target":"i","rhs":"i + 1","value":"2"}
+{"type":"COND","line":8,"kind":"while","order":1,"expr":"i < 3","value":true}
+{"type":"ASSIGN","line":9,"kind":"var_decl","target":"found","rhs":"true","value":"true"}
+{"type":"ASSIGN","line":10,"kind":"var_decl","target":"j","rhs":"0","value":"0"}
+{"type":"COND","line":11,"kind":"while","order":1,"expr":"j < 2","value":true}
+{"type":"ASSIGN","line":12,"kind":"var_decl","target":"index","rhs":"i + j","value":"2"}
+{"type":"ASSIGN","line":13,"kind":"var_decl","target":"ch","rhs":"a","value":"9"}
+{"type":"COND","line":14,"kind":"if","order":1,"expr":"index != 1","value":true}
+{"type":"ASSIGN","line":14,"kind":"assign","target":"ch","rhs":"b","value":"6"}
+{"type":"COND","line":15,"kind":"if","order":1,"expr":"index == 2","value":true}
+{"type":"ASSIGN","line":15,"kind":"assign","target":"ch","rhs":"c","value":"6"}
+{"type":"COND","line":16,"kind":"if","order":1,"expr":"index == 3","value":false}
+{"type":"ASSIGN","line":17,"kind":"var_decl","target":"needle","rhs":"p","value":"6"}
+{"type":"COND","line":18,"kind":"if","order":1,"expr":"j == 1","value":false}
+{"type":"ASSIGN","line":19,"kind":"assign","target":"found","rhs":"found && ch == needle","value":"true"}
+{"type":"ASSIGN","line":20,"kind":"assign","target":"j","rhs":"j + 1","value":"1"}
+{"type":"COND","line":11,"kind":"while","order":1,"expr":"j < 2","value":true}
+{"type":"ASSIGN","line":12,"kind":"var_decl","target":"index","rhs":"i + j","value":"3"}
+{"type":"ASSIGN","line":13,"kind":"var_decl","target":"ch","rhs":"a","value":"9"}
+{"type":"COND","line":14,"kind":"if","order":1,"expr":"index != 1","value":true}
+{"type":"ASSIGN","line":14,"kind":"assign","target":"ch","rhs":"b","value":"6"}
+{"type":"COND","line":15,"kind":"if","order":1,"expr":"index == 2","value":false}
+{"type":"COND","line":16,"kind":"if","order":1,"expr":"index == 3","value":true}
+{"type":"ASSIGN","line":16,"kind":"assign","target":"ch","rhs":"d","value":"9"}
+{"type":"ASSIGN","line":17,"kind":"var_decl","target":"needle","rhs":"p","value":"6"}
+{"type":"COND","line":18,"kind":"if","order":1,"expr":"j == 1","value":true}
+{"type":"ASSIGN","line":18,"kind":"assign","target":"needle","rhs":"q","value":"9"}
+{"type":"ASSIGN","line":19,"kind":"assign","target":"found","rhs":"found && ch == needle","value":"true"}
+{"type":"ASSIGN","line":20,"kind":"assign","target":"j","rhs":"j + 1","value":"2"}
+{"type":"COND","line":11,"kind":"while","order":1,"expr":"j < 2","value":false}
+{"type":"COND","line":22,"kind":"if","order":1,"expr":"found","value":true}
+{"type":"ASSIGN","line":22,"kind":"assign","target":"count","rhs":"count + 1","value":"2"}
+{"type":"ASSIGN","line":23,"kind":"assign","target":"i","rhs":"i + 1","value":"3"}
+{"type":"COND","line":8,"kind":"while","order":1,"expr":"i < 3","value":false}
+{"type":"RETURN","line":25,"target":"return_value","rhs":"count","value":"2"}

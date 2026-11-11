@@ -1,0 +1,333 @@
+{
+  "mutant_id": "SvTcasClimb_M1",
+  "subject": "SvTcasClimb",
+  "operator": "BOR",
+  "fault_category": "condition",
+  "loop_bearing": false,
+  "modes": {
+    "original": {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SvTcasClimb/SvTcasClimb_M1.java",
+        "--mode",
+        "original",
+        "--range-bound",
+        "200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--max-iter",
+        "100",
+        "--session",
+        "extpaper_kill_original_SvTcasClimb_M1_1792784358542294000",
+        "--keep-artifacts"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "wall_time_s": 10.006248707999475,
+      "started_at": "2026-10-23T19:39:18.542379+00:00",
+      "finished_at": "2026-10-23T19:39:28.548679+00:00",
+      "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SvTcasClimb_M1/generation.stdout",
+      "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SvTcasClimb_M1/generation.stderr",
+      "stderr_tail": "",
+      "subject": "SvTcasClimb",
+      "class_name": "SvTcasClimb_M1",
+      "session": "extpaper_kill_original_SvTcasClimb_M1_1792784358542294000",
+      "result_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_original_SvTcasClimb_M1_1792784358542294000/SvTcasClimb_M1",
+      "folder": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SvTcasClimb_M1",
+      "mode": "original",
+      "strategy": "batch",
+      "workers": 4,
+      "max_iter": 100,
+      "range_bound": 200,
+      "tag": "kill_original",
+      "cct": {
+        "total_nodes": 113,
+        "internal_nodes": 56,
+        "leaf_nodes": 57,
+        "empty_leaves": 0,
+        "covered_leaves": 44,
+        "valid_testcases": 44,
+        "infeasible_leaves": 13,
+        "out_of_range_leaves": 0,
+        "truncated_leaves": 0,
+        "expanded_nodes": 0,
+        "expanded_internal_nodes": 0,
+        "expanded_leaves": 0,
+        "tbfv_fault_leaves": 0,
+        "tbfv_failure_cases": 0,
+        "tbfv_failure_count": 0,
+        "max_depth": 17
+      },
+      "testcase_stats": {
+        "generated_records": 44,
+        "executable_records": 44,
+        "trace_backed_records": 44,
+        "status_counts": {
+          "bootstrap": 1,
+          "batch_safe": 43
+        }
+      },
+      "full_event": true,
+      "error_events": [],
+      "fresh": true,
+      "status": "completed",
+      "fingerprint": {
+        "stage": "generation_fingerprint",
+        "schema_version": 1,
+        "condition_identity": "line+normalized-text+occurrence",
+        "testcase_ids_ignored": true,
+        "cct_structure_sha256": "dbce825269f5c6fd4b7e45cb9fa4e450019f0b3d2c1548075e4baf43e9402088",
+        "cct_semantic_sha256": "d3ce50a59f9104a89e8bdea9c3d5eecb4dd2ccd658c1ef85135e7c3ee7ec82f7",
+        "test_inputs_sha256": "618aa3ccdadced664a15b56ed8ba8a4769994fc22977386bdc841e83a38e4e01",
+        "concrete_input_count": 44
+      },
+      "frontier_mean": 4.777777777777778,
+      "frontier_max": 10,
+      "verification": {
+        "command": [
+          "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+          "--csc-result-dir",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_original_SvTcasClimb_M1_1792784358542294000/SvTcasClimb_M1",
+          "--java-file",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SvTcasClimb/SvTcasClimb_M1.java",
+          "--fsf",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SvTcasClimb/FSF/SvTcasClimb_FSF.txt",
+          "--output",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SvTcasClimb_M1/verification.json"
+        ],
+        "returncode": 0,
+        "timed_out": false,
+        "wall_time_s": 0.5158689999952912,
+        "started_at": "2026-10-23T19:39:28.563534+00:00",
+        "finished_at": "2026-10-23T19:39:29.079412+00:00",
+        "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SvTcasClimb_M1/verification.stdout",
+        "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SvTcasClimb_M1/verification.stderr",
+        "stderr_tail": "",
+        "summary": {
+          "testcases": 44,
+          "fsf_units": 3,
+          "passed": 44,
+          "failed": 2,
+          "skipped": 86,
+          "unsupported": 0
+        },
+        "status": "completed",
+        "killed": true
+      }
+    },
+    "expanded": {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SvTcasClimb/SvTcasClimb_M1.java",
+        "--mode",
+        "expanded",
+        "--range-bound",
+        "200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--max-iter",
+        "100",
+        "--session",
+        "extpaper_kill_expanded_SvTcasClimb_M1_1792784369097743000",
+        "--keep-artifacts"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "wall_time_s": 10.97593237500405,
+      "started_at": "2026-10-23T19:39:29.097812+00:00",
+      "finished_at": "2026-10-23T19:39:40.073809+00:00",
+      "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SvTcasClimb_M1/generation.stdout",
+      "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SvTcasClimb_M1/generation.stderr",
+      "stderr_tail": "",
+      "subject": "SvTcasClimb",
+      "class_name": "SvTcasClimb_M1",
+      "session": "extpaper_kill_expanded_SvTcasClimb_M1_1792784369097743000",
+      "result_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_expanded_SvTcasClimb_M1_1792784369097743000/SvTcasClimb_M1",
+      "folder": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SvTcasClimb_M1",
+      "mode": "expanded",
+      "strategy": "batch",
+      "workers": 4,
+      "max_iter": 100,
+      "range_bound": 200,
+      "tag": "kill_expanded",
+      "cct": {
+        "total_nodes": 113,
+        "internal_nodes": 56,
+        "leaf_nodes": 57,
+        "empty_leaves": 0,
+        "covered_leaves": 44,
+        "valid_testcases": 44,
+        "infeasible_leaves": 13,
+        "out_of_range_leaves": 0,
+        "truncated_leaves": 0,
+        "expanded_nodes": 0,
+        "expanded_internal_nodes": 0,
+        "expanded_leaves": 0,
+        "tbfv_fault_leaves": 0,
+        "tbfv_failure_cases": 0,
+        "tbfv_failure_count": 0,
+        "max_depth": 17
+      },
+      "testcase_stats": {
+        "generated_records": 44,
+        "executable_records": 44,
+        "trace_backed_records": 44,
+        "status_counts": {
+          "bootstrap": 1,
+          "batch_safe": 43
+        }
+      },
+      "full_event": true,
+      "error_events": [],
+      "fresh": true,
+      "status": "completed",
+      "fingerprint": {
+        "stage": "generation_fingerprint",
+        "schema_version": 1,
+        "condition_identity": "line+normalized-text+occurrence",
+        "testcase_ids_ignored": true,
+        "cct_structure_sha256": "dbce825269f5c6fd4b7e45cb9fa4e450019f0b3d2c1548075e4baf43e9402088",
+        "cct_semantic_sha256": "d3ce50a59f9104a89e8bdea9c3d5eecb4dd2ccd658c1ef85135e7c3ee7ec82f7",
+        "test_inputs_sha256": "618aa3ccdadced664a15b56ed8ba8a4769994fc22977386bdc841e83a38e4e01",
+        "concrete_input_count": 44
+      },
+      "frontier_mean": 4.777777777777778,
+      "frontier_max": 10,
+      "verification": {
+        "command": [
+          "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+          "--csc-result-dir",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_expanded_SvTcasClimb_M1_1792784369097743000/SvTcasClimb_M1",
+          "--java-file",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SvTcasClimb/SvTcasClimb_M1.java",
+          "--fsf",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SvTcasClimb/FSF/SvTcasClimb_FSF.txt",
+          "--output",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SvTcasClimb_M1/verification.json"
+        ],
+        "returncode": 0,
+        "timed_out": false,
+        "wall_time_s": 0.5689379580435343,
+        "started_at": "2026-10-23T19:39:40.090053+00:00",
+        "finished_at": "2026-10-23T19:39:40.658997+00:00",
+        "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SvTcasClimb_M1/verification.stdout",
+        "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SvTcasClimb_M1/verification.stderr",
+        "stderr_tail": "",
+        "summary": {
+          "testcases": 44,
+          "fsf_units": 3,
+          "passed": 44,
+          "failed": 2,
+          "skipped": 86,
+          "unsupported": 0
+        },
+        "status": "completed",
+        "killed": true
+      }
+    }
+  },
+  "localization": {
+    "mutant_id": "SvTcasClimb_M1",
+    "subject": "SvTcasClimb",
+    "operator": "BOR",
+    "fault_kind": "control-flow",
+    "fault_category": "condition",
+    "primary_line": 5,
+    "scoring_strategy": "coverage_x_purity",
+    "status": "evaluated",
+    "F_total": 1,
+    "P_total": 43,
+    "top1_budget": 1,
+    "top1_folded_hit": true,
+    "top1_sfl_hit": true,
+    "top2_budget": 1,
+    "top2_folded_hit": true,
+    "top2_sfl_hit": true,
+    "top3_budget": 1,
+    "top3_folded_hit": true,
+    "top3_sfl_hit": true,
+    "top1_condition_hit": true,
+    "top1_edge_partition_hit": true,
+    "top1_folded_region_lines": [
+      5
+    ],
+    "top1_ochiai_hit": true,
+    "top1_ochiai_region_lines": [
+      5
+    ],
+    "top1_tarantula_hit": true,
+    "top1_tarantula_region_lines": [
+      5
+    ],
+    "top1_dstar_hit": true,
+    "top1_dstar_region_lines": [
+      5
+    ],
+    "top1_barinel_hit": true,
+    "top1_barinel_region_lines": [
+      5
+    ],
+    "top1_op2_hit": true,
+    "top1_op2_region_lines": [
+      5
+    ],
+    "top2_condition_hit": true,
+    "top2_edge_partition_hit": true,
+    "top2_folded_region_lines": [
+      5
+    ],
+    "top2_ochiai_hit": true,
+    "top2_ochiai_region_lines": [
+      5
+    ],
+    "top2_tarantula_hit": true,
+    "top2_tarantula_region_lines": [
+      5
+    ],
+    "top2_dstar_hit": true,
+    "top2_dstar_region_lines": [
+      5
+    ],
+    "top2_barinel_hit": true,
+    "top2_barinel_region_lines": [
+      5
+    ],
+    "top2_op2_hit": true,
+    "top2_op2_region_lines": [
+      5
+    ],
+    "top3_condition_hit": true,
+    "top3_edge_partition_hit": true,
+    "top3_folded_region_lines": [
+      5
+    ],
+    "top3_ochiai_hit": true,
+    "top3_ochiai_region_lines": [
+      5
+    ],
+    "top3_tarantula_hit": true,
+    "top3_tarantula_region_lines": [
+      5
+    ],
+    "top3_dstar_hit": true,
+    "top3_dstar_region_lines": [
+      5
+    ],
+    "top3_barinel_hit": true,
+    "top3_barinel_region_lines": [
+      5
+    ],
+    "top3_op2_hit": true,
+    "top3_op2_region_lines": [
+      5
+    ]
+  }
+}

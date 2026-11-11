@@ -1,0 +1,158 @@
+{"type":"COND","line":20,"kind":"if","order":1,"expr":"a < 1","value":false}
+{"type":"COND","line":20,"kind":"if","order":2,"expr":"a > 3","value":false}
+{"type":"COND","line":20,"kind":"if","order":3,"expr":"b < 1","value":false}
+{"type":"COND","line":20,"kind":"if","order":4,"expr":"b > 3","value":false}
+{"type":"COND","line":20,"kind":"if","order":5,"expr":"x < 1","value":false}
+{"type":"COND","line":20,"kind":"if","order":6,"expr":"x > 3","value":false}
+{"type":"COND","line":20,"kind":"if","order":7,"expr":"y < 1","value":false}
+{"type":"COND","line":20,"kind":"if","order":8,"expr":"y > 3","value":false}
+{"type":"COND","line":20,"kind":"if","order":9,"expr":"z < 1","value":false}
+{"type":"COND","line":20,"kind":"if","order":10,"expr":"z > 3","value":false}
+{"type":"ASSIGN","line":21,"kind":"var_decl","target":"p0","rhs":"0","value":"0"}
+{"type":"ASSIGN","line":21,"kind":"var_decl","target":"p1","rhs":"1","value":"1"}
+{"type":"ASSIGN","line":21,"kind":"var_decl","target":"p2","rhs":"2","value":"2"}
+{"type":"ASSIGN","line":22,"kind":"var_decl","target":"d0","rhs":"0","value":"0"}
+{"type":"ASSIGN","line":22,"kind":"var_decl","target":"d1","rhs":"0","value":"0"}
+{"type":"ASSIGN","line":22,"kind":"var_decl","target":"d2","rhs":"0","value":"0"}
+{"type":"ASSIGN","line":23,"kind":"var_decl","target":"j","rhs":"1","value":"1"}
+{"type":"COND","line":24,"kind":"while","order":1,"expr":"j <= 3","value":true}
+{"type":"ASSIGN","line":25,"kind":"var_decl","target":"tj","rhs":"x","value":"1"}
+{"type":"COND","line":26,"kind":"if","order":1,"expr":"j != 2","value":true}
+{"type":"ASSIGN","line":26,"kind":"assign","target":"tj","rhs":"y","value":"2"}
+{"type":"COND","line":27,"kind":"if","order":1,"expr":"j == 3","value":false}
+{"type":"ASSIGN","line":28,"kind":"assign","target":"d0","rhs":"j","value":"1"}
+{"type":"ASSIGN","line":29,"kind":"var_decl","target":"i","rhs":"1","value":"1"}
+{"type":"COND","line":30,"kind":"while","order":1,"expr":"i <= 2","value":true}
+{"type":"ASSIGN","line":31,"kind":"var_decl","target":"si","rhs":"a","value":"2"}
+{"type":"ASSIGN","line":31,"kind":"var_decl","target":"left","rhs":"d0","value":"1"}
+{"type":"ASSIGN","line":31,"kind":"var_decl","target":"top","rhs":"p1","value":"1"}
+{"type":"ASSIGN","line":31,"kind":"var_decl","target":"diagonal","rhs":"p0","value":"0"}
+{"type":"COND","line":32,"kind":"if","order":1,"expr":"i == 2","value":false}
+{"type":"ASSIGN","line":33,"kind":"var_decl","target":"cost","rhs":"1","value":"1"}
+{"type":"COND","line":34,"kind":"if","order":1,"expr":"si == tj","value":true}
+{"type":"ASSIGN","line":34,"kind":"assign","target":"cost","rhs":"0","value":"0"}
+{"type":"ASSIGN","line":35,"kind":"var_decl","target":"value","rhs":"left + 1","value":"2"}
+{"type":"COND","line":36,"kind":"if","order":1,"expr":"top + 1 < value","value":false}
+{"type":"COND","line":37,"kind":"if","order":1,"expr":"diagonal + cost < value","value":true}
+{"type":"ASSIGN","line":37,"kind":"assign","target":"value","rhs":"diagonal + cost","value":"0"}
+{"type":"COND","line":38,"kind":"if","order":1,"expr":"i == 1","value":true}
+{"type":"ASSIGN","line":38,"kind":"assign","target":"d1","rhs":"value","value":"0"}
+{"type":"ASSIGN","line":39,"kind":"assign","target":"i","rhs":"i + 1","value":"2"}
+{"type":"COND","line":30,"kind":"while","order":1,"expr":"i <= 2","value":true}
+{"type":"ASSIGN","line":31,"kind":"var_decl","target":"si","rhs":"a","value":"2"}
+{"type":"ASSIGN","line":31,"kind":"var_decl","target":"left","rhs":"d0","value":"1"}
+{"type":"ASSIGN","line":31,"kind":"var_decl","target":"top","rhs":"p1","value":"1"}
+{"type":"ASSIGN","line":31,"kind":"var_decl","target":"diagonal","rhs":"p0","value":"0"}
+{"type":"COND","line":32,"kind":"if","order":1,"expr":"i == 2","value":true}
+{"type":"ASSIGN","line":32,"kind":"assign","target":"si","rhs":"b","value":"2"}
+{"type":"ASSIGN","line":32,"kind":"assign","target":"left","rhs":"d1","value":"0"}
+{"type":"ASSIGN","line":32,"kind":"assign","target":"top","rhs":"p2","value":"2"}
+{"type":"ASSIGN","line":32,"kind":"assign","target":"diagonal","rhs":"p1","value":"1"}
+{"type":"ASSIGN","line":33,"kind":"var_decl","target":"cost","rhs":"1","value":"1"}
+{"type":"COND","line":34,"kind":"if","order":1,"expr":"si == tj","value":true}
+{"type":"ASSIGN","line":34,"kind":"assign","target":"cost","rhs":"0","value":"0"}
+{"type":"ASSIGN","line":35,"kind":"var_decl","target":"value","rhs":"left + 1","value":"1"}
+{"type":"COND","line":36,"kind":"if","order":1,"expr":"top + 1 < value","value":false}
+{"type":"COND","line":37,"kind":"if","order":1,"expr":"diagonal + cost < value","value":false}
+{"type":"COND","line":38,"kind":"if","order":1,"expr":"i == 1","value":false}
+{"type":"ASSIGN","line":38,"kind":"assign","target":"d2","rhs":"value","value":"1"}
+{"type":"ASSIGN","line":39,"kind":"assign","target":"i","rhs":"i + 1","value":"3"}
+{"type":"COND","line":30,"kind":"while","order":1,"expr":"i <= 2","value":false}
+{"type":"ASSIGN","line":41,"kind":"assign","target":"p0","rhs":"d0","value":"1"}
+{"type":"ASSIGN","line":41,"kind":"assign","target":"p1","rhs":"d1","value":"0"}
+{"type":"ASSIGN","line":41,"kind":"assign","target":"p2","rhs":"d2","value":"1"}
+{"type":"ASSIGN","line":42,"kind":"assign","target":"j","rhs":"j + 1","value":"2"}
+{"type":"COND","line":24,"kind":"while","order":1,"expr":"j <= 3","value":true}
+{"type":"ASSIGN","line":25,"kind":"var_decl","target":"tj","rhs":"x","value":"1"}
+{"type":"COND","line":26,"kind":"if","order":1,"expr":"j != 2","value":false}
+{"type":"COND","line":27,"kind":"if","order":1,"expr":"j == 3","value":false}
+{"type":"ASSIGN","line":28,"kind":"assign","target":"d0","rhs":"j","value":"2"}
+{"type":"ASSIGN","line":29,"kind":"var_decl","target":"i","rhs":"1","value":"1"}
+{"type":"COND","line":30,"kind":"while","order":1,"expr":"i <= 2","value":true}
+{"type":"ASSIGN","line":31,"kind":"var_decl","target":"si","rhs":"a","value":"2"}
+{"type":"ASSIGN","line":31,"kind":"var_decl","target":"left","rhs":"d0","value":"2"}
+{"type":"ASSIGN","line":31,"kind":"var_decl","target":"top","rhs":"p1","value":"0"}
+{"type":"ASSIGN","line":31,"kind":"var_decl","target":"diagonal","rhs":"p0","value":"1"}
+{"type":"COND","line":32,"kind":"if","order":1,"expr":"i == 2","value":false}
+{"type":"ASSIGN","line":33,"kind":"var_decl","target":"cost","rhs":"1","value":"1"}
+{"type":"COND","line":34,"kind":"if","order":1,"expr":"si == tj","value":false}
+{"type":"ASSIGN","line":35,"kind":"var_decl","target":"value","rhs":"left + 1","value":"3"}
+{"type":"COND","line":36,"kind":"if","order":1,"expr":"top + 1 < value","value":true}
+{"type":"ASSIGN","line":36,"kind":"assign","target":"value","rhs":"top + 1","value":"1"}
+{"type":"COND","line":37,"kind":"if","order":1,"expr":"diagonal + cost < value","value":false}
+{"type":"COND","line":38,"kind":"if","order":1,"expr":"i == 1","value":true}
+{"type":"ASSIGN","line":38,"kind":"assign","target":"d1","rhs":"value","value":"1"}
+{"type":"ASSIGN","line":39,"kind":"assign","target":"i","rhs":"i + 1","value":"2"}
+{"type":"COND","line":30,"kind":"while","order":1,"expr":"i <= 2","value":true}
+{"type":"ASSIGN","line":31,"kind":"var_decl","target":"si","rhs":"a","value":"2"}
+{"type":"ASSIGN","line":31,"kind":"var_decl","target":"left","rhs":"d0","value":"2"}
+{"type":"ASSIGN","line":31,"kind":"var_decl","target":"top","rhs":"p1","value":"0"}
+{"type":"ASSIGN","line":31,"kind":"var_decl","target":"diagonal","rhs":"p0","value":"1"}
+{"type":"COND","line":32,"kind":"if","order":1,"expr":"i == 2","value":true}
+{"type":"ASSIGN","line":32,"kind":"assign","target":"si","rhs":"b","value":"2"}
+{"type":"ASSIGN","line":32,"kind":"assign","target":"left","rhs":"d1","value":"1"}
+{"type":"ASSIGN","line":32,"kind":"assign","target":"top","rhs":"p2","value":"1"}
+{"type":"ASSIGN","line":32,"kind":"assign","target":"diagonal","rhs":"p1","value":"0"}
+{"type":"ASSIGN","line":33,"kind":"var_decl","target":"cost","rhs":"1","value":"1"}
+{"type":"COND","line":34,"kind":"if","order":1,"expr":"si == tj","value":false}
+{"type":"ASSIGN","line":35,"kind":"var_decl","target":"value","rhs":"left + 1","value":"2"}
+{"type":"COND","line":36,"kind":"if","order":1,"expr":"top + 1 < value","value":false}
+{"type":"COND","line":37,"kind":"if","order":1,"expr":"diagonal + cost < value","value":true}
+{"type":"ASSIGN","line":37,"kind":"assign","target":"value","rhs":"diagonal + cost","value":"1"}
+{"type":"COND","line":38,"kind":"if","order":1,"expr":"i == 1","value":false}
+{"type":"ASSIGN","line":38,"kind":"assign","target":"d2","rhs":"value","value":"1"}
+{"type":"ASSIGN","line":39,"kind":"assign","target":"i","rhs":"i + 1","value":"3"}
+{"type":"COND","line":30,"kind":"while","order":1,"expr":"i <= 2","value":false}
+{"type":"ASSIGN","line":41,"kind":"assign","target":"p0","rhs":"d0","value":"2"}
+{"type":"ASSIGN","line":41,"kind":"assign","target":"p1","rhs":"d1","value":"1"}
+{"type":"ASSIGN","line":41,"kind":"assign","target":"p2","rhs":"d2","value":"1"}
+{"type":"ASSIGN","line":42,"kind":"assign","target":"j","rhs":"j + 1","value":"3"}
+{"type":"COND","line":24,"kind":"while","order":1,"expr":"j <= 3","value":true}
+{"type":"ASSIGN","line":25,"kind":"var_decl","target":"tj","rhs":"x","value":"1"}
+{"type":"COND","line":26,"kind":"if","order":1,"expr":"j != 2","value":true}
+{"type":"ASSIGN","line":26,"kind":"assign","target":"tj","rhs":"y","value":"2"}
+{"type":"COND","line":27,"kind":"if","order":1,"expr":"j == 3","value":true}
+{"type":"ASSIGN","line":27,"kind":"assign","target":"tj","rhs":"z","value":"1"}
+{"type":"ASSIGN","line":28,"kind":"assign","target":"d0","rhs":"j","value":"3"}
+{"type":"ASSIGN","line":29,"kind":"var_decl","target":"i","rhs":"1","value":"1"}
+{"type":"COND","line":30,"kind":"while","order":1,"expr":"i <= 2","value":true}
+{"type":"ASSIGN","line":31,"kind":"var_decl","target":"si","rhs":"a","value":"2"}
+{"type":"ASSIGN","line":31,"kind":"var_decl","target":"left","rhs":"d0","value":"3"}
+{"type":"ASSIGN","line":31,"kind":"var_decl","target":"top","rhs":"p1","value":"1"}
+{"type":"ASSIGN","line":31,"kind":"var_decl","target":"diagonal","rhs":"p0","value":"2"}
+{"type":"COND","line":32,"kind":"if","order":1,"expr":"i == 2","value":false}
+{"type":"ASSIGN","line":33,"kind":"var_decl","target":"cost","rhs":"1","value":"1"}
+{"type":"COND","line":34,"kind":"if","order":1,"expr":"si == tj","value":false}
+{"type":"ASSIGN","line":35,"kind":"var_decl","target":"value","rhs":"left + 1","value":"4"}
+{"type":"COND","line":36,"kind":"if","order":1,"expr":"top + 1 < value","value":true}
+{"type":"ASSIGN","line":36,"kind":"assign","target":"value","rhs":"top + 1","value":"2"}
+{"type":"COND","line":37,"kind":"if","order":1,"expr":"diagonal + cost < value","value":false}
+{"type":"COND","line":38,"kind":"if","order":1,"expr":"i == 1","value":true}
+{"type":"ASSIGN","line":38,"kind":"assign","target":"d1","rhs":"value","value":"2"}
+{"type":"ASSIGN","line":39,"kind":"assign","target":"i","rhs":"i + 1","value":"2"}
+{"type":"COND","line":30,"kind":"while","order":1,"expr":"i <= 2","value":true}
+{"type":"ASSIGN","line":31,"kind":"var_decl","target":"si","rhs":"a","value":"2"}
+{"type":"ASSIGN","line":31,"kind":"var_decl","target":"left","rhs":"d0","value":"3"}
+{"type":"ASSIGN","line":31,"kind":"var_decl","target":"top","rhs":"p1","value":"1"}
+{"type":"ASSIGN","line":31,"kind":"var_decl","target":"diagonal","rhs":"p0","value":"2"}
+{"type":"COND","line":32,"kind":"if","order":1,"expr":"i == 2","value":true}
+{"type":"ASSIGN","line":32,"kind":"assign","target":"si","rhs":"b","value":"2"}
+{"type":"ASSIGN","line":32,"kind":"assign","target":"left","rhs":"d1","value":"2"}
+{"type":"ASSIGN","line":32,"kind":"assign","target":"top","rhs":"p2","value":"1"}
+{"type":"ASSIGN","line":32,"kind":"assign","target":"diagonal","rhs":"p1","value":"1"}
+{"type":"ASSIGN","line":33,"kind":"var_decl","target":"cost","rhs":"1","value":"1"}
+{"type":"COND","line":34,"kind":"if","order":1,"expr":"si == tj","value":false}
+{"type":"ASSIGN","line":35,"kind":"var_decl","target":"value","rhs":"left + 1","value":"3"}
+{"type":"COND","line":36,"kind":"if","order":1,"expr":"top + 1 < value","value":true}
+{"type":"ASSIGN","line":36,"kind":"assign","target":"value","rhs":"top + 1","value":"2"}
+{"type":"COND","line":37,"kind":"if","order":1,"expr":"diagonal + cost < value","value":false}
+{"type":"COND","line":38,"kind":"if","order":1,"expr":"i == 1","value":false}
+{"type":"ASSIGN","line":38,"kind":"assign","target":"d2","rhs":"value","value":"2"}
+{"type":"ASSIGN","line":39,"kind":"assign","target":"i","rhs":"i + 1","value":"3"}
+{"type":"COND","line":30,"kind":"while","order":1,"expr":"i <= 2","value":false}
+{"type":"ASSIGN","line":41,"kind":"assign","target":"p0","rhs":"d0","value":"3"}
+{"type":"ASSIGN","line":41,"kind":"assign","target":"p1","rhs":"d1","value":"2"}
+{"type":"ASSIGN","line":41,"kind":"assign","target":"p2","rhs":"d2","value":"2"}
+{"type":"ASSIGN","line":42,"kind":"assign","target":"j","rhs":"j + 1","value":"4"}
+{"type":"COND","line":24,"kind":"while","order":1,"expr":"j <= 3","value":false}
+{"type":"RETURN","line":44,"target":"return_value","rhs":"p2","value":"2"}

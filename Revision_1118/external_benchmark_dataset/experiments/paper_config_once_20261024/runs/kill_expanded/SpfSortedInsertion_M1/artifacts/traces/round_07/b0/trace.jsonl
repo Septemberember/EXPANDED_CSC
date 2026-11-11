@@ -1,0 +1,11 @@
+{"type":"COND","line":21,"kind":"if","order":1,"expr":"a <= 0","value":false}
+{"type":"COND","line":21,"kind":"if","order":2,"expr":"a > 9","value":false}
+{"type":"COND","line":21,"kind":"if","order":3,"expr":"b < a","value":false}
+{"type":"COND","line":21,"kind":"if","order":4,"expr":"b > 9","value":false}
+{"type":"COND","line":21,"kind":"if","order":5,"expr":"c < b","value":false}
+{"type":"COND","line":21,"kind":"if","order":6,"expr":"c > 9","value":false}
+{"type":"COND","line":21,"kind":"if","order":7,"expr":"value < 0","value":false}
+{"type":"COND","line":21,"kind":"if","order":8,"expr":"value > 9","value":false}
+{"type":"ASSIGN","line":22,"kind":"var_decl","target":"first","rhs":"a","value":"8"}
+{"type":"COND","line":23,"kind":"if","order":1,"expr":"value <= first","value":true}
+{"type":"RETURN","line":23,"target":"return_value","rhs":"value * 1000 + a * 100 + b * 10 + c","value":"888"}

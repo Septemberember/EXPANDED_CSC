@@ -1,0 +1,343 @@
+[
+  {
+    "iteration": 0,
+    "inputs": {
+      "left": 0,
+      "root": 0,
+      "right": 0,
+      "key": 0
+    },
+    "path_constraint": "bootstrap",
+    "trace_path": "csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/traces/bootstrap/trace.jsonl",
+    "status": "bootstrap",
+    "strategy": "batch",
+    "timings": {
+      "compile_time_ms": 272,
+      "java_exec_time_ms": 67,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "test_case_id": "tc_2_b0",
+    "iteration": 2,
+    "branch_idx": 0,
+    "inputs": {
+      "left": "1022",
+      "root": "1024",
+      "right": "0",
+      "key": "0"
+    },
+    "path_constraint": "(!(left < 0)) && (!(root <= left))",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/traces/round_02/b0/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 377,
+      "java_exec_time_ms": 78,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 457,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 457,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 457,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 763,
+        "java_exec_time_ms": 136,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 902,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_2_b1",
+    "iteration": 2,
+    "branch_idx": 1,
+    "inputs": {
+      "left": "-32768",
+      "root": "0",
+      "right": "0",
+      "key": "0"
+    },
+    "path_constraint": "(left < 0)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/traces/round_02/b1/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 386,
+      "java_exec_time_ms": 58,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 445,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 457,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 457,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 763,
+        "java_exec_time_ms": 136,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 902,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_3_b0",
+    "iteration": 3,
+    "branch_idx": 0,
+    "inputs": {
+      "left": "16382",
+      "root": "16384",
+      "right": "16385",
+      "key": "0"
+    },
+    "path_constraint": "(!(left < 0)) && (!(root <= left)) && (!(right <= root))",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/traces/round_03/b0/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 319,
+      "java_exec_time_ms": 67,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 386,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 387,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 387,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 319,
+        "java_exec_time_ms": 67,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 386,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_4_b0",
+    "iteration": 4,
+    "branch_idx": 0,
+    "inputs": {
+      "left": "0",
+      "root": "1",
+      "right": "2",
+      "key": "0"
+    },
+    "path_constraint": "(!(left < 0)) && (!(root <= left)) && (!(right <= root)) && (!(right > 9))",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/traces/round_04/b0/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 275,
+      "java_exec_time_ms": 67,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 343,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 343,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 344,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 275,
+        "java_exec_time_ms": 67,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 343,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_5_b0",
+    "iteration": 5,
+    "branch_idx": 0,
+    "inputs": {
+      "left": "0",
+      "root": "3",
+      "right": "4",
+      "key": "7"
+    },
+    "path_constraint": "(!(left < 0)) && (!(root <= left)) && (!(right <= root)) && (!(right > 9)) && (!(key < 0)) && (!(key > 9)) && ((0) >= 0) && (!((0) == 1)) && ((0) != 2) && (!((right) == key)) && (!(key < (right)))",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/traces/round_05/b0/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 490,
+      "java_exec_time_ms": 84,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 576,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 587,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 587,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 1932,
+        "java_exec_time_ms": 359,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 2300,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_5_b1",
+    "iteration": 5,
+    "branch_idx": 1,
+    "inputs": {
+      "left": "0",
+      "root": "1",
+      "right": "2",
+      "key": "2"
+    },
+    "path_constraint": "(!(left < 0)) && (!(root <= left)) && (!(right <= root)) && (!(right > 9)) && (!(key < 0)) && (!(key > 9)) && ((0) >= 0) && (!((0) == 1)) && ((0) != 2) && ((right) == key)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/traces/round_05/b1/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 479,
+      "java_exec_time_ms": 106,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 586,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 587,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 587,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 1932,
+        "java_exec_time_ms": 359,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 2300,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_5_b2",
+    "iteration": 5,
+    "branch_idx": 2,
+    "inputs": {
+      "left": "0",
+      "root": "1",
+      "right": "2",
+      "key": "12"
+    },
+    "path_constraint": "(!(left < 0)) && (!(root <= left)) && (!(right <= root)) && (!(right > 9)) && (!(key < 0)) && (key > 9)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/traces/round_05/b2/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 486,
+      "java_exec_time_ms": 80,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 569,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 587,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 587,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 1932,
+        "java_exec_time_ms": 359,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 2300,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_5_b3",
+    "iteration": 5,
+    "branch_idx": 3,
+    "inputs": {
+      "left": "0",
+      "root": "1",
+      "right": "2",
+      "key": "-32768"
+    },
+    "path_constraint": "(!(left < 0)) && (!(root <= left)) && (!(right <= root)) && (!(right > 9)) && (key < 0)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SpfTreeSearch_M3_1792784178320695000/SpfTreeSearch_M3/traces/round_05/b3/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 477,
+      "java_exec_time_ms": 89,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 569,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 587,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 587,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 1932,
+        "java_exec_time_ms": 359,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 2300,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  }
+]

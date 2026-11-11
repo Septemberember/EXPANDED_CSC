@@ -1,0 +1,287 @@
+[
+  {
+    "iteration": 0,
+    "inputs": {
+      "altitudeOffset": 0,
+      "fired": true
+    },
+    "path_constraint": "bootstrap",
+    "trace_path": "csc_tmp/extpaper_kill_expanded_SpfAbortDecision_M4_1792784224948081000/SpfAbortDecision_M4/traces/bootstrap/trace.jsonl",
+    "status": "bootstrap",
+    "strategy": "batch",
+    "timings": {
+      "compile_time_ms": 255,
+      "java_exec_time_ms": 66,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "test_case_id": "tc_2_b0",
+    "iteration": 2,
+    "branch_idx": 0,
+    "inputs": {
+      "altitudeOffset": "-4",
+      "fired": "False"
+    },
+    "path_constraint": "(!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (!(fired))",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_expanded_SpfAbortDecision_M4_1792784224948081000/SpfAbortDecision_M4/traces/round_02/b0/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 516,
+      "java_exec_time_ms": 102,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 619,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 1036,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 1037,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 2412,
+        "java_exec_time_ms": 465,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 2887,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_2_b1",
+    "iteration": 2,
+    "branch_idx": 1,
+    "inputs": {
+      "altitudeOffset": "512",
+      "fired": "True"
+    },
+    "path_constraint": "(!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (fired) && (!(altitudeOffset <= 0))",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_expanded_SpfAbortDecision_M4_1792784224948081000/SpfAbortDecision_M4/traces/round_02/b1/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 504,
+      "java_exec_time_ms": 108,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 613,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 1036,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 1037,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 2412,
+        "java_exec_time_ms": 465,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 2887,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_2_b2",
+    "iteration": 2,
+    "branch_idx": 2,
+    "inputs": {
+      "altitudeOffset": "-512",
+      "fired": "True"
+    },
+    "path_constraint": "(!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (fired) && (altitudeOffset <= 0) && (fired) && (!(altitudeOffset >= 0))",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_expanded_SpfAbortDecision_M4_1792784224948081000/SpfAbortDecision_M4/traces/round_02/b2/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 500,
+      "java_exec_time_ms": 98,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 602,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 1036,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 1037,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 2412,
+        "java_exec_time_ms": 465,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 2887,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_2_b3",
+    "iteration": 2,
+    "branch_idx": 3,
+    "inputs": {
+      "altitudeOffset": "1004",
+      "fired": "False"
+    },
+    "path_constraint": "(!(altitudeOffset < -1000)) && (altitudeOffset > 1000)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_expanded_SpfAbortDecision_M4_1792784224948081000/SpfAbortDecision_M4/traces/round_02/b3/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 521,
+      "java_exec_time_ms": 96,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 620,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 1036,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 1037,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 2412,
+        "java_exec_time_ms": 465,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 2887,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_2_b4",
+    "iteration": 2,
+    "branch_idx": 4,
+    "inputs": {
+      "altitudeOffset": "-32768",
+      "fired": "False"
+    },
+    "path_constraint": "(altitudeOffset < -1000)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_expanded_SpfAbortDecision_M4_1792784224948081000/SpfAbortDecision_M4/traces/round_02/b4/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 371,
+      "java_exec_time_ms": 61,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 433,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 1036,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 1037,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 2412,
+        "java_exec_time_ms": 465,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 2887,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_3_b0",
+    "iteration": 3,
+    "branch_idx": 0,
+    "inputs": {
+      "altitudeOffset": "512",
+      "fired": "False"
+    },
+    "path_constraint": "(!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (!(fired)) && (!(altitudeOffset <= 0))",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_expanded_SpfAbortDecision_M4_1792784224948081000/SpfAbortDecision_M4/traces/round_03/b0/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 370,
+      "java_exec_time_ms": 80,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 452,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 452,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 453,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 735,
+        "java_exec_time_ms": 162,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 901,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_3_b1",
+    "iteration": 3,
+    "branch_idx": 1,
+    "inputs": {
+      "altitudeOffset": "0",
+      "fired": "False"
+    },
+    "path_constraint": "(!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (!(fired)) && (altitudeOffset <= 0) && (!(fired)) && (altitudeOffset >= 0)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_expanded_SpfAbortDecision_M4_1792784224948081000/SpfAbortDecision_M4/traces/round_03/b1/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 365,
+      "java_exec_time_ms": 82,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 449,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 452,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 453,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 735,
+        "java_exec_time_ms": 162,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 901,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  }
+]

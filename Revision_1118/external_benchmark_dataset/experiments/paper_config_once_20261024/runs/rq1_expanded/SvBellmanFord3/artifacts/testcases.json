@@ -1,0 +1,544 @@
+[
+  {
+    "iteration": 0,
+    "inputs": {
+      "w01": 0,
+      "w02": 0,
+      "w12": 0,
+      "w21": 0
+    },
+    "path_constraint": "bootstrap",
+    "trace_path": "csc_tmp/extpaper_rq1_expanded_SvBellmanFord3_1792783327448987000/SvBellmanFord3/traces/bootstrap/trace.jsonl",
+    "status": "bootstrap",
+    "timings": {
+      "compile_time_ms": 260,
+      "java_exec_time_ms": 49,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 2,
+    "inputs": null,
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (!(w21 > 4)) && (!((0) < 3))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 3,
+    "inputs": null,
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (!(w21 > 4)) && ((0) < 3) && (!((2147483647) > (0) + w01))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 4,
+    "inputs": null,
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (!(w21 > 4)) && ((0) < 3) && ((2147483647) > (0) + w01) && (!((2147483647) > (0) + w02))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 5,
+    "inputs": null,
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (!(w21 > 4)) && ((0) < 3) && ((2147483647) > (0) + w01) && ((2147483647) > (0) + w02) && (!((0) > ((0) + w01) + 4)) && (!(((0) + w02) > ((0) + w01) + w12)) && (!((0) > ((0) + w02) + 4)) && (!(((0) + w01) > ((0) + w02) + w21)) && (!(true))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 6,
+    "inputs": null,
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (!(w21 > 4)) && ((0) < 3) && ((2147483647) > (0) + w01) && ((2147483647) > (0) + w02) && (!((0) > ((0) + w01) + 4)) && (!(((0) + w02) > ((0) + w01) + w12)) && (!((0) > ((0) + w02) + 4)) && (!(((0) + w01) > ((0) + w02) + w21)) && (true) && (!(((0) + 1) < 3))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 7,
+    "inputs": null,
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (!(w21 > 4)) && ((0) < 3) && ((2147483647) > (0) + w01) && ((2147483647) > (0) + w02) && (!((0) > ((0) + w01) + 4)) && (!(((0) + w02) > ((0) + w01) + w12)) && (!((0) > ((0) + w02) + 4)) && (!(((0) + w01) > ((0) + w02) + w21)) && (true) && (((0) + 1) < 3) && (!(((0) + w01) > (0) + w01)) && (!(((0) + w02) > (0) + w02)) && (!((0) > ((0) + w01) + 4)) && (!(((0) + w02) > ((0) + w01) + w12)) && (!((0) > ((0) + w02) + 4)) && (((0) + w01) > ((0) + w02) + w21)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 8,
+    "inputs": null,
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (!(w21 > 4)) && ((0) < 3) && ((2147483647) > (0) + w01) && ((2147483647) > (0) + w02) && (!((0) > ((0) + w01) + 4)) && (!(((0) + w02) > ((0) + w01) + w12)) && (!((0) > ((0) + w02) + 4)) && (!(((0) + w01) > ((0) + w02) + w21)) && (true) && (((0) + 1) < 3) && (!(((0) + w01) > (0) + w01)) && (!(((0) + w02) > (0) + w02)) && (!((0) > ((0) + w01) + 4)) && (!(((0) + w02) > ((0) + w01) + w12)) && ((0) > ((0) + w02) + 4)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 9,
+    "inputs": null,
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (!(w21 > 4)) && ((0) < 3) && ((2147483647) > (0) + w01) && ((2147483647) > (0) + w02) && (!((0) > ((0) + w01) + 4)) && (!(((0) + w02) > ((0) + w01) + w12)) && (!((0) > ((0) + w02) + 4)) && (!(((0) + w01) > ((0) + w02) + w21)) && (true) && (((0) + 1) < 3) && (!(((0) + w01) > (0) + w01)) && (!(((0) + w02) > (0) + w02)) && (!((0) > ((0) + w01) + 4)) && (((0) + w02) > ((0) + w01) + w12)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 10,
+    "inputs": null,
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (!(w21 > 4)) && ((0) < 3) && ((2147483647) > (0) + w01) && ((2147483647) > (0) + w02) && (!((0) > ((0) + w01) + 4)) && (!(((0) + w02) > ((0) + w01) + w12)) && (!((0) > ((0) + w02) + 4)) && (!(((0) + w01) > ((0) + w02) + w21)) && (true) && (((0) + 1) < 3) && (!(((0) + w01) > (0) + w01)) && (!(((0) + w02) > (0) + w02)) && ((0) > ((0) + w01) + 4)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 11,
+    "inputs": {
+      "w01": "1",
+      "w02": "0",
+      "w12": "1",
+      "w21": "0"
+    },
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (!(w21 > 4)) && ((0) < 3) && ((2147483647) > (0) + w01) && ((2147483647) > (0) + w02) && (!((0) > ((0) + w01) + 4)) && (!(((0) + w02) > ((0) + w01) + w12)) && (!((0) > ((0) + w02) + 4)) && (((0) + w01) > ((0) + w02) + w21)",
+    "trace_path": "csc_tmp/extpaper_rq1_expanded_SvBellmanFord3_1792783327448987000/SvBellmanFord3/traces/t11/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 271,
+      "java_exec_time_ms": 54,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 12,
+    "inputs": null,
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (!(w21 > 4)) && ((0) < 3) && ((2147483647) > (0) + w01) && ((2147483647) > (0) + w02) && (!((0) > ((0) + w01) + 4)) && (!(((0) + w02) > ((0) + w01) + w12)) && (!((0) > ((0) + w02) + 4)) && (((0) + w01) > ((0) + w02) + w21) && (!(true))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 13,
+    "inputs": null,
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (!(w21 > 4)) && ((0) < 3) && ((2147483647) > (0) + w01) && ((2147483647) > (0) + w02) && (!((0) > ((0) + w01) + 4)) && (!(((0) + w02) > ((0) + w01) + w12)) && (!((0) > ((0) + w02) + 4)) && (((0) + w01) > ((0) + w02) + w21) && (true) && (!(((0) + 1) < 3))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 14,
+    "inputs": null,
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (!(w21 > 4)) && ((0) < 3) && ((2147483647) > (0) + w01) && ((2147483647) > (0) + w02) && (!((0) > ((0) + w01) + 4)) && (!(((0) + w02) > ((0) + w01) + w12)) && (!((0) > ((0) + w02) + 4)) && (((0) + w01) > ((0) + w02) + w21) && (true) && (((0) + 1) < 3) && (!((((0) + w02) + w21) > (0) + w01)) && (!(((0) + w02) > (0) + w02)) && (!((0) > (((0) + w02) + w21) + 4)) && (!(((0) + w02) > (((0) + w02) + w21) + w12)) && ((0) > ((0) + w02) + 4)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 15,
+    "inputs": null,
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (!(w21 > 4)) && ((0) < 3) && ((2147483647) > (0) + w01) && ((2147483647) > (0) + w02) && (!((0) > ((0) + w01) + 4)) && (!(((0) + w02) > ((0) + w01) + w12)) && (!((0) > ((0) + w02) + 4)) && (((0) + w01) > ((0) + w02) + w21) && (true) && (((0) + 1) < 3) && (!((((0) + w02) + w21) > (0) + w01)) && (!(((0) + w02) > (0) + w02)) && (!((0) > (((0) + w02) + w21) + 4)) && (((0) + w02) > (((0) + w02) + w21) + w12)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 16,
+    "inputs": null,
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (!(w21 > 4)) && ((0) < 3) && ((2147483647) > (0) + w01) && ((2147483647) > (0) + w02) && (!((0) > ((0) + w01) + 4)) && (!(((0) + w02) > ((0) + w01) + w12)) && (!((0) > ((0) + w02) + 4)) && (((0) + w01) > ((0) + w02) + w21) && (true) && (((0) + 1) < 3) && (!((((0) + w02) + w21) > (0) + w01)) && (!(((0) + w02) > (0) + w02)) && ((0) > (((0) + w02) + w21) + 4)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 17,
+    "inputs": null,
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (!(w21 > 4)) && ((0) < 3) && ((2147483647) > (0) + w01) && ((2147483647) > (0) + w02) && (!((0) > ((0) + w01) + 4)) && (!(((0) + w02) > ((0) + w01) + w12)) && ((0) > ((0) + w02) + 4)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 18,
+    "inputs": {
+      "w01": "2",
+      "w02": "3",
+      "w12": "0",
+      "w21": "0"
+    },
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (!(w21 > 4)) && ((0) < 3) && ((2147483647) > (0) + w01) && ((2147483647) > (0) + w02) && (!((0) > ((0) + w01) + 4)) && (((0) + w02) > ((0) + w01) + w12)",
+    "trace_path": "csc_tmp/extpaper_rq1_expanded_SvBellmanFord3_1792783327448987000/SvBellmanFord3/traces/t18/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 273,
+      "java_exec_time_ms": 52,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 19,
+    "inputs": null,
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (!(w21 > 4)) && ((0) < 3) && ((2147483647) > (0) + w01) && ((2147483647) > (0) + w02) && (!((0) > ((0) + w01) + 4)) && (((0) + w02) > ((0) + w01) + w12) && (!((0) > (((0) + w01) + w12) + 4)) && (!(((0) + w01) > (((0) + w01) + w12) + w21)) && (!(true))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 20,
+    "inputs": null,
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (!(w21 > 4)) && ((0) < 3) && ((2147483647) > (0) + w01) && ((2147483647) > (0) + w02) && (!((0) > ((0) + w01) + 4)) && (((0) + w02) > ((0) + w01) + w12) && (!((0) > (((0) + w01) + w12) + 4)) && (!(((0) + w01) > (((0) + w01) + w12) + w21)) && (true) && (!(((0) + 1) < 3))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 21,
+    "inputs": null,
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (!(w21 > 4)) && ((0) < 3) && ((2147483647) > (0) + w01) && ((2147483647) > (0) + w02) && (!((0) > ((0) + w01) + 4)) && (((0) + w02) > ((0) + w01) + w12) && (!((0) > (((0) + w01) + w12) + 4)) && (!(((0) + w01) > (((0) + w01) + w12) + w21)) && (true) && (((0) + 1) < 3) && (!(((0) + w01) > (0) + w01)) && (!((((0) + w01) + w12) > (0) + w02)) && (!((0) > ((0) + w01) + 4)) && (!((((0) + w01) + w12) > ((0) + w01) + w12)) && (!((0) > (((0) + w01) + w12) + 4)) && (((0) + w01) > (((0) + w01) + w12) + w21)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 22,
+    "inputs": null,
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (!(w21 > 4)) && ((0) < 3) && ((2147483647) > (0) + w01) && ((2147483647) > (0) + w02) && (!((0) > ((0) + w01) + 4)) && (((0) + w02) > ((0) + w01) + w12) && (!((0) > (((0) + w01) + w12) + 4)) && (!(((0) + w01) > (((0) + w01) + w12) + w21)) && (true) && (((0) + 1) < 3) && (!(((0) + w01) > (0) + w01)) && (!((((0) + w01) + w12) > (0) + w02)) && (!((0) > ((0) + w01) + 4)) && (!((((0) + w01) + w12) > ((0) + w01) + w12)) && ((0) > (((0) + w01) + w12) + 4)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 23,
+    "inputs": null,
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (!(w21 > 4)) && ((0) < 3) && ((2147483647) > (0) + w01) && ((2147483647) > (0) + w02) && (!((0) > ((0) + w01) + 4)) && (((0) + w02) > ((0) + w01) + w12) && (!((0) > (((0) + w01) + w12) + 4)) && (!(((0) + w01) > (((0) + w01) + w12) + w21)) && (true) && (((0) + 1) < 3) && (!(((0) + w01) > (0) + w01)) && (!((((0) + w01) + w12) > (0) + w02)) && ((0) > ((0) + w01) + 4)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 24,
+    "inputs": null,
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (!(w21 > 4)) && ((0) < 3) && ((2147483647) > (0) + w01) && ((2147483647) > (0) + w02) && (!((0) > ((0) + w01) + 4)) && (((0) + w02) > ((0) + w01) + w12) && (!((0) > (((0) + w01) + w12) + 4)) && (((0) + w01) > (((0) + w01) + w12) + w21)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 25,
+    "inputs": null,
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (!(w21 > 4)) && ((0) < 3) && ((2147483647) > (0) + w01) && ((2147483647) > (0) + w02) && (!((0) > ((0) + w01) + 4)) && (((0) + w02) > ((0) + w01) + w12) && ((0) > (((0) + w01) + w12) + 4)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 26,
+    "inputs": null,
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (!(w21 > 4)) && ((0) < 3) && ((2147483647) > (0) + w01) && ((2147483647) > (0) + w02) && ((0) > ((0) + w01) + 4)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 27,
+    "inputs": {
+      "w01": "0",
+      "w02": "0",
+      "w12": "0",
+      "w21": "6"
+    },
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (w21 > 4)",
+    "trace_path": "csc_tmp/extpaper_rq1_expanded_SvBellmanFord3_1792783327448987000/SvBellmanFord3/traces/t27/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 267,
+      "java_exec_time_ms": 58,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 28,
+    "inputs": {
+      "w01": "0",
+      "w02": "0",
+      "w12": "0",
+      "w21": "-32768"
+    },
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (w21 < 0)",
+    "trace_path": "csc_tmp/extpaper_rq1_expanded_SvBellmanFord3_1792783327448987000/SvBellmanFord3/traces/t28/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 248,
+      "java_exec_time_ms": 60,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 29,
+    "inputs": {
+      "w01": "0",
+      "w02": "0",
+      "w12": "5",
+      "w21": "0"
+    },
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (w12 > 4)",
+    "trace_path": "csc_tmp/extpaper_rq1_expanded_SvBellmanFord3_1792783327448987000/SvBellmanFord3/traces/t29/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 263,
+      "java_exec_time_ms": 60,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 30,
+    "inputs": {
+      "w01": "0",
+      "w02": "0",
+      "w12": "-32768",
+      "w21": "0"
+    },
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (w12 < 0)",
+    "trace_path": "csc_tmp/extpaper_rq1_expanded_SvBellmanFord3_1792783327448987000/SvBellmanFord3/traces/t30/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 260,
+      "java_exec_time_ms": 47,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 31,
+    "inputs": {
+      "w01": "0",
+      "w02": "6",
+      "w12": "0",
+      "w21": "0"
+    },
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (w02 > 4)",
+    "trace_path": "csc_tmp/extpaper_rq1_expanded_SvBellmanFord3_1792783327448987000/SvBellmanFord3/traces/t31/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 249,
+      "java_exec_time_ms": 49,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 32,
+    "inputs": {
+      "w01": "0",
+      "w02": "-32768",
+      "w12": "0",
+      "w21": "0"
+    },
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (w02 < 0)",
+    "trace_path": "csc_tmp/extpaper_rq1_expanded_SvBellmanFord3_1792783327448987000/SvBellmanFord3/traces/t32/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 279,
+      "java_exec_time_ms": 62,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 33,
+    "inputs": {
+      "w01": "16384",
+      "w02": "0",
+      "w12": "0",
+      "w21": "0"
+    },
+    "path_constraint": "(!(w01 < 0)) && (w01 > 4)",
+    "trace_path": "csc_tmp/extpaper_rq1_expanded_SvBellmanFord3_1792783327448987000/SvBellmanFord3/traces/t33/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 255,
+      "java_exec_time_ms": 61,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 34,
+    "inputs": {
+      "w01": "-32768",
+      "w02": "0",
+      "w12": "0",
+      "w21": "0"
+    },
+    "path_constraint": "(w01 < 0)",
+    "trace_path": "csc_tmp/extpaper_rq1_expanded_SvBellmanFord3_1792783327448987000/SvBellmanFord3/traces/t34/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 248,
+      "java_exec_time_ms": 48,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  }
+]

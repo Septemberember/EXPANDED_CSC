@@ -1,0 +1,399 @@
+{
+  "mutant_id": "D4jMonotonicOrder_M2",
+  "subject": "D4jMonotonicOrder",
+  "operator": "ROR",
+  "fault_category": "condition",
+  "loop_bearing": true,
+  "modes": {
+    "original": {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/D4jMonotonicOrder/D4jMonotonicOrder_M2.java",
+        "--mode",
+        "original",
+        "--range-bound",
+        "200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--max-iter",
+        "100",
+        "--session",
+        "extpaper_kill_original_D4jMonotonicOrder_M2_1792785043968589000",
+        "--keep-artifacts"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "wall_time_s": 4.404375708953012,
+      "started_at": "2026-10-23T19:50:43.968663+00:00",
+      "finished_at": "2026-10-23T19:50:48.373079+00:00",
+      "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/D4jMonotonicOrder_M2/generation.stdout",
+      "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/D4jMonotonicOrder_M2/generation.stderr",
+      "stderr_tail": "",
+      "subject": "D4jMonotonicOrder",
+      "class_name": "D4jMonotonicOrder_M2",
+      "session": "extpaper_kill_original_D4jMonotonicOrder_M2_1792785043968589000",
+      "result_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_original_D4jMonotonicOrder_M2_1792785043968589000/D4jMonotonicOrder_M2",
+      "folder": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/D4jMonotonicOrder_M2",
+      "mode": "original",
+      "strategy": "batch",
+      "workers": 4,
+      "max_iter": 100,
+      "range_bound": 200,
+      "tag": "kill_original",
+      "cct": {
+        "total_nodes": 58,
+        "internal_nodes": 35,
+        "leaf_nodes": 23,
+        "empty_leaves": 13,
+        "covered_leaves": 16,
+        "valid_testcases": 16,
+        "infeasible_leaves": 7,
+        "out_of_range_leaves": 0,
+        "truncated_leaves": 2,
+        "expanded_nodes": 0,
+        "expanded_internal_nodes": 0,
+        "expanded_leaves": 0,
+        "tbfv_fault_leaves": 0,
+        "tbfv_failure_cases": 0,
+        "tbfv_failure_count": 0,
+        "max_depth": 16
+      },
+      "testcase_stats": {
+        "generated_records": 16,
+        "executable_records": 16,
+        "trace_backed_records": 16,
+        "status_counts": {
+          "bootstrap": 1,
+          "batch_safe": 15
+        }
+      },
+      "full_event": true,
+      "error_events": [],
+      "fresh": true,
+      "status": "completed",
+      "fingerprint": {
+        "stage": "generation_fingerprint",
+        "schema_version": 1,
+        "condition_identity": "line+normalized-text+occurrence",
+        "testcase_ids_ignored": true,
+        "cct_structure_sha256": "fc2bc954ef18b2efdbbf758e0ef7cf8909f7fa0a1f2fa2c802e82aa88a09e62c",
+        "cct_semantic_sha256": "c2d2236d7096457a2c5e9df1d5fd712008c49850a6a95e7bc9b05dd25d3d276a",
+        "test_inputs_sha256": "4d6a643e7ccc00f645aa315efdb8824c308e06f15ad42f2435c7b5065df0ea06",
+        "concrete_input_count": 16
+      },
+      "frontier_mean": 3.0,
+      "frontier_max": 9,
+      "verification": {
+        "command": [
+          "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+          "--csc-result-dir",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_original_D4jMonotonicOrder_M2_1792785043968589000/D4jMonotonicOrder_M2",
+          "--java-file",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/D4jMonotonicOrder/D4jMonotonicOrder_M2.java",
+          "--fsf",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/D4jMonotonicOrder/FSF/D4jMonotonicOrder_FSF.txt",
+          "--output",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/D4jMonotonicOrder_M2/verification.json"
+        ],
+        "returncode": 0,
+        "timed_out": false,
+        "wall_time_s": 0.2549744159914553,
+        "started_at": "2026-10-23T19:50:48.379942+00:00",
+        "finished_at": "2026-10-23T19:50:48.634926+00:00",
+        "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/D4jMonotonicOrder_M2/verification.stdout",
+        "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/D4jMonotonicOrder_M2/verification.stderr",
+        "stderr_tail": "",
+        "summary": {
+          "testcases": 16,
+          "fsf_units": 3,
+          "passed": 16,
+          "failed": 6,
+          "skipped": 26,
+          "unsupported": 0
+        },
+        "status": "completed",
+        "killed": true
+      }
+    },
+    "expanded": {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/D4jMonotonicOrder/D4jMonotonicOrder_M2.java",
+        "--mode",
+        "expanded",
+        "--range-bound",
+        "200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--max-iter",
+        "100",
+        "--session",
+        "extpaper_kill_expanded_D4jMonotonicOrder_M2_1792785048646041000",
+        "--keep-artifacts"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "wall_time_s": 4.8998738329974,
+      "started_at": "2026-10-23T19:50:48.646145+00:00",
+      "finished_at": "2026-10-23T19:50:53.546065+00:00",
+      "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/D4jMonotonicOrder_M2/generation.stdout",
+      "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/D4jMonotonicOrder_M2/generation.stderr",
+      "stderr_tail": "",
+      "subject": "D4jMonotonicOrder",
+      "class_name": "D4jMonotonicOrder_M2",
+      "session": "extpaper_kill_expanded_D4jMonotonicOrder_M2_1792785048646041000",
+      "result_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_expanded_D4jMonotonicOrder_M2_1792785048646041000/D4jMonotonicOrder_M2",
+      "folder": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/D4jMonotonicOrder_M2",
+      "mode": "expanded",
+      "strategy": "batch",
+      "workers": 4,
+      "max_iter": 100,
+      "range_bound": 200,
+      "tag": "kill_expanded",
+      "cct": {
+        "total_nodes": 79,
+        "internal_nodes": 39,
+        "leaf_nodes": 40,
+        "empty_leaves": 0,
+        "covered_leaves": 18,
+        "valid_testcases": 18,
+        "infeasible_leaves": 22,
+        "out_of_range_leaves": 0,
+        "truncated_leaves": 0,
+        "expanded_nodes": 8,
+        "expanded_internal_nodes": 4,
+        "expanded_leaves": 4,
+        "tbfv_fault_leaves": 0,
+        "tbfv_failure_cases": 0,
+        "tbfv_failure_count": 0,
+        "max_depth": 17
+      },
+      "testcase_stats": {
+        "generated_records": 18,
+        "executable_records": 18,
+        "trace_backed_records": 18,
+        "status_counts": {
+          "bootstrap": 1,
+          "batch_safe": 17
+        }
+      },
+      "full_event": true,
+      "error_events": [],
+      "fresh": true,
+      "status": "completed",
+      "fingerprint": {
+        "stage": "generation_fingerprint",
+        "schema_version": 1,
+        "condition_identity": "line+normalized-text+occurrence",
+        "testcase_ids_ignored": true,
+        "cct_structure_sha256": "a1e46cd823754115f0873558d4c3d87496bc76ff42810346f3d514a3a2fc8c18",
+        "cct_semantic_sha256": "adbb56d7bfeaff5fa31d928885786dd702b6fe6cdf0f46f5f2aeabba74cfb0db",
+        "test_inputs_sha256": "ab10969109d26d9ef3470ff532d94715f6c0e332d462aa02a489d5d0818ed652",
+        "concrete_input_count": 18
+      },
+      "frontier_mean": 3.4,
+      "frontier_max": 9,
+      "verification": {
+        "command": [
+          "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+          "--csc-result-dir",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_expanded_D4jMonotonicOrder_M2_1792785048646041000/D4jMonotonicOrder_M2",
+          "--java-file",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/D4jMonotonicOrder/D4jMonotonicOrder_M2.java",
+          "--fsf",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/D4jMonotonicOrder/FSF/D4jMonotonicOrder_FSF.txt",
+          "--output",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/D4jMonotonicOrder_M2/verification.json"
+        ],
+        "returncode": 0,
+        "timed_out": false,
+        "wall_time_s": 0.2494905840139836,
+        "started_at": "2026-10-23T19:50:53.553540+00:00",
+        "finished_at": "2026-10-23T19:50:53.803039+00:00",
+        "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/D4jMonotonicOrder_M2/verification.stdout",
+        "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/D4jMonotonicOrder_M2/verification.stderr",
+        "stderr_tail": "",
+        "summary": {
+          "testcases": 18,
+          "fsf_units": 3,
+          "passed": 16,
+          "failed": 8,
+          "skipped": 30,
+          "unsupported": 0
+        },
+        "status": "completed",
+        "killed": true
+      }
+    }
+  },
+  "localization": {
+    "mutant_id": "D4jMonotonicOrder_M2",
+    "subject": "D4jMonotonicOrder",
+    "operator": "ROR",
+    "fault_kind": "control-flow",
+    "fault_category": "condition",
+    "primary_line": 25,
+    "scoring_strategy": "coverage_x_purity",
+    "status": "evaluated",
+    "F_total": 8,
+    "P_total": 10,
+    "top1_budget": 3,
+    "top1_folded_hit": false,
+    "top1_sfl_hit": false,
+    "top2_budget": 5,
+    "top2_folded_hit": true,
+    "top2_sfl_hit": false,
+    "top3_budget": 6,
+    "top3_folded_hit": true,
+    "top3_sfl_hit": false,
+    "top1_condition_hit": false,
+    "top1_edge_partition_hit": false,
+    "top1_folded_region_lines": [
+      23,
+      33,
+      34
+    ],
+    "top1_ochiai_hit": false,
+    "top1_ochiai_region_lines": [
+      33,
+      34,
+      21
+    ],
+    "top1_tarantula_hit": false,
+    "top1_tarantula_region_lines": [
+      33,
+      34,
+      36
+    ],
+    "top1_dstar_hit": false,
+    "top1_dstar_region_lines": [
+      33,
+      34,
+      21
+    ],
+    "top1_barinel_hit": false,
+    "top1_barinel_region_lines": [
+      33,
+      34,
+      36
+    ],
+    "top1_op2_hit": false,
+    "top1_op2_region_lines": [
+      33,
+      34,
+      21
+    ],
+    "top2_condition_hit": true,
+    "top2_edge_partition_hit": false,
+    "top2_folded_region_lines": [
+      23,
+      24,
+      25,
+      33,
+      34
+    ],
+    "top2_ochiai_hit": false,
+    "top2_ochiai_region_lines": [
+      33,
+      34,
+      21,
+      22,
+      23
+    ],
+    "top2_tarantula_hit": false,
+    "top2_tarantula_region_lines": [
+      33,
+      34,
+      36,
+      21,
+      22
+    ],
+    "top2_dstar_hit": false,
+    "top2_dstar_region_lines": [
+      33,
+      34,
+      21,
+      22,
+      23
+    ],
+    "top2_barinel_hit": false,
+    "top2_barinel_region_lines": [
+      33,
+      34,
+      36,
+      21,
+      22
+    ],
+    "top2_op2_hit": false,
+    "top2_op2_region_lines": [
+      33,
+      34,
+      21,
+      22,
+      23
+    ],
+    "top3_condition_hit": true,
+    "top3_edge_partition_hit": true,
+    "top3_folded_region_lines": [
+      23,
+      24,
+      25,
+      26,
+      33,
+      34
+    ],
+    "top3_ochiai_hit": false,
+    "top3_ochiai_region_lines": [
+      33,
+      34,
+      21,
+      22,
+      23,
+      24
+    ],
+    "top3_tarantula_hit": false,
+    "top3_tarantula_region_lines": [
+      33,
+      34,
+      36,
+      21,
+      22,
+      23
+    ],
+    "top3_dstar_hit": false,
+    "top3_dstar_region_lines": [
+      33,
+      34,
+      21,
+      22,
+      23,
+      24
+    ],
+    "top3_barinel_hit": false,
+    "top3_barinel_region_lines": [
+      33,
+      34,
+      36,
+      21,
+      22,
+      23
+    ],
+    "top3_op2_hit": false,
+    "top3_op2_region_lines": [
+      33,
+      34,
+      21,
+      22,
+      23,
+      24
+    ]
+  }
+}

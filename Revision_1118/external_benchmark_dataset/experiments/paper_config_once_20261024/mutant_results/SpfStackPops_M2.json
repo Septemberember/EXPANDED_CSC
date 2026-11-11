@@ -1,0 +1,387 @@
+{
+  "mutant_id": "SpfStackPops_M2",
+  "subject": "SpfStackPops",
+  "operator": "ROR",
+  "fault_category": "condition",
+  "loop_bearing": true,
+  "modes": {
+    "original": {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfStackPops/SpfStackPops_M2.java",
+        "--mode",
+        "original",
+        "--range-bound",
+        "200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--max-iter",
+        "100",
+        "--session",
+        "extpaper_kill_original_SpfStackPops_M2_1792784275124373000",
+        "--keep-artifacts"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "wall_time_s": 2.6259574169525877,
+      "started_at": "2026-10-23T19:37:55.124451+00:00",
+      "finished_at": "2026-10-23T19:37:57.750427+00:00",
+      "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfStackPops_M2/generation.stdout",
+      "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfStackPops_M2/generation.stderr",
+      "stderr_tail": "",
+      "subject": "SpfStackPops",
+      "class_name": "SpfStackPops_M2",
+      "session": "extpaper_kill_original_SpfStackPops_M2_1792784275124373000",
+      "result_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_original_SpfStackPops_M2_1792784275124373000/SpfStackPops_M2",
+      "folder": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfStackPops_M2",
+      "mode": "original",
+      "strategy": "batch",
+      "workers": 4,
+      "max_iter": 100,
+      "range_bound": 200,
+      "tag": "kill_original",
+      "cct": {
+        "total_nodes": 21,
+        "internal_nodes": 10,
+        "leaf_nodes": 11,
+        "empty_leaves": 0,
+        "covered_leaves": 10,
+        "valid_testcases": 10,
+        "infeasible_leaves": 1,
+        "out_of_range_leaves": 0,
+        "truncated_leaves": 0,
+        "expanded_nodes": 0,
+        "expanded_internal_nodes": 0,
+        "expanded_leaves": 0,
+        "tbfv_fault_leaves": 0,
+        "tbfv_failure_cases": 0,
+        "tbfv_failure_count": 0,
+        "max_depth": 10
+      },
+      "testcase_stats": {
+        "generated_records": 10,
+        "executable_records": 10,
+        "trace_backed_records": 10,
+        "status_counts": {
+          "bootstrap": 1,
+          "batch_safe": 9
+        }
+      },
+      "full_event": true,
+      "error_events": [],
+      "fresh": true,
+      "status": "completed",
+      "fingerprint": {
+        "stage": "generation_fingerprint",
+        "schema_version": 1,
+        "condition_identity": "line+normalized-text+occurrence",
+        "testcase_ids_ignored": true,
+        "cct_structure_sha256": "48e985d4227a741b05c3cbd89d638dff388717176b0c008a0a8a02d6f683e8a4",
+        "cct_semantic_sha256": "868b37fe97ec48e67438279af63e3306fbe2b3b42b211478e1f0be3a99fee20a",
+        "test_inputs_sha256": "7f036fd849cba7c6970061e584f3799b14a5967cafae18d0da40f209221fea6d",
+        "concrete_input_count": 10
+      },
+      "frontier_mean": 3.0,
+      "frontier_max": 9,
+      "verification": {
+        "command": [
+          "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+          "--csc-result-dir",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_original_SpfStackPops_M2_1792784275124373000/SpfStackPops_M2",
+          "--java-file",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfStackPops/SpfStackPops_M2.java",
+          "--fsf",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfStackPops/FSF/SpfStackPops_FSF.txt",
+          "--output",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfStackPops_M2/verification.json"
+        ],
+        "returncode": 0,
+        "timed_out": false,
+        "wall_time_s": 0.1875036249984987,
+        "started_at": "2026-10-23T19:37:57.755978+00:00",
+        "finished_at": "2026-10-23T19:37:57.943488+00:00",
+        "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfStackPops_M2/verification.stdout",
+        "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfStackPops_M2/verification.stderr",
+        "stderr_tail": "",
+        "summary": {
+          "testcases": 10,
+          "fsf_units": 6,
+          "passed": 10,
+          "failed": 3,
+          "skipped": 47,
+          "unsupported": 0
+        },
+        "status": "completed",
+        "killed": true
+      }
+    },
+    "expanded": {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfStackPops/SpfStackPops_M2.java",
+        "--mode",
+        "expanded",
+        "--range-bound",
+        "200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--max-iter",
+        "100",
+        "--session",
+        "extpaper_kill_expanded_SpfStackPops_M2_1792784277950609000",
+        "--keep-artifacts"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "wall_time_s": 2.7839316250174306,
+      "started_at": "2026-10-23T19:37:57.950687+00:00",
+      "finished_at": "2026-10-23T19:38:00.734639+00:00",
+      "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfStackPops_M2/generation.stdout",
+      "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfStackPops_M2/generation.stderr",
+      "stderr_tail": "",
+      "subject": "SpfStackPops",
+      "class_name": "SpfStackPops_M2",
+      "session": "extpaper_kill_expanded_SpfStackPops_M2_1792784277950609000",
+      "result_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_expanded_SpfStackPops_M2_1792784277950609000/SpfStackPops_M2",
+      "folder": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfStackPops_M2",
+      "mode": "expanded",
+      "strategy": "batch",
+      "workers": 4,
+      "max_iter": 100,
+      "range_bound": 200,
+      "tag": "kill_expanded",
+      "cct": {
+        "total_nodes": 21,
+        "internal_nodes": 10,
+        "leaf_nodes": 11,
+        "empty_leaves": 0,
+        "covered_leaves": 10,
+        "valid_testcases": 10,
+        "infeasible_leaves": 1,
+        "out_of_range_leaves": 0,
+        "truncated_leaves": 0,
+        "expanded_nodes": 0,
+        "expanded_internal_nodes": 0,
+        "expanded_leaves": 0,
+        "tbfv_fault_leaves": 0,
+        "tbfv_failure_cases": 0,
+        "tbfv_failure_count": 0,
+        "max_depth": 10
+      },
+      "testcase_stats": {
+        "generated_records": 10,
+        "executable_records": 10,
+        "trace_backed_records": 10,
+        "status_counts": {
+          "bootstrap": 1,
+          "batch_safe": 9
+        }
+      },
+      "full_event": true,
+      "error_events": [],
+      "fresh": true,
+      "status": "completed",
+      "fingerprint": {
+        "stage": "generation_fingerprint",
+        "schema_version": 1,
+        "condition_identity": "line+normalized-text+occurrence",
+        "testcase_ids_ignored": true,
+        "cct_structure_sha256": "48e985d4227a741b05c3cbd89d638dff388717176b0c008a0a8a02d6f683e8a4",
+        "cct_semantic_sha256": "868b37fe97ec48e67438279af63e3306fbe2b3b42b211478e1f0be3a99fee20a",
+        "test_inputs_sha256": "7f036fd849cba7c6970061e584f3799b14a5967cafae18d0da40f209221fea6d",
+        "concrete_input_count": 10
+      },
+      "frontier_mean": 3.0,
+      "frontier_max": 9,
+      "verification": {
+        "command": [
+          "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+          "--csc-result-dir",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_expanded_SpfStackPops_M2_1792784277950609000/SpfStackPops_M2",
+          "--java-file",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfStackPops/SpfStackPops_M2.java",
+          "--fsf",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfStackPops/FSF/SpfStackPops_FSF.txt",
+          "--output",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfStackPops_M2/verification.json"
+        ],
+        "returncode": 0,
+        "timed_out": false,
+        "wall_time_s": 0.23909687501145527,
+        "started_at": "2026-10-23T19:38:00.741326+00:00",
+        "finished_at": "2026-10-23T19:38:00.980430+00:00",
+        "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfStackPops_M2/verification.stdout",
+        "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfStackPops_M2/verification.stderr",
+        "stderr_tail": "",
+        "summary": {
+          "testcases": 10,
+          "fsf_units": 6,
+          "passed": 10,
+          "failed": 3,
+          "skipped": 47,
+          "unsupported": 0
+        },
+        "status": "completed",
+        "killed": true
+      }
+    }
+  },
+  "localization": {
+    "mutant_id": "SpfStackPops_M2",
+    "subject": "SpfStackPops",
+    "operator": "ROR",
+    "fault_kind": "control-flow",
+    "fault_category": "condition",
+    "primary_line": 26,
+    "scoring_strategy": "coverage_x_purity",
+    "status": "evaluated",
+    "F_total": 1,
+    "P_total": 9,
+    "top1_budget": 1,
+    "top1_folded_hit": true,
+    "top1_sfl_hit": true,
+    "top2_budget": 5,
+    "top2_folded_hit": true,
+    "top2_sfl_hit": true,
+    "top3_budget": 6,
+    "top3_folded_hit": true,
+    "top3_sfl_hit": true,
+    "top1_condition_hit": true,
+    "top1_edge_partition_hit": true,
+    "top1_folded_region_lines": [
+      26
+    ],
+    "top1_ochiai_hit": true,
+    "top1_ochiai_region_lines": [
+      26
+    ],
+    "top1_tarantula_hit": true,
+    "top1_tarantula_region_lines": [
+      26
+    ],
+    "top1_dstar_hit": true,
+    "top1_dstar_region_lines": [
+      26
+    ],
+    "top1_barinel_hit": true,
+    "top1_barinel_region_lines": [
+      26
+    ],
+    "top1_op2_hit": true,
+    "top1_op2_region_lines": [
+      26
+    ],
+    "top2_condition_hit": true,
+    "top2_edge_partition_hit": true,
+    "top2_folded_region_lines": [
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "top2_ochiai_hit": true,
+    "top2_ochiai_region_lines": [
+      26,
+      22,
+      23,
+      24,
+      25
+    ],
+    "top2_tarantula_hit": true,
+    "top2_tarantula_region_lines": [
+      26,
+      22,
+      23,
+      24,
+      25
+    ],
+    "top2_dstar_hit": true,
+    "top2_dstar_region_lines": [
+      26,
+      22,
+      23,
+      24,
+      25
+    ],
+    "top2_barinel_hit": true,
+    "top2_barinel_region_lines": [
+      26,
+      22,
+      23,
+      24,
+      25
+    ],
+    "top2_op2_hit": true,
+    "top2_op2_region_lines": [
+      26,
+      22,
+      23,
+      24,
+      25
+    ],
+    "top3_condition_hit": true,
+    "top3_edge_partition_hit": true,
+    "top3_folded_region_lines": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "top3_ochiai_hit": true,
+    "top3_ochiai_region_lines": [
+      26,
+      22,
+      23,
+      24,
+      25,
+      21
+    ],
+    "top3_tarantula_hit": true,
+    "top3_tarantula_region_lines": [
+      26,
+      22,
+      23,
+      24,
+      25,
+      21
+    ],
+    "top3_dstar_hit": true,
+    "top3_dstar_region_lines": [
+      26,
+      22,
+      23,
+      24,
+      25,
+      21
+    ],
+    "top3_barinel_hit": true,
+    "top3_barinel_region_lines": [
+      26,
+      22,
+      23,
+      24,
+      25,
+      21
+    ],
+    "top3_op2_hit": true,
+    "top3_op2_region_lines": [
+      26,
+      22,
+      23,
+      24,
+      25,
+      21
+    ]
+  }
+}

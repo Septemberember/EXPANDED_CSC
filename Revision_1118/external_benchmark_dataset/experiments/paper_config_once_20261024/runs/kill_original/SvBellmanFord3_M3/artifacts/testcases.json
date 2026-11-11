@@ -1,0 +1,423 @@
+[
+  {
+    "iteration": 0,
+    "inputs": {
+      "w01": 0,
+      "w02": 0,
+      "w12": 0,
+      "w21": 0
+    },
+    "path_constraint": "bootstrap",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvBellmanFord3_M3_1792784511931965000/SvBellmanFord3_M3/traces/bootstrap/trace.jsonl",
+    "status": "bootstrap",
+    "strategy": "batch",
+    "timings": {
+      "compile_time_ms": 327,
+      "java_exec_time_ms": 60,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "test_case_id": "tc_2_b0",
+    "iteration": 2,
+    "branch_idx": 0,
+    "inputs": {
+      "w01": "1",
+      "w02": "0",
+      "w12": "1",
+      "w21": "0"
+    },
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (!(w21 > 4)) && ((0) < 3) && ((2147483647) >= (0) + w01) && ((2147483647) > (0) + w02) && (!((0) > ((0) + w01) + 4)) && (!(((0) + w02) > ((0) + w01) + w12)) && (!((0) > ((0) + w02) + 4)) && (((0) + w01) > ((0) + w02) + w21)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvBellmanFord3_M3_1792784511931965000/SvBellmanFord3_M3/traces/round_02/b0/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 547,
+      "java_exec_time_ms": 111,
+      "path_log_parse_time_ms": 1,
+      "compile_execute_total_time_ms": 660,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 2062,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 2063,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 6144,
+        "java_exec_time_ms": 1051,
+        "path_log_parse_time_ms": 6,
+        "compile_execute_total_time_ms": 7220,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_2_b1",
+    "iteration": 2,
+    "branch_idx": 1,
+    "inputs": {
+      "w01": "2",
+      "w02": "3",
+      "w12": "0",
+      "w21": "0"
+    },
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (!(w21 > 4)) && ((0) < 3) && ((2147483647) >= (0) + w01) && ((2147483647) > (0) + w02) && (!((0) > ((0) + w01) + 4)) && (((0) + w02) > ((0) + w01) + w12)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvBellmanFord3_M3_1792784511931965000/SvBellmanFord3_M3/traces/round_02/b1/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 621,
+      "java_exec_time_ms": 105,
+      "path_log_parse_time_ms": 1,
+      "compile_execute_total_time_ms": 729,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 2062,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 2063,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 6144,
+        "java_exec_time_ms": 1051,
+        "path_log_parse_time_ms": 6,
+        "compile_execute_total_time_ms": 7220,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_2_b2",
+    "iteration": 2,
+    "branch_idx": 2,
+    "inputs": {
+      "w01": "0",
+      "w02": "0",
+      "w12": "0",
+      "w21": "5"
+    },
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (!(w21 < 0)) && (w21 > 4)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvBellmanFord3_M3_1792784511931965000/SvBellmanFord3_M3/traces/round_02/b2/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 595,
+      "java_exec_time_ms": 113,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 710,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 2062,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 2063,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 6144,
+        "java_exec_time_ms": 1051,
+        "path_log_parse_time_ms": 6,
+        "compile_execute_total_time_ms": 7220,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_2_b3",
+    "iteration": 2,
+    "branch_idx": 3,
+    "inputs": {
+      "w01": "0",
+      "w02": "0",
+      "w12": "0",
+      "w21": "-32768"
+    },
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (!(w12 > 4)) && (w21 < 0)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvBellmanFord3_M3_1792784511931965000/SvBellmanFord3_M3/traces/round_02/b3/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 587,
+      "java_exec_time_ms": 120,
+      "path_log_parse_time_ms": 4,
+      "compile_execute_total_time_ms": 716,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 2062,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 2063,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 6144,
+        "java_exec_time_ms": 1051,
+        "path_log_parse_time_ms": 6,
+        "compile_execute_total_time_ms": 7220,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_2_b4",
+    "iteration": 2,
+    "branch_idx": 4,
+    "inputs": {
+      "w01": "0",
+      "w02": "0",
+      "w12": "6",
+      "w21": "0"
+    },
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (!(w12 < 0)) && (w12 > 4)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvBellmanFord3_M3_1792784511931965000/SvBellmanFord3_M3/traces/round_02/b4/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 688,
+      "java_exec_time_ms": 139,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 829,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 2062,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 2063,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 6144,
+        "java_exec_time_ms": 1051,
+        "path_log_parse_time_ms": 6,
+        "compile_execute_total_time_ms": 7220,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_2_b5",
+    "iteration": 2,
+    "branch_idx": 5,
+    "inputs": {
+      "w01": "0",
+      "w02": "0",
+      "w12": "-32768",
+      "w21": "0"
+    },
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (!(w02 > 4)) && (w12 < 0)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvBellmanFord3_M3_1792784511931965000/SvBellmanFord3_M3/traces/round_02/b5/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 729,
+      "java_exec_time_ms": 102,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 833,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 2062,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 2063,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 6144,
+        "java_exec_time_ms": 1051,
+        "path_log_parse_time_ms": 6,
+        "compile_execute_total_time_ms": 7220,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_2_b6",
+    "iteration": 2,
+    "branch_idx": 6,
+    "inputs": {
+      "w01": "0",
+      "w02": "5",
+      "w12": "0",
+      "w21": "0"
+    },
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (!(w02 < 0)) && (w02 > 4)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvBellmanFord3_M3_1792784511931965000/SvBellmanFord3_M3/traces/round_02/b6/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 722,
+      "java_exec_time_ms": 95,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 818,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 2062,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 2063,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 6144,
+        "java_exec_time_ms": 1051,
+        "path_log_parse_time_ms": 6,
+        "compile_execute_total_time_ms": 7220,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_2_b7",
+    "iteration": 2,
+    "branch_idx": 7,
+    "inputs": {
+      "w01": "0",
+      "w02": "-32768",
+      "w12": "0",
+      "w21": "0"
+    },
+    "path_constraint": "(!(w01 < 0)) && (!(w01 > 4)) && (w02 < 0)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvBellmanFord3_M3_1792784511931965000/SvBellmanFord3_M3/traces/round_02/b7/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 729,
+      "java_exec_time_ms": 108,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 838,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 2062,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 2063,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 6144,
+        "java_exec_time_ms": 1051,
+        "path_log_parse_time_ms": 6,
+        "compile_execute_total_time_ms": 7220,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_2_b8",
+    "iteration": 2,
+    "branch_idx": 8,
+    "inputs": {
+      "w01": "16384",
+      "w02": "0",
+      "w12": "0",
+      "w21": "0"
+    },
+    "path_constraint": "(!(w01 < 0)) && (w01 > 4)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvBellmanFord3_M3_1792784511931965000/SvBellmanFord3_M3/traces/round_02/b8/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 474,
+      "java_exec_time_ms": 86,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 561,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 2062,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 2063,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 6144,
+        "java_exec_time_ms": 1051,
+        "path_log_parse_time_ms": 6,
+        "compile_execute_total_time_ms": 7220,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_2_b9",
+    "iteration": 2,
+    "branch_idx": 9,
+    "inputs": {
+      "w01": "-32768",
+      "w02": "0",
+      "w12": "0",
+      "w21": "0"
+    },
+    "path_constraint": "(w01 < 0)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvBellmanFord3_M3_1792784511931965000/SvBellmanFord3_M3/traces/round_02/b9/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 452,
+      "java_exec_time_ms": 72,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 526,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 2062,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 2063,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 6144,
+        "java_exec_time_ms": 1051,
+        "path_log_parse_time_ms": 6,
+        "compile_execute_total_time_ms": 7220,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  }
+]

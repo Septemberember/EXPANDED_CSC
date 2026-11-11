@@ -1,0 +1,841 @@
+=======================================================
+  CSC Engine — Test Case Generator
+=======================================================
+  Source:       /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SvTokenIdentifier/SvTokenIdentifier_M1.java
+  Mode:         Expanded CSC
+  Range bound:  +/- 200
+  Max iter:     100
+  Strategy:     batch
+  Workers:      4
+  Session:      extpaper_kill_expanded_SvTokenIdentifier_M1_1792784545173681000
+  CCT render:   no
+
+[1/3] Auto-instrumenting Java source...
+  [instrument] /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SvTokenIdentifier/SvTokenIdentifier_M1.java -> /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SvTokenIdentifier/SvTokenIdentifier_M1_instrumented.java
+  Class:        SvTokenIdentifier_M1
+  Params:       {'return_value': 'int', 'a': 'int', 'b': 'int', 'c': 'int'}
+  Run log:      csc_tmp/extpaper_kill_expanded_SvTokenIdentifier_M1_1792784545173681000/SvTokenIdentifier_M1/run_log.jsonl
+
+[2/3] Compiling...
+  [compile] SvTokenIdentifier_M1.class
+[3/3] CSC Loop
+---------------------------------------------
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+{Ø}
+-----------------------------
+
+
+  [Batch Round 1] CCT not initialized — running bootstrap
+  Bootstrap inputs: {'a': 0, 'b': 0, 'c': 0}
+  Execution path: 2 steps, 1 conditions
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvTokenIdentifier_M1_1792784545173681000/SvTokenIdentifier_M1/SvTokenIdentifier_M1_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: a <= 32 @L5 (WP: a <= 32, Cnt: 1)
+  (F) ->
+  |   {Ø}
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0)
+-----------------------------
+
+
+  [Batch Round 2] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: a <= 32 @L5 (WP: a <= 32, Cnt: 1)
+  (F) ->
+  |   {Ø}
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvTokenIdentifier_M1_1792784545173681000/SvTokenIdentifier_M1/SvTokenIdentifier_M1_cct.dot
+  -> Executing 1 candidates with 4 workers; merging 0 terminal updates
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvTokenIdentifier_M1_1792784545173681000/SvTokenIdentifier_M1/SvTokenIdentifier_M1_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: a <= 32 @L5 (WP: a <= 32, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 126 @L5 (WP: a > 126, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 32 @L5 (WP: b < 32, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(a=48, b=0, c=0)
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0)
+-----------------------------
+
+
+  [Batch Round 3] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: a <= 32 @L5 (WP: a <= 32, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 126 @L5 (WP: a > 126, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 32 @L5 (WP: b < 32, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(a=48, b=0, c=0)
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvTokenIdentifier_M1_1792784545173681000/SvTokenIdentifier_M1/SvTokenIdentifier_M1_cct.dot
+  -> Executing 2 candidates with 4 workers; merging 0 terminal updates
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvTokenIdentifier_M1_1792784545173681000/SvTokenIdentifier_M1/SvTokenIdentifier_M1_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: a <= 32 @L5 (WP: a <= 32, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 126 @L5 (WP: a > 126, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 32 @L5 (WP: b < 32, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 126 @L5 (WP: b > 126, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(a=63, b=16384, c=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(a=48, b=0, c=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(a=16432, b=0, c=0)
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0)
+-----------------------------
+
+
+  [Batch Round 4] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: a <= 32 @L5 (WP: a <= 32, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 126 @L5 (WP: a > 126, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 32 @L5 (WP: b < 32, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 126 @L5 (WP: b > 126, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(a=63, b=16384, c=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(a=48, b=0, c=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(a=16432, b=0, c=0)
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvTokenIdentifier_M1_1792784545173681000/SvTokenIdentifier_M1/SvTokenIdentifier_M1_cct.dot
+  -> Executing 1 candidates with 4 workers; merging 0 terminal updates
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvTokenIdentifier_M1_1792784545173681000/SvTokenIdentifier_M1/SvTokenIdentifier_M1_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: a <= 32 @L5 (WP: a <= 32, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 126 @L5 (WP: a > 126, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 32 @L5 (WP: b < 32, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 126 @L5 (WP: b > 126, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 32 @L5 (WP: c < 32, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'}  inputs: tc_4_b0(a=63, b=32, c=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(a=63, b=16384, c=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(a=48, b=0, c=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(a=16432, b=0, c=0)
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0)
+-----------------------------
+
+
+  [Batch Round 5] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: a <= 32 @L5 (WP: a <= 32, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 126 @L5 (WP: a > 126, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 32 @L5 (WP: b < 32, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 126 @L5 (WP: b > 126, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 32 @L5 (WP: c < 32, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'}  inputs: tc_4_b0(a=63, b=32, c=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(a=63, b=16384, c=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(a=48, b=0, c=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(a=16432, b=0, c=0)
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvTokenIdentifier_M1_1792784545173681000/SvTokenIdentifier_M1/SvTokenIdentifier_M1_cct.dot
+  -> Executing 1 candidates with 4 workers; merging 0 terminal updates
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvTokenIdentifier_M1_1792784545173681000/SvTokenIdentifier_M1/SvTokenIdentifier_M1_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: a <= 32 @L5 (WP: a <= 32, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 126 @L5 (WP: a > 126, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 32 @L5 (WP: b < 32, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 126 @L5 (WP: b > 126, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 32 @L5 (WP: c < 32, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 126 @L5 (WP: c > 126, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b0'}  inputs: tc_5_b0(a=63, b=64, c=16384)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'}  inputs: tc_4_b0(a=63, b=32, c=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(a=63, b=16384, c=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(a=48, b=0, c=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(a=16432, b=0, c=0)
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0)
+-----------------------------
+
+
+  [Batch Round 6] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: a <= 32 @L5 (WP: a <= 32, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 126 @L5 (WP: a > 126, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 32 @L5 (WP: b < 32, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 126 @L5 (WP: b > 126, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 32 @L5 (WP: c < 32, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 126 @L5 (WP: c > 126, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b0'}  inputs: tc_5_b0(a=63, b=64, c=16384)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'}  inputs: tc_4_b0(a=63, b=32, c=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(a=63, b=16384, c=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(a=48, b=0, c=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(a=16432, b=0, c=0)
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvTokenIdentifier_M1_1792784545173681000/SvTokenIdentifier_M1/SvTokenIdentifier_M1_cct.dot
+  -> Executing 1 candidates with 4 workers; merging 0 terminal updates
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvTokenIdentifier_M1_1792784545173681000/SvTokenIdentifier_M1/SvTokenIdentifier_M1_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: a <= 32 @L5 (WP: a <= 32, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 126 @L5 (WP: a > 126, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 32 @L5 (WP: b < 32, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 126 @L5 (WP: b > 126, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 32 @L5 (WP: c < 32, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 126 @L5 (WP: c > 126, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: letter @L8 (WP: (((a >= 65 && a <= 90) || (a >= 97 && a <= 122))), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6_b0'}  inputs: tc_6_b0(a=63, b=64, c=32)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b0'}  inputs: tc_5_b0(a=63, b=64, c=16384)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'}  inputs: tc_4_b0(a=63, b=32, c=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(a=63, b=16384, c=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(a=48, b=0, c=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(a=16432, b=0, c=0)
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0)
+-----------------------------
+
+
+  [Batch Round 7] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: a <= 32 @L5 (WP: a <= 32, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 126 @L5 (WP: a > 126, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 32 @L5 (WP: b < 32, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 126 @L5 (WP: b > 126, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 32 @L5 (WP: c < 32, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 126 @L5 (WP: c > 126, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: letter @L8 (WP: (((a >= 65 && a <= 90) || (a >= 97 && a <= 122))), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6_b0'}  inputs: tc_6_b0(a=63, b=64, c=32)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b0'}  inputs: tc_5_b0(a=63, b=64, c=16384)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'}  inputs: tc_4_b0(a=63, b=32, c=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(a=63, b=16384, c=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(a=48, b=0, c=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(a=16432, b=0, c=0)
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvTokenIdentifier_M1_1792784545173681000/SvTokenIdentifier_M1/SvTokenIdentifier_M1_cct.dot
+  -> Executing 1 candidates with 4 workers; merging 0 terminal updates
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvTokenIdentifier_M1_1792784545173681000/SvTokenIdentifier_M1/SvTokenIdentifier_M1_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: a <= 32 @L5 (WP: a <= 32, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 126 @L5 (WP: a > 126, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 32 @L5 (WP: b < 32, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 126 @L5 (WP: b > 126, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 32 @L5 (WP: c < 32, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 126 @L5 (WP: c > 126, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: letter @L8 (WP: (((a >= 65 && a <= 90) || (a >= 97 && a <= 122))), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6_b0'}  inputs: tc_6_b0(a=63, b=64, c=32)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: i < 3 @L9 (WP: (1) < 3, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L11 (WP: (1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: letter @L13 (WP: ((((b) >= 65 && (b) <= 90) || ((b) >= 97 && (b) <= 122))), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: number @L16 (WP: (((b) >= 48 && (b) <= 57)), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_7_b0'}  inputs: tc_7_b0(a=80, b=64, c=32)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b0'}  inputs: tc_5_b0(a=63, b=64, c=16384)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'}  inputs: tc_4_b0(a=63, b=32, c=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(a=63, b=16384, c=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(a=48, b=0, c=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(a=16432, b=0, c=0)
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0)
+-----------------------------
+
+
+  [Batch Round 8] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: a <= 32 @L5 (WP: a <= 32, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 126 @L5 (WP: a > 126, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 32 @L5 (WP: b < 32, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 126 @L5 (WP: b > 126, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 32 @L5 (WP: c < 32, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 126 @L5 (WP: c > 126, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: letter @L8 (WP: (((a >= 65 && a <= 90) || (a >= 97 && a <= 122))), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6_b0'}  inputs: tc_6_b0(a=63, b=64, c=32)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: i < 3 @L9 (WP: (1) < 3, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L11 (WP: (1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: letter @L13 (WP: ((((b) >= 65 && (b) <= 90) || ((b) >= 97 && (b) <= 122))), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: number @L16 (WP: (((b) >= 48 && (b) <= 57)), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_7_b0'}  inputs: tc_7_b0(a=80, b=64, c=32)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b0'}  inputs: tc_5_b0(a=63, b=64, c=16384)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'}  inputs: tc_4_b0(a=63, b=32, c=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(a=63, b=16384, c=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(a=48, b=0, c=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(a=16432, b=0, c=0)
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvTokenIdentifier_M1_1792784545173681000/SvTokenIdentifier_M1/SvTokenIdentifier_M1_cct.dot
+  -> Executing 2 candidates with 4 workers; merging 2 terminal updates
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvTokenIdentifier_M1_1792784545173681000/SvTokenIdentifier_M1/SvTokenIdentifier_M1_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: a <= 32 @L5 (WP: a <= 32, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 126 @L5 (WP: a > 126, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 32 @L5 (WP: b < 32, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 126 @L5 (WP: b > 126, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 32 @L5 (WP: c < 32, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 126 @L5 (WP: c > 126, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: letter @L8 (WP: (((a >= 65 && a <= 90) || (a >= 97 && a <= 122))), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6_b0'}  inputs: tc_6_b0(a=63, b=64, c=32)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: i < 3 @L9 (WP: (1) < 3, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L11 (WP: (1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: letter @L13 (WP: ((((b) >= 65 && (b) <= 90) || ((b) >= 97 && (b) <= 122))), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: number @L16 (WP: (((b) >= 48 && (b) <= 57)), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_7_b0'}  inputs: tc_7_b0(a=80, b=64, c=32)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < 3 @L9 (WP: ((1) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L11 (WP: ((1) + 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: letter @L13 (WP: ((((c) >= 65 && (c) <= 90) || ((c) >= 97 && (c) <= 122))), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: number @L16 (WP: (((c) >= 48 && (c) <= 57)), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_8_b0'}  inputs: tc_8_b0(a=112, b=48, c=32)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < 3 @L9 (WP: ((1) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L11 (WP: ((1) + 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: letter @L13 (WP: ((((c) >= 65 && (c) <= 90) || ((c) >= 97 && (c) <= 122))), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: number @L16 (WP: (((c) >= 48 && (c) <= 57)), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_8_b1'}  inputs: tc_8_b1(a=112, b=80, c=32)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b0'}  inputs: tc_5_b0(a=63, b=64, c=16384)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'}  inputs: tc_4_b0(a=63, b=32, c=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(a=63, b=16384, c=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(a=48, b=0, c=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(a=16432, b=0, c=0)
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0)
+-----------------------------
+
+
+  [Batch Round 9] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: a <= 32 @L5 (WP: a <= 32, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 126 @L5 (WP: a > 126, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 32 @L5 (WP: b < 32, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 126 @L5 (WP: b > 126, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 32 @L5 (WP: c < 32, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 126 @L5 (WP: c > 126, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: letter @L8 (WP: (((a >= 65 && a <= 90) || (a >= 97 && a <= 122))), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6_b0'}  inputs: tc_6_b0(a=63, b=64, c=32)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: i < 3 @L9 (WP: (1) < 3, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L11 (WP: (1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: letter @L13 (WP: ((((b) >= 65 && (b) <= 90) || ((b) >= 97 && (b) <= 122))), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: number @L16 (WP: (((b) >= 48 && (b) <= 57)), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_7_b0'}  inputs: tc_7_b0(a=80, b=64, c=32)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < 3 @L9 (WP: ((1) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L11 (WP: ((1) + 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: letter @L13 (WP: ((((c) >= 65 && (c) <= 90) || ((c) >= 97 && (c) <= 122))), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: number @L16 (WP: (((c) >= 48 && (c) <= 57)), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_8_b0'}  inputs: tc_8_b0(a=112, b=48, c=32)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < 3 @L9 (WP: ((1) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L11 (WP: ((1) + 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: letter @L13 (WP: ((((c) >= 65 && (c) <= 90) || ((c) >= 97 && (c) <= 122))), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: number @L16 (WP: (((c) >= 48 && (c) <= 57)), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_8_b1'}  inputs: tc_8_b1(a=112, b=80, c=32)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b0'}  inputs: tc_5_b0(a=63, b=64, c=16384)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'}  inputs: tc_4_b0(a=63, b=32, c=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(a=63, b=16384, c=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(a=48, b=0, c=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(a=16432, b=0, c=0)
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvTokenIdentifier_M1_1792784545173681000/SvTokenIdentifier_M1/SvTokenIdentifier_M1_cct.dot
+  -> Executing 4 candidates with 4 workers; merging 4 terminal updates
+Path Truncation: loop count 3 exceeds bound 2.
+Path Truncation: loop count 3 exceeds bound 2.
+Path Truncation: loop count 3 exceeds bound 2.
+Path Truncation: loop count 3 exceeds bound 2.
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvTokenIdentifier_M1_1792784545173681000/SvTokenIdentifier_M1/SvTokenIdentifier_M1_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: a <= 32 @L5 (WP: a <= 32, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 126 @L5 (WP: a > 126, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 32 @L5 (WP: b < 32, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 126 @L5 (WP: b > 126, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 32 @L5 (WP: c < 32, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 126 @L5 (WP: c > 126, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: letter @L8 (WP: (((a >= 65 && a <= 90) || (a >= 97 && a <= 122))), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6_b0'}  inputs: tc_6_b0(a=63, b=64, c=32)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: i < 3 @L9 (WP: (1) < 3, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L11 (WP: (1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: letter @L13 (WP: ((((b) >= 65 && (b) <= 90) || ((b) >= 97 && (b) <= 122))), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: number @L16 (WP: (((b) >= 48 && (b) <= 57)), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_7_b0'}  inputs: tc_7_b0(a=80, b=64, c=32)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < 3 @L9 (WP: ((1) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L11 (WP: ((1) + 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: letter @L13 (WP: ((((c) >= 65 && (c) <= 90) || ((c) >= 97 && (c) <= 122))), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: number @L16 (WP: (((c) >= 48 && (c) <= 57)), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_8_b0'}  inputs: tc_8_b0(a=112, b=48, c=32)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_9_b0'} [TRUNCATED]  inputs: tc_9_b0(a=80, b=48, c=48)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_9_b1'} [TRUNCATED]  inputs: tc_9_b1(a=112, b=48, c=112)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < 3 @L9 (WP: ((1) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L11 (WP: ((1) + 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: letter @L13 (WP: ((((c) >= 65 && (c) <= 90) || ((c) >= 97 && (c) <= 122))), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: number @L16 (WP: (((c) >= 48 && (c) <= 57)), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_8_b1'}  inputs: tc_8_b1(a=112, b=80, c=32)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_9_b2'} [TRUNCATED]  inputs: tc_9_b2(a=112, b=80, c=48)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_9_b3'} [TRUNCATED]  inputs: tc_9_b3(a=122, b=75, c=83)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b0'}  inputs: tc_5_b0(a=63, b=64, c=16384)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'}  inputs: tc_4_b0(a=63, b=32, c=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(a=63, b=16384, c=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(a=48, b=0, c=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(a=16432, b=0, c=0)
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0)
+-----------------------------
+
+
+  [Batch Round 10] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: a <= 32 @L5 (WP: a <= 32, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 126 @L5 (WP: a > 126, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 32 @L5 (WP: b < 32, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 126 @L5 (WP: b > 126, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 32 @L5 (WP: c < 32, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 126 @L5 (WP: c > 126, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: letter @L8 (WP: (((a >= 65 && a <= 90) || (a >= 97 && a <= 122))), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6_b0'}  inputs: tc_6_b0(a=63, b=64, c=32)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: i < 3 @L9 (WP: (1) < 3, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L11 (WP: (1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: letter @L13 (WP: ((((b) >= 65 && (b) <= 90) || ((b) >= 97 && (b) <= 122))), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: number @L16 (WP: (((b) >= 48 && (b) <= 57)), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_7_b0'}  inputs: tc_7_b0(a=80, b=64, c=32)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < 3 @L9 (WP: ((1) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L11 (WP: ((1) + 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: letter @L13 (WP: ((((c) >= 65 && (c) <= 90) || ((c) >= 97 && (c) <= 122))), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: number @L16 (WP: (((c) >= 48 && (c) <= 57)), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_8_b0'}  inputs: tc_8_b0(a=112, b=48, c=32)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_9_b0'} [TRUNCATED]  inputs: tc_9_b0(a=80, b=48, c=48)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_9_b1'} [TRUNCATED]  inputs: tc_9_b1(a=112, b=48, c=112)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < 3 @L9 (WP: ((1) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L11 (WP: ((1) + 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: letter @L13 (WP: ((((c) >= 65 && (c) <= 90) || ((c) >= 97 && (c) <= 122))), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: number @L16 (WP: (((c) >= 48 && (c) <= 57)), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_8_b1'}  inputs: tc_8_b1(a=112, b=80, c=32)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_9_b2'} [TRUNCATED]  inputs: tc_9_b2(a=112, b=80, c=48)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_9_b3'} [TRUNCATED]  inputs: tc_9_b3(a=122, b=75, c=83)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b0'}  inputs: tc_5_b0(a=63, b=64, c=16384)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'}  inputs: tc_4_b0(a=63, b=32, c=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(a=63, b=16384, c=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(a=48, b=0, c=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(a=16432, b=0, c=0)
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0)
+-----------------------------
+
+  [EXPAND] Promoted truncated leaf at 'i < 3' (cnt=3) → F:['tc_9_b0']
+  [EXPAND] Promoted truncated leaf at 'i < 3' (cnt=3) → F:['tc_9_b1']
+  [EXPAND] Promoted truncated leaf at 'i < 3' (cnt=3) → F:['tc_9_b2']
+  [EXPAND] Promoted truncated leaf at 'i < 3' (cnt=3) → F:['tc_9_b3']
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvTokenIdentifier_M1_1792784545173681000/SvTokenIdentifier_M1/SvTokenIdentifier_M1_cct.dot
+  -> CCT is FULL — all branches covered!
+
+=======================================================
+  Done! 14 test cases generated in 10 iterations.
+=======================================================
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SvTokenIdentifier_M1_1792784545173681000/SvTokenIdentifier_M1/SvTokenIdentifier_M1_cct.dot
+
+Generated Test Cases:
+---------------------------------------------
+  [BOOTSTRAP]  (bootstrap)
+  round_02/b0  [BATCH_SAFE]  a=48, b=0, c=0
+  round_03/b0  [BATCH_SAFE]  a=63, b=16384, c=0
+  round_03/b1  [BATCH_SAFE]  a=16432, b=0, c=0
+  round_04/b0  [BATCH_SAFE]  a=63, b=32, c=0
+  round_05/b0  [BATCH_SAFE]  a=63, b=64, c=16384
+  round_06/b0  [BATCH_SAFE]  a=63, b=64, c=32
+  round_07/b0  [BATCH_SAFE]  a=80, b=64, c=32
+  round_08/b0  [BATCH_SAFE]  a=112, b=48, c=32
+  round_08/b1  [BATCH_SAFE]  a=112, b=80, c=32
+  round_09/b0  [BATCH_SAFE]  a=80, b=48, c=48
+  round_09/b1  [BATCH_SAFE]  a=112, b=48, c=112
+  round_09/b2  [BATCH_SAFE]  a=112, b=80, c=48
+  round_09/b3  [BATCH_SAFE]  a=122, b=75, c=83
+
+Timing Summary (ms):
+---------------------------------------------
+  solver_time_ms: 41
+  frontier_discovery_time_ms: 107
+  compile_time_ms: 5574
+  java_exec_time_ms: 1099
+  path_log_parse_time_ms: 0
+  cct_path_build_time_ms: 0
+  cct_merge_time_ms: 0
+  verification_solver_time_ms: 0
+  parallel_exec_wall_time_ms: 3497
+  merge_verify_wall_time_ms: 0
+  batch_total_wall_time_ms: 3502
+
+Test cases written to: csc_tmp/extpaper_kill_expanded_SvTokenIdentifier_M1_1792784545173681000/SvTokenIdentifier_M1/testcases.json
+
+CCT visualization:
+  DOT: csc_tmp/extpaper_kill_expanded_SvTokenIdentifier_M1_1792784545173681000/SvTokenIdentifier_M1/SvTokenIdentifier_M1_cct.dot
+  Stats: csc_tmp/extpaper_kill_expanded_SvTokenIdentifier_M1_1792784545173681000/SvTokenIdentifier_M1/cct_stats.json
+  Counts: nodes=47, leaves=24, covered=14, infeasible=10, out_of_range=0, expanded=8, truncated=0
+  Render script: csc_tmp/extpaper_kill_expanded_SvTokenIdentifier_M1_1792784545173681000/SvTokenIdentifier_M1/render_cct.sh
+  (render later with: csc_tmp/extpaper_kill_expanded_SvTokenIdentifier_M1_1792784545173681000/SvTokenIdentifier_M1/render_cct.sh)
+
+Run log:
+  JSONL: csc_tmp/extpaper_kill_expanded_SvTokenIdentifier_M1_1792784545173681000/SvTokenIdentifier_M1/run_log.jsonl

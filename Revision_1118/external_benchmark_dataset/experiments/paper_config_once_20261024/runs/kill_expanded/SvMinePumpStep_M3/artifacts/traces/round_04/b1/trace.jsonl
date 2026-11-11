@@ -1,0 +1,12 @@
+{"type":"COND","line":5,"kind":"if","order":1,"expr":"water < 0","value":false}
+{"type":"COND","line":5,"kind":"if","order":2,"expr":"water > 2","value":false}
+{"type":"ASSIGN","line":6,"kind":"var_decl","target":"level","rhs":"water","value":"0"}
+{"type":"ASSIGN","line":7,"kind":"var_decl","target":"pump","rhs":"running","value":"false"}
+{"type":"COND","line":8,"kind":"if","order":1,"expr":"pump","value":false}
+{"type":"COND","line":11,"kind":"if","order":1,"expr":"active","value":true}
+{"type":"COND","line":12,"kind":"if","order":1,"expr":"pump","value":false}
+{"type":"COND","line":12,"kind":"if","order":2,"expr":"methane","value":true}
+{"type":"ASSIGN","line":12,"kind":"assign","target":"pump","rhs":"false","value":"false"}
+{"type":"ASSIGN","line":20,"kind":"var_decl","target":"state","rhs":"0","value":"0"}
+{"type":"COND","line":21,"kind":"if","order":1,"expr":"pump","value":false}
+{"type":"RETURN","line":22,"target":"return_value","rhs":"state + level","value":"0"}

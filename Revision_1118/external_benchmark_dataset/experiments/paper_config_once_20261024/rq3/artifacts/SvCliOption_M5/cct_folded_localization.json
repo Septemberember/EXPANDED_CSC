@@ -1,0 +1,147 @@
+{
+  "summary": {
+    "strategy": "folded_source_candidate_v1",
+    "scoring_strategy": "coverage_x_purity",
+    "F_total": 2,
+    "P_total": 10,
+    "condition_candidates": 2,
+    "seed_e_candidates": 1,
+    "seed_s_candidates": 0,
+    "edge_partition_candidates": 1,
+    "unstable_segment_variants": 2,
+    "total_edge_transitions": 35
+  },
+  "condition_node_ranking": [
+    {
+      "candidate_id": "condition_11_code < 0",
+      "kind": "condition",
+      "F_c": 2,
+      "P_c": 10,
+      "exec_count": 12,
+      "fail_count": 2,
+      "pass_count": 10,
+      "failure_density": 0.16666666666666666,
+      "risk_score": 0.16666666666666666,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 11,
+      "condition": "code < 0",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 11,
+      "line_end": 11,
+      "rank": 1
+    },
+    {
+      "candidate_id": "condition_11_code > 127",
+      "kind": "condition",
+      "F_c": 1,
+      "P_c": 10,
+      "exec_count": 11,
+      "fail_count": 1,
+      "pass_count": 10,
+      "failure_density": 0.09090909090909091,
+      "risk_score": 0.045454545454545456,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 11,
+      "condition": "code > 127",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 11,
+      "line_end": 11,
+      "rank": 2
+    }
+  ],
+  "interval_rankings": {
+    "folded_seed_e": [
+      {
+        "candidate_id": "seed_e_seed_e_11",
+        "kind": "seed_e",
+        "F_c": 2,
+        "P_c": 0,
+        "exec_count": 2,
+        "fail_count": 2,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "risk_score": 1.0,
+        "occurrence_count": 2,
+        "representative_count": 2,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.TRUE",
+            "representative_occurrence": "seed_e_root.F.TRUE"
+          },
+          {
+            "edge_id": "root.TRUE",
+            "representative_occurrence": "seed_e_root.TRUE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          11
+        ],
+        "region_size": 1,
+        "line_start": 11,
+        "line_end": 11,
+        "from_line": 11,
+        "from_condition": "code > 127",
+        "outcome": "true",
+        "to_line": null,
+        "to_condition": null,
+        "rank": 1
+      }
+    ],
+    "folded_seed_s": [],
+    "folded_edge_partition": [
+      {
+        "candidate_id": "seed_e_seed_e_11",
+        "kind": "seed_e",
+        "F_c": 2,
+        "P_c": 0,
+        "exec_count": 2,
+        "fail_count": 2,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "risk_score": 1.0,
+        "occurrence_count": 2,
+        "representative_count": 2,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.TRUE",
+            "representative_occurrence": "seed_e_root.F.TRUE"
+          },
+          {
+            "edge_id": "root.TRUE",
+            "representative_occurrence": "seed_e_root.TRUE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          11
+        ],
+        "region_size": 1,
+        "line_start": 11,
+        "line_end": 11,
+        "from_line": 11,
+        "from_condition": "code > 127",
+        "outcome": "true",
+        "to_line": null,
+        "to_condition": null,
+        "rank": 1
+      }
+    ]
+  }
+}

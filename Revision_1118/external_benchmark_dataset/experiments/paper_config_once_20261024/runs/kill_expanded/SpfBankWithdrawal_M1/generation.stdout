@@ -1,0 +1,598 @@
+=======================================================
+  CSC Engine — Test Case Generator
+=======================================================
+  Source:       /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfBankWithdrawal/SpfBankWithdrawal_M1.java
+  Mode:         Expanded CSC
+  Range bound:  +/- 200
+  Max iter:     100
+  Strategy:     batch
+  Workers:      4
+  Session:      extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000
+  CCT render:   no
+
+[1/3] Auto-instrumenting Java source...
+  [instrument] /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfBankWithdrawal/SpfBankWithdrawal_M1.java -> /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfBankWithdrawal/SpfBankWithdrawal_M1_instrumented.java
+  Class:        SpfBankWithdrawal_M1
+  Params:       {'return_value': 'int', 'balance': 'int', 'deposit': 'int', 'amount': 'int', 'withdrawals': 'int'}
+  Run log:      csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/run_log.jsonl
+
+[2/3] Compiling...
+  [compile] SpfBankWithdrawal_M1.class
+[3/3] CSC Loop
+---------------------------------------------
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+{Ø}
+-----------------------------
+
+
+  [Batch Round 1] CCT not initialized — running bootstrap
+  Bootstrap inputs: {'balance': 0, 'deposit': 0, 'amount': 0, 'withdrawals': 0}
+  Execution path: 2 steps, 1 conditions
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/SpfBankWithdrawal_M1_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: balance <= 0 @L21 (WP: balance <= 0, Cnt: 1)
+  (F) ->
+  |   {Ø}
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(balance=0, deposit=0, amount=0, withdrawals=0)
+-----------------------------
+
+
+  [Batch Round 2] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: balance <= 0 @L21 (WP: balance <= 0, Cnt: 1)
+  (F) ->
+  |   {Ø}
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(balance=0, deposit=0, amount=0, withdrawals=0)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/SpfBankWithdrawal_M1_cct.dot
+  -> Executing 1 candidates with 4 workers; merging 0 terminal updates
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/SpfBankWithdrawal_M1_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: balance <= 0 @L21 (WP: balance <= 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: balance > 20 @L21 (WP: balance > 20, Cnt: 1)
+  |     (F) ->
+  |     |   {Ø}
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(balance=16384, deposit=0, amount=0, withdrawals=0)
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(balance=0, deposit=0, amount=0, withdrawals=0)
+-----------------------------
+
+
+  [Batch Round 3] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: balance <= 0 @L21 (WP: balance <= 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: balance > 20 @L21 (WP: balance > 20, Cnt: 1)
+  |     (F) ->
+  |     |   {Ø}
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(balance=16384, deposit=0, amount=0, withdrawals=0)
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(balance=0, deposit=0, amount=0, withdrawals=0)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/SpfBankWithdrawal_M1_cct.dot
+  -> Executing 1 candidates with 4 workers; merging 0 terminal updates
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/SpfBankWithdrawal_M1_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: balance <= 0 @L21 (WP: balance <= 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: balance > 20 @L21 (WP: balance > 20, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: deposit < -5 @L21 (WP: deposit < -5, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: deposit > 10 @L21 (WP: deposit > 10, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: amount < -5 @L21 (WP: amount < -5, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: amount > 30 @L21 (WP: amount > 30, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: withdrawals < 0 @L21 (WP: withdrawals < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: withdrawals > 5 @L21 (WP: withdrawals > 5, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: deposit > 0 @L23 (WP: deposit > 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: amount > currentBalance @L24 (WP: amount > (balance), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: withdrawals >= 5 @L25 (WP: withdrawals >= 5, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(balance=5, deposit=0, amount=0, withdrawals=0)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(balance=16384, deposit=0, amount=0, withdrawals=0)
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(balance=0, deposit=0, amount=0, withdrawals=0)
+-----------------------------
+
+
+  [Batch Round 4] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: balance <= 0 @L21 (WP: balance <= 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: balance > 20 @L21 (WP: balance > 20, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: deposit < -5 @L21 (WP: deposit < -5, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: deposit > 10 @L21 (WP: deposit > 10, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: amount < -5 @L21 (WP: amount < -5, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: amount > 30 @L21 (WP: amount > 30, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: withdrawals < 0 @L21 (WP: withdrawals < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: withdrawals > 5 @L21 (WP: withdrawals > 5, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: deposit > 0 @L23 (WP: deposit > 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: amount > currentBalance @L24 (WP: amount > (balance), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: withdrawals >= 5 @L25 (WP: withdrawals >= 5, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(balance=5, deposit=0, amount=0, withdrawals=0)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(balance=16384, deposit=0, amount=0, withdrawals=0)
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(balance=0, deposit=0, amount=0, withdrawals=0)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/SpfBankWithdrawal_M1_cct.dot
+  -> Executing 9 candidates with 4 workers; merging 0 terminal updates
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/SpfBankWithdrawal_M1_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: balance <= 0 @L21 (WP: balance <= 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: balance > 20 @L21 (WP: balance > 20, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: deposit < -5 @L21 (WP: deposit < -5, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: deposit > 10 @L21 (WP: deposit > 10, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: amount < -5 @L21 (WP: amount < -5, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: amount > 30 @L21 (WP: amount > 30, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: withdrawals < 0 @L21 (WP: withdrawals < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: withdrawals > 5 @L21 (WP: withdrawals > 5, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: deposit > 0 @L23 (WP: deposit > 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: amount > currentBalance @L24 (WP: amount > (balance), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: withdrawals >= 5 @L25 (WP: withdrawals >= 5, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(balance=5, deposit=0, amount=0, withdrawals=0)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'}  inputs: tc_4_b0(balance=20, deposit=0, amount=0, withdrawals=5)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b1'}  inputs: tc_4_b1(balance=8, deposit=0, amount=9, withdrawals=0)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: amount > currentBalance @L24 (WP: amount > ((balance) + deposit), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b2'}  inputs: tc_4_b2(balance=16, deposit=8, amount=27, withdrawals=0)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b3'}  inputs: tc_4_b3(balance=16, deposit=-5, amount=27, withdrawals=6)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b4'}  inputs: tc_4_b4(balance=16, deposit=-5, amount=27, withdrawals=-32768)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b5'}  inputs: tc_4_b5(balance=16, deposit=-5, amount=31, withdrawals=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_4_b6'}  inputs: tc_4_b6(balance=16, deposit=-5, amount=-32768, withdrawals=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_4_b7'}  inputs: tc_4_b7(balance=5, deposit=11, amount=0, withdrawals=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_4_b8'}  inputs: tc_4_b8(balance=16, deposit=-32768, amount=0, withdrawals=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(balance=16384, deposit=0, amount=0, withdrawals=0)
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(balance=0, deposit=0, amount=0, withdrawals=0)
+-----------------------------
+
+
+  [Batch Round 5] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: balance <= 0 @L21 (WP: balance <= 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: balance > 20 @L21 (WP: balance > 20, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: deposit < -5 @L21 (WP: deposit < -5, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: deposit > 10 @L21 (WP: deposit > 10, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: amount < -5 @L21 (WP: amount < -5, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: amount > 30 @L21 (WP: amount > 30, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: withdrawals < 0 @L21 (WP: withdrawals < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: withdrawals > 5 @L21 (WP: withdrawals > 5, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: deposit > 0 @L23 (WP: deposit > 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: amount > currentBalance @L24 (WP: amount > (balance), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: withdrawals >= 5 @L25 (WP: withdrawals >= 5, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(balance=5, deposit=0, amount=0, withdrawals=0)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'}  inputs: tc_4_b0(balance=20, deposit=0, amount=0, withdrawals=5)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b1'}  inputs: tc_4_b1(balance=8, deposit=0, amount=9, withdrawals=0)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: amount > currentBalance @L24 (WP: amount > ((balance) + deposit), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b2'}  inputs: tc_4_b2(balance=16, deposit=8, amount=27, withdrawals=0)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b3'}  inputs: tc_4_b3(balance=16, deposit=-5, amount=27, withdrawals=6)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b4'}  inputs: tc_4_b4(balance=16, deposit=-5, amount=27, withdrawals=-32768)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b5'}  inputs: tc_4_b5(balance=16, deposit=-5, amount=31, withdrawals=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_4_b6'}  inputs: tc_4_b6(balance=16, deposit=-5, amount=-32768, withdrawals=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_4_b7'}  inputs: tc_4_b7(balance=5, deposit=11, amount=0, withdrawals=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_4_b8'}  inputs: tc_4_b8(balance=16, deposit=-32768, amount=0, withdrawals=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(balance=16384, deposit=0, amount=0, withdrawals=0)
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(balance=0, deposit=0, amount=0, withdrawals=0)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/SpfBankWithdrawal_M1_cct.dot
+  -> Executing 1 candidates with 4 workers; merging 0 terminal updates
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/SpfBankWithdrawal_M1_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: balance <= 0 @L21 (WP: balance <= 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: balance > 20 @L21 (WP: balance > 20, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: deposit < -5 @L21 (WP: deposit < -5, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: deposit > 10 @L21 (WP: deposit > 10, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: amount < -5 @L21 (WP: amount < -5, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: amount > 30 @L21 (WP: amount > 30, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: withdrawals < 0 @L21 (WP: withdrawals < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: withdrawals > 5 @L21 (WP: withdrawals > 5, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: deposit > 0 @L23 (WP: deposit > 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: amount > currentBalance @L24 (WP: amount > (balance), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: withdrawals >= 5 @L25 (WP: withdrawals >= 5, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(balance=5, deposit=0, amount=0, withdrawals=0)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'}  inputs: tc_4_b0(balance=20, deposit=0, amount=0, withdrawals=5)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b1'}  inputs: tc_4_b1(balance=8, deposit=0, amount=9, withdrawals=0)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: amount > currentBalance @L24 (WP: amount > ((balance) + deposit), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: withdrawals >= 5 @L25 (WP: withdrawals >= 5, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b0'}  inputs: tc_5_b0(balance=2, deposit=4, amount=0, withdrawals=0)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b2'}  inputs: tc_4_b2(balance=16, deposit=8, amount=27, withdrawals=0)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b3'}  inputs: tc_4_b3(balance=16, deposit=-5, amount=27, withdrawals=6)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b4'}  inputs: tc_4_b4(balance=16, deposit=-5, amount=27, withdrawals=-32768)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b5'}  inputs: tc_4_b5(balance=16, deposit=-5, amount=31, withdrawals=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_4_b6'}  inputs: tc_4_b6(balance=16, deposit=-5, amount=-32768, withdrawals=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_4_b7'}  inputs: tc_4_b7(balance=5, deposit=11, amount=0, withdrawals=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_4_b8'}  inputs: tc_4_b8(balance=16, deposit=-32768, amount=0, withdrawals=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(balance=16384, deposit=0, amount=0, withdrawals=0)
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(balance=0, deposit=0, amount=0, withdrawals=0)
+-----------------------------
+
+
+  [Batch Round 6] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: balance <= 0 @L21 (WP: balance <= 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: balance > 20 @L21 (WP: balance > 20, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: deposit < -5 @L21 (WP: deposit < -5, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: deposit > 10 @L21 (WP: deposit > 10, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: amount < -5 @L21 (WP: amount < -5, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: amount > 30 @L21 (WP: amount > 30, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: withdrawals < 0 @L21 (WP: withdrawals < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: withdrawals > 5 @L21 (WP: withdrawals > 5, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: deposit > 0 @L23 (WP: deposit > 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: amount > currentBalance @L24 (WP: amount > (balance), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: withdrawals >= 5 @L25 (WP: withdrawals >= 5, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(balance=5, deposit=0, amount=0, withdrawals=0)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'}  inputs: tc_4_b0(balance=20, deposit=0, amount=0, withdrawals=5)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b1'}  inputs: tc_4_b1(balance=8, deposit=0, amount=9, withdrawals=0)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: amount > currentBalance @L24 (WP: amount > ((balance) + deposit), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: withdrawals >= 5 @L25 (WP: withdrawals >= 5, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b0'}  inputs: tc_5_b0(balance=2, deposit=4, amount=0, withdrawals=0)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b2'}  inputs: tc_4_b2(balance=16, deposit=8, amount=27, withdrawals=0)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b3'}  inputs: tc_4_b3(balance=16, deposit=-5, amount=27, withdrawals=6)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b4'}  inputs: tc_4_b4(balance=16, deposit=-5, amount=27, withdrawals=-32768)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b5'}  inputs: tc_4_b5(balance=16, deposit=-5, amount=31, withdrawals=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_4_b6'}  inputs: tc_4_b6(balance=16, deposit=-5, amount=-32768, withdrawals=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_4_b7'}  inputs: tc_4_b7(balance=5, deposit=11, amount=0, withdrawals=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_4_b8'}  inputs: tc_4_b8(balance=16, deposit=-32768, amount=0, withdrawals=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(balance=16384, deposit=0, amount=0, withdrawals=0)
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(balance=0, deposit=0, amount=0, withdrawals=0)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/SpfBankWithdrawal_M1_cct.dot
+  -> Executing 1 candidates with 4 workers; merging 0 terminal updates
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/SpfBankWithdrawal_M1_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: balance <= 0 @L21 (WP: balance <= 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: balance > 20 @L21 (WP: balance > 20, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: deposit < -5 @L21 (WP: deposit < -5, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: deposit > 10 @L21 (WP: deposit > 10, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: amount < -5 @L21 (WP: amount < -5, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: amount > 30 @L21 (WP: amount > 30, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: withdrawals < 0 @L21 (WP: withdrawals < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: withdrawals > 5 @L21 (WP: withdrawals > 5, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: deposit > 0 @L23 (WP: deposit > 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: amount > currentBalance @L24 (WP: amount > (balance), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: withdrawals >= 5 @L25 (WP: withdrawals >= 5, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(balance=5, deposit=0, amount=0, withdrawals=0)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'}  inputs: tc_4_b0(balance=20, deposit=0, amount=0, withdrawals=5)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b1'}  inputs: tc_4_b1(balance=8, deposit=0, amount=9, withdrawals=0)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: amount > currentBalance @L24 (WP: amount > ((balance) + deposit), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: withdrawals >= 5 @L25 (WP: withdrawals >= 5, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b0'}  inputs: tc_5_b0(balance=2, deposit=4, amount=0, withdrawals=0)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6_b0'}  inputs: tc_6_b0(balance=4, deposit=7, amount=0, withdrawals=5)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b2'}  inputs: tc_4_b2(balance=16, deposit=8, amount=27, withdrawals=0)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b3'}  inputs: tc_4_b3(balance=16, deposit=-5, amount=27, withdrawals=6)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b4'}  inputs: tc_4_b4(balance=16, deposit=-5, amount=27, withdrawals=-32768)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b5'}  inputs: tc_4_b5(balance=16, deposit=-5, amount=31, withdrawals=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_4_b6'}  inputs: tc_4_b6(balance=16, deposit=-5, amount=-32768, withdrawals=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_4_b7'}  inputs: tc_4_b7(balance=5, deposit=11, amount=0, withdrawals=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_4_b8'}  inputs: tc_4_b8(balance=16, deposit=-32768, amount=0, withdrawals=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(balance=16384, deposit=0, amount=0, withdrawals=0)
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(balance=0, deposit=0, amount=0, withdrawals=0)
+-----------------------------
+
+
+  [Batch Round 7] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: balance <= 0 @L21 (WP: balance <= 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: balance > 20 @L21 (WP: balance > 20, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: deposit < -5 @L21 (WP: deposit < -5, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: deposit > 10 @L21 (WP: deposit > 10, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: amount < -5 @L21 (WP: amount < -5, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: amount > 30 @L21 (WP: amount > 30, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: withdrawals < 0 @L21 (WP: withdrawals < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: withdrawals > 5 @L21 (WP: withdrawals > 5, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: deposit > 0 @L23 (WP: deposit > 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: amount > currentBalance @L24 (WP: amount > (balance), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: withdrawals >= 5 @L25 (WP: withdrawals >= 5, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(balance=5, deposit=0, amount=0, withdrawals=0)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'}  inputs: tc_4_b0(balance=20, deposit=0, amount=0, withdrawals=5)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b1'}  inputs: tc_4_b1(balance=8, deposit=0, amount=9, withdrawals=0)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: amount > currentBalance @L24 (WP: amount > ((balance) + deposit), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: withdrawals >= 5 @L25 (WP: withdrawals >= 5, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b0'}  inputs: tc_5_b0(balance=2, deposit=4, amount=0, withdrawals=0)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6_b0'}  inputs: tc_6_b0(balance=4, deposit=7, amount=0, withdrawals=5)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b2'}  inputs: tc_4_b2(balance=16, deposit=8, amount=27, withdrawals=0)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b3'}  inputs: tc_4_b3(balance=16, deposit=-5, amount=27, withdrawals=6)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b4'}  inputs: tc_4_b4(balance=16, deposit=-5, amount=27, withdrawals=-32768)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b5'}  inputs: tc_4_b5(balance=16, deposit=-5, amount=31, withdrawals=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_4_b6'}  inputs: tc_4_b6(balance=16, deposit=-5, amount=-32768, withdrawals=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_4_b7'}  inputs: tc_4_b7(balance=5, deposit=11, amount=0, withdrawals=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_4_b8'}  inputs: tc_4_b8(balance=16, deposit=-32768, amount=0, withdrawals=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(balance=16384, deposit=0, amount=0, withdrawals=0)
+  (T) ->
+  |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(balance=0, deposit=0, amount=0, withdrawals=0)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/SpfBankWithdrawal_M1_cct.dot
+  -> CCT is FULL — all branches covered!
+
+=======================================================
+  Done! 14 test cases generated in 7 iterations.
+=======================================================
+CCT DOT saved to: csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/SpfBankWithdrawal_M1_cct.dot
+
+Generated Test Cases:
+---------------------------------------------
+  [BOOTSTRAP]  (bootstrap)
+  round_02/b0  [BATCH_SAFE]  balance=16384, deposit=0, amount=0, withdrawals=0
+  round_03/b0  [BATCH_SAFE]  balance=5, deposit=0, amount=0, withdrawals=0
+  round_04/b0  [BATCH_SAFE]  balance=20, deposit=0, amount=0, withdrawals=5
+  round_04/b1  [BATCH_SAFE]  balance=8, deposit=0, amount=9, withdrawals=0
+  round_04/b2  [BATCH_SAFE]  balance=16, deposit=8, amount=27, withdrawals=0
+  round_04/b3  [BATCH_SAFE]  balance=16, deposit=-5, amount=27, withdrawals=6
+  round_04/b4  [BATCH_SAFE]  balance=16, deposit=-5, amount=27, withdrawals=-32768
+  round_04/b5  [BATCH_SAFE]  balance=16, deposit=-5, amount=31, withdrawals=0
+  round_04/b6  [BATCH_SAFE]  balance=16, deposit=-5, amount=-32768, withdrawals=0
+  round_04/b7  [BATCH_SAFE]  balance=5, deposit=11, amount=0, withdrawals=0
+  round_04/b8  [BATCH_SAFE]  balance=16, deposit=-32768, amount=0, withdrawals=0
+  round_05/b0  [BATCH_SAFE]  balance=2, deposit=4, amount=0, withdrawals=0
+  round_06/b0  [BATCH_SAFE]  balance=4, deposit=7, amount=0, withdrawals=5
+
+Timing Summary (ms):
+---------------------------------------------
+  solver_time_ms: 34
+  frontier_discovery_time_ms: 38
+  compile_time_ms: 6182
+  java_exec_time_ms: 1112
+  path_log_parse_time_ms: 1
+  cct_path_build_time_ms: 0
+  cct_merge_time_ms: 0
+  verification_solver_time_ms: 0
+  parallel_exec_wall_time_ms: 3028
+  merge_verify_wall_time_ms: 0
+  batch_total_wall_time_ms: 3030
+
+Test cases written to: csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/testcases.json
+
+CCT visualization:
+  DOT: csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/SpfBankWithdrawal_M1_cct.dot
+  Stats: csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/cct_stats.json
+  Counts: nodes=27, leaves=14, covered=14, infeasible=0, out_of_range=0, expanded=0, truncated=0
+  Render script: csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/render_cct.sh
+  (render later with: csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/render_cct.sh)
+
+Run log:
+  JSONL: csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/run_log.jsonl

@@ -1,0 +1,229 @@
+{
+  "summary": {
+    "aggregation": "source_transition_v1",
+    "score_aggregation": "max",
+    "per_target_aggregation": {
+      "condition_node_ranking": "max",
+      "interval_rankings.folded_seed_e": "max",
+      "interval_rankings.folded_seed_s": "max",
+      "interval_rankings.folded_edge_partition": "max"
+    },
+    "source_report": null,
+    "source_file": "D4jCharSqueeze/D4jCharSqueeze_M1.java",
+    "targets": [
+      "condition_node_ranking",
+      "interval_rankings.folded_seed_e",
+      "interval_rankings.folded_seed_s",
+      "interval_rankings.folded_edge_partition"
+    ],
+    "condition_node_count_raw": 1,
+    "condition_node_count_aggregated": 1,
+    "interval_count_raw": {
+      "folded_seed_e": 1,
+      "folded_seed_s": 0,
+      "folded_edge_partition": 1
+    },
+    "interval_count_aggregated": {
+      "folded_seed_e": 1,
+      "folded_seed_s": 0,
+      "folded_edge_partition": 1
+    },
+    "average_interval_region_size": {
+      "folded_seed_e": 1.0,
+      "folded_seed_s": 0.0,
+      "folded_edge_partition": 1.0
+    },
+    "raw_summary": {
+      "strategy": "folded_source_candidate_v1",
+      "scoring_strategy": "coverage_x_purity",
+      "F_total": 1,
+      "P_total": 39,
+      "condition_candidates": 1,
+      "seed_e_candidates": 1,
+      "seed_s_candidates": 0,
+      "edge_partition_candidates": 1,
+      "unstable_segment_variants": 1,
+      "total_edge_transitions": 54
+    }
+  },
+  "aggregated_condition_node_ranking": [
+    {
+      "source_file": "D4jCharSqueeze/D4jCharSqueeze_M1.java",
+      "line": 20,
+      "condition": "a <= 1",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 1,
+      "raw_ranks": [
+        1
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 1,
+        "risk_score": 0.025,
+        "line": 20,
+        "condition": "a <= 1",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.025,
+      "exec_count": 40,
+      "fail_count": 1,
+      "pass_count": 39,
+      "failure_density": 0.025,
+      "min_exec_count": 40,
+      "min_fail_count": 1,
+      "min_pass_count": 39,
+      "min_failure_density": 0.025,
+      "rank": 1
+    }
+  ],
+  "aggregated_interval_rankings": {
+    "folded_seed_e": [
+      {
+        "source_file": "D4jCharSqueeze/D4jCharSqueeze_M1.java",
+        "from_line": 20,
+        "from_condition": "low > high",
+        "outcome": "true",
+        "to_line": null,
+        "to_condition": null,
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          20
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            20
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 1,
+        "raw_ranks": [
+          1
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 1,
+          "risk_score": 0.07692307692307693,
+          "from_line": 20,
+          "from_condition": "low > high",
+          "outcome": "true",
+          "to_line": null,
+          "to_condition": null,
+          "statement_lines": [
+            20
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.07692307692307693,
+        "base_risk_score": 0.07692307692307693,
+        "exec_count": 13,
+        "fail_count": 1,
+        "pass_count": 12,
+        "failure_density": 0.07692307692307693,
+        "min_exec_count": 13,
+        "min_fail_count": 1,
+        "min_pass_count": 12,
+        "min_failure_density": 0.07692307692307693,
+        "rank": 1
+      }
+    ],
+    "folded_seed_s": [],
+    "folded_edge_partition": [
+      {
+        "source_file": "D4jCharSqueeze/D4jCharSqueeze_M1.java",
+        "from_line": 20,
+        "from_condition": "low > high",
+        "outcome": "true",
+        "to_line": null,
+        "to_condition": null,
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          20
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            20
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 1,
+        "raw_ranks": [
+          1
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 1,
+          "risk_score": 0.07692307692307693,
+          "from_line": 20,
+          "from_condition": "low > high",
+          "outcome": "true",
+          "to_line": null,
+          "to_condition": null,
+          "statement_lines": [
+            20
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.07692307692307693,
+        "base_risk_score": 0.07692307692307693,
+        "exec_count": 13,
+        "fail_count": 1,
+        "pass_count": 12,
+        "failure_density": 0.07692307692307693,
+        "min_exec_count": 13,
+        "min_fail_count": 1,
+        "min_pass_count": 12,
+        "min_failure_density": 0.07692307692307693,
+        "rank": 1
+      }
+    ]
+  }
+}

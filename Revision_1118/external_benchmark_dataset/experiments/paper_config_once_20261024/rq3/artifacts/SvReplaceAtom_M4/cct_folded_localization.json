@@ -1,0 +1,1143 @@
+{
+  "summary": {
+    "strategy": "folded_source_candidate_v1",
+    "scoring_strategy": "coverage_x_purity",
+    "F_total": 9,
+    "P_total": 15,
+    "condition_candidates": 23,
+    "seed_e_candidates": 5,
+    "seed_s_candidates": 1,
+    "edge_partition_candidates": 6,
+    "unstable_segment_variants": 2,
+    "total_edge_transitions": 54
+  },
+  "condition_node_ranking": [
+    {
+      "candidate_id": "condition_7_ch != 0",
+      "kind": "condition",
+      "F_c": 9,
+      "P_c": 5,
+      "exec_count": 14,
+      "fail_count": 9,
+      "pass_count": 5,
+      "failure_density": 0.6428571428571429,
+      "risk_score": 0.6428571428571429,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 7,
+      "condition": "ch != 0",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 7,
+      "line_end": 7,
+      "rank": 1
+    },
+    {
+      "candidate_id": "condition_23_advance >= 0",
+      "kind": "condition",
+      "F_c": 9,
+      "P_c": 5,
+      "exec_count": 14,
+      "fail_count": 9,
+      "pass_count": 5,
+      "failure_density": 0.6428571428571429,
+      "risk_score": 0.6428571428571429,
+      "occurrence_count": 14,
+      "representative_count": 14,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.F"
+        },
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.F.F.F.F"
+        },
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.F.F.F.T.F"
+        },
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.F.F.T.F"
+        },
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.T.F.F.F"
+        },
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.T.F.F.T.T"
+        },
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.T.F.T.T"
+        },
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.T.F.F.F"
+        },
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.T.F.F.T.T"
+        },
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.T.F.T.T"
+        },
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.T.F"
+        },
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.T.T"
+        },
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.T.F"
+        },
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.T.T"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 23,
+      "condition": "advance >= 0",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 23,
+      "line_end": 23,
+      "rank": 2
+    },
+    {
+      "candidate_id": "condition_5_index > 1",
+      "kind": "condition",
+      "F_c": 9,
+      "P_c": 6,
+      "exec_count": 15,
+      "fail_count": 9,
+      "pass_count": 6,
+      "failure_density": 0.6,
+      "risk_score": 0.6,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 5,
+      "condition": "index > 1",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 5,
+      "line_end": 5,
+      "rank": 3
+    },
+    {
+      "candidate_id": "condition_5_index < 0",
+      "kind": "condition",
+      "F_c": 9,
+      "P_c": 7,
+      "exec_count": 16,
+      "fail_count": 9,
+      "pass_count": 7,
+      "failure_density": 0.5625,
+      "risk_score": 0.5625,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 5,
+      "condition": "index < 0",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 5,
+      "line_end": 5,
+      "rank": 4
+    },
+    {
+      "candidate_id": "condition_8_kind == 0",
+      "kind": "condition",
+      "F_c": 8,
+      "P_c": 5,
+      "exec_count": 13,
+      "fail_count": 8,
+      "pass_count": 5,
+      "failure_density": 0.6153846153846154,
+      "risk_score": 0.5470085470085471,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 8,
+      "condition": "kind == 0",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 8,
+      "line_end": 8,
+      "rank": 5
+    },
+    {
+      "candidate_id": "condition_5_b > 10",
+      "kind": "condition",
+      "F_c": 9,
+      "P_c": 8,
+      "exec_count": 17,
+      "fail_count": 9,
+      "pass_count": 8,
+      "failure_density": 0.5294117647058824,
+      "risk_score": 0.5294117647058824,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F.F.F.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 5,
+      "condition": "b > 10",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 5,
+      "line_end": 5,
+      "rank": 6
+    },
+    {
+      "candidate_id": "condition_5_b < 0",
+      "kind": "condition",
+      "F_c": 9,
+      "P_c": 9,
+      "exec_count": 18,
+      "fail_count": 9,
+      "pass_count": 9,
+      "failure_density": 0.5,
+      "risk_score": 0.5,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F.F.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 5,
+      "condition": "b < 0",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 5,
+      "line_end": 5,
+      "rank": 7
+    },
+    {
+      "candidate_id": "condition_9_kind == 1",
+      "kind": "condition",
+      "F_c": 7,
+      "P_c": 4,
+      "exec_count": 11,
+      "fail_count": 7,
+      "pass_count": 4,
+      "failure_density": 0.6363636363636364,
+      "risk_score": 0.494949494949495,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 9,
+      "condition": "kind == 1",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 9,
+      "line_end": 9,
+      "rank": 8
+    },
+    {
+      "candidate_id": "condition_5_a > 10",
+      "kind": "condition",
+      "F_c": 9,
+      "P_c": 10,
+      "exec_count": 19,
+      "fail_count": 9,
+      "pass_count": 10,
+      "failure_density": 0.47368421052631576,
+      "risk_score": 0.47368421052631576,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 5,
+      "condition": "a > 10",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 5,
+      "line_end": 5,
+      "rank": 9
+    },
+    {
+      "candidate_id": "condition_19_ch != 10",
+      "kind": "condition",
+      "F_c": 5,
+      "P_c": 1,
+      "exec_count": 6,
+      "fail_count": 5,
+      "pass_count": 1,
+      "failure_density": 0.8333333333333334,
+      "risk_score": 0.462962962962963,
+      "occurrence_count": 3,
+      "representative_count": 3,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.F.F.F"
+        },
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.T.F.F"
+        },
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.T.F.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 19,
+      "condition": "ch != 10",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 19,
+      "line_end": 19,
+      "rank": 10
+    },
+    {
+      "candidate_id": "condition_5_a < 0",
+      "kind": "condition",
+      "F_c": 9,
+      "P_c": 11,
+      "exec_count": 20,
+      "fail_count": 9,
+      "pass_count": 11,
+      "failure_density": 0.45,
+      "risk_score": 0.45,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 5,
+      "condition": "a < 0",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 5,
+      "line_end": 5,
+      "rank": 11
+    },
+    {
+      "candidate_id": "condition_13_i > 0",
+      "kind": "condition",
+      "F_c": 6,
+      "P_c": 3,
+      "exec_count": 9,
+      "fail_count": 6,
+      "pass_count": 3,
+      "failure_density": 0.6666666666666666,
+      "risk_score": 0.4444444444444444,
+      "occurrence_count": 5,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 13,
+      "condition": "i > 0",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 13,
+      "line_end": 13,
+      "rank": 12
+    },
+    {
+      "candidate_id": "condition_15_i == 2",
+      "kind": "condition",
+      "F_c": 6,
+      "P_c": 3,
+      "exec_count": 9,
+      "fail_count": 6,
+      "pass_count": 3,
+      "failure_density": 0.6666666666666666,
+      "risk_score": 0.4444444444444444,
+      "occurrence_count": 2,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 15,
+      "condition": "i == 2",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 15,
+      "line_end": 15,
+      "rank": 13
+    },
+    {
+      "candidate_id": "condition_16_ch == value",
+      "kind": "condition",
+      "F_c": 6,
+      "P_c": 3,
+      "exec_count": 9,
+      "fail_count": 6,
+      "pass_count": 3,
+      "failure_density": 0.6666666666666666,
+      "risk_score": 0.4444444444444444,
+      "occurrence_count": 2,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 16,
+      "condition": "ch == value",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 16,
+      "line_end": 16,
+      "rank": 14
+    },
+    {
+      "candidate_id": "condition_18_kind == 2",
+      "kind": "condition",
+      "F_c": 6,
+      "P_c": 3,
+      "exec_count": 9,
+      "fail_count": 6,
+      "pass_count": 3,
+      "failure_density": 0.6666666666666666,
+      "risk_score": 0.4444444444444444,
+      "occurrence_count": 3,
+      "representative_count": 3,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.F.F"
+        },
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.T.F"
+        },
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.T.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 18,
+      "condition": "kind == 2",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 18,
+      "line_end": 18,
+      "rank": 15
+    },
+    {
+      "candidate_id": "condition_5_ch > 10",
+      "kind": "condition",
+      "F_c": 9,
+      "P_c": 12,
+      "exec_count": 21,
+      "fail_count": 9,
+      "pass_count": 12,
+      "failure_density": 0.42857142857142855,
+      "risk_score": 0.42857142857142855,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 5,
+      "condition": "ch > 10",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 5,
+      "line_end": 5,
+      "rank": 16
+    },
+    {
+      "candidate_id": "condition_5_ch < 0",
+      "kind": "condition",
+      "F_c": 9,
+      "P_c": 13,
+      "exec_count": 22,
+      "fail_count": 9,
+      "pass_count": 13,
+      "failure_density": 0.4090909090909091,
+      "risk_score": 0.4090909090909091,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 5,
+      "condition": "ch < 0",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 5,
+      "line_end": 5,
+      "rank": 17
+    },
+    {
+      "candidate_id": "condition_5_kind > 3",
+      "kind": "condition",
+      "F_c": 9,
+      "P_c": 14,
+      "exec_count": 23,
+      "fail_count": 9,
+      "pass_count": 14,
+      "failure_density": 0.391304347826087,
+      "risk_score": 0.391304347826087,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 5,
+      "condition": "kind > 3",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 5,
+      "line_end": 5,
+      "rank": 18
+    },
+    {
+      "candidate_id": "condition_5_kind < 0",
+      "kind": "condition",
+      "F_c": 9,
+      "P_c": 15,
+      "exec_count": 24,
+      "fail_count": 9,
+      "pass_count": 15,
+      "failure_density": 0.375,
+      "risk_score": 0.375,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 5,
+      "condition": "kind < 0",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 5,
+      "line_end": 5,
+      "rank": 19
+    },
+    {
+      "candidate_id": "condition_19_found",
+      "kind": "condition",
+      "F_c": 2,
+      "P_c": 1,
+      "exec_count": 3,
+      "fail_count": 2,
+      "pass_count": 1,
+      "failure_density": 0.6666666666666666,
+      "risk_score": 0.14814814814814814,
+      "occurrence_count": 3,
+      "representative_count": 3,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.F.F.F.T"
+        },
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.T.F.F.T"
+        },
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.T.F.F.T"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 19,
+      "condition": "found",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 19,
+      "line_end": 19,
+      "rank": 20
+    },
+    {
+      "candidate_id": "condition_8_ch == a",
+      "kind": "condition",
+      "F_c": 1,
+      "P_c": 1,
+      "exec_count": 2,
+      "fail_count": 1,
+      "pass_count": 1,
+      "failure_density": 0.5,
+      "risk_score": 0.05555555555555555,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.T"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 8,
+      "condition": "ch == a",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 8,
+      "line_end": 8,
+      "rank": 21
+    },
+    {
+      "candidate_id": "condition_9_ch != 10",
+      "kind": "condition",
+      "F_c": 1,
+      "P_c": 1,
+      "exec_count": 2,
+      "fail_count": 1,
+      "pass_count": 1,
+      "failure_density": 0.5,
+      "risk_score": 0.05555555555555555,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.T"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 9,
+      "condition": "ch != 10",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 9,
+      "line_end": 9,
+      "rank": 22
+    },
+    {
+      "candidate_id": "condition_18_found",
+      "kind": "condition",
+      "F_c": 1,
+      "P_c": 2,
+      "exec_count": 3,
+      "fail_count": 1,
+      "pass_count": 2,
+      "failure_density": 0.3333333333333333,
+      "risk_score": 0.037037037037037035,
+      "occurrence_count": 3,
+      "representative_count": 3,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.F.F.T"
+        },
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.T.F.T"
+        },
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.T.F.T"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 18,
+      "condition": "found",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 18,
+      "line_end": 18,
+      "rank": 23
+    }
+  ],
+  "interval_rankings": {
+    "folded_seed_e": [
+      {
+        "candidate_id": "seed_e_seed_e_24",
+        "kind": "seed_e",
+        "F_c": 9,
+        "P_c": 0,
+        "exec_count": 9,
+        "fail_count": 9,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "risk_score": 1.0,
+        "occurrence_count": 9,
+        "representative_count": 9,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.F.F.F.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.F.F.F.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.F.F.F.F.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.F.F.T.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.F.F.T.F.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.T.F.F.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.T.F.F.F.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.T.F.F.T.T.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.T.F.F.T.T.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.T.F.F.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.T.F.F.F.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.T.F.F.T.T.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.T.F.F.T.T.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.T.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.F.F.T.F.T.F.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.T.T.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.F.F.T.T.F.FALSE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          24
+        ],
+        "region_size": 1,
+        "line_start": 24,
+        "line_end": 24,
+        "from_line": 23,
+        "from_condition": "advance >= 0",
+        "outcome": "false",
+        "to_line": null,
+        "to_condition": null,
+        "rank": 1
+      },
+      {
+        "candidate_id": "seed_e_seed_e_6",
+        "kind": "seed_e",
+        "F_c": 9,
+        "P_c": 5,
+        "exec_count": 14,
+        "fail_count": 9,
+        "pass_count": 5,
+        "failure_density": 0.6428571428571429,
+        "risk_score": 0.6428571428571429,
+        "occurrence_count": 1,
+        "representative_count": 1,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.F.FALSE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          6
+        ],
+        "region_size": 1,
+        "line_start": 6,
+        "line_end": 6,
+        "from_line": 5,
+        "from_condition": "index > 1",
+        "outcome": "false",
+        "to_line": 7,
+        "to_condition": "ch != 0",
+        "rank": 2
+      },
+      {
+        "candidate_id": "seed_e_seed_e_14",
+        "kind": "seed_e",
+        "F_c": 6,
+        "P_c": 3,
+        "exec_count": 9,
+        "fail_count": 6,
+        "pass_count": 3,
+        "failure_density": 0.6666666666666666,
+        "risk_score": 0.4444444444444444,
+        "occurrence_count": 2,
+        "representative_count": 1,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.TRUE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.F.F.T.F.F.TRUE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          14
+        ],
+        "region_size": 1,
+        "line_start": 14,
+        "line_end": 14,
+        "from_line": 13,
+        "from_condition": "i > 0",
+        "outcome": "true",
+        "to_line": 15,
+        "to_condition": "i == 2",
+        "rank": 3
+      },
+      {
+        "candidate_id": "seed_e_seed_e_15",
+        "kind": "seed_e",
+        "F_c": 6,
+        "P_c": 3,
+        "exec_count": 9,
+        "fail_count": 6,
+        "pass_count": 3,
+        "failure_density": 0.6666666666666666,
+        "risk_score": 0.4444444444444444,
+        "occurrence_count": 1,
+        "representative_count": 1,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.TRUE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.TRUE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          15
+        ],
+        "region_size": 1,
+        "line_start": 15,
+        "line_end": 15,
+        "from_line": 15,
+        "from_condition": "i == 2",
+        "outcome": "true",
+        "to_line": 16,
+        "to_condition": "ch == value",
+        "rank": 4
+      },
+      {
+        "candidate_id": "seed_e_seed_e_11_12",
+        "kind": "seed_e",
+        "F_c": 6,
+        "P_c": 3,
+        "exec_count": 9,
+        "fail_count": 6,
+        "pass_count": 3,
+        "failure_density": 0.6666666666666666,
+        "risk_score": 0.4444444444444444,
+        "occurrence_count": 1,
+        "representative_count": 1,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.F.F.T.F.FALSE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          11,
+          12
+        ],
+        "region_size": 2,
+        "line_start": 11,
+        "line_end": 12,
+        "from_line": 9,
+        "from_condition": "kind == 1",
+        "outcome": "false",
+        "to_line": 13,
+        "to_condition": "i > 0",
+        "rank": 6
+      }
+    ],
+    "folded_seed_s": [
+      {
+        "candidate_id": "seed_s_seed_s_16",
+        "kind": "seed_s",
+        "F_c": 6,
+        "P_c": 3,
+        "exec_count": 9,
+        "fail_count": 6,
+        "pass_count": 3,
+        "failure_density": 0.6666666666666666,
+        "risk_score": 0.4444444444444444,
+        "occurrence_count": 4,
+        "representative_count": 2,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.FALSE",
+            "representative_occurrence": "seed_s_root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.TRUE",
+            "representative_occurrence": "seed_s_root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.TRUE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          16
+        ],
+        "region_size": 1,
+        "line_start": 16,
+        "line_end": 16,
+        "from_line": 16,
+        "from_condition": "ch == value",
+        "outcome": "false",
+        "to_line": 13,
+        "to_condition": "i > 0",
+        "rank": 5
+      }
+    ],
+    "folded_edge_partition": [
+      {
+        "candidate_id": "seed_e_seed_e_24",
+        "kind": "seed_e",
+        "F_c": 9,
+        "P_c": 0,
+        "exec_count": 9,
+        "fail_count": 9,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "risk_score": 1.0,
+        "occurrence_count": 9,
+        "representative_count": 9,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.F.F.F.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.F.F.F.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.F.F.F.F.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.F.F.T.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.F.F.T.F.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.T.F.F.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.T.F.F.F.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.T.F.F.T.T.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.F.T.F.T.F.F.T.T.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.T.F.F.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.T.F.F.F.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.T.F.F.T.T.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.T.F.F.T.T.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.T.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.F.F.T.F.T.F.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.T.T.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.F.F.T.T.F.FALSE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          24
+        ],
+        "region_size": 1,
+        "line_start": 24,
+        "line_end": 24,
+        "from_line": 23,
+        "from_condition": "advance >= 0",
+        "outcome": "false",
+        "to_line": null,
+        "to_condition": null,
+        "rank": 1
+      },
+      {
+        "candidate_id": "seed_e_seed_e_6",
+        "kind": "seed_e",
+        "F_c": 9,
+        "P_c": 5,
+        "exec_count": 14,
+        "fail_count": 9,
+        "pass_count": 5,
+        "failure_density": 0.6428571428571429,
+        "risk_score": 0.6428571428571429,
+        "occurrence_count": 1,
+        "representative_count": 1,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.F.FALSE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          6
+        ],
+        "region_size": 1,
+        "line_start": 6,
+        "line_end": 6,
+        "from_line": 5,
+        "from_condition": "index > 1",
+        "outcome": "false",
+        "to_line": 7,
+        "to_condition": "ch != 0",
+        "rank": 2
+      },
+      {
+        "candidate_id": "seed_e_seed_e_14",
+        "kind": "seed_e",
+        "F_c": 6,
+        "P_c": 3,
+        "exec_count": 9,
+        "fail_count": 6,
+        "pass_count": 3,
+        "failure_density": 0.6666666666666666,
+        "risk_score": 0.4444444444444444,
+        "occurrence_count": 2,
+        "representative_count": 1,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.TRUE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.F.F.T.F.F.TRUE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          14
+        ],
+        "region_size": 1,
+        "line_start": 14,
+        "line_end": 14,
+        "from_line": 13,
+        "from_condition": "i > 0",
+        "outcome": "true",
+        "to_line": 15,
+        "to_condition": "i == 2",
+        "rank": 3
+      },
+      {
+        "candidate_id": "seed_e_seed_e_15",
+        "kind": "seed_e",
+        "F_c": 6,
+        "P_c": 3,
+        "exec_count": 9,
+        "fail_count": 6,
+        "pass_count": 3,
+        "failure_density": 0.6666666666666666,
+        "risk_score": 0.4444444444444444,
+        "occurrence_count": 1,
+        "representative_count": 1,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.TRUE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.TRUE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          15
+        ],
+        "region_size": 1,
+        "line_start": 15,
+        "line_end": 15,
+        "from_line": 15,
+        "from_condition": "i == 2",
+        "outcome": "true",
+        "to_line": 16,
+        "to_condition": "ch == value",
+        "rank": 4
+      },
+      {
+        "candidate_id": "seed_s_seed_s_16",
+        "kind": "seed_s",
+        "F_c": 6,
+        "P_c": 3,
+        "exec_count": 9,
+        "fail_count": 6,
+        "pass_count": 3,
+        "failure_density": 0.6666666666666666,
+        "risk_score": 0.4444444444444444,
+        "occurrence_count": 4,
+        "representative_count": 2,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.FALSE",
+            "representative_occurrence": "seed_s_root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.TRUE",
+            "representative_occurrence": "seed_s_root.F.F.F.F.F.F.F.F.F.F.T.F.F.T.T.TRUE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          16
+        ],
+        "region_size": 1,
+        "line_start": 16,
+        "line_end": 16,
+        "from_line": 16,
+        "from_condition": "ch == value",
+        "outcome": "false",
+        "to_line": 13,
+        "to_condition": "i > 0",
+        "rank": 5
+      },
+      {
+        "candidate_id": "seed_e_seed_e_11_12",
+        "kind": "seed_e",
+        "F_c": 6,
+        "P_c": 3,
+        "exec_count": 9,
+        "fail_count": 6,
+        "pass_count": 3,
+        "failure_density": 0.6666666666666666,
+        "risk_score": 0.4444444444444444,
+        "occurrence_count": 1,
+        "representative_count": 1,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.T.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.F.F.T.F.FALSE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          11,
+          12
+        ],
+        "region_size": 2,
+        "line_start": 11,
+        "line_end": 12,
+        "from_line": 9,
+        "from_condition": "kind == 1",
+        "outcome": "false",
+        "to_line": 13,
+        "to_condition": "i > 0",
+        "rank": 6
+      }
+    ]
+  }
+}

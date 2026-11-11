@@ -1,0 +1,387 @@
+{
+  "mutant_id": "SpfDelimiterSearch_M2",
+  "subject": "SpfDelimiterSearch",
+  "operator": "ROR",
+  "fault_category": "condition",
+  "loop_bearing": true,
+  "modes": {
+    "original": {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfDelimiterSearch/SpfDelimiterSearch_M2.java",
+        "--mode",
+        "original",
+        "--range-bound",
+        "200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--max-iter",
+        "100",
+        "--session",
+        "extpaper_kill_original_SpfDelimiterSearch_M2_1792784022608796000",
+        "--keep-artifacts"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "wall_time_s": 2.8825424590031616,
+      "started_at": "2026-10-23T19:33:42.608884+00:00",
+      "finished_at": "2026-10-23T19:33:45.491450+00:00",
+      "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfDelimiterSearch_M2/generation.stdout",
+      "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfDelimiterSearch_M2/generation.stderr",
+      "stderr_tail": "",
+      "subject": "SpfDelimiterSearch",
+      "class_name": "SpfDelimiterSearch_M2",
+      "session": "extpaper_kill_original_SpfDelimiterSearch_M2_1792784022608796000",
+      "result_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_original_SpfDelimiterSearch_M2_1792784022608796000/SpfDelimiterSearch_M2",
+      "folder": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfDelimiterSearch_M2",
+      "mode": "original",
+      "strategy": "batch",
+      "workers": 4,
+      "max_iter": 100,
+      "range_bound": 200,
+      "tag": "kill_original",
+      "cct": {
+        "total_nodes": 37,
+        "internal_nodes": 19,
+        "leaf_nodes": 18,
+        "empty_leaves": 2,
+        "covered_leaves": 12,
+        "valid_testcases": 12,
+        "infeasible_leaves": 6,
+        "out_of_range_leaves": 0,
+        "truncated_leaves": 1,
+        "expanded_nodes": 0,
+        "expanded_internal_nodes": 0,
+        "expanded_leaves": 0,
+        "tbfv_fault_leaves": 0,
+        "tbfv_failure_cases": 0,
+        "tbfv_failure_count": 0,
+        "max_depth": 19
+      },
+      "testcase_stats": {
+        "generated_records": 12,
+        "executable_records": 12,
+        "trace_backed_records": 12,
+        "status_counts": {
+          "bootstrap": 1,
+          "batch_safe": 11
+        }
+      },
+      "full_event": true,
+      "error_events": [],
+      "fresh": true,
+      "status": "completed",
+      "fingerprint": {
+        "stage": "generation_fingerprint",
+        "schema_version": 1,
+        "condition_identity": "line+normalized-text+occurrence",
+        "testcase_ids_ignored": true,
+        "cct_structure_sha256": "3628c57cac8fd9915b2ac642d1bd85797d1aa832c420cd95342d1787a862dc49",
+        "cct_semantic_sha256": "6276a97b3a96e7a012439ebf24d940b1cb0e26a24b4c12c5b8aac1bdb5e1938a",
+        "test_inputs_sha256": "59c9fa14304162f1ecfe811495df0caadc45d06fe25473384e580f78f2fd65bc",
+        "concrete_input_count": 12
+      },
+      "frontier_mean": 3.6666666666666665,
+      "frontier_max": 11,
+      "verification": {
+        "command": [
+          "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+          "--csc-result-dir",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_original_SpfDelimiterSearch_M2_1792784022608796000/SpfDelimiterSearch_M2",
+          "--java-file",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfDelimiterSearch/SpfDelimiterSearch_M2.java",
+          "--fsf",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfDelimiterSearch/FSF/SpfDelimiterSearch_FSF.txt",
+          "--output",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfDelimiterSearch_M2/verification.json"
+        ],
+        "returncode": 0,
+        "timed_out": false,
+        "wall_time_s": 0.29096100002061576,
+        "started_at": "2026-10-23T19:33:45.499561+00:00",
+        "finished_at": "2026-10-23T19:33:45.790529+00:00",
+        "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfDelimiterSearch_M2/verification.stdout",
+        "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfDelimiterSearch_M2/verification.stderr",
+        "stderr_tail": "",
+        "summary": {
+          "testcases": 12,
+          "fsf_units": 5,
+          "passed": 11,
+          "failed": 2,
+          "skipped": 47,
+          "unsupported": 0
+        },
+        "status": "completed",
+        "killed": true
+      }
+    },
+    "expanded": {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfDelimiterSearch/SpfDelimiterSearch_M2.java",
+        "--mode",
+        "expanded",
+        "--range-bound",
+        "200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--max-iter",
+        "100",
+        "--session",
+        "extpaper_kill_expanded_SpfDelimiterSearch_M2_1792784025800229000",
+        "--keep-artifacts"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "wall_time_s": 4.48234066698933,
+      "started_at": "2026-10-23T19:33:45.800326+00:00",
+      "finished_at": "2026-10-23T19:33:50.282693+00:00",
+      "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfDelimiterSearch_M2/generation.stdout",
+      "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfDelimiterSearch_M2/generation.stderr",
+      "stderr_tail": "",
+      "subject": "SpfDelimiterSearch",
+      "class_name": "SpfDelimiterSearch_M2",
+      "session": "extpaper_kill_expanded_SpfDelimiterSearch_M2_1792784025800229000",
+      "result_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_expanded_SpfDelimiterSearch_M2_1792784025800229000/SpfDelimiterSearch_M2",
+      "folder": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfDelimiterSearch_M2",
+      "mode": "expanded",
+      "strategy": "batch",
+      "workers": 4,
+      "max_iter": 100,
+      "range_bound": 200,
+      "tag": "kill_expanded",
+      "cct": {
+        "total_nodes": 83,
+        "internal_nodes": 41,
+        "leaf_nodes": 42,
+        "empty_leaves": 0,
+        "covered_leaves": 17,
+        "valid_testcases": 17,
+        "infeasible_leaves": 25,
+        "out_of_range_leaves": 0,
+        "truncated_leaves": 0,
+        "expanded_nodes": 27,
+        "expanded_internal_nodes": 22,
+        "expanded_leaves": 5,
+        "tbfv_fault_leaves": 0,
+        "tbfv_failure_cases": 0,
+        "tbfv_failure_count": 0,
+        "max_depth": 41
+      },
+      "testcase_stats": {
+        "generated_records": 17,
+        "executable_records": 17,
+        "trace_backed_records": 17,
+        "status_counts": {
+          "bootstrap": 1,
+          "batch_safe": 16
+        }
+      },
+      "full_event": true,
+      "error_events": [],
+      "fresh": true,
+      "status": "completed",
+      "fingerprint": {
+        "stage": "generation_fingerprint",
+        "schema_version": 1,
+        "condition_identity": "line+normalized-text+occurrence",
+        "testcase_ids_ignored": true,
+        "cct_structure_sha256": "a95fefdd1e2aaea9cfe09fd2c86e02140b3e86296881c22bc99cd8327bb67726",
+        "cct_semantic_sha256": "75cf7f3c3d66d66b766a22aa0009d7a3ce2024852df393abf5c5ca64aae33667",
+        "test_inputs_sha256": "c7266788c33194a1f0f190a4e54cec857954af261b7ee49a4b598b36b77f7f6c",
+        "concrete_input_count": 17
+      },
+      "frontier_mean": 4.0,
+      "frontier_max": 11,
+      "verification": {
+        "command": [
+          "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+          "--csc-result-dir",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_expanded_SpfDelimiterSearch_M2_1792784025800229000/SpfDelimiterSearch_M2",
+          "--java-file",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfDelimiterSearch/SpfDelimiterSearch_M2.java",
+          "--fsf",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfDelimiterSearch/FSF/SpfDelimiterSearch_FSF.txt",
+          "--output",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfDelimiterSearch_M2/verification.json"
+        ],
+        "returncode": 0,
+        "timed_out": false,
+        "wall_time_s": 0.29801720805699006,
+        "started_at": "2026-10-23T19:33:50.291952+00:00",
+        "finished_at": "2026-10-23T19:33:50.589975+00:00",
+        "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfDelimiterSearch_M2/verification.stdout",
+        "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfDelimiterSearch_M2/verification.stderr",
+        "stderr_tail": "",
+        "summary": {
+          "testcases": 17,
+          "fsf_units": 5,
+          "passed": 15,
+          "failed": 4,
+          "skipped": 66,
+          "unsupported": 0
+        },
+        "status": "completed",
+        "killed": true
+      }
+    }
+  },
+  "localization": {
+    "mutant_id": "SpfDelimiterSearch_M2",
+    "subject": "SpfDelimiterSearch",
+    "operator": "ROR",
+    "fault_kind": "control-flow",
+    "fault_category": "condition",
+    "primary_line": 9,
+    "scoring_strategy": "coverage_x_purity",
+    "status": "evaluated",
+    "F_total": 4,
+    "P_total": 13,
+    "top1_budget": 2,
+    "top1_folded_hit": false,
+    "top1_sfl_hit": false,
+    "top2_budget": 4,
+    "top2_folded_hit": true,
+    "top2_sfl_hit": true,
+    "top3_budget": 6,
+    "top3_folded_hit": true,
+    "top3_sfl_hit": true,
+    "top1_condition_hit": false,
+    "top1_edge_partition_hit": false,
+    "top1_folded_region_lines": [
+      7,
+      15
+    ],
+    "top1_ochiai_hit": false,
+    "top1_ochiai_region_lines": [
+      6,
+      7
+    ],
+    "top1_tarantula_hit": false,
+    "top1_tarantula_region_lines": [
+      6,
+      7
+    ],
+    "top1_dstar_hit": false,
+    "top1_dstar_region_lines": [
+      6,
+      7
+    ],
+    "top1_barinel_hit": false,
+    "top1_barinel_region_lines": [
+      6,
+      7
+    ],
+    "top1_op2_hit": false,
+    "top1_op2_region_lines": [
+      6,
+      7
+    ],
+    "top2_condition_hit": true,
+    "top2_edge_partition_hit": false,
+    "top2_folded_region_lines": [
+      6,
+      7,
+      9,
+      15
+    ],
+    "top2_ochiai_hit": true,
+    "top2_ochiai_region_lines": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "top2_tarantula_hit": true,
+    "top2_tarantula_region_lines": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "top2_dstar_hit": true,
+    "top2_dstar_region_lines": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "top2_barinel_hit": true,
+    "top2_barinel_region_lines": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "top2_op2_hit": true,
+    "top2_op2_region_lines": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "top3_condition_hit": true,
+    "top3_edge_partition_hit": false,
+    "top3_folded_region_lines": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      15
+    ],
+    "top3_ochiai_hit": true,
+    "top3_ochiai_region_lines": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "top3_tarantula_hit": true,
+    "top3_tarantula_region_lines": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "top3_dstar_hit": true,
+    "top3_dstar_region_lines": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "top3_barinel_hit": true,
+    "top3_barinel_region_lines": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "top3_op2_hit": true,
+    "top3_op2_region_lines": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  }
+}

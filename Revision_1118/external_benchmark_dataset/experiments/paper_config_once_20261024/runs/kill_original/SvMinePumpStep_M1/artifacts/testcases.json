@@ -1,0 +1,463 @@
+[
+  {
+    "iteration": 0,
+    "inputs": {
+      "water": 0,
+      "running": true,
+      "active": true,
+      "methane": true
+    },
+    "path_constraint": "bootstrap",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvMinePumpStep_M1_1792784307955729000/SvMinePumpStep_M1/traces/bootstrap/trace.jsonl",
+    "status": "bootstrap",
+    "strategy": "batch",
+    "timings": {
+      "compile_time_ms": 304,
+      "java_exec_time_ms": 52,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "test_case_id": "tc_2_b0",
+    "iteration": 2,
+    "branch_idx": 0,
+    "inputs": {
+      "water": "16384",
+      "running": "False",
+      "active": "False",
+      "methane": "False"
+    },
+    "path_constraint": "(!(water <= 0))",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvMinePumpStep_M1_1792784307955729000/SvMinePumpStep_M1/traces/round_02/b0/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 287,
+      "java_exec_time_ms": 68,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 356,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 356,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 357,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 287,
+        "java_exec_time_ms": 68,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 356,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_3_b0",
+    "iteration": 3,
+    "branch_idx": 0,
+    "inputs": {
+      "water": "1",
+      "running": "False",
+      "active": "False",
+      "methane": "False"
+    },
+    "path_constraint": "(!(water <= 0)) && (!(water > 2))",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvMinePumpStep_M1_1792784307955729000/SvMinePumpStep_M1/traces/round_03/b0/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 279,
+      "java_exec_time_ms": 59,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 339,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 339,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 340,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 279,
+        "java_exec_time_ms": 59,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 339,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_4_b0",
+    "iteration": 4,
+    "branch_idx": 0,
+    "inputs": {
+      "water": "1",
+      "running": "False",
+      "active": "True",
+      "methane": "False"
+    },
+    "path_constraint": "(!(water <= 0)) && (!(water > 2)) && (!(running)) && (active)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvMinePumpStep_M1_1792784307955729000/SvMinePumpStep_M1/traces/round_04/b0/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 367,
+      "java_exec_time_ms": 75,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 443,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 444,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 444,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 725,
+        "java_exec_time_ms": 155,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 882,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_4_b1",
+    "iteration": 4,
+    "branch_idx": 1,
+    "inputs": {
+      "water": "1",
+      "running": "True",
+      "active": "False",
+      "methane": "False"
+    },
+    "path_constraint": "(!(water <= 0)) && (!(water > 2)) && (running)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvMinePumpStep_M1_1792784307955729000/SvMinePumpStep_M1/traces/round_04/b1/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 358,
+      "java_exec_time_ms": 80,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 439,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 444,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 444,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 725,
+        "java_exec_time_ms": 155,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 882,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_5_b0",
+    "iteration": 5,
+    "branch_idx": 0,
+    "inputs": {
+      "water": "2",
+      "running": "False",
+      "active": "True",
+      "methane": "False"
+    },
+    "path_constraint": "(!(water <= 0)) && (!(water > 2)) && (!(running)) && (active) && (!(running)) && (!(running)) && (!(running)) && ((water) == 2)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvMinePumpStep_M1_1792784307955729000/SvMinePumpStep_M1/traces/round_05/b0/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 431,
+      "java_exec_time_ms": 75,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 508,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 540,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 541,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 1322,
+        "java_exec_time_ms": 239,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 1565,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_5_b1",
+    "iteration": 5,
+    "branch_idx": 1,
+    "inputs": {
+      "water": "1",
+      "running": "True",
+      "active": "True",
+      "methane": "False"
+    },
+    "path_constraint": "(!(water <= 0)) && (!(water > 2)) && (running) && (!((water) == 2)) && ((water) == 1) && (active)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvMinePumpStep_M1_1792784307955729000/SvMinePumpStep_M1/traces/round_05/b1/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 442,
+      "java_exec_time_ms": 75,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 517,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 540,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 541,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 1322,
+        "java_exec_time_ms": 239,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 1565,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_5_b2",
+    "iteration": 5,
+    "branch_idx": 2,
+    "inputs": {
+      "water": "2",
+      "running": "True",
+      "active": "False",
+      "methane": "False"
+    },
+    "path_constraint": "(!(water <= 0)) && (!(water > 2)) && (running) && ((water) == 2)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvMinePumpStep_M1_1792784307955729000/SvMinePumpStep_M1/traces/round_05/b2/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 449,
+      "java_exec_time_ms": 89,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 540,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 540,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 541,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 1322,
+        "java_exec_time_ms": 239,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 1565,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_6_b0",
+    "iteration": 6,
+    "branch_idx": 0,
+    "inputs": {
+      "water": "2",
+      "running": "False",
+      "active": "True",
+      "methane": "True"
+    },
+    "path_constraint": "(!(water <= 0)) && (!(water > 2)) && (!(running)) && (active) && (!(running)) && (!(running)) && (!(running)) && ((water) == 2) && (methane)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvMinePumpStep_M1_1792784307955729000/SvMinePumpStep_M1/traces/round_06/b0/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 511,
+      "java_exec_time_ms": 83,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 595,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 600,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 601,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 1521,
+        "java_exec_time_ms": 264,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 1790,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_6_b1",
+    "iteration": 6,
+    "branch_idx": 1,
+    "inputs": {
+      "water": "1",
+      "running": "True",
+      "active": "True",
+      "methane": "True"
+    },
+    "path_constraint": "(!(water <= 0)) && (!(water > 2)) && (running) && (!((water) == 2)) && ((water) == 1) && (active) && (running) && (methane)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvMinePumpStep_M1_1792784307955729000/SvMinePumpStep_M1/traces/round_06/b1/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 507,
+      "java_exec_time_ms": 92,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 600,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 600,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 601,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 1521,
+        "java_exec_time_ms": 264,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 1790,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_6_b2",
+    "iteration": 6,
+    "branch_idx": 2,
+    "inputs": {
+      "water": "2",
+      "running": "True",
+      "active": "True",
+      "methane": "False"
+    },
+    "path_constraint": "(!(water <= 0)) && (!(water > 2)) && (running) && ((water) == 2) && (active)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvMinePumpStep_M1_1792784307955729000/SvMinePumpStep_M1/traces/round_06/b2/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 503,
+      "java_exec_time_ms": 89,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 595,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 600,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 601,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 1521,
+        "java_exec_time_ms": 264,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 1790,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_7_b0",
+    "iteration": 7,
+    "branch_idx": 0,
+    "inputs": {
+      "water": "2",
+      "running": "True",
+      "active": "True",
+      "methane": "True"
+    },
+    "path_constraint": "(!(water <= 0)) && (!(water > 2)) && (running) && ((water) == 2) && (active) && (running) && (methane)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvMinePumpStep_M1_1792784307955729000/SvMinePumpStep_M1/traces/round_07/b0/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 356,
+      "java_exec_time_ms": 74,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 431,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 431,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 432,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 356,
+        "java_exec_time_ms": 74,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 431,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  }
+]

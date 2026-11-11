@@ -1,0 +1,369 @@
+{
+  "mutant_id": "D4jCharSqueeze_M3",
+  "subject": "D4jCharSqueeze",
+  "operator": "LOR",
+  "fault_category": "condition",
+  "loop_bearing": true,
+  "modes": {
+    "original": {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/D4jCharSqueeze/D4jCharSqueeze_M3.java",
+        "--mode",
+        "original",
+        "--range-bound",
+        "200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--max-iter",
+        "100",
+        "--session",
+        "extpaper_kill_original_D4jCharSqueeze_M3_1792784883919103000",
+        "--keep-artifacts"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "wall_time_s": 5.28010512504261,
+      "started_at": "2026-10-23T19:48:03.919175+00:00",
+      "finished_at": "2026-10-23T19:48:09.199326+00:00",
+      "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/D4jCharSqueeze_M3/generation.stdout",
+      "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/D4jCharSqueeze_M3/generation.stderr",
+      "stderr_tail": "",
+      "subject": "D4jCharSqueeze",
+      "class_name": "D4jCharSqueeze_M3",
+      "session": "extpaper_kill_original_D4jCharSqueeze_M3_1792784883919103000",
+      "result_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_original_D4jCharSqueeze_M3_1792784883919103000/D4jCharSqueeze_M3",
+      "folder": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/D4jCharSqueeze_M3",
+      "mode": "original",
+      "strategy": "batch",
+      "workers": 4,
+      "max_iter": 100,
+      "range_bound": 200,
+      "tag": "kill_original",
+      "cct": {
+        "total_nodes": 47,
+        "internal_nodes": 24,
+        "leaf_nodes": 23,
+        "empty_leaves": 2,
+        "covered_leaves": 14,
+        "valid_testcases": 14,
+        "infeasible_leaves": 9,
+        "out_of_range_leaves": 0,
+        "truncated_leaves": 1,
+        "expanded_nodes": 0,
+        "expanded_internal_nodes": 0,
+        "expanded_leaves": 0,
+        "tbfv_fault_leaves": 0,
+        "tbfv_failure_cases": 0,
+        "tbfv_failure_count": 0,
+        "max_depth": 24
+      },
+      "testcase_stats": {
+        "generated_records": 14,
+        "executable_records": 14,
+        "trace_backed_records": 14,
+        "status_counts": {
+          "bootstrap": 1,
+          "batch_safe": 13
+        }
+      },
+      "full_event": true,
+      "error_events": [],
+      "fresh": true,
+      "status": "completed",
+      "fingerprint": {
+        "stage": "generation_fingerprint",
+        "schema_version": 1,
+        "condition_identity": "line+normalized-text+occurrence",
+        "testcase_ids_ignored": true,
+        "cct_structure_sha256": "1f5af17adc499fba9306b7bffe64ef588b46871db65ad82cc436d1f8ad91fe5a",
+        "cct_semantic_sha256": "0f3521e7f7c4b7528241663cea27e73857daaff93e573d4a0164e821c4bceec8",
+        "test_inputs_sha256": "5c0cfe650b353ae618590ec34a2a21b579230ba7765a271fe07143e05acac33d",
+        "concrete_input_count": 14
+      },
+      "frontier_mean": 0.9285714285714286,
+      "frontier_max": 1,
+      "verification": {
+        "command": [
+          "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+          "--csc-result-dir",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_original_D4jCharSqueeze_M3_1792784883919103000/D4jCharSqueeze_M3",
+          "--java-file",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/D4jCharSqueeze/D4jCharSqueeze_M3.java",
+          "--fsf",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/D4jCharSqueeze/FSF/D4jCharSqueeze_FSF.txt",
+          "--output",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/D4jCharSqueeze_M3/verification.json"
+        ],
+        "returncode": 0,
+        "timed_out": false,
+        "wall_time_s": 0.2682584169670008,
+        "started_at": "2026-10-23T19:48:09.206103+00:00",
+        "finished_at": "2026-10-23T19:48:09.474370+00:00",
+        "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/D4jCharSqueeze_M3/verification.stdout",
+        "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/D4jCharSqueeze_M3/verification.stderr",
+        "stderr_tail": "",
+        "summary": {
+          "testcases": 14,
+          "fsf_units": 9,
+          "passed": 13,
+          "failed": 4,
+          "skipped": 109,
+          "unsupported": 0
+        },
+        "status": "completed",
+        "killed": true
+      }
+    },
+    "expanded": {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/D4jCharSqueeze/D4jCharSqueeze_M3.java",
+        "--mode",
+        "expanded",
+        "--range-bound",
+        "200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--max-iter",
+        "100",
+        "--session",
+        "extpaper_kill_expanded_D4jCharSqueeze_M3_1792784889483590000",
+        "--keep-artifacts"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "wall_time_s": 18.603142290958203,
+      "started_at": "2026-10-23T19:48:09.483667+00:00",
+      "finished_at": "2026-10-23T19:48:28.086953+00:00",
+      "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/D4jCharSqueeze_M3/generation.stdout.gz",
+      "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/D4jCharSqueeze_M3/generation.stderr",
+      "stderr_tail": "",
+      "subject": "D4jCharSqueeze",
+      "class_name": "D4jCharSqueeze_M3",
+      "session": "extpaper_kill_expanded_D4jCharSqueeze_M3_1792784889483590000",
+      "result_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_expanded_D4jCharSqueeze_M3_1792784889483590000/D4jCharSqueeze_M3",
+      "folder": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/D4jCharSqueeze_M3",
+      "mode": "expanded",
+      "strategy": "batch",
+      "workers": 4,
+      "max_iter": 100,
+      "range_bound": 200,
+      "tag": "kill_expanded",
+      "cct": {
+        "total_nodes": 495,
+        "internal_nodes": 247,
+        "leaf_nodes": 248,
+        "empty_leaves": 0,
+        "covered_leaves": 73,
+        "valid_testcases": 73,
+        "infeasible_leaves": 175,
+        "out_of_range_leaves": 0,
+        "truncated_leaves": 0,
+        "expanded_nodes": 280,
+        "expanded_internal_nodes": 220,
+        "expanded_leaves": 60,
+        "tbfv_fault_leaves": 0,
+        "tbfv_failure_cases": 0,
+        "tbfv_failure_count": 0,
+        "max_depth": 44
+      },
+      "testcase_stats": {
+        "generated_records": 73,
+        "executable_records": 73,
+        "trace_backed_records": 73,
+        "status_counts": {
+          "bootstrap": 1,
+          "batch_safe": 72
+        }
+      },
+      "full_event": true,
+      "error_events": [],
+      "fresh": true,
+      "status": "completed",
+      "fingerprint": {
+        "stage": "generation_fingerprint",
+        "schema_version": 1,
+        "condition_identity": "line+normalized-text+occurrence",
+        "testcase_ids_ignored": true,
+        "cct_structure_sha256": "d29089faf8dec0e8c58a803eb4e900883d0ead5ea66a73194d23a7fa0a4e45bd",
+        "cct_semantic_sha256": "f419c283b52a731137c1b8d0db54fcaaa86e1709e60f9109ff54e8808f8ca6c1",
+        "test_inputs_sha256": "99c61283397aa2743655ca4749ba321979a803639c0b5d48f34c584fdb41267a",
+        "concrete_input_count": 73
+      },
+      "frontier_mean": 3.6,
+      "frontier_max": 18,
+      "verification": {
+        "command": [
+          "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+          "--csc-result-dir",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_expanded_D4jCharSqueeze_M3_1792784889483590000/D4jCharSqueeze_M3",
+          "--java-file",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/D4jCharSqueeze/D4jCharSqueeze_M3.java",
+          "--fsf",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/D4jCharSqueeze/FSF/D4jCharSqueeze_FSF.txt",
+          "--output",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/D4jCharSqueeze_M3/verification.json"
+        ],
+        "returncode": 0,
+        "timed_out": false,
+        "wall_time_s": 2.1909641249803826,
+        "started_at": "2026-10-23T19:48:28.125799+00:00",
+        "finished_at": "2026-10-23T19:48:30.316784+00:00",
+        "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/D4jCharSqueeze_M3/verification.stdout",
+        "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/D4jCharSqueeze_M3/verification.stderr",
+        "stderr_tail": "",
+        "summary": {
+          "testcases": 73,
+          "fsf_units": 9,
+          "passed": 24,
+          "failed": 74,
+          "skipped": 559,
+          "unsupported": 0
+        },
+        "status": "completed",
+        "killed": true
+      }
+    }
+  },
+  "localization": {
+    "mutant_id": "D4jCharSqueeze_M3",
+    "subject": "D4jCharSqueeze",
+    "operator": "LOR",
+    "fault_kind": "control-flow",
+    "fault_category": "condition",
+    "primary_line": 29,
+    "scoring_strategy": "coverage_x_purity",
+    "status": "evaluated",
+    "F_total": 56,
+    "P_total": 17,
+    "top1_budget": 2,
+    "top1_folded_hit": false,
+    "top1_sfl_hit": false,
+    "top2_budget": 3,
+    "top2_folded_hit": false,
+    "top2_sfl_hit": false,
+    "top3_budget": 4,
+    "top3_folded_hit": false,
+    "top3_sfl_hit": false,
+    "top1_condition_hit": false,
+    "top1_edge_partition_hit": false,
+    "top1_folded_region_lines": [
+      24,
+      25
+    ],
+    "top1_ochiai_hit": false,
+    "top1_ochiai_region_lines": [
+      21,
+      22
+    ],
+    "top1_tarantula_hit": false,
+    "top1_tarantula_region_lines": [
+      21,
+      22
+    ],
+    "top1_dstar_hit": false,
+    "top1_dstar_region_lines": [
+      21,
+      22
+    ],
+    "top1_barinel_hit": false,
+    "top1_barinel_region_lines": [
+      21,
+      22
+    ],
+    "top1_op2_hit": false,
+    "top1_op2_region_lines": [
+      21,
+      22
+    ],
+    "top2_condition_hit": false,
+    "top2_edge_partition_hit": false,
+    "top2_folded_region_lines": [
+      24,
+      25,
+      26
+    ],
+    "top2_ochiai_hit": false,
+    "top2_ochiai_region_lines": [
+      21,
+      22,
+      23
+    ],
+    "top2_tarantula_hit": false,
+    "top2_tarantula_region_lines": [
+      21,
+      22,
+      23
+    ],
+    "top2_dstar_hit": false,
+    "top2_dstar_region_lines": [
+      21,
+      22,
+      23
+    ],
+    "top2_barinel_hit": false,
+    "top2_barinel_region_lines": [
+      21,
+      22,
+      23
+    ],
+    "top2_op2_hit": false,
+    "top2_op2_region_lines": [
+      21,
+      22,
+      23
+    ],
+    "top3_condition_hit": false,
+    "top3_edge_partition_hit": false,
+    "top3_folded_region_lines": [
+      24,
+      25,
+      26,
+      27
+    ],
+    "top3_ochiai_hit": false,
+    "top3_ochiai_region_lines": [
+      21,
+      22,
+      23,
+      24
+    ],
+    "top3_tarantula_hit": false,
+    "top3_tarantula_region_lines": [
+      21,
+      22,
+      23,
+      24
+    ],
+    "top3_dstar_hit": false,
+    "top3_dstar_region_lines": [
+      21,
+      22,
+      23,
+      24
+    ],
+    "top3_barinel_hit": false,
+    "top3_barinel_region_lines": [
+      21,
+      22,
+      23,
+      24
+    ],
+    "top3_op2_hit": false,
+    "top3_op2_region_lines": [
+      21,
+      22,
+      23,
+      24
+    ]
+  }
+}

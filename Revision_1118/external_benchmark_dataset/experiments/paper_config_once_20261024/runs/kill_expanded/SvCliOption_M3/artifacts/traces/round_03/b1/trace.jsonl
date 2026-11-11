@@ -1,0 +1,14 @@
+{"type":"COND","line":11,"kind":"if","order":1,"expr":"code < 0","value":false}
+{"type":"COND","line":11,"kind":"if","order":2,"expr":"code > 127","value":false}
+{"type":"ASSIGN","line":12,"kind":"var_decl","target":"valid","rhs":"false","value":"false"}
+{"type":"COND","line":13,"kind":"if","order":1,"expr":"code >= 97","value":false}
+{"type":"COND","line":13,"kind":"if","order":3,"expr":"code >= 65","value":true}
+{"type":"COND","line":13,"kind":"if","order":4,"expr":"code <= 90","value":true}
+{"type":"ASSIGN","line":13,"kind":"assign","target":"valid","rhs":"true","value":"true"}
+{"type":"ASSIGN","line":14,"kind":"var_decl","target":"option","rhs":"false","value":"false"}
+{"type":"COND","line":15,"kind":"if","order":1,"expr":"valid","value":true}
+{"type":"COND","line":15,"kind":"if","order":2,"expr":"code == 32","value":false}
+{"type":"COND","line":15,"kind":"if","order":3,"expr":"code == 63","value":false}
+{"type":"COND","line":15,"kind":"if","order":4,"expr":"code == 64","value":false}
+{"type":"COND","line":16,"kind":"if","order":1,"expr":"option","value":false}
+{"type":"RETURN","line":16,"target":"return_value","rhs":"-1","value":"-1"}

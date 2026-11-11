@@ -1,0 +1,54 @@
+{"type":"COND","line":21,"kind":"if","order":1,"expr":"PedalPos <= 0","value":false}
+{"type":"COND","line":21,"kind":"if","order":2,"expr":"PedalPos > 4","value":false}
+{"type":"COND","line":21,"kind":"if","order":3,"expr":"prevMode < 0","value":false}
+{"type":"COND","line":21,"kind":"if","order":4,"expr":"prevMode > 1","value":false}
+{"type":"COND","line":21,"kind":"if","order":5,"expr":"prevCommand < 0","value":false}
+{"type":"COND","line":21,"kind":"if","order":6,"expr":"prevCommand > 4","value":false}
+{"type":"COND","line":21,"kind":"if","order":7,"expr":"prevPressure < 0","value":false}
+{"type":"COND","line":21,"kind":"if","order":8,"expr":"prevPressure > 5","value":false}
+{"type":"ASSIGN","line":22,"kind":"var_decl","target":"Nor_Pressure","rhs":"0","value":"0"}
+{"type":"ASSIGN","line":22,"kind":"var_decl","target":"Alt_Pressure","rhs":"0","value":"0"}
+{"type":"ASSIGN","line":22,"kind":"var_decl","target":"Sys_Mode","rhs":"0","value":"0"}
+{"type":"ASSIGN","line":40,"kind":"assign","target":"WBS_Node_WBS_Unit_Delay2","rhs":"prevPressure","value":"0"}
+{"type":"ASSIGN","line":41,"kind":"assign","target":"WBS_Node_WBS_BSCU_Unit_Delay1","rhs":"prevCommand","value":"4"}
+{"type":"ASSIGN","line":42,"kind":"assign","target":"WBS_Node_WBS_BSCU_SystemModeSelCmd_Unit_Delay","rhs":"prevMode","value":"0"}
+{"type":"ASSIGN","line":44,"kind":"assign","target":"WBS_Node_WBS_BSCU_Command_Is_Normal_Relational_Operator","rhs":"(WBS_Node_WBS_BSCU_SystemModeSelCmd_Unit_Delay == 0)","value":"true"}
+{"type":"COND","line":46,"kind":"if","order":1,"expr":"PedalPos == 0","value":false}
+{"type":"COND","line":49,"kind":"if","order":1,"expr":"PedalPos == 1","value":true}
+{"type":"ASSIGN","line":50,"kind":"assign","target":"WBS_Node_WBS_BSCU_Command_PedalCommand_Switch1","rhs":"1","value":"1"}
+{"type":"COND","line":68,"kind":"if","order":1,"expr":"AutoBrake","value":false}
+{"type":"ASSIGN","line":72,"kind":"assign","target":"WBS_Node_WBS_BSCU_Command_Switch","rhs":"0","value":"0"}
+{"type":"ASSIGN","line":75,"kind":"assign","target":"WBS_Node_WBS_BSCU_SystemModeSelCmd_Logical_Operator6","rhs":"((((!(WBS_Node_WBS_BSCU_Unit_Delay1 == 0)) && (WBS_Node_WBS_Unit_Delay2 <= 0)) && WBS_Node_WBS_BSCU_Command_Is_Normal_Relational_Operator) || (!WBS_Node_WBS_BSCU_Command_Is_Normal_Relational_Operator))","value":"true"}
+{"type":"COND","line":80,"kind":"if","order":1,"expr":"WBS_Node_WBS_BSCU_SystemModeSelCmd_Logical_Operator6","value":true}
+{"type":"COND","line":81,"kind":"if","order":1,"expr":"Skid","value":false}
+{"type":"ASSIGN","line":84,"kind":"assign","target":"WBS_Node_WBS_BSCU_Switch3","rhs":"4","value":"4"}
+{"type":"COND","line":90,"kind":"if","order":1,"expr":"WBS_Node_WBS_BSCU_SystemModeSelCmd_Logical_Operator6","value":true}
+{"type":"ASSIGN","line":91,"kind":"assign","target":"WBS_Node_WBS_Green_Pump_IsolationValve_Switch","rhs":"0","value":"0"}
+{"type":"COND","line":96,"kind":"if","order":1,"expr":"WBS_Node_WBS_Green_Pump_IsolationValve_Switch >= 1","value":false}
+{"type":"ASSIGN","line":100,"kind":"assign","target":"WBS_Node_WBS_SelectorValve_Switch1","rhs":"5","value":"5"}
+{"type":"COND","line":103,"kind":"if","order":1,"expr":"WBS_Node_WBS_BSCU_SystemModeSelCmd_Logical_Operator6","value":true}
+{"type":"COND","line":106,"kind":"if","order":1,"expr":"WBS_Node_WBS_SelectorValve_Switch1 >= 1","value":true}
+{"type":"ASSIGN","line":107,"kind":"assign","target":"WBS_Node_WBS_AccumulatorValve_Switch","rhs":"WBS_Node_WBS_SelectorValve_Switch1","value":"5"}
+{"type":"COND","line":114,"kind":"if","order":1,"expr":"WBS_Node_WBS_BSCU_Switch3 == 0","value":false}
+{"type":"COND","line":117,"kind":"if","order":1,"expr":"WBS_Node_WBS_BSCU_Switch3 == 1","value":false}
+{"type":"COND","line":120,"kind":"if","order":1,"expr":"WBS_Node_WBS_BSCU_Switch3 == 2","value":false}
+{"type":"COND","line":123,"kind":"if","order":1,"expr":"WBS_Node_WBS_BSCU_Switch3 == 3","value":false}
+{"type":"COND","line":126,"kind":"if","order":1,"expr":"WBS_Node_WBS_BSCU_Switch3 == 4","value":true}
+{"type":"ASSIGN","line":127,"kind":"assign","target":"WBS_Node_WBS_AS_MeterValve_Switch","rhs":"WBS_Node_WBS_AccumulatorValve_Switch","value":"5"}
+{"type":"COND","line":136,"kind":"if","order":1,"expr":"Skid","value":false}
+{"type":"ASSIGN","line":139,"kind":"assign","target":"WBS_Node_WBS_BSCU_Command_AntiSkidCommand_Normal_Switch","rhs":"(WBS_Node_WBS_BSCU_Command_Switch + WBS_Node_WBS_BSCU_Command_PedalCommand_Switch1)","value":"1"}
+{"type":"COND","line":142,"kind":"if","order":1,"expr":"WBS_Node_WBS_BSCU_SystemModeSelCmd_Logical_Operator6","value":true}
+{"type":"ASSIGN","line":143,"kind":"assign","target":"Sys_Mode","rhs":"1","value":"1"}
+{"type":"COND","line":148,"kind":"if","order":1,"expr":"WBS_Node_WBS_BSCU_SystemModeSelCmd_Logical_Operator6","value":true}
+{"type":"ASSIGN","line":149,"kind":"assign","target":"WBS_Node_WBS_BSCU_Switch2","rhs":"0","value":"0"}
+{"type":"COND","line":174,"kind":"if","order":1,"expr":"WBS_Node_WBS_Green_Pump_IsolationValve_Switch >= 1","value":false}
+{"type":"ASSIGN","line":177,"kind":"assign","target":"WBS_Node_WBS_SelectorValve_Switch","rhs":"0","value":"0"}
+{"type":"COND","line":180,"kind":"if","order":1,"expr":"WBS_Node_WBS_BSCU_Switch2 == 0","value":true}
+{"type":"ASSIGN","line":181,"kind":"assign","target":"Nor_Pressure","rhs":"0","value":"0"}
+{"type":"COND","line":202,"kind":"if","order":1,"expr":"WBS_Node_WBS_BSCU_Command_PedalCommand_Switch1 == 0","value":false}
+{"type":"COND","line":205,"kind":"if","order":1,"expr":"WBS_Node_WBS_BSCU_Command_PedalCommand_Switch1 == 1","value":true}
+{"type":"ASSIGN","line":206,"kind":"assign","target":"Alt_Pressure","rhs":"(WBS_Node_WBS_AS_MeterValve_Switch / 4)","value":"1"}
+{"type":"ASSIGN","line":224,"kind":"assign","target":"prevPressure","rhs":"Nor_Pressure","value":"0"}
+{"type":"ASSIGN","line":226,"kind":"assign","target":"prevCommand","rhs":"WBS_Node_WBS_BSCU_Switch2","value":"0"}
+{"type":"ASSIGN","line":228,"kind":"assign","target":"prevMode","rhs":"Sys_Mode","value":"1"}
+{"type":"RETURN","line":231,"target":"return_value","rhs":"Nor_Pressure + 10 * Alt_Pressure + 100 * Sys_Mode","value":"110"}

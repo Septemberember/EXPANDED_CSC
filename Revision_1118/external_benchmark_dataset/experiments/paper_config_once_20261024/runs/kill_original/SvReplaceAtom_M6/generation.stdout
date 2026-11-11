@@ -1,0 +1,1847 @@
+=======================================================
+  CSC Engine — Test Case Generator
+=======================================================
+  Source:       /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SvReplaceAtom/SvReplaceAtom_M6.java
+  Mode:         Original CSC
+  Max iter:     100
+  Strategy:     batch
+  Workers:      4
+  Session:      extpaper_kill_original_SvReplaceAtom_M6_1792784656462180000
+  CCT render:   no
+
+[1/3] Auto-instrumenting Java source...
+  [instrument] /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SvReplaceAtom/SvReplaceAtom_M6.java -> /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SvReplaceAtom/SvReplaceAtom_M6_instrumented.java
+  Class:        SvReplaceAtom_M6
+  Params:       {'return_value': 'int', 'kind': 'int', 'ch': 'int', 'a': 'int', 'b': 'int', 'index': 'int'}
+  Run log:      csc_tmp/extpaper_kill_original_SvReplaceAtom_M6_1792784656462180000/SvReplaceAtom_M6/run_log.jsonl
+
+[2/3] Compiling...
+  [compile] SvReplaceAtom_M6.class
+[3/3] CSC Loop
+---------------------------------------------
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+{Ø}
+-----------------------------
+
+
+  [Batch Round 1] CCT not initialized — running bootstrap
+  Bootstrap inputs: {'kind': 0, 'ch': 0, 'a': 0, 'b': 0, 'index': 0}
+  Execution path: 14 steps, 12 conditions
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SvReplaceAtom_M6_1792784656462180000/SvReplaceAtom_M6/SvReplaceAtom_M6_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: kind < 0 @L5 (WP: kind < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: kind > 3 @L5 (WP: kind > 3, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: ch < 0 @L5 (WP: ch < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: ch > 10 @L5 (WP: ch > 10, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: a < 0 @L5 (WP: a < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: a > 10 @L5 (WP: a > 10, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: b < 0 @L5 (WP: b < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: b > 10 @L5 (WP: b > 10, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: index < 0 @L5 (WP: index < 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: index > 1 @L5 (WP: index > 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 0 @L7 (WP: ch != 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(kind=0, ch=0, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Batch Round 2] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: kind < 0 @L5 (WP: kind < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: kind > 3 @L5 (WP: kind > 3, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: ch < 0 @L5 (WP: ch < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: ch > 10 @L5 (WP: ch > 10, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: a < 0 @L5 (WP: a < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: a > 10 @L5 (WP: a > 10, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: b < 0 @L5 (WP: b < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: b > 10 @L5 (WP: b > 10, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: index < 0 @L5 (WP: index < 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: index > 1 @L5 (WP: index > 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 0 @L7 (WP: ch != 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(kind=0, ch=0, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SvReplaceAtom_M6_1792784656462180000/SvReplaceAtom_M6/SvReplaceAtom_M6_cct.dot
+  -> Executing 11 candidates with 4 workers; merging 1 terminal updates
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SvReplaceAtom_M6_1792784656462180000/SvReplaceAtom_M6/SvReplaceAtom_M6_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: kind < 0 @L5 (WP: kind < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: kind > 3 @L5 (WP: kind > 3, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: ch < 0 @L5 (WP: ch < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: ch > 10 @L5 (WP: ch > 10, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: a < 0 @L5 (WP: a < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: a > 10 @L5 (WP: a > 10, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: b < 0 @L5 (WP: b < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: b > 10 @L5 (WP: b > 10, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: index < 0 @L5 (WP: index < 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: index > 1 @L5 (WP: index > 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 0 @L7 (WP: ch != 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(kind=0, ch=0, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 0 @L8 (WP: kind == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == a @L8 (WP: ch == a, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(kind=0, ch=8, a=3, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(kind=0, ch=3, a=0, b=0, index=16384)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(kind=0, ch=0, a=3, b=0, index=-32768)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(kind=0, ch=3, a=0, b=11, index=0)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(kind=0, ch=0, a=0, b=-32768, index=0)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(kind=0, ch=0, a=11, b=0, index=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_2_b6'}  inputs: tc_2_b6(kind=0, ch=0, a=-32768, b=0, index=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_2_b7'}  inputs: tc_2_b7(kind=0, ch=16384, a=0, b=0, index=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b8'}  inputs: tc_2_b8(kind=0, ch=-32768, a=0, b=0, index=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b9'}  inputs: tc_2_b9(kind=16384, ch=0, a=0, b=0, index=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b10'}  inputs: tc_2_b10(kind=-32768, ch=0, a=0, b=0, index=0)
+-----------------------------
+
+
+  [Batch Round 3] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: kind < 0 @L5 (WP: kind < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: kind > 3 @L5 (WP: kind > 3, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: ch < 0 @L5 (WP: ch < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: ch > 10 @L5 (WP: ch > 10, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: a < 0 @L5 (WP: a < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: a > 10 @L5 (WP: a > 10, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: b < 0 @L5 (WP: b < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: b > 10 @L5 (WP: b > 10, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: index < 0 @L5 (WP: index < 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: index > 1 @L5 (WP: index > 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 0 @L7 (WP: ch != 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(kind=0, ch=0, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 0 @L8 (WP: kind == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == a @L8 (WP: ch == a, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(kind=0, ch=8, a=3, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(kind=0, ch=3, a=0, b=0, index=16384)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(kind=0, ch=0, a=3, b=0, index=-32768)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(kind=0, ch=3, a=0, b=11, index=0)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(kind=0, ch=0, a=0, b=-32768, index=0)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(kind=0, ch=0, a=11, b=0, index=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_2_b6'}  inputs: tc_2_b6(kind=0, ch=0, a=-32768, b=0, index=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_2_b7'}  inputs: tc_2_b7(kind=0, ch=16384, a=0, b=0, index=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b8'}  inputs: tc_2_b8(kind=0, ch=-32768, a=0, b=0, index=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b9'}  inputs: tc_2_b9(kind=16384, ch=0, a=0, b=0, index=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b10'}  inputs: tc_2_b10(kind=-32768, ch=0, a=0, b=0, index=0)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SvReplaceAtom_M6_1792784656462180000/SvReplaceAtom_M6/SvReplaceAtom_M6_cct.dot
+  -> Executing 2 candidates with 4 workers; merging 1 terminal updates
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SvReplaceAtom_M6_1792784656462180000/SvReplaceAtom_M6/SvReplaceAtom_M6_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: kind < 0 @L5 (WP: kind < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: kind > 3 @L5 (WP: kind > 3, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: ch < 0 @L5 (WP: ch < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: ch > 10 @L5 (WP: ch > 10, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: a < 0 @L5 (WP: a < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: a > 10 @L5 (WP: a > 10, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: b < 0 @L5 (WP: b < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: b > 10 @L5 (WP: b > 10, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: index < 0 @L5 (WP: index < 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: index > 1 @L5 (WP: index > 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 0 @L7 (WP: ch != 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(kind=0, ch=0, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 0 @L8 (WP: kind == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 1 @L9 (WP: kind == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 10 @L9 (WP: ch != 10, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(kind=1, ch=8, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == a @L8 (WP: ch == a, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(kind=0, ch=8, a=3, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(kind=0, ch=8, a=8, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(kind=0, ch=3, a=0, b=0, index=16384)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(kind=0, ch=0, a=3, b=0, index=-32768)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(kind=0, ch=3, a=0, b=11, index=0)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(kind=0, ch=0, a=0, b=-32768, index=0)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(kind=0, ch=0, a=11, b=0, index=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_2_b6'}  inputs: tc_2_b6(kind=0, ch=0, a=-32768, b=0, index=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_2_b7'}  inputs: tc_2_b7(kind=0, ch=16384, a=0, b=0, index=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b8'}  inputs: tc_2_b8(kind=0, ch=-32768, a=0, b=0, index=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b9'}  inputs: tc_2_b9(kind=16384, ch=0, a=0, b=0, index=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b10'}  inputs: tc_2_b10(kind=-32768, ch=0, a=0, b=0, index=0)
+-----------------------------
+
+
+  [Batch Round 4] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: kind < 0 @L5 (WP: kind < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: kind > 3 @L5 (WP: kind > 3, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: ch < 0 @L5 (WP: ch < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: ch > 10 @L5 (WP: ch > 10, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: a < 0 @L5 (WP: a < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: a > 10 @L5 (WP: a > 10, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: b < 0 @L5 (WP: b < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: b > 10 @L5 (WP: b > 10, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: index < 0 @L5 (WP: index < 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: index > 1 @L5 (WP: index > 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 0 @L7 (WP: ch != 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(kind=0, ch=0, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 0 @L8 (WP: kind == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 1 @L9 (WP: kind == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 10 @L9 (WP: ch != 10, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(kind=1, ch=8, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == a @L8 (WP: ch == a, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(kind=0, ch=8, a=3, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(kind=0, ch=8, a=8, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(kind=0, ch=3, a=0, b=0, index=16384)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(kind=0, ch=0, a=3, b=0, index=-32768)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(kind=0, ch=3, a=0, b=11, index=0)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(kind=0, ch=0, a=0, b=-32768, index=0)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(kind=0, ch=0, a=11, b=0, index=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_2_b6'}  inputs: tc_2_b6(kind=0, ch=0, a=-32768, b=0, index=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_2_b7'}  inputs: tc_2_b7(kind=0, ch=16384, a=0, b=0, index=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b8'}  inputs: tc_2_b8(kind=0, ch=-32768, a=0, b=0, index=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b9'}  inputs: tc_2_b9(kind=16384, ch=0, a=0, b=0, index=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b10'}  inputs: tc_2_b10(kind=-32768, ch=0, a=0, b=0, index=0)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SvReplaceAtom_M6_1792784656462180000/SvReplaceAtom_M6/SvReplaceAtom_M6_cct.dot
+  -> Executing 2 candidates with 4 workers; merging 2 terminal updates
+Path Truncation: loop count 3 exceeds bound 2.
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SvReplaceAtom_M6_1792784656462180000/SvReplaceAtom_M6/SvReplaceAtom_M6_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: kind < 0 @L5 (WP: kind < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: kind > 3 @L5 (WP: kind > 3, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: ch < 0 @L5 (WP: ch < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: ch > 10 @L5 (WP: ch > 10, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: a < 0 @L5 (WP: a < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: a > 10 @L5 (WP: a > 10, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: b < 0 @L5 (WP: b < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: b > 10 @L5 (WP: b > 10, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: index < 0 @L5 (WP: index < 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: index > 1 @L5 (WP: index > 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 0 @L7 (WP: ch != 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(kind=0, ch=0, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 0 @L8 (WP: kind == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 1 @L9 (WP: kind == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i > 0 @L13 (WP: (2) > 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L15 (WP: (2) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == value @L16 (WP: ch == (b), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i > 0 @L13 (WP: ((2) - 1) > 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L15 (WP: ((2) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == value @L16 (WP: ch == (a), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'} [TRUNCATED]  inputs: tc_4_b0(kind=2, ch=8, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 10 @L9 (WP: ch != 10, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b1'}  inputs: tc_4_b1(kind=1, ch=10, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(kind=1, ch=8, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == a @L8 (WP: ch == a, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(kind=0, ch=8, a=3, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(kind=0, ch=8, a=8, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(kind=0, ch=3, a=0, b=0, index=16384)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(kind=0, ch=0, a=3, b=0, index=-32768)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(kind=0, ch=3, a=0, b=11, index=0)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(kind=0, ch=0, a=0, b=-32768, index=0)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(kind=0, ch=0, a=11, b=0, index=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_2_b6'}  inputs: tc_2_b6(kind=0, ch=0, a=-32768, b=0, index=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_2_b7'}  inputs: tc_2_b7(kind=0, ch=16384, a=0, b=0, index=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b8'}  inputs: tc_2_b8(kind=0, ch=-32768, a=0, b=0, index=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b9'}  inputs: tc_2_b9(kind=16384, ch=0, a=0, b=0, index=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b10'}  inputs: tc_2_b10(kind=-32768, ch=0, a=0, b=0, index=0)
+-----------------------------
+
+
+  [Batch Round 5] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: kind < 0 @L5 (WP: kind < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: kind > 3 @L5 (WP: kind > 3, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: ch < 0 @L5 (WP: ch < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: ch > 10 @L5 (WP: ch > 10, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: a < 0 @L5 (WP: a < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: a > 10 @L5 (WP: a > 10, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: b < 0 @L5 (WP: b < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: b > 10 @L5 (WP: b > 10, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: index < 0 @L5 (WP: index < 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: index > 1 @L5 (WP: index > 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 0 @L7 (WP: ch != 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(kind=0, ch=0, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 0 @L8 (WP: kind == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 1 @L9 (WP: kind == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i > 0 @L13 (WP: (2) > 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L15 (WP: (2) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == value @L16 (WP: ch == (b), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i > 0 @L13 (WP: ((2) - 1) > 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L15 (WP: ((2) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == value @L16 (WP: ch == (a), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'} [TRUNCATED]  inputs: tc_4_b0(kind=2, ch=8, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 10 @L9 (WP: ch != 10, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b1'}  inputs: tc_4_b1(kind=1, ch=10, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(kind=1, ch=8, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == a @L8 (WP: ch == a, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(kind=0, ch=8, a=3, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(kind=0, ch=8, a=8, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(kind=0, ch=3, a=0, b=0, index=16384)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(kind=0, ch=0, a=3, b=0, index=-32768)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(kind=0, ch=3, a=0, b=11, index=0)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(kind=0, ch=0, a=0, b=-32768, index=0)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(kind=0, ch=0, a=11, b=0, index=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_2_b6'}  inputs: tc_2_b6(kind=0, ch=0, a=-32768, b=0, index=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_2_b7'}  inputs: tc_2_b7(kind=0, ch=16384, a=0, b=0, index=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b8'}  inputs: tc_2_b8(kind=0, ch=-32768, a=0, b=0, index=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b9'}  inputs: tc_2_b9(kind=16384, ch=0, a=0, b=0, index=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b10'}  inputs: tc_2_b10(kind=-32768, ch=0, a=0, b=0, index=0)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SvReplaceAtom_M6_1792784656462180000/SvReplaceAtom_M6/SvReplaceAtom_M6_cct.dot
+  -> Executing 2 candidates with 4 workers; merging 4 terminal updates
+Path Truncation: loop count 3 exceeds bound 2.
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SvReplaceAtom_M6_1792784656462180000/SvReplaceAtom_M6/SvReplaceAtom_M6_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: kind < 0 @L5 (WP: kind < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: kind > 3 @L5 (WP: kind > 3, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: ch < 0 @L5 (WP: ch < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: ch > 10 @L5 (WP: ch > 10, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: a < 0 @L5 (WP: a < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: a > 10 @L5 (WP: a > 10, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: b < 0 @L5 (WP: b < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: b > 10 @L5 (WP: b > 10, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: index < 0 @L5 (WP: index < 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: index > 1 @L5 (WP: index > 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 0 @L7 (WP: ch != 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(kind=0, ch=0, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 0 @L8 (WP: kind == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 1 @L9 (WP: kind == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i > 0 @L13 (WP: (2) > 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L15 (WP: (2) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == value @L16 (WP: ch == (b), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i > 0 @L13 (WP: ((2) - 1) > 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L15 (WP: ((2) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == value @L16 (WP: ch == (a), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'} [TRUNCATED]  inputs: tc_4_b0(kind=2, ch=8, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b0'} [TRUNCATED]  inputs: tc_5_b0(kind=2, ch=8, a=8, b=7, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i > 0 @L13 (WP: (0) > 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 2 @L18 (WP: kind == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: found @L18 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b1'}  inputs: tc_5_b1(kind=2, ch=8, a=3, b=8, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 10 @L9 (WP: ch != 10, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b1'}  inputs: tc_4_b1(kind=1, ch=10, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(kind=1, ch=8, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == a @L8 (WP: ch == a, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(kind=0, ch=8, a=3, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(kind=0, ch=8, a=8, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(kind=0, ch=3, a=0, b=0, index=16384)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(kind=0, ch=0, a=3, b=0, index=-32768)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(kind=0, ch=3, a=0, b=11, index=0)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(kind=0, ch=0, a=0, b=-32768, index=0)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(kind=0, ch=0, a=11, b=0, index=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_2_b6'}  inputs: tc_2_b6(kind=0, ch=0, a=-32768, b=0, index=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_2_b7'}  inputs: tc_2_b7(kind=0, ch=16384, a=0, b=0, index=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b8'}  inputs: tc_2_b8(kind=0, ch=-32768, a=0, b=0, index=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b9'}  inputs: tc_2_b9(kind=16384, ch=0, a=0, b=0, index=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b10'}  inputs: tc_2_b10(kind=-32768, ch=0, a=0, b=0, index=0)
+-----------------------------
+
+
+  [Batch Round 6] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: kind < 0 @L5 (WP: kind < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: kind > 3 @L5 (WP: kind > 3, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: ch < 0 @L5 (WP: ch < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: ch > 10 @L5 (WP: ch > 10, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: a < 0 @L5 (WP: a < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: a > 10 @L5 (WP: a > 10, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: b < 0 @L5 (WP: b < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: b > 10 @L5 (WP: b > 10, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: index < 0 @L5 (WP: index < 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: index > 1 @L5 (WP: index > 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 0 @L7 (WP: ch != 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(kind=0, ch=0, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 0 @L8 (WP: kind == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 1 @L9 (WP: kind == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i > 0 @L13 (WP: (2) > 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L15 (WP: (2) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == value @L16 (WP: ch == (b), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i > 0 @L13 (WP: ((2) - 1) > 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L15 (WP: ((2) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == value @L16 (WP: ch == (a), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'} [TRUNCATED]  inputs: tc_4_b0(kind=2, ch=8, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b0'} [TRUNCATED]  inputs: tc_5_b0(kind=2, ch=8, a=8, b=7, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i > 0 @L13 (WP: (0) > 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 2 @L18 (WP: kind == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: found @L18 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b1'}  inputs: tc_5_b1(kind=2, ch=8, a=3, b=8, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 10 @L9 (WP: ch != 10, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b1'}  inputs: tc_4_b1(kind=1, ch=10, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(kind=1, ch=8, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == a @L8 (WP: ch == a, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(kind=0, ch=8, a=3, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(kind=0, ch=8, a=8, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(kind=0, ch=3, a=0, b=0, index=16384)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(kind=0, ch=0, a=3, b=0, index=-32768)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(kind=0, ch=3, a=0, b=11, index=0)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(kind=0, ch=0, a=0, b=-32768, index=0)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(kind=0, ch=0, a=11, b=0, index=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_2_b6'}  inputs: tc_2_b6(kind=0, ch=0, a=-32768, b=0, index=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_2_b7'}  inputs: tc_2_b7(kind=0, ch=16384, a=0, b=0, index=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b8'}  inputs: tc_2_b8(kind=0, ch=-32768, a=0, b=0, index=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b9'}  inputs: tc_2_b9(kind=16384, ch=0, a=0, b=0, index=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b10'}  inputs: tc_2_b10(kind=-32768, ch=0, a=0, b=0, index=0)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SvReplaceAtom_M6_1792784656462180000/SvReplaceAtom_M6/SvReplaceAtom_M6_cct.dot
+  -> Executing 1 candidates with 4 workers; merging 2 terminal updates
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SvReplaceAtom_M6_1792784656462180000/SvReplaceAtom_M6/SvReplaceAtom_M6_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: kind < 0 @L5 (WP: kind < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: kind > 3 @L5 (WP: kind > 3, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: ch < 0 @L5 (WP: ch < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: ch > 10 @L5 (WP: ch > 10, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: a < 0 @L5 (WP: a < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: a > 10 @L5 (WP: a > 10, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: b < 0 @L5 (WP: b < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: b > 10 @L5 (WP: b > 10, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: index < 0 @L5 (WP: index < 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: index > 1 @L5 (WP: index > 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 0 @L7 (WP: ch != 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(kind=0, ch=0, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 0 @L8 (WP: kind == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 1 @L9 (WP: kind == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i > 0 @L13 (WP: (2) > 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L15 (WP: (2) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == value @L16 (WP: ch == (b), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i > 0 @L13 (WP: ((2) - 1) > 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L15 (WP: ((2) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == value @L16 (WP: ch == (a), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'} [TRUNCATED]  inputs: tc_4_b0(kind=2, ch=8, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b0'} [TRUNCATED]  inputs: tc_5_b0(kind=2, ch=8, a=8, b=7, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i > 0 @L13 (WP: (0) > 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 2 @L18 (WP: kind == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 10 @L19 (WP: ch != 10, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: found @L19 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6_b0'}  inputs: tc_6_b0(kind=3, ch=8, a=0, b=8, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: found @L18 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b1'}  inputs: tc_5_b1(kind=2, ch=8, a=3, b=8, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 10 @L9 (WP: ch != 10, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b1'}  inputs: tc_4_b1(kind=1, ch=10, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(kind=1, ch=8, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == a @L8 (WP: ch == a, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(kind=0, ch=8, a=3, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(kind=0, ch=8, a=8, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(kind=0, ch=3, a=0, b=0, index=16384)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(kind=0, ch=0, a=3, b=0, index=-32768)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(kind=0, ch=3, a=0, b=11, index=0)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(kind=0, ch=0, a=0, b=-32768, index=0)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(kind=0, ch=0, a=11, b=0, index=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_2_b6'}  inputs: tc_2_b6(kind=0, ch=0, a=-32768, b=0, index=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_2_b7'}  inputs: tc_2_b7(kind=0, ch=16384, a=0, b=0, index=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b8'}  inputs: tc_2_b8(kind=0, ch=-32768, a=0, b=0, index=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b9'}  inputs: tc_2_b9(kind=16384, ch=0, a=0, b=0, index=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b10'}  inputs: tc_2_b10(kind=-32768, ch=0, a=0, b=0, index=0)
+-----------------------------
+
+
+  [Batch Round 7] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: kind < 0 @L5 (WP: kind < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: kind > 3 @L5 (WP: kind > 3, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: ch < 0 @L5 (WP: ch < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: ch > 10 @L5 (WP: ch > 10, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: a < 0 @L5 (WP: a < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: a > 10 @L5 (WP: a > 10, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: b < 0 @L5 (WP: b < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: b > 10 @L5 (WP: b > 10, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: index < 0 @L5 (WP: index < 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: index > 1 @L5 (WP: index > 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 0 @L7 (WP: ch != 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(kind=0, ch=0, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 0 @L8 (WP: kind == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 1 @L9 (WP: kind == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i > 0 @L13 (WP: (2) > 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L15 (WP: (2) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == value @L16 (WP: ch == (b), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i > 0 @L13 (WP: ((2) - 1) > 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L15 (WP: ((2) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == value @L16 (WP: ch == (a), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'} [TRUNCATED]  inputs: tc_4_b0(kind=2, ch=8, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b0'} [TRUNCATED]  inputs: tc_5_b0(kind=2, ch=8, a=8, b=7, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i > 0 @L13 (WP: (0) > 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 2 @L18 (WP: kind == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 10 @L19 (WP: ch != 10, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: found @L19 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6_b0'}  inputs: tc_6_b0(kind=3, ch=8, a=0, b=8, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: found @L18 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b1'}  inputs: tc_5_b1(kind=2, ch=8, a=3, b=8, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 10 @L9 (WP: ch != 10, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b1'}  inputs: tc_4_b1(kind=1, ch=10, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(kind=1, ch=8, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == a @L8 (WP: ch == a, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(kind=0, ch=8, a=3, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(kind=0, ch=8, a=8, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(kind=0, ch=3, a=0, b=0, index=16384)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(kind=0, ch=0, a=3, b=0, index=-32768)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(kind=0, ch=3, a=0, b=11, index=0)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(kind=0, ch=0, a=0, b=-32768, index=0)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(kind=0, ch=0, a=11, b=0, index=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_2_b6'}  inputs: tc_2_b6(kind=0, ch=0, a=-32768, b=0, index=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_2_b7'}  inputs: tc_2_b7(kind=0, ch=16384, a=0, b=0, index=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b8'}  inputs: tc_2_b8(kind=0, ch=-32768, a=0, b=0, index=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b9'}  inputs: tc_2_b9(kind=16384, ch=0, a=0, b=0, index=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b10'}  inputs: tc_2_b10(kind=-32768, ch=0, a=0, b=0, index=0)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SvReplaceAtom_M6_1792784656462180000/SvReplaceAtom_M6/SvReplaceAtom_M6_cct.dot
+  -> Executing 1 candidates with 4 workers; merging 2 terminal updates
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SvReplaceAtom_M6_1792784656462180000/SvReplaceAtom_M6/SvReplaceAtom_M6_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: kind < 0 @L5 (WP: kind < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: kind > 3 @L5 (WP: kind > 3, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: ch < 0 @L5 (WP: ch < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: ch > 10 @L5 (WP: ch > 10, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: a < 0 @L5 (WP: a < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: a > 10 @L5 (WP: a > 10, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: b < 0 @L5 (WP: b < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: b > 10 @L5 (WP: b > 10, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: index < 0 @L5 (WP: index < 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: index > 1 @L5 (WP: index > 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 0 @L7 (WP: ch != 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(kind=0, ch=0, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 0 @L8 (WP: kind == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 1 @L9 (WP: kind == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i > 0 @L13 (WP: (2) > 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L15 (WP: (2) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == value @L16 (WP: ch == (b), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i > 0 @L13 (WP: ((2) - 1) > 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L15 (WP: ((2) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == value @L16 (WP: ch == (a), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'} [TRUNCATED]  inputs: tc_4_b0(kind=2, ch=8, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b0'} [TRUNCATED]  inputs: tc_5_b0(kind=2, ch=8, a=8, b=7, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i > 0 @L13 (WP: (0) > 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 2 @L18 (WP: kind == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 10 @L19 (WP: ch != 10, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_7_b0'}  inputs: tc_7_b0(kind=3, ch=10, a=0, b=10, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: found @L19 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6_b0'}  inputs: tc_6_b0(kind=3, ch=8, a=0, b=8, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: found @L18 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b1'}  inputs: tc_5_b1(kind=2, ch=8, a=3, b=8, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 10 @L9 (WP: ch != 10, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b1'}  inputs: tc_4_b1(kind=1, ch=10, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(kind=1, ch=8, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == a @L8 (WP: ch == a, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(kind=0, ch=8, a=3, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(kind=0, ch=8, a=8, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(kind=0, ch=3, a=0, b=0, index=16384)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(kind=0, ch=0, a=3, b=0, index=-32768)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(kind=0, ch=3, a=0, b=11, index=0)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(kind=0, ch=0, a=0, b=-32768, index=0)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(kind=0, ch=0, a=11, b=0, index=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_2_b6'}  inputs: tc_2_b6(kind=0, ch=0, a=-32768, b=0, index=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_2_b7'}  inputs: tc_2_b7(kind=0, ch=16384, a=0, b=0, index=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b8'}  inputs: tc_2_b8(kind=0, ch=-32768, a=0, b=0, index=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b9'}  inputs: tc_2_b9(kind=16384, ch=0, a=0, b=0, index=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b10'}  inputs: tc_2_b10(kind=-32768, ch=0, a=0, b=0, index=0)
+-----------------------------
+
+
+  [Batch Round 8] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: kind < 0 @L5 (WP: kind < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: kind > 3 @L5 (WP: kind > 3, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: ch < 0 @L5 (WP: ch < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: ch > 10 @L5 (WP: ch > 10, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: a < 0 @L5 (WP: a < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: a > 10 @L5 (WP: a > 10, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: b < 0 @L5 (WP: b < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: b > 10 @L5 (WP: b > 10, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: index < 0 @L5 (WP: index < 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: index > 1 @L5 (WP: index > 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 0 @L7 (WP: ch != 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(kind=0, ch=0, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 0 @L8 (WP: kind == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 1 @L9 (WP: kind == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i > 0 @L13 (WP: (2) > 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L15 (WP: (2) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == value @L16 (WP: ch == (b), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i > 0 @L13 (WP: ((2) - 1) > 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L15 (WP: ((2) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == value @L16 (WP: ch == (a), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'} [TRUNCATED]  inputs: tc_4_b0(kind=2, ch=8, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b0'} [TRUNCATED]  inputs: tc_5_b0(kind=2, ch=8, a=8, b=7, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i > 0 @L13 (WP: (0) > 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 2 @L18 (WP: kind == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 10 @L19 (WP: ch != 10, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_7_b0'}  inputs: tc_7_b0(kind=3, ch=10, a=0, b=10, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: found @L19 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6_b0'}  inputs: tc_6_b0(kind=3, ch=8, a=0, b=8, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: found @L18 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b1'}  inputs: tc_5_b1(kind=2, ch=8, a=3, b=8, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 10 @L9 (WP: ch != 10, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b1'}  inputs: tc_4_b1(kind=1, ch=10, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(kind=1, ch=8, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == a @L8 (WP: ch == a, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(kind=0, ch=8, a=3, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(kind=0, ch=8, a=8, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(kind=0, ch=3, a=0, b=0, index=16384)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(kind=0, ch=0, a=3, b=0, index=-32768)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(kind=0, ch=3, a=0, b=11, index=0)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(kind=0, ch=0, a=0, b=-32768, index=0)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(kind=0, ch=0, a=11, b=0, index=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_2_b6'}  inputs: tc_2_b6(kind=0, ch=0, a=-32768, b=0, index=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_2_b7'}  inputs: tc_2_b7(kind=0, ch=16384, a=0, b=0, index=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b8'}  inputs: tc_2_b8(kind=0, ch=-32768, a=0, b=0, index=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b9'}  inputs: tc_2_b9(kind=16384, ch=0, a=0, b=0, index=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b10'}  inputs: tc_2_b10(kind=-32768, ch=0, a=0, b=0, index=0)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SvReplaceAtom_M6_1792784656462180000/SvReplaceAtom_M6/SvReplaceAtom_M6_cct.dot
+  -> Executing 0 candidates with 4 workers; merging 1 terminal updates
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SvReplaceAtom_M6_1792784656462180000/SvReplaceAtom_M6/SvReplaceAtom_M6_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: kind < 0 @L5 (WP: kind < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: kind > 3 @L5 (WP: kind > 3, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: ch < 0 @L5 (WP: ch < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: ch > 10 @L5 (WP: ch > 10, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: a < 0 @L5 (WP: a < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: a > 10 @L5 (WP: a > 10, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: b < 0 @L5 (WP: b < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: b > 10 @L5 (WP: b > 10, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: index < 0 @L5 (WP: index < 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: index > 1 @L5 (WP: index > 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 0 @L7 (WP: ch != 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(kind=0, ch=0, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 0 @L8 (WP: kind == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 1 @L9 (WP: kind == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i > 0 @L13 (WP: (2) > 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L15 (WP: (2) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == value @L16 (WP: ch == (b), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i > 0 @L13 (WP: ((2) - 1) > 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L15 (WP: ((2) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == value @L16 (WP: ch == (a), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'} [TRUNCATED]  inputs: tc_4_b0(kind=2, ch=8, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b0'} [TRUNCATED]  inputs: tc_5_b0(kind=2, ch=8, a=8, b=7, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i > 0 @L13 (WP: (0) > 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 2 @L18 (WP: kind == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 10 @L19 (WP: ch != 10, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_7_b0'}  inputs: tc_7_b0(kind=3, ch=10, a=0, b=10, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: found @L19 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6_b0'}  inputs: tc_6_b0(kind=3, ch=8, a=0, b=8, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: found @L18 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b1'}  inputs: tc_5_b1(kind=2, ch=8, a=3, b=8, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 10 @L9 (WP: ch != 10, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b1'}  inputs: tc_4_b1(kind=1, ch=10, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(kind=1, ch=8, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == a @L8 (WP: ch == a, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(kind=0, ch=8, a=3, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(kind=0, ch=8, a=8, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(kind=0, ch=3, a=0, b=0, index=16384)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(kind=0, ch=0, a=3, b=0, index=-32768)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(kind=0, ch=3, a=0, b=11, index=0)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(kind=0, ch=0, a=0, b=-32768, index=0)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(kind=0, ch=0, a=11, b=0, index=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_2_b6'}  inputs: tc_2_b6(kind=0, ch=0, a=-32768, b=0, index=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_2_b7'}  inputs: tc_2_b7(kind=0, ch=16384, a=0, b=0, index=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b8'}  inputs: tc_2_b8(kind=0, ch=-32768, a=0, b=0, index=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b9'}  inputs: tc_2_b9(kind=16384, ch=0, a=0, b=0, index=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b10'}  inputs: tc_2_b10(kind=-32768, ch=0, a=0, b=0, index=0)
+-----------------------------
+
+
+  [Batch Round 9] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: kind < 0 @L5 (WP: kind < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: kind > 3 @L5 (WP: kind > 3, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: ch < 0 @L5 (WP: ch < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: ch > 10 @L5 (WP: ch > 10, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: a < 0 @L5 (WP: a < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: a > 10 @L5 (WP: a > 10, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: b < 0 @L5 (WP: b < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: b > 10 @L5 (WP: b > 10, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: index < 0 @L5 (WP: index < 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: index > 1 @L5 (WP: index > 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 0 @L7 (WP: ch != 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(kind=0, ch=0, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 0 @L8 (WP: kind == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 1 @L9 (WP: kind == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i > 0 @L13 (WP: (2) > 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L15 (WP: (2) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == value @L16 (WP: ch == (b), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i > 0 @L13 (WP: ((2) - 1) > 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i == 2 @L15 (WP: ((2) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == value @L16 (WP: ch == (a), Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b0'} [TRUNCATED]  inputs: tc_4_b0(kind=2, ch=8, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b0'} [TRUNCATED]  inputs: tc_5_b0(kind=2, ch=8, a=8, b=7, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i > 0 @L13 (WP: (0) > 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: kind == 2 @L18 (WP: kind == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 10 @L19 (WP: ch != 10, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_7_b0'}  inputs: tc_7_b0(kind=3, ch=10, a=0, b=10, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: found @L19 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6_b0'}  inputs: tc_6_b0(kind=3, ch=8, a=0, b=8, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: found @L18 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5_b1'}  inputs: tc_5_b1(kind=2, ch=8, a=3, b=8, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch != 10 @L9 (WP: ch != 10, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4_b1'}  inputs: tc_4_b1(kind=1, ch=10, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(kind=1, ch=8, a=0, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: ch == a @L8 (WP: ch == a, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (-1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'}  inputs: tc_2_b0(kind=0, ch=8, a=3, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: advance >= 0 @L23 (WP: (1) >= 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b1'}  inputs: tc_3_b1(kind=0, ch=8, a=8, b=0, index=0)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(kind=0, ch=3, a=0, b=0, index=16384)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(kind=0, ch=0, a=3, b=0, index=-32768)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b3'}  inputs: tc_2_b3(kind=0, ch=3, a=0, b=11, index=0)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b4'}  inputs: tc_2_b4(kind=0, ch=0, a=0, b=-32768, index=0)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b5'}  inputs: tc_2_b5(kind=0, ch=0, a=11, b=0, index=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_2_b6'}  inputs: tc_2_b6(kind=0, ch=0, a=-32768, b=0, index=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_2_b7'}  inputs: tc_2_b7(kind=0, ch=16384, a=0, b=0, index=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_2_b8'}  inputs: tc_2_b8(kind=0, ch=-32768, a=0, b=0, index=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b9'}  inputs: tc_2_b9(kind=16384, ch=0, a=0, b=0, index=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b10'}  inputs: tc_2_b10(kind=-32768, ch=0, a=0, b=0, index=0)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SvReplaceAtom_M6_1792784656462180000/SvReplaceAtom_M6/SvReplaceAtom_M6_cct.dot
+  -> CCT is FULL — all branches covered!
+
+=======================================================
+  Done! 20 test cases generated in 9 iterations.
+=======================================================
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SvReplaceAtom_M6_1792784656462180000/SvReplaceAtom_M6/SvReplaceAtom_M6_cct.dot
+
+Generated Test Cases:
+---------------------------------------------
+  [BOOTSTRAP]  (bootstrap)
+  round_02/b0  [BATCH_SAFE]  kind=0, ch=8, a=3, b=0, index=0
+  round_02/b1  [BATCH_SAFE]  kind=0, ch=3, a=0, b=0, index=16384
+  round_02/b2  [BATCH_SAFE]  kind=0, ch=0, a=3, b=0, index=-32768
+  round_02/b3  [BATCH_SAFE]  kind=0, ch=3, a=0, b=11, index=0
+  round_02/b4  [BATCH_SAFE]  kind=0, ch=0, a=0, b=-32768, index=0
+  round_02/b5  [BATCH_SAFE]  kind=0, ch=0, a=11, b=0, index=0
+  round_02/b6  [BATCH_SAFE]  kind=0, ch=0, a=-32768, b=0, index=0
+  round_02/b7  [BATCH_SAFE]  kind=0, ch=16384, a=0, b=0, index=0
+  round_02/b8  [BATCH_SAFE]  kind=0, ch=-32768, a=0, b=0, index=0
+  round_02/b9  [BATCH_SAFE]  kind=16384, ch=0, a=0, b=0, index=0
+  round_02/b10  [BATCH_SAFE]  kind=-32768, ch=0, a=0, b=0, index=0
+  round_03/b0  [BATCH_SAFE]  kind=1, ch=8, a=0, b=0, index=0
+  round_03/b1  [BATCH_SAFE]  kind=0, ch=8, a=8, b=0, index=0
+  round_04/b0  [BATCH_SAFE]  kind=2, ch=8, a=0, b=0, index=0
+  round_04/b1  [BATCH_SAFE]  kind=1, ch=10, a=0, b=0, index=0
+  round_05/b0  [BATCH_SAFE]  kind=2, ch=8, a=8, b=7, index=0
+  round_05/b1  [BATCH_SAFE]  kind=2, ch=8, a=3, b=8, index=0
+  round_06/b0  [BATCH_SAFE]  kind=3, ch=8, a=0, b=8, index=0
+  round_07/b0  [BATCH_SAFE]  kind=3, ch=10, a=0, b=10, index=0
+
+Timing Summary (ms):
+---------------------------------------------
+  solver_time_ms: 51
+  frontier_discovery_time_ms: 86
+  compile_time_ms: 9836
+  java_exec_time_ms: 1699
+  path_log_parse_time_ms: 0
+  cct_path_build_time_ms: 0
+  cct_merge_time_ms: 0
+  verification_solver_time_ms: 0
+  parallel_exec_wall_time_ms: 4296
+  merge_verify_wall_time_ms: 0
+  batch_total_wall_time_ms: 4301
+
+Test cases written to: csc_tmp/extpaper_kill_original_SvReplaceAtom_M6_1792784656462180000/SvReplaceAtom_M6/testcases.json
+
+CCT visualization:
+  DOT: csc_tmp/extpaper_kill_original_SvReplaceAtom_M6_1792784656462180000/SvReplaceAtom_M6/SvReplaceAtom_M6_cct.dot
+  Stats: csc_tmp/extpaper_kill_original_SvReplaceAtom_M6_1792784656462180000/SvReplaceAtom_M6/cct_stats.json
+  Counts: nodes=67, leaves=33, covered=20, infeasible=13, out_of_range=0, expanded=0, truncated=2
+  Render script: csc_tmp/extpaper_kill_original_SvReplaceAtom_M6_1792784656462180000/SvReplaceAtom_M6/render_cct.sh
+  (render later with: csc_tmp/extpaper_kill_original_SvReplaceAtom_M6_1792784656462180000/SvReplaceAtom_M6/render_cct.sh)
+
+Run log:
+  JSONL: csc_tmp/extpaper_kill_original_SvReplaceAtom_M6_1792784656462180000/SvReplaceAtom_M6/run_log.jsonl

@@ -1,0 +1,519 @@
+{
+  "summary": {
+    "strategy": "folded_source_candidate_v1",
+    "scoring_strategy": "coverage_x_purity",
+    "F_total": 2,
+    "P_total": 12,
+    "condition_candidates": 11,
+    "seed_e_candidates": 3,
+    "seed_s_candidates": 0,
+    "edge_partition_candidates": 3,
+    "unstable_segment_variants": 0,
+    "total_edge_transitions": 22
+  },
+  "condition_node_ranking": [
+    {
+      "candidate_id": "condition_25_withdrawals >= 5",
+      "kind": "condition",
+      "F_c": 2,
+      "P_c": 2,
+      "exec_count": 4,
+      "fail_count": 2,
+      "pass_count": 2,
+      "failure_density": 0.5,
+      "risk_score": 0.5,
+      "occurrence_count": 2,
+      "representative_count": 2,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F.F"
+        },
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.T.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 25,
+      "condition": "withdrawals >= 5",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 25,
+      "line_end": 25,
+      "rank": 1
+    },
+    {
+      "candidate_id": "condition_23_deposit > 0",
+      "kind": "condition",
+      "F_c": 2,
+      "P_c": 4,
+      "exec_count": 6,
+      "fail_count": 2,
+      "pass_count": 4,
+      "failure_density": 0.3333333333333333,
+      "risk_score": 0.3333333333333333,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 23,
+      "condition": "deposit > 0",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 23,
+      "line_end": 23,
+      "rank": 2
+    },
+    {
+      "candidate_id": "condition_24_amount > currentBalance",
+      "kind": "condition",
+      "F_c": 2,
+      "P_c": 4,
+      "exec_count": 6,
+      "fail_count": 2,
+      "pass_count": 4,
+      "failure_density": 0.3333333333333333,
+      "risk_score": 0.3333333333333333,
+      "occurrence_count": 2,
+      "representative_count": 2,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.F"
+        },
+        {
+          "node_id": "root.F.F.F.F.F.F.F.F.T"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 24,
+      "condition": "amount > currentBalance",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 24,
+      "line_end": 24,
+      "rank": 3
+    },
+    {
+      "candidate_id": "condition_21_withdrawals > 5",
+      "kind": "condition",
+      "F_c": 2,
+      "P_c": 5,
+      "exec_count": 7,
+      "fail_count": 2,
+      "pass_count": 5,
+      "failure_density": 0.2857142857142857,
+      "risk_score": 0.2857142857142857,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F.F.F.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 21,
+      "condition": "withdrawals > 5",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 21,
+      "line_end": 21,
+      "rank": 4
+    },
+    {
+      "candidate_id": "condition_21_withdrawals < 0",
+      "kind": "condition",
+      "F_c": 2,
+      "P_c": 6,
+      "exec_count": 8,
+      "fail_count": 2,
+      "pass_count": 6,
+      "failure_density": 0.25,
+      "risk_score": 0.25,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F.F.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 21,
+      "condition": "withdrawals < 0",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 21,
+      "line_end": 21,
+      "rank": 5
+    },
+    {
+      "candidate_id": "condition_21_amount > 30",
+      "kind": "condition",
+      "F_c": 2,
+      "P_c": 7,
+      "exec_count": 9,
+      "fail_count": 2,
+      "pass_count": 7,
+      "failure_density": 0.2222222222222222,
+      "risk_score": 0.2222222222222222,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 21,
+      "condition": "amount > 30",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 21,
+      "line_end": 21,
+      "rank": 6
+    },
+    {
+      "candidate_id": "condition_21_amount < -5",
+      "kind": "condition",
+      "F_c": 2,
+      "P_c": 8,
+      "exec_count": 10,
+      "fail_count": 2,
+      "pass_count": 8,
+      "failure_density": 0.2,
+      "risk_score": 0.2,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 21,
+      "condition": "amount < -5",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 21,
+      "line_end": 21,
+      "rank": 7
+    },
+    {
+      "candidate_id": "condition_21_deposit > 10",
+      "kind": "condition",
+      "F_c": 2,
+      "P_c": 9,
+      "exec_count": 11,
+      "fail_count": 2,
+      "pass_count": 9,
+      "failure_density": 0.18181818181818182,
+      "risk_score": 0.18181818181818182,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 21,
+      "condition": "deposit > 10",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 21,
+      "line_end": 21,
+      "rank": 8
+    },
+    {
+      "candidate_id": "condition_21_deposit < -5",
+      "kind": "condition",
+      "F_c": 2,
+      "P_c": 10,
+      "exec_count": 12,
+      "fail_count": 2,
+      "pass_count": 10,
+      "failure_density": 0.16666666666666666,
+      "risk_score": 0.16666666666666666,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 21,
+      "condition": "deposit < -5",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 21,
+      "line_end": 21,
+      "rank": 9
+    },
+    {
+      "candidate_id": "condition_21_balance > 20",
+      "kind": "condition",
+      "F_c": 2,
+      "P_c": 11,
+      "exec_count": 13,
+      "fail_count": 2,
+      "pass_count": 11,
+      "failure_density": 0.15384615384615385,
+      "risk_score": 0.15384615384615385,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 21,
+      "condition": "balance > 20",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 21,
+      "line_end": 21,
+      "rank": 10
+    },
+    {
+      "candidate_id": "condition_21_balance < 0",
+      "kind": "condition",
+      "F_c": 2,
+      "P_c": 12,
+      "exec_count": 14,
+      "fail_count": 2,
+      "pass_count": 12,
+      "failure_density": 0.14285714285714285,
+      "risk_score": 0.14285714285714285,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 21,
+      "condition": "balance < 0",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 21,
+      "line_end": 21,
+      "rank": 11
+    }
+  ],
+  "interval_rankings": {
+    "folded_seed_e": [
+      {
+        "candidate_id": "seed_e_seed_e_26_27_28",
+        "kind": "seed_e",
+        "F_c": 2,
+        "P_c": 0,
+        "exec_count": 2,
+        "fail_count": 2,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "risk_score": 1.0,
+        "occurrence_count": 2,
+        "representative_count": 2,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.F.F.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.T.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.T.F.FALSE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          26,
+          27,
+          28
+        ],
+        "region_size": 3,
+        "line_start": 26,
+        "line_end": 28,
+        "from_line": 25,
+        "from_condition": "withdrawals >= 5",
+        "outcome": "false",
+        "to_line": null,
+        "to_condition": null,
+        "rank": 1
+      },
+      {
+        "candidate_id": "seed_e_seed_e_22",
+        "kind": "seed_e",
+        "F_c": 2,
+        "P_c": 4,
+        "exec_count": 6,
+        "fail_count": 2,
+        "pass_count": 4,
+        "failure_density": 0.3333333333333333,
+        "risk_score": 0.3333333333333333,
+        "occurrence_count": 1,
+        "representative_count": 1,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.FALSE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          22
+        ],
+        "region_size": 1,
+        "line_start": 22,
+        "line_end": 22,
+        "from_line": 21,
+        "from_condition": "withdrawals > 5",
+        "outcome": "false",
+        "to_line": 23,
+        "to_condition": "deposit > 0",
+        "rank": 2
+      },
+      {
+        "candidate_id": "seed_e_seed_e_23",
+        "kind": "seed_e",
+        "F_c": 1,
+        "P_c": 2,
+        "exec_count": 3,
+        "fail_count": 1,
+        "pass_count": 2,
+        "failure_density": 0.3333333333333333,
+        "risk_score": 0.16666666666666666,
+        "occurrence_count": 1,
+        "representative_count": 1,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.TRUE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.TRUE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          23
+        ],
+        "region_size": 1,
+        "line_start": 23,
+        "line_end": 23,
+        "from_line": 23,
+        "from_condition": "deposit > 0",
+        "outcome": "true",
+        "to_line": 24,
+        "to_condition": "amount > currentBalance",
+        "rank": 3
+      }
+    ],
+    "folded_seed_s": [],
+    "folded_edge_partition": [
+      {
+        "candidate_id": "seed_e_seed_e_26_27_28",
+        "kind": "seed_e",
+        "F_c": 2,
+        "P_c": 0,
+        "exec_count": 2,
+        "fail_count": 2,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "risk_score": 1.0,
+        "occurrence_count": 2,
+        "representative_count": 2,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.F.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.F.F.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.T.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.T.F.FALSE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          26,
+          27,
+          28
+        ],
+        "region_size": 3,
+        "line_start": 26,
+        "line_end": 28,
+        "from_line": 25,
+        "from_condition": "withdrawals >= 5",
+        "outcome": "false",
+        "to_line": null,
+        "to_condition": null,
+        "rank": 1
+      },
+      {
+        "candidate_id": "seed_e_seed_e_22",
+        "kind": "seed_e",
+        "F_c": 2,
+        "P_c": 4,
+        "exec_count": 6,
+        "fail_count": 2,
+        "pass_count": 4,
+        "failure_density": 0.3333333333333333,
+        "risk_score": 0.3333333333333333,
+        "occurrence_count": 1,
+        "representative_count": 1,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.FALSE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          22
+        ],
+        "region_size": 1,
+        "line_start": 22,
+        "line_end": 22,
+        "from_line": 21,
+        "from_condition": "withdrawals > 5",
+        "outcome": "false",
+        "to_line": 23,
+        "to_condition": "deposit > 0",
+        "rank": 2
+      },
+      {
+        "candidate_id": "seed_e_seed_e_23",
+        "kind": "seed_e",
+        "F_c": 1,
+        "P_c": 2,
+        "exec_count": 3,
+        "fail_count": 1,
+        "pass_count": 2,
+        "failure_density": 0.3333333333333333,
+        "risk_score": 0.16666666666666666,
+        "occurrence_count": 1,
+        "representative_count": 1,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.F.F.F.F.F.F.F.TRUE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.F.F.F.F.TRUE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          23
+        ],
+        "region_size": 1,
+        "line_start": 23,
+        "line_end": 23,
+        "from_line": 23,
+        "from_condition": "deposit > 0",
+        "outcome": "true",
+        "to_line": 24,
+        "to_condition": "amount > currentBalance",
+        "rank": 3
+      }
+    ]
+  }
+}

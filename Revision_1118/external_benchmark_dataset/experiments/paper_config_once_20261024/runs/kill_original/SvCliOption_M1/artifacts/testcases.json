@@ -1,0 +1,427 @@
+[
+  {
+    "iteration": 0,
+    "inputs": {
+      "code": 0
+    },
+    "path_constraint": "bootstrap",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvCliOption_M1_1792784668454532000/SvCliOption_M1/traces/bootstrap/trace.jsonl",
+    "status": "bootstrap",
+    "strategy": "batch",
+    "timings": {
+      "compile_time_ms": 266,
+      "java_exec_time_ms": 52,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "test_case_id": "tc_2_b0",
+    "iteration": 2,
+    "branch_idx": 0,
+    "inputs": {
+      "code": "16384"
+    },
+    "path_constraint": "(!(code <= 0))",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvCliOption_M1_1792784668454532000/SvCliOption_M1/traces/round_02/b0/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 283,
+      "java_exec_time_ms": 66,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 350,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 350,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 351,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 283,
+        "java_exec_time_ms": 66,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 350,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_3_b0",
+    "iteration": 3,
+    "branch_idx": 0,
+    "inputs": {
+      "code": "64"
+    },
+    "path_constraint": "(!(code <= 0)) && (!(code > 127))",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvCliOption_M1_1792784668454532000/SvCliOption_M1/traces/round_03/b0/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 292,
+      "java_exec_time_ms": 73,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 366,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 366,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 367,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 292,
+        "java_exec_time_ms": 73,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 366,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_4_b0",
+    "iteration": 4,
+    "branch_idx": 0,
+    "inputs": {
+      "code": "33"
+    },
+    "path_constraint": "(!(code <= 0)) && (!(code > 127)) && (!(code >= 97)) && (!(code >= 65)) && (!(code == 95)) && (!(code == 46)) && (!(false)) && (!(code == 32)) && (!(code == 63)) && (!(code == 64))",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvCliOption_M1_1792784668454532000/SvCliOption_M1/traces/round_04/b0/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 512,
+      "java_exec_time_ms": 97,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 610,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 1115,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 1115,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 2868,
+        "java_exec_time_ms": 565,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 3447,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_4_b1",
+    "iteration": 4,
+    "branch_idx": 1,
+    "inputs": {
+      "code": "63"
+    },
+    "path_constraint": "(!(code <= 0)) && (!(code > 127)) && (!(code >= 97)) && (!(code >= 65)) && (!(code == 95)) && (!(code == 46)) && (!(false)) && (!(code == 32)) && (code == 63)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvCliOption_M1_1792784668454532000/SvCliOption_M1/traces/round_04/b1/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 500,
+      "java_exec_time_ms": 101,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 602,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 1115,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 1115,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 2868,
+        "java_exec_time_ms": 565,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 3447,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_4_b2",
+    "iteration": 4,
+    "branch_idx": 2,
+    "inputs": {
+      "code": "32"
+    },
+    "path_constraint": "(!(code <= 0)) && (!(code > 127)) && (!(code >= 97)) && (!(code >= 65)) && (!(code == 95)) && (!(code == 46)) && (!(false)) && (code == 32)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvCliOption_M1_1792784668454532000/SvCliOption_M1/traces/round_04/b2/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 514,
+      "java_exec_time_ms": 104,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 622,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 1115,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 1115,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 2868,
+        "java_exec_time_ms": 565,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 3447,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_4_b3",
+    "iteration": 4,
+    "branch_idx": 3,
+    "inputs": {
+      "code": "46"
+    },
+    "path_constraint": "(!(code <= 0)) && (!(code > 127)) && (!(code >= 97)) && (!(code >= 65)) && (!(code == 95)) && (code == 46)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvCliOption_M1_1792784668454532000/SvCliOption_M1/traces/round_04/b3/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 511,
+      "java_exec_time_ms": 92,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 608,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 1115,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 1115,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 2868,
+        "java_exec_time_ms": 565,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 3447,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_4_b4",
+    "iteration": 4,
+    "branch_idx": 4,
+    "inputs": {
+      "code": "96"
+    },
+    "path_constraint": "(!(code <= 0)) && (!(code > 127)) && (!(code >= 97)) && (code >= 65)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvCliOption_M1_1792784668454532000/SvCliOption_M1/traces/round_04/b4/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 419,
+      "java_exec_time_ms": 78,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 499,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 1115,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 1115,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 2868,
+        "java_exec_time_ms": 565,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 3447,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_4_b5",
+    "iteration": 4,
+    "branch_idx": 5,
+    "inputs": {
+      "code": "112"
+    },
+    "path_constraint": "(!(code <= 0)) && (!(code > 127)) && (code >= 97)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvCliOption_M1_1792784668454532000/SvCliOption_M1/traces/round_04/b5/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 412,
+      "java_exec_time_ms": 93,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 506,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 1115,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 1115,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 2868,
+        "java_exec_time_ms": 565,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 3447,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_5_b0",
+    "iteration": 5,
+    "branch_idx": 0,
+    "inputs": {
+      "code": "95"
+    },
+    "path_constraint": "(!(code <= 0)) && (!(code > 127)) && (!(code >= 97)) && (code >= 65) && (!(code <= 90)) && (code == 95)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvCliOption_M1_1792784668454532000/SvCliOption_M1/traces/round_05/b0/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 508,
+      "java_exec_time_ms": 98,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 607,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 608,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 609,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 1509,
+        "java_exec_time_ms": 266,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 1780,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_5_b1",
+    "iteration": 5,
+    "branch_idx": 1,
+    "inputs": {
+      "code": "80"
+    },
+    "path_constraint": "(!(code <= 0)) && (!(code > 127)) && (!(code >= 97)) && (code >= 65) && (code <= 90)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvCliOption_M1_1792784668454532000/SvCliOption_M1/traces/round_05/b1/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 489,
+      "java_exec_time_ms": 84,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 574,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 608,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 609,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 1509,
+        "java_exec_time_ms": 266,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 1780,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_5_b2",
+    "iteration": 5,
+    "branch_idx": 2,
+    "inputs": {
+      "code": "123"
+    },
+    "path_constraint": "(!(code <= 0)) && (!(code > 127)) && (code >= 97) && (!(code <= 122))",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_original_SvCliOption_M1_1792784668454532000/SvCliOption_M1/traces/round_05/b2/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 512,
+      "java_exec_time_ms": 84,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 599,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 608,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 609,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 1509,
+        "java_exec_time_ms": 266,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 1780,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  }
+]

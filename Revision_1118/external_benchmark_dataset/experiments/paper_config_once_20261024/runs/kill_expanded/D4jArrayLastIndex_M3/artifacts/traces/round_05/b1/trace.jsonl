@@ -1,0 +1,27 @@
+{"type":"COND","line":20,"kind":"if","order":1,"expr":"a < 0","value":false}
+{"type":"COND","line":20,"kind":"if","order":2,"expr":"a > 4","value":false}
+{"type":"COND","line":20,"kind":"if","order":3,"expr":"b < 0","value":false}
+{"type":"COND","line":20,"kind":"if","order":4,"expr":"b > 4","value":false}
+{"type":"COND","line":20,"kind":"if","order":5,"expr":"c < 0","value":false}
+{"type":"COND","line":20,"kind":"if","order":6,"expr":"c > 4","value":false}
+{"type":"COND","line":20,"kind":"if","order":7,"expr":"key < 0","value":false}
+{"type":"COND","line":20,"kind":"if","order":8,"expr":"key > 4","value":false}
+{"type":"COND","line":20,"kind":"if","order":9,"expr":"startIndex < -1","value":false}
+{"type":"COND","line":20,"kind":"if","order":10,"expr":"startIndex > 4","value":false}
+{"type":"ASSIGN","line":21,"kind":"var_decl","target":"start","rhs":"startIndex","value":"1"}
+{"type":"COND","line":22,"kind":"if","order":1,"expr":"start <= 0","value":false}
+{"type":"COND","line":22,"kind":"if","order":1,"expr":"start >= 3","value":false}
+{"type":"ASSIGN","line":23,"kind":"var_decl","target":"i","rhs":"start","value":"1"}
+{"type":"COND","line":24,"kind":"while","order":1,"expr":"i >= 0","value":true}
+{"type":"ASSIGN","line":25,"kind":"var_decl","target":"value","rhs":"a","value":"4"}
+{"type":"COND","line":26,"kind":"if","order":1,"expr":"i == 1","value":true}
+{"type":"ASSIGN","line":26,"kind":"assign","target":"value","rhs":"b","value":"3"}
+{"type":"COND","line":27,"kind":"if","order":1,"expr":"i == 2","value":false}
+{"type":"COND","line":28,"kind":"if","order":1,"expr":"key == value","value":false}
+{"type":"ASSIGN","line":29,"kind":"assign","target":"i","rhs":"i - 1","value":"0"}
+{"type":"COND","line":24,"kind":"while","order":1,"expr":"i >= 0","value":true}
+{"type":"ASSIGN","line":25,"kind":"var_decl","target":"value","rhs":"a","value":"4"}
+{"type":"COND","line":26,"kind":"if","order":1,"expr":"i == 1","value":false}
+{"type":"COND","line":27,"kind":"if","order":1,"expr":"i == 2","value":false}
+{"type":"COND","line":28,"kind":"if","order":1,"expr":"key == value","value":true}
+{"type":"RETURN","line":28,"target":"return_value","rhs":"i","value":"0"}

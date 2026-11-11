@@ -1,0 +1,543 @@
+[
+  {
+    "iteration": 0,
+    "inputs": {
+      "balance": 0,
+      "deposit": 0,
+      "amount": 0,
+      "withdrawals": 0
+    },
+    "path_constraint": "bootstrap",
+    "trace_path": "csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/traces/bootstrap/trace.jsonl",
+    "status": "bootstrap",
+    "strategy": "batch",
+    "timings": {
+      "compile_time_ms": 270,
+      "java_exec_time_ms": 53,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "test_case_id": "tc_2_b0",
+    "iteration": 2,
+    "branch_idx": 0,
+    "inputs": {
+      "balance": "16384",
+      "deposit": "0",
+      "amount": "0",
+      "withdrawals": "0"
+    },
+    "path_constraint": "(!(balance <= 0))",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/traces/round_02/b0/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 254,
+      "java_exec_time_ms": 50,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 304,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 305,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 305,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 254,
+        "java_exec_time_ms": 50,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 304,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_3_b0",
+    "iteration": 3,
+    "branch_idx": 0,
+    "inputs": {
+      "balance": "5",
+      "deposit": "0",
+      "amount": "0",
+      "withdrawals": "0"
+    },
+    "path_constraint": "(!(balance <= 0)) && (!(balance > 20))",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/traces/round_03/b0/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 266,
+      "java_exec_time_ms": 55,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 323,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 323,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 324,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 266,
+        "java_exec_time_ms": 55,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 323,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_4_b0",
+    "iteration": 4,
+    "branch_idx": 0,
+    "inputs": {
+      "balance": "20",
+      "deposit": "0",
+      "amount": "0",
+      "withdrawals": "5"
+    },
+    "path_constraint": "(!(balance <= 0)) && (!(balance > 20)) && (!(deposit < -5)) && (!(deposit > 10)) && (!(amount < -5)) && (!(amount > 30)) && (!(withdrawals < 0)) && (!(withdrawals > 5)) && (!(deposit > 0)) && (!(amount > (balance))) && (withdrawals >= 5)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/traces/round_04/b0/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 524,
+      "java_exec_time_ms": 88,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 613,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 1693,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 1693,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 4810,
+        "java_exec_time_ms": 831,
+        "path_log_parse_time_ms": 1,
+        "compile_execute_total_time_ms": 5656,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_4_b1",
+    "iteration": 4,
+    "branch_idx": 1,
+    "inputs": {
+      "balance": "8",
+      "deposit": "0",
+      "amount": "9",
+      "withdrawals": "0"
+    },
+    "path_constraint": "(!(balance <= 0)) && (!(balance > 20)) && (!(deposit < -5)) && (!(deposit > 10)) && (!(amount < -5)) && (!(amount > 30)) && (!(withdrawals < 0)) && (!(withdrawals > 5)) && (!(deposit > 0)) && (amount > (balance))",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/traces/round_04/b1/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 524,
+      "java_exec_time_ms": 88,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 613,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 1693,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 1693,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 4810,
+        "java_exec_time_ms": 831,
+        "path_log_parse_time_ms": 1,
+        "compile_execute_total_time_ms": 5656,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_4_b2",
+    "iteration": 4,
+    "branch_idx": 2,
+    "inputs": {
+      "balance": "16",
+      "deposit": "8",
+      "amount": "27",
+      "withdrawals": "0"
+    },
+    "path_constraint": "(!(balance <= 0)) && (!(balance > 20)) && (!(deposit < -5)) && (!(deposit > 10)) && (!(amount < -5)) && (!(amount > 30)) && (!(withdrawals < 0)) && (!(withdrawals > 5)) && (deposit > 0)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/traces/round_04/b2/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 521,
+      "java_exec_time_ms": 93,
+      "path_log_parse_time_ms": 1,
+      "compile_execute_total_time_ms": 617,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 1693,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 1693,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 4810,
+        "java_exec_time_ms": 831,
+        "path_log_parse_time_ms": 1,
+        "compile_execute_total_time_ms": 5656,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_4_b3",
+    "iteration": 4,
+    "branch_idx": 3,
+    "inputs": {
+      "balance": "16",
+      "deposit": "-5",
+      "amount": "27",
+      "withdrawals": "6"
+    },
+    "path_constraint": "(!(balance <= 0)) && (!(balance > 20)) && (!(deposit < -5)) && (!(deposit > 10)) && (!(amount < -5)) && (!(amount > 30)) && (!(withdrawals < 0)) && (withdrawals > 5)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/traces/round_04/b3/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 484,
+      "java_exec_time_ms": 95,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 581,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 1693,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 1693,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 4810,
+        "java_exec_time_ms": 831,
+        "path_log_parse_time_ms": 1,
+        "compile_execute_total_time_ms": 5656,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_4_b4",
+    "iteration": 4,
+    "branch_idx": 4,
+    "inputs": {
+      "balance": "16",
+      "deposit": "-5",
+      "amount": "27",
+      "withdrawals": "-32768"
+    },
+    "path_constraint": "(!(balance <= 0)) && (!(balance > 20)) && (!(deposit < -5)) && (!(deposit > 10)) && (!(amount < -5)) && (!(amount > 30)) && (withdrawals < 0)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/traces/round_04/b4/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 576,
+      "java_exec_time_ms": 99,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 677,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 1693,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 1693,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 4810,
+        "java_exec_time_ms": 831,
+        "path_log_parse_time_ms": 1,
+        "compile_execute_total_time_ms": 5656,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_4_b5",
+    "iteration": 4,
+    "branch_idx": 5,
+    "inputs": {
+      "balance": "16",
+      "deposit": "-5",
+      "amount": "31",
+      "withdrawals": "0"
+    },
+    "path_constraint": "(!(balance <= 0)) && (!(balance > 20)) && (!(deposit < -5)) && (!(deposit > 10)) && (!(amount < -5)) && (amount > 30)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/traces/round_04/b5/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 579,
+      "java_exec_time_ms": 110,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 691,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 1693,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 1693,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 4810,
+        "java_exec_time_ms": 831,
+        "path_log_parse_time_ms": 1,
+        "compile_execute_total_time_ms": 5656,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_4_b6",
+    "iteration": 4,
+    "branch_idx": 6,
+    "inputs": {
+      "balance": "16",
+      "deposit": "-5",
+      "amount": "-32768",
+      "withdrawals": "0"
+    },
+    "path_constraint": "(!(balance <= 0)) && (!(balance > 20)) && (!(deposit < -5)) && (!(deposit > 10)) && (amount < -5)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/traces/round_04/b6/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 623,
+      "java_exec_time_ms": 99,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 724,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 1693,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 1693,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 4810,
+        "java_exec_time_ms": 831,
+        "path_log_parse_time_ms": 1,
+        "compile_execute_total_time_ms": 5656,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_4_b7",
+    "iteration": 4,
+    "branch_idx": 7,
+    "inputs": {
+      "balance": "5",
+      "deposit": "11",
+      "amount": "0",
+      "withdrawals": "0"
+    },
+    "path_constraint": "(!(balance <= 0)) && (!(balance > 20)) && (!(deposit < -5)) && (deposit > 10)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/traces/round_04/b7/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 607,
+      "java_exec_time_ms": 99,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 707,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 1693,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 1693,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 4810,
+        "java_exec_time_ms": 831,
+        "path_log_parse_time_ms": 1,
+        "compile_execute_total_time_ms": 5656,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_4_b8",
+    "iteration": 4,
+    "branch_idx": 8,
+    "inputs": {
+      "balance": "16",
+      "deposit": "-32768",
+      "amount": "0",
+      "withdrawals": "0"
+    },
+    "path_constraint": "(!(balance <= 0)) && (!(balance > 20)) && (deposit < -5)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/traces/round_04/b8/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 372,
+      "java_exec_time_ms": 60,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 433,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 1693,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 1693,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 4810,
+        "java_exec_time_ms": 831,
+        "path_log_parse_time_ms": 1,
+        "compile_execute_total_time_ms": 5656,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_5_b0",
+    "iteration": 5,
+    "branch_idx": 0,
+    "inputs": {
+      "balance": "2",
+      "deposit": "4",
+      "amount": "0",
+      "withdrawals": "0"
+    },
+    "path_constraint": "(!(balance <= 0)) && (!(balance > 20)) && (!(deposit < -5)) && (!(deposit > 10)) && (!(amount < -5)) && (!(amount > 30)) && (!(withdrawals < 0)) && (!(withdrawals > 5)) && (deposit > 0) && (!(amount > ((balance) + deposit)))",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/traces/round_05/b0/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 307,
+      "java_exec_time_ms": 58,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 365,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 366,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 366,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 307,
+        "java_exec_time_ms": 58,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 365,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  },
+  {
+    "test_case_id": "tc_6_b0",
+    "iteration": 6,
+    "branch_idx": 0,
+    "inputs": {
+      "balance": "4",
+      "deposit": "7",
+      "amount": "0",
+      "withdrawals": "5"
+    },
+    "path_constraint": "(!(balance <= 0)) && (!(balance > 20)) && (!(deposit < -5)) && (!(deposit > 10)) && (!(amount < -5)) && (!(amount > 30)) && (!(withdrawals < 0)) && (!(withdrawals > 5)) && (deposit > 0) && (!(amount > ((balance) + deposit))) && (withdrawals >= 5)",
+    "status": "batch_safe",
+    "strategy": "batch",
+    "counterexample": "",
+    "trace_path": "csc_tmp/extpaper_kill_expanded_SpfBankWithdrawal_M1_1792783972098816000/SpfBankWithdrawal_M1/traces/round_06/b0/trace.jsonl",
+    "timings": {
+      "compile_time_ms": 275,
+      "java_exec_time_ms": 65,
+      "path_log_parse_time_ms": 0,
+      "compile_execute_total_time_ms": 341,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "path_constraint_time_ms": 0,
+      "verification_solver_time_ms": 0,
+      "parallel_exec_wall_time_ms": 341,
+      "max_workers": 4,
+      "merge_verify_wall_time_ms": 0,
+      "batch_total_wall_time_ms": 342,
+      "cumulative_batch_timings": {
+        "compile_time_ms": 275,
+        "java_exec_time_ms": 65,
+        "path_log_parse_time_ms": 0,
+        "compile_execute_total_time_ms": 341,
+        "cct_path_build_time_ms": 0,
+        "cct_merge_time_ms": 0,
+        "path_constraint_time_ms": 0,
+        "verification_solver_time_ms": 0
+      }
+    }
+  }
+]

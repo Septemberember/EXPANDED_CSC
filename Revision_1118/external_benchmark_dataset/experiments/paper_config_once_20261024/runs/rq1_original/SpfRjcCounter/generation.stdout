@@ -1,0 +1,286 @@
+=======================================================
+  CSC Engine — Test Case Generator
+=======================================================
+  Source:       /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfRjcCounter/SpfRjcCounter.java
+  Mode:         Original CSC
+  Max iter:     2000
+  Strategy:     sequential
+  Session:      extpaper_rq1_original_SpfRjcCounter_1792783160199386000
+  CCT render:   no
+
+[1/3] Auto-instrumenting Java source...
+  [instrument] /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfRjcCounter/SpfRjcCounter.java -> /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfRjcCounter/SpfRjcCounter_instrumented.java
+  Class:        SpfRjcCounter
+  Params:       {'return_value': 'int', 'steps': 'int'}
+  Run log:      csc_tmp/extpaper_rq1_original_SpfRjcCounter_1792783160199386000/SpfRjcCounter/run_log.jsonl
+
+[2/3] Compiling...
+  [compile] SpfRjcCounter.class
+[3/3] CSC Loop
+---------------------------------------------
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+{Ø}
+-----------------------------
+
+
+  [Iter 1] CCT not initialized — running bootstrap
+  Bootstrap inputs: {'steps': 0}
+  Execution path: 8 steps, 3 conditions
+CCT DOT saved to: csc_tmp/extpaper_rq1_original_SpfRjcCounter_1792783160199386000/SpfRjcCounter/SpfRjcCounter_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: steps < 0 @L21 (WP: steps < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: steps > 8 @L21 (WP: steps > 8, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: i < steps @L26 (WP: (0) < steps, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(steps=0)
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 2] Target: i < steps -> T (cnt=1)
+  Path constraint: (!(steps < 0)) && (!(steps > 8)) && ((0) < steps)
+  -> SAT: {'steps': '8'}
+  Execution path: 68 steps, 26 conditions
+Path Truncation: loop count 3 exceeds bound 2.
+CCT DOT saved to: csc_tmp/extpaper_rq1_original_SpfRjcCounter_1792783160199386000/SpfRjcCounter/SpfRjcCounter_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: steps < 0 @L21 (WP: steps < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: steps > 8 @L21 (WP: steps > 8, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: i < steps @L26 (WP: (0) < steps, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(steps=0)
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (0) == 1, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: i < steps @L26 (WP: ((0) + 1) < steps, Cnt: 2)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (1) == 1, Cnt: 2)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: active == 1 @L28 (WP: (1) == 1, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'} [TRUNCATED]  inputs: tc_2(steps=8)
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 3] Target: active == 1 -> F (cnt=1)
+  Path constraint: (!(steps < 0)) && (!(steps > 8)) && ((0) < steps) && (!((0) == 1)) && (((0) + 1) < steps) && ((1) == 1) && (!((1) == 1))
+CCT DOT saved to: csc_tmp/extpaper_rq1_original_SpfRjcCounter_1792783160199386000/SpfRjcCounter/SpfRjcCounter_cct.dot
+  -> INFEASIBLE (UNSAT)
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: steps < 0 @L21 (WP: steps < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: steps > 8 @L21 (WP: steps > 8, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: i < steps @L26 (WP: (0) < steps, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(steps=0)
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (0) == 1, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: i < steps @L26 (WP: ((0) + 1) < steps, Cnt: 2)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (1) == 1, Cnt: 2)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: active == 1 @L28 (WP: (1) == 1, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'} [TRUNCATED]  inputs: tc_2(steps=8)
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 4] Target: initialized == 1 -> T (cnt=1)
+  Path constraint: (!(steps < 0)) && (!(steps > 8)) && ((0) < steps) && ((0) == 1)
+CCT DOT saved to: csc_tmp/extpaper_rq1_original_SpfRjcCounter_1792783160199386000/SpfRjcCounter/SpfRjcCounter_cct.dot
+  -> INFEASIBLE (UNSAT)
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: steps < 0 @L21 (WP: steps < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: steps > 8 @L21 (WP: steps > 8, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: i < steps @L26 (WP: (0) < steps, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(steps=0)
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (0) == 1, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: i < steps @L26 (WP: ((0) + 1) < steps, Cnt: 2)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (1) == 1, Cnt: 2)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: active == 1 @L28 (WP: (1) == 1, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'} [TRUNCATED]  inputs: tc_2(steps=8)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Infeasible (X)
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 5] Target: steps > 8 -> T (cnt=1)
+  Path constraint: (!(steps < 0)) && (steps > 8)
+  -> SAT: {'steps': '12'}
+  Execution path: 3 steps, 2 conditions
+CCT DOT saved to: csc_tmp/extpaper_rq1_original_SpfRjcCounter_1792783160199386000/SpfRjcCounter/SpfRjcCounter_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: steps < 0 @L21 (WP: steps < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: steps > 8 @L21 (WP: steps > 8, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: i < steps @L26 (WP: (0) < steps, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(steps=0)
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (0) == 1, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: i < steps @L26 (WP: ((0) + 1) < steps, Cnt: 2)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (1) == 1, Cnt: 2)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: active == 1 @L28 (WP: (1) == 1, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'} [TRUNCATED]  inputs: tc_2(steps=8)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Infeasible (X)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_5'}  inputs: tc_5(steps=12)
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 6] Target: steps < 0 -> T (cnt=1)
+  Path constraint: (steps < 0)
+  -> SAT: {'steps': '-32768'}
+  Execution path: 2 steps, 1 conditions
+CCT DOT saved to: csc_tmp/extpaper_rq1_original_SpfRjcCounter_1792783160199386000/SpfRjcCounter/SpfRjcCounter_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: steps < 0 @L21 (WP: steps < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: steps > 8 @L21 (WP: steps > 8, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: i < steps @L26 (WP: (0) < steps, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(steps=0)
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (0) == 1, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: i < steps @L26 (WP: ((0) + 1) < steps, Cnt: 2)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (1) == 1, Cnt: 2)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: active == 1 @L28 (WP: (1) == 1, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'} [TRUNCATED]  inputs: tc_2(steps=8)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Infeasible (X)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_5'}  inputs: tc_5(steps=12)
+  (T) ->
+  |   [LEAF] Cases: {'tc_6'}  inputs: tc_6(steps=-32768)
+-----------------------------
+
+
+  [Iter 7] CCT is FULL — all branches covered!
+CCT DOT saved to: csc_tmp/extpaper_rq1_original_SpfRjcCounter_1792783160199386000/SpfRjcCounter/SpfRjcCounter_cct.dot
+
+=======================================================
+  Done! 6 test cases generated in 7 iterations.
+=======================================================
+CCT DOT saved to: csc_tmp/extpaper_rq1_original_SpfRjcCounter_1792783160199386000/SpfRjcCounter/SpfRjcCounter_cct.dot
+
+Generated Test Cases:
+---------------------------------------------
+  [BOOTSTRAP]  (bootstrap)
+  tc_02  [SAT]  steps=8
+  [INFEASIBLE]
+  [INFEASIBLE]
+  tc_05  [SAT]  steps=12
+  tc_06  [SAT]  steps=-32768
+
+Timing Summary (ms):
+---------------------------------------------
+  solver_time_ms: 9
+  compile_time_ms: 1126
+  java_exec_time_ms: 238
+  path_log_parse_time_ms: 0
+  cct_path_build_time_ms: 0
+  cct_merge_time_ms: 0
+
+Test cases written to: csc_tmp/extpaper_rq1_original_SpfRjcCounter_1792783160199386000/SpfRjcCounter/testcases.json
+
+CCT visualization:
+  DOT: csc_tmp/extpaper_rq1_original_SpfRjcCounter_1792783160199386000/SpfRjcCounter/SpfRjcCounter_cct.dot
+  Stats: csc_tmp/extpaper_rq1_original_SpfRjcCounter_1792783160199386000/SpfRjcCounter/cct_stats.json
+  Counts: nodes=13, leaves=6, covered=4, infeasible=2, out_of_range=0, expanded=0, truncated=1
+  Render script: csc_tmp/extpaper_rq1_original_SpfRjcCounter_1792783160199386000/SpfRjcCounter/render_cct.sh
+  (render later with: csc_tmp/extpaper_rq1_original_SpfRjcCounter_1792783160199386000/SpfRjcCounter/render_cct.sh)
+
+Run log:
+  JSONL: csc_tmp/extpaper_rq1_original_SpfRjcCounter_1792783160199386000/SpfRjcCounter/run_log.jsonl

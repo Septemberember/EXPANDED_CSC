@@ -1,0 +1,26 @@
+{"type":"COND","line":5,"kind":"if","order":1,"expr":"a < 32","value":false}
+{"type":"COND","line":5,"kind":"if","order":2,"expr":"a > 126","value":false}
+{"type":"COND","line":5,"kind":"if","order":3,"expr":"b < 32","value":false}
+{"type":"COND","line":5,"kind":"if","order":4,"expr":"b > 126","value":false}
+{"type":"COND","line":5,"kind":"if","order":5,"expr":"c < 32","value":false}
+{"type":"COND","line":5,"kind":"if","order":6,"expr":"c > 126","value":false}
+{"type":"ASSIGN","line":6,"kind":"var_decl","target":"i","rhs":"1","value":"1"}
+{"type":"ASSIGN","line":7,"kind":"var_decl","target":"letter","rhs":"((a >= 65 && a <= 90) || (a >= 97 && a <= 122))","value":"false"}
+{"type":"COND","line":8,"kind":"if","order":1,"expr":"(letter) == false","value":true}
+{"type":"COND","line":9,"kind":"while","order":1,"expr":"i < 3","value":true}
+{"type":"ASSIGN","line":10,"kind":"var_decl","target":"ch","rhs":"b","value":"80"}
+{"type":"COND","line":11,"kind":"if","order":1,"expr":"i == 2","value":false}
+{"type":"ASSIGN","line":12,"kind":"assign","target":"letter","rhs":"((ch >= 65 && ch <= 90) || (ch >= 97 && ch <= 122))","value":"true"}
+{"type":"COND","line":13,"kind":"if","order":1,"expr":"letter","value":true}
+{"type":"ASSIGN","line":13,"kind":"assign","target":"i","rhs":"i + 1","value":"2"}
+{"type":"COND","line":9,"kind":"while","order":1,"expr":"i < 3","value":true}
+{"type":"ASSIGN","line":10,"kind":"var_decl","target":"ch","rhs":"b","value":"80"}
+{"type":"COND","line":11,"kind":"if","order":1,"expr":"i == 2","value":true}
+{"type":"ASSIGN","line":11,"kind":"assign","target":"ch","rhs":"c","value":"48"}
+{"type":"ASSIGN","line":12,"kind":"assign","target":"letter","rhs":"((ch >= 65 && ch <= 90) || (ch >= 97 && ch <= 122))","value":"false"}
+{"type":"COND","line":13,"kind":"if","order":1,"expr":"letter","value":false}
+{"type":"ASSIGN","line":15,"kind":"var_decl","target":"number","rhs":"(ch >= 48 && ch <= 57)","value":"true"}
+{"type":"COND","line":16,"kind":"if","order":1,"expr":"number","value":true}
+{"type":"ASSIGN","line":16,"kind":"assign","target":"i","rhs":"i + 1","value":"3"}
+{"type":"COND","line":9,"kind":"while","order":1,"expr":"i < 3","value":false}
+{"type":"RETURN","line":19,"target":"return_value","rhs":"1","value":"1"}

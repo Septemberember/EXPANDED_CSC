@@ -1,0 +1,257 @@
+=======================================================
+  CSC Engine — Test Case Generator
+=======================================================
+  Source:       /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfRjcCounter/SpfRjcCounter_M4.java
+  Mode:         Original CSC
+  Max iter:     100
+  Strategy:     batch
+  Workers:      4
+  Session:      extpaper_kill_original_SpfRjcCounter_M4_1792784253478349000
+  CCT render:   no
+
+[1/3] Auto-instrumenting Java source...
+  [instrument] /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfRjcCounter/SpfRjcCounter_M4.java -> /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfRjcCounter/SpfRjcCounter_M4_instrumented.java
+  Class:        SpfRjcCounter_M4
+  Params:       {'return_value': 'int', 'steps': 'int'}
+  Run log:      csc_tmp/extpaper_kill_original_SpfRjcCounter_M4_1792784253478349000/SpfRjcCounter_M4/run_log.jsonl
+
+[2/3] Compiling...
+  [compile] SpfRjcCounter_M4.class
+[3/3] CSC Loop
+---------------------------------------------
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+{Ø}
+-----------------------------
+
+
+  [Batch Round 1] CCT not initialized — running bootstrap
+  Bootstrap inputs: {'steps': 0}
+  Execution path: 8 steps, 3 conditions
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SpfRjcCounter_M4_1792784253478349000/SpfRjcCounter_M4/SpfRjcCounter_M4_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: steps < 0 @L21 (WP: steps < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: steps > 8 @L21 (WP: steps > 8, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: i < steps @L26 (WP: (0) < steps, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(steps=0)
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Batch Round 2] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: steps < 0 @L21 (WP: steps < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: steps > 8 @L21 (WP: steps > 8, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: i < steps @L26 (WP: (0) < steps, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(steps=0)
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SpfRjcCounter_M4_1792784253478349000/SpfRjcCounter_M4/SpfRjcCounter_M4_cct.dot
+  -> Executing 3 candidates with 4 workers; merging 0 terminal updates
+Path Truncation: loop count 3 exceeds bound 2.
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SpfRjcCounter_M4_1792784253478349000/SpfRjcCounter_M4/SpfRjcCounter_M4_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: steps < 0 @L21 (WP: steps < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: steps > 8 @L21 (WP: steps > 8, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: i < steps @L26 (WP: (0) < steps, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(steps=0)
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (0) == 1, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: i < steps @L26 (WP: ((0) + 1) < steps, Cnt: 2)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (1) == 1, Cnt: 2)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: active == 1 @L28 (WP: (1) == 1, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'} [TRUNCATED]  inputs: tc_2_b0(steps=8)
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(steps=12)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(steps=-32768)
+-----------------------------
+
+
+  [Batch Round 3] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: steps < 0 @L21 (WP: steps < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: steps > 8 @L21 (WP: steps > 8, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: i < steps @L26 (WP: (0) < steps, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(steps=0)
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (0) == 1, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: i < steps @L26 (WP: ((0) + 1) < steps, Cnt: 2)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (1) == 1, Cnt: 2)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: active == 1 @L28 (WP: (1) == 1, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'} [TRUNCATED]  inputs: tc_2_b0(steps=8)
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(steps=12)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(steps=-32768)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SpfRjcCounter_M4_1792784253478349000/SpfRjcCounter_M4/SpfRjcCounter_M4_cct.dot
+  -> Executing 0 candidates with 4 workers; merging 2 terminal updates
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SpfRjcCounter_M4_1792784253478349000/SpfRjcCounter_M4/SpfRjcCounter_M4_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: steps < 0 @L21 (WP: steps < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: steps > 8 @L21 (WP: steps > 8, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: i < steps @L26 (WP: (0) < steps, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(steps=0)
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (0) == 1, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: i < steps @L26 (WP: ((0) + 1) < steps, Cnt: 2)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (1) == 1, Cnt: 2)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: active == 1 @L28 (WP: (1) == 1, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'} [TRUNCATED]  inputs: tc_2_b0(steps=8)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Infeasible (X)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(steps=12)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(steps=-32768)
+-----------------------------
+
+
+  [Batch Round 4] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: steps < 0 @L21 (WP: steps < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: steps > 8 @L21 (WP: steps > 8, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: i < steps @L26 (WP: (0) < steps, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(steps=0)
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (0) == 1, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: i < steps @L26 (WP: ((0) + 1) < steps, Cnt: 2)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (1) == 1, Cnt: 2)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: active == 1 @L28 (WP: (1) == 1, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'} [TRUNCATED]  inputs: tc_2_b0(steps=8)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Infeasible (X)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(steps=12)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(steps=-32768)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SpfRjcCounter_M4_1792784253478349000/SpfRjcCounter_M4/SpfRjcCounter_M4_cct.dot
+  -> CCT is FULL — all branches covered!
+
+=======================================================
+  Done! 4 test cases generated in 4 iterations.
+=======================================================
+CCT DOT saved to: csc_tmp/extpaper_kill_original_SpfRjcCounter_M4_1792784253478349000/SpfRjcCounter_M4/SpfRjcCounter_M4_cct.dot
+
+Generated Test Cases:
+---------------------------------------------
+  [BOOTSTRAP]  (bootstrap)
+  round_02/b0  [BATCH_SAFE]  steps=8
+  round_02/b1  [BATCH_SAFE]  steps=12
+  round_02/b2  [BATCH_SAFE]  steps=-32768
+
+Timing Summary (ms):
+---------------------------------------------
+  solver_time_ms: 6
+  frontier_discovery_time_ms: 10
+  compile_time_ms: 1634
+  java_exec_time_ms: 305
+  path_log_parse_time_ms: 1
+  cct_path_build_time_ms: 0
+  cct_merge_time_ms: 0
+  verification_solver_time_ms: 0
+  parallel_exec_wall_time_ms: 532
+  merge_verify_wall_time_ms: 0
+  batch_total_wall_time_ms: 533
+
+Test cases written to: csc_tmp/extpaper_kill_original_SpfRjcCounter_M4_1792784253478349000/SpfRjcCounter_M4/testcases.json
+
+CCT visualization:
+  DOT: csc_tmp/extpaper_kill_original_SpfRjcCounter_M4_1792784253478349000/SpfRjcCounter_M4/SpfRjcCounter_M4_cct.dot
+  Stats: csc_tmp/extpaper_kill_original_SpfRjcCounter_M4_1792784253478349000/SpfRjcCounter_M4/cct_stats.json
+  Counts: nodes=13, leaves=6, covered=4, infeasible=2, out_of_range=0, expanded=0, truncated=1
+  Render script: csc_tmp/extpaper_kill_original_SpfRjcCounter_M4_1792784253478349000/SpfRjcCounter_M4/render_cct.sh
+  (render later with: csc_tmp/extpaper_kill_original_SpfRjcCounter_M4_1792784253478349000/SpfRjcCounter_M4/render_cct.sh)
+
+Run log:
+  JSONL: csc_tmp/extpaper_kill_original_SpfRjcCounter_M4_1792784253478349000/SpfRjcCounter_M4/run_log.jsonl

@@ -1,0 +1,4710 @@
+{
+  "summary": {
+    "strategy": "condition_and_interval_v1",
+    "default_interval_strategy": "statement_presence",
+    "available_interval_strategies": [
+      "cct_only",
+      "statement_presence",
+      "edge_divergence_sibling_exclusive",
+      "edge_divergence_sibling_shared"
+    ],
+    "statement_aware_intervals": true,
+    "zero_statement_intervals": 6,
+    "executed_cases": 11,
+    "failed_cases": 2,
+    "condition_node_candidates": 14,
+    "condition_interval_candidates": 15,
+    "ignored": {
+      "infeasible_leaves": 4,
+      "out_of_range_leaves": 0,
+      "empty_leaves": 5
+    }
+  },
+  "condition_node_ranking": [
+    {
+      "node_id": "root.F.F.F.F.F.F",
+      "line": 8,
+      "condition": "(letter) == false",
+      "loop_count": 1,
+      "depth": 6,
+      "exec_count": 5,
+      "fail_count": 2,
+      "pass_count": 3,
+      "failure_density": 0.4,
+      "risk_score": 0.43944491546724396,
+      "ignored": {
+        "infeasible_leaves": 4,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 5
+      },
+      "rank": 1
+    },
+    {
+      "node_id": "root.F.F.F.F.F",
+      "line": 5,
+      "condition": "c > 126",
+      "loop_count": 1,
+      "depth": 5,
+      "exec_count": 6,
+      "fail_count": 2,
+      "pass_count": 4,
+      "failure_density": 0.3333333333333333,
+      "risk_score": 0.3662040962227032,
+      "ignored": {
+        "infeasible_leaves": 4,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 5
+      },
+      "rank": 2
+    },
+    {
+      "node_id": "root.F.F.F.F.F.F.T.T.F.T.T.T.F",
+      "line": 16,
+      "condition": "number",
+      "loop_count": 1,
+      "depth": 13,
+      "exec_count": 2,
+      "fail_count": 1,
+      "pass_count": 1,
+      "failure_density": 0.5,
+      "risk_score": 0.34657359027997264,
+      "ignored": {
+        "infeasible_leaves": 0,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 0
+      },
+      "rank": 3
+    },
+    {
+      "node_id": "root.F.F.F.F.F.F.T.T.F.T.T.T",
+      "line": 13,
+      "condition": "letter",
+      "loop_count": 2,
+      "depth": 12,
+      "exec_count": 2,
+      "fail_count": 1,
+      "pass_count": 1,
+      "failure_density": 0.5,
+      "risk_score": 0.34657359027997264,
+      "ignored": {
+        "infeasible_leaves": 0,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 1
+      },
+      "rank": 4
+    },
+    {
+      "node_id": "root.F.F.F.F.F.F.T.T.F.T.T",
+      "line": 11,
+      "condition": "i == 2",
+      "loop_count": 2,
+      "depth": 11,
+      "exec_count": 2,
+      "fail_count": 1,
+      "pass_count": 1,
+      "failure_density": 0.5,
+      "risk_score": 0.34657359027997264,
+      "ignored": {
+        "infeasible_leaves": 0,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 2
+      },
+      "rank": 5
+    },
+    {
+      "node_id": "root.F.F.F.F.F.F.T.T.F.T",
+      "line": 9,
+      "condition": "i < 3",
+      "loop_count": 2,
+      "depth": 10,
+      "exec_count": 2,
+      "fail_count": 1,
+      "pass_count": 1,
+      "failure_density": 0.5,
+      "risk_score": 0.34657359027997264,
+      "ignored": {
+        "infeasible_leaves": 1,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 2
+      },
+      "rank": 6
+    },
+    {
+      "node_id": "root.F.F.F.F",
+      "line": 5,
+      "condition": "c < 32",
+      "loop_count": 1,
+      "depth": 4,
+      "exec_count": 7,
+      "fail_count": 2,
+      "pass_count": 5,
+      "failure_density": 0.2857142857142857,
+      "risk_score": 0.31388922533374564,
+      "ignored": {
+        "infeasible_leaves": 4,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 5
+      },
+      "rank": 7
+    },
+    {
+      "node_id": "root.F.F.F",
+      "line": 5,
+      "condition": "b > 126",
+      "loop_count": 1,
+      "depth": 3,
+      "exec_count": 8,
+      "fail_count": 2,
+      "pass_count": 6,
+      "failure_density": 0.25,
+      "risk_score": 0.27465307216702745,
+      "ignored": {
+        "infeasible_leaves": 4,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 5
+      },
+      "rank": 8
+    },
+    {
+      "node_id": "root.F.F",
+      "line": 5,
+      "condition": "b < 32",
+      "loop_count": 1,
+      "depth": 2,
+      "exec_count": 9,
+      "fail_count": 2,
+      "pass_count": 7,
+      "failure_density": 0.2222222222222222,
+      "risk_score": 0.24413606414846883,
+      "ignored": {
+        "infeasible_leaves": 4,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 5
+      },
+      "rank": 9
+    },
+    {
+      "node_id": "root.F",
+      "line": 5,
+      "condition": "a > 126",
+      "loop_count": 1,
+      "depth": 1,
+      "exec_count": 10,
+      "fail_count": 2,
+      "pass_count": 8,
+      "failure_density": 0.2,
+      "risk_score": 0.21972245773362198,
+      "ignored": {
+        "infeasible_leaves": 4,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 5
+      },
+      "rank": 10
+    },
+    {
+      "node_id": "root",
+      "line": 5,
+      "condition": "a < 32",
+      "loop_count": 1,
+      "depth": 0,
+      "exec_count": 11,
+      "fail_count": 2,
+      "pass_count": 9,
+      "failure_density": 0.18181818181818182,
+      "risk_score": 0.19974768884874725,
+      "ignored": {
+        "infeasible_leaves": 4,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 5
+      },
+      "rank": 11
+    },
+    {
+      "node_id": "root.F.F.F.F.F.F.T.T.F",
+      "line": 13,
+      "condition": "letter",
+      "loop_count": 1,
+      "depth": 9,
+      "exec_count": 4,
+      "fail_count": 1,
+      "pass_count": 3,
+      "failure_density": 0.25,
+      "risk_score": 0.17328679513998632,
+      "ignored": {
+        "infeasible_leaves": 2,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 5
+      },
+      "rank": 12
+    },
+    {
+      "node_id": "root.F.F.F.F.F.F.T.T",
+      "line": 11,
+      "condition": "i == 2",
+      "loop_count": 1,
+      "depth": 8,
+      "exec_count": 4,
+      "fail_count": 1,
+      "pass_count": 3,
+      "failure_density": 0.25,
+      "risk_score": 0.17328679513998632,
+      "ignored": {
+        "infeasible_leaves": 3,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 5
+      },
+      "rank": 13
+    },
+    {
+      "node_id": "root.F.F.F.F.F.F.T",
+      "line": 9,
+      "condition": "i < 3",
+      "loop_count": 1,
+      "depth": 7,
+      "exec_count": 4,
+      "fail_count": 1,
+      "pass_count": 3,
+      "failure_density": 0.25,
+      "risk_score": 0.17328679513998632,
+      "ignored": {
+        "infeasible_leaves": 4,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 5
+      },
+      "rank": 14
+    }
+  ],
+  "condition_interval_ranking": [
+    {
+      "edge_id": "root.F.F.F.F.F.F.T.T.F.T.T.T.F.TRUE",
+      "from_line": 16,
+      "from_condition": "number",
+      "from_loop_count": 1,
+      "outcome": "true",
+      "to_line": null,
+      "to_condition": null,
+      "to_loop_count": null,
+      "line_interval": [
+        16,
+        null
+      ],
+      "interval_kind": "to_leaf",
+      "condition_anchor_span": [
+        16,
+        null
+      ],
+      "condition_anchor_kind": "to_leaf",
+      "location_basis": "statement_lines",
+      "region_size": 1,
+      "depth": 14,
+      "exec_count": 1,
+      "fail_count": 1,
+      "pass_count": 0,
+      "failure_density": 1.0,
+      "parent_exec_count": 2,
+      "parent_fail_count": 1,
+      "parent_pass_count": 1,
+      "parent_failure_density": 0.5,
+      "sibling_failure_density": 0.0,
+      "outcome_delta": 1.0,
+      "base_interval_score": 0.3010299956639812,
+      "outcome_delta_bonus": 2.0,
+      "base_risk_score": 0.6020599913279624,
+      "risk_score": 0.6020599913279624,
+      "ignored": {
+        "infeasible_leaves": 0,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 0
+      },
+      "segment_status": "matched",
+      "statement_count": 1,
+      "statement_line_count": 1,
+      "assignment_count": 1,
+      "return_count": 0,
+      "statement_lines": [
+        16
+      ],
+      "sample_events": [
+        {
+          "type": "ASSIGN",
+          "line": 16,
+          "kind": "assign",
+          "target": "i",
+          "rhs": "i + 1"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "edge_id": "root.F.F.F.F.F.F.FALSE",
+      "from_line": 8,
+      "from_condition": "(letter) == false",
+      "from_loop_count": 1,
+      "outcome": "false",
+      "to_line": null,
+      "to_condition": null,
+      "to_loop_count": null,
+      "line_interval": [
+        8,
+        null
+      ],
+      "interval_kind": "to_leaf",
+      "condition_anchor_span": [
+        8,
+        null
+      ],
+      "condition_anchor_kind": "to_leaf",
+      "location_basis": "statement_lines",
+      "region_size": 1,
+      "depth": 7,
+      "exec_count": 1,
+      "fail_count": 1,
+      "pass_count": 0,
+      "failure_density": 1.0,
+      "parent_exec_count": 5,
+      "parent_fail_count": 2,
+      "parent_pass_count": 3,
+      "parent_failure_density": 0.4,
+      "sibling_failure_density": 0.25,
+      "outcome_delta": 0.75,
+      "base_interval_score": 0.3010299956639812,
+      "outcome_delta_bonus": 1.75,
+      "base_risk_score": 0.5268024924119671,
+      "risk_score": 0.5268024924119671,
+      "ignored": {
+        "infeasible_leaves": 0,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 0
+      },
+      "segment_status": "matched",
+      "statement_count": 1,
+      "statement_line_count": 1,
+      "assignment_count": 0,
+      "return_count": 1,
+      "statement_lines": [
+        20
+      ],
+      "sample_events": [
+        {
+          "type": "RETURN",
+          "line": 20,
+          "kind": "",
+          "target": "return_value",
+          "rhs": "0"
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "edge_id": "root.F.F.F.F.F.FALSE",
+      "from_line": 5,
+      "from_condition": "c > 126",
+      "from_loop_count": 1,
+      "outcome": "false",
+      "to_line": 8,
+      "to_condition": "(letter) == false",
+      "to_loop_count": 1,
+      "line_interval": [
+        5,
+        8
+      ],
+      "interval_kind": "forward",
+      "condition_anchor_span": [
+        5,
+        8
+      ],
+      "condition_anchor_kind": "forward",
+      "location_basis": "statement_lines",
+      "region_size": 2,
+      "depth": 6,
+      "exec_count": 5,
+      "fail_count": 2,
+      "pass_count": 3,
+      "failure_density": 0.4,
+      "parent_exec_count": 6,
+      "parent_fail_count": 2,
+      "parent_pass_count": 4,
+      "parent_failure_density": 0.3333333333333333,
+      "sibling_failure_density": 0.0,
+      "outcome_delta": 0.4,
+      "base_interval_score": 0.19084850188786498,
+      "outcome_delta_bonus": 1.4,
+      "base_risk_score": 0.26718790264301095,
+      "risk_score": 0.26718790264301095,
+      "ignored": {
+        "infeasible_leaves": 4,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 5
+      },
+      "segment_status": "matched",
+      "statement_count": 2,
+      "statement_line_count": 2,
+      "assignment_count": 2,
+      "return_count": 0,
+      "statement_lines": [
+        6,
+        7
+      ],
+      "sample_events": [
+        {
+          "type": "ASSIGN",
+          "line": 6,
+          "kind": "var_decl",
+          "target": "i",
+          "rhs": "1"
+        },
+        {
+          "type": "ASSIGN",
+          "line": 7,
+          "kind": "var_decl",
+          "target": "letter",
+          "rhs": "((a >= 65 && a <= 90) || (a >= 97 && a <= 122))"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "edge_id": "root.F.F.F.F.F.F.T.T.F.T.T.T.FALSE",
+      "from_line": 13,
+      "from_condition": "letter",
+      "from_loop_count": 2,
+      "outcome": "false",
+      "to_line": 16,
+      "to_condition": "number",
+      "to_loop_count": 1,
+      "line_interval": [
+        13,
+        16
+      ],
+      "interval_kind": "forward",
+      "condition_anchor_span": [
+        13,
+        16
+      ],
+      "condition_anchor_kind": "forward",
+      "location_basis": "statement_lines",
+      "region_size": 1,
+      "depth": 13,
+      "exec_count": 2,
+      "fail_count": 1,
+      "pass_count": 1,
+      "failure_density": 0.5,
+      "parent_exec_count": 2,
+      "parent_fail_count": 1,
+      "parent_pass_count": 1,
+      "parent_failure_density": 0.5,
+      "sibling_failure_density": 0.0,
+      "outcome_delta": 0.5,
+      "base_interval_score": 0.1505149978319906,
+      "outcome_delta_bonus": 1.5,
+      "base_risk_score": 0.22577249674798588,
+      "risk_score": 0.22577249674798588,
+      "ignored": {
+        "infeasible_leaves": 0,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 0
+      },
+      "segment_status": "matched",
+      "statement_count": 1,
+      "statement_line_count": 1,
+      "assignment_count": 1,
+      "return_count": 0,
+      "statement_lines": [
+        15
+      ],
+      "sample_events": [
+        {
+          "type": "ASSIGN",
+          "line": 15,
+          "kind": "var_decl",
+          "target": "number",
+          "rhs": "(ch >= 48 && ch <= 57)"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "edge_id": "root.F.F.F.F.F.F.T.T.F.T.T.TRUE",
+      "from_line": 11,
+      "from_condition": "i == 2",
+      "from_loop_count": 2,
+      "outcome": "true",
+      "to_line": 13,
+      "to_condition": "letter",
+      "to_loop_count": 2,
+      "line_interval": [
+        11,
+        13
+      ],
+      "interval_kind": "forward",
+      "condition_anchor_span": [
+        11,
+        13
+      ],
+      "condition_anchor_kind": "forward",
+      "location_basis": "statement_lines",
+      "region_size": 2,
+      "depth": 12,
+      "exec_count": 2,
+      "fail_count": 1,
+      "pass_count": 1,
+      "failure_density": 0.5,
+      "parent_exec_count": 2,
+      "parent_fail_count": 1,
+      "parent_pass_count": 1,
+      "parent_failure_density": 0.5,
+      "sibling_failure_density": 0.0,
+      "outcome_delta": 0.5,
+      "base_interval_score": 0.1505149978319906,
+      "outcome_delta_bonus": 1.5,
+      "base_risk_score": 0.22577249674798588,
+      "risk_score": 0.22577249674798588,
+      "ignored": {
+        "infeasible_leaves": 0,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 1
+      },
+      "segment_status": "matched",
+      "statement_count": 2,
+      "statement_line_count": 2,
+      "assignment_count": 2,
+      "return_count": 0,
+      "statement_lines": [
+        11,
+        12
+      ],
+      "sample_events": [
+        {
+          "type": "ASSIGN",
+          "line": 11,
+          "kind": "assign",
+          "target": "ch",
+          "rhs": "c"
+        },
+        {
+          "type": "ASSIGN",
+          "line": 12,
+          "kind": "assign",
+          "target": "letter",
+          "rhs": "((ch >= 65 && ch <= 90) || (ch >= 97 && ch <= 122))"
+        }
+      ],
+      "rank": 5
+    },
+    {
+      "edge_id": "root.F.F.F.F.F.F.T.T.F.T.TRUE",
+      "from_line": 9,
+      "from_condition": "i < 3",
+      "from_loop_count": 2,
+      "outcome": "true",
+      "to_line": 11,
+      "to_condition": "i == 2",
+      "to_loop_count": 2,
+      "line_interval": [
+        9,
+        11
+      ],
+      "interval_kind": "forward",
+      "condition_anchor_span": [
+        9,
+        11
+      ],
+      "condition_anchor_kind": "forward",
+      "location_basis": "statement_lines",
+      "region_size": 1,
+      "depth": 11,
+      "exec_count": 2,
+      "fail_count": 1,
+      "pass_count": 1,
+      "failure_density": 0.5,
+      "parent_exec_count": 2,
+      "parent_fail_count": 1,
+      "parent_pass_count": 1,
+      "parent_failure_density": 0.5,
+      "sibling_failure_density": 0.0,
+      "outcome_delta": 0.5,
+      "base_interval_score": 0.1505149978319906,
+      "outcome_delta_bonus": 1.5,
+      "base_risk_score": 0.22577249674798588,
+      "risk_score": 0.22577249674798588,
+      "ignored": {
+        "infeasible_leaves": 0,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 2
+      },
+      "segment_status": "matched",
+      "statement_count": 1,
+      "statement_line_count": 1,
+      "assignment_count": 1,
+      "return_count": 0,
+      "statement_lines": [
+        10
+      ],
+      "sample_events": [
+        {
+          "type": "ASSIGN",
+          "line": 10,
+          "kind": "var_decl",
+          "target": "ch",
+          "rhs": "b"
+        }
+      ],
+      "rank": 6
+    },
+    {
+      "edge_id": "root.F.F.F.F.F.F.T.T.F.TRUE",
+      "from_line": 13,
+      "from_condition": "letter",
+      "from_loop_count": 1,
+      "outcome": "true",
+      "to_line": 9,
+      "to_condition": "i < 3",
+      "to_loop_count": 2,
+      "line_interval": [
+        9,
+        13
+      ],
+      "interval_kind": "backward_or_loop",
+      "condition_anchor_span": [
+        9,
+        13
+      ],
+      "condition_anchor_kind": "backward_or_loop",
+      "location_basis": "statement_lines",
+      "region_size": 1,
+      "depth": 10,
+      "exec_count": 2,
+      "fail_count": 1,
+      "pass_count": 1,
+      "failure_density": 0.5,
+      "parent_exec_count": 4,
+      "parent_fail_count": 1,
+      "parent_pass_count": 3,
+      "parent_failure_density": 0.25,
+      "sibling_failure_density": 0.0,
+      "outcome_delta": 0.5,
+      "base_interval_score": 0.1505149978319906,
+      "outcome_delta_bonus": 1.5,
+      "base_risk_score": 0.22577249674798588,
+      "risk_score": 0.22577249674798588,
+      "ignored": {
+        "infeasible_leaves": 1,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 2
+      },
+      "segment_status": "matched",
+      "statement_count": 1,
+      "statement_line_count": 1,
+      "assignment_count": 1,
+      "return_count": 0,
+      "statement_lines": [
+        13
+      ],
+      "sample_events": [
+        {
+          "type": "ASSIGN",
+          "line": 13,
+          "kind": "assign",
+          "target": "i",
+          "rhs": "i + 1"
+        }
+      ],
+      "rank": 7
+    },
+    {
+      "edge_id": "root.F.F.F.F.F.F.T.T.FALSE",
+      "from_line": 11,
+      "from_condition": "i == 2",
+      "from_loop_count": 1,
+      "outcome": "false",
+      "to_line": 13,
+      "to_condition": "letter",
+      "to_loop_count": 1,
+      "line_interval": [
+        11,
+        13
+      ],
+      "interval_kind": "forward",
+      "condition_anchor_span": [
+        11,
+        13
+      ],
+      "condition_anchor_kind": "forward",
+      "location_basis": "statement_lines",
+      "region_size": 1,
+      "depth": 9,
+      "exec_count": 4,
+      "fail_count": 1,
+      "pass_count": 3,
+      "failure_density": 0.25,
+      "parent_exec_count": 4,
+      "parent_fail_count": 1,
+      "parent_pass_count": 3,
+      "parent_failure_density": 0.25,
+      "sibling_failure_density": 0.0,
+      "outcome_delta": 0.25,
+      "base_interval_score": 0.0752574989159953,
+      "outcome_delta_bonus": 1.25,
+      "base_risk_score": 0.09407187364499413,
+      "risk_score": 0.09407187364499413,
+      "ignored": {
+        "infeasible_leaves": 2,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 5
+      },
+      "segment_status": "matched",
+      "statement_count": 1,
+      "statement_line_count": 1,
+      "assignment_count": 1,
+      "return_count": 0,
+      "statement_lines": [
+        12
+      ],
+      "sample_events": [
+        {
+          "type": "ASSIGN",
+          "line": 12,
+          "kind": "assign",
+          "target": "letter",
+          "rhs": "((ch >= 65 && ch <= 90) || (ch >= 97 && ch <= 122))"
+        }
+      ],
+      "rank": 8
+    },
+    {
+      "edge_id": "root.F.F.F.F.F.F.T.TRUE",
+      "from_line": 9,
+      "from_condition": "i < 3",
+      "from_loop_count": 1,
+      "outcome": "true",
+      "to_line": 11,
+      "to_condition": "i == 2",
+      "to_loop_count": 1,
+      "line_interval": [
+        9,
+        11
+      ],
+      "interval_kind": "forward",
+      "condition_anchor_span": [
+        9,
+        11
+      ],
+      "condition_anchor_kind": "forward",
+      "location_basis": "statement_lines",
+      "region_size": 1,
+      "depth": 8,
+      "exec_count": 4,
+      "fail_count": 1,
+      "pass_count": 3,
+      "failure_density": 0.25,
+      "parent_exec_count": 4,
+      "parent_fail_count": 1,
+      "parent_pass_count": 3,
+      "parent_failure_density": 0.25,
+      "sibling_failure_density": 0.0,
+      "outcome_delta": 0.25,
+      "base_interval_score": 0.0752574989159953,
+      "outcome_delta_bonus": 1.25,
+      "base_risk_score": 0.09407187364499413,
+      "risk_score": 0.09407187364499413,
+      "ignored": {
+        "infeasible_leaves": 3,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 5
+      },
+      "segment_status": "matched",
+      "statement_count": 1,
+      "statement_line_count": 1,
+      "assignment_count": 1,
+      "return_count": 0,
+      "statement_lines": [
+        10
+      ],
+      "sample_events": [
+        {
+          "type": "ASSIGN",
+          "line": 10,
+          "kind": "var_decl",
+          "target": "ch",
+          "rhs": "b"
+        }
+      ],
+      "rank": 9
+    },
+    {
+      "edge_id": "root.F.F.F.F.FALSE",
+      "from_line": 5,
+      "from_condition": "c < 32",
+      "from_loop_count": 1,
+      "outcome": "false",
+      "to_line": 5,
+      "to_condition": "c > 126",
+      "to_loop_count": 1,
+      "line_interval": [
+        5,
+        5
+      ],
+      "interval_kind": "forward",
+      "condition_anchor_span": [
+        5,
+        5
+      ],
+      "condition_anchor_kind": "forward",
+      "location_basis": "statement_lines",
+      "region_size": 0,
+      "depth": 5,
+      "exec_count": 6,
+      "fail_count": 2,
+      "pass_count": 4,
+      "failure_density": 0.3333333333333333,
+      "parent_exec_count": 7,
+      "parent_fail_count": 2,
+      "parent_pass_count": 5,
+      "parent_failure_density": 0.2857142857142857,
+      "sibling_failure_density": 0.0,
+      "outcome_delta": 0.3333333333333333,
+      "base_interval_score": 0.15904041823988746,
+      "outcome_delta_bonus": 1.3333333333333333,
+      "base_risk_score": 0.2120538909865166,
+      "risk_score": 0.0,
+      "ignored": {
+        "infeasible_leaves": 4,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 5
+      },
+      "segment_status": "matched",
+      "statement_count": 0,
+      "statement_line_count": 0,
+      "assignment_count": 0,
+      "return_count": 0,
+      "statement_lines": [],
+      "sample_events": [],
+      "rank": 10
+    },
+    {
+      "edge_id": "root.F.F.F.FALSE",
+      "from_line": 5,
+      "from_condition": "b > 126",
+      "from_loop_count": 1,
+      "outcome": "false",
+      "to_line": 5,
+      "to_condition": "c < 32",
+      "to_loop_count": 1,
+      "line_interval": [
+        5,
+        5
+      ],
+      "interval_kind": "forward",
+      "condition_anchor_span": [
+        5,
+        5
+      ],
+      "condition_anchor_kind": "forward",
+      "location_basis": "statement_lines",
+      "region_size": 0,
+      "depth": 4,
+      "exec_count": 7,
+      "fail_count": 2,
+      "pass_count": 5,
+      "failure_density": 0.2857142857142857,
+      "parent_exec_count": 8,
+      "parent_fail_count": 2,
+      "parent_pass_count": 6,
+      "parent_failure_density": 0.25,
+      "sibling_failure_density": 0.0,
+      "outcome_delta": 0.2857142857142857,
+      "base_interval_score": 0.13632035849133212,
+      "outcome_delta_bonus": 1.2857142857142856,
+      "base_risk_score": 0.17526903234599842,
+      "risk_score": 0.0,
+      "ignored": {
+        "infeasible_leaves": 4,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 5
+      },
+      "segment_status": "matched",
+      "statement_count": 0,
+      "statement_line_count": 0,
+      "assignment_count": 0,
+      "return_count": 0,
+      "statement_lines": [],
+      "sample_events": [],
+      "rank": 11
+    },
+    {
+      "edge_id": "root.F.F.FALSE",
+      "from_line": 5,
+      "from_condition": "b < 32",
+      "from_loop_count": 1,
+      "outcome": "false",
+      "to_line": 5,
+      "to_condition": "b > 126",
+      "to_loop_count": 1,
+      "line_interval": [
+        5,
+        5
+      ],
+      "interval_kind": "forward",
+      "condition_anchor_span": [
+        5,
+        5
+      ],
+      "condition_anchor_kind": "forward",
+      "location_basis": "statement_lines",
+      "region_size": 0,
+      "depth": 3,
+      "exec_count": 8,
+      "fail_count": 2,
+      "pass_count": 6,
+      "failure_density": 0.25,
+      "parent_exec_count": 9,
+      "parent_fail_count": 2,
+      "parent_pass_count": 7,
+      "parent_failure_density": 0.2222222222222222,
+      "sibling_failure_density": 0.0,
+      "outcome_delta": 0.25,
+      "base_interval_score": 0.11928031367991561,
+      "outcome_delta_bonus": 1.25,
+      "base_risk_score": 0.1491003920998945,
+      "risk_score": 0.0,
+      "ignored": {
+        "infeasible_leaves": 4,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 5
+      },
+      "segment_status": "matched",
+      "statement_count": 0,
+      "statement_line_count": 0,
+      "assignment_count": 0,
+      "return_count": 0,
+      "statement_lines": [],
+      "sample_events": [],
+      "rank": 12
+    },
+    {
+      "edge_id": "root.F.FALSE",
+      "from_line": 5,
+      "from_condition": "a > 126",
+      "from_loop_count": 1,
+      "outcome": "false",
+      "to_line": 5,
+      "to_condition": "b < 32",
+      "to_loop_count": 1,
+      "line_interval": [
+        5,
+        5
+      ],
+      "interval_kind": "forward",
+      "condition_anchor_span": [
+        5,
+        5
+      ],
+      "condition_anchor_kind": "forward",
+      "location_basis": "statement_lines",
+      "region_size": 0,
+      "depth": 2,
+      "exec_count": 9,
+      "fail_count": 2,
+      "pass_count": 7,
+      "failure_density": 0.2222222222222222,
+      "parent_exec_count": 10,
+      "parent_fail_count": 2,
+      "parent_pass_count": 8,
+      "parent_failure_density": 0.2,
+      "sibling_failure_density": 0.0,
+      "outcome_delta": 0.2222222222222222,
+      "base_interval_score": 0.1060269454932583,
+      "outcome_delta_bonus": 1.2222222222222223,
+      "base_risk_score": 0.12958848893620462,
+      "risk_score": 0.0,
+      "ignored": {
+        "infeasible_leaves": 4,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 5
+      },
+      "segment_status": "matched",
+      "statement_count": 0,
+      "statement_line_count": 0,
+      "assignment_count": 0,
+      "return_count": 0,
+      "statement_lines": [],
+      "sample_events": [],
+      "rank": 13
+    },
+    {
+      "edge_id": "root.FALSE",
+      "from_line": 5,
+      "from_condition": "a < 32",
+      "from_loop_count": 1,
+      "outcome": "false",
+      "to_line": 5,
+      "to_condition": "a > 126",
+      "to_loop_count": 1,
+      "line_interval": [
+        5,
+        5
+      ],
+      "interval_kind": "forward",
+      "condition_anchor_span": [
+        5,
+        5
+      ],
+      "condition_anchor_kind": "forward",
+      "location_basis": "statement_lines",
+      "region_size": 0,
+      "depth": 1,
+      "exec_count": 10,
+      "fail_count": 2,
+      "pass_count": 8,
+      "failure_density": 0.2,
+      "parent_exec_count": 11,
+      "parent_fail_count": 2,
+      "parent_pass_count": 9,
+      "parent_failure_density": 0.18181818181818182,
+      "sibling_failure_density": 0.0,
+      "outcome_delta": 0.2,
+      "base_interval_score": 0.09542425094393249,
+      "outcome_delta_bonus": 1.2,
+      "base_risk_score": 0.11450910113271898,
+      "risk_score": 0.0,
+      "ignored": {
+        "infeasible_leaves": 4,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 5
+      },
+      "segment_status": "matched",
+      "statement_count": 0,
+      "statement_line_count": 0,
+      "assignment_count": 0,
+      "return_count": 0,
+      "statement_lines": [],
+      "sample_events": [],
+      "rank": 14
+    },
+    {
+      "edge_id": "root.F.F.F.F.F.F.TRUE",
+      "from_line": 8,
+      "from_condition": "(letter) == false",
+      "from_loop_count": 1,
+      "outcome": "true",
+      "to_line": 9,
+      "to_condition": "i < 3",
+      "to_loop_count": 1,
+      "line_interval": [
+        8,
+        9
+      ],
+      "interval_kind": "forward",
+      "condition_anchor_span": [
+        8,
+        9
+      ],
+      "condition_anchor_kind": "forward",
+      "location_basis": "statement_lines",
+      "region_size": 0,
+      "depth": 7,
+      "exec_count": 4,
+      "fail_count": 1,
+      "pass_count": 3,
+      "failure_density": 0.25,
+      "parent_exec_count": 5,
+      "parent_fail_count": 2,
+      "parent_pass_count": 3,
+      "parent_failure_density": 0.4,
+      "sibling_failure_density": 1.0,
+      "outcome_delta": 0.0,
+      "base_interval_score": 0.0752574989159953,
+      "outcome_delta_bonus": 1.0,
+      "base_risk_score": 0.0752574989159953,
+      "risk_score": 0.0,
+      "ignored": {
+        "infeasible_leaves": 4,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 5
+      },
+      "segment_status": "matched",
+      "statement_count": 0,
+      "statement_line_count": 0,
+      "assignment_count": 0,
+      "return_count": 0,
+      "statement_lines": [],
+      "sample_events": [],
+      "rank": 15
+    }
+  ],
+  "interval_rankings": {
+    "cct_only": [
+      {
+        "edge_id": "root.F.F.F.F.F.F.T.T.F.T.T.T.F.TRUE",
+        "from_line": 16,
+        "from_condition": "number",
+        "from_loop_count": 1,
+        "outcome": "true",
+        "to_line": null,
+        "to_condition": null,
+        "to_loop_count": null,
+        "line_interval": [
+          16,
+          null
+        ],
+        "interval_kind": "to_leaf",
+        "condition_anchor_span": [
+          16,
+          null
+        ],
+        "condition_anchor_kind": "to_leaf",
+        "location_basis": "condition_anchor_span",
+        "region_size": 0,
+        "depth": 14,
+        "exec_count": 1,
+        "fail_count": 1,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "parent_exec_count": 2,
+        "parent_fail_count": 1,
+        "parent_pass_count": 1,
+        "parent_failure_density": 0.5,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 1.0,
+        "base_interval_score": 0.3010299956639812,
+        "outcome_delta_bonus": 2.0,
+        "base_risk_score": 0.6020599913279624,
+        "risk_score": 0.6020599913279624,
+        "ignored": {
+          "infeasible_leaves": 0,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 0
+        },
+        "rank": 1
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.FALSE",
+        "from_line": 8,
+        "from_condition": "(letter) == false",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": null,
+        "to_condition": null,
+        "to_loop_count": null,
+        "line_interval": [
+          8,
+          null
+        ],
+        "interval_kind": "to_leaf",
+        "condition_anchor_span": [
+          8,
+          null
+        ],
+        "condition_anchor_kind": "to_leaf",
+        "location_basis": "condition_anchor_span",
+        "region_size": 0,
+        "depth": 7,
+        "exec_count": 1,
+        "fail_count": 1,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "parent_exec_count": 5,
+        "parent_fail_count": 2,
+        "parent_pass_count": 3,
+        "parent_failure_density": 0.4,
+        "sibling_failure_density": 0.25,
+        "outcome_delta": 0.75,
+        "base_interval_score": 0.3010299956639812,
+        "outcome_delta_bonus": 1.75,
+        "base_risk_score": 0.5268024924119671,
+        "risk_score": 0.5268024924119671,
+        "ignored": {
+          "infeasible_leaves": 0,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 0
+        },
+        "rank": 2
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.FALSE",
+        "from_line": 5,
+        "from_condition": "c > 126",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 8,
+        "to_condition": "(letter) == false",
+        "to_loop_count": 1,
+        "line_interval": [
+          5,
+          8
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          5,
+          8
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "condition_anchor_span",
+        "region_size": 4,
+        "depth": 6,
+        "exec_count": 5,
+        "fail_count": 2,
+        "pass_count": 3,
+        "failure_density": 0.4,
+        "parent_exec_count": 6,
+        "parent_fail_count": 2,
+        "parent_pass_count": 4,
+        "parent_failure_density": 0.3333333333333333,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.4,
+        "base_interval_score": 0.19084850188786498,
+        "outcome_delta_bonus": 1.4,
+        "base_risk_score": 0.26718790264301095,
+        "risk_score": 0.26718790264301095,
+        "ignored": {
+          "infeasible_leaves": 4,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "rank": 3
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.T.T.F.T.T.T.FALSE",
+        "from_line": 13,
+        "from_condition": "letter",
+        "from_loop_count": 2,
+        "outcome": "false",
+        "to_line": 16,
+        "to_condition": "number",
+        "to_loop_count": 1,
+        "line_interval": [
+          13,
+          16
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          13,
+          16
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "condition_anchor_span",
+        "region_size": 4,
+        "depth": 13,
+        "exec_count": 2,
+        "fail_count": 1,
+        "pass_count": 1,
+        "failure_density": 0.5,
+        "parent_exec_count": 2,
+        "parent_fail_count": 1,
+        "parent_pass_count": 1,
+        "parent_failure_density": 0.5,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.5,
+        "base_interval_score": 0.1505149978319906,
+        "outcome_delta_bonus": 1.5,
+        "base_risk_score": 0.22577249674798588,
+        "risk_score": 0.22577249674798588,
+        "ignored": {
+          "infeasible_leaves": 0,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 0
+        },
+        "rank": 4
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.T.T.F.T.T.TRUE",
+        "from_line": 11,
+        "from_condition": "i == 2",
+        "from_loop_count": 2,
+        "outcome": "true",
+        "to_line": 13,
+        "to_condition": "letter",
+        "to_loop_count": 2,
+        "line_interval": [
+          11,
+          13
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          11,
+          13
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "condition_anchor_span",
+        "region_size": 3,
+        "depth": 12,
+        "exec_count": 2,
+        "fail_count": 1,
+        "pass_count": 1,
+        "failure_density": 0.5,
+        "parent_exec_count": 2,
+        "parent_fail_count": 1,
+        "parent_pass_count": 1,
+        "parent_failure_density": 0.5,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.5,
+        "base_interval_score": 0.1505149978319906,
+        "outcome_delta_bonus": 1.5,
+        "base_risk_score": 0.22577249674798588,
+        "risk_score": 0.22577249674798588,
+        "ignored": {
+          "infeasible_leaves": 0,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 1
+        },
+        "rank": 5
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.T.T.F.T.TRUE",
+        "from_line": 9,
+        "from_condition": "i < 3",
+        "from_loop_count": 2,
+        "outcome": "true",
+        "to_line": 11,
+        "to_condition": "i == 2",
+        "to_loop_count": 2,
+        "line_interval": [
+          9,
+          11
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          9,
+          11
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "condition_anchor_span",
+        "region_size": 3,
+        "depth": 11,
+        "exec_count": 2,
+        "fail_count": 1,
+        "pass_count": 1,
+        "failure_density": 0.5,
+        "parent_exec_count": 2,
+        "parent_fail_count": 1,
+        "parent_pass_count": 1,
+        "parent_failure_density": 0.5,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.5,
+        "base_interval_score": 0.1505149978319906,
+        "outcome_delta_bonus": 1.5,
+        "base_risk_score": 0.22577249674798588,
+        "risk_score": 0.22577249674798588,
+        "ignored": {
+          "infeasible_leaves": 0,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 2
+        },
+        "rank": 6
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.T.T.F.TRUE",
+        "from_line": 13,
+        "from_condition": "letter",
+        "from_loop_count": 1,
+        "outcome": "true",
+        "to_line": 9,
+        "to_condition": "i < 3",
+        "to_loop_count": 2,
+        "line_interval": [
+          9,
+          13
+        ],
+        "interval_kind": "backward_or_loop",
+        "condition_anchor_span": [
+          9,
+          13
+        ],
+        "condition_anchor_kind": "backward_or_loop",
+        "location_basis": "condition_anchor_span",
+        "region_size": 5,
+        "depth": 10,
+        "exec_count": 2,
+        "fail_count": 1,
+        "pass_count": 1,
+        "failure_density": 0.5,
+        "parent_exec_count": 4,
+        "parent_fail_count": 1,
+        "parent_pass_count": 3,
+        "parent_failure_density": 0.25,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.5,
+        "base_interval_score": 0.1505149978319906,
+        "outcome_delta_bonus": 1.5,
+        "base_risk_score": 0.22577249674798588,
+        "risk_score": 0.22577249674798588,
+        "ignored": {
+          "infeasible_leaves": 1,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 2
+        },
+        "rank": 7
+      },
+      {
+        "edge_id": "root.F.F.F.F.FALSE",
+        "from_line": 5,
+        "from_condition": "c < 32",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 5,
+        "to_condition": "c > 126",
+        "to_loop_count": 1,
+        "line_interval": [
+          5,
+          5
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          5,
+          5
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "condition_anchor_span",
+        "region_size": 1,
+        "depth": 5,
+        "exec_count": 6,
+        "fail_count": 2,
+        "pass_count": 4,
+        "failure_density": 0.3333333333333333,
+        "parent_exec_count": 7,
+        "parent_fail_count": 2,
+        "parent_pass_count": 5,
+        "parent_failure_density": 0.2857142857142857,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.3333333333333333,
+        "base_interval_score": 0.15904041823988746,
+        "outcome_delta_bonus": 1.3333333333333333,
+        "base_risk_score": 0.2120538909865166,
+        "risk_score": 0.2120538909865166,
+        "ignored": {
+          "infeasible_leaves": 4,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "rank": 8
+      },
+      {
+        "edge_id": "root.F.F.F.FALSE",
+        "from_line": 5,
+        "from_condition": "b > 126",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 5,
+        "to_condition": "c < 32",
+        "to_loop_count": 1,
+        "line_interval": [
+          5,
+          5
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          5,
+          5
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "condition_anchor_span",
+        "region_size": 1,
+        "depth": 4,
+        "exec_count": 7,
+        "fail_count": 2,
+        "pass_count": 5,
+        "failure_density": 0.2857142857142857,
+        "parent_exec_count": 8,
+        "parent_fail_count": 2,
+        "parent_pass_count": 6,
+        "parent_failure_density": 0.25,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.2857142857142857,
+        "base_interval_score": 0.13632035849133212,
+        "outcome_delta_bonus": 1.2857142857142856,
+        "base_risk_score": 0.17526903234599842,
+        "risk_score": 0.17526903234599842,
+        "ignored": {
+          "infeasible_leaves": 4,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "rank": 9
+      },
+      {
+        "edge_id": "root.F.F.FALSE",
+        "from_line": 5,
+        "from_condition": "b < 32",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 5,
+        "to_condition": "b > 126",
+        "to_loop_count": 1,
+        "line_interval": [
+          5,
+          5
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          5,
+          5
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "condition_anchor_span",
+        "region_size": 1,
+        "depth": 3,
+        "exec_count": 8,
+        "fail_count": 2,
+        "pass_count": 6,
+        "failure_density": 0.25,
+        "parent_exec_count": 9,
+        "parent_fail_count": 2,
+        "parent_pass_count": 7,
+        "parent_failure_density": 0.2222222222222222,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.25,
+        "base_interval_score": 0.11928031367991561,
+        "outcome_delta_bonus": 1.25,
+        "base_risk_score": 0.1491003920998945,
+        "risk_score": 0.1491003920998945,
+        "ignored": {
+          "infeasible_leaves": 4,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "rank": 10
+      },
+      {
+        "edge_id": "root.F.FALSE",
+        "from_line": 5,
+        "from_condition": "a > 126",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 5,
+        "to_condition": "b < 32",
+        "to_loop_count": 1,
+        "line_interval": [
+          5,
+          5
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          5,
+          5
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "condition_anchor_span",
+        "region_size": 1,
+        "depth": 2,
+        "exec_count": 9,
+        "fail_count": 2,
+        "pass_count": 7,
+        "failure_density": 0.2222222222222222,
+        "parent_exec_count": 10,
+        "parent_fail_count": 2,
+        "parent_pass_count": 8,
+        "parent_failure_density": 0.2,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.2222222222222222,
+        "base_interval_score": 0.1060269454932583,
+        "outcome_delta_bonus": 1.2222222222222223,
+        "base_risk_score": 0.12958848893620462,
+        "risk_score": 0.12958848893620462,
+        "ignored": {
+          "infeasible_leaves": 4,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "rank": 11
+      },
+      {
+        "edge_id": "root.FALSE",
+        "from_line": 5,
+        "from_condition": "a < 32",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 5,
+        "to_condition": "a > 126",
+        "to_loop_count": 1,
+        "line_interval": [
+          5,
+          5
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          5,
+          5
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "condition_anchor_span",
+        "region_size": 1,
+        "depth": 1,
+        "exec_count": 10,
+        "fail_count": 2,
+        "pass_count": 8,
+        "failure_density": 0.2,
+        "parent_exec_count": 11,
+        "parent_fail_count": 2,
+        "parent_pass_count": 9,
+        "parent_failure_density": 0.18181818181818182,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.2,
+        "base_interval_score": 0.09542425094393249,
+        "outcome_delta_bonus": 1.2,
+        "base_risk_score": 0.11450910113271898,
+        "risk_score": 0.11450910113271898,
+        "ignored": {
+          "infeasible_leaves": 4,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "rank": 12
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.T.T.FALSE",
+        "from_line": 11,
+        "from_condition": "i == 2",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 13,
+        "to_condition": "letter",
+        "to_loop_count": 1,
+        "line_interval": [
+          11,
+          13
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          11,
+          13
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "condition_anchor_span",
+        "region_size": 3,
+        "depth": 9,
+        "exec_count": 4,
+        "fail_count": 1,
+        "pass_count": 3,
+        "failure_density": 0.25,
+        "parent_exec_count": 4,
+        "parent_fail_count": 1,
+        "parent_pass_count": 3,
+        "parent_failure_density": 0.25,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.25,
+        "base_interval_score": 0.0752574989159953,
+        "outcome_delta_bonus": 1.25,
+        "base_risk_score": 0.09407187364499413,
+        "risk_score": 0.09407187364499413,
+        "ignored": {
+          "infeasible_leaves": 2,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "rank": 13
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.T.TRUE",
+        "from_line": 9,
+        "from_condition": "i < 3",
+        "from_loop_count": 1,
+        "outcome": "true",
+        "to_line": 11,
+        "to_condition": "i == 2",
+        "to_loop_count": 1,
+        "line_interval": [
+          9,
+          11
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          9,
+          11
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "condition_anchor_span",
+        "region_size": 3,
+        "depth": 8,
+        "exec_count": 4,
+        "fail_count": 1,
+        "pass_count": 3,
+        "failure_density": 0.25,
+        "parent_exec_count": 4,
+        "parent_fail_count": 1,
+        "parent_pass_count": 3,
+        "parent_failure_density": 0.25,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.25,
+        "base_interval_score": 0.0752574989159953,
+        "outcome_delta_bonus": 1.25,
+        "base_risk_score": 0.09407187364499413,
+        "risk_score": 0.09407187364499413,
+        "ignored": {
+          "infeasible_leaves": 3,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "rank": 14
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.TRUE",
+        "from_line": 8,
+        "from_condition": "(letter) == false",
+        "from_loop_count": 1,
+        "outcome": "true",
+        "to_line": 9,
+        "to_condition": "i < 3",
+        "to_loop_count": 1,
+        "line_interval": [
+          8,
+          9
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          8,
+          9
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "condition_anchor_span",
+        "region_size": 2,
+        "depth": 7,
+        "exec_count": 4,
+        "fail_count": 1,
+        "pass_count": 3,
+        "failure_density": 0.25,
+        "parent_exec_count": 5,
+        "parent_fail_count": 2,
+        "parent_pass_count": 3,
+        "parent_failure_density": 0.4,
+        "sibling_failure_density": 1.0,
+        "outcome_delta": 0.0,
+        "base_interval_score": 0.0752574989159953,
+        "outcome_delta_bonus": 1.0,
+        "base_risk_score": 0.0752574989159953,
+        "risk_score": 0.0752574989159953,
+        "ignored": {
+          "infeasible_leaves": 4,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "rank": 15
+      }
+    ],
+    "statement_presence": [
+      {
+        "edge_id": "root.F.F.F.F.F.F.T.T.F.T.T.T.F.TRUE",
+        "from_line": 16,
+        "from_condition": "number",
+        "from_loop_count": 1,
+        "outcome": "true",
+        "to_line": null,
+        "to_condition": null,
+        "to_loop_count": null,
+        "line_interval": [
+          16,
+          null
+        ],
+        "interval_kind": "to_leaf",
+        "condition_anchor_span": [
+          16,
+          null
+        ],
+        "condition_anchor_kind": "to_leaf",
+        "location_basis": "statement_lines",
+        "region_size": 1,
+        "depth": 14,
+        "exec_count": 1,
+        "fail_count": 1,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "parent_exec_count": 2,
+        "parent_fail_count": 1,
+        "parent_pass_count": 1,
+        "parent_failure_density": 0.5,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 1.0,
+        "base_interval_score": 0.3010299956639812,
+        "outcome_delta_bonus": 2.0,
+        "base_risk_score": 0.6020599913279624,
+        "risk_score": 0.6020599913279624,
+        "ignored": {
+          "infeasible_leaves": 0,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 0
+        },
+        "segment_status": "matched",
+        "statement_count": 1,
+        "statement_line_count": 1,
+        "assignment_count": 1,
+        "return_count": 0,
+        "statement_lines": [
+          16
+        ],
+        "sample_events": [
+          {
+            "type": "ASSIGN",
+            "line": 16,
+            "kind": "assign",
+            "target": "i",
+            "rhs": "i + 1"
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.FALSE",
+        "from_line": 8,
+        "from_condition": "(letter) == false",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": null,
+        "to_condition": null,
+        "to_loop_count": null,
+        "line_interval": [
+          8,
+          null
+        ],
+        "interval_kind": "to_leaf",
+        "condition_anchor_span": [
+          8,
+          null
+        ],
+        "condition_anchor_kind": "to_leaf",
+        "location_basis": "statement_lines",
+        "region_size": 1,
+        "depth": 7,
+        "exec_count": 1,
+        "fail_count": 1,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "parent_exec_count": 5,
+        "parent_fail_count": 2,
+        "parent_pass_count": 3,
+        "parent_failure_density": 0.4,
+        "sibling_failure_density": 0.25,
+        "outcome_delta": 0.75,
+        "base_interval_score": 0.3010299956639812,
+        "outcome_delta_bonus": 1.75,
+        "base_risk_score": 0.5268024924119671,
+        "risk_score": 0.5268024924119671,
+        "ignored": {
+          "infeasible_leaves": 0,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 0
+        },
+        "segment_status": "matched",
+        "statement_count": 1,
+        "statement_line_count": 1,
+        "assignment_count": 0,
+        "return_count": 1,
+        "statement_lines": [
+          20
+        ],
+        "sample_events": [
+          {
+            "type": "RETURN",
+            "line": 20,
+            "kind": "",
+            "target": "return_value",
+            "rhs": "0"
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.FALSE",
+        "from_line": 5,
+        "from_condition": "c > 126",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 8,
+        "to_condition": "(letter) == false",
+        "to_loop_count": 1,
+        "line_interval": [
+          5,
+          8
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          5,
+          8
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "statement_lines",
+        "region_size": 2,
+        "depth": 6,
+        "exec_count": 5,
+        "fail_count": 2,
+        "pass_count": 3,
+        "failure_density": 0.4,
+        "parent_exec_count": 6,
+        "parent_fail_count": 2,
+        "parent_pass_count": 4,
+        "parent_failure_density": 0.3333333333333333,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.4,
+        "base_interval_score": 0.19084850188786498,
+        "outcome_delta_bonus": 1.4,
+        "base_risk_score": 0.26718790264301095,
+        "risk_score": 0.26718790264301095,
+        "ignored": {
+          "infeasible_leaves": 4,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "segment_status": "matched",
+        "statement_count": 2,
+        "statement_line_count": 2,
+        "assignment_count": 2,
+        "return_count": 0,
+        "statement_lines": [
+          6,
+          7
+        ],
+        "sample_events": [
+          {
+            "type": "ASSIGN",
+            "line": 6,
+            "kind": "var_decl",
+            "target": "i",
+            "rhs": "1"
+          },
+          {
+            "type": "ASSIGN",
+            "line": 7,
+            "kind": "var_decl",
+            "target": "letter",
+            "rhs": "((a >= 65 && a <= 90) || (a >= 97 && a <= 122))"
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.T.T.F.T.T.T.FALSE",
+        "from_line": 13,
+        "from_condition": "letter",
+        "from_loop_count": 2,
+        "outcome": "false",
+        "to_line": 16,
+        "to_condition": "number",
+        "to_loop_count": 1,
+        "line_interval": [
+          13,
+          16
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          13,
+          16
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "statement_lines",
+        "region_size": 1,
+        "depth": 13,
+        "exec_count": 2,
+        "fail_count": 1,
+        "pass_count": 1,
+        "failure_density": 0.5,
+        "parent_exec_count": 2,
+        "parent_fail_count": 1,
+        "parent_pass_count": 1,
+        "parent_failure_density": 0.5,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.5,
+        "base_interval_score": 0.1505149978319906,
+        "outcome_delta_bonus": 1.5,
+        "base_risk_score": 0.22577249674798588,
+        "risk_score": 0.22577249674798588,
+        "ignored": {
+          "infeasible_leaves": 0,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 0
+        },
+        "segment_status": "matched",
+        "statement_count": 1,
+        "statement_line_count": 1,
+        "assignment_count": 1,
+        "return_count": 0,
+        "statement_lines": [
+          15
+        ],
+        "sample_events": [
+          {
+            "type": "ASSIGN",
+            "line": 15,
+            "kind": "var_decl",
+            "target": "number",
+            "rhs": "(ch >= 48 && ch <= 57)"
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.T.T.F.T.T.TRUE",
+        "from_line": 11,
+        "from_condition": "i == 2",
+        "from_loop_count": 2,
+        "outcome": "true",
+        "to_line": 13,
+        "to_condition": "letter",
+        "to_loop_count": 2,
+        "line_interval": [
+          11,
+          13
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          11,
+          13
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "statement_lines",
+        "region_size": 2,
+        "depth": 12,
+        "exec_count": 2,
+        "fail_count": 1,
+        "pass_count": 1,
+        "failure_density": 0.5,
+        "parent_exec_count": 2,
+        "parent_fail_count": 1,
+        "parent_pass_count": 1,
+        "parent_failure_density": 0.5,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.5,
+        "base_interval_score": 0.1505149978319906,
+        "outcome_delta_bonus": 1.5,
+        "base_risk_score": 0.22577249674798588,
+        "risk_score": 0.22577249674798588,
+        "ignored": {
+          "infeasible_leaves": 0,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 1
+        },
+        "segment_status": "matched",
+        "statement_count": 2,
+        "statement_line_count": 2,
+        "assignment_count": 2,
+        "return_count": 0,
+        "statement_lines": [
+          11,
+          12
+        ],
+        "sample_events": [
+          {
+            "type": "ASSIGN",
+            "line": 11,
+            "kind": "assign",
+            "target": "ch",
+            "rhs": "c"
+          },
+          {
+            "type": "ASSIGN",
+            "line": 12,
+            "kind": "assign",
+            "target": "letter",
+            "rhs": "((ch >= 65 && ch <= 90) || (ch >= 97 && ch <= 122))"
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.T.T.F.T.TRUE",
+        "from_line": 9,
+        "from_condition": "i < 3",
+        "from_loop_count": 2,
+        "outcome": "true",
+        "to_line": 11,
+        "to_condition": "i == 2",
+        "to_loop_count": 2,
+        "line_interval": [
+          9,
+          11
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          9,
+          11
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "statement_lines",
+        "region_size": 1,
+        "depth": 11,
+        "exec_count": 2,
+        "fail_count": 1,
+        "pass_count": 1,
+        "failure_density": 0.5,
+        "parent_exec_count": 2,
+        "parent_fail_count": 1,
+        "parent_pass_count": 1,
+        "parent_failure_density": 0.5,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.5,
+        "base_interval_score": 0.1505149978319906,
+        "outcome_delta_bonus": 1.5,
+        "base_risk_score": 0.22577249674798588,
+        "risk_score": 0.22577249674798588,
+        "ignored": {
+          "infeasible_leaves": 0,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 2
+        },
+        "segment_status": "matched",
+        "statement_count": 1,
+        "statement_line_count": 1,
+        "assignment_count": 1,
+        "return_count": 0,
+        "statement_lines": [
+          10
+        ],
+        "sample_events": [
+          {
+            "type": "ASSIGN",
+            "line": 10,
+            "kind": "var_decl",
+            "target": "ch",
+            "rhs": "b"
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.T.T.F.TRUE",
+        "from_line": 13,
+        "from_condition": "letter",
+        "from_loop_count": 1,
+        "outcome": "true",
+        "to_line": 9,
+        "to_condition": "i < 3",
+        "to_loop_count": 2,
+        "line_interval": [
+          9,
+          13
+        ],
+        "interval_kind": "backward_or_loop",
+        "condition_anchor_span": [
+          9,
+          13
+        ],
+        "condition_anchor_kind": "backward_or_loop",
+        "location_basis": "statement_lines",
+        "region_size": 1,
+        "depth": 10,
+        "exec_count": 2,
+        "fail_count": 1,
+        "pass_count": 1,
+        "failure_density": 0.5,
+        "parent_exec_count": 4,
+        "parent_fail_count": 1,
+        "parent_pass_count": 3,
+        "parent_failure_density": 0.25,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.5,
+        "base_interval_score": 0.1505149978319906,
+        "outcome_delta_bonus": 1.5,
+        "base_risk_score": 0.22577249674798588,
+        "risk_score": 0.22577249674798588,
+        "ignored": {
+          "infeasible_leaves": 1,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 2
+        },
+        "segment_status": "matched",
+        "statement_count": 1,
+        "statement_line_count": 1,
+        "assignment_count": 1,
+        "return_count": 0,
+        "statement_lines": [
+          13
+        ],
+        "sample_events": [
+          {
+            "type": "ASSIGN",
+            "line": 13,
+            "kind": "assign",
+            "target": "i",
+            "rhs": "i + 1"
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.T.T.FALSE",
+        "from_line": 11,
+        "from_condition": "i == 2",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 13,
+        "to_condition": "letter",
+        "to_loop_count": 1,
+        "line_interval": [
+          11,
+          13
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          11,
+          13
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "statement_lines",
+        "region_size": 1,
+        "depth": 9,
+        "exec_count": 4,
+        "fail_count": 1,
+        "pass_count": 3,
+        "failure_density": 0.25,
+        "parent_exec_count": 4,
+        "parent_fail_count": 1,
+        "parent_pass_count": 3,
+        "parent_failure_density": 0.25,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.25,
+        "base_interval_score": 0.0752574989159953,
+        "outcome_delta_bonus": 1.25,
+        "base_risk_score": 0.09407187364499413,
+        "risk_score": 0.09407187364499413,
+        "ignored": {
+          "infeasible_leaves": 2,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "segment_status": "matched",
+        "statement_count": 1,
+        "statement_line_count": 1,
+        "assignment_count": 1,
+        "return_count": 0,
+        "statement_lines": [
+          12
+        ],
+        "sample_events": [
+          {
+            "type": "ASSIGN",
+            "line": 12,
+            "kind": "assign",
+            "target": "letter",
+            "rhs": "((ch >= 65 && ch <= 90) || (ch >= 97 && ch <= 122))"
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.T.TRUE",
+        "from_line": 9,
+        "from_condition": "i < 3",
+        "from_loop_count": 1,
+        "outcome": "true",
+        "to_line": 11,
+        "to_condition": "i == 2",
+        "to_loop_count": 1,
+        "line_interval": [
+          9,
+          11
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          9,
+          11
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "statement_lines",
+        "region_size": 1,
+        "depth": 8,
+        "exec_count": 4,
+        "fail_count": 1,
+        "pass_count": 3,
+        "failure_density": 0.25,
+        "parent_exec_count": 4,
+        "parent_fail_count": 1,
+        "parent_pass_count": 3,
+        "parent_failure_density": 0.25,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.25,
+        "base_interval_score": 0.0752574989159953,
+        "outcome_delta_bonus": 1.25,
+        "base_risk_score": 0.09407187364499413,
+        "risk_score": 0.09407187364499413,
+        "ignored": {
+          "infeasible_leaves": 3,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "segment_status": "matched",
+        "statement_count": 1,
+        "statement_line_count": 1,
+        "assignment_count": 1,
+        "return_count": 0,
+        "statement_lines": [
+          10
+        ],
+        "sample_events": [
+          {
+            "type": "ASSIGN",
+            "line": 10,
+            "kind": "var_decl",
+            "target": "ch",
+            "rhs": "b"
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "edge_id": "root.F.F.F.F.FALSE",
+        "from_line": 5,
+        "from_condition": "c < 32",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 5,
+        "to_condition": "c > 126",
+        "to_loop_count": 1,
+        "line_interval": [
+          5,
+          5
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          5,
+          5
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "statement_lines",
+        "region_size": 0,
+        "depth": 5,
+        "exec_count": 6,
+        "fail_count": 2,
+        "pass_count": 4,
+        "failure_density": 0.3333333333333333,
+        "parent_exec_count": 7,
+        "parent_fail_count": 2,
+        "parent_pass_count": 5,
+        "parent_failure_density": 0.2857142857142857,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.3333333333333333,
+        "base_interval_score": 0.15904041823988746,
+        "outcome_delta_bonus": 1.3333333333333333,
+        "base_risk_score": 0.2120538909865166,
+        "risk_score": 0.0,
+        "ignored": {
+          "infeasible_leaves": 4,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "segment_status": "matched",
+        "statement_count": 0,
+        "statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "statement_lines": [],
+        "sample_events": [],
+        "rank": 10
+      },
+      {
+        "edge_id": "root.F.F.F.FALSE",
+        "from_line": 5,
+        "from_condition": "b > 126",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 5,
+        "to_condition": "c < 32",
+        "to_loop_count": 1,
+        "line_interval": [
+          5,
+          5
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          5,
+          5
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "statement_lines",
+        "region_size": 0,
+        "depth": 4,
+        "exec_count": 7,
+        "fail_count": 2,
+        "pass_count": 5,
+        "failure_density": 0.2857142857142857,
+        "parent_exec_count": 8,
+        "parent_fail_count": 2,
+        "parent_pass_count": 6,
+        "parent_failure_density": 0.25,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.2857142857142857,
+        "base_interval_score": 0.13632035849133212,
+        "outcome_delta_bonus": 1.2857142857142856,
+        "base_risk_score": 0.17526903234599842,
+        "risk_score": 0.0,
+        "ignored": {
+          "infeasible_leaves": 4,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "segment_status": "matched",
+        "statement_count": 0,
+        "statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "statement_lines": [],
+        "sample_events": [],
+        "rank": 11
+      },
+      {
+        "edge_id": "root.F.F.FALSE",
+        "from_line": 5,
+        "from_condition": "b < 32",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 5,
+        "to_condition": "b > 126",
+        "to_loop_count": 1,
+        "line_interval": [
+          5,
+          5
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          5,
+          5
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "statement_lines",
+        "region_size": 0,
+        "depth": 3,
+        "exec_count": 8,
+        "fail_count": 2,
+        "pass_count": 6,
+        "failure_density": 0.25,
+        "parent_exec_count": 9,
+        "parent_fail_count": 2,
+        "parent_pass_count": 7,
+        "parent_failure_density": 0.2222222222222222,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.25,
+        "base_interval_score": 0.11928031367991561,
+        "outcome_delta_bonus": 1.25,
+        "base_risk_score": 0.1491003920998945,
+        "risk_score": 0.0,
+        "ignored": {
+          "infeasible_leaves": 4,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "segment_status": "matched",
+        "statement_count": 0,
+        "statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "statement_lines": [],
+        "sample_events": [],
+        "rank": 12
+      },
+      {
+        "edge_id": "root.F.FALSE",
+        "from_line": 5,
+        "from_condition": "a > 126",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 5,
+        "to_condition": "b < 32",
+        "to_loop_count": 1,
+        "line_interval": [
+          5,
+          5
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          5,
+          5
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "statement_lines",
+        "region_size": 0,
+        "depth": 2,
+        "exec_count": 9,
+        "fail_count": 2,
+        "pass_count": 7,
+        "failure_density": 0.2222222222222222,
+        "parent_exec_count": 10,
+        "parent_fail_count": 2,
+        "parent_pass_count": 8,
+        "parent_failure_density": 0.2,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.2222222222222222,
+        "base_interval_score": 0.1060269454932583,
+        "outcome_delta_bonus": 1.2222222222222223,
+        "base_risk_score": 0.12958848893620462,
+        "risk_score": 0.0,
+        "ignored": {
+          "infeasible_leaves": 4,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "segment_status": "matched",
+        "statement_count": 0,
+        "statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "statement_lines": [],
+        "sample_events": [],
+        "rank": 13
+      },
+      {
+        "edge_id": "root.FALSE",
+        "from_line": 5,
+        "from_condition": "a < 32",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 5,
+        "to_condition": "a > 126",
+        "to_loop_count": 1,
+        "line_interval": [
+          5,
+          5
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          5,
+          5
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "statement_lines",
+        "region_size": 0,
+        "depth": 1,
+        "exec_count": 10,
+        "fail_count": 2,
+        "pass_count": 8,
+        "failure_density": 0.2,
+        "parent_exec_count": 11,
+        "parent_fail_count": 2,
+        "parent_pass_count": 9,
+        "parent_failure_density": 0.18181818181818182,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.2,
+        "base_interval_score": 0.09542425094393249,
+        "outcome_delta_bonus": 1.2,
+        "base_risk_score": 0.11450910113271898,
+        "risk_score": 0.0,
+        "ignored": {
+          "infeasible_leaves": 4,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "segment_status": "matched",
+        "statement_count": 0,
+        "statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "statement_lines": [],
+        "sample_events": [],
+        "rank": 14
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.TRUE",
+        "from_line": 8,
+        "from_condition": "(letter) == false",
+        "from_loop_count": 1,
+        "outcome": "true",
+        "to_line": 9,
+        "to_condition": "i < 3",
+        "to_loop_count": 1,
+        "line_interval": [
+          8,
+          9
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          8,
+          9
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "statement_lines",
+        "region_size": 0,
+        "depth": 7,
+        "exec_count": 4,
+        "fail_count": 1,
+        "pass_count": 3,
+        "failure_density": 0.25,
+        "parent_exec_count": 5,
+        "parent_fail_count": 2,
+        "parent_pass_count": 3,
+        "parent_failure_density": 0.4,
+        "sibling_failure_density": 1.0,
+        "outcome_delta": 0.0,
+        "base_interval_score": 0.0752574989159953,
+        "outcome_delta_bonus": 1.0,
+        "base_risk_score": 0.0752574989159953,
+        "risk_score": 0.0,
+        "ignored": {
+          "infeasible_leaves": 4,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "segment_status": "matched",
+        "statement_count": 0,
+        "statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "statement_lines": [],
+        "sample_events": [],
+        "rank": 15
+      }
+    ],
+    "edge_divergence_sibling_exclusive": [
+      {
+        "edge_id": "root.F.F.F.F.F.F.T.T.F.T.T.T.F.TRUE",
+        "from_line": 16,
+        "from_condition": "number",
+        "from_loop_count": 1,
+        "outcome": "true",
+        "to_line": null,
+        "to_condition": null,
+        "to_loop_count": null,
+        "line_interval": [
+          16,
+          null
+        ],
+        "interval_kind": "to_leaf",
+        "condition_anchor_span": [
+          16,
+          null
+        ],
+        "condition_anchor_kind": "to_leaf",
+        "location_basis": "sibling_exclusive_statement_lines",
+        "region_size": 0,
+        "depth": 14,
+        "exec_count": 1,
+        "fail_count": 1,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "parent_exec_count": 2,
+        "parent_fail_count": 1,
+        "parent_pass_count": 1,
+        "parent_failure_density": 0.5,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 1.0,
+        "base_interval_score": 0.3010299956639812,
+        "outcome_delta_bonus": 2.0,
+        "base_risk_score": 0.6020599913279624,
+        "risk_score": 0.6020599913279624,
+        "ignored": {
+          "infeasible_leaves": 0,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 0
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "matched",
+        "statement_count": 0,
+        "raw_statement_count": 1,
+        "statement_line_count": 0,
+        "raw_statement_line_count": 1,
+        "sibling_statement_line_count": 1,
+        "removed_shared_statement_line_count": 1,
+        "assignment_count": 0,
+        "return_count": 0,
+        "raw_statement_lines": [
+          16
+        ],
+        "sibling_statement_lines": [
+          16
+        ],
+        "exclusive_statement_lines": [],
+        "removed_shared_statement_lines": [
+          16
+        ],
+        "statement_lines": [],
+        "sample_events": [],
+        "region_basis": "sibling_exclusive",
+        "sibling_edge_id": "root.F.F.F.F.F.F.T.T.F.T.T.T.F.FALSE",
+        "statement_line_weight": 0.0,
+        "rank": 1
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.FALSE",
+        "from_line": 8,
+        "from_condition": "(letter) == false",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": null,
+        "to_condition": null,
+        "to_loop_count": null,
+        "line_interval": [
+          8,
+          null
+        ],
+        "interval_kind": "to_leaf",
+        "condition_anchor_span": [
+          8,
+          null
+        ],
+        "condition_anchor_kind": "to_leaf",
+        "location_basis": "sibling_exclusive_statement_lines",
+        "region_size": 1,
+        "depth": 7,
+        "exec_count": 1,
+        "fail_count": 1,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "parent_exec_count": 5,
+        "parent_fail_count": 2,
+        "parent_pass_count": 3,
+        "parent_failure_density": 0.4,
+        "sibling_failure_density": 0.25,
+        "outcome_delta": 0.75,
+        "base_interval_score": 0.3010299956639812,
+        "outcome_delta_bonus": 1.75,
+        "base_risk_score": 0.5268024924119671,
+        "risk_score": 0.5268024924119671,
+        "ignored": {
+          "infeasible_leaves": 0,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 0
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "matched",
+        "statement_count": 1,
+        "raw_statement_count": 1,
+        "statement_line_count": 1,
+        "raw_statement_line_count": 1,
+        "sibling_statement_line_count": 0,
+        "removed_shared_statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 1,
+        "raw_statement_lines": [
+          20
+        ],
+        "sibling_statement_lines": [],
+        "exclusive_statement_lines": [
+          20
+        ],
+        "removed_shared_statement_lines": [],
+        "statement_lines": [
+          20
+        ],
+        "sample_events": [
+          {
+            "type": "RETURN",
+            "line": 20,
+            "kind": "",
+            "target": "return_value",
+            "rhs": "0"
+          }
+        ],
+        "region_basis": "sibling_exclusive",
+        "sibling_edge_id": "root.F.F.F.F.F.F.TRUE",
+        "statement_line_weight": 1.3010299956639813,
+        "rank": 2
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.FALSE",
+        "from_line": 5,
+        "from_condition": "c > 126",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 8,
+        "to_condition": "(letter) == false",
+        "to_loop_count": 1,
+        "line_interval": [
+          5,
+          8
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          5,
+          8
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "sibling_exclusive_statement_lines",
+        "region_size": 2,
+        "depth": 6,
+        "exec_count": 5,
+        "fail_count": 2,
+        "pass_count": 3,
+        "failure_density": 0.4,
+        "parent_exec_count": 6,
+        "parent_fail_count": 2,
+        "parent_pass_count": 4,
+        "parent_failure_density": 0.3333333333333333,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.4,
+        "base_interval_score": 0.19084850188786498,
+        "outcome_delta_bonus": 1.4,
+        "base_risk_score": 0.26718790264301095,
+        "risk_score": 0.26718790264301095,
+        "ignored": {
+          "infeasible_leaves": 4,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "matched",
+        "statement_count": 2,
+        "raw_statement_count": 2,
+        "statement_line_count": 2,
+        "raw_statement_line_count": 2,
+        "sibling_statement_line_count": 1,
+        "removed_shared_statement_line_count": 0,
+        "assignment_count": 2,
+        "return_count": 0,
+        "raw_statement_lines": [
+          6,
+          7
+        ],
+        "sibling_statement_lines": [
+          5
+        ],
+        "exclusive_statement_lines": [
+          6,
+          7
+        ],
+        "removed_shared_statement_lines": [],
+        "statement_lines": [
+          6,
+          7
+        ],
+        "sample_events": [
+          {
+            "type": "ASSIGN",
+            "line": 6,
+            "kind": "var_decl",
+            "target": "i",
+            "rhs": "1"
+          },
+          {
+            "type": "ASSIGN",
+            "line": 7,
+            "kind": "var_decl",
+            "target": "letter",
+            "rhs": "((a >= 65 && a <= 90) || (a >= 97 && a <= 122))"
+          }
+        ],
+        "region_basis": "sibling_exclusive",
+        "sibling_edge_id": "root.F.F.F.F.F.TRUE",
+        "statement_line_weight": 1.4771212547196624,
+        "rank": 3
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.T.T.F.T.T.T.FALSE",
+        "from_line": 13,
+        "from_condition": "letter",
+        "from_loop_count": 2,
+        "outcome": "false",
+        "to_line": 16,
+        "to_condition": "number",
+        "to_loop_count": 1,
+        "line_interval": [
+          13,
+          16
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          13,
+          16
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "sibling_exclusive_statement_lines",
+        "region_size": 1,
+        "depth": 13,
+        "exec_count": 2,
+        "fail_count": 1,
+        "pass_count": 1,
+        "failure_density": 0.5,
+        "parent_exec_count": 2,
+        "parent_fail_count": 1,
+        "parent_pass_count": 1,
+        "parent_failure_density": 0.5,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.5,
+        "base_interval_score": 0.1505149978319906,
+        "outcome_delta_bonus": 1.5,
+        "base_risk_score": 0.22577249674798588,
+        "risk_score": 0.22577249674798588,
+        "ignored": {
+          "infeasible_leaves": 0,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 0
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "unmatched",
+        "statement_count": 1,
+        "raw_statement_count": 1,
+        "statement_line_count": 1,
+        "raw_statement_line_count": 1,
+        "sibling_statement_line_count": 0,
+        "removed_shared_statement_line_count": 0,
+        "assignment_count": 1,
+        "return_count": 0,
+        "raw_statement_lines": [
+          15
+        ],
+        "sibling_statement_lines": [],
+        "exclusive_statement_lines": [
+          15
+        ],
+        "removed_shared_statement_lines": [],
+        "statement_lines": [
+          15
+        ],
+        "sample_events": [
+          {
+            "type": "ASSIGN",
+            "line": 15,
+            "kind": "var_decl",
+            "target": "number",
+            "rhs": "(ch >= 48 && ch <= 57)"
+          }
+        ],
+        "region_basis": "raw_no_sibling",
+        "sibling_edge_id": "root.F.F.F.F.F.F.T.T.F.T.T.T.TRUE",
+        "statement_line_weight": 1.3010299956639813,
+        "rank": 4
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.T.T.F.T.T.TRUE",
+        "from_line": 11,
+        "from_condition": "i == 2",
+        "from_loop_count": 2,
+        "outcome": "true",
+        "to_line": 13,
+        "to_condition": "letter",
+        "to_loop_count": 2,
+        "line_interval": [
+          11,
+          13
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          11,
+          13
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "sibling_exclusive_statement_lines",
+        "region_size": 2,
+        "depth": 12,
+        "exec_count": 2,
+        "fail_count": 1,
+        "pass_count": 1,
+        "failure_density": 0.5,
+        "parent_exec_count": 2,
+        "parent_fail_count": 1,
+        "parent_pass_count": 1,
+        "parent_failure_density": 0.5,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.5,
+        "base_interval_score": 0.1505149978319906,
+        "outcome_delta_bonus": 1.5,
+        "base_risk_score": 0.22577249674798588,
+        "risk_score": 0.22577249674798588,
+        "ignored": {
+          "infeasible_leaves": 0,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 1
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "unmatched",
+        "statement_count": 2,
+        "raw_statement_count": 2,
+        "statement_line_count": 2,
+        "raw_statement_line_count": 2,
+        "sibling_statement_line_count": 0,
+        "removed_shared_statement_line_count": 0,
+        "assignment_count": 2,
+        "return_count": 0,
+        "raw_statement_lines": [
+          11,
+          12
+        ],
+        "sibling_statement_lines": [],
+        "exclusive_statement_lines": [
+          11,
+          12
+        ],
+        "removed_shared_statement_lines": [],
+        "statement_lines": [
+          11,
+          12
+        ],
+        "sample_events": [
+          {
+            "type": "ASSIGN",
+            "line": 11,
+            "kind": "assign",
+            "target": "ch",
+            "rhs": "c"
+          },
+          {
+            "type": "ASSIGN",
+            "line": 12,
+            "kind": "assign",
+            "target": "letter",
+            "rhs": "((ch >= 65 && ch <= 90) || (ch >= 97 && ch <= 122))"
+          }
+        ],
+        "region_basis": "raw_no_sibling",
+        "sibling_edge_id": "root.F.F.F.F.F.F.T.T.F.T.T.FALSE",
+        "statement_line_weight": 1.4771212547196624,
+        "rank": 5
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.T.T.F.T.TRUE",
+        "from_line": 9,
+        "from_condition": "i < 3",
+        "from_loop_count": 2,
+        "outcome": "true",
+        "to_line": 11,
+        "to_condition": "i == 2",
+        "to_loop_count": 2,
+        "line_interval": [
+          9,
+          11
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          9,
+          11
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "sibling_exclusive_statement_lines",
+        "region_size": 1,
+        "depth": 11,
+        "exec_count": 2,
+        "fail_count": 1,
+        "pass_count": 1,
+        "failure_density": 0.5,
+        "parent_exec_count": 2,
+        "parent_fail_count": 1,
+        "parent_pass_count": 1,
+        "parent_failure_density": 0.5,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.5,
+        "base_interval_score": 0.1505149978319906,
+        "outcome_delta_bonus": 1.5,
+        "base_risk_score": 0.22577249674798588,
+        "risk_score": 0.22577249674798588,
+        "ignored": {
+          "infeasible_leaves": 0,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 2
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "unmatched",
+        "statement_count": 1,
+        "raw_statement_count": 1,
+        "statement_line_count": 1,
+        "raw_statement_line_count": 1,
+        "sibling_statement_line_count": 0,
+        "removed_shared_statement_line_count": 0,
+        "assignment_count": 1,
+        "return_count": 0,
+        "raw_statement_lines": [
+          10
+        ],
+        "sibling_statement_lines": [],
+        "exclusive_statement_lines": [
+          10
+        ],
+        "removed_shared_statement_lines": [],
+        "statement_lines": [
+          10
+        ],
+        "sample_events": [
+          {
+            "type": "ASSIGN",
+            "line": 10,
+            "kind": "var_decl",
+            "target": "ch",
+            "rhs": "b"
+          }
+        ],
+        "region_basis": "raw_no_sibling",
+        "sibling_edge_id": "root.F.F.F.F.F.F.T.T.F.T.FALSE",
+        "statement_line_weight": 1.3010299956639813,
+        "rank": 6
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.T.T.F.TRUE",
+        "from_line": 13,
+        "from_condition": "letter",
+        "from_loop_count": 1,
+        "outcome": "true",
+        "to_line": 9,
+        "to_condition": "i < 3",
+        "to_loop_count": 2,
+        "line_interval": [
+          9,
+          13
+        ],
+        "interval_kind": "backward_or_loop",
+        "condition_anchor_span": [
+          9,
+          13
+        ],
+        "condition_anchor_kind": "backward_or_loop",
+        "location_basis": "sibling_exclusive_statement_lines",
+        "region_size": 1,
+        "depth": 10,
+        "exec_count": 2,
+        "fail_count": 1,
+        "pass_count": 1,
+        "failure_density": 0.5,
+        "parent_exec_count": 4,
+        "parent_fail_count": 1,
+        "parent_pass_count": 3,
+        "parent_failure_density": 0.25,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.5,
+        "base_interval_score": 0.1505149978319906,
+        "outcome_delta_bonus": 1.5,
+        "base_risk_score": 0.22577249674798588,
+        "risk_score": 0.22577249674798588,
+        "ignored": {
+          "infeasible_leaves": 1,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 2
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "matched",
+        "statement_count": 1,
+        "raw_statement_count": 1,
+        "statement_line_count": 1,
+        "raw_statement_line_count": 1,
+        "sibling_statement_line_count": 1,
+        "removed_shared_statement_line_count": 0,
+        "assignment_count": 1,
+        "return_count": 0,
+        "raw_statement_lines": [
+          13
+        ],
+        "sibling_statement_lines": [
+          15
+        ],
+        "exclusive_statement_lines": [
+          13
+        ],
+        "removed_shared_statement_lines": [],
+        "statement_lines": [
+          13
+        ],
+        "sample_events": [
+          {
+            "type": "ASSIGN",
+            "line": 13,
+            "kind": "assign",
+            "target": "i",
+            "rhs": "i + 1"
+          }
+        ],
+        "region_basis": "sibling_exclusive",
+        "sibling_edge_id": "root.F.F.F.F.F.F.T.T.F.FALSE",
+        "statement_line_weight": 1.3010299956639813,
+        "rank": 7
+      },
+      {
+        "edge_id": "root.F.F.F.F.FALSE",
+        "from_line": 5,
+        "from_condition": "c < 32",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 5,
+        "to_condition": "c > 126",
+        "to_loop_count": 1,
+        "line_interval": [
+          5,
+          5
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          5,
+          5
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "sibling_exclusive_statement_lines",
+        "region_size": 0,
+        "depth": 5,
+        "exec_count": 6,
+        "fail_count": 2,
+        "pass_count": 4,
+        "failure_density": 0.3333333333333333,
+        "parent_exec_count": 7,
+        "parent_fail_count": 2,
+        "parent_pass_count": 5,
+        "parent_failure_density": 0.2857142857142857,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.3333333333333333,
+        "base_interval_score": 0.15904041823988746,
+        "outcome_delta_bonus": 1.3333333333333333,
+        "base_risk_score": 0.2120538909865166,
+        "risk_score": 0.2120538909865166,
+        "ignored": {
+          "infeasible_leaves": 4,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "matched",
+        "statement_count": 0,
+        "raw_statement_count": 0,
+        "statement_line_count": 0,
+        "raw_statement_line_count": 0,
+        "sibling_statement_line_count": 1,
+        "removed_shared_statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "raw_statement_lines": [],
+        "sibling_statement_lines": [
+          5
+        ],
+        "exclusive_statement_lines": [],
+        "removed_shared_statement_lines": [],
+        "statement_lines": [],
+        "sample_events": [],
+        "region_basis": "sibling_exclusive",
+        "sibling_edge_id": "root.F.F.F.F.TRUE",
+        "statement_line_weight": 0.0,
+        "rank": 8
+      },
+      {
+        "edge_id": "root.F.F.F.FALSE",
+        "from_line": 5,
+        "from_condition": "b > 126",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 5,
+        "to_condition": "c < 32",
+        "to_loop_count": 1,
+        "line_interval": [
+          5,
+          5
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          5,
+          5
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "sibling_exclusive_statement_lines",
+        "region_size": 0,
+        "depth": 4,
+        "exec_count": 7,
+        "fail_count": 2,
+        "pass_count": 5,
+        "failure_density": 0.2857142857142857,
+        "parent_exec_count": 8,
+        "parent_fail_count": 2,
+        "parent_pass_count": 6,
+        "parent_failure_density": 0.25,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.2857142857142857,
+        "base_interval_score": 0.13632035849133212,
+        "outcome_delta_bonus": 1.2857142857142856,
+        "base_risk_score": 0.17526903234599842,
+        "risk_score": 0.17526903234599842,
+        "ignored": {
+          "infeasible_leaves": 4,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "matched",
+        "statement_count": 0,
+        "raw_statement_count": 0,
+        "statement_line_count": 0,
+        "raw_statement_line_count": 0,
+        "sibling_statement_line_count": 1,
+        "removed_shared_statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "raw_statement_lines": [],
+        "sibling_statement_lines": [
+          5
+        ],
+        "exclusive_statement_lines": [],
+        "removed_shared_statement_lines": [],
+        "statement_lines": [],
+        "sample_events": [],
+        "region_basis": "sibling_exclusive",
+        "sibling_edge_id": "root.F.F.F.TRUE",
+        "statement_line_weight": 0.0,
+        "rank": 9
+      },
+      {
+        "edge_id": "root.F.F.FALSE",
+        "from_line": 5,
+        "from_condition": "b < 32",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 5,
+        "to_condition": "b > 126",
+        "to_loop_count": 1,
+        "line_interval": [
+          5,
+          5
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          5,
+          5
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "sibling_exclusive_statement_lines",
+        "region_size": 0,
+        "depth": 3,
+        "exec_count": 8,
+        "fail_count": 2,
+        "pass_count": 6,
+        "failure_density": 0.25,
+        "parent_exec_count": 9,
+        "parent_fail_count": 2,
+        "parent_pass_count": 7,
+        "parent_failure_density": 0.2222222222222222,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.25,
+        "base_interval_score": 0.11928031367991561,
+        "outcome_delta_bonus": 1.25,
+        "base_risk_score": 0.1491003920998945,
+        "risk_score": 0.1491003920998945,
+        "ignored": {
+          "infeasible_leaves": 4,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "matched",
+        "statement_count": 0,
+        "raw_statement_count": 0,
+        "statement_line_count": 0,
+        "raw_statement_line_count": 0,
+        "sibling_statement_line_count": 1,
+        "removed_shared_statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "raw_statement_lines": [],
+        "sibling_statement_lines": [
+          5
+        ],
+        "exclusive_statement_lines": [],
+        "removed_shared_statement_lines": [],
+        "statement_lines": [],
+        "sample_events": [],
+        "region_basis": "sibling_exclusive",
+        "sibling_edge_id": "root.F.F.TRUE",
+        "statement_line_weight": 0.0,
+        "rank": 10
+      },
+      {
+        "edge_id": "root.F.FALSE",
+        "from_line": 5,
+        "from_condition": "a > 126",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 5,
+        "to_condition": "b < 32",
+        "to_loop_count": 1,
+        "line_interval": [
+          5,
+          5
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          5,
+          5
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "sibling_exclusive_statement_lines",
+        "region_size": 0,
+        "depth": 2,
+        "exec_count": 9,
+        "fail_count": 2,
+        "pass_count": 7,
+        "failure_density": 0.2222222222222222,
+        "parent_exec_count": 10,
+        "parent_fail_count": 2,
+        "parent_pass_count": 8,
+        "parent_failure_density": 0.2,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.2222222222222222,
+        "base_interval_score": 0.1060269454932583,
+        "outcome_delta_bonus": 1.2222222222222223,
+        "base_risk_score": 0.12958848893620462,
+        "risk_score": 0.12958848893620462,
+        "ignored": {
+          "infeasible_leaves": 4,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "matched",
+        "statement_count": 0,
+        "raw_statement_count": 0,
+        "statement_line_count": 0,
+        "raw_statement_line_count": 0,
+        "sibling_statement_line_count": 1,
+        "removed_shared_statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "raw_statement_lines": [],
+        "sibling_statement_lines": [
+          5
+        ],
+        "exclusive_statement_lines": [],
+        "removed_shared_statement_lines": [],
+        "statement_lines": [],
+        "sample_events": [],
+        "region_basis": "sibling_exclusive",
+        "sibling_edge_id": "root.F.TRUE",
+        "statement_line_weight": 0.0,
+        "rank": 11
+      },
+      {
+        "edge_id": "root.FALSE",
+        "from_line": 5,
+        "from_condition": "a < 32",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 5,
+        "to_condition": "a > 126",
+        "to_loop_count": 1,
+        "line_interval": [
+          5,
+          5
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          5,
+          5
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "sibling_exclusive_statement_lines",
+        "region_size": 0,
+        "depth": 1,
+        "exec_count": 10,
+        "fail_count": 2,
+        "pass_count": 8,
+        "failure_density": 0.2,
+        "parent_exec_count": 11,
+        "parent_fail_count": 2,
+        "parent_pass_count": 9,
+        "parent_failure_density": 0.18181818181818182,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.2,
+        "base_interval_score": 0.09542425094393249,
+        "outcome_delta_bonus": 1.2,
+        "base_risk_score": 0.11450910113271898,
+        "risk_score": 0.11450910113271898,
+        "ignored": {
+          "infeasible_leaves": 4,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "matched",
+        "statement_count": 0,
+        "raw_statement_count": 0,
+        "statement_line_count": 0,
+        "raw_statement_line_count": 0,
+        "sibling_statement_line_count": 1,
+        "removed_shared_statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "raw_statement_lines": [],
+        "sibling_statement_lines": [
+          5
+        ],
+        "exclusive_statement_lines": [],
+        "removed_shared_statement_lines": [],
+        "statement_lines": [],
+        "sample_events": [],
+        "region_basis": "sibling_exclusive",
+        "sibling_edge_id": "root.TRUE",
+        "statement_line_weight": 0.0,
+        "rank": 12
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.T.T.FALSE",
+        "from_line": 11,
+        "from_condition": "i == 2",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 13,
+        "to_condition": "letter",
+        "to_loop_count": 1,
+        "line_interval": [
+          11,
+          13
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          11,
+          13
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "sibling_exclusive_statement_lines",
+        "region_size": 1,
+        "depth": 9,
+        "exec_count": 4,
+        "fail_count": 1,
+        "pass_count": 3,
+        "failure_density": 0.25,
+        "parent_exec_count": 4,
+        "parent_fail_count": 1,
+        "parent_pass_count": 3,
+        "parent_failure_density": 0.25,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.25,
+        "base_interval_score": 0.0752574989159953,
+        "outcome_delta_bonus": 1.25,
+        "base_risk_score": 0.09407187364499413,
+        "risk_score": 0.09407187364499413,
+        "ignored": {
+          "infeasible_leaves": 2,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "unmatched",
+        "statement_count": 1,
+        "raw_statement_count": 1,
+        "statement_line_count": 1,
+        "raw_statement_line_count": 1,
+        "sibling_statement_line_count": 0,
+        "removed_shared_statement_line_count": 0,
+        "assignment_count": 1,
+        "return_count": 0,
+        "raw_statement_lines": [
+          12
+        ],
+        "sibling_statement_lines": [],
+        "exclusive_statement_lines": [
+          12
+        ],
+        "removed_shared_statement_lines": [],
+        "statement_lines": [
+          12
+        ],
+        "sample_events": [
+          {
+            "type": "ASSIGN",
+            "line": 12,
+            "kind": "assign",
+            "target": "letter",
+            "rhs": "((ch >= 65 && ch <= 90) || (ch >= 97 && ch <= 122))"
+          }
+        ],
+        "region_basis": "raw_no_sibling",
+        "sibling_edge_id": "root.F.F.F.F.F.F.T.T.TRUE",
+        "statement_line_weight": 1.3010299956639813,
+        "rank": 13
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.T.TRUE",
+        "from_line": 9,
+        "from_condition": "i < 3",
+        "from_loop_count": 1,
+        "outcome": "true",
+        "to_line": 11,
+        "to_condition": "i == 2",
+        "to_loop_count": 1,
+        "line_interval": [
+          9,
+          11
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          9,
+          11
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "sibling_exclusive_statement_lines",
+        "region_size": 1,
+        "depth": 8,
+        "exec_count": 4,
+        "fail_count": 1,
+        "pass_count": 3,
+        "failure_density": 0.25,
+        "parent_exec_count": 4,
+        "parent_fail_count": 1,
+        "parent_pass_count": 3,
+        "parent_failure_density": 0.25,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.25,
+        "base_interval_score": 0.0752574989159953,
+        "outcome_delta_bonus": 1.25,
+        "base_risk_score": 0.09407187364499413,
+        "risk_score": 0.09407187364499413,
+        "ignored": {
+          "infeasible_leaves": 3,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "unmatched",
+        "statement_count": 1,
+        "raw_statement_count": 1,
+        "statement_line_count": 1,
+        "raw_statement_line_count": 1,
+        "sibling_statement_line_count": 0,
+        "removed_shared_statement_line_count": 0,
+        "assignment_count": 1,
+        "return_count": 0,
+        "raw_statement_lines": [
+          10
+        ],
+        "sibling_statement_lines": [],
+        "exclusive_statement_lines": [
+          10
+        ],
+        "removed_shared_statement_lines": [],
+        "statement_lines": [
+          10
+        ],
+        "sample_events": [
+          {
+            "type": "ASSIGN",
+            "line": 10,
+            "kind": "var_decl",
+            "target": "ch",
+            "rhs": "b"
+          }
+        ],
+        "region_basis": "raw_no_sibling",
+        "sibling_edge_id": "root.F.F.F.F.F.F.T.FALSE",
+        "statement_line_weight": 1.3010299956639813,
+        "rank": 14
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.TRUE",
+        "from_line": 8,
+        "from_condition": "(letter) == false",
+        "from_loop_count": 1,
+        "outcome": "true",
+        "to_line": 9,
+        "to_condition": "i < 3",
+        "to_loop_count": 1,
+        "line_interval": [
+          8,
+          9
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          8,
+          9
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "sibling_exclusive_statement_lines",
+        "region_size": 0,
+        "depth": 7,
+        "exec_count": 4,
+        "fail_count": 1,
+        "pass_count": 3,
+        "failure_density": 0.25,
+        "parent_exec_count": 5,
+        "parent_fail_count": 2,
+        "parent_pass_count": 3,
+        "parent_failure_density": 0.4,
+        "sibling_failure_density": 1.0,
+        "outcome_delta": 0.0,
+        "base_interval_score": 0.0752574989159953,
+        "outcome_delta_bonus": 1.0,
+        "base_risk_score": 0.0752574989159953,
+        "risk_score": 0.0752574989159953,
+        "ignored": {
+          "infeasible_leaves": 4,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "matched",
+        "statement_count": 0,
+        "raw_statement_count": 0,
+        "statement_line_count": 0,
+        "raw_statement_line_count": 0,
+        "sibling_statement_line_count": 1,
+        "removed_shared_statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "raw_statement_lines": [],
+        "sibling_statement_lines": [
+          20
+        ],
+        "exclusive_statement_lines": [],
+        "removed_shared_statement_lines": [],
+        "statement_lines": [],
+        "sample_events": [],
+        "region_basis": "sibling_exclusive",
+        "sibling_edge_id": "root.F.F.F.F.F.F.FALSE",
+        "statement_line_weight": 0.0,
+        "rank": 15
+      }
+    ],
+    "edge_divergence_sibling_shared": [
+      {
+        "edge_id": "root.F.F.F.F.F.FALSE",
+        "from_line": 5,
+        "from_condition": "c > 126",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 8,
+        "to_condition": "(letter) == false",
+        "to_loop_count": 1,
+        "line_interval": [
+          5,
+          8
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          5,
+          8
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "sibling_shared_statement_lines",
+        "region_size": 0,
+        "depth": 6,
+        "exec_count": 5,
+        "fail_count": 2,
+        "pass_count": 3,
+        "failure_density": 0.4,
+        "parent_exec_count": 6,
+        "parent_fail_count": 2,
+        "parent_pass_count": 4,
+        "parent_failure_density": 0.3333333333333333,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.4,
+        "base_interval_score": 0.19084850188786498,
+        "outcome_delta_bonus": 1.4,
+        "base_risk_score": 0.26718790264301095,
+        "risk_score": 0.25446466918381994,
+        "ignored": {
+          "infeasible_leaves": 4,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "matched",
+        "statement_count": 0,
+        "raw_statement_count": 2,
+        "statement_line_count": 0,
+        "raw_statement_line_count": 2,
+        "sibling_statement_line_count": 1,
+        "shared_statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "raw_statement_lines": [
+          6,
+          7
+        ],
+        "sibling_statement_lines": [
+          5
+        ],
+        "shared_statement_lines": [],
+        "statement_lines": [],
+        "sample_events": [],
+        "region_basis": "sibling_shared",
+        "sibling_edge_id": "root.F.F.F.F.F.TRUE",
+        "statement_line_weight": 0.0,
+        "shared_risk_score": 0.25446466918381994,
+        "rank": 1
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.FALSE",
+        "from_line": 8,
+        "from_condition": "(letter) == false",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": null,
+        "to_condition": null,
+        "to_loop_count": null,
+        "line_interval": [
+          8,
+          null
+        ],
+        "interval_kind": "to_leaf",
+        "condition_anchor_span": [
+          8,
+          null
+        ],
+        "condition_anchor_kind": "to_leaf",
+        "location_basis": "sibling_shared_statement_lines",
+        "region_size": 0,
+        "depth": 7,
+        "exec_count": 1,
+        "fail_count": 1,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "parent_exec_count": 5,
+        "parent_fail_count": 2,
+        "parent_pass_count": 3,
+        "parent_failure_density": 0.4,
+        "sibling_failure_density": 0.25,
+        "outcome_delta": 0.75,
+        "base_interval_score": 0.3010299956639812,
+        "outcome_delta_bonus": 1.75,
+        "base_risk_score": 0.5268024924119671,
+        "risk_score": 0.23856062735983122,
+        "ignored": {
+          "infeasible_leaves": 0,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 0
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "matched",
+        "statement_count": 0,
+        "raw_statement_count": 1,
+        "statement_line_count": 0,
+        "raw_statement_line_count": 1,
+        "sibling_statement_line_count": 0,
+        "shared_statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "raw_statement_lines": [
+          20
+        ],
+        "sibling_statement_lines": [],
+        "shared_statement_lines": [],
+        "statement_lines": [],
+        "sample_events": [],
+        "region_basis": "sibling_shared",
+        "sibling_edge_id": "root.F.F.F.F.F.F.TRUE",
+        "statement_line_weight": 0.0,
+        "shared_risk_score": 0.23856062735983122,
+        "rank": 2
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.TRUE",
+        "from_line": 8,
+        "from_condition": "(letter) == false",
+        "from_loop_count": 1,
+        "outcome": "true",
+        "to_line": 9,
+        "to_condition": "i < 3",
+        "to_loop_count": 1,
+        "line_interval": [
+          8,
+          9
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          8,
+          9
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "sibling_shared_statement_lines",
+        "region_size": 0,
+        "depth": 7,
+        "exec_count": 4,
+        "fail_count": 1,
+        "pass_count": 3,
+        "failure_density": 0.25,
+        "parent_exec_count": 5,
+        "parent_fail_count": 2,
+        "parent_pass_count": 3,
+        "parent_failure_density": 0.4,
+        "sibling_failure_density": 1.0,
+        "outcome_delta": 0.0,
+        "base_interval_score": 0.0752574989159953,
+        "outcome_delta_bonus": 1.0,
+        "base_risk_score": 0.0752574989159953,
+        "risk_score": 0.23856062735983122,
+        "ignored": {
+          "infeasible_leaves": 4,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "matched",
+        "statement_count": 0,
+        "raw_statement_count": 0,
+        "statement_line_count": 0,
+        "raw_statement_line_count": 0,
+        "sibling_statement_line_count": 1,
+        "shared_statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "raw_statement_lines": [],
+        "sibling_statement_lines": [
+          20
+        ],
+        "shared_statement_lines": [],
+        "statement_lines": [],
+        "sample_events": [],
+        "region_basis": "sibling_shared",
+        "sibling_edge_id": "root.F.F.F.F.F.F.FALSE",
+        "statement_line_weight": 0.0,
+        "shared_risk_score": 0.23856062735983122,
+        "rank": 3
+      },
+      {
+        "edge_id": "root.F.F.F.F.FALSE",
+        "from_line": 5,
+        "from_condition": "c < 32",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 5,
+        "to_condition": "c > 126",
+        "to_loop_count": 1,
+        "line_interval": [
+          5,
+          5
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          5,
+          5
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "sibling_shared_statement_lines",
+        "region_size": 0,
+        "depth": 5,
+        "exec_count": 6,
+        "fail_count": 2,
+        "pass_count": 4,
+        "failure_density": 0.3333333333333333,
+        "parent_exec_count": 7,
+        "parent_fail_count": 2,
+        "parent_pass_count": 5,
+        "parent_failure_density": 0.2857142857142857,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.3333333333333333,
+        "base_interval_score": 0.15904041823988746,
+        "outcome_delta_bonus": 1.3333333333333333,
+        "base_risk_score": 0.2120538909865166,
+        "risk_score": 0.22720059748555355,
+        "ignored": {
+          "infeasible_leaves": 4,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "matched",
+        "statement_count": 0,
+        "raw_statement_count": 0,
+        "statement_line_count": 0,
+        "raw_statement_line_count": 0,
+        "sibling_statement_line_count": 1,
+        "shared_statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "raw_statement_lines": [],
+        "sibling_statement_lines": [
+          5
+        ],
+        "shared_statement_lines": [],
+        "statement_lines": [],
+        "sample_events": [],
+        "region_basis": "sibling_shared",
+        "sibling_edge_id": "root.F.F.F.F.TRUE",
+        "statement_line_weight": 0.0,
+        "shared_risk_score": 0.22720059748555355,
+        "rank": 4
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.T.T.F.T.T.T.FALSE",
+        "from_line": 13,
+        "from_condition": "letter",
+        "from_loop_count": 2,
+        "outcome": "false",
+        "to_line": 16,
+        "to_condition": "number",
+        "to_loop_count": 1,
+        "line_interval": [
+          13,
+          16
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          13,
+          16
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "sibling_shared_statement_lines",
+        "region_size": 0,
+        "depth": 13,
+        "exec_count": 2,
+        "fail_count": 1,
+        "pass_count": 1,
+        "failure_density": 0.5,
+        "parent_exec_count": 2,
+        "parent_fail_count": 1,
+        "parent_pass_count": 1,
+        "parent_failure_density": 0.5,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.5,
+        "base_interval_score": 0.1505149978319906,
+        "outcome_delta_bonus": 1.5,
+        "base_risk_score": 0.22577249674798588,
+        "risk_score": 0.22577249674798588,
+        "ignored": {
+          "infeasible_leaves": 0,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 0
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "unmatched",
+        "statement_count": 0,
+        "raw_statement_count": 1,
+        "statement_line_count": 0,
+        "raw_statement_line_count": 1,
+        "sibling_statement_line_count": 0,
+        "shared_statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "raw_statement_lines": [
+          15
+        ],
+        "sibling_statement_lines": [],
+        "shared_statement_lines": [],
+        "statement_lines": [],
+        "sample_events": [],
+        "region_basis": "shared_no_sibling",
+        "sibling_edge_id": "root.F.F.F.F.F.F.T.T.F.T.T.T.TRUE",
+        "statement_line_weight": 0.0,
+        "shared_risk_score": 0.22577249674798588,
+        "rank": 5
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.T.T.F.T.T.TRUE",
+        "from_line": 11,
+        "from_condition": "i == 2",
+        "from_loop_count": 2,
+        "outcome": "true",
+        "to_line": 13,
+        "to_condition": "letter",
+        "to_loop_count": 2,
+        "line_interval": [
+          11,
+          13
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          11,
+          13
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "sibling_shared_statement_lines",
+        "region_size": 0,
+        "depth": 12,
+        "exec_count": 2,
+        "fail_count": 1,
+        "pass_count": 1,
+        "failure_density": 0.5,
+        "parent_exec_count": 2,
+        "parent_fail_count": 1,
+        "parent_pass_count": 1,
+        "parent_failure_density": 0.5,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.5,
+        "base_interval_score": 0.1505149978319906,
+        "outcome_delta_bonus": 1.5,
+        "base_risk_score": 0.22577249674798588,
+        "risk_score": 0.22577249674798588,
+        "ignored": {
+          "infeasible_leaves": 0,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 1
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "unmatched",
+        "statement_count": 0,
+        "raw_statement_count": 2,
+        "statement_line_count": 0,
+        "raw_statement_line_count": 2,
+        "sibling_statement_line_count": 0,
+        "shared_statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "raw_statement_lines": [
+          11,
+          12
+        ],
+        "sibling_statement_lines": [],
+        "shared_statement_lines": [],
+        "statement_lines": [],
+        "sample_events": [],
+        "region_basis": "shared_no_sibling",
+        "sibling_edge_id": "root.F.F.F.F.F.F.T.T.F.T.T.FALSE",
+        "statement_line_weight": 0.0,
+        "shared_risk_score": 0.22577249674798588,
+        "rank": 6
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.T.T.F.T.TRUE",
+        "from_line": 9,
+        "from_condition": "i < 3",
+        "from_loop_count": 2,
+        "outcome": "true",
+        "to_line": 11,
+        "to_condition": "i == 2",
+        "to_loop_count": 2,
+        "line_interval": [
+          9,
+          11
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          9,
+          11
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "sibling_shared_statement_lines",
+        "region_size": 0,
+        "depth": 11,
+        "exec_count": 2,
+        "fail_count": 1,
+        "pass_count": 1,
+        "failure_density": 0.5,
+        "parent_exec_count": 2,
+        "parent_fail_count": 1,
+        "parent_pass_count": 1,
+        "parent_failure_density": 0.5,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.5,
+        "base_interval_score": 0.1505149978319906,
+        "outcome_delta_bonus": 1.5,
+        "base_risk_score": 0.22577249674798588,
+        "risk_score": 0.22577249674798588,
+        "ignored": {
+          "infeasible_leaves": 0,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 2
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "unmatched",
+        "statement_count": 0,
+        "raw_statement_count": 1,
+        "statement_line_count": 0,
+        "raw_statement_line_count": 1,
+        "sibling_statement_line_count": 0,
+        "shared_statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "raw_statement_lines": [
+          10
+        ],
+        "sibling_statement_lines": [],
+        "shared_statement_lines": [],
+        "statement_lines": [],
+        "sample_events": [],
+        "region_basis": "shared_no_sibling",
+        "sibling_edge_id": "root.F.F.F.F.F.F.T.T.F.T.FALSE",
+        "statement_line_weight": 0.0,
+        "shared_risk_score": 0.22577249674798588,
+        "rank": 7
+      },
+      {
+        "edge_id": "root.F.F.F.FALSE",
+        "from_line": 5,
+        "from_condition": "b > 126",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 5,
+        "to_condition": "c < 32",
+        "to_loop_count": 1,
+        "line_interval": [
+          5,
+          5
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          5,
+          5
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "sibling_shared_statement_lines",
+        "region_size": 0,
+        "depth": 4,
+        "exec_count": 7,
+        "fail_count": 2,
+        "pass_count": 5,
+        "failure_density": 0.2857142857142857,
+        "parent_exec_count": 8,
+        "parent_fail_count": 2,
+        "parent_pass_count": 6,
+        "parent_failure_density": 0.25,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.2857142857142857,
+        "base_interval_score": 0.13632035849133212,
+        "outcome_delta_bonus": 1.2857142857142856,
+        "base_risk_score": 0.17526903234599842,
+        "risk_score": 0.2044805377369982,
+        "ignored": {
+          "infeasible_leaves": 4,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "matched",
+        "statement_count": 0,
+        "raw_statement_count": 0,
+        "statement_line_count": 0,
+        "raw_statement_line_count": 0,
+        "sibling_statement_line_count": 1,
+        "shared_statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "raw_statement_lines": [],
+        "sibling_statement_lines": [
+          5
+        ],
+        "shared_statement_lines": [],
+        "statement_lines": [],
+        "sample_events": [],
+        "region_basis": "sibling_shared",
+        "sibling_edge_id": "root.F.F.F.TRUE",
+        "statement_line_weight": 0.0,
+        "shared_risk_score": 0.2044805377369982,
+        "rank": 8
+      },
+      {
+        "edge_id": "root.F.F.FALSE",
+        "from_line": 5,
+        "from_condition": "b < 32",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 5,
+        "to_condition": "b > 126",
+        "to_loop_count": 1,
+        "line_interval": [
+          5,
+          5
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          5,
+          5
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "sibling_shared_statement_lines",
+        "region_size": 0,
+        "depth": 3,
+        "exec_count": 8,
+        "fail_count": 2,
+        "pass_count": 6,
+        "failure_density": 0.25,
+        "parent_exec_count": 9,
+        "parent_fail_count": 2,
+        "parent_pass_count": 7,
+        "parent_failure_density": 0.2222222222222222,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.25,
+        "base_interval_score": 0.11928031367991561,
+        "outcome_delta_bonus": 1.25,
+        "base_risk_score": 0.1491003920998945,
+        "risk_score": 0.18554715461320204,
+        "ignored": {
+          "infeasible_leaves": 4,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "matched",
+        "statement_count": 0,
+        "raw_statement_count": 0,
+        "statement_line_count": 0,
+        "raw_statement_line_count": 0,
+        "sibling_statement_line_count": 1,
+        "shared_statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "raw_statement_lines": [],
+        "sibling_statement_lines": [
+          5
+        ],
+        "shared_statement_lines": [],
+        "statement_lines": [],
+        "sample_events": [],
+        "region_basis": "sibling_shared",
+        "sibling_edge_id": "root.F.F.TRUE",
+        "statement_line_weight": 0.0,
+        "shared_risk_score": 0.18554715461320204,
+        "rank": 9
+      },
+      {
+        "edge_id": "root.F.FALSE",
+        "from_line": 5,
+        "from_condition": "a > 126",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 5,
+        "to_condition": "b < 32",
+        "to_loop_count": 1,
+        "line_interval": [
+          5,
+          5
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          5,
+          5
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "sibling_shared_statement_lines",
+        "region_size": 0,
+        "depth": 2,
+        "exec_count": 9,
+        "fail_count": 2,
+        "pass_count": 7,
+        "failure_density": 0.2222222222222222,
+        "parent_exec_count": 10,
+        "parent_fail_count": 2,
+        "parent_pass_count": 8,
+        "parent_failure_density": 0.2,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.2222222222222222,
+        "base_interval_score": 0.1060269454932583,
+        "outcome_delta_bonus": 1.2222222222222223,
+        "base_risk_score": 0.12958848893620462,
+        "risk_score": 0.16964311278921332,
+        "ignored": {
+          "infeasible_leaves": 4,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "matched",
+        "statement_count": 0,
+        "raw_statement_count": 0,
+        "statement_line_count": 0,
+        "raw_statement_line_count": 0,
+        "sibling_statement_line_count": 1,
+        "shared_statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "raw_statement_lines": [],
+        "sibling_statement_lines": [
+          5
+        ],
+        "shared_statement_lines": [],
+        "statement_lines": [],
+        "sample_events": [],
+        "region_basis": "sibling_shared",
+        "sibling_edge_id": "root.F.TRUE",
+        "statement_line_weight": 0.0,
+        "shared_risk_score": 0.16964311278921332,
+        "rank": 10
+      },
+      {
+        "edge_id": "root.FALSE",
+        "from_line": 5,
+        "from_condition": "a < 32",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 5,
+        "to_condition": "a > 126",
+        "to_loop_count": 1,
+        "line_interval": [
+          5,
+          5
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          5,
+          5
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "sibling_shared_statement_lines",
+        "region_size": 0,
+        "depth": 1,
+        "exec_count": 10,
+        "fail_count": 2,
+        "pass_count": 8,
+        "failure_density": 0.2,
+        "parent_exec_count": 11,
+        "parent_fail_count": 2,
+        "parent_pass_count": 9,
+        "parent_failure_density": 0.18181818181818182,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.2,
+        "base_interval_score": 0.09542425094393249,
+        "outcome_delta_bonus": 1.2,
+        "base_risk_score": 0.11450910113271898,
+        "risk_score": 0.15614877427188953,
+        "ignored": {
+          "infeasible_leaves": 4,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "matched",
+        "statement_count": 0,
+        "raw_statement_count": 0,
+        "statement_line_count": 0,
+        "raw_statement_line_count": 0,
+        "sibling_statement_line_count": 1,
+        "shared_statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "raw_statement_lines": [],
+        "sibling_statement_lines": [
+          5
+        ],
+        "shared_statement_lines": [],
+        "statement_lines": [],
+        "sample_events": [],
+        "region_basis": "sibling_shared",
+        "sibling_edge_id": "root.TRUE",
+        "statement_line_weight": 0.0,
+        "shared_risk_score": 0.15614877427188953,
+        "rank": 11
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.T.T.F.T.T.T.F.TRUE",
+        "from_line": 16,
+        "from_condition": "number",
+        "from_loop_count": 1,
+        "outcome": "true",
+        "to_line": null,
+        "to_condition": null,
+        "to_loop_count": null,
+        "line_interval": [
+          16,
+          null
+        ],
+        "interval_kind": "to_leaf",
+        "condition_anchor_span": [
+          16,
+          null
+        ],
+        "condition_anchor_kind": "to_leaf",
+        "location_basis": "sibling_shared_statement_lines",
+        "region_size": 1,
+        "depth": 14,
+        "exec_count": 1,
+        "fail_count": 1,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "parent_exec_count": 2,
+        "parent_fail_count": 1,
+        "parent_pass_count": 1,
+        "parent_failure_density": 0.5,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 1.0,
+        "base_interval_score": 0.3010299956639812,
+        "outcome_delta_bonus": 2.0,
+        "base_risk_score": 0.6020599913279624,
+        "risk_score": 0.1505149978319906,
+        "ignored": {
+          "infeasible_leaves": 0,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 0
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "matched",
+        "statement_count": 1,
+        "raw_statement_count": 1,
+        "statement_line_count": 1,
+        "raw_statement_line_count": 1,
+        "sibling_statement_line_count": 1,
+        "shared_statement_line_count": 1,
+        "assignment_count": 1,
+        "return_count": 0,
+        "raw_statement_lines": [
+          16
+        ],
+        "sibling_statement_lines": [
+          16
+        ],
+        "shared_statement_lines": [
+          16
+        ],
+        "statement_lines": [
+          16
+        ],
+        "sample_events": [
+          {
+            "type": "ASSIGN",
+            "line": 16,
+            "kind": "assign",
+            "target": "i",
+            "rhs": "i + 1"
+          }
+        ],
+        "region_basis": "sibling_shared",
+        "sibling_edge_id": "root.F.F.F.F.F.F.T.T.F.T.T.T.F.FALSE",
+        "statement_line_weight": 1.3010299956639813,
+        "shared_risk_score": 0.1505149978319906,
+        "rank": 12
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.T.T.FALSE",
+        "from_line": 11,
+        "from_condition": "i == 2",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 13,
+        "to_condition": "letter",
+        "to_loop_count": 1,
+        "line_interval": [
+          11,
+          13
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          11,
+          13
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "sibling_shared_statement_lines",
+        "region_size": 0,
+        "depth": 9,
+        "exec_count": 4,
+        "fail_count": 1,
+        "pass_count": 3,
+        "failure_density": 0.25,
+        "parent_exec_count": 4,
+        "parent_fail_count": 1,
+        "parent_pass_count": 3,
+        "parent_failure_density": 0.25,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.25,
+        "base_interval_score": 0.0752574989159953,
+        "outcome_delta_bonus": 1.25,
+        "base_risk_score": 0.09407187364499413,
+        "risk_score": 0.13170062310299177,
+        "ignored": {
+          "infeasible_leaves": 2,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "unmatched",
+        "statement_count": 0,
+        "raw_statement_count": 1,
+        "statement_line_count": 0,
+        "raw_statement_line_count": 1,
+        "sibling_statement_line_count": 0,
+        "shared_statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "raw_statement_lines": [
+          12
+        ],
+        "sibling_statement_lines": [],
+        "shared_statement_lines": [],
+        "statement_lines": [],
+        "sample_events": [],
+        "region_basis": "shared_no_sibling",
+        "sibling_edge_id": "root.F.F.F.F.F.F.T.T.TRUE",
+        "statement_line_weight": 0.0,
+        "shared_risk_score": 0.13170062310299177,
+        "rank": 13
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.T.TRUE",
+        "from_line": 9,
+        "from_condition": "i < 3",
+        "from_loop_count": 1,
+        "outcome": "true",
+        "to_line": 11,
+        "to_condition": "i == 2",
+        "to_loop_count": 1,
+        "line_interval": [
+          9,
+          11
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          9,
+          11
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "sibling_shared_statement_lines",
+        "region_size": 0,
+        "depth": 8,
+        "exec_count": 4,
+        "fail_count": 1,
+        "pass_count": 3,
+        "failure_density": 0.25,
+        "parent_exec_count": 4,
+        "parent_fail_count": 1,
+        "parent_pass_count": 3,
+        "parent_failure_density": 0.25,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.25,
+        "base_interval_score": 0.0752574989159953,
+        "outcome_delta_bonus": 1.25,
+        "base_risk_score": 0.09407187364499413,
+        "risk_score": 0.13170062310299177,
+        "ignored": {
+          "infeasible_leaves": 3,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 5
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "unmatched",
+        "statement_count": 0,
+        "raw_statement_count": 1,
+        "statement_line_count": 0,
+        "raw_statement_line_count": 1,
+        "sibling_statement_line_count": 0,
+        "shared_statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "raw_statement_lines": [
+          10
+        ],
+        "sibling_statement_lines": [],
+        "shared_statement_lines": [],
+        "statement_lines": [],
+        "sample_events": [],
+        "region_basis": "shared_no_sibling",
+        "sibling_edge_id": "root.F.F.F.F.F.F.T.FALSE",
+        "statement_line_weight": 0.0,
+        "shared_risk_score": 0.13170062310299177,
+        "rank": 14
+      },
+      {
+        "edge_id": "root.F.F.F.F.F.F.T.T.F.TRUE",
+        "from_line": 13,
+        "from_condition": "letter",
+        "from_loop_count": 1,
+        "outcome": "true",
+        "to_line": 9,
+        "to_condition": "i < 3",
+        "to_loop_count": 2,
+        "line_interval": [
+          9,
+          13
+        ],
+        "interval_kind": "backward_or_loop",
+        "condition_anchor_span": [
+          9,
+          13
+        ],
+        "condition_anchor_kind": "backward_or_loop",
+        "location_basis": "sibling_shared_statement_lines",
+        "region_size": 0,
+        "depth": 10,
+        "exec_count": 2,
+        "fail_count": 1,
+        "pass_count": 1,
+        "failure_density": 0.5,
+        "parent_exec_count": 4,
+        "parent_fail_count": 1,
+        "parent_pass_count": 3,
+        "parent_failure_density": 0.25,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 0.5,
+        "base_interval_score": 0.1505149978319906,
+        "outcome_delta_bonus": 1.5,
+        "base_risk_score": 0.22577249674798588,
+        "risk_score": 0.11288624837399294,
+        "ignored": {
+          "infeasible_leaves": 1,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 2
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "matched",
+        "statement_count": 0,
+        "raw_statement_count": 1,
+        "statement_line_count": 0,
+        "raw_statement_line_count": 1,
+        "sibling_statement_line_count": 1,
+        "shared_statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "raw_statement_lines": [
+          13
+        ],
+        "sibling_statement_lines": [
+          15
+        ],
+        "shared_statement_lines": [],
+        "statement_lines": [],
+        "sample_events": [],
+        "region_basis": "sibling_shared",
+        "sibling_edge_id": "root.F.F.F.F.F.F.T.T.F.FALSE",
+        "statement_line_weight": 0.0,
+        "shared_risk_score": 0.11288624837399294,
+        "rank": 15
+      }
+    ]
+  }
+}

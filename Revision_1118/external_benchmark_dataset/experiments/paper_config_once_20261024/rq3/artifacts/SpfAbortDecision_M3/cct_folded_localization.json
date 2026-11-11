@@ -1,0 +1,402 @@
+{
+  "summary": {
+    "strategy": "folded_source_candidate_v1",
+    "scoring_strategy": "coverage_x_purity",
+    "F_total": 2,
+    "P_total": 4,
+    "condition_candidates": 6,
+    "seed_e_candidates": 3,
+    "seed_s_candidates": 0,
+    "edge_partition_candidates": 3,
+    "unstable_segment_variants": 1,
+    "total_edge_transitions": 17
+  },
+  "condition_node_ranking": [
+    {
+      "candidate_id": "condition_31_selected",
+      "kind": "condition",
+      "F_c": 2,
+      "P_c": 0,
+      "exec_count": 2,
+      "fail_count": 2,
+      "pass_count": 0,
+      "failure_density": 1.0,
+      "risk_score": 1.0,
+      "occurrence_count": 2,
+      "representative_count": 2,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F.T"
+        },
+        {
+          "node_id": "root.F.F.T.F.T"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 31,
+      "condition": "selected",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 31,
+      "line_end": 31,
+      "rank": 1
+    },
+    {
+      "candidate_id": "condition_25_fired",
+      "kind": "condition",
+      "F_c": 2,
+      "P_c": 2,
+      "exec_count": 4,
+      "fail_count": 2,
+      "pass_count": 2,
+      "failure_density": 0.5,
+      "risk_score": 0.5,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 25,
+      "condition": "fired",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 25,
+      "line_end": 25,
+      "rank": 2
+    },
+    {
+      "candidate_id": "condition_26_altitudeOffset < 0",
+      "kind": "condition",
+      "F_c": 2,
+      "P_c": 2,
+      "exec_count": 4,
+      "fail_count": 2,
+      "pass_count": 2,
+      "failure_density": 0.5,
+      "risk_score": 0.5,
+      "occurrence_count": 2,
+      "representative_count": 2,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F"
+        },
+        {
+          "node_id": "root.F.F.T"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 26,
+      "condition": "altitudeOffset < 0",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 26,
+      "line_end": 26,
+      "rank": 3
+    },
+    {
+      "candidate_id": "condition_30_altitudeOffset >= 0",
+      "kind": "condition",
+      "F_c": 2,
+      "P_c": 2,
+      "exec_count": 4,
+      "fail_count": 2,
+      "pass_count": 2,
+      "failure_density": 0.5,
+      "risk_score": 0.5,
+      "occurrence_count": 4,
+      "representative_count": 4,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F"
+        },
+        {
+          "node_id": "root.F.F.F.T.F"
+        },
+        {
+          "node_id": "root.F.F.T.F"
+        },
+        {
+          "node_id": "root.F.F.T.T.T"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 30,
+      "condition": "altitudeOffset >= 0",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 30,
+      "line_end": 30,
+      "rank": 4
+    },
+    {
+      "candidate_id": "condition_21_altitudeOffset > 1000",
+      "kind": "condition",
+      "F_c": 2,
+      "P_c": 3,
+      "exec_count": 5,
+      "fail_count": 2,
+      "pass_count": 3,
+      "failure_density": 0.4,
+      "risk_score": 0.4,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 21,
+      "condition": "altitudeOffset > 1000",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 21,
+      "line_end": 21,
+      "rank": 5
+    },
+    {
+      "candidate_id": "condition_21_altitudeOffset < -1000",
+      "kind": "condition",
+      "F_c": 2,
+      "P_c": 4,
+      "exec_count": 6,
+      "fail_count": 2,
+      "pass_count": 4,
+      "failure_density": 0.3333333333333333,
+      "risk_score": 0.3333333333333333,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 21,
+      "condition": "altitudeOffset < -1000",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 21,
+      "line_end": 21,
+      "rank": 6
+    }
+  ],
+  "interval_rankings": {
+    "folded_seed_e": [
+      {
+        "candidate_id": "seed_e_seed_e_32_33_35",
+        "kind": "seed_e",
+        "F_c": 2,
+        "P_c": 0,
+        "exec_count": 2,
+        "fail_count": 2,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "risk_score": 1.0,
+        "occurrence_count": 2,
+        "representative_count": 2,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.F.F.F.T.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.T.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.T.F.T.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.T.F.T.FALSE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          32,
+          33,
+          35
+        ],
+        "region_size": 3,
+        "line_start": 32,
+        "line_end": 35,
+        "from_line": 31,
+        "from_condition": "selected",
+        "outcome": "false",
+        "to_line": null,
+        "to_condition": null,
+        "rank": 1
+      },
+      {
+        "candidate_id": "seed_e_seed_e_22_23_24",
+        "kind": "seed_e",
+        "F_c": 2,
+        "P_c": 2,
+        "exec_count": 4,
+        "fail_count": 2,
+        "pass_count": 2,
+        "failure_density": 0.5,
+        "risk_score": 0.5,
+        "occurrence_count": 1,
+        "representative_count": 1,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.FALSE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          22,
+          23,
+          24
+        ],
+        "region_size": 3,
+        "line_start": 22,
+        "line_end": 24,
+        "from_line": 21,
+        "from_condition": "altitudeOffset > 1000",
+        "outcome": "false",
+        "to_line": 25,
+        "to_condition": "fired",
+        "rank": 2
+      },
+      {
+        "candidate_id": "seed_e_seed_e_25",
+        "kind": "seed_e",
+        "F_c": 1,
+        "P_c": 1,
+        "exec_count": 2,
+        "fail_count": 1,
+        "pass_count": 1,
+        "failure_density": 0.5,
+        "risk_score": 0.25,
+        "occurrence_count": 1,
+        "representative_count": 1,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.FALSE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          25
+        ],
+        "region_size": 1,
+        "line_start": 25,
+        "line_end": 25,
+        "from_line": 25,
+        "from_condition": "fired",
+        "outcome": "false",
+        "to_line": 26,
+        "to_condition": "altitudeOffset < 0",
+        "rank": 3
+      }
+    ],
+    "folded_seed_s": [],
+    "folded_edge_partition": [
+      {
+        "candidate_id": "seed_e_seed_e_32_33_35",
+        "kind": "seed_e",
+        "F_c": 2,
+        "P_c": 0,
+        "exec_count": 2,
+        "fail_count": 2,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "risk_score": 1.0,
+        "occurrence_count": 2,
+        "representative_count": 2,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.F.F.F.T.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.T.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.T.F.T.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.T.F.T.FALSE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          32,
+          33,
+          35
+        ],
+        "region_size": 3,
+        "line_start": 32,
+        "line_end": 35,
+        "from_line": 31,
+        "from_condition": "selected",
+        "outcome": "false",
+        "to_line": null,
+        "to_condition": null,
+        "rank": 1
+      },
+      {
+        "candidate_id": "seed_e_seed_e_22_23_24",
+        "kind": "seed_e",
+        "F_c": 2,
+        "P_c": 2,
+        "exec_count": 4,
+        "fail_count": 2,
+        "pass_count": 2,
+        "failure_density": 0.5,
+        "risk_score": 0.5,
+        "occurrence_count": 1,
+        "representative_count": 1,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.FALSE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          22,
+          23,
+          24
+        ],
+        "region_size": 3,
+        "line_start": 22,
+        "line_end": 24,
+        "from_line": 21,
+        "from_condition": "altitudeOffset > 1000",
+        "outcome": "false",
+        "to_line": 25,
+        "to_condition": "fired",
+        "rank": 2
+      },
+      {
+        "candidate_id": "seed_e_seed_e_25",
+        "kind": "seed_e",
+        "F_c": 1,
+        "P_c": 1,
+        "exec_count": 2,
+        "fail_count": 1,
+        "pass_count": 1,
+        "failure_density": 0.5,
+        "risk_score": 0.25,
+        "occurrence_count": 1,
+        "representative_count": 1,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.FALSE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          25
+        ],
+        "region_size": 1,
+        "line_start": 25,
+        "line_end": 25,
+        "from_line": 25,
+        "from_condition": "fired",
+        "outcome": "false",
+        "to_line": 26,
+        "to_condition": "altitudeOffset < 0",
+        "rank": 3
+      }
+    ]
+  }
+}

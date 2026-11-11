@@ -1,0 +1,1235 @@
+{
+  "summary": {
+    "aggregation": "source_transition_v1",
+    "score_aggregation": "max",
+    "per_target_aggregation": {
+      "condition_node_ranking": "max",
+      "interval_rankings.folded_seed_e": "max",
+      "interval_rankings.folded_seed_s": "max",
+      "interval_rankings.folded_edge_partition": "max"
+    },
+    "source_report": null,
+    "source_file": "D4jMonotonicOrder/D4jMonotonicOrder_M6.java",
+    "targets": [
+      "condition_node_ranking",
+      "interval_rankings.folded_seed_e",
+      "interval_rankings.folded_seed_s",
+      "interval_rankings.folded_edge_partition"
+    ],
+    "condition_node_count_raw": 15,
+    "condition_node_count_aggregated": 15,
+    "interval_count_raw": {
+      "folded_seed_e": 5,
+      "folded_seed_s": 0,
+      "folded_edge_partition": 5
+    },
+    "interval_count_aggregated": {
+      "folded_seed_e": 5,
+      "folded_seed_s": 0,
+      "folded_edge_partition": 5
+    },
+    "average_interval_region_size": {
+      "folded_seed_e": 1.4,
+      "folded_seed_s": 0.0,
+      "folded_edge_partition": 1.4
+    },
+    "raw_summary": {
+      "strategy": "folded_source_candidate_v1",
+      "scoring_strategy": "coverage_x_purity",
+      "F_total": 4,
+      "P_total": 14,
+      "condition_candidates": 15,
+      "seed_e_candidates": 5,
+      "seed_s_candidates": 0,
+      "edge_partition_candidates": 5,
+      "unstable_segment_variants": 1,
+      "total_edge_transitions": 39
+    }
+  },
+  "aggregated_condition_node_ranking": [
+    {
+      "source_file": "D4jMonotonicOrder/D4jMonotonicOrder_M6.java",
+      "line": 23,
+      "condition": "i < 3",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 1,
+      "raw_ranks": [
+        1
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 1,
+        "risk_score": 0.3333333333333333,
+        "line": 23,
+        "condition": "i < 3",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.3333333333333333,
+      "exec_count": 12,
+      "fail_count": 4,
+      "pass_count": 8,
+      "failure_density": 0.3333333333333333,
+      "min_exec_count": 12,
+      "min_fail_count": 4,
+      "min_pass_count": 8,
+      "min_failure_density": 0.3333333333333333,
+      "rank": 1
+    },
+    {
+      "source_file": "D4jMonotonicOrder/D4jMonotonicOrder_M6.java",
+      "line": 25,
+      "condition": "i == 2",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 2,
+      "raw_ranks": [
+        2
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 2,
+        "risk_score": 0.3333333333333333,
+        "line": 25,
+        "condition": "i == 2",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.3333333333333333,
+      "exec_count": 12,
+      "fail_count": 4,
+      "pass_count": 8,
+      "failure_density": 0.3333333333333333,
+      "min_exec_count": 12,
+      "min_fail_count": 4,
+      "min_pass_count": 8,
+      "min_failure_density": 0.3333333333333333,
+      "rank": 2
+    },
+    {
+      "source_file": "D4jMonotonicOrder/D4jMonotonicOrder_M6.java",
+      "line": 26,
+      "condition": "increasing",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 3,
+      "raw_ranks": [
+        3
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 3,
+        "risk_score": 0.3333333333333333,
+        "line": 26,
+        "condition": "increasing",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.3333333333333333,
+      "exec_count": 12,
+      "fail_count": 4,
+      "pass_count": 8,
+      "failure_density": 0.3333333333333333,
+      "min_exec_count": 12,
+      "min_fail_count": 4,
+      "min_pass_count": 8,
+      "min_failure_density": 0.3333333333333333,
+      "rank": 3
+    },
+    {
+      "source_file": "D4jMonotonicOrder/D4jMonotonicOrder_M6.java",
+      "line": 20,
+      "condition": "c > 3",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 4,
+      "raw_ranks": [
+        4
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 4,
+        "risk_score": 0.3076923076923077,
+        "line": 20,
+        "condition": "c > 3",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.3076923076923077,
+      "exec_count": 13,
+      "fail_count": 4,
+      "pass_count": 9,
+      "failure_density": 0.3076923076923077,
+      "min_exec_count": 13,
+      "min_fail_count": 4,
+      "min_pass_count": 9,
+      "min_failure_density": 0.3076923076923077,
+      "rank": 4
+    },
+    {
+      "source_file": "D4jMonotonicOrder/D4jMonotonicOrder_M6.java",
+      "line": 20,
+      "condition": "c < -3",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 5,
+      "raw_ranks": [
+        5
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 5,
+        "risk_score": 0.2857142857142857,
+        "line": 20,
+        "condition": "c < -3",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.2857142857142857,
+      "exec_count": 14,
+      "fail_count": 4,
+      "pass_count": 10,
+      "failure_density": 0.2857142857142857,
+      "min_exec_count": 14,
+      "min_fail_count": 4,
+      "min_pass_count": 10,
+      "min_failure_density": 0.2857142857142857,
+      "rank": 5
+    },
+    {
+      "source_file": "D4jMonotonicOrder/D4jMonotonicOrder_M6.java",
+      "line": 20,
+      "condition": "b > 3",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 6,
+      "raw_ranks": [
+        6
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 6,
+        "risk_score": 0.26666666666666666,
+        "line": 20,
+        "condition": "b > 3",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.26666666666666666,
+      "exec_count": 15,
+      "fail_count": 4,
+      "pass_count": 11,
+      "failure_density": 0.26666666666666666,
+      "min_exec_count": 15,
+      "min_fail_count": 4,
+      "min_pass_count": 11,
+      "min_failure_density": 0.26666666666666666,
+      "rank": 6
+    },
+    {
+      "source_file": "D4jMonotonicOrder/D4jMonotonicOrder_M6.java",
+      "line": 20,
+      "condition": "b < -3",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 7,
+      "raw_ranks": [
+        7
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 7,
+        "risk_score": 0.25,
+        "line": 20,
+        "condition": "b < -3",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.25,
+      "exec_count": 16,
+      "fail_count": 4,
+      "pass_count": 12,
+      "failure_density": 0.25,
+      "min_exec_count": 16,
+      "min_fail_count": 4,
+      "min_pass_count": 12,
+      "min_failure_density": 0.25,
+      "rank": 7
+    },
+    {
+      "source_file": "D4jMonotonicOrder/D4jMonotonicOrder_M6.java",
+      "line": 20,
+      "condition": "a > 3",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 8,
+      "raw_ranks": [
+        8
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 8,
+        "risk_score": 0.23529411764705882,
+        "line": 20,
+        "condition": "a > 3",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.23529411764705882,
+      "exec_count": 17,
+      "fail_count": 4,
+      "pass_count": 13,
+      "failure_density": 0.23529411764705882,
+      "min_exec_count": 17,
+      "min_fail_count": 4,
+      "min_pass_count": 13,
+      "min_failure_density": 0.23529411764705882,
+      "rank": 8
+    },
+    {
+      "source_file": "D4jMonotonicOrder/D4jMonotonicOrder_M6.java",
+      "line": 20,
+      "condition": "a < -3",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 9,
+      "raw_ranks": [
+        9
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 9,
+        "risk_score": 0.2222222222222222,
+        "line": 20,
+        "condition": "a < -3",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.2222222222222222,
+      "exec_count": 18,
+      "fail_count": 4,
+      "pass_count": 14,
+      "failure_density": 0.2222222222222222,
+      "min_exec_count": 18,
+      "min_fail_count": 4,
+      "min_pass_count": 14,
+      "min_failure_density": 0.2222222222222222,
+      "rank": 9
+    },
+    {
+      "source_file": "D4jMonotonicOrder/D4jMonotonicOrder_M6.java",
+      "line": 27,
+      "condition": "strict",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 10,
+      "raw_ranks": [
+        10
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 10,
+        "risk_score": 0.16666666666666666,
+        "line": 27,
+        "condition": "strict",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.16666666666666666,
+      "exec_count": 6,
+      "fail_count": 2,
+      "pass_count": 4,
+      "failure_density": 0.3333333333333333,
+      "min_exec_count": 6,
+      "min_fail_count": 2,
+      "min_pass_count": 4,
+      "min_failure_density": 0.3333333333333333,
+      "rank": 10
+    },
+    {
+      "source_file": "D4jMonotonicOrder/D4jMonotonicOrder_M6.java",
+      "line": 30,
+      "condition": "strict",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 11,
+      "raw_ranks": [
+        11
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 11,
+        "risk_score": 0.16666666666666666,
+        "line": 30,
+        "condition": "strict",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.16666666666666666,
+      "exec_count": 6,
+      "fail_count": 2,
+      "pass_count": 4,
+      "failure_density": 0.3333333333333333,
+      "min_exec_count": 6,
+      "min_fail_count": 2,
+      "min_pass_count": 4,
+      "min_failure_density": 0.3333333333333333,
+      "rank": 11
+    },
+    {
+      "source_file": "D4jMonotonicOrder/D4jMonotonicOrder_M6.java",
+      "line": 27,
+      "condition": "value <= previous",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 12,
+      "raw_ranks": [
+        12
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 12,
+        "risk_score": 0.08333333333333333,
+        "line": 27,
+        "condition": "value <= previous",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.08333333333333333,
+      "exec_count": 3,
+      "fail_count": 1,
+      "pass_count": 2,
+      "failure_density": 0.3333333333333333,
+      "min_exec_count": 3,
+      "min_fail_count": 1,
+      "min_pass_count": 2,
+      "min_failure_density": 0.3333333333333333,
+      "rank": 12
+    },
+    {
+      "source_file": "D4jMonotonicOrder/D4jMonotonicOrder_M6.java",
+      "line": 28,
+      "condition": "value < previous",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 13,
+      "raw_ranks": [
+        13
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 13,
+        "risk_score": 0.08333333333333333,
+        "line": 28,
+        "condition": "value < previous",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.08333333333333333,
+      "exec_count": 3,
+      "fail_count": 1,
+      "pass_count": 2,
+      "failure_density": 0.3333333333333333,
+      "min_exec_count": 3,
+      "min_fail_count": 1,
+      "min_pass_count": 2,
+      "min_failure_density": 0.3333333333333333,
+      "rank": 13
+    },
+    {
+      "source_file": "D4jMonotonicOrder/D4jMonotonicOrder_M6.java",
+      "line": 30,
+      "condition": "value >= previous",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 14,
+      "raw_ranks": [
+        14
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 14,
+        "risk_score": 0.08333333333333333,
+        "line": 30,
+        "condition": "value >= previous",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.08333333333333333,
+      "exec_count": 3,
+      "fail_count": 1,
+      "pass_count": 2,
+      "failure_density": 0.3333333333333333,
+      "min_exec_count": 3,
+      "min_fail_count": 1,
+      "min_pass_count": 2,
+      "min_failure_density": 0.3333333333333333,
+      "rank": 14
+    },
+    {
+      "source_file": "D4jMonotonicOrder/D4jMonotonicOrder_M6.java",
+      "line": 31,
+      "condition": "value > previous",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 15,
+      "raw_ranks": [
+        15
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 15,
+        "risk_score": 0.08333333333333333,
+        "line": 31,
+        "condition": "value > previous",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.08333333333333333,
+      "exec_count": 3,
+      "fail_count": 1,
+      "pass_count": 2,
+      "failure_density": 0.3333333333333333,
+      "min_exec_count": 3,
+      "min_fail_count": 1,
+      "min_pass_count": 2,
+      "min_failure_density": 0.3333333333333333,
+      "rank": 15
+    }
+  ],
+  "aggregated_interval_rankings": {
+    "folded_seed_e": [
+      {
+        "source_file": "D4jMonotonicOrder/D4jMonotonicOrder_M6.java",
+        "from_line": 23,
+        "from_condition": "i < 3",
+        "outcome": "false",
+        "to_line": null,
+        "to_condition": null,
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          36
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            36
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 1,
+        "raw_ranks": [
+          1
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 1,
+          "risk_score": 1.0,
+          "from_line": 23,
+          "from_condition": "i < 3",
+          "outcome": "false",
+          "to_line": null,
+          "to_condition": null,
+          "statement_lines": [
+            36
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 4,
+        "fail_count": 4,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 4,
+        "min_fail_count": 4,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 1
+      },
+      {
+        "source_file": "D4jMonotonicOrder/D4jMonotonicOrder_M6.java",
+        "from_line": 25,
+        "from_condition": "i == 2",
+        "outcome": "true",
+        "to_line": 26,
+        "to_condition": "increasing",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          25
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            25
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 2,
+        "raw_ranks": [
+          2
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 2,
+          "risk_score": 0.5,
+          "from_line": 25,
+          "from_condition": "i == 2",
+          "outcome": "true",
+          "to_line": 26,
+          "to_condition": "increasing",
+          "statement_lines": [
+            25
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.5,
+        "base_risk_score": 0.5,
+        "exec_count": 8,
+        "fail_count": 4,
+        "pass_count": 4,
+        "failure_density": 0.5,
+        "min_exec_count": 8,
+        "min_fail_count": 4,
+        "min_pass_count": 4,
+        "min_failure_density": 0.5,
+        "rank": 2
+      },
+      {
+        "source_file": "D4jMonotonicOrder/D4jMonotonicOrder_M6.java",
+        "from_line": 31,
+        "from_condition": "value > previous",
+        "outcome": "false",
+        "to_line": 23,
+        "to_condition": "i < 3",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          33,
+          34
+        ],
+        "statement_line_count": 2,
+        "region_size": 2,
+        "statement_line_variants": [
+          [
+            33,
+            34
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 3,
+        "raw_ranks": [
+          3
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 3,
+          "risk_score": 0.5,
+          "from_line": 31,
+          "from_condition": "value > previous",
+          "outcome": "false",
+          "to_line": 23,
+          "to_condition": "i < 3",
+          "statement_lines": [
+            33,
+            34
+          ],
+          "region_size": 2,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.5,
+        "base_risk_score": 0.5,
+        "exec_count": 8,
+        "fail_count": 4,
+        "pass_count": 4,
+        "failure_density": 0.5,
+        "min_exec_count": 8,
+        "min_fail_count": 4,
+        "min_pass_count": 4,
+        "min_failure_density": 0.5,
+        "rank": 3
+      },
+      {
+        "source_file": "D4jMonotonicOrder/D4jMonotonicOrder_M6.java",
+        "from_line": 23,
+        "from_condition": "i < 3",
+        "outcome": "true",
+        "to_line": 25,
+        "to_condition": "i == 2",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          24
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            24
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 4,
+        "raw_ranks": [
+          4
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 4,
+          "risk_score": 0.3333333333333333,
+          "from_line": 23,
+          "from_condition": "i < 3",
+          "outcome": "true",
+          "to_line": 25,
+          "to_condition": "i == 2",
+          "statement_lines": [
+            24
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.3333333333333333,
+        "base_risk_score": 0.3333333333333333,
+        "exec_count": 12,
+        "fail_count": 4,
+        "pass_count": 8,
+        "failure_density": 0.3333333333333333,
+        "min_exec_count": 12,
+        "min_fail_count": 4,
+        "min_pass_count": 8,
+        "min_failure_density": 0.3333333333333333,
+        "rank": 4
+      },
+      {
+        "source_file": "D4jMonotonicOrder/D4jMonotonicOrder_M6.java",
+        "from_line": 20,
+        "from_condition": "c > 3",
+        "outcome": "false",
+        "to_line": 23,
+        "to_condition": "i < 3",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          21,
+          22
+        ],
+        "statement_line_count": 2,
+        "region_size": 2,
+        "statement_line_variants": [
+          [
+            21,
+            22
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 5,
+        "raw_ranks": [
+          5
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 5,
+          "risk_score": 0.3333333333333333,
+          "from_line": 20,
+          "from_condition": "c > 3",
+          "outcome": "false",
+          "to_line": 23,
+          "to_condition": "i < 3",
+          "statement_lines": [
+            21,
+            22
+          ],
+          "region_size": 2,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.3333333333333333,
+        "base_risk_score": 0.3333333333333333,
+        "exec_count": 12,
+        "fail_count": 4,
+        "pass_count": 8,
+        "failure_density": 0.3333333333333333,
+        "min_exec_count": 12,
+        "min_fail_count": 4,
+        "min_pass_count": 8,
+        "min_failure_density": 0.3333333333333333,
+        "rank": 5
+      }
+    ],
+    "folded_seed_s": [],
+    "folded_edge_partition": [
+      {
+        "source_file": "D4jMonotonicOrder/D4jMonotonicOrder_M6.java",
+        "from_line": 23,
+        "from_condition": "i < 3",
+        "outcome": "false",
+        "to_line": null,
+        "to_condition": null,
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          36
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            36
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 1,
+        "raw_ranks": [
+          1
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 1,
+          "risk_score": 1.0,
+          "from_line": 23,
+          "from_condition": "i < 3",
+          "outcome": "false",
+          "to_line": null,
+          "to_condition": null,
+          "statement_lines": [
+            36
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 4,
+        "fail_count": 4,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 4,
+        "min_fail_count": 4,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 1
+      },
+      {
+        "source_file": "D4jMonotonicOrder/D4jMonotonicOrder_M6.java",
+        "from_line": 25,
+        "from_condition": "i == 2",
+        "outcome": "true",
+        "to_line": 26,
+        "to_condition": "increasing",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          25
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            25
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 2,
+        "raw_ranks": [
+          2
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 2,
+          "risk_score": 0.5,
+          "from_line": 25,
+          "from_condition": "i == 2",
+          "outcome": "true",
+          "to_line": 26,
+          "to_condition": "increasing",
+          "statement_lines": [
+            25
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.5,
+        "base_risk_score": 0.5,
+        "exec_count": 8,
+        "fail_count": 4,
+        "pass_count": 4,
+        "failure_density": 0.5,
+        "min_exec_count": 8,
+        "min_fail_count": 4,
+        "min_pass_count": 4,
+        "min_failure_density": 0.5,
+        "rank": 2
+      },
+      {
+        "source_file": "D4jMonotonicOrder/D4jMonotonicOrder_M6.java",
+        "from_line": 31,
+        "from_condition": "value > previous",
+        "outcome": "false",
+        "to_line": 23,
+        "to_condition": "i < 3",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          33,
+          34
+        ],
+        "statement_line_count": 2,
+        "region_size": 2,
+        "statement_line_variants": [
+          [
+            33,
+            34
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 3,
+        "raw_ranks": [
+          3
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 3,
+          "risk_score": 0.5,
+          "from_line": 31,
+          "from_condition": "value > previous",
+          "outcome": "false",
+          "to_line": 23,
+          "to_condition": "i < 3",
+          "statement_lines": [
+            33,
+            34
+          ],
+          "region_size": 2,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.5,
+        "base_risk_score": 0.5,
+        "exec_count": 8,
+        "fail_count": 4,
+        "pass_count": 4,
+        "failure_density": 0.5,
+        "min_exec_count": 8,
+        "min_fail_count": 4,
+        "min_pass_count": 4,
+        "min_failure_density": 0.5,
+        "rank": 3
+      },
+      {
+        "source_file": "D4jMonotonicOrder/D4jMonotonicOrder_M6.java",
+        "from_line": 23,
+        "from_condition": "i < 3",
+        "outcome": "true",
+        "to_line": 25,
+        "to_condition": "i == 2",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          24
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            24
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 4,
+        "raw_ranks": [
+          4
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 4,
+          "risk_score": 0.3333333333333333,
+          "from_line": 23,
+          "from_condition": "i < 3",
+          "outcome": "true",
+          "to_line": 25,
+          "to_condition": "i == 2",
+          "statement_lines": [
+            24
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.3333333333333333,
+        "base_risk_score": 0.3333333333333333,
+        "exec_count": 12,
+        "fail_count": 4,
+        "pass_count": 8,
+        "failure_density": 0.3333333333333333,
+        "min_exec_count": 12,
+        "min_fail_count": 4,
+        "min_pass_count": 8,
+        "min_failure_density": 0.3333333333333333,
+        "rank": 4
+      },
+      {
+        "source_file": "D4jMonotonicOrder/D4jMonotonicOrder_M6.java",
+        "from_line": 20,
+        "from_condition": "c > 3",
+        "outcome": "false",
+        "to_line": 23,
+        "to_condition": "i < 3",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          21,
+          22
+        ],
+        "statement_line_count": 2,
+        "region_size": 2,
+        "statement_line_variants": [
+          [
+            21,
+            22
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 5,
+        "raw_ranks": [
+          5
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 5,
+          "risk_score": 0.3333333333333333,
+          "from_line": 20,
+          "from_condition": "c > 3",
+          "outcome": "false",
+          "to_line": 23,
+          "to_condition": "i < 3",
+          "statement_lines": [
+            21,
+            22
+          ],
+          "region_size": 2,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.3333333333333333,
+        "base_risk_score": 0.3333333333333333,
+        "exec_count": 12,
+        "fail_count": 4,
+        "pass_count": 8,
+        "failure_density": 0.3333333333333333,
+        "min_exec_count": 12,
+        "min_fail_count": 4,
+        "min_pass_count": 8,
+        "min_failure_density": 0.3333333333333333,
+        "rank": 5
+      }
+    ]
+  }
+}

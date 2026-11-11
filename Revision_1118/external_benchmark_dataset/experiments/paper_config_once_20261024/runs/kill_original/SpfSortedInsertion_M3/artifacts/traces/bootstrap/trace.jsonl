@@ -1,0 +1,16 @@
+{"type":"COND","line":21,"kind":"if","order":1,"expr":"a < 0","value":false}
+{"type":"COND","line":21,"kind":"if","order":2,"expr":"a > 9","value":false}
+{"type":"COND","line":21,"kind":"if","order":3,"expr":"b < a","value":false}
+{"type":"COND","line":21,"kind":"if","order":4,"expr":"b > 9","value":false}
+{"type":"COND","line":21,"kind":"if","order":5,"expr":"c < b","value":false}
+{"type":"COND","line":21,"kind":"if","order":6,"expr":"c > 9","value":false}
+{"type":"COND","line":21,"kind":"if","order":7,"expr":"value < 0","value":false}
+{"type":"COND","line":21,"kind":"if","order":8,"expr":"value > 9","value":false}
+{"type":"ASSIGN","line":22,"kind":"var_decl","target":"first","rhs":"a","value":"0"}
+{"type":"COND","line":23,"kind":"if","order":1,"expr":"value < first","value":false}
+{"type":"ASSIGN","line":24,"kind":"var_decl","target":"cursor","rhs":"1","value":"1"}
+{"type":"ASSIGN","line":25,"kind":"var_decl","target":"following","rhs":"b","value":"0"}
+{"type":"COND","line":26,"kind":"while","order":1,"expr":"cursor < 3","value":true}
+{"type":"COND","line":26,"kind":"while","order":2,"expr":"following < value","value":false}
+{"type":"COND","line":30,"kind":"if","order":1,"expr":"cursor == 1","value":true}
+{"type":"RETURN","line":30,"target":"return_value","rhs":"a * 1000 + value * 100 + b * 10 + c","value":"0"}

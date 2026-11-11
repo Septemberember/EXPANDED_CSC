@@ -1,0 +1,333 @@
+{
+  "mutant_id": "SpfAbortDecision_M1",
+  "subject": "SpfAbortDecision",
+  "operator": "BOR",
+  "fault_category": "condition",
+  "loop_bearing": false,
+  "modes": {
+    "original": {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfAbortDecision/SpfAbortDecision_M1.java",
+        "--mode",
+        "original",
+        "--range-bound",
+        "200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--max-iter",
+        "100",
+        "--session",
+        "extpaper_kill_original_SpfAbortDecision_M1_1792784206805944000",
+        "--keep-artifacts"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "wall_time_s": 2.5245609169942327,
+      "started_at": "2026-10-23T19:36:46.806027+00:00",
+      "finished_at": "2026-10-23T19:36:49.330606+00:00",
+      "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfAbortDecision_M1/generation.stdout",
+      "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfAbortDecision_M1/generation.stderr",
+      "stderr_tail": "",
+      "subject": "SpfAbortDecision",
+      "class_name": "SpfAbortDecision_M1",
+      "session": "extpaper_kill_original_SpfAbortDecision_M1_1792784206805944000",
+      "result_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_original_SpfAbortDecision_M1_1792784206805944000/SpfAbortDecision_M1",
+      "folder": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfAbortDecision_M1",
+      "mode": "original",
+      "strategy": "batch",
+      "workers": 4,
+      "max_iter": 100,
+      "range_bound": 200,
+      "tag": "kill_original",
+      "cct": {
+        "total_nodes": 31,
+        "internal_nodes": 15,
+        "leaf_nodes": 16,
+        "empty_leaves": 0,
+        "covered_leaves": 8,
+        "valid_testcases": 8,
+        "infeasible_leaves": 8,
+        "out_of_range_leaves": 0,
+        "truncated_leaves": 0,
+        "expanded_nodes": 0,
+        "expanded_internal_nodes": 0,
+        "expanded_leaves": 0,
+        "tbfv_fault_leaves": 0,
+        "tbfv_failure_cases": 0,
+        "tbfv_failure_count": 0,
+        "max_depth": 7
+      },
+      "testcase_stats": {
+        "generated_records": 8,
+        "executable_records": 8,
+        "trace_backed_records": 8,
+        "status_counts": {
+          "bootstrap": 1,
+          "batch_safe": 7
+        }
+      },
+      "full_event": true,
+      "error_events": [],
+      "fresh": true,
+      "status": "completed",
+      "fingerprint": {
+        "stage": "generation_fingerprint",
+        "schema_version": 1,
+        "condition_identity": "line+normalized-text+occurrence",
+        "testcase_ids_ignored": true,
+        "cct_structure_sha256": "e2a2c546332f9fd3240f31e69569c69edd4f4f8926846368a45c4749ec5e80ba",
+        "cct_semantic_sha256": "bab77e1df917ce21ef1197209180637a14a1b6448c3274f6e92187a543d72783",
+        "test_inputs_sha256": "d3913f66f38d5ff6df6197266cd1562b6b59b1a856213af0d284e585c23d3aa8",
+        "concrete_input_count": 8
+      },
+      "frontier_mean": 1.75,
+      "frontier_max": 5,
+      "verification": {
+        "command": [
+          "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+          "--csc-result-dir",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_original_SpfAbortDecision_M1_1792784206805944000/SpfAbortDecision_M1",
+          "--java-file",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfAbortDecision/SpfAbortDecision_M1.java",
+          "--fsf",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfAbortDecision/FSF/SpfAbortDecision_FSF.txt",
+          "--output",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfAbortDecision_M1/verification.json"
+        ],
+        "returncode": 0,
+        "timed_out": false,
+        "wall_time_s": 0.18580554198706523,
+        "started_at": "2026-10-23T19:36:49.336296+00:00",
+        "finished_at": "2026-10-23T19:36:49.522108+00:00",
+        "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfAbortDecision_M1/verification.stdout",
+        "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SpfAbortDecision_M1/verification.stderr",
+        "stderr_tail": "",
+        "summary": {
+          "testcases": 8,
+          "fsf_units": 6,
+          "passed": 8,
+          "failed": 2,
+          "skipped": 38,
+          "unsupported": 0
+        },
+        "status": "completed",
+        "killed": true
+      }
+    },
+    "expanded": {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfAbortDecision/SpfAbortDecision_M1.java",
+        "--mode",
+        "expanded",
+        "--range-bound",
+        "200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--max-iter",
+        "100",
+        "--session",
+        "extpaper_kill_expanded_SpfAbortDecision_M1_1792784209529577000",
+        "--keep-artifacts"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "wall_time_s": 2.4092265420476906,
+      "started_at": "2026-10-23T19:36:49.529666+00:00",
+      "finished_at": "2026-10-23T19:36:51.938909+00:00",
+      "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfAbortDecision_M1/generation.stdout",
+      "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfAbortDecision_M1/generation.stderr",
+      "stderr_tail": "",
+      "subject": "SpfAbortDecision",
+      "class_name": "SpfAbortDecision_M1",
+      "session": "extpaper_kill_expanded_SpfAbortDecision_M1_1792784209529577000",
+      "result_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_expanded_SpfAbortDecision_M1_1792784209529577000/SpfAbortDecision_M1",
+      "folder": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfAbortDecision_M1",
+      "mode": "expanded",
+      "strategy": "batch",
+      "workers": 4,
+      "max_iter": 100,
+      "range_bound": 200,
+      "tag": "kill_expanded",
+      "cct": {
+        "total_nodes": 31,
+        "internal_nodes": 15,
+        "leaf_nodes": 16,
+        "empty_leaves": 0,
+        "covered_leaves": 8,
+        "valid_testcases": 8,
+        "infeasible_leaves": 8,
+        "out_of_range_leaves": 0,
+        "truncated_leaves": 0,
+        "expanded_nodes": 0,
+        "expanded_internal_nodes": 0,
+        "expanded_leaves": 0,
+        "tbfv_fault_leaves": 0,
+        "tbfv_failure_cases": 0,
+        "tbfv_failure_count": 0,
+        "max_depth": 7
+      },
+      "testcase_stats": {
+        "generated_records": 8,
+        "executable_records": 8,
+        "trace_backed_records": 8,
+        "status_counts": {
+          "bootstrap": 1,
+          "batch_safe": 7
+        }
+      },
+      "full_event": true,
+      "error_events": [],
+      "fresh": true,
+      "status": "completed",
+      "fingerprint": {
+        "stage": "generation_fingerprint",
+        "schema_version": 1,
+        "condition_identity": "line+normalized-text+occurrence",
+        "testcase_ids_ignored": true,
+        "cct_structure_sha256": "e2a2c546332f9fd3240f31e69569c69edd4f4f8926846368a45c4749ec5e80ba",
+        "cct_semantic_sha256": "bab77e1df917ce21ef1197209180637a14a1b6448c3274f6e92187a543d72783",
+        "test_inputs_sha256": "d3913f66f38d5ff6df6197266cd1562b6b59b1a856213af0d284e585c23d3aa8",
+        "concrete_input_count": 8
+      },
+      "frontier_mean": 1.75,
+      "frontier_max": 5,
+      "verification": {
+        "command": [
+          "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+          "--csc-result-dir",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_expanded_SpfAbortDecision_M1_1792784209529577000/SpfAbortDecision_M1",
+          "--java-file",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfAbortDecision/SpfAbortDecision_M1.java",
+          "--fsf",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfAbortDecision/FSF/SpfAbortDecision_FSF.txt",
+          "--output",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfAbortDecision_M1/verification.json"
+        ],
+        "returncode": 0,
+        "timed_out": false,
+        "wall_time_s": 0.1860018330044113,
+        "started_at": "2026-10-23T19:36:51.944439+00:00",
+        "finished_at": "2026-10-23T19:36:52.130447+00:00",
+        "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfAbortDecision_M1/verification.stdout",
+        "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SpfAbortDecision_M1/verification.stderr",
+        "stderr_tail": "",
+        "summary": {
+          "testcases": 8,
+          "fsf_units": 6,
+          "passed": 8,
+          "failed": 2,
+          "skipped": 38,
+          "unsupported": 0
+        },
+        "status": "completed",
+        "killed": true
+      }
+    }
+  },
+  "localization": {
+    "mutant_id": "SpfAbortDecision_M1",
+    "subject": "SpfAbortDecision",
+    "operator": "BOR",
+    "fault_kind": "control-flow",
+    "fault_category": "condition",
+    "primary_line": 21,
+    "scoring_strategy": "coverage_x_purity",
+    "status": "evaluated",
+    "F_total": 1,
+    "P_total": 7,
+    "top1_budget": 1,
+    "top1_folded_hit": true,
+    "top1_sfl_hit": true,
+    "top2_budget": 1,
+    "top2_folded_hit": true,
+    "top2_sfl_hit": true,
+    "top3_budget": 1,
+    "top3_folded_hit": true,
+    "top3_sfl_hit": true,
+    "top1_condition_hit": true,
+    "top1_edge_partition_hit": true,
+    "top1_folded_region_lines": [
+      21
+    ],
+    "top1_ochiai_hit": true,
+    "top1_ochiai_region_lines": [
+      21
+    ],
+    "top1_tarantula_hit": true,
+    "top1_tarantula_region_lines": [
+      21
+    ],
+    "top1_dstar_hit": true,
+    "top1_dstar_region_lines": [
+      21
+    ],
+    "top1_barinel_hit": true,
+    "top1_barinel_region_lines": [
+      21
+    ],
+    "top1_op2_hit": true,
+    "top1_op2_region_lines": [
+      21
+    ],
+    "top2_condition_hit": true,
+    "top2_edge_partition_hit": true,
+    "top2_folded_region_lines": [
+      21
+    ],
+    "top2_ochiai_hit": true,
+    "top2_ochiai_region_lines": [
+      21
+    ],
+    "top2_tarantula_hit": true,
+    "top2_tarantula_region_lines": [
+      21
+    ],
+    "top2_dstar_hit": true,
+    "top2_dstar_region_lines": [
+      21
+    ],
+    "top2_barinel_hit": true,
+    "top2_barinel_region_lines": [
+      21
+    ],
+    "top2_op2_hit": true,
+    "top2_op2_region_lines": [
+      21
+    ],
+    "top3_condition_hit": true,
+    "top3_edge_partition_hit": true,
+    "top3_folded_region_lines": [
+      21
+    ],
+    "top3_ochiai_hit": true,
+    "top3_ochiai_region_lines": [
+      21
+    ],
+    "top3_tarantula_hit": true,
+    "top3_tarantula_region_lines": [
+      21
+    ],
+    "top3_dstar_hit": true,
+    "top3_dstar_region_lines": [
+      21
+    ],
+    "top3_barinel_hit": true,
+    "top3_barinel_region_lines": [
+      21
+    ],
+    "top3_op2_hit": true,
+    "top3_op2_region_lines": [
+      21
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{"type":"COND","line":21,"kind":"if","order":1,"expr":"goal < 0","value":false}
+{"type":"COND","line":21,"kind":"if","order":2,"expr":"goal > 40","value":false}
+{"type":"COND","line":21,"kind":"if","order":3,"expr":"position < 0","value":false}
+{"type":"COND","line":21,"kind":"if","order":4,"expr":"position > 40","value":false}
+{"type":"COND","line":22,"kind":"if","order":1,"expr":"emergency","value":true}
+{"type":"ASSIGN","line":22,"kind":"assign","target":"goal","rhs":"30","value":"30"}
+{"type":"ASSIGN","line":23,"kind":"var_decl","target":"time","rhs":"0","value":"0"}
+{"type":"COND","line":24,"kind":"while","order":1,"expr":"position != goal","value":false}
+{"type":"RETURN","line":33,"target":"return_value","rhs":"(position) + 1","value":"31"}

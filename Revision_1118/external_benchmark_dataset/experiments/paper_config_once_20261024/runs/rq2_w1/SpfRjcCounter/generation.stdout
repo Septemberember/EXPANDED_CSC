@@ -1,0 +1,442 @@
+=======================================================
+  CSC Engine — Test Case Generator
+=======================================================
+  Source:       /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfRjcCounter/SpfRjcCounter.java
+  Mode:         Expanded CSC
+  Range bound:  +/- 200
+  Max iter:     100
+  Strategy:     batch
+  Workers:      1
+  Session:      extpaper_rq2_w1_SpfRjcCounter_1792783166386028000
+  CCT render:   no
+
+[1/3] Auto-instrumenting Java source...
+  [instrument] /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfRjcCounter/SpfRjcCounter.java -> /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfRjcCounter/SpfRjcCounter_instrumented.java
+  Class:        SpfRjcCounter
+  Params:       {'return_value': 'int', 'steps': 'int'}
+  Run log:      csc_tmp/extpaper_rq2_w1_SpfRjcCounter_1792783166386028000/SpfRjcCounter/run_log.jsonl
+
+[2/3] Compiling...
+  [compile] SpfRjcCounter.class
+[3/3] CSC Loop
+---------------------------------------------
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+{Ø}
+-----------------------------
+
+
+  [Batch Round 1] CCT not initialized — running bootstrap
+  Bootstrap inputs: {'steps': 0}
+  Execution path: 8 steps, 3 conditions
+CCT DOT saved to: csc_tmp/extpaper_rq2_w1_SpfRjcCounter_1792783166386028000/SpfRjcCounter/SpfRjcCounter_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: steps < 0 @L21 (WP: steps < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: steps > 8 @L21 (WP: steps > 8, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: i < steps @L26 (WP: (0) < steps, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(steps=0)
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Batch Round 2] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: steps < 0 @L21 (WP: steps < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: steps > 8 @L21 (WP: steps > 8, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: i < steps @L26 (WP: (0) < steps, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(steps=0)
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_rq2_w1_SpfRjcCounter_1792783166386028000/SpfRjcCounter/SpfRjcCounter_cct.dot
+  -> Executing 3 candidates with 1 workers; merging 0 terminal updates
+Path Truncation: loop count 3 exceeds bound 2.
+CCT DOT saved to: csc_tmp/extpaper_rq2_w1_SpfRjcCounter_1792783166386028000/SpfRjcCounter/SpfRjcCounter_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: steps < 0 @L21 (WP: steps < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: steps > 8 @L21 (WP: steps > 8, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: i < steps @L26 (WP: (0) < steps, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(steps=0)
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (0) == 1, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: i < steps @L26 (WP: ((0) + 1) < steps, Cnt: 2)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (1) == 1, Cnt: 2)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: active == 1 @L28 (WP: (1) == 1, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'} [TRUNCATED]  inputs: tc_2_b0(steps=8)
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(steps=12)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(steps=-32768)
+-----------------------------
+
+
+  [Batch Round 3] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: steps < 0 @L21 (WP: steps < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: steps > 8 @L21 (WP: steps > 8, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: i < steps @L26 (WP: (0) < steps, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(steps=0)
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (0) == 1, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: i < steps @L26 (WP: ((0) + 1) < steps, Cnt: 2)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (1) == 1, Cnt: 2)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: active == 1 @L28 (WP: (1) == 1, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'} [TRUNCATED]  inputs: tc_2_b0(steps=8)
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(steps=12)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(steps=-32768)
+-----------------------------
+
+  [EXPAND] Promoted truncated leaf at 'i < steps' (cnt=3) → T:['tc_2_b0']
+  [EXPAND] Promoted truncated leaf at 'initialized == 1' (cnt=3) → T:['tc_2_b0']
+  [EXPAND] Promoted truncated leaf at 'active == 1' (cnt=2) → T:['tc_2_b0']
+  [EXPAND] Promoted truncated leaf at 'i < steps' (cnt=4) → T:['tc_2_b0']
+  [EXPAND] Promoted truncated leaf at 'initialized == 1' (cnt=4) → T:['tc_2_b0']
+  [EXPAND] Promoted truncated leaf at 'active == 1' (cnt=3) → T:['tc_2_b0']
+  [EXPAND] Promoted truncated leaf at 'i < steps' (cnt=5) → T:['tc_2_b0']
+  [EXPAND] Promoted truncated leaf at 'initialized == 1' (cnt=5) → T:['tc_2_b0']
+  [EXPAND] Promoted truncated leaf at 'active == 1' (cnt=4) → T:['tc_2_b0']
+  [EXPAND] Promoted truncated leaf at 'i < steps' (cnt=6) → T:['tc_2_b0']
+  [EXPAND] Promoted truncated leaf at 'initialized == 1' (cnt=6) → T:['tc_2_b0']
+  [EXPAND] Promoted truncated leaf at 'active == 1' (cnt=5) → T:['tc_2_b0']
+  [EXPAND] Promoted truncated leaf at 'i < steps' (cnt=7) → T:['tc_2_b0']
+  [EXPAND] Promoted truncated leaf at 'initialized == 1' (cnt=7) → T:['tc_2_b0']
+  [EXPAND] Promoted truncated leaf at 'active == 1' (cnt=6) → T:['tc_2_b0']
+  [EXPAND] Promoted truncated leaf at 'i < steps' (cnt=8) → T:['tc_2_b0']
+  [EXPAND] Promoted truncated leaf at 'initialized == 1' (cnt=8) → T:['tc_2_b0']
+  [EXPAND] Promoted truncated leaf at 'active == 1' (cnt=7) → T:['tc_2_b0']
+  [EXPAND] Promoted truncated leaf at 'i < steps' (cnt=9) → F:['tc_2_b0']
+CCT DOT saved to: csc_tmp/extpaper_rq2_w1_SpfRjcCounter_1792783166386028000/SpfRjcCounter/SpfRjcCounter_cct.dot
+  -> Executing 7 candidates with 1 workers; merging 9 terminal updates
+Path Truncation: loop count 3 exceeds bound 2.
+Path Truncation: loop count 3 exceeds bound 2.
+Path Truncation: loop count 3 exceeds bound 2.
+Path Truncation: loop count 3 exceeds bound 2.
+Path Truncation: loop count 3 exceeds bound 2.
+Path Truncation: loop count 3 exceeds bound 2.
+CCT DOT saved to: csc_tmp/extpaper_rq2_w1_SpfRjcCounter_1792783166386028000/SpfRjcCounter/SpfRjcCounter_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: steps < 0 @L21 (WP: steps < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: steps > 8 @L21 (WP: steps > 8, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: i < steps @L26 (WP: (0) < steps, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(steps=0)
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (0) == 1, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: i < steps @L26 (WP: ((0) + 1) < steps, Cnt: 2)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(steps=1)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (1) == 1, Cnt: 2)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: active == 1 @L28 (WP: (1) == 1, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: i < steps @L26 (WP: (((0) + 1) + 1) < steps, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b1'} [EXPANDED]  inputs: tc_3_b1(steps=2)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (1) == 1, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: active == 1 @L28 (WP: (1) == 1, Cnt: 2) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < steps @L26 (WP: ((((0) + 1) + 1) + 1) < steps, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b2'} [EXPANDED]  inputs: tc_3_b2(steps=3)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (1) == 1, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: active == 1 @L28 (WP: (1) == 1, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < steps @L26 (WP: (((((0) + 1) + 1) + 1) + 1) < steps, Cnt: 5) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b3'} [EXPANDED]  inputs: tc_3_b3(steps=4)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (1) == 1, Cnt: 5) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: active == 1 @L28 (WP: (1) == 1, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < steps @L26 (WP: ((((((0) + 1) + 1) + 1) + 1) + 1) < steps, Cnt: 6) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b4'} [EXPANDED]  inputs: tc_3_b4(steps=5)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (1) == 1, Cnt: 6) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: active == 1 @L28 (WP: (1) == 1, Cnt: 5) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < steps @L26 (WP: (((((((0) + 1) + 1) + 1) + 1) + 1) + 1) < steps, Cnt: 7) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b5'} [EXPANDED]  inputs: tc_3_b5(steps=6)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (1) == 1, Cnt: 7) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: active == 1 @L28 (WP: (1) == 1, Cnt: 6) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < steps @L26 (WP: ((((((((0) + 1) + 1) + 1) + 1) + 1) + 1) + 1) < steps, Cnt: 8) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b6'} [EXPANDED]  inputs: tc_3_b6(steps=7)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (1) == 1, Cnt: 8) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: active == 1 @L28 (WP: (1) == 1, Cnt: 7) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < steps @L26 (WP: (((((((((0) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) < steps, Cnt: 9) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'} [EXPANDED]  inputs: tc_2_b0(steps=8)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Infeasible (X)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(steps=12)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(steps=-32768)
+-----------------------------
+
+
+  [Batch Round 4] Discovering frontier branches
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=200]
+[NODE] Condition: steps < 0 @L21 (WP: steps < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: steps > 8 @L21 (WP: steps > 8, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: i < steps @L26 (WP: (0) < steps, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(steps=0)
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (0) == 1, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: i < steps @L26 (WP: ((0) + 1) < steps, Cnt: 2)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_3_b0'}  inputs: tc_3_b0(steps=1)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (1) == 1, Cnt: 2)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: active == 1 @L28 (WP: (1) == 1, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [NODE] Condition: i < steps @L26 (WP: (((0) + 1) + 1) < steps, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b1'} [EXPANDED]  inputs: tc_3_b1(steps=2)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (1) == 1, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: active == 1 @L28 (WP: (1) == 1, Cnt: 2) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < steps @L26 (WP: ((((0) + 1) + 1) + 1) < steps, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b2'} [EXPANDED]  inputs: tc_3_b2(steps=3)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (1) == 1, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: active == 1 @L28 (WP: (1) == 1, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < steps @L26 (WP: (((((0) + 1) + 1) + 1) + 1) < steps, Cnt: 5) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b3'} [EXPANDED]  inputs: tc_3_b3(steps=4)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (1) == 1, Cnt: 5) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: active == 1 @L28 (WP: (1) == 1, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < steps @L26 (WP: ((((((0) + 1) + 1) + 1) + 1) + 1) < steps, Cnt: 6) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b4'} [EXPANDED]  inputs: tc_3_b4(steps=5)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (1) == 1, Cnt: 6) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: active == 1 @L28 (WP: (1) == 1, Cnt: 5) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < steps @L26 (WP: (((((((0) + 1) + 1) + 1) + 1) + 1) + 1) < steps, Cnt: 7) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b5'} [EXPANDED]  inputs: tc_3_b5(steps=6)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (1) == 1, Cnt: 7) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: active == 1 @L28 (WP: (1) == 1, Cnt: 6) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < steps @L26 (WP: ((((((((0) + 1) + 1) + 1) + 1) + 1) + 1) + 1) < steps, Cnt: 8) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_3_b6'} [EXPANDED]  inputs: tc_3_b6(steps=7)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: initialized == 1 @L27 (WP: (1) == 1, Cnt: 8) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: active == 1 @L28 (WP: (1) == 1, Cnt: 7) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < steps @L26 (WP: (((((((((0) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) < steps, Cnt: 9) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2_b0'} [EXPANDED]  inputs: tc_2_b0(steps=8)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Infeasible (X)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_2_b1'}  inputs: tc_2_b1(steps=12)
+  (T) ->
+  |   [LEAF] Cases: {'tc_2_b2'}  inputs: tc_2_b2(steps=-32768)
+-----------------------------
+
+CCT DOT saved to: csc_tmp/extpaper_rq2_w1_SpfRjcCounter_1792783166386028000/SpfRjcCounter/SpfRjcCounter_cct.dot
+  -> CCT is FULL — all branches covered!
+
+=======================================================
+  Done! 11 test cases generated in 4 iterations.
+=======================================================
+CCT DOT saved to: csc_tmp/extpaper_rq2_w1_SpfRjcCounter_1792783166386028000/SpfRjcCounter/SpfRjcCounter_cct.dot
+
+Generated Test Cases:
+---------------------------------------------
+  [BOOTSTRAP]  (bootstrap)
+  round_02/b0  [BATCH_SAFE]  steps=8
+  round_02/b1  [BATCH_SAFE]  steps=12
+  round_02/b2  [BATCH_SAFE]  steps=-32768
+  round_03/b0  [BATCH_SAFE]  steps=1
+  round_03/b1  [BATCH_SAFE]  steps=2
+  round_03/b2  [BATCH_SAFE]  steps=3
+  round_03/b3  [BATCH_SAFE]  steps=4
+  round_03/b4  [BATCH_SAFE]  steps=5
+  round_03/b5  [BATCH_SAFE]  steps=6
+  round_03/b6  [BATCH_SAFE]  steps=7
+
+Timing Summary (ms):
+---------------------------------------------
+  solver_time_ms: 11
+  frontier_discovery_time_ms: 91
+  compile_time_ms: 2711
+  java_exec_time_ms: 626
+  path_log_parse_time_ms: 0
+  cct_path_build_time_ms: 0
+  cct_merge_time_ms: 0
+  verification_solver_time_ms: 0
+  parallel_exec_wall_time_ms: 3037
+  merge_verify_wall_time_ms: 0
+  batch_total_wall_time_ms: 3038
+
+Test cases written to: csc_tmp/extpaper_rq2_w1_SpfRjcCounter_1792783166386028000/SpfRjcCounter/testcases.json
+
+CCT visualization:
+  DOT: csc_tmp/extpaper_rq2_w1_SpfRjcCounter_1792783166386028000/SpfRjcCounter/SpfRjcCounter_cct.dot
+  Stats: csc_tmp/extpaper_rq2_w1_SpfRjcCounter_1792783166386028000/SpfRjcCounter/cct_stats.json
+  Counts: nodes=53, leaves=27, covered=11, infeasible=16, out_of_range=0, expanded=26, truncated=0
+  Render script: csc_tmp/extpaper_rq2_w1_SpfRjcCounter_1792783166386028000/SpfRjcCounter/render_cct.sh
+  (render later with: csc_tmp/extpaper_rq2_w1_SpfRjcCounter_1792783166386028000/SpfRjcCounter/render_cct.sh)
+
+Run log:
+  JSONL: csc_tmp/extpaper_rq2_w1_SpfRjcCounter_1792783166386028000/SpfRjcCounter/run_log.jsonl

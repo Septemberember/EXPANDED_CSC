@@ -1,0 +1,956 @@
+{
+  "summary": {
+    "strategy": "condition_and_interval_v1",
+    "default_interval_strategy": "statement_presence",
+    "available_interval_strategies": [
+      "cct_only",
+      "statement_presence",
+      "edge_divergence_sibling_exclusive",
+      "edge_divergence_sibling_shared"
+    ],
+    "statement_aware_intervals": true,
+    "zero_statement_intervals": 1,
+    "executed_cases": 15,
+    "failed_cases": 2,
+    "condition_node_candidates": 2,
+    "condition_interval_candidates": 3,
+    "ignored": {
+      "infeasible_leaves": 27,
+      "out_of_range_leaves": 0,
+      "empty_leaves": 0
+    }
+  },
+  "condition_node_ranking": [
+    {
+      "node_id": "root",
+      "line": 5,
+      "condition": "water < 0",
+      "loop_count": 1,
+      "depth": 0,
+      "exec_count": 15,
+      "fail_count": 2,
+      "pass_count": 13,
+      "failure_density": 0.13333333333333333,
+      "risk_score": 0.1464816384890813,
+      "ignored": {
+        "infeasible_leaves": 27,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 0
+      },
+      "rank": 1
+    },
+    {
+      "node_id": "root.F",
+      "line": 5,
+      "condition": "water > 2",
+      "loop_count": 1,
+      "depth": 1,
+      "exec_count": 14,
+      "fail_count": 1,
+      "pass_count": 13,
+      "failure_density": 0.07142857142857142,
+      "risk_score": 0.049510512897138946,
+      "ignored": {
+        "infeasible_leaves": 27,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 0
+      },
+      "rank": 2
+    }
+  ],
+  "condition_interval_ranking": [
+    {
+      "edge_id": "root.F.TRUE",
+      "from_line": 5,
+      "from_condition": "water > 2",
+      "from_loop_count": 1,
+      "outcome": "true",
+      "to_line": null,
+      "to_condition": null,
+      "to_loop_count": null,
+      "line_interval": [
+        5,
+        null
+      ],
+      "interval_kind": "to_leaf",
+      "condition_anchor_span": [
+        5,
+        null
+      ],
+      "condition_anchor_kind": "to_leaf",
+      "location_basis": "statement_lines",
+      "region_size": 1,
+      "depth": 2,
+      "exec_count": 1,
+      "fail_count": 1,
+      "pass_count": 0,
+      "failure_density": 1.0,
+      "parent_exec_count": 14,
+      "parent_fail_count": 1,
+      "parent_pass_count": 13,
+      "parent_failure_density": 0.07142857142857142,
+      "sibling_failure_density": 0.0,
+      "outcome_delta": 1.0,
+      "base_interval_score": 0.3010299956639812,
+      "outcome_delta_bonus": 2.0,
+      "base_risk_score": 0.6020599913279624,
+      "risk_score": 0.6020599913279624,
+      "ignored": {
+        "infeasible_leaves": 0,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 0
+      },
+      "segment_status": "matched",
+      "statement_count": 1,
+      "statement_line_count": 1,
+      "assignment_count": 0,
+      "return_count": 1,
+      "statement_lines": [
+        5
+      ],
+      "sample_events": [
+        {
+          "type": "RETURN",
+          "line": 5,
+          "kind": "",
+          "target": "return_value",
+          "rhs": "(-99) + 1"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "edge_id": "root.TRUE",
+      "from_line": 5,
+      "from_condition": "water < 0",
+      "from_loop_count": 1,
+      "outcome": "true",
+      "to_line": null,
+      "to_condition": null,
+      "to_loop_count": null,
+      "line_interval": [
+        5,
+        null
+      ],
+      "interval_kind": "to_leaf",
+      "condition_anchor_span": [
+        5,
+        null
+      ],
+      "condition_anchor_kind": "to_leaf",
+      "location_basis": "statement_lines",
+      "region_size": 1,
+      "depth": 1,
+      "exec_count": 1,
+      "fail_count": 1,
+      "pass_count": 0,
+      "failure_density": 1.0,
+      "parent_exec_count": 15,
+      "parent_fail_count": 2,
+      "parent_pass_count": 13,
+      "parent_failure_density": 0.13333333333333333,
+      "sibling_failure_density": 0.07142857142857142,
+      "outcome_delta": 0.9285714285714286,
+      "base_interval_score": 0.3010299956639812,
+      "outcome_delta_bonus": 1.9285714285714286,
+      "base_risk_score": 0.5805578487805352,
+      "risk_score": 0.5805578487805352,
+      "ignored": {
+        "infeasible_leaves": 0,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 0
+      },
+      "segment_status": "matched",
+      "statement_count": 1,
+      "statement_line_count": 1,
+      "assignment_count": 0,
+      "return_count": 1,
+      "statement_lines": [
+        5
+      ],
+      "sample_events": [
+        {
+          "type": "RETURN",
+          "line": 5,
+          "kind": "",
+          "target": "return_value",
+          "rhs": "(-99) + 1"
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "edge_id": "root.FALSE",
+      "from_line": 5,
+      "from_condition": "water < 0",
+      "from_loop_count": 1,
+      "outcome": "false",
+      "to_line": 5,
+      "to_condition": "water > 2",
+      "to_loop_count": 1,
+      "line_interval": [
+        5,
+        5
+      ],
+      "interval_kind": "forward",
+      "condition_anchor_span": [
+        5,
+        5
+      ],
+      "condition_anchor_kind": "forward",
+      "location_basis": "statement_lines",
+      "region_size": 0,
+      "depth": 1,
+      "exec_count": 14,
+      "fail_count": 1,
+      "pass_count": 13,
+      "failure_density": 0.07142857142857142,
+      "parent_exec_count": 15,
+      "parent_fail_count": 2,
+      "parent_pass_count": 13,
+      "parent_failure_density": 0.13333333333333333,
+      "sibling_failure_density": 1.0,
+      "outcome_delta": 0.0,
+      "base_interval_score": 0.021502142547427227,
+      "outcome_delta_bonus": 1.0,
+      "base_risk_score": 0.021502142547427227,
+      "risk_score": 0.0,
+      "ignored": {
+        "infeasible_leaves": 27,
+        "out_of_range_leaves": 0,
+        "empty_leaves": 0
+      },
+      "segment_status": "matched",
+      "statement_count": 0,
+      "statement_line_count": 0,
+      "assignment_count": 0,
+      "return_count": 0,
+      "statement_lines": [],
+      "sample_events": [],
+      "rank": 3
+    }
+  ],
+  "interval_rankings": {
+    "cct_only": [
+      {
+        "edge_id": "root.F.TRUE",
+        "from_line": 5,
+        "from_condition": "water > 2",
+        "from_loop_count": 1,
+        "outcome": "true",
+        "to_line": null,
+        "to_condition": null,
+        "to_loop_count": null,
+        "line_interval": [
+          5,
+          null
+        ],
+        "interval_kind": "to_leaf",
+        "condition_anchor_span": [
+          5,
+          null
+        ],
+        "condition_anchor_kind": "to_leaf",
+        "location_basis": "condition_anchor_span",
+        "region_size": 0,
+        "depth": 2,
+        "exec_count": 1,
+        "fail_count": 1,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "parent_exec_count": 14,
+        "parent_fail_count": 1,
+        "parent_pass_count": 13,
+        "parent_failure_density": 0.07142857142857142,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 1.0,
+        "base_interval_score": 0.3010299956639812,
+        "outcome_delta_bonus": 2.0,
+        "base_risk_score": 0.6020599913279624,
+        "risk_score": 0.6020599913279624,
+        "ignored": {
+          "infeasible_leaves": 0,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 0
+        },
+        "rank": 1
+      },
+      {
+        "edge_id": "root.TRUE",
+        "from_line": 5,
+        "from_condition": "water < 0",
+        "from_loop_count": 1,
+        "outcome": "true",
+        "to_line": null,
+        "to_condition": null,
+        "to_loop_count": null,
+        "line_interval": [
+          5,
+          null
+        ],
+        "interval_kind": "to_leaf",
+        "condition_anchor_span": [
+          5,
+          null
+        ],
+        "condition_anchor_kind": "to_leaf",
+        "location_basis": "condition_anchor_span",
+        "region_size": 0,
+        "depth": 1,
+        "exec_count": 1,
+        "fail_count": 1,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "parent_exec_count": 15,
+        "parent_fail_count": 2,
+        "parent_pass_count": 13,
+        "parent_failure_density": 0.13333333333333333,
+        "sibling_failure_density": 0.07142857142857142,
+        "outcome_delta": 0.9285714285714286,
+        "base_interval_score": 0.3010299956639812,
+        "outcome_delta_bonus": 1.9285714285714286,
+        "base_risk_score": 0.5805578487805352,
+        "risk_score": 0.5805578487805352,
+        "ignored": {
+          "infeasible_leaves": 0,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 0
+        },
+        "rank": 2
+      },
+      {
+        "edge_id": "root.FALSE",
+        "from_line": 5,
+        "from_condition": "water < 0",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 5,
+        "to_condition": "water > 2",
+        "to_loop_count": 1,
+        "line_interval": [
+          5,
+          5
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          5,
+          5
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "condition_anchor_span",
+        "region_size": 1,
+        "depth": 1,
+        "exec_count": 14,
+        "fail_count": 1,
+        "pass_count": 13,
+        "failure_density": 0.07142857142857142,
+        "parent_exec_count": 15,
+        "parent_fail_count": 2,
+        "parent_pass_count": 13,
+        "parent_failure_density": 0.13333333333333333,
+        "sibling_failure_density": 1.0,
+        "outcome_delta": 0.0,
+        "base_interval_score": 0.021502142547427227,
+        "outcome_delta_bonus": 1.0,
+        "base_risk_score": 0.021502142547427227,
+        "risk_score": 0.021502142547427227,
+        "ignored": {
+          "infeasible_leaves": 27,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 0
+        },
+        "rank": 3
+      }
+    ],
+    "statement_presence": [
+      {
+        "edge_id": "root.F.TRUE",
+        "from_line": 5,
+        "from_condition": "water > 2",
+        "from_loop_count": 1,
+        "outcome": "true",
+        "to_line": null,
+        "to_condition": null,
+        "to_loop_count": null,
+        "line_interval": [
+          5,
+          null
+        ],
+        "interval_kind": "to_leaf",
+        "condition_anchor_span": [
+          5,
+          null
+        ],
+        "condition_anchor_kind": "to_leaf",
+        "location_basis": "statement_lines",
+        "region_size": 1,
+        "depth": 2,
+        "exec_count": 1,
+        "fail_count": 1,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "parent_exec_count": 14,
+        "parent_fail_count": 1,
+        "parent_pass_count": 13,
+        "parent_failure_density": 0.07142857142857142,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 1.0,
+        "base_interval_score": 0.3010299956639812,
+        "outcome_delta_bonus": 2.0,
+        "base_risk_score": 0.6020599913279624,
+        "risk_score": 0.6020599913279624,
+        "ignored": {
+          "infeasible_leaves": 0,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 0
+        },
+        "segment_status": "matched",
+        "statement_count": 1,
+        "statement_line_count": 1,
+        "assignment_count": 0,
+        "return_count": 1,
+        "statement_lines": [
+          5
+        ],
+        "sample_events": [
+          {
+            "type": "RETURN",
+            "line": 5,
+            "kind": "",
+            "target": "return_value",
+            "rhs": "(-99) + 1"
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "edge_id": "root.TRUE",
+        "from_line": 5,
+        "from_condition": "water < 0",
+        "from_loop_count": 1,
+        "outcome": "true",
+        "to_line": null,
+        "to_condition": null,
+        "to_loop_count": null,
+        "line_interval": [
+          5,
+          null
+        ],
+        "interval_kind": "to_leaf",
+        "condition_anchor_span": [
+          5,
+          null
+        ],
+        "condition_anchor_kind": "to_leaf",
+        "location_basis": "statement_lines",
+        "region_size": 1,
+        "depth": 1,
+        "exec_count": 1,
+        "fail_count": 1,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "parent_exec_count": 15,
+        "parent_fail_count": 2,
+        "parent_pass_count": 13,
+        "parent_failure_density": 0.13333333333333333,
+        "sibling_failure_density": 0.07142857142857142,
+        "outcome_delta": 0.9285714285714286,
+        "base_interval_score": 0.3010299956639812,
+        "outcome_delta_bonus": 1.9285714285714286,
+        "base_risk_score": 0.5805578487805352,
+        "risk_score": 0.5805578487805352,
+        "ignored": {
+          "infeasible_leaves": 0,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 0
+        },
+        "segment_status": "matched",
+        "statement_count": 1,
+        "statement_line_count": 1,
+        "assignment_count": 0,
+        "return_count": 1,
+        "statement_lines": [
+          5
+        ],
+        "sample_events": [
+          {
+            "type": "RETURN",
+            "line": 5,
+            "kind": "",
+            "target": "return_value",
+            "rhs": "(-99) + 1"
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "edge_id": "root.FALSE",
+        "from_line": 5,
+        "from_condition": "water < 0",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 5,
+        "to_condition": "water > 2",
+        "to_loop_count": 1,
+        "line_interval": [
+          5,
+          5
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          5,
+          5
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "statement_lines",
+        "region_size": 0,
+        "depth": 1,
+        "exec_count": 14,
+        "fail_count": 1,
+        "pass_count": 13,
+        "failure_density": 0.07142857142857142,
+        "parent_exec_count": 15,
+        "parent_fail_count": 2,
+        "parent_pass_count": 13,
+        "parent_failure_density": 0.13333333333333333,
+        "sibling_failure_density": 1.0,
+        "outcome_delta": 0.0,
+        "base_interval_score": 0.021502142547427227,
+        "outcome_delta_bonus": 1.0,
+        "base_risk_score": 0.021502142547427227,
+        "risk_score": 0.0,
+        "ignored": {
+          "infeasible_leaves": 27,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 0
+        },
+        "segment_status": "matched",
+        "statement_count": 0,
+        "statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "statement_lines": [],
+        "sample_events": [],
+        "rank": 3
+      }
+    ],
+    "edge_divergence_sibling_exclusive": [
+      {
+        "edge_id": "root.F.TRUE",
+        "from_line": 5,
+        "from_condition": "water > 2",
+        "from_loop_count": 1,
+        "outcome": "true",
+        "to_line": null,
+        "to_condition": null,
+        "to_loop_count": null,
+        "line_interval": [
+          5,
+          null
+        ],
+        "interval_kind": "to_leaf",
+        "condition_anchor_span": [
+          5,
+          null
+        ],
+        "condition_anchor_kind": "to_leaf",
+        "location_basis": "sibling_exclusive_statement_lines",
+        "region_size": 1,
+        "depth": 2,
+        "exec_count": 1,
+        "fail_count": 1,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "parent_exec_count": 14,
+        "parent_fail_count": 1,
+        "parent_pass_count": 13,
+        "parent_failure_density": 0.07142857142857142,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 1.0,
+        "base_interval_score": 0.3010299956639812,
+        "outcome_delta_bonus": 2.0,
+        "base_risk_score": 0.6020599913279624,
+        "risk_score": 0.6020599913279624,
+        "ignored": {
+          "infeasible_leaves": 0,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 0
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "matched",
+        "statement_count": 1,
+        "raw_statement_count": 1,
+        "statement_line_count": 1,
+        "raw_statement_line_count": 1,
+        "sibling_statement_line_count": 2,
+        "removed_shared_statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 1,
+        "raw_statement_lines": [
+          5
+        ],
+        "sibling_statement_lines": [
+          6,
+          7
+        ],
+        "exclusive_statement_lines": [
+          5
+        ],
+        "removed_shared_statement_lines": [],
+        "statement_lines": [
+          5
+        ],
+        "sample_events": [
+          {
+            "type": "RETURN",
+            "line": 5,
+            "kind": "",
+            "target": "return_value",
+            "rhs": "(-99) + 1"
+          }
+        ],
+        "region_basis": "sibling_exclusive",
+        "sibling_edge_id": "root.F.FALSE",
+        "statement_line_weight": 1.3010299956639813,
+        "rank": 1
+      },
+      {
+        "edge_id": "root.TRUE",
+        "from_line": 5,
+        "from_condition": "water < 0",
+        "from_loop_count": 1,
+        "outcome": "true",
+        "to_line": null,
+        "to_condition": null,
+        "to_loop_count": null,
+        "line_interval": [
+          5,
+          null
+        ],
+        "interval_kind": "to_leaf",
+        "condition_anchor_span": [
+          5,
+          null
+        ],
+        "condition_anchor_kind": "to_leaf",
+        "location_basis": "sibling_exclusive_statement_lines",
+        "region_size": 1,
+        "depth": 1,
+        "exec_count": 1,
+        "fail_count": 1,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "parent_exec_count": 15,
+        "parent_fail_count": 2,
+        "parent_pass_count": 13,
+        "parent_failure_density": 0.13333333333333333,
+        "sibling_failure_density": 0.07142857142857142,
+        "outcome_delta": 0.9285714285714286,
+        "base_interval_score": 0.3010299956639812,
+        "outcome_delta_bonus": 1.9285714285714286,
+        "base_risk_score": 0.5805578487805352,
+        "risk_score": 0.5805578487805352,
+        "ignored": {
+          "infeasible_leaves": 0,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 0
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "matched",
+        "statement_count": 1,
+        "raw_statement_count": 1,
+        "statement_line_count": 1,
+        "raw_statement_line_count": 1,
+        "sibling_statement_line_count": 0,
+        "removed_shared_statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 1,
+        "raw_statement_lines": [
+          5
+        ],
+        "sibling_statement_lines": [],
+        "exclusive_statement_lines": [
+          5
+        ],
+        "removed_shared_statement_lines": [],
+        "statement_lines": [
+          5
+        ],
+        "sample_events": [
+          {
+            "type": "RETURN",
+            "line": 5,
+            "kind": "",
+            "target": "return_value",
+            "rhs": "(-99) + 1"
+          }
+        ],
+        "region_basis": "sibling_exclusive",
+        "sibling_edge_id": "root.FALSE",
+        "statement_line_weight": 1.3010299956639813,
+        "rank": 2
+      },
+      {
+        "edge_id": "root.FALSE",
+        "from_line": 5,
+        "from_condition": "water < 0",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 5,
+        "to_condition": "water > 2",
+        "to_loop_count": 1,
+        "line_interval": [
+          5,
+          5
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          5,
+          5
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "sibling_exclusive_statement_lines",
+        "region_size": 0,
+        "depth": 1,
+        "exec_count": 14,
+        "fail_count": 1,
+        "pass_count": 13,
+        "failure_density": 0.07142857142857142,
+        "parent_exec_count": 15,
+        "parent_fail_count": 2,
+        "parent_pass_count": 13,
+        "parent_failure_density": 0.13333333333333333,
+        "sibling_failure_density": 1.0,
+        "outcome_delta": 0.0,
+        "base_interval_score": 0.021502142547427227,
+        "outcome_delta_bonus": 1.0,
+        "base_risk_score": 0.021502142547427227,
+        "risk_score": 0.021502142547427227,
+        "ignored": {
+          "infeasible_leaves": 27,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 0
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "matched",
+        "statement_count": 0,
+        "raw_statement_count": 0,
+        "statement_line_count": 0,
+        "raw_statement_line_count": 0,
+        "sibling_statement_line_count": 1,
+        "removed_shared_statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "raw_statement_lines": [],
+        "sibling_statement_lines": [
+          5
+        ],
+        "exclusive_statement_lines": [],
+        "removed_shared_statement_lines": [],
+        "statement_lines": [],
+        "sample_events": [],
+        "region_basis": "sibling_exclusive",
+        "sibling_edge_id": "root.TRUE",
+        "statement_line_weight": 0.0,
+        "rank": 3
+      }
+    ],
+    "edge_divergence_sibling_shared": [
+      {
+        "edge_id": "root.TRUE",
+        "from_line": 5,
+        "from_condition": "water < 0",
+        "from_loop_count": 1,
+        "outcome": "true",
+        "to_line": null,
+        "to_condition": null,
+        "to_loop_count": null,
+        "line_interval": [
+          5,
+          null
+        ],
+        "interval_kind": "to_leaf",
+        "condition_anchor_span": [
+          5,
+          null
+        ],
+        "condition_anchor_kind": "to_leaf",
+        "location_basis": "sibling_shared_statement_lines",
+        "region_size": 0,
+        "depth": 1,
+        "exec_count": 1,
+        "fail_count": 1,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "parent_exec_count": 15,
+        "parent_fail_count": 2,
+        "parent_pass_count": 13,
+        "parent_failure_density": 0.13333333333333333,
+        "sibling_failure_density": 0.07142857142857142,
+        "outcome_delta": 0.9285714285714286,
+        "base_interval_score": 0.3010299956639812,
+        "outcome_delta_bonus": 1.9285714285714286,
+        "base_risk_score": 0.5805578487805352,
+        "risk_score": 0.06816017924566606,
+        "ignored": {
+          "infeasible_leaves": 0,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 0
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "matched",
+        "statement_count": 0,
+        "raw_statement_count": 1,
+        "statement_line_count": 0,
+        "raw_statement_line_count": 1,
+        "sibling_statement_line_count": 0,
+        "shared_statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "raw_statement_lines": [
+          5
+        ],
+        "sibling_statement_lines": [],
+        "shared_statement_lines": [],
+        "statement_lines": [],
+        "sample_events": [],
+        "region_basis": "sibling_shared",
+        "sibling_edge_id": "root.FALSE",
+        "statement_line_weight": 0.0,
+        "shared_risk_score": 0.06816017924566606,
+        "rank": 1
+      },
+      {
+        "edge_id": "root.FALSE",
+        "from_line": 5,
+        "from_condition": "water < 0",
+        "from_loop_count": 1,
+        "outcome": "false",
+        "to_line": 5,
+        "to_condition": "water > 2",
+        "to_loop_count": 1,
+        "line_interval": [
+          5,
+          5
+        ],
+        "interval_kind": "forward",
+        "condition_anchor_span": [
+          5,
+          5
+        ],
+        "condition_anchor_kind": "forward",
+        "location_basis": "sibling_shared_statement_lines",
+        "region_size": 0,
+        "depth": 1,
+        "exec_count": 14,
+        "fail_count": 1,
+        "pass_count": 13,
+        "failure_density": 0.07142857142857142,
+        "parent_exec_count": 15,
+        "parent_fail_count": 2,
+        "parent_pass_count": 13,
+        "parent_failure_density": 0.13333333333333333,
+        "sibling_failure_density": 1.0,
+        "outcome_delta": 0.0,
+        "base_interval_score": 0.021502142547427227,
+        "outcome_delta_bonus": 1.0,
+        "base_risk_score": 0.021502142547427227,
+        "risk_score": 0.06816017924566606,
+        "ignored": {
+          "infeasible_leaves": 27,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 0
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "matched",
+        "statement_count": 0,
+        "raw_statement_count": 0,
+        "statement_line_count": 0,
+        "raw_statement_line_count": 0,
+        "sibling_statement_line_count": 1,
+        "shared_statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "raw_statement_lines": [],
+        "sibling_statement_lines": [
+          5
+        ],
+        "shared_statement_lines": [],
+        "statement_lines": [],
+        "sample_events": [],
+        "region_basis": "sibling_shared",
+        "sibling_edge_id": "root.TRUE",
+        "statement_line_weight": 0.0,
+        "shared_risk_score": 0.06816017924566606,
+        "rank": 2
+      },
+      {
+        "edge_id": "root.F.TRUE",
+        "from_line": 5,
+        "from_condition": "water > 2",
+        "from_loop_count": 1,
+        "outcome": "true",
+        "to_line": null,
+        "to_condition": null,
+        "to_loop_count": null,
+        "line_interval": [
+          5,
+          null
+        ],
+        "interval_kind": "to_leaf",
+        "condition_anchor_span": [
+          5,
+          null
+        ],
+        "condition_anchor_kind": "to_leaf",
+        "location_basis": "sibling_shared_statement_lines",
+        "region_size": 0,
+        "depth": 2,
+        "exec_count": 1,
+        "fail_count": 1,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "parent_exec_count": 14,
+        "parent_fail_count": 1,
+        "parent_pass_count": 13,
+        "parent_failure_density": 0.07142857142857142,
+        "sibling_failure_density": 0.0,
+        "outcome_delta": 1.0,
+        "base_interval_score": 0.3010299956639812,
+        "outcome_delta_bonus": 2.0,
+        "base_risk_score": 0.6020599913279624,
+        "risk_score": 0.021502142547427227,
+        "ignored": {
+          "infeasible_leaves": 0,
+          "out_of_range_leaves": 0,
+          "empty_leaves": 0
+        },
+        "segment_status": "matched",
+        "sibling_segment_status": "matched",
+        "statement_count": 0,
+        "raw_statement_count": 1,
+        "statement_line_count": 0,
+        "raw_statement_line_count": 1,
+        "sibling_statement_line_count": 2,
+        "shared_statement_line_count": 0,
+        "assignment_count": 0,
+        "return_count": 0,
+        "raw_statement_lines": [
+          5
+        ],
+        "sibling_statement_lines": [
+          6,
+          7
+        ],
+        "shared_statement_lines": [],
+        "statement_lines": [],
+        "sample_events": [],
+        "region_basis": "sibling_shared",
+        "sibling_edge_id": "root.F.FALSE",
+        "statement_line_weight": 0.0,
+        "shared_risk_score": 0.021502142547427227,
+        "rank": 3
+      }
+    ]
+  }
+}

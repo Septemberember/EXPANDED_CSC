@@ -1,0 +1,1692 @@
+{
+  "summary": {
+    "aggregation": "source_transition_v1",
+    "score_aggregation": "max",
+    "per_target_aggregation": {
+      "condition_node_ranking": "max",
+      "interval_rankings.folded_seed_e": "max",
+      "interval_rankings.folded_seed_s": "max",
+      "interval_rankings.folded_edge_partition": "max"
+    },
+    "source_report": null,
+    "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+    "targets": [
+      "condition_node_ranking",
+      "interval_rankings.folded_seed_e",
+      "interval_rankings.folded_seed_s",
+      "interval_rankings.folded_edge_partition"
+    ],
+    "condition_node_count_raw": 16,
+    "condition_node_count_aggregated": 16,
+    "interval_count_raw": {
+      "folded_seed_e": 8,
+      "folded_seed_s": 0,
+      "folded_edge_partition": 8
+    },
+    "interval_count_aggregated": {
+      "folded_seed_e": 8,
+      "folded_seed_s": 0,
+      "folded_edge_partition": 8
+    },
+    "average_interval_region_size": {
+      "folded_seed_e": 1.375,
+      "folded_seed_s": 0.0,
+      "folded_edge_partition": 1.375
+    },
+    "raw_summary": {
+      "strategy": "folded_source_candidate_v1",
+      "scoring_strategy": "coverage_x_purity",
+      "F_total": 2,
+      "P_total": 10,
+      "condition_candidates": 16,
+      "seed_e_candidates": 8,
+      "seed_s_candidates": 0,
+      "edge_partition_candidates": 8,
+      "unstable_segment_variants": 1,
+      "total_edge_transitions": 39
+    }
+  },
+  "aggregated_condition_node_ranking": [
+    {
+      "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+      "line": 48,
+      "condition": "k < 3",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 1,
+      "raw_ranks": [
+        1
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 1,
+        "risk_score": 0.5,
+        "line": 48,
+        "condition": "k < 3",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.5,
+      "exec_count": 4,
+      "fail_count": 2,
+      "pass_count": 2,
+      "failure_density": 0.5,
+      "min_exec_count": 4,
+      "min_fail_count": 2,
+      "min_pass_count": 2,
+      "min_failure_density": 0.5,
+      "rank": 1
+    },
+    {
+      "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+      "line": 50,
+      "condition": "d1 > d0 + w01",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 2,
+      "raw_ranks": [
+        2
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 2,
+        "risk_score": 0.5,
+        "line": 50,
+        "condition": "d1 > d0 + w01",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.5,
+      "exec_count": 4,
+      "fail_count": 2,
+      "pass_count": 2,
+      "failure_density": 0.5,
+      "min_exec_count": 4,
+      "min_fail_count": 2,
+      "min_pass_count": 2,
+      "min_failure_density": 0.5,
+      "rank": 2
+    },
+    {
+      "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+      "line": 51,
+      "condition": "d2 > d0 + w02",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 3,
+      "raw_ranks": [
+        3
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 3,
+        "risk_score": 0.5,
+        "line": 51,
+        "condition": "d2 > d0 + w02",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.5,
+      "exec_count": 4,
+      "fail_count": 2,
+      "pass_count": 2,
+      "failure_density": 0.5,
+      "min_exec_count": 4,
+      "min_fail_count": 2,
+      "min_pass_count": 2,
+      "min_failure_density": 0.5,
+      "rank": 3
+    },
+    {
+      "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+      "line": 52,
+      "condition": "d0 > d1 + 4",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 4,
+      "raw_ranks": [
+        4
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 4,
+        "risk_score": 0.5,
+        "line": 52,
+        "condition": "d0 > d1 + 4",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.5,
+      "exec_count": 4,
+      "fail_count": 2,
+      "pass_count": 2,
+      "failure_density": 0.5,
+      "min_exec_count": 4,
+      "min_fail_count": 2,
+      "min_pass_count": 2,
+      "min_failure_density": 0.5,
+      "rank": 4
+    },
+    {
+      "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+      "line": 53,
+      "condition": "d2 > d1 + w12",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 5,
+      "raw_ranks": [
+        5
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 5,
+        "risk_score": 0.5,
+        "line": 53,
+        "condition": "d2 > d1 + w12",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.5,
+      "exec_count": 4,
+      "fail_count": 2,
+      "pass_count": 2,
+      "failure_density": 0.5,
+      "min_exec_count": 4,
+      "min_fail_count": 2,
+      "min_pass_count": 2,
+      "min_failure_density": 0.5,
+      "rank": 5
+    },
+    {
+      "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+      "line": 54,
+      "condition": "d0 > d2 + 4",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 6,
+      "raw_ranks": [
+        6
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 6,
+        "risk_score": 0.5,
+        "line": 54,
+        "condition": "d0 > d2 + 4",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.5,
+      "exec_count": 4,
+      "fail_count": 2,
+      "pass_count": 2,
+      "failure_density": 0.5,
+      "min_exec_count": 4,
+      "min_fail_count": 2,
+      "min_pass_count": 2,
+      "min_failure_density": 0.5,
+      "rank": 6
+    },
+    {
+      "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+      "line": 55,
+      "condition": "d1 > d2 + w21",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 7,
+      "raw_ranks": [
+        7
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 7,
+        "risk_score": 0.5,
+        "line": 55,
+        "condition": "d1 > d2 + w21",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.5,
+      "exec_count": 4,
+      "fail_count": 2,
+      "pass_count": 2,
+      "failure_density": 0.5,
+      "min_exec_count": 4,
+      "min_fail_count": 2,
+      "min_pass_count": 2,
+      "min_failure_density": 0.5,
+      "rank": 7
+    },
+    {
+      "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+      "line": 56,
+      "condition": "relaxed",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 8,
+      "raw_ranks": [
+        8
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 8,
+        "risk_score": 0.5,
+        "line": 56,
+        "condition": "relaxed",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.5,
+      "exec_count": 4,
+      "fail_count": 2,
+      "pass_count": 2,
+      "failure_density": 0.5,
+      "min_exec_count": 4,
+      "min_fail_count": 2,
+      "min_pass_count": 2,
+      "min_failure_density": 0.5,
+      "rank": 8
+    },
+    {
+      "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+      "line": 43,
+      "condition": "w21 > 4",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 9,
+      "raw_ranks": [
+        9
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 9,
+        "risk_score": 0.4,
+        "line": 43,
+        "condition": "w21 > 4",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.4,
+      "exec_count": 5,
+      "fail_count": 2,
+      "pass_count": 3,
+      "failure_density": 0.4,
+      "min_exec_count": 5,
+      "min_fail_count": 2,
+      "min_pass_count": 3,
+      "min_failure_density": 0.4,
+      "rank": 9
+    },
+    {
+      "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+      "line": 43,
+      "condition": "w21 < 0",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 10,
+      "raw_ranks": [
+        10
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 10,
+        "risk_score": 0.3333333333333333,
+        "line": 43,
+        "condition": "w21 < 0",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.3333333333333333,
+      "exec_count": 6,
+      "fail_count": 2,
+      "pass_count": 4,
+      "failure_density": 0.3333333333333333,
+      "min_exec_count": 6,
+      "min_fail_count": 2,
+      "min_pass_count": 4,
+      "min_failure_density": 0.3333333333333333,
+      "rank": 10
+    },
+    {
+      "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+      "line": 43,
+      "condition": "w12 > 4",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 11,
+      "raw_ranks": [
+        11
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 11,
+        "risk_score": 0.2857142857142857,
+        "line": 43,
+        "condition": "w12 > 4",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.2857142857142857,
+      "exec_count": 7,
+      "fail_count": 2,
+      "pass_count": 5,
+      "failure_density": 0.2857142857142857,
+      "min_exec_count": 7,
+      "min_fail_count": 2,
+      "min_pass_count": 5,
+      "min_failure_density": 0.2857142857142857,
+      "rank": 11
+    },
+    {
+      "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+      "line": 43,
+      "condition": "w12 < 0",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 12,
+      "raw_ranks": [
+        12
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 12,
+        "risk_score": 0.25,
+        "line": 43,
+        "condition": "w12 < 0",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.25,
+      "exec_count": 8,
+      "fail_count": 2,
+      "pass_count": 6,
+      "failure_density": 0.25,
+      "min_exec_count": 8,
+      "min_fail_count": 2,
+      "min_pass_count": 6,
+      "min_failure_density": 0.25,
+      "rank": 12
+    },
+    {
+      "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+      "line": 43,
+      "condition": "w02 > 4",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 13,
+      "raw_ranks": [
+        13
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 13,
+        "risk_score": 0.2222222222222222,
+        "line": 43,
+        "condition": "w02 > 4",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.2222222222222222,
+      "exec_count": 9,
+      "fail_count": 2,
+      "pass_count": 7,
+      "failure_density": 0.2222222222222222,
+      "min_exec_count": 9,
+      "min_fail_count": 2,
+      "min_pass_count": 7,
+      "min_failure_density": 0.2222222222222222,
+      "rank": 13
+    },
+    {
+      "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+      "line": 43,
+      "condition": "w02 < 0",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 14,
+      "raw_ranks": [
+        14
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 14,
+        "risk_score": 0.2,
+        "line": 43,
+        "condition": "w02 < 0",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.2,
+      "exec_count": 10,
+      "fail_count": 2,
+      "pass_count": 8,
+      "failure_density": 0.2,
+      "min_exec_count": 10,
+      "min_fail_count": 2,
+      "min_pass_count": 8,
+      "min_failure_density": 0.2,
+      "rank": 14
+    },
+    {
+      "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+      "line": 43,
+      "condition": "w01 > 4",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 15,
+      "raw_ranks": [
+        15
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 15,
+        "risk_score": 0.18181818181818182,
+        "line": 43,
+        "condition": "w01 > 4",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.18181818181818182,
+      "exec_count": 11,
+      "fail_count": 2,
+      "pass_count": 9,
+      "failure_density": 0.18181818181818182,
+      "min_exec_count": 11,
+      "min_fail_count": 2,
+      "min_pass_count": 9,
+      "min_failure_density": 0.18181818181818182,
+      "rank": 15
+    },
+    {
+      "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+      "line": 43,
+      "condition": "w01 < 0",
+      "location_basis": "condition_line",
+      "support_count": 1,
+      "best_raw_rank": 16,
+      "raw_ranks": [
+        16
+      ],
+      "raw_node_ids": [],
+      "representative": {
+        "rank": 16,
+        "risk_score": 0.16666666666666666,
+        "line": 43,
+        "condition": "w01 < 0",
+        "statement_lines": [],
+        "region_size": 1,
+        "location_basis": "condition_line"
+      },
+      "risk_score": 0.16666666666666666,
+      "exec_count": 12,
+      "fail_count": 2,
+      "pass_count": 10,
+      "failure_density": 0.16666666666666666,
+      "min_exec_count": 12,
+      "min_fail_count": 2,
+      "min_pass_count": 10,
+      "min_failure_density": 0.16666666666666666,
+      "rank": 16
+    }
+  ],
+  "aggregated_interval_rankings": {
+    "folded_seed_e": [
+      {
+        "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+        "from_line": 55,
+        "from_condition": "d1 > d2 + w21",
+        "outcome": "true",
+        "to_line": 56,
+        "to_condition": "relaxed",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          55
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            55
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 1,
+        "raw_ranks": [
+          1
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 1,
+          "risk_score": 1.0,
+          "from_line": 55,
+          "from_condition": "d1 > d2 + w21",
+          "outcome": "true",
+          "to_line": 56,
+          "to_condition": "relaxed",
+          "statement_lines": [
+            55
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 2,
+        "fail_count": 2,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 2,
+        "min_fail_count": 2,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 1
+      },
+      {
+        "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+        "from_line": 48,
+        "from_condition": "k < 3",
+        "outcome": "true",
+        "to_line": 50,
+        "to_condition": "d1 > d0 + w01",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          49
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            49
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 2,
+        "raw_ranks": [
+          2
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 2,
+          "risk_score": 0.5,
+          "from_line": 48,
+          "from_condition": "k < 3",
+          "outcome": "true",
+          "to_line": 50,
+          "to_condition": "d1 > d0 + w01",
+          "statement_lines": [
+            49
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.5,
+        "base_risk_score": 0.5,
+        "exec_count": 4,
+        "fail_count": 2,
+        "pass_count": 2,
+        "failure_density": 0.5,
+        "min_exec_count": 4,
+        "min_fail_count": 2,
+        "min_pass_count": 2,
+        "min_failure_density": 0.5,
+        "rank": 2
+      },
+      {
+        "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+        "from_line": 50,
+        "from_condition": "d1 > d0 + w01",
+        "outcome": "true",
+        "to_line": 51,
+        "to_condition": "d2 > d0 + w02",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          50
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            50
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 3,
+        "raw_ranks": [
+          3
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 3,
+          "risk_score": 0.5,
+          "from_line": 50,
+          "from_condition": "d1 > d0 + w01",
+          "outcome": "true",
+          "to_line": 51,
+          "to_condition": "d2 > d0 + w02",
+          "statement_lines": [
+            50
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.5,
+        "base_risk_score": 0.5,
+        "exec_count": 4,
+        "fail_count": 2,
+        "pass_count": 2,
+        "failure_density": 0.5,
+        "min_exec_count": 4,
+        "min_fail_count": 2,
+        "min_pass_count": 2,
+        "min_failure_density": 0.5,
+        "rank": 3
+      },
+      {
+        "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+        "from_line": 51,
+        "from_condition": "d2 > d0 + w02",
+        "outcome": "true",
+        "to_line": 52,
+        "to_condition": "d0 > d1 + 4",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          51
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            51
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 4,
+        "raw_ranks": [
+          4
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 4,
+          "risk_score": 0.5,
+          "from_line": 51,
+          "from_condition": "d2 > d0 + w02",
+          "outcome": "true",
+          "to_line": 52,
+          "to_condition": "d0 > d1 + 4",
+          "statement_lines": [
+            51
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.5,
+        "base_risk_score": 0.5,
+        "exec_count": 4,
+        "fail_count": 2,
+        "pass_count": 2,
+        "failure_density": 0.5,
+        "min_exec_count": 4,
+        "min_fail_count": 2,
+        "min_pass_count": 2,
+        "min_failure_density": 0.5,
+        "rank": 4
+      },
+      {
+        "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+        "from_line": 56,
+        "from_condition": "relaxed",
+        "outcome": "false",
+        "to_line": null,
+        "to_condition": null,
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          56
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            56
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 5,
+        "raw_ranks": [
+          5
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 5,
+          "risk_score": 0.5,
+          "from_line": 56,
+          "from_condition": "relaxed",
+          "outcome": "false",
+          "to_line": null,
+          "to_condition": null,
+          "statement_lines": [
+            56
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.5,
+        "base_risk_score": 0.5,
+        "exec_count": 4,
+        "fail_count": 2,
+        "pass_count": 2,
+        "failure_density": 0.5,
+        "min_exec_count": 4,
+        "min_fail_count": 2,
+        "min_pass_count": 2,
+        "min_failure_density": 0.5,
+        "rank": 5
+      },
+      {
+        "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+        "from_line": 56,
+        "from_condition": "relaxed",
+        "outcome": "true",
+        "to_line": 48,
+        "to_condition": "k < 3",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          57
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            57
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 6,
+        "raw_ranks": [
+          6
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 6,
+          "risk_score": 0.5,
+          "from_line": 56,
+          "from_condition": "relaxed",
+          "outcome": "true",
+          "to_line": 48,
+          "to_condition": "k < 3",
+          "statement_lines": [
+            57
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.5,
+        "base_risk_score": 0.5,
+        "exec_count": 4,
+        "fail_count": 2,
+        "pass_count": 2,
+        "failure_density": 0.5,
+        "min_exec_count": 4,
+        "min_fail_count": 2,
+        "min_pass_count": 2,
+        "min_failure_density": 0.5,
+        "rank": 6
+      },
+      {
+        "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+        "from_line": 43,
+        "from_condition": "w21 > 4",
+        "outcome": "false",
+        "to_line": 48,
+        "to_condition": "k < 3",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          44,
+          45,
+          46,
+          47
+        ],
+        "statement_line_count": 4,
+        "region_size": 4,
+        "statement_line_variants": [
+          [
+            44,
+            45,
+            46,
+            47
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 7,
+        "raw_ranks": [
+          7
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 7,
+          "risk_score": 0.5,
+          "from_line": 43,
+          "from_condition": "w21 > 4",
+          "outcome": "false",
+          "to_line": 48,
+          "to_condition": "k < 3",
+          "statement_lines": [
+            44,
+            45,
+            46,
+            47
+          ],
+          "region_size": 4,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.5,
+        "base_risk_score": 0.5,
+        "exec_count": 4,
+        "fail_count": 2,
+        "pass_count": 2,
+        "failure_density": 0.5,
+        "min_exec_count": 4,
+        "min_fail_count": 2,
+        "min_pass_count": 2,
+        "min_failure_density": 0.5,
+        "rank": 7
+      },
+      {
+        "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+        "from_line": 53,
+        "from_condition": "d2 > d1 + w12",
+        "outcome": "true",
+        "to_line": 54,
+        "to_condition": "d0 > d2 + 4",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          53
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            53
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 8,
+        "raw_ranks": [
+          8
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 8,
+          "risk_score": 0.25,
+          "from_line": 53,
+          "from_condition": "d2 > d1 + w12",
+          "outcome": "true",
+          "to_line": 54,
+          "to_condition": "d0 > d2 + 4",
+          "statement_lines": [
+            53
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.25,
+        "base_risk_score": 0.25,
+        "exec_count": 2,
+        "fail_count": 1,
+        "pass_count": 1,
+        "failure_density": 0.5,
+        "min_exec_count": 2,
+        "min_fail_count": 1,
+        "min_pass_count": 1,
+        "min_failure_density": 0.5,
+        "rank": 8
+      }
+    ],
+    "folded_seed_s": [],
+    "folded_edge_partition": [
+      {
+        "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+        "from_line": 55,
+        "from_condition": "d1 > d2 + w21",
+        "outcome": "true",
+        "to_line": 56,
+        "to_condition": "relaxed",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          55
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            55
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 1,
+        "raw_ranks": [
+          1
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 1,
+          "risk_score": 1.0,
+          "from_line": 55,
+          "from_condition": "d1 > d2 + w21",
+          "outcome": "true",
+          "to_line": 56,
+          "to_condition": "relaxed",
+          "statement_lines": [
+            55
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 1.0,
+        "base_risk_score": 1.0,
+        "exec_count": 2,
+        "fail_count": 2,
+        "pass_count": 0,
+        "failure_density": 1.0,
+        "min_exec_count": 2,
+        "min_fail_count": 2,
+        "min_pass_count": 0,
+        "min_failure_density": 1.0,
+        "rank": 1
+      },
+      {
+        "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+        "from_line": 48,
+        "from_condition": "k < 3",
+        "outcome": "true",
+        "to_line": 50,
+        "to_condition": "d1 > d0 + w01",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          49
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            49
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 2,
+        "raw_ranks": [
+          2
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 2,
+          "risk_score": 0.5,
+          "from_line": 48,
+          "from_condition": "k < 3",
+          "outcome": "true",
+          "to_line": 50,
+          "to_condition": "d1 > d0 + w01",
+          "statement_lines": [
+            49
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.5,
+        "base_risk_score": 0.5,
+        "exec_count": 4,
+        "fail_count": 2,
+        "pass_count": 2,
+        "failure_density": 0.5,
+        "min_exec_count": 4,
+        "min_fail_count": 2,
+        "min_pass_count": 2,
+        "min_failure_density": 0.5,
+        "rank": 2
+      },
+      {
+        "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+        "from_line": 50,
+        "from_condition": "d1 > d0 + w01",
+        "outcome": "true",
+        "to_line": 51,
+        "to_condition": "d2 > d0 + w02",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          50
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            50
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 3,
+        "raw_ranks": [
+          3
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 3,
+          "risk_score": 0.5,
+          "from_line": 50,
+          "from_condition": "d1 > d0 + w01",
+          "outcome": "true",
+          "to_line": 51,
+          "to_condition": "d2 > d0 + w02",
+          "statement_lines": [
+            50
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.5,
+        "base_risk_score": 0.5,
+        "exec_count": 4,
+        "fail_count": 2,
+        "pass_count": 2,
+        "failure_density": 0.5,
+        "min_exec_count": 4,
+        "min_fail_count": 2,
+        "min_pass_count": 2,
+        "min_failure_density": 0.5,
+        "rank": 3
+      },
+      {
+        "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+        "from_line": 51,
+        "from_condition": "d2 > d0 + w02",
+        "outcome": "true",
+        "to_line": 52,
+        "to_condition": "d0 > d1 + 4",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          51
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            51
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 4,
+        "raw_ranks": [
+          4
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 4,
+          "risk_score": 0.5,
+          "from_line": 51,
+          "from_condition": "d2 > d0 + w02",
+          "outcome": "true",
+          "to_line": 52,
+          "to_condition": "d0 > d1 + 4",
+          "statement_lines": [
+            51
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.5,
+        "base_risk_score": 0.5,
+        "exec_count": 4,
+        "fail_count": 2,
+        "pass_count": 2,
+        "failure_density": 0.5,
+        "min_exec_count": 4,
+        "min_fail_count": 2,
+        "min_pass_count": 2,
+        "min_failure_density": 0.5,
+        "rank": 4
+      },
+      {
+        "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+        "from_line": 56,
+        "from_condition": "relaxed",
+        "outcome": "false",
+        "to_line": null,
+        "to_condition": null,
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          56
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            56
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 5,
+        "raw_ranks": [
+          5
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 5,
+          "risk_score": 0.5,
+          "from_line": 56,
+          "from_condition": "relaxed",
+          "outcome": "false",
+          "to_line": null,
+          "to_condition": null,
+          "statement_lines": [
+            56
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.5,
+        "base_risk_score": 0.5,
+        "exec_count": 4,
+        "fail_count": 2,
+        "pass_count": 2,
+        "failure_density": 0.5,
+        "min_exec_count": 4,
+        "min_fail_count": 2,
+        "min_pass_count": 2,
+        "min_failure_density": 0.5,
+        "rank": 5
+      },
+      {
+        "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+        "from_line": 56,
+        "from_condition": "relaxed",
+        "outcome": "true",
+        "to_line": 48,
+        "to_condition": "k < 3",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          57
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            57
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 6,
+        "raw_ranks": [
+          6
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 6,
+          "risk_score": 0.5,
+          "from_line": 56,
+          "from_condition": "relaxed",
+          "outcome": "true",
+          "to_line": 48,
+          "to_condition": "k < 3",
+          "statement_lines": [
+            57
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.5,
+        "base_risk_score": 0.5,
+        "exec_count": 4,
+        "fail_count": 2,
+        "pass_count": 2,
+        "failure_density": 0.5,
+        "min_exec_count": 4,
+        "min_fail_count": 2,
+        "min_pass_count": 2,
+        "min_failure_density": 0.5,
+        "rank": 6
+      },
+      {
+        "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+        "from_line": 43,
+        "from_condition": "w21 > 4",
+        "outcome": "false",
+        "to_line": 48,
+        "to_condition": "k < 3",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          44,
+          45,
+          46,
+          47
+        ],
+        "statement_line_count": 4,
+        "region_size": 4,
+        "statement_line_variants": [
+          [
+            44,
+            45,
+            46,
+            47
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 7,
+        "raw_ranks": [
+          7
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 7,
+          "risk_score": 0.5,
+          "from_line": 43,
+          "from_condition": "w21 > 4",
+          "outcome": "false",
+          "to_line": 48,
+          "to_condition": "k < 3",
+          "statement_lines": [
+            44,
+            45,
+            46,
+            47
+          ],
+          "region_size": 4,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.5,
+        "base_risk_score": 0.5,
+        "exec_count": 4,
+        "fail_count": 2,
+        "pass_count": 2,
+        "failure_density": 0.5,
+        "min_exec_count": 4,
+        "min_fail_count": 2,
+        "min_pass_count": 2,
+        "min_failure_density": 0.5,
+        "rank": 7
+      },
+      {
+        "source_file": "SvBellmanFord3/SvBellmanFord3_M5.java",
+        "from_line": 53,
+        "from_condition": "d2 > d1 + w12",
+        "outcome": "true",
+        "to_line": 54,
+        "to_condition": "d0 > d2 + 4",
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          53
+        ],
+        "statement_line_count": 1,
+        "region_size": 1,
+        "statement_line_variants": [
+          [
+            53
+          ]
+        ],
+        "raw_statement_line_variants": [
+          []
+        ],
+        "sibling_statement_line_variants": [
+          []
+        ],
+        "removed_shared_statement_line_variants": [
+          []
+        ],
+        "exclusive_statement_line_variants": [
+          []
+        ],
+        "shared_statement_line_variants": [
+          []
+        ],
+        "condition_anchor_span": null,
+        "condition_anchor_kind": null,
+        "line_interval": null,
+        "interval_kind": null,
+        "normalized_anchor_span": null,
+        "support_count": 1,
+        "best_raw_rank": 8,
+        "raw_ranks": [
+          8
+        ],
+        "raw_edge_ids": [],
+        "representative": {
+          "rank": 8,
+          "risk_score": 0.25,
+          "from_line": 53,
+          "from_condition": "d2 > d1 + w12",
+          "outcome": "true",
+          "to_line": 54,
+          "to_condition": "d0 > d2 + 4",
+          "statement_lines": [
+            53
+          ],
+          "region_size": 1,
+          "location_basis": "statement_lines"
+        },
+        "risk_score": 0.25,
+        "base_risk_score": 0.25,
+        "exec_count": 2,
+        "fail_count": 1,
+        "pass_count": 1,
+        "failure_density": 0.5,
+        "min_exec_count": 2,
+        "min_fail_count": 1,
+        "min_pass_count": 1,
+        "min_failure_density": 0.5,
+        "rank": 8
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{"type":"COND","line":5,"kind":"if","order":1,"expr":"layer < 0","value":false}
+{"type":"COND","line":5,"kind":"if","order":2,"expr":"layer > 3","value":false}
+{"type":"COND","line":5,"kind":"if","order":3,"expr":"upDelta < -2","value":false}
+{"type":"COND","line":5,"kind":"if","order":4,"expr":"upDelta > 2","value":false}
+{"type":"COND","line":5,"kind":"if","order":5,"expr":"downDelta < -2","value":false}
+{"type":"COND","line":5,"kind":"if","order":6,"expr":"downDelta > 2","value":false}
+{"type":"COND","line":5,"kind":"if","order":7,"expr":"separation < 0","value":false}
+{"type":"COND","line":5,"kind":"if","order":8,"expr":"separation > 2","value":false}
+{"type":"ASSIGN","line":6,"kind":"var_decl","target":"alim","rhs":"740","value":"740"}
+{"type":"COND","line":7,"kind":"if","order":1,"expr":"layer == 0","value":false}
+{"type":"COND","line":7,"kind":"if","order":1,"expr":"layer == 1","value":false}
+{"type":"COND","line":7,"kind":"if","order":1,"expr":"layer == 2","value":true}
+{"type":"ASSIGN","line":7,"kind":"assign","target":"alim","rhs":"640","value":"640"}
+{"type":"ASSIGN","line":8,"kind":"var_decl","target":"up","rhs":"alim + upDelta * 100","value":"640"}
+{"type":"ASSIGN","line":9,"kind":"var_decl","target":"down","rhs":"alim + downDelta * 100","value":"740"}
+{"type":"ASSIGN","line":10,"kind":"var_decl","target":"sep","rhs":"500 + separation * 100","value":"600"}
+{"type":"ASSIGN","line":11,"kind":"var_decl","target":"biased","rhs":"up","value":"640"}
+{"type":"COND","line":12,"kind":"if","order":1,"expr":"inhibit","value":false}
+{"type":"ASSIGN","line":13,"kind":"var_decl","target":"preferred","rhs":"0","value":"0"}
+{"type":"COND","line":14,"kind":"if","order":1,"expr":"biased > down","value":false}
+{"type":"COND","line":15,"kind":"if","order":1,"expr":"preferred != 0","value":false}
+{"type":"COND","line":18,"kind":"if","order":1,"expr":"sep >= 600","value":true}
+{"type":"COND","line":20,"kind":"if","order":1,"expr":"up >= alim","value":true}
+{"type":"COND","line":21,"kind":"if","order":1,"expr":"above","value":true}
+{"type":"RETURN","line":21,"target":"return_value","rhs":"1","value":"1"}

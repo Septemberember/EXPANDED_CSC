@@ -1,0 +1,1388 @@
+=======================================================
+  CSC Engine — Test Case Generator
+=======================================================
+  Source:       /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfSortedInsertion/SpfSortedInsertion.java
+  Mode:         Original CSC
+  Max iter:     2000
+  Strategy:     sequential
+  Session:      extpaper_rq1_original_SpfSortedInsertion_1792783098233769000
+  CCT render:   no
+
+[1/3] Auto-instrumenting Java source...
+  [instrument] /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfSortedInsertion/SpfSortedInsertion.java -> /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SpfSortedInsertion/SpfSortedInsertion_instrumented.java
+  Class:        SpfSortedInsertion
+  Params:       {'return_value': 'int', 'a': 'int', 'b': 'int', 'c': 'int', 'value': 'int'}
+  Run log:      csc_tmp/extpaper_rq1_original_SpfSortedInsertion_1792783098233769000/SpfSortedInsertion/run_log.jsonl
+
+[2/3] Compiling...
+  [compile] SpfSortedInsertion.class
+[3/3] CSC Loop
+---------------------------------------------
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+{Ø}
+-----------------------------
+
+
+  [Iter 1] CCT not initialized — running bootstrap
+  Bootstrap inputs: {'a': 0, 'b': 0, 'c': 0, 'value': 0}
+  Execution path: 11 steps, 9 conditions
+CCT DOT saved to: csc_tmp/extpaper_rq1_original_SpfSortedInsertion_1792783098233769000/SpfSortedInsertion/SpfSortedInsertion_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < a @L21 (WP: b < a, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < b @L21 (WP: c < b, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: value < 0 @L21 (WP: value < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: value > 9 @L21 (WP: value > 9, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: value <= first @L23 (WP: value <= (a), Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0, value=0)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 2] Target: value <= first -> F (cnt=1)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < a)) && (!(b > 9)) && (!(c < b)) && (!(c > 9)) && (!(value < 0)) && (!(value > 9)) && (!(value <= (a)))
+  -> SAT: {'a': '0', 'b': '0', 'c': '8', 'value': '1'}
+  Execution path: 22 steps, 16 conditions
+CCT DOT saved to: csc_tmp/extpaper_rq1_original_SpfSortedInsertion_1792783098233769000/SpfSortedInsertion/SpfSortedInsertion_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < a @L21 (WP: b < a, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < b @L21 (WP: c < b, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: value < 0 @L21 (WP: value < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: value > 9 @L21 (WP: value > 9, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: value <= first @L23 (WP: value <= (a), Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: (1) < 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (b) < value, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L28 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: ((1) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (c) < value, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: ((1) + 1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L31 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=8, value=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0, value=0)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 3] Target: cursor < 3 -> F (cnt=1)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < a)) && (!(b > 9)) && (!(c < b)) && (!(c > 9)) && (!(value < 0)) && (!(value > 9)) && (!(value <= (a))) && (!((1) < 3))
+CCT DOT saved to: csc_tmp/extpaper_rq1_original_SpfSortedInsertion_1792783098233769000/SpfSortedInsertion/SpfSortedInsertion_cct.dot
+  -> INFEASIBLE (UNSAT)
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < a @L21 (WP: b < a, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < b @L21 (WP: c < b, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: value < 0 @L21 (WP: value < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: value > 9 @L21 (WP: value > 9, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: value <= first @L23 (WP: value <= (a), Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: (1) < 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (b) < value, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L28 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: ((1) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (c) < value, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: ((1) + 1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L31 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=8, value=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0, value=0)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 4] Target: following < value -> F (cnt=1)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < a)) && (!(b > 9)) && (!(c < b)) && (!(c > 9)) && (!(value < 0)) && (!(value > 9)) && (!(value <= (a))) && ((1) < 3) && (!((b) < value))
+  -> SAT: {'a': '0', 'b': '1', 'c': '9', 'value': '1'}
+  Execution path: 16 steps, 12 conditions
+CCT DOT saved to: csc_tmp/extpaper_rq1_original_SpfSortedInsertion_1792783098233769000/SpfSortedInsertion/SpfSortedInsertion_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < a @L21 (WP: b < a, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < b @L21 (WP: c < b, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: value < 0 @L21 (WP: value < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: value > 9 @L21 (WP: value > 9, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: value <= first @L23 (WP: value <= (a), Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: (1) < 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (b) < value, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: (1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=1, c=9, value=1)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L28 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: ((1) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (c) < value, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: ((1) + 1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L31 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=8, value=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0, value=0)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 5] Target: cursor == 1 -> F (cnt=1)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < a)) && (!(b > 9)) && (!(c < b)) && (!(c > 9)) && (!(value < 0)) && (!(value > 9)) && (!(value <= (a))) && ((1) < 3) && (!((b) < value)) && (!((1) == 1))
+CCT DOT saved to: csc_tmp/extpaper_rq1_original_SpfSortedInsertion_1792783098233769000/SpfSortedInsertion/SpfSortedInsertion_cct.dot
+  -> INFEASIBLE (UNSAT)
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < a @L21 (WP: b < a, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < b @L21 (WP: c < b, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: value < 0 @L21 (WP: value < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: value > 9 @L21 (WP: value > 9, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: value <= first @L23 (WP: value <= (a), Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: (1) < 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (b) < value, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: (1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=1, c=9, value=1)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L28 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: ((1) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (c) < value, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: ((1) + 1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L31 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=8, value=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0, value=0)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 6] Target: cursor == 2 -> F (cnt=1)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < a)) && (!(b > 9)) && (!(c < b)) && (!(c > 9)) && (!(value < 0)) && (!(value > 9)) && (!(value <= (a))) && ((1) < 3) && ((b) < value) && (!(((1) + 1) == 2))
+CCT DOT saved to: csc_tmp/extpaper_rq1_original_SpfSortedInsertion_1792783098233769000/SpfSortedInsertion/SpfSortedInsertion_cct.dot
+  -> INFEASIBLE (UNSAT)
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < a @L21 (WP: b < a, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < b @L21 (WP: c < b, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: value < 0 @L21 (WP: value < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: value > 9 @L21 (WP: value > 9, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: value <= first @L23 (WP: value <= (a), Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: (1) < 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (b) < value, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: (1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=1, c=9, value=1)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L28 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: ((1) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (c) < value, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: ((1) + 1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L31 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=8, value=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0, value=0)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 7] Target: cursor < 3 -> F (cnt=2)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < a)) && (!(b > 9)) && (!(c < b)) && (!(c > 9)) && (!(value < 0)) && (!(value > 9)) && (!(value <= (a))) && ((1) < 3) && ((b) < value) && (((1) + 1) == 2) && (!(((1) + 1) < 3))
+CCT DOT saved to: csc_tmp/extpaper_rq1_original_SpfSortedInsertion_1792783098233769000/SpfSortedInsertion/SpfSortedInsertion_cct.dot
+  -> INFEASIBLE (UNSAT)
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < a @L21 (WP: b < a, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < b @L21 (WP: c < b, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: value < 0 @L21 (WP: value < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: value > 9 @L21 (WP: value > 9, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: value <= first @L23 (WP: value <= (a), Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: (1) < 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (b) < value, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: (1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=1, c=9, value=1)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L28 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: ((1) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (c) < value, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: ((1) + 1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L31 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=8, value=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0, value=0)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 8] Target: cursor == 2 -> F (cnt=1)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < a)) && (!(b > 9)) && (!(c < b)) && (!(c > 9)) && (!(value < 0)) && (!(value > 9)) && (!(value <= (a))) && ((1) < 3) && ((b) < value) && (((1) + 1) == 2) && (((1) + 1) < 3) && (!((c) < value)) && (!(((1) + 1) == 1)) && (!(((1) + 1) == 2))
+CCT DOT saved to: csc_tmp/extpaper_rq1_original_SpfSortedInsertion_1792783098233769000/SpfSortedInsertion/SpfSortedInsertion_cct.dot
+  -> INFEASIBLE (UNSAT)
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < a @L21 (WP: b < a, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < b @L21 (WP: c < b, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: value < 0 @L21 (WP: value < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: value > 9 @L21 (WP: value > 9, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: value <= first @L23 (WP: value <= (a), Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: (1) < 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (b) < value, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: (1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=1, c=9, value=1)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L28 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: ((1) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (c) < value, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: ((1) + 1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L31 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=8, value=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0, value=0)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 9] Target: cursor == 1 -> T (cnt=1)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < a)) && (!(b > 9)) && (!(c < b)) && (!(c > 9)) && (!(value < 0)) && (!(value > 9)) && (!(value <= (a))) && ((1) < 3) && ((b) < value) && (((1) + 1) == 2) && (((1) + 1) < 3) && (!((c) < value)) && (((1) + 1) == 1)
+CCT DOT saved to: csc_tmp/extpaper_rq1_original_SpfSortedInsertion_1792783098233769000/SpfSortedInsertion/SpfSortedInsertion_cct.dot
+  -> INFEASIBLE (UNSAT)
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < a @L21 (WP: b < a, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < b @L21 (WP: c < b, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: value < 0 @L21 (WP: value < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: value > 9 @L21 (WP: value > 9, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: value <= first @L23 (WP: value <= (a), Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: (1) < 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (b) < value, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: (1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=1, c=9, value=1)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L28 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: ((1) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (c) < value, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: ((1) + 1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L31 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=8, value=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0, value=0)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 10] Target: value > 9 -> T (cnt=1)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < a)) && (!(b > 9)) && (!(c < b)) && (!(c > 9)) && (!(value < 0)) && (value > 9)
+  -> SAT: {'a': '0', 'b': '1', 'c': '8', 'value': '10'}
+  Execution path: 9 steps, 8 conditions
+CCT DOT saved to: csc_tmp/extpaper_rq1_original_SpfSortedInsertion_1792783098233769000/SpfSortedInsertion/SpfSortedInsertion_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < a @L21 (WP: b < a, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < b @L21 (WP: c < b, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: value < 0 @L21 (WP: value < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: value > 9 @L21 (WP: value > 9, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: value <= first @L23 (WP: value <= (a), Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: (1) < 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (b) < value, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: (1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=1, c=9, value=1)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L28 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: ((1) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (c) < value, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: ((1) + 1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L31 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=8, value=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0, value=0)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_10'}  inputs: tc_10(a=0, b=1, c=8, value=10)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 11] Target: value < 0 -> T (cnt=1)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < a)) && (!(b > 9)) && (!(c < b)) && (!(c > 9)) && (value < 0)
+  -> SAT: {'a': '0', 'b': '0', 'c': '8', 'value': '-32768'}
+  Execution path: 8 steps, 7 conditions
+CCT DOT saved to: csc_tmp/extpaper_rq1_original_SpfSortedInsertion_1792783098233769000/SpfSortedInsertion/SpfSortedInsertion_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < a @L21 (WP: b < a, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < b @L21 (WP: c < b, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: value < 0 @L21 (WP: value < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: value > 9 @L21 (WP: value > 9, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: value <= first @L23 (WP: value <= (a), Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: (1) < 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (b) < value, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: (1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=1, c=9, value=1)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L28 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: ((1) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (c) < value, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: ((1) + 1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L31 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=8, value=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0, value=0)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_10'}  inputs: tc_10(a=0, b=1, c=8, value=10)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_11'}  inputs: tc_11(a=0, b=0, c=8, value=-32768)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 12] Target: c > 9 -> T (cnt=1)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < a)) && (!(b > 9)) && (!(c < b)) && (c > 9)
+  -> SAT: {'a': '0', 'b': '0', 'c': '14', 'value': '0'}
+  Execution path: 7 steps, 6 conditions
+CCT DOT saved to: csc_tmp/extpaper_rq1_original_SpfSortedInsertion_1792783098233769000/SpfSortedInsertion/SpfSortedInsertion_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < a @L21 (WP: b < a, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < b @L21 (WP: c < b, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: value < 0 @L21 (WP: value < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: value > 9 @L21 (WP: value > 9, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: value <= first @L23 (WP: value <= (a), Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: (1) < 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (b) < value, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: (1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=1, c=9, value=1)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L28 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: ((1) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (c) < value, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: ((1) + 1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L31 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=8, value=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0, value=0)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_10'}  inputs: tc_10(a=0, b=1, c=8, value=10)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_11'}  inputs: tc_11(a=0, b=0, c=8, value=-32768)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_12'}  inputs: tc_12(a=0, b=0, c=14, value=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 13] Target: c < b -> T (cnt=1)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < a)) && (!(b > 9)) && (c < b)
+  -> SAT: {'a': '0', 'b': '7', 'c': '0', 'value': '0'}
+  Execution path: 6 steps, 5 conditions
+CCT DOT saved to: csc_tmp/extpaper_rq1_original_SpfSortedInsertion_1792783098233769000/SpfSortedInsertion/SpfSortedInsertion_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < a @L21 (WP: b < a, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < b @L21 (WP: c < b, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: value < 0 @L21 (WP: value < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: value > 9 @L21 (WP: value > 9, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: value <= first @L23 (WP: value <= (a), Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: (1) < 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (b) < value, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: (1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=1, c=9, value=1)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L28 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: ((1) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (c) < value, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: ((1) + 1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L31 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=8, value=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0, value=0)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_10'}  inputs: tc_10(a=0, b=1, c=8, value=10)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_11'}  inputs: tc_11(a=0, b=0, c=8, value=-32768)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_12'}  inputs: tc_12(a=0, b=0, c=14, value=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_13'}  inputs: tc_13(a=0, b=7, c=0, value=0)
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 14] Target: b > 9 -> T (cnt=1)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < a)) && (b > 9)
+  -> SAT: {'a': '0', 'b': '14', 'c': '0', 'value': '0'}
+  Execution path: 5 steps, 4 conditions
+CCT DOT saved to: csc_tmp/extpaper_rq1_original_SpfSortedInsertion_1792783098233769000/SpfSortedInsertion/SpfSortedInsertion_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < a @L21 (WP: b < a, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < b @L21 (WP: c < b, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: value < 0 @L21 (WP: value < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: value > 9 @L21 (WP: value > 9, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: value <= first @L23 (WP: value <= (a), Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: (1) < 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (b) < value, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: (1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=1, c=9, value=1)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L28 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: ((1) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (c) < value, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: ((1) + 1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L31 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=8, value=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0, value=0)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_10'}  inputs: tc_10(a=0, b=1, c=8, value=10)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_11'}  inputs: tc_11(a=0, b=0, c=8, value=-32768)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_12'}  inputs: tc_12(a=0, b=0, c=14, value=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_13'}  inputs: tc_13(a=0, b=7, c=0, value=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_14'}  inputs: tc_14(a=0, b=14, c=0, value=0)
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 15] Target: b < a -> T (cnt=1)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (b < a)
+  -> SAT: {'a': '1', 'b': '0', 'c': '0', 'value': '0'}
+  Execution path: 4 steps, 3 conditions
+CCT DOT saved to: csc_tmp/extpaper_rq1_original_SpfSortedInsertion_1792783098233769000/SpfSortedInsertion/SpfSortedInsertion_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < a @L21 (WP: b < a, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < b @L21 (WP: c < b, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: value < 0 @L21 (WP: value < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: value > 9 @L21 (WP: value > 9, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: value <= first @L23 (WP: value <= (a), Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: (1) < 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (b) < value, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: (1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=1, c=9, value=1)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L28 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: ((1) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (c) < value, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: ((1) + 1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L31 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=8, value=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0, value=0)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_10'}  inputs: tc_10(a=0, b=1, c=8, value=10)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_11'}  inputs: tc_11(a=0, b=0, c=8, value=-32768)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_12'}  inputs: tc_12(a=0, b=0, c=14, value=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_13'}  inputs: tc_13(a=0, b=7, c=0, value=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_14'}  inputs: tc_14(a=0, b=14, c=0, value=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_15'}  inputs: tc_15(a=1, b=0, c=0, value=0)
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 16] Target: a > 9 -> T (cnt=1)
+  Path constraint: (!(a < 0)) && (a > 9)
+  -> SAT: {'a': '16384', 'b': '0', 'c': '0', 'value': '0'}
+  Execution path: 3 steps, 2 conditions
+CCT DOT saved to: csc_tmp/extpaper_rq1_original_SpfSortedInsertion_1792783098233769000/SpfSortedInsertion/SpfSortedInsertion_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < a @L21 (WP: b < a, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < b @L21 (WP: c < b, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: value < 0 @L21 (WP: value < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: value > 9 @L21 (WP: value > 9, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: value <= first @L23 (WP: value <= (a), Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: (1) < 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (b) < value, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: (1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=1, c=9, value=1)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L28 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: ((1) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (c) < value, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: ((1) + 1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L31 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=8, value=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0, value=0)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_10'}  inputs: tc_10(a=0, b=1, c=8, value=10)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_11'}  inputs: tc_11(a=0, b=0, c=8, value=-32768)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_12'}  inputs: tc_12(a=0, b=0, c=14, value=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_13'}  inputs: tc_13(a=0, b=7, c=0, value=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_14'}  inputs: tc_14(a=0, b=14, c=0, value=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_15'}  inputs: tc_15(a=1, b=0, c=0, value=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_16'}  inputs: tc_16(a=16384, b=0, c=0, value=0)
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 17] Target: a < 0 -> T (cnt=1)
+  Path constraint: (a < 0)
+  -> SAT: {'a': '-32768', 'b': '0', 'c': '0', 'value': '0'}
+  Execution path: 2 steps, 1 conditions
+CCT DOT saved to: csc_tmp/extpaper_rq1_original_SpfSortedInsertion_1792783098233769000/SpfSortedInsertion/SpfSortedInsertion_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=False, range_bound=200]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < a @L21 (WP: b < a, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < b @L21 (WP: c < b, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: value < 0 @L21 (WP: value < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: value > 9 @L21 (WP: value > 9, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: value <= first @L23 (WP: value <= (a), Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: (1) < 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (b) < value, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: (1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=1, c=9, value=1)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L28 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor < 3 @L26 (WP: ((1) + 1) < 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: following < value @L26 (WP: (c) < value, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 1 @L30 (WP: ((1) + 1) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: cursor == 2 @L31 (WP: ((1) + 1) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=8, value=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(a=0, b=0, c=0, value=0)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_10'}  inputs: tc_10(a=0, b=1, c=8, value=10)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_11'}  inputs: tc_11(a=0, b=0, c=8, value=-32768)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_12'}  inputs: tc_12(a=0, b=0, c=14, value=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_13'}  inputs: tc_13(a=0, b=7, c=0, value=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_14'}  inputs: tc_14(a=0, b=14, c=0, value=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_15'}  inputs: tc_15(a=1, b=0, c=0, value=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_16'}  inputs: tc_16(a=16384, b=0, c=0, value=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_17'}  inputs: tc_17(a=-32768, b=0, c=0, value=0)
+-----------------------------
+
+
+  [Iter 18] CCT is FULL — all branches covered!
+CCT DOT saved to: csc_tmp/extpaper_rq1_original_SpfSortedInsertion_1792783098233769000/SpfSortedInsertion/SpfSortedInsertion_cct.dot
+
+=======================================================
+  Done! 17 test cases generated in 18 iterations.
+=======================================================
+CCT DOT saved to: csc_tmp/extpaper_rq1_original_SpfSortedInsertion_1792783098233769000/SpfSortedInsertion/SpfSortedInsertion_cct.dot
+
+Generated Test Cases:
+---------------------------------------------
+  [BOOTSTRAP]  (bootstrap)
+  tc_02  [SAT]  a=0, b=0, c=8, value=1
+  [INFEASIBLE]
+  tc_04  [SAT]  a=0, b=1, c=9, value=1
+  [INFEASIBLE]
+  [INFEASIBLE]
+  [INFEASIBLE]
+  [INFEASIBLE]
+  [INFEASIBLE]
+  tc_10  [SAT]  a=0, b=1, c=8, value=10
+  tc_11  [SAT]  a=0, b=0, c=8, value=-32768
+  tc_12  [SAT]  a=0, b=0, c=14, value=0
+  tc_13  [SAT]  a=0, b=7, c=0, value=0
+  tc_14  [SAT]  a=0, b=14, c=0, value=0
+  tc_15  [SAT]  a=1, b=0, c=0, value=0
+  tc_16  [SAT]  a=16384, b=0, c=0, value=0
+  tc_17  [SAT]  a=-32768, b=0, c=0, value=0
+
+Timing Summary (ms):
+---------------------------------------------
+  solver_time_ms: 33
+  compile_time_ms: 2633
+  java_exec_time_ms: 616
+  path_log_parse_time_ms: 0
+  cct_path_build_time_ms: 0
+  cct_merge_time_ms: 0
+
+Test cases written to: csc_tmp/extpaper_rq1_original_SpfSortedInsertion_1792783098233769000/SpfSortedInsertion/testcases.json
+
+CCT visualization:
+  DOT: csc_tmp/extpaper_rq1_original_SpfSortedInsertion_1792783098233769000/SpfSortedInsertion/SpfSortedInsertion_cct.dot
+  Stats: csc_tmp/extpaper_rq1_original_SpfSortedInsertion_1792783098233769000/SpfSortedInsertion/cct_stats.json
+  Counts: nodes=34, leaves=17, covered=11, infeasible=6, out_of_range=0, expanded=0, truncated=0
+  Render script: csc_tmp/extpaper_rq1_original_SpfSortedInsertion_1792783098233769000/SpfSortedInsertion/render_cct.sh
+  (render later with: csc_tmp/extpaper_rq1_original_SpfSortedInsertion_1792783098233769000/SpfSortedInsertion/render_cct.sh)
+
+Run log:
+  JSONL: csc_tmp/extpaper_rq1_original_SpfSortedInsertion_1792783098233769000/SpfSortedInsertion/run_log.jsonl

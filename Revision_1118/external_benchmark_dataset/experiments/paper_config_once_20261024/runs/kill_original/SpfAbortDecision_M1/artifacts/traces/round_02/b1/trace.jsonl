@@ -1,0 +1,12 @@
+{"type":"COND","line":21,"kind":"if","order":1,"expr":"altitudeOffset <= -1000","value":false}
+{"type":"COND","line":21,"kind":"if","order":2,"expr":"altitudeOffset > 1000","value":false}
+{"type":"ASSIGN","line":22,"kind":"var_decl","target":"failure","rhs":"0","value":"0"}
+{"type":"ASSIGN","line":23,"kind":"var_decl","target":"state","rhs":"0","value":"0"}
+{"type":"ASSIGN","line":24,"kind":"var_decl","target":"selected","rhs":"false","value":"false"}
+{"type":"COND","line":25,"kind":"if","order":1,"expr":"fired","value":true}
+{"type":"COND","line":26,"kind":"if","order":1,"expr":"altitudeOffset <= 0","value":false}
+{"type":"COND","line":30,"kind":"if","order":1,"expr":"altitudeOffset >= 0","value":true}
+{"type":"COND","line":31,"kind":"if","order":1,"expr":"selected","value":false}
+{"type":"ASSIGN","line":32,"kind":"assign","target":"state","rhs":"3","value":"3"}
+{"type":"ASSIGN","line":33,"kind":"assign","target":"selected","rhs":"true","value":"true"}
+{"type":"RETURN","line":35,"target":"return_value","rhs":"failure + state","value":"3"}

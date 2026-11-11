@@ -1,0 +1,608 @@
+{
+  "summary": {
+    "strategy": "folded_source_candidate_v1",
+    "scoring_strategy": "coverage_x_purity",
+    "F_total": 2,
+    "P_total": 10,
+    "condition_candidates": 8,
+    "seed_e_candidates": 4,
+    "seed_s_candidates": 0,
+    "edge_partition_candidates": 4,
+    "unstable_segment_variants": 2,
+    "total_edge_transitions": 28
+  },
+  "condition_node_ranking": [
+    {
+      "candidate_id": "condition_9_level == 1",
+      "kind": "condition",
+      "F_c": 2,
+      "P_c": 2,
+      "exec_count": 4,
+      "fail_count": 2,
+      "pass_count": 2,
+      "failure_density": 0.5,
+      "risk_score": 0.5,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.T.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 9,
+      "condition": "level == 1",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 9,
+      "line_end": 9,
+      "rank": 1
+    },
+    {
+      "candidate_id": "condition_9_level == 2",
+      "kind": "condition",
+      "F_c": 2,
+      "P_c": 4,
+      "exec_count": 6,
+      "fail_count": 2,
+      "pass_count": 4,
+      "failure_density": 0.3333333333333333,
+      "risk_score": 0.3333333333333333,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.T"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 9,
+      "condition": "level == 2",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 9,
+      "line_end": 9,
+      "rank": 2
+    },
+    {
+      "candidate_id": "condition_12_pump",
+      "kind": "condition",
+      "F_c": 2,
+      "P_c": 4,
+      "exec_count": 6,
+      "fail_count": 2,
+      "pass_count": 4,
+      "failure_density": 0.3333333333333333,
+      "risk_score": 0.3333333333333333,
+      "occurrence_count": 4,
+      "representative_count": 4,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.T"
+        },
+        {
+          "node_id": "root.F.F.T.F.F.T"
+        },
+        {
+          "node_id": "root.F.F.T.F.T.T"
+        },
+        {
+          "node_id": "root.F.F.T.T.T"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 12,
+      "condition": "pump",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 12,
+      "line_end": 12,
+      "rank": 3
+    },
+    {
+      "candidate_id": "condition_8_pump",
+      "kind": "condition",
+      "F_c": 2,
+      "P_c": 8,
+      "exec_count": 10,
+      "fail_count": 2,
+      "pass_count": 8,
+      "failure_density": 0.2,
+      "risk_score": 0.2,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 8,
+      "condition": "pump",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 8,
+      "line_end": 8,
+      "rank": 4
+    },
+    {
+      "candidate_id": "condition_11_active",
+      "kind": "condition",
+      "F_c": 2,
+      "P_c": 8,
+      "exec_count": 10,
+      "fail_count": 2,
+      "pass_count": 8,
+      "failure_density": 0.2,
+      "risk_score": 0.2,
+      "occurrence_count": 4,
+      "representative_count": 4,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F"
+        },
+        {
+          "node_id": "root.F.F.T.F.F"
+        },
+        {
+          "node_id": "root.F.F.T.F.T"
+        },
+        {
+          "node_id": "root.F.F.T.T"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 11,
+      "condition": "active",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 11,
+      "line_end": 11,
+      "rank": 5
+    },
+    {
+      "candidate_id": "condition_21_pump",
+      "kind": "condition",
+      "F_c": 2,
+      "P_c": 8,
+      "exec_count": 10,
+      "fail_count": 2,
+      "pass_count": 8,
+      "failure_density": 0.2,
+      "risk_score": 0.2,
+      "occurrence_count": 10,
+      "representative_count": 10,
+      "representative_contexts": [
+        {
+          "node_id": "root.F.F.F.F"
+        },
+        {
+          "node_id": "root.F.F.F.T.F.F.F.F.F"
+        },
+        {
+          "node_id": "root.F.F.F.T.F.F.F.F.T.F"
+        },
+        {
+          "node_id": "root.F.F.F.T.F.T"
+        },
+        {
+          "node_id": "root.F.F.T.F.F.F"
+        },
+        {
+          "node_id": "root.F.F.T.F.F.T.T"
+        },
+        {
+          "node_id": "root.F.F.T.F.T.F"
+        },
+        {
+          "node_id": "root.F.F.T.F.T.T.T"
+        },
+        {
+          "node_id": "root.F.F.T.T.F"
+        },
+        {
+          "node_id": "root.F.F.T.T.T.T"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 21,
+      "condition": "pump",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 21,
+      "line_end": 21,
+      "rank": 6
+    },
+    {
+      "candidate_id": "condition_5_water > 2",
+      "kind": "condition",
+      "F_c": 2,
+      "P_c": 9,
+      "exec_count": 11,
+      "fail_count": 2,
+      "pass_count": 9,
+      "failure_density": 0.18181818181818182,
+      "risk_score": 0.18181818181818182,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root.F"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 5,
+      "condition": "water > 2",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 5,
+      "line_end": 5,
+      "rank": 7
+    },
+    {
+      "candidate_id": "condition_5_water < 0",
+      "kind": "condition",
+      "F_c": 2,
+      "P_c": 10,
+      "exec_count": 12,
+      "fail_count": 2,
+      "pass_count": 10,
+      "failure_density": 0.16666666666666666,
+      "risk_score": 0.16666666666666666,
+      "occurrence_count": 1,
+      "representative_count": 1,
+      "representative_contexts": [
+        {
+          "node_id": "root"
+        }
+      ],
+      "location_basis": "condition_line",
+      "line": 5,
+      "condition": "water < 0",
+      "statement_lines": [],
+      "region_size": 1,
+      "line_start": 5,
+      "line_end": 5,
+      "rank": 8
+    }
+  ],
+  "interval_rankings": {
+    "folded_seed_e": [
+      {
+        "candidate_id": "seed_e_seed_e_12_20",
+        "kind": "seed_e",
+        "F_c": 2,
+        "P_c": 2,
+        "exec_count": 4,
+        "fail_count": 2,
+        "pass_count": 2,
+        "failure_density": 0.5,
+        "risk_score": 0.5,
+        "occurrence_count": 4,
+        "representative_count": 4,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.F.F.T.F.TRUE",
+            "representative_occurrence": "seed_e_root.F.F.F.T.F.TRUE"
+          },
+          {
+            "edge_id": "root.F.F.T.F.F.T.TRUE",
+            "representative_occurrence": "seed_e_root.F.F.T.F.F.T.TRUE"
+          },
+          {
+            "edge_id": "root.F.F.T.F.T.T.TRUE",
+            "representative_occurrence": "seed_e_root.F.F.T.F.T.T.TRUE"
+          },
+          {
+            "edge_id": "root.F.F.T.T.T.TRUE",
+            "representative_occurrence": "seed_e_root.F.F.T.T.T.TRUE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          12,
+          20
+        ],
+        "region_size": 2,
+        "line_start": 12,
+        "line_end": 20,
+        "from_line": 12,
+        "from_condition": "methane",
+        "outcome": "true",
+        "to_line": 21,
+        "to_condition": "pump",
+        "rank": 1
+      },
+      {
+        "candidate_id": "seed_e_seed_e_22",
+        "kind": "seed_e",
+        "F_c": 2,
+        "P_c": 4,
+        "exec_count": 6,
+        "fail_count": 2,
+        "pass_count": 4,
+        "failure_density": 0.3333333333333333,
+        "risk_score": 0.3333333333333333,
+        "occurrence_count": 6,
+        "representative_count": 6,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.F.F.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.F.T.F.F.F.F.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.T.F.F.F.F.F.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.F.T.F.T.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.T.F.T.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.T.F.F.T.T.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.T.F.F.T.T.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.T.F.T.T.T.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.T.F.T.T.T.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.T.T.T.T.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.T.T.T.T.FALSE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          22
+        ],
+        "region_size": 1,
+        "line_start": 22,
+        "line_end": 22,
+        "from_line": 21,
+        "from_condition": "pump",
+        "outcome": "false",
+        "to_line": null,
+        "to_condition": null,
+        "rank": 2
+      },
+      {
+        "candidate_id": "seed_e_seed_e_6_7",
+        "kind": "seed_e",
+        "F_c": 2,
+        "P_c": 8,
+        "exec_count": 10,
+        "fail_count": 2,
+        "pass_count": 8,
+        "failure_density": 0.2,
+        "risk_score": 0.2,
+        "occurrence_count": 1,
+        "representative_count": 1,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.FALSE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          6,
+          7
+        ],
+        "region_size": 2,
+        "line_start": 6,
+        "line_end": 7,
+        "from_line": 5,
+        "from_condition": "water > 2",
+        "outcome": "false",
+        "to_line": 8,
+        "to_condition": "pump",
+        "rank": 3
+      },
+      {
+        "candidate_id": "seed_e_seed_e_9",
+        "kind": "seed_e",
+        "F_c": 1,
+        "P_c": 3,
+        "exec_count": 4,
+        "fail_count": 1,
+        "pass_count": 3,
+        "failure_density": 0.25,
+        "risk_score": 0.125,
+        "occurrence_count": 2,
+        "representative_count": 2,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.F.T.F.TRUE",
+            "representative_occurrence": "seed_e_root.F.F.T.F.TRUE"
+          },
+          {
+            "edge_id": "root.F.F.T.TRUE",
+            "representative_occurrence": "seed_e_root.F.F.T.TRUE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          9
+        ],
+        "region_size": 1,
+        "line_start": 9,
+        "line_end": 9,
+        "from_line": 9,
+        "from_condition": "level == 1",
+        "outcome": "true",
+        "to_line": 11,
+        "to_condition": "active",
+        "rank": 4
+      }
+    ],
+    "folded_seed_s": [],
+    "folded_edge_partition": [
+      {
+        "candidate_id": "seed_e_seed_e_12_20",
+        "kind": "seed_e",
+        "F_c": 2,
+        "P_c": 2,
+        "exec_count": 4,
+        "fail_count": 2,
+        "pass_count": 2,
+        "failure_density": 0.5,
+        "risk_score": 0.5,
+        "occurrence_count": 4,
+        "representative_count": 4,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.F.F.T.F.TRUE",
+            "representative_occurrence": "seed_e_root.F.F.F.T.F.TRUE"
+          },
+          {
+            "edge_id": "root.F.F.T.F.F.T.TRUE",
+            "representative_occurrence": "seed_e_root.F.F.T.F.F.T.TRUE"
+          },
+          {
+            "edge_id": "root.F.F.T.F.T.T.TRUE",
+            "representative_occurrence": "seed_e_root.F.F.T.F.T.T.TRUE"
+          },
+          {
+            "edge_id": "root.F.F.T.T.T.TRUE",
+            "representative_occurrence": "seed_e_root.F.F.T.T.T.TRUE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          12,
+          20
+        ],
+        "region_size": 2,
+        "line_start": 12,
+        "line_end": 20,
+        "from_line": 12,
+        "from_condition": "methane",
+        "outcome": "true",
+        "to_line": 21,
+        "to_condition": "pump",
+        "rank": 1
+      },
+      {
+        "candidate_id": "seed_e_seed_e_22",
+        "kind": "seed_e",
+        "F_c": 2,
+        "P_c": 4,
+        "exec_count": 6,
+        "fail_count": 2,
+        "pass_count": 4,
+        "failure_density": 0.3333333333333333,
+        "risk_score": 0.3333333333333333,
+        "occurrence_count": 6,
+        "representative_count": 6,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.F.F.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.F.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.F.T.F.F.F.F.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.T.F.F.F.F.F.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.F.T.F.T.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.F.T.F.T.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.T.F.F.T.T.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.T.F.F.T.T.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.T.F.T.T.T.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.T.F.T.T.T.FALSE"
+          },
+          {
+            "edge_id": "root.F.F.T.T.T.T.FALSE",
+            "representative_occurrence": "seed_e_root.F.F.T.T.T.T.FALSE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          22
+        ],
+        "region_size": 1,
+        "line_start": 22,
+        "line_end": 22,
+        "from_line": 21,
+        "from_condition": "pump",
+        "outcome": "false",
+        "to_line": null,
+        "to_condition": null,
+        "rank": 2
+      },
+      {
+        "candidate_id": "seed_e_seed_e_6_7",
+        "kind": "seed_e",
+        "F_c": 2,
+        "P_c": 8,
+        "exec_count": 10,
+        "fail_count": 2,
+        "pass_count": 8,
+        "failure_density": 0.2,
+        "risk_score": 0.2,
+        "occurrence_count": 1,
+        "representative_count": 1,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.FALSE",
+            "representative_occurrence": "seed_e_root.F.FALSE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          6,
+          7
+        ],
+        "region_size": 2,
+        "line_start": 6,
+        "line_end": 7,
+        "from_line": 5,
+        "from_condition": "water > 2",
+        "outcome": "false",
+        "to_line": 8,
+        "to_condition": "pump",
+        "rank": 3
+      },
+      {
+        "candidate_id": "seed_e_seed_e_9",
+        "kind": "seed_e",
+        "F_c": 1,
+        "P_c": 3,
+        "exec_count": 4,
+        "fail_count": 1,
+        "pass_count": 3,
+        "failure_density": 0.25,
+        "risk_score": 0.125,
+        "occurrence_count": 2,
+        "representative_count": 2,
+        "representative_contexts": [
+          {
+            "edge_id": "root.F.F.T.F.TRUE",
+            "representative_occurrence": "seed_e_root.F.F.T.F.TRUE"
+          },
+          {
+            "edge_id": "root.F.F.T.TRUE",
+            "representative_occurrence": "seed_e_root.F.F.T.TRUE"
+          }
+        ],
+        "location_basis": "statement_lines",
+        "statement_lines": [
+          9
+        ],
+        "region_size": 1,
+        "line_start": 9,
+        "line_end": 9,
+        "from_line": 9,
+        "from_condition": "level == 1",
+        "outcome": "true",
+        "to_line": 11,
+        "to_condition": "active",
+        "rank": 4
+      }
+    ]
+  }
+}

@@ -1,0 +1,399 @@
+{
+  "mutant_id": "SvTokenIdentifier_M2",
+  "subject": "SvTokenIdentifier",
+  "operator": "ROR",
+  "fault_category": "condition",
+  "loop_bearing": true,
+  "modes": {
+    "original": {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SvTokenIdentifier/SvTokenIdentifier_M2.java",
+        "--mode",
+        "original",
+        "--range-bound",
+        "200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--max-iter",
+        "100",
+        "--session",
+        "extpaper_kill_original_SvTokenIdentifier_M2_1792784550207653000",
+        "--keep-artifacts"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "wall_time_s": 4.262528833991382,
+      "started_at": "2026-10-23T19:42:30.207736+00:00",
+      "finished_at": "2026-10-23T19:42:34.470296+00:00",
+      "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SvTokenIdentifier_M2/generation.stdout",
+      "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SvTokenIdentifier_M2/generation.stderr",
+      "stderr_tail": "",
+      "subject": "SvTokenIdentifier",
+      "class_name": "SvTokenIdentifier_M2",
+      "session": "extpaper_kill_original_SvTokenIdentifier_M2_1792784550207653000",
+      "result_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_original_SvTokenIdentifier_M2_1792784550207653000/SvTokenIdentifier_M2",
+      "folder": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SvTokenIdentifier_M2",
+      "mode": "original",
+      "strategy": "batch",
+      "workers": 4,
+      "max_iter": 100,
+      "range_bound": 200,
+      "tag": "kill_original",
+      "cct": {
+        "total_nodes": 34,
+        "internal_nodes": 19,
+        "leaf_nodes": 15,
+        "empty_leaves": 5,
+        "covered_leaves": 11,
+        "valid_testcases": 11,
+        "infeasible_leaves": 4,
+        "out_of_range_leaves": 0,
+        "truncated_leaves": 1,
+        "expanded_nodes": 0,
+        "expanded_internal_nodes": 0,
+        "expanded_leaves": 0,
+        "tbfv_fault_leaves": 0,
+        "tbfv_failure_cases": 0,
+        "tbfv_failure_count": 0,
+        "max_depth": 15
+      },
+      "testcase_stats": {
+        "generated_records": 11,
+        "executable_records": 11,
+        "trace_backed_records": 11,
+        "status_counts": {
+          "bootstrap": 1,
+          "batch_safe": 10
+        }
+      },
+      "full_event": true,
+      "error_events": [],
+      "fresh": true,
+      "status": "completed",
+      "fingerprint": {
+        "stage": "generation_fingerprint",
+        "schema_version": 1,
+        "condition_identity": "line+normalized-text+occurrence",
+        "testcase_ids_ignored": true,
+        "cct_structure_sha256": "4d244733e0bd89183e72291db86f96a8c8de8b2ec347dcee5ec9412b76e643d9",
+        "cct_semantic_sha256": "fda2225cd6d2d18b1684981ccda34ff2a75b627900624458fafbe91ff860282d",
+        "test_inputs_sha256": "ebc49c2bf282df0128eb60118281653ea13bbd0f54a294b9bd0d36bbcc5f432c",
+        "concrete_input_count": 11
+      },
+      "frontier_mean": 1.1111111111111112,
+      "frontier_max": 3,
+      "verification": {
+        "command": [
+          "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+          "--csc-result-dir",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_original_SvTokenIdentifier_M2_1792784550207653000/SvTokenIdentifier_M2",
+          "--java-file",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SvTokenIdentifier/SvTokenIdentifier_M2.java",
+          "--fsf",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SvTokenIdentifier/FSF/SvTokenIdentifier_FSF.txt",
+          "--output",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SvTokenIdentifier_M2/verification.json"
+        ],
+        "returncode": 0,
+        "timed_out": false,
+        "wall_time_s": 0.18773695797426626,
+        "started_at": "2026-10-23T19:42:34.477188+00:00",
+        "finished_at": "2026-10-23T19:42:34.664932+00:00",
+        "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SvTokenIdentifier_M2/verification.stdout",
+        "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_original/SvTokenIdentifier_M2/verification.stderr",
+        "stderr_tail": "",
+        "summary": {
+          "testcases": 11,
+          "fsf_units": 3,
+          "passed": 10,
+          "failed": 2,
+          "skipped": 21,
+          "unsupported": 0
+        },
+        "status": "completed",
+        "killed": true
+      }
+    },
+    "expanded": {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+        "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SvTokenIdentifier/SvTokenIdentifier_M2.java",
+        "--mode",
+        "expanded",
+        "--range-bound",
+        "200",
+        "--strategy",
+        "batch",
+        "--workers",
+        "4",
+        "--max-iter",
+        "100",
+        "--session",
+        "extpaper_kill_expanded_SvTokenIdentifier_M2_1792784554673811000",
+        "--keep-artifacts"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "wall_time_s": 4.780829583993182,
+      "started_at": "2026-10-23T19:42:34.673893+00:00",
+      "finished_at": "2026-10-23T19:42:39.454754+00:00",
+      "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SvTokenIdentifier_M2/generation.stdout",
+      "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SvTokenIdentifier_M2/generation.stderr",
+      "stderr_tail": "",
+      "subject": "SvTokenIdentifier",
+      "class_name": "SvTokenIdentifier_M2",
+      "session": "extpaper_kill_expanded_SvTokenIdentifier_M2_1792784554673811000",
+      "result_dir": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_expanded_SvTokenIdentifier_M2_1792784554673811000/SvTokenIdentifier_M2",
+      "folder": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SvTokenIdentifier_M2",
+      "mode": "expanded",
+      "strategy": "batch",
+      "workers": 4,
+      "max_iter": 100,
+      "range_bound": 200,
+      "tag": "kill_expanded",
+      "cct": {
+        "total_nodes": 47,
+        "internal_nodes": 23,
+        "leaf_nodes": 24,
+        "empty_leaves": 0,
+        "covered_leaves": 14,
+        "valid_testcases": 14,
+        "infeasible_leaves": 10,
+        "out_of_range_leaves": 0,
+        "truncated_leaves": 0,
+        "expanded_nodes": 8,
+        "expanded_internal_nodes": 4,
+        "expanded_leaves": 4,
+        "tbfv_fault_leaves": 0,
+        "tbfv_failure_cases": 0,
+        "tbfv_failure_count": 0,
+        "max_depth": 16
+      },
+      "testcase_stats": {
+        "generated_records": 14,
+        "executable_records": 14,
+        "trace_backed_records": 14,
+        "status_counts": {
+          "bootstrap": 1,
+          "batch_safe": 13
+        }
+      },
+      "full_event": true,
+      "error_events": [],
+      "fresh": true,
+      "status": "completed",
+      "fingerprint": {
+        "stage": "generation_fingerprint",
+        "schema_version": 1,
+        "condition_identity": "line+normalized-text+occurrence",
+        "testcase_ids_ignored": true,
+        "cct_structure_sha256": "45790adc1b99def6d6d7031357bc3798f6bfb6482af420f055d20659f86c76f7",
+        "cct_semantic_sha256": "4fddc59e9cd97361bb1733ffe8d074cb7b43c399b90ceb02956f571f97f6e49a",
+        "test_inputs_sha256": "1971ef79df64fe67d18f716978d2967647906d81158a048447716900afa551de",
+        "concrete_input_count": 14
+      },
+      "frontier_mean": 1.4444444444444444,
+      "frontier_max": 4,
+      "verification": {
+        "command": [
+          "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+          "--csc-result-dir",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/extpaper_kill_expanded_SvTokenIdentifier_M2_1792784554673811000/SvTokenIdentifier_M2",
+          "--java-file",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SvTokenIdentifier/SvTokenIdentifier_M2.java",
+          "--fsf",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/dataset/SvTokenIdentifier/FSF/SvTokenIdentifier_FSF.txt",
+          "--output",
+          "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SvTokenIdentifier_M2/verification.json"
+        ],
+        "returncode": 0,
+        "timed_out": false,
+        "wall_time_s": 0.29062637500464916,
+        "started_at": "2026-10-23T19:42:39.464611+00:00",
+        "finished_at": "2026-10-23T19:42:39.755243+00:00",
+        "stdout": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SvTokenIdentifier_M2/verification.stdout",
+        "stderr": "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/experiments/paper_config_once_20261024/runs/kill_expanded/SvTokenIdentifier_M2/verification.stderr",
+        "stderr_tail": "",
+        "summary": {
+          "testcases": 14,
+          "fsf_units": 3,
+          "passed": 10,
+          "failed": 5,
+          "skipped": 27,
+          "unsupported": 0
+        },
+        "status": "completed",
+        "killed": true
+      }
+    }
+  },
+  "localization": {
+    "mutant_id": "SvTokenIdentifier_M2",
+    "subject": "SvTokenIdentifier",
+    "operator": "ROR",
+    "fault_kind": "control-flow",
+    "fault_category": "condition",
+    "primary_line": 8,
+    "scoring_strategy": "coverage_x_purity",
+    "status": "evaluated",
+    "F_total": 5,
+    "P_total": 9,
+    "top1_budget": 2,
+    "top1_folded_hit": true,
+    "top1_sfl_hit": false,
+    "top2_budget": 5,
+    "top2_folded_hit": true,
+    "top2_sfl_hit": true,
+    "top3_budget": 7,
+    "top3_folded_hit": true,
+    "top3_sfl_hit": true,
+    "top1_condition_hit": true,
+    "top1_edge_partition_hit": false,
+    "top1_folded_region_lines": [
+      8,
+      19
+    ],
+    "top1_ochiai_hit": false,
+    "top1_ochiai_region_lines": [
+      19,
+      6
+    ],
+    "top1_tarantula_hit": false,
+    "top1_tarantula_region_lines": [
+      19,
+      20
+    ],
+    "top1_dstar_hit": false,
+    "top1_dstar_region_lines": [
+      19,
+      6
+    ],
+    "top1_barinel_hit": false,
+    "top1_barinel_region_lines": [
+      19,
+      20
+    ],
+    "top1_op2_hit": false,
+    "top1_op2_region_lines": [
+      6,
+      7
+    ],
+    "top2_condition_hit": true,
+    "top2_edge_partition_hit": false,
+    "top2_folded_region_lines": [
+      5,
+      6,
+      7,
+      8,
+      19
+    ],
+    "top2_ochiai_hit": true,
+    "top2_ochiai_region_lines": [
+      19,
+      6,
+      7,
+      8,
+      9
+    ],
+    "top2_tarantula_hit": true,
+    "top2_tarantula_region_lines": [
+      19,
+      20,
+      6,
+      7,
+      8
+    ],
+    "top2_dstar_hit": true,
+    "top2_dstar_region_lines": [
+      19,
+      6,
+      7,
+      8,
+      9
+    ],
+    "top2_barinel_hit": true,
+    "top2_barinel_region_lines": [
+      19,
+      20,
+      6,
+      7,
+      8
+    ],
+    "top2_op2_hit": true,
+    "top2_op2_region_lines": [
+      6,
+      7,
+      8,
+      5,
+      19
+    ],
+    "top3_condition_hit": true,
+    "top3_edge_partition_hit": false,
+    "top3_folded_region_lines": [
+      5,
+      6,
+      7,
+      8,
+      11,
+      12,
+      19
+    ],
+    "top3_ochiai_hit": true,
+    "top3_ochiai_region_lines": [
+      19,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "top3_tarantula_hit": true,
+    "top3_tarantula_region_lines": [
+      19,
+      20,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "top3_dstar_hit": true,
+    "top3_dstar_region_lines": [
+      19,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "top3_barinel_hit": true,
+    "top3_barinel_region_lines": [
+      19,
+      20,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "top3_op2_hit": true,
+    "top3_op2_region_lines": [
+      6,
+      7,
+      8,
+      5,
+      19,
+      9,
+      10
+    ]
+  }
+}
