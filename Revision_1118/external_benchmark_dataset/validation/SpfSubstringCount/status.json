@@ -1,0 +1,65 @@
+{
+  "name": "SpfSubstringCount",
+  "session": "external_SpfSubstringCount_1792781149070329000",
+  "generation_command": [
+    "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/subjects/SpfSubstringCount/SpfSubstringCount.java",
+    "--session",
+    "external_SpfSubstringCount_1792781149070329000",
+    "--max-iter",
+    "160",
+    "--range-bound",
+    "40",
+    "--bootstrap",
+    "a=1,b=2,c=1,d=2,p=1,q=2"
+  ],
+  "generation_exit": 0,
+  "verification_command": [
+    "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+    "--class",
+    "SpfSubstringCount",
+    "--java-file",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/subjects/SpfSubstringCount/SpfSubstringCount.java",
+    "--csc-result-dir",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/external_SpfSubstringCount_1792781149070329000/SpfSubstringCount",
+    "--fsf",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/subjects/SpfSubstringCount/FSF/SpfSubstringCount_FSF.txt",
+    "--output",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/validation/SpfSubstringCount/verification.json",
+    "--no-annotate-cct",
+    "--fail-on-violation",
+    "--fail-on-unsupported"
+  ],
+  "verification_exit": 0,
+  "verification_summary": {
+    "testcases": 45,
+    "fsf_units": 9,
+    "passed": 20,
+    "failed": 0,
+    "skipped": 385,
+    "unsupported": 0
+  },
+  "cct": {
+    "total_nodes": 223,
+    "internal_nodes": 111,
+    "leaf_nodes": 112,
+    "empty_leaves": 0,
+    "covered_leaves": 20,
+    "valid_testcases": 20,
+    "infeasible_leaves": 92,
+    "out_of_range_leaves": 0,
+    "truncated_leaves": 0,
+    "expanded_nodes": 96,
+    "expanded_internal_nodes": 88,
+    "expanded_leaves": 8,
+    "tbfv_fault_leaves": 0,
+    "tbfv_failure_cases": 0,
+    "tbfv_failure_count": 0,
+    "max_depth": 52
+  },
+  "generation_terminal_lines": [
+    "  [Iter 46] CCT is FULL \u2014 all branches covered!"
+  ]
+}

@@ -1,0 +1,126 @@
+digraph CCT {
+  rankdir=TB;
+  node [shape=box, style=filled, fontname="monospace", fontsize=10];
+  edge [fontname="monospace", fontsize=9];
+
+  // Legend
+  {
+    rank=sink;
+    legend [shape=plaintext, label=<
+      <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td bgcolor="#e8f5e9"><b>Leaf</b></td><td>Covered (has test cases)</td></tr>
+        <tr><td bgcolor="#d6d6d6"><b>Leaf</b></td><td>Infeasible (X)</td></tr>
+        <tr><td bgcolor="#fff9c4"><b>Leaf</b></td><td>Out-of-Range</td></tr>
+        <tr><td bgcolor="#fff3e0"><b>Leaf</b></td><td>Truncated (MAX_LOOP_BOUND)</td></tr>
+        <tr><td bgcolor="#e3f2fd"><b>Leaf</b></td><td>Expanded node</td></tr>
+        <tr><td bgcolor="#eeeeee"><b>Leaf Ø</b></td><td>Uncovered (empty)</td></tr>
+      </table>
+    >];
+  }
+
+  node0 [label="(1) steps < 0\nWP: steps < 0", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node1 [label="(1) steps > 8\nWP: steps > 8", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node0 -> node1 [label="F", color="#c62828", style=dashed];
+  node2 [label="(1) i < steps\nWP: (0) < steps", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node1 -> node2 [label="F", color="#c62828", style=dashed];
+  node3 [label="tc_2(steps=0)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node2 -> node3 [label="F", color="#c62828", style=dashed];
+  node4 [label="(1) initialized == 1\nWP: (0) == 1", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node2 -> node4 [label="T", color="#2e7d32"];
+  node5 [label="(2) i < steps\nWP: ((0) + 1) < steps", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node4 -> node5 [label="F", color="#c62828", style=dashed];
+  node6 [label="tc_3(steps=1)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node5 -> node6 [label="F", color="#c62828", style=dashed];
+  node7 [label="(2) initialized == 1\nWP: (1) == 1", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node5 -> node7 [label="T", color="#2e7d32"];
+  node8 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node7 -> node8 [label="F", color="#c62828", style=dashed];
+  node9 [label="(1) active == 1\nWP: (1) == 1", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node7 -> node9 [label="T", color="#2e7d32"];
+  node10 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node9 -> node10 [label="F", color="#c62828", style=dashed];
+  node11 [label="(3) i < steps\nWP: (((0) + 1) + 1) < steps", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node9 -> node11 [label="T", color="#2e7d32"];
+  node12 [label="tc_5(steps=2)\n[EXPANDED]", shape=ellipse, fillcolor="#e3f2fd", fontcolor="#1b5e20"];
+  node11 -> node12 [label="F", color="#c62828", style=dashed];
+  node13 [label="(3) initialized == 1\nWP: (1) == 1", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node11 -> node13 [label="T", color="#2e7d32"];
+  node14 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node13 -> node14 [label="F", color="#c62828", style=dashed];
+  node15 [label="(2) active == 1\nWP: (1) == 1", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node13 -> node15 [label="T", color="#2e7d32"];
+  node16 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node15 -> node16 [label="F", color="#c62828", style=dashed];
+  node17 [label="(4) i < steps\nWP: ((((0) + 1) + 1) + 1) < steps", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node15 -> node17 [label="T", color="#2e7d32"];
+  node18 [label="bootstrap(steps=3)\n[EXPANDED]", shape=ellipse, fillcolor="#e3f2fd", fontcolor="#1b5e20"];
+  node17 -> node18 [label="F", color="#c62828", style=dashed];
+  node19 [label="(4) initialized == 1\nWP: (1) == 1", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node17 -> node19 [label="T", color="#2e7d32"];
+  node20 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node19 -> node20 [label="F", color="#c62828", style=dashed];
+  node21 [label="(3) active == 1\nWP: (1) == 1", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node19 -> node21 [label="T", color="#2e7d32"];
+  node22 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node21 -> node22 [label="F", color="#c62828", style=dashed];
+  node23 [label="(5) i < steps\nWP: (((((0) + 1) + 1) + 1) + 1) < steps", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node21 -> node23 [label="T", color="#2e7d32"];
+  node24 [label="tc_9(steps=4)\n[EXPANDED]", shape=ellipse, fillcolor="#e3f2fd", fontcolor="#1b5e20"];
+  node23 -> node24 [label="F", color="#c62828", style=dashed];
+  node25 [label="(5) initialized == 1\nWP: (1) == 1", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node23 -> node25 [label="T", color="#2e7d32"];
+  node26 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node25 -> node26 [label="F", color="#c62828", style=dashed];
+  node27 [label="(4) active == 1\nWP: (1) == 1", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node25 -> node27 [label="T", color="#2e7d32"];
+  node28 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node27 -> node28 [label="F", color="#c62828", style=dashed];
+  node29 [label="(6) i < steps\nWP: ((((((0) + 1) + 1) + 1) + 1) + 1) < step...", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node27 -> node29 [label="T", color="#2e7d32"];
+  node30 [label="tc_11(steps=5)\n[EXPANDED]", shape=ellipse, fillcolor="#e3f2fd", fontcolor="#1b5e20"];
+  node29 -> node30 [label="F", color="#c62828", style=dashed];
+  node31 [label="(6) initialized == 1\nWP: (1) == 1", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node29 -> node31 [label="T", color="#2e7d32"];
+  node32 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node31 -> node32 [label="F", color="#c62828", style=dashed];
+  node33 [label="(5) active == 1\nWP: (1) == 1", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node31 -> node33 [label="T", color="#2e7d32"];
+  node34 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node33 -> node34 [label="F", color="#c62828", style=dashed];
+  node35 [label="(7) i < steps\nWP: (((((((0) + 1) + 1) + 1) + 1) + 1) + 1) ...", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node33 -> node35 [label="T", color="#2e7d32"];
+  node36 [label="tc_13(steps=6)\n[EXPANDED]", shape=ellipse, fillcolor="#e3f2fd", fontcolor="#1b5e20"];
+  node35 -> node36 [label="F", color="#c62828", style=dashed];
+  node37 [label="(7) initialized == 1\nWP: (1) == 1", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node35 -> node37 [label="T", color="#2e7d32"];
+  node38 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node37 -> node38 [label="F", color="#c62828", style=dashed];
+  node39 [label="(6) active == 1\nWP: (1) == 1", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node37 -> node39 [label="T", color="#2e7d32"];
+  node40 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node39 -> node40 [label="F", color="#c62828", style=dashed];
+  node41 [label="(8) i < steps\nWP: ((((((((0) + 1) + 1) + 1) + 1) + 1) + 1)...", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node39 -> node41 [label="T", color="#2e7d32"];
+  node42 [label="tc_15(steps=7)\n[EXPANDED]", shape=ellipse, fillcolor="#e3f2fd", fontcolor="#1b5e20"];
+  node41 -> node42 [label="F", color="#c62828", style=dashed];
+  node43 [label="(8) initialized == 1\nWP: (1) == 1", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node41 -> node43 [label="T", color="#2e7d32"];
+  node44 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node43 -> node44 [label="F", color="#c62828", style=dashed];
+  node45 [label="(7) active == 1\nWP: (1) == 1", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node43 -> node45 [label="T", color="#2e7d32"];
+  node46 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node45 -> node46 [label="F", color="#c62828", style=dashed];
+  node47 [label="(9) i < steps\nWP: (((((((((0) + 1) + 1) + 1) + 1) + 1) + 1...", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node45 -> node47 [label="T", color="#2e7d32"];
+  node48 [label="tc_7(steps=8)\n[EXPANDED]", shape=ellipse, fillcolor="#e3f2fd", fontcolor="#1b5e20"];
+  node47 -> node48 [label="F", color="#c62828", style=dashed];
+  node49 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node47 -> node49 [label="T", color="#2e7d32"];
+  node50 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node4 -> node50 [label="T", color="#2e7d32"];
+  node51 [label="tc_18(steps=12)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node1 -> node51 [label="T", color="#2e7d32"];
+  node52 [label="tc_19(steps=-32768)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node0 -> node52 [label="T", color="#2e7d32"];
+}

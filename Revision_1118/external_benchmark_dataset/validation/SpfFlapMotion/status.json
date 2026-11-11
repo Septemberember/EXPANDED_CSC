@@ -1,0 +1,65 @@
+{
+  "name": "SpfFlapMotion",
+  "session": "external_SpfFlapMotion_1792781137345193000",
+  "generation_command": [
+    "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/subjects/SpfFlapMotion/SpfFlapMotion.java",
+    "--session",
+    "external_SpfFlapMotion_1792781137345193000",
+    "--max-iter",
+    "160",
+    "--range-bound",
+    "40",
+    "--bootstrap",
+    "goal=1,position=0,emergency=false"
+  ],
+  "generation_exit": 0,
+  "verification_command": [
+    "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+    "--class",
+    "SpfFlapMotion",
+    "--java-file",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/subjects/SpfFlapMotion/SpfFlapMotion.java",
+    "--csc-result-dir",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/external_SpfFlapMotion_1792781137345193000/SpfFlapMotion",
+    "--fsf",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/subjects/SpfFlapMotion/FSF/SpfFlapMotion_FSF.txt",
+    "--output",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/validation/SpfFlapMotion/verification.json",
+    "--no-annotate-cct",
+    "--fail-on-violation",
+    "--fail-on-unsupported"
+  ],
+  "verification_exit": 0,
+  "verification_summary": {
+    "testcases": 25,
+    "fsf_units": 4,
+    "passed": 15,
+    "failed": 0,
+    "skipped": 85,
+    "unsupported": 0
+  },
+  "cct": {
+    "total_nodes": 65,
+    "internal_nodes": 32,
+    "leaf_nodes": 33,
+    "empty_leaves": 0,
+    "covered_leaves": 15,
+    "valid_testcases": 15,
+    "infeasible_leaves": 18,
+    "out_of_range_leaves": 0,
+    "truncated_leaves": 0,
+    "expanded_nodes": 0,
+    "expanded_internal_nodes": 0,
+    "expanded_leaves": 0,
+    "tbfv_fault_leaves": 0,
+    "tbfv_failure_cases": 0,
+    "tbfv_failure_count": 0,
+    "max_depth": 13
+  },
+  "generation_terminal_lines": [
+    "  [Iter 26] CCT is FULL \u2014 all branches covered!"
+  ]
+}

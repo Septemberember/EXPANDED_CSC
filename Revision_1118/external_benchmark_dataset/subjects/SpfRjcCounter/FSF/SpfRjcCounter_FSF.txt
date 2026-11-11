@@ -1,0 +1,11 @@
+[fsf_1]
+T: steps < 0 || steps > 8
+D: return_value == -1
+
+[fsf_2]
+T: !(steps < 0 || steps > 8) && (steps == 0)
+D: return_value == 0
+
+[fsf_3]
+T: !(steps < 0 || steps > 8) && (steps > 0)
+D: return_value == steps - 1

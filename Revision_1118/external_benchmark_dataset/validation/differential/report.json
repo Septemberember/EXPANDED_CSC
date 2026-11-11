@@ -1,0 +1,114 @@
+{
+  "exit_code": 0,
+  "assertions_enabled": true,
+  "reference_edits": "Remove JPF imports/annotations and diagnostic print; replace Verify.randomBool only in unused main. All selected original methods retain computations, assertions, strings and objects.",
+  "sources": [
+    {
+      "source": "WBS.java",
+      "original_sha256": "6af56bd0dcd370b6501c19ead0fe38abd673a380f5c82d2738316f4b4a5090af",
+      "reference_sha256": "5595fa060a010028574468deb9b8df7965ea5eb6fc112e9f302e87e8956f71c0"
+    },
+    {
+      "source": "FlapController.java",
+      "original_sha256": "044e9af3f5232293416097c71711e044a52ab38dcaeed1272dfb0ec03f5beb23",
+      "reference_sha256": "fdc2266c354b09fbc132d1f5cf594762feab9303ac747954ff74a5226e91a4e9"
+    },
+    {
+      "source": "sequences/BankAccount.java",
+      "original_sha256": "35735d2ae7bd0806b58a50a2e50970c177982de42ab4139598d949b708c94a07",
+      "reference_sha256": "c2f79174268af227ada330799dac8a8103262bbe2bc4567a761f0e7f153f1777"
+    },
+    {
+      "source": "strings/DelimSearch.java",
+      "original_sha256": "b7947c8eb7d93311c7dcc15985c02307a5a51bbc502a5a5df7e5cd3b27aa8642",
+      "reference_sha256": "b7947c8eb7d93311c7dcc15985c02307a5a51bbc502a5a5df7e5cd3b27aa8642"
+    },
+    {
+      "source": "strings/StringSearch.java",
+      "original_sha256": "a8876f8ad9c18a0d6580300a0f95e980346ef42e0cae1a86b75ed9b6dfce8adf",
+      "reference_sha256": "a8876f8ad9c18a0d6580300a0f95e980346ef42e0cae1a86b75ed9b6dfce8adf"
+    },
+    {
+      "source": "compositional/SortedListInt.java",
+      "original_sha256": "c23cf1c63677ce67732f72d5a70e87ada3ac0d172c4a6a60fa46ec3d22b29a81",
+      "reference_sha256": "c23cf1c63677ce67732f72d5a70e87ada3ac0d172c4a6a60fa46ec3d22b29a81"
+    },
+    {
+      "source": "sequences/BinTree.java",
+      "original_sha256": "cd8084b18c048de72d2c437ec4fdbd30a6b559385810f3d45d20e2fee0371417",
+      "reference_sha256": "cd8084b18c048de72d2c437ec4fdbd30a6b559385810f3d45d20e2fee0371417"
+    },
+    {
+      "source": "ExampleAbort.java",
+      "original_sha256": "312e7a50bde985972284cbacb14ee42885feb3c5bdf4c5dbd4f9c0e64c19c525",
+      "reference_sha256": "678baf7126d8a29595a785a9568a73f92dffeaa125c5007a642f540d0fa2a832"
+    },
+    {
+      "source": "rjc/SimpleCounter.java",
+      "original_sha256": "5a1ea8ab88a384523810315c2a5f0da426ffe98e892e3cc4ca78c26d387869e8",
+      "reference_sha256": "ab4e717974aa7a55ee52a952aca7881795dd961680da0b155659193fbee49995"
+    },
+    {
+      "source": "sequences/Stack.java",
+      "original_sha256": "1bf80a9f1c3e505b2d1196b5254d4a8c212c45117c686d19ee3434c8f4c0290c",
+      "reference_sha256": "2db530e1bd77d2287b79b94878944d064c6057494950c00b9b323ec9c878de56"
+    }
+  ],
+  "results": {
+    "SpfWbsStep": {
+      "cases": 1200,
+      "status": "PASS",
+      "scope": "exhaustive declared domain"
+    },
+    "SpfFlapMotion": {
+      "cases": 3362,
+      "status": "PASS",
+      "scope": "exhaustive declared domain"
+    },
+    "SpfBankWithdrawal": {
+      "cases": 72576,
+      "status": "PASS",
+      "scope": "exhaustive declared domain"
+    },
+    "SpfDelimiterSearch": {
+      "cases": 100000,
+      "status": "PASS",
+      "scope": "exhaustive declared domain"
+    },
+    "SpfSubstringCount": {
+      "cases": 1000000,
+      "status": "PASS",
+      "scope": "exhaustive declared domain"
+    },
+    "SpfSortedInsertion": {
+      "cases": 2200,
+      "status": "PASS",
+      "scope": "exhaustive declared domain"
+    },
+    "SpfTreeSearch": {
+      "cases": 1200,
+      "status": "PASS",
+      "scope": "exhaustive declared domain"
+    },
+    "SpfAbortDecision": {
+      "cases": 4002,
+      "status": "PASS",
+      "scope": "exhaustive declared domain"
+    },
+    "SpfRjcCounter": {
+      "cases": 9,
+      "status": "PASS",
+      "scope": "exhaustive declared domain"
+    },
+    "SpfStackPops": {
+      "cases": 5000,
+      "status": "PASS",
+      "scope": "exhaustive declared domain"
+    },
+    "guard_checks": {
+      "cases": 10,
+      "status": "PASS",
+      "scope": "selected invalid inputs"
+    }
+  }
+}

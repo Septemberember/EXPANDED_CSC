@@ -1,0 +1,258 @@
+[
+  {
+    "iteration": 0,
+    "inputs": {
+      "altitudeOffset": 0,
+      "fired": true
+    },
+    "path_constraint": "bootstrap",
+    "trace_path": "csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/traces/bootstrap/trace.jsonl",
+    "status": "bootstrap",
+    "timings": {
+      "compile_time_ms": 219,
+      "java_exec_time_ms": 51,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 2,
+    "inputs": {
+      "altitudeOffset": "-4",
+      "fired": "False"
+    },
+    "path_constraint": "(!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (!(fired))",
+    "trace_path": "csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/traces/t2/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 295,
+      "java_exec_time_ms": 46,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 40
+    }
+  },
+  {
+    "iteration": 3,
+    "inputs": {
+      "altitudeOffset": "512",
+      "fired": "False"
+    },
+    "path_constraint": "(!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (!(fired)) && (!(altitudeOffset <= 0))",
+    "trace_path": "csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/traces/t3/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 220,
+      "java_exec_time_ms": 46,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 4,
+    "inputs": null,
+    "path_constraint": "(!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (!(fired)) && (!(altitudeOffset <= 0)) && (!(altitudeOffset >= 0))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 5,
+    "inputs": null,
+    "path_constraint": "(!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (!(fired)) && (!(altitudeOffset <= 0)) && (altitudeOffset >= 0) && (false)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 6,
+    "inputs": {
+      "altitudeOffset": "0",
+      "fired": "False"
+    },
+    "path_constraint": "(!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (!(fired)) && (altitudeOffset <= 0) && (!(fired)) && (altitudeOffset >= 0)",
+    "trace_path": "csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/traces/t6/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 238,
+      "java_exec_time_ms": 45,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 7,
+    "inputs": null,
+    "path_constraint": "(!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (!(fired)) && (altitudeOffset <= 0) && (!(fired)) && (altitudeOffset >= 0) && (!(true))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 8,
+    "inputs": null,
+    "path_constraint": "(!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (!(fired)) && (altitudeOffset <= 0) && (fired)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 9,
+    "inputs": {
+      "altitudeOffset": "512",
+      "fired": "True"
+    },
+    "path_constraint": "(!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (fired) && (!(altitudeOffset <= 0))",
+    "trace_path": "csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/traces/t9/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 229,
+      "java_exec_time_ms": 45,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 10,
+    "inputs": null,
+    "path_constraint": "(!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (fired) && (!(altitudeOffset <= 0)) && (!(altitudeOffset >= 0))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 11,
+    "inputs": null,
+    "path_constraint": "(!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (fired) && (!(altitudeOffset <= 0)) && (altitudeOffset >= 0) && (false)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 12,
+    "inputs": null,
+    "path_constraint": "(!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (fired) && (altitudeOffset <= 0) && (!(fired))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 13,
+    "inputs": {
+      "altitudeOffset": "-512",
+      "fired": "True"
+    },
+    "path_constraint": "(!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (fired) && (altitudeOffset <= 0) && (fired) && (!(altitudeOffset >= 0))",
+    "trace_path": "csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/traces/t13/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 215,
+      "java_exec_time_ms": 45,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 14,
+    "inputs": null,
+    "path_constraint": "(!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (fired) && (altitudeOffset <= 0) && (fired) && (altitudeOffset >= 0) && (!(true))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 15,
+    "inputs": {
+      "altitudeOffset": "1004",
+      "fired": "False"
+    },
+    "path_constraint": "(!(altitudeOffset < -1000)) && (altitudeOffset > 1000)",
+    "trace_path": "csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/traces/t15/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 215,
+      "java_exec_time_ms": 44,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 16,
+    "inputs": {
+      "altitudeOffset": "-32768",
+      "fired": "False"
+    },
+    "path_constraint": "(altitudeOffset < -1000)",
+    "trace_path": "csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/traces/t16/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 218,
+      "java_exec_time_ms": 44,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  }
+]

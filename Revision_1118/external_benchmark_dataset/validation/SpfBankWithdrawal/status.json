@@ -1,0 +1,65 @@
+{
+  "name": "SpfBankWithdrawal",
+  "session": "external_SpfBankWithdrawal_1792781247011394000",
+  "generation_command": [
+    "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/subjects/SpfBankWithdrawal/SpfBankWithdrawal.java",
+    "--session",
+    "external_SpfBankWithdrawal_1792781247011394000",
+    "--max-iter",
+    "160",
+    "--range-bound",
+    "40",
+    "--bootstrap",
+    "balance=10,deposit=1,amount=3,withdrawals=0"
+  ],
+  "generation_exit": 0,
+  "verification_command": [
+    "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+    "--class",
+    "SpfBankWithdrawal",
+    "--java-file",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/subjects/SpfBankWithdrawal/SpfBankWithdrawal.java",
+    "--csc-result-dir",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/external_SpfBankWithdrawal_1792781247011394000/SpfBankWithdrawal",
+    "--fsf",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/subjects/SpfBankWithdrawal/FSF/SpfBankWithdrawal_FSF.txt",
+    "--output",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/validation/SpfBankWithdrawal/verification.json",
+    "--no-annotate-cct",
+    "--fail-on-violation",
+    "--fail-on-unsupported"
+  ],
+  "verification_exit": 0,
+  "verification_summary": {
+    "testcases": 14,
+    "fsf_units": 7,
+    "passed": 14,
+    "failed": 0,
+    "skipped": 84,
+    "unsupported": 0
+  },
+  "cct": {
+    "total_nodes": 27,
+    "internal_nodes": 13,
+    "leaf_nodes": 14,
+    "empty_leaves": 0,
+    "covered_leaves": 14,
+    "valid_testcases": 14,
+    "infeasible_leaves": 0,
+    "out_of_range_leaves": 0,
+    "truncated_leaves": 0,
+    "expanded_nodes": 0,
+    "expanded_internal_nodes": 0,
+    "expanded_leaves": 0,
+    "tbfv_fault_leaves": 0,
+    "tbfv_failure_cases": 0,
+    "tbfv_failure_count": 0,
+    "max_depth": 11
+  },
+  "generation_terminal_lines": [
+    "  [Iter 15] CCT is FULL \u2014 all branches covered!"
+  ]
+}

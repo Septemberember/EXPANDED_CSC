@@ -1,0 +1,27 @@
+[fsf_1]
+T: balance < 0 || balance > 20 || deposit < -5 || deposit > 10 || amount < -5 || amount > 30 || withdrawals < 0 || withdrawals > 5
+D: return_value == -1
+
+[fsf_2]
+T: !(balance < 0 || balance > 20 || deposit < -5 || deposit > 10 || amount < -5 || amount > 30 || withdrawals < 0 || withdrawals > 5) && (deposit > 0 && amount > (balance + deposit))
+D: return_value == (balance + deposit)
+
+[fsf_3]
+T: !(balance < 0 || balance > 20 || deposit < -5 || deposit > 10 || amount < -5 || amount > 30 || withdrawals < 0 || withdrawals > 5) && (deposit > 0 && amount <= (balance + deposit) && withdrawals >= 5)
+D: return_value == -2
+
+[fsf_4]
+T: !(balance < 0 || balance > 20 || deposit < -5 || deposit > 10 || amount < -5 || amount > 30 || withdrawals < 0 || withdrawals > 5) && (deposit > 0 && amount <= (balance + deposit) && withdrawals < 5)
+D: return_value == (balance + deposit) - amount
+
+[fsf_5]
+T: !(balance < 0 || balance > 20 || deposit < -5 || deposit > 10 || amount < -5 || amount > 30 || withdrawals < 0 || withdrawals > 5) && (deposit <= 0 && amount > balance)
+D: return_value == balance
+
+[fsf_6]
+T: !(balance < 0 || balance > 20 || deposit < -5 || deposit > 10 || amount < -5 || amount > 30 || withdrawals < 0 || withdrawals > 5) && (deposit <= 0 && amount <= balance && withdrawals >= 5)
+D: return_value == -2
+
+[fsf_7]
+T: !(balance < 0 || balance > 20 || deposit < -5 || deposit > 10 || amount < -5 || amount > 30 || withdrawals < 0 || withdrawals > 5) && (deposit <= 0 && amount <= balance && withdrawals < 5)
+D: return_value == balance - amount

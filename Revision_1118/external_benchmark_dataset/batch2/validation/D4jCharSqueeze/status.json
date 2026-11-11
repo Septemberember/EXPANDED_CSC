@@ -1,0 +1,65 @@
+{
+  "name": "D4jCharSqueeze",
+  "session": "external_D4jCharSqueeze_1792782088755565000",
+  "generation_command": [
+    "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/batch2/subjects/D4jCharSqueeze/D4jCharSqueeze.java",
+    "--session",
+    "external_D4jCharSqueeze_1792782088755565000",
+    "--max-iter",
+    "1000",
+    "--range-bound",
+    "40",
+    "--bootstrap",
+    "a=1,b=1,c=2,d=2,low=1,high=2"
+  ],
+  "generation_exit": 0,
+  "verification_command": [
+    "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+    "--class",
+    "D4jCharSqueeze",
+    "--java-file",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/batch2/subjects/D4jCharSqueeze/D4jCharSqueeze.java",
+    "--csc-result-dir",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/external_D4jCharSqueeze_1792782088755565000/D4jCharSqueeze",
+    "--fsf",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/batch2/subjects/D4jCharSqueeze/FSF/D4jCharSqueeze_FSF.txt",
+    "--output",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/batch2/validation/D4jCharSqueeze/verification.json",
+    "--no-annotate-cct",
+    "--fail-on-violation",
+    "--fail-on-unsupported"
+  ],
+  "verification_exit": 0,
+  "verification_summary": {
+    "testcases": 82,
+    "fsf_units": 9,
+    "passed": 41,
+    "failed": 0,
+    "skipped": 697,
+    "unsupported": 0
+  },
+  "cct": {
+    "total_nodes": 327,
+    "internal_nodes": 163,
+    "leaf_nodes": 164,
+    "empty_leaves": 0,
+    "covered_leaves": 41,
+    "valid_testcases": 41,
+    "infeasible_leaves": 123,
+    "out_of_range_leaves": 0,
+    "truncated_leaves": 0,
+    "expanded_nodes": 165,
+    "expanded_internal_nodes": 137,
+    "expanded_leaves": 28,
+    "tbfv_fault_leaves": 0,
+    "tbfv_failure_cases": 0,
+    "tbfv_failure_count": 0,
+    "max_depth": 43
+  },
+  "generation_terminal_lines": [
+    "  [Iter 83] CCT is FULL \u2014 all branches covered!"
+  ]
+}

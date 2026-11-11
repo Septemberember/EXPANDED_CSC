@@ -1,0 +1,13 @@
+{"type":"COND","line":21,"kind":"if","order":1,"expr":"balance < 0","value":false}
+{"type":"COND","line":21,"kind":"if","order":2,"expr":"balance > 20","value":false}
+{"type":"COND","line":21,"kind":"if","order":3,"expr":"deposit < -5","value":false}
+{"type":"COND","line":21,"kind":"if","order":4,"expr":"deposit > 10","value":false}
+{"type":"COND","line":21,"kind":"if","order":5,"expr":"amount < -5","value":false}
+{"type":"COND","line":21,"kind":"if","order":6,"expr":"amount > 30","value":false}
+{"type":"COND","line":21,"kind":"if","order":7,"expr":"withdrawals < 0","value":false}
+{"type":"COND","line":21,"kind":"if","order":8,"expr":"withdrawals > 5","value":false}
+{"type":"ASSIGN","line":22,"kind":"var_decl","target":"currentBalance","rhs":"balance","value":"15"}
+{"type":"COND","line":23,"kind":"if","order":1,"expr":"deposit > 0","value":true}
+{"type":"ASSIGN","line":23,"kind":"assign","target":"currentBalance","rhs":"currentBalance + deposit","value":"18"}
+{"type":"COND","line":24,"kind":"if","order":1,"expr":"amount > currentBalance","value":true}
+{"type":"RETURN","line":24,"target":"return_value","rhs":"currentBalance","value":"18"}

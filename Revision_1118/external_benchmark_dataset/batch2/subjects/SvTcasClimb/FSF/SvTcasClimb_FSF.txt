@@ -1,0 +1,11 @@
+[fsf_1]
+T: layer < 0 || layer > 3 || upDelta < -2 || upDelta > 2 || downDelta < -2 || downDelta > 2 || separation < 0 || separation > 2
+D: return_value == -99
+
+[fsf_2]
+T: !(layer < 0 || layer > 3 || upDelta < -2 || upDelta > 2 || downDelta < -2 || downDelta > 2 || separation < 0 || separation > 2) && (((((inhibit && upDelta + 1 > downDelta) || (!inhibit && upDelta > downDelta)) && downDelta < 0) || (!((inhibit && upDelta + 1 > downDelta) || (!inhibit && upDelta > downDelta)) && separation >= 1 && upDelta >= 0 && above)))
+D: return_value == 1
+
+[fsf_3]
+T: !(layer < 0 || layer > 3 || upDelta < -2 || upDelta > 2 || downDelta < -2 || downDelta > 2 || separation < 0 || separation > 2) && (!((((inhibit && upDelta + 1 > downDelta) || (!inhibit && upDelta > downDelta)) && downDelta < 0) || (!((inhibit && upDelta + 1 > downDelta) || (!inhibit && upDelta > downDelta)) && separation >= 1 && upDelta >= 0 && above)))
+D: return_value == 0

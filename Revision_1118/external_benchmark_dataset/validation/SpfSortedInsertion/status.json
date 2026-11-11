@@ -1,0 +1,65 @@
+{
+  "name": "SpfSortedInsertion",
+  "session": "external_SpfSortedInsertion_1792781150987596000",
+  "generation_command": [
+    "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tool.py",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/subjects/SpfSortedInsertion/SpfSortedInsertion.java",
+    "--session",
+    "external_SpfSortedInsertion_1792781150987596000",
+    "--max-iter",
+    "160",
+    "--range-bound",
+    "40",
+    "--bootstrap",
+    "a=1,b=3,c=5,value=4"
+  ],
+  "generation_exit": 0,
+  "verification_command": [
+    "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/refined_tbfv_tool.py",
+    "--class",
+    "SpfSortedInsertion",
+    "--java-file",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/subjects/SpfSortedInsertion/SpfSortedInsertion.java",
+    "--csc-result-dir",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/project/CSC_EXPANDED/csc_tmp/external_SpfSortedInsertion_1792781150987596000/SpfSortedInsertion",
+    "--fsf",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/subjects/SpfSortedInsertion/FSF/SpfSortedInsertion_FSF.txt",
+    "--output",
+    "/Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/validation/SpfSortedInsertion/verification.json",
+    "--no-annotate-cct",
+    "--fail-on-violation",
+    "--fail-on-unsupported"
+  ],
+  "verification_exit": 0,
+  "verification_summary": {
+    "testcases": 20,
+    "fsf_units": 5,
+    "passed": 12,
+    "failed": 0,
+    "skipped": 88,
+    "unsupported": 0
+  },
+  "cct": {
+    "total_nodes": 43,
+    "internal_nodes": 21,
+    "leaf_nodes": 22,
+    "empty_leaves": 0,
+    "covered_leaves": 12,
+    "valid_testcases": 12,
+    "infeasible_leaves": 10,
+    "out_of_range_leaves": 0,
+    "truncated_leaves": 0,
+    "expanded_nodes": 4,
+    "expanded_internal_nodes": 3,
+    "expanded_leaves": 1,
+    "tbfv_fault_leaves": 0,
+    "tbfv_failure_cases": 0,
+    "tbfv_failure_count": 0,
+    "max_depth": 18
+  },
+  "generation_terminal_lines": [
+    "  [Iter 21] CCT is FULL \u2014 all branches covered!"
+  ]
+}

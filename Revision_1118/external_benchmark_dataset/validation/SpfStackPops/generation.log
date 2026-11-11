@@ -1,0 +1,2182 @@
+=======================================================
+  CSC Engine — Test Case Generator
+=======================================================
+  Source:       /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/subjects/SpfStackPops/SpfStackPops.java
+  Mode:         Expanded CSC
+  Range bound:  +/- 40
+  Max iter:     160
+  Strategy:     sequential
+  Session:      external_SpfStackPops_1792781160535683000
+  CCT render:   no
+
+[1/3] Auto-instrumenting Java source...
+  [instrument] /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/subjects/SpfStackPops/SpfStackPops.java -> /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/subjects/SpfStackPops/SpfStackPops_instrumented.java
+  Class:        SpfStackPops
+  Params:       {'return_value': 'int', 'a': 'int', 'b': 'int', 'c': 'int', 'pops': 'int'}
+  Run log:      csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/run_log.jsonl
+
+[2/3] Compiling...
+  [compile] SpfStackPops.class
+[3/3] CSC Loop
+---------------------------------------------
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+{Ø}
+-----------------------------
+
+
+  [Iter 1] CCT not initialized — running bootstrap
+  Bootstrap inputs: {'a': 1, 'b': 2, 'c': 3, 'pops': 2}
+  Execution path: 29 steps, 19 conditions
+Path Truncation: loop count 3 exceeds bound 2.
+CCT DOT saved to: csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/SpfStackPops_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 0 @L21 (WP: b < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 0 @L21 (WP: c < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pops < 0 @L21 (WP: pops < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pops > 4 @L21 (WP: pops > 4, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (0) < pops, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (3) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (3) == 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (3) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (3) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((0) + 1) < pops, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((3) - 1) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: ((3) - 1) == 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: ((3) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: ((3) - 1) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'} [TRUNCATED]  inputs: bootstrap(a=1, b=2, c=3, pops=2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 2] Target: i < pops -> F (cnt=1)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < 0)) && (!(b > 9)) && (!(c < 0)) && (!(c > 9)) && (!(pops < 0)) && (!(pops > 4)) && (!((0) < pops))
+  -> SAT: {'a': '0', 'b': '0', 'c': '0', 'pops': '0'}
+  Execution path: 13 steps, 9 conditions
+CCT DOT saved to: csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/SpfStackPops_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 0 @L21 (WP: b < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 0 @L21 (WP: c < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pops < 0 @L21 (WP: pops < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pops > 4 @L21 (WP: pops > 4, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (0) < pops, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=0, pops=0)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (3) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (3) == 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (3) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (3) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((0) + 1) < pops, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((3) - 1) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: ((3) - 1) == 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: ((3) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: ((3) - 1) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'} [TRUNCATED]  inputs: bootstrap(a=1, b=2, c=3, pops=2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 3] Target: depth == 3 -> F (cnt=1)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < 0)) && (!(b > 9)) && (!(c < 0)) && (!(c > 9)) && (!(pops < 0)) && (!(pops > 4)) && ((0) < pops) && (!((3) == 0)) && (!((3) == 3))
+CCT DOT saved to: csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/SpfStackPops_cct.dot
+  -> INFEASIBLE (UNSAT)
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 0 @L21 (WP: b < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 0 @L21 (WP: c < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pops < 0 @L21 (WP: pops < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pops > 4 @L21 (WP: pops > 4, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (0) < pops, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=0, pops=0)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (3) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (3) == 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (3) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (3) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((0) + 1) < pops, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((3) - 1) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: ((3) - 1) == 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: ((3) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: ((3) - 1) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'} [TRUNCATED]  inputs: bootstrap(a=1, b=2, c=3, pops=2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 4] Target: i < pops -> F (cnt=2)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < 0)) && (!(b > 9)) && (!(c < 0)) && (!(c > 9)) && (!(pops < 0)) && (!(pops > 4)) && ((0) < pops) && (!((3) == 0)) && ((3) == 3) && (!((3) == 2)) && (!((3) == 1)) && (!(((0) + 1) < pops))
+  -> SAT: {'a': '0', 'b': '0', 'c': '0', 'pops': '1'}
+  Execution path: 21 steps, 14 conditions
+CCT DOT saved to: csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/SpfStackPops_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 0 @L21 (WP: b < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 0 @L21 (WP: c < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pops < 0 @L21 (WP: pops < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pops > 4 @L21 (WP: pops > 4, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (0) < pops, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=0, pops=0)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (3) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (3) == 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (3) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (3) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((0) + 1) < pops, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=0, c=0, pops=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((3) - 1) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: ((3) - 1) == 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: ((3) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: ((3) - 1) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'} [TRUNCATED]  inputs: bootstrap(a=1, b=2, c=3, pops=2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+  [EXPAND] Promoted truncated leaf at 'i < pops' (cnt=3) → F:['bootstrap']
+
+  [Iter 5] Target: i < pops -> T (cnt=3)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < 0)) && (!(b > 9)) && (!(c < 0)) && (!(c > 9)) && (!(pops < 0)) && (!(pops > 4)) && ((0) < pops) && (!((3) == 0)) && ((3) == 3) && (!((3) == 2)) && (!((3) == 1)) && (((0) + 1) < pops) && (!(((3) - 1) == 0)) && (!(((3) - 1) == 3)) && (((3) - 1) == 2) && (!(((3) - 1) == 1)) && ((((0) + 1) + 1) < pops)
+  -> SAT: {'a': '0', 'b': '0', 'c': '0', 'pops': '4'}
+  Execution path: 38 steps, 25 conditions
+Path Truncation: loop count 3 exceeds bound 2.
+CCT DOT saved to: csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/SpfStackPops_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 0 @L21 (WP: b < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 0 @L21 (WP: c < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pops < 0 @L21 (WP: pops < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pops > 4 @L21 (WP: pops > 4, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (0) < pops, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=0, pops=0)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (3) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (3) == 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (3) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (3) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((0) + 1) < pops, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=0, c=0, pops=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((3) - 1) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: ((3) - 1) == 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: ((3) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: ((3) - 1) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (((0) + 1) + 1) < pops, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'} [EXPANDED]  inputs: bootstrap(a=1, b=2, c=3, pops=2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5'} [TRUNCATED, EXPANDED]  inputs: tc_5(a=0, b=0, c=0, pops=4)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+  [EXPAND] Promoted truncated leaf at 'depth == 0' (cnt=3) → F:['tc_5']
+  [EXPAND] Promoted truncated leaf at 'depth == 3' (cnt=3) → F:['tc_5']
+  [EXPAND] Promoted truncated leaf at 'depth == 2' (cnt=3) → F:['tc_5']
+  [EXPAND] Promoted truncated leaf at 'depth == 1' (cnt=3) → T:['tc_5']
+  [EXPAND] Promoted truncated leaf at 'i < pops' (cnt=4) → T:['tc_5']
+
+  [Iter 6] Target: i < pops -> F (cnt=4)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < 0)) && (!(b > 9)) && (!(c < 0)) && (!(c > 9)) && (!(pops < 0)) && (!(pops > 4)) && ((0) < pops) && (!((3) == 0)) && ((3) == 3) && (!((3) == 2)) && (!((3) == 1)) && (((0) + 1) < pops) && (!(((3) - 1) == 0)) && (!(((3) - 1) == 3)) && (((3) - 1) == 2) && (!(((3) - 1) == 1)) && ((((0) + 1) + 1) < pops) && (!((((3) - 1) - 1) == 0)) && (!((((3) - 1) - 1) == 3)) && (!((((3) - 1) - 1) == 2)) && ((((3) - 1) - 1) == 1) && (!(((((0) + 1) + 1) + 1) < pops))
+  -> SAT: {'a': '0', 'b': '0', 'c': '0', 'pops': '3'}
+  Execution path: 37 steps, 24 conditions
+Path Truncation: loop count 3 exceeds bound 2.
+CCT DOT saved to: csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/SpfStackPops_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 0 @L21 (WP: b < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 0 @L21 (WP: c < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pops < 0 @L21 (WP: pops < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pops > 4 @L21 (WP: pops > 4, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (0) < pops, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=0, pops=0)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (3) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (3) == 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (3) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (3) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((0) + 1) < pops, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=0, c=0, pops=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((3) - 1) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: ((3) - 1) == 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: ((3) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: ((3) - 1) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (((0) + 1) + 1) < pops, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'} [EXPANDED]  inputs: bootstrap(a=1, b=2, c=3, pops=2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (((3) - 1) - 1) == 0, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (((3) - 1) - 1) == 3, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (((3) - 1) - 1) == 2, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (((3) - 1) - 1) == 1, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((((0) + 1) + 1) + 1) < pops, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6'} [EXPANDED]  inputs: tc_6(a=0, b=0, c=0, pops=3)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5'} [TRUNCATED, EXPANDED]  inputs: tc_5(a=0, b=0, c=0, pops=4)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+  [EXPAND] Promoted truncated leaf at 'depth == 0' (cnt=4) → T:['tc_5']
+
+  [Iter 7] Target: depth == 0 -> T (cnt=3)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < 0)) && (!(b > 9)) && (!(c < 0)) && (!(c > 9)) && (!(pops < 0)) && (!(pops > 4)) && ((0) < pops) && (!((3) == 0)) && ((3) == 3) && (!((3) == 2)) && (!((3) == 1)) && (((0) + 1) < pops) && (!(((3) - 1) == 0)) && (!(((3) - 1) == 3)) && (((3) - 1) == 2) && (!(((3) - 1) == 1)) && ((((0) + 1) + 1) < pops) && ((((3) - 1) - 1) == 0)
+CCT DOT saved to: csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/SpfStackPops_cct.dot
+  -> INFEASIBLE (UNSAT)
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 0 @L21 (WP: b < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 0 @L21 (WP: c < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pops < 0 @L21 (WP: pops < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pops > 4 @L21 (WP: pops > 4, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (0) < pops, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=0, pops=0)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (3) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (3) == 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (3) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (3) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((0) + 1) < pops, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=0, c=0, pops=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((3) - 1) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: ((3) - 1) == 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: ((3) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: ((3) - 1) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (((0) + 1) + 1) < pops, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'} [EXPANDED]  inputs: bootstrap(a=1, b=2, c=3, pops=2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (((3) - 1) - 1) == 0, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (((3) - 1) - 1) == 3, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (((3) - 1) - 1) == 2, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (((3) - 1) - 1) == 1, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((((0) + 1) + 1) + 1) < pops, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6'} [EXPANDED]  inputs: tc_6(a=0, b=0, c=0, pops=3)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((((3) - 1) - 1) - 1) == 0, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5'} [EXPANDED]  inputs: tc_5(a=0, b=0, c=0, pops=4)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 8] Target: depth == 1 -> T (cnt=2)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < 0)) && (!(b > 9)) && (!(c < 0)) && (!(c > 9)) && (!(pops < 0)) && (!(pops > 4)) && ((0) < pops) && (!((3) == 0)) && ((3) == 3) && (!((3) == 2)) && (!((3) == 1)) && (((0) + 1) < pops) && (!(((3) - 1) == 0)) && (!(((3) - 1) == 3)) && (((3) - 1) == 2) && (((3) - 1) == 1)
+CCT DOT saved to: csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/SpfStackPops_cct.dot
+  -> INFEASIBLE (UNSAT)
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 0 @L21 (WP: b < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 0 @L21 (WP: c < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pops < 0 @L21 (WP: pops < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pops > 4 @L21 (WP: pops > 4, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (0) < pops, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=0, pops=0)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (3) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (3) == 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (3) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (3) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((0) + 1) < pops, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=0, c=0, pops=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((3) - 1) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: ((3) - 1) == 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: ((3) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: ((3) - 1) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (((0) + 1) + 1) < pops, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'} [EXPANDED]  inputs: bootstrap(a=1, b=2, c=3, pops=2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (((3) - 1) - 1) == 0, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (((3) - 1) - 1) == 3, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (((3) - 1) - 1) == 2, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (((3) - 1) - 1) == 1, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((((0) + 1) + 1) + 1) < pops, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6'} [EXPANDED]  inputs: tc_6(a=0, b=0, c=0, pops=3)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((((3) - 1) - 1) - 1) == 0, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5'} [EXPANDED]  inputs: tc_5(a=0, b=0, c=0, pops=4)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 9] Target: depth == 0 -> T (cnt=2)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < 0)) && (!(b > 9)) && (!(c < 0)) && (!(c > 9)) && (!(pops < 0)) && (!(pops > 4)) && ((0) < pops) && (!((3) == 0)) && ((3) == 3) && (!((3) == 2)) && (!((3) == 1)) && (((0) + 1) < pops) && (((3) - 1) == 0)
+CCT DOT saved to: csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/SpfStackPops_cct.dot
+  -> INFEASIBLE (UNSAT)
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 0 @L21 (WP: b < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 0 @L21 (WP: c < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pops < 0 @L21 (WP: pops < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pops > 4 @L21 (WP: pops > 4, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (0) < pops, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=0, pops=0)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (3) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (3) == 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (3) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (3) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((0) + 1) < pops, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=0, c=0, pops=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((3) - 1) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: ((3) - 1) == 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: ((3) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: ((3) - 1) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (((0) + 1) + 1) < pops, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'} [EXPANDED]  inputs: bootstrap(a=1, b=2, c=3, pops=2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (((3) - 1) - 1) == 0, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (((3) - 1) - 1) == 3, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (((3) - 1) - 1) == 2, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (((3) - 1) - 1) == 1, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((((0) + 1) + 1) + 1) < pops, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6'} [EXPANDED]  inputs: tc_6(a=0, b=0, c=0, pops=3)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((((3) - 1) - 1) - 1) == 0, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5'} [EXPANDED]  inputs: tc_5(a=0, b=0, c=0, pops=4)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 10] Target: depth == 1 -> T (cnt=1)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < 0)) && (!(b > 9)) && (!(c < 0)) && (!(c > 9)) && (!(pops < 0)) && (!(pops > 4)) && ((0) < pops) && (!((3) == 0)) && ((3) == 3) && (!((3) == 2)) && ((3) == 1)
+CCT DOT saved to: csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/SpfStackPops_cct.dot
+  -> INFEASIBLE (UNSAT)
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 0 @L21 (WP: b < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 0 @L21 (WP: c < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pops < 0 @L21 (WP: pops < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pops > 4 @L21 (WP: pops > 4, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (0) < pops, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=0, pops=0)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (3) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (3) == 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (3) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (3) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((0) + 1) < pops, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=0, c=0, pops=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((3) - 1) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: ((3) - 1) == 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: ((3) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: ((3) - 1) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (((0) + 1) + 1) < pops, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'} [EXPANDED]  inputs: bootstrap(a=1, b=2, c=3, pops=2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (((3) - 1) - 1) == 0, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (((3) - 1) - 1) == 3, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (((3) - 1) - 1) == 2, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (((3) - 1) - 1) == 1, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((((0) + 1) + 1) + 1) < pops, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6'} [EXPANDED]  inputs: tc_6(a=0, b=0, c=0, pops=3)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((((3) - 1) - 1) - 1) == 0, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5'} [EXPANDED]  inputs: tc_5(a=0, b=0, c=0, pops=4)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 11] Target: depth == 2 -> T (cnt=1)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < 0)) && (!(b > 9)) && (!(c < 0)) && (!(c > 9)) && (!(pops < 0)) && (!(pops > 4)) && ((0) < pops) && (!((3) == 0)) && ((3) == 3) && ((3) == 2)
+CCT DOT saved to: csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/SpfStackPops_cct.dot
+  -> INFEASIBLE (UNSAT)
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 0 @L21 (WP: b < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 0 @L21 (WP: c < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pops < 0 @L21 (WP: pops < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pops > 4 @L21 (WP: pops > 4, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (0) < pops, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=0, pops=0)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (3) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (3) == 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (3) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (3) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((0) + 1) < pops, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=0, c=0, pops=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((3) - 1) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: ((3) - 1) == 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: ((3) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: ((3) - 1) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (((0) + 1) + 1) < pops, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'} [EXPANDED]  inputs: bootstrap(a=1, b=2, c=3, pops=2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (((3) - 1) - 1) == 0, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (((3) - 1) - 1) == 3, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (((3) - 1) - 1) == 2, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (((3) - 1) - 1) == 1, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((((0) + 1) + 1) + 1) < pops, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6'} [EXPANDED]  inputs: tc_6(a=0, b=0, c=0, pops=3)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((((3) - 1) - 1) - 1) == 0, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5'} [EXPANDED]  inputs: tc_5(a=0, b=0, c=0, pops=4)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 12] Target: depth == 0 -> T (cnt=1)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < 0)) && (!(b > 9)) && (!(c < 0)) && (!(c > 9)) && (!(pops < 0)) && (!(pops > 4)) && ((0) < pops) && ((3) == 0)
+CCT DOT saved to: csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/SpfStackPops_cct.dot
+  -> INFEASIBLE (UNSAT)
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 0 @L21 (WP: b < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 0 @L21 (WP: c < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pops < 0 @L21 (WP: pops < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pops > 4 @L21 (WP: pops > 4, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (0) < pops, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=0, pops=0)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (3) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (3) == 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (3) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (3) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((0) + 1) < pops, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=0, c=0, pops=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((3) - 1) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: ((3) - 1) == 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: ((3) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: ((3) - 1) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (((0) + 1) + 1) < pops, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'} [EXPANDED]  inputs: bootstrap(a=1, b=2, c=3, pops=2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (((3) - 1) - 1) == 0, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (((3) - 1) - 1) == 3, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (((3) - 1) - 1) == 2, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (((3) - 1) - 1) == 1, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((((0) + 1) + 1) + 1) < pops, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6'} [EXPANDED]  inputs: tc_6(a=0, b=0, c=0, pops=3)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((((3) - 1) - 1) - 1) == 0, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5'} [EXPANDED]  inputs: tc_5(a=0, b=0, c=0, pops=4)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 13] Target: pops > 4 -> T (cnt=1)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < 0)) && (!(b > 9)) && (!(c < 0)) && (!(c > 9)) && (!(pops < 0)) && (pops > 4)
+  -> SAT: {'a': '0', 'b': '0', 'c': '0', 'pops': '6'}
+  Execution path: 9 steps, 8 conditions
+CCT DOT saved to: csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/SpfStackPops_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 0 @L21 (WP: b < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 0 @L21 (WP: c < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pops < 0 @L21 (WP: pops < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pops > 4 @L21 (WP: pops > 4, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (0) < pops, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=0, pops=0)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (3) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (3) == 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (3) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (3) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((0) + 1) < pops, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=0, c=0, pops=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((3) - 1) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: ((3) - 1) == 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: ((3) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: ((3) - 1) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (((0) + 1) + 1) < pops, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'} [EXPANDED]  inputs: bootstrap(a=1, b=2, c=3, pops=2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (((3) - 1) - 1) == 0, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (((3) - 1) - 1) == 3, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (((3) - 1) - 1) == 2, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (((3) - 1) - 1) == 1, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((((0) + 1) + 1) + 1) < pops, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6'} [EXPANDED]  inputs: tc_6(a=0, b=0, c=0, pops=3)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((((3) - 1) - 1) - 1) == 0, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5'} [EXPANDED]  inputs: tc_5(a=0, b=0, c=0, pops=4)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_13'}  inputs: tc_13(a=0, b=0, c=0, pops=6)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 14] Target: pops < 0 -> T (cnt=1)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < 0)) && (!(b > 9)) && (!(c < 0)) && (!(c > 9)) && (pops < 0)
+  -> SAT: {'a': '0', 'b': '0', 'c': '0', 'pops': '-32768'}
+  Execution path: 8 steps, 7 conditions
+CCT DOT saved to: csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/SpfStackPops_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 0 @L21 (WP: b < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 0 @L21 (WP: c < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pops < 0 @L21 (WP: pops < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pops > 4 @L21 (WP: pops > 4, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (0) < pops, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=0, pops=0)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (3) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (3) == 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (3) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (3) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((0) + 1) < pops, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=0, c=0, pops=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((3) - 1) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: ((3) - 1) == 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: ((3) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: ((3) - 1) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (((0) + 1) + 1) < pops, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'} [EXPANDED]  inputs: bootstrap(a=1, b=2, c=3, pops=2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (((3) - 1) - 1) == 0, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (((3) - 1) - 1) == 3, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (((3) - 1) - 1) == 2, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (((3) - 1) - 1) == 1, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((((0) + 1) + 1) + 1) < pops, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6'} [EXPANDED]  inputs: tc_6(a=0, b=0, c=0, pops=3)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((((3) - 1) - 1) - 1) == 0, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5'} [EXPANDED]  inputs: tc_5(a=0, b=0, c=0, pops=4)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_13'}  inputs: tc_13(a=0, b=0, c=0, pops=6)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_14'}  inputs: tc_14(a=0, b=0, c=0, pops=-32768)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 15] Target: c > 9 -> T (cnt=1)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < 0)) && (!(b > 9)) && (!(c < 0)) && (c > 9)
+  -> SAT: {'a': '0', 'b': '0', 'c': '12', 'pops': '0'}
+  Execution path: 7 steps, 6 conditions
+CCT DOT saved to: csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/SpfStackPops_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 0 @L21 (WP: b < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 0 @L21 (WP: c < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pops < 0 @L21 (WP: pops < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pops > 4 @L21 (WP: pops > 4, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (0) < pops, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=0, pops=0)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (3) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (3) == 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (3) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (3) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((0) + 1) < pops, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=0, c=0, pops=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((3) - 1) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: ((3) - 1) == 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: ((3) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: ((3) - 1) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (((0) + 1) + 1) < pops, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'} [EXPANDED]  inputs: bootstrap(a=1, b=2, c=3, pops=2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (((3) - 1) - 1) == 0, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (((3) - 1) - 1) == 3, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (((3) - 1) - 1) == 2, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (((3) - 1) - 1) == 1, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((((0) + 1) + 1) + 1) < pops, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6'} [EXPANDED]  inputs: tc_6(a=0, b=0, c=0, pops=3)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((((3) - 1) - 1) - 1) == 0, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5'} [EXPANDED]  inputs: tc_5(a=0, b=0, c=0, pops=4)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_13'}  inputs: tc_13(a=0, b=0, c=0, pops=6)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_14'}  inputs: tc_14(a=0, b=0, c=0, pops=-32768)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_15'}  inputs: tc_15(a=0, b=0, c=12, pops=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 16] Target: c < 0 -> T (cnt=1)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < 0)) && (!(b > 9)) && (c < 0)
+  -> SAT: {'a': '0', 'b': '0', 'c': '-32768', 'pops': '0'}
+  Execution path: 6 steps, 5 conditions
+CCT DOT saved to: csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/SpfStackPops_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 0 @L21 (WP: b < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 0 @L21 (WP: c < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pops < 0 @L21 (WP: pops < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pops > 4 @L21 (WP: pops > 4, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (0) < pops, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=0, pops=0)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (3) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (3) == 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (3) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (3) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((0) + 1) < pops, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=0, c=0, pops=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((3) - 1) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: ((3) - 1) == 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: ((3) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: ((3) - 1) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (((0) + 1) + 1) < pops, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'} [EXPANDED]  inputs: bootstrap(a=1, b=2, c=3, pops=2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (((3) - 1) - 1) == 0, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (((3) - 1) - 1) == 3, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (((3) - 1) - 1) == 2, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (((3) - 1) - 1) == 1, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((((0) + 1) + 1) + 1) < pops, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6'} [EXPANDED]  inputs: tc_6(a=0, b=0, c=0, pops=3)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((((3) - 1) - 1) - 1) == 0, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5'} [EXPANDED]  inputs: tc_5(a=0, b=0, c=0, pops=4)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_13'}  inputs: tc_13(a=0, b=0, c=0, pops=6)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_14'}  inputs: tc_14(a=0, b=0, c=0, pops=-32768)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_15'}  inputs: tc_15(a=0, b=0, c=12, pops=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_16'}  inputs: tc_16(a=0, b=0, c=-32768, pops=0)
+  |     |     |     (T) ->
+  |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 17] Target: b > 9 -> T (cnt=1)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (!(b < 0)) && (b > 9)
+  -> SAT: {'a': '0', 'b': '12', 'c': '0', 'pops': '0'}
+  Execution path: 5 steps, 4 conditions
+CCT DOT saved to: csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/SpfStackPops_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 0 @L21 (WP: b < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 0 @L21 (WP: c < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pops < 0 @L21 (WP: pops < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pops > 4 @L21 (WP: pops > 4, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (0) < pops, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=0, pops=0)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (3) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (3) == 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (3) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (3) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((0) + 1) < pops, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=0, c=0, pops=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((3) - 1) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: ((3) - 1) == 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: ((3) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: ((3) - 1) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (((0) + 1) + 1) < pops, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'} [EXPANDED]  inputs: bootstrap(a=1, b=2, c=3, pops=2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (((3) - 1) - 1) == 0, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (((3) - 1) - 1) == 3, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (((3) - 1) - 1) == 2, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (((3) - 1) - 1) == 1, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((((0) + 1) + 1) + 1) < pops, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6'} [EXPANDED]  inputs: tc_6(a=0, b=0, c=0, pops=3)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((((3) - 1) - 1) - 1) == 0, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5'} [EXPANDED]  inputs: tc_5(a=0, b=0, c=0, pops=4)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_13'}  inputs: tc_13(a=0, b=0, c=0, pops=6)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_14'}  inputs: tc_14(a=0, b=0, c=0, pops=-32768)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_15'}  inputs: tc_15(a=0, b=0, c=12, pops=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_16'}  inputs: tc_16(a=0, b=0, c=-32768, pops=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_17'}  inputs: tc_17(a=0, b=12, c=0, pops=0)
+  |     |     (T) ->
+  |     |     |   {Ø}
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 18] Target: b < 0 -> T (cnt=1)
+  Path constraint: (!(a < 0)) && (!(a > 9)) && (b < 0)
+  -> SAT: {'a': '0', 'b': '-32768', 'c': '0', 'pops': '0'}
+  Execution path: 4 steps, 3 conditions
+CCT DOT saved to: csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/SpfStackPops_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 0 @L21 (WP: b < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 0 @L21 (WP: c < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pops < 0 @L21 (WP: pops < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pops > 4 @L21 (WP: pops > 4, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (0) < pops, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=0, pops=0)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (3) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (3) == 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (3) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (3) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((0) + 1) < pops, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=0, c=0, pops=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((3) - 1) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: ((3) - 1) == 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: ((3) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: ((3) - 1) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (((0) + 1) + 1) < pops, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'} [EXPANDED]  inputs: bootstrap(a=1, b=2, c=3, pops=2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (((3) - 1) - 1) == 0, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (((3) - 1) - 1) == 3, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (((3) - 1) - 1) == 2, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (((3) - 1) - 1) == 1, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((((0) + 1) + 1) + 1) < pops, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6'} [EXPANDED]  inputs: tc_6(a=0, b=0, c=0, pops=3)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((((3) - 1) - 1) - 1) == 0, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5'} [EXPANDED]  inputs: tc_5(a=0, b=0, c=0, pops=4)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_13'}  inputs: tc_13(a=0, b=0, c=0, pops=6)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_14'}  inputs: tc_14(a=0, b=0, c=0, pops=-32768)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_15'}  inputs: tc_15(a=0, b=0, c=12, pops=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_16'}  inputs: tc_16(a=0, b=0, c=-32768, pops=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_17'}  inputs: tc_17(a=0, b=12, c=0, pops=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_18'}  inputs: tc_18(a=0, b=-32768, c=0, pops=0)
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 19] Target: a > 9 -> T (cnt=1)
+  Path constraint: (!(a < 0)) && (a > 9)
+  -> SAT: {'a': '16384', 'b': '0', 'c': '0', 'pops': '0'}
+  Execution path: 3 steps, 2 conditions
+CCT DOT saved to: csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/SpfStackPops_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 0 @L21 (WP: b < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 0 @L21 (WP: c < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pops < 0 @L21 (WP: pops < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pops > 4 @L21 (WP: pops > 4, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (0) < pops, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=0, pops=0)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (3) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (3) == 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (3) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (3) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((0) + 1) < pops, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=0, c=0, pops=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((3) - 1) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: ((3) - 1) == 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: ((3) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: ((3) - 1) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (((0) + 1) + 1) < pops, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'} [EXPANDED]  inputs: bootstrap(a=1, b=2, c=3, pops=2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (((3) - 1) - 1) == 0, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (((3) - 1) - 1) == 3, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (((3) - 1) - 1) == 2, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (((3) - 1) - 1) == 1, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((((0) + 1) + 1) + 1) < pops, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6'} [EXPANDED]  inputs: tc_6(a=0, b=0, c=0, pops=3)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((((3) - 1) - 1) - 1) == 0, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5'} [EXPANDED]  inputs: tc_5(a=0, b=0, c=0, pops=4)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_13'}  inputs: tc_13(a=0, b=0, c=0, pops=6)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_14'}  inputs: tc_14(a=0, b=0, c=0, pops=-32768)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_15'}  inputs: tc_15(a=0, b=0, c=12, pops=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_16'}  inputs: tc_16(a=0, b=0, c=-32768, pops=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_17'}  inputs: tc_17(a=0, b=12, c=0, pops=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_18'}  inputs: tc_18(a=0, b=-32768, c=0, pops=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_19'}  inputs: tc_19(a=16384, b=0, c=0, pops=0)
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 20] Target: a < 0 -> T (cnt=1)
+  Path constraint: (a < 0)
+  -> SAT: {'a': '-32768', 'b': '0', 'c': '0', 'pops': '0'}
+  Execution path: 2 steps, 1 conditions
+CCT DOT saved to: csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/SpfStackPops_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: a < 0 @L21 (WP: a < 0, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: a > 9 @L21 (WP: a > 9, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: b < 0 @L21 (WP: b < 0, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: b > 9 @L21 (WP: b > 9, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: c < 0 @L21 (WP: c < 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: c > 9 @L21 (WP: c > 9, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [NODE] Condition: pops < 0 @L21 (WP: pops < 0, Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [NODE] Condition: pops > 4 @L21 (WP: pops > 4, Cnt: 1)
+  |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (0) < pops, Cnt: 1)
+  |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(a=0, b=0, c=0, pops=0)
+  |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (3) == 0, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (3) == 3, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (3) == 2, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (3) == 1, Cnt: 1)
+  |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((0) + 1) < pops, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_4'}  inputs: tc_4(a=0, b=0, c=0, pops=1)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((3) - 1) == 0, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: ((3) - 1) == 3, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: ((3) - 1) == 2, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: ((3) - 1) == 1, Cnt: 2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: (((0) + 1) + 1) < pops, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'} [EXPANDED]  inputs: bootstrap(a=1, b=2, c=3, pops=2)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: (((3) - 1) - 1) == 0, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 3 @L27 (WP: (((3) - 1) - 1) == 3, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 2 @L28 (WP: (((3) - 1) - 1) == 2, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 1 @L29 (WP: (((3) - 1) - 1) == 1, Cnt: 3) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: i < pops @L25 (WP: ((((0) + 1) + 1) + 1) < pops, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6'} [EXPANDED]  inputs: tc_6(a=0, b=0, c=0, pops=3)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [NODE] Condition: depth == 0 @L26 (WP: ((((3) - 1) - 1) - 1) == 0, Cnt: 4) [EXPANDED]
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_5'} [EXPANDED]  inputs: tc_5(a=0, b=0, c=0, pops=4)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |     |   [LEAF] Cases: {'tc_13'}  inputs: tc_13(a=0, b=0, c=0, pops=6)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_14'}  inputs: tc_14(a=0, b=0, c=0, pops=-32768)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_15'}  inputs: tc_15(a=0, b=0, c=12, pops=0)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Cases: {'tc_16'}  inputs: tc_16(a=0, b=0, c=-32768, pops=0)
+  |     |     |     (T) ->
+  |     |     |     |   [LEAF] Cases: {'tc_17'}  inputs: tc_17(a=0, b=12, c=0, pops=0)
+  |     |     (T) ->
+  |     |     |   [LEAF] Cases: {'tc_18'}  inputs: tc_18(a=0, b=-32768, c=0, pops=0)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_19'}  inputs: tc_19(a=16384, b=0, c=0, pops=0)
+  (T) ->
+  |   [LEAF] Cases: {'tc_20'}  inputs: tc_20(a=-32768, b=0, c=0, pops=0)
+-----------------------------
+
+
+  [Iter 21] CCT is FULL — all branches covered!
+CCT DOT saved to: csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/SpfStackPops_cct.dot
+
+=======================================================
+  Done! 20 test cases generated in 21 iterations.
+=======================================================
+CCT DOT saved to: csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/SpfStackPops_cct.dot
+
+Generated Test Cases:
+---------------------------------------------
+  [BOOTSTRAP]  (bootstrap)
+  tc_02  [SAT]  a=0, b=0, c=0, pops=0
+  [INFEASIBLE]
+  tc_04  [SAT]  a=0, b=0, c=0, pops=1
+  tc_05  [SAT]  a=0, b=0, c=0, pops=4
+  tc_06  [SAT]  a=0, b=0, c=0, pops=3
+  [INFEASIBLE]
+  [INFEASIBLE]
+  [INFEASIBLE]
+  [INFEASIBLE]
+  [INFEASIBLE]
+  [INFEASIBLE]
+  tc_13  [SAT]  a=0, b=0, c=0, pops=6
+  tc_14  [SAT]  a=0, b=0, c=0, pops=-32768
+  tc_15  [SAT]  a=0, b=0, c=12, pops=0
+  tc_16  [SAT]  a=0, b=0, c=-32768, pops=0
+  tc_17  [SAT]  a=0, b=12, c=0, pops=0
+  tc_18  [SAT]  a=0, b=-32768, c=0, pops=0
+  tc_19  [SAT]  a=16384, b=0, c=0, pops=0
+  tc_20  [SAT]  a=-32768, b=0, c=0, pops=0
+
+Timing Summary (ms):
+---------------------------------------------
+  solver_time_ms: 32
+  compile_time_ms: 3392
+  java_exec_time_ms: 670
+  path_log_parse_time_ms: 0
+  cct_path_build_time_ms: 0
+  cct_merge_time_ms: 0
+
+Test cases written to: csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/testcases.json
+  (cleaned up /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/subjects/SpfStackPops/SpfStackPops_instrumented.java)
+
+CCT visualization:
+  DOT: csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/SpfStackPops_cct.dot
+  Stats: csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/cct_stats.json
+  Counts: nodes=51, leaves=26, covered=13, infeasible=13, out_of_range=0, expanded=10, truncated=0
+  Render script: csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/render_cct.sh
+  (render later with: csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/render_cct.sh)
+
+Run log:
+  JSONL: csc_tmp/external_SpfStackPops_1792781160535683000/SpfStackPops/run_log.jsonl

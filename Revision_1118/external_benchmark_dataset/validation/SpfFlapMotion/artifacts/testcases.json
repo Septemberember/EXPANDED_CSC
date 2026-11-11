@@ -1,0 +1,427 @@
+[
+  {
+    "iteration": 0,
+    "inputs": {
+      "goal": 1,
+      "position": 0,
+      "emergency": false
+    },
+    "path_constraint": "bootstrap",
+    "trace_path": "csc_tmp/external_SpfFlapMotion_1792781137345193000/SpfFlapMotion/traces/bootstrap/trace.jsonl",
+    "status": "bootstrap",
+    "timings": {
+      "compile_time_ms": 256,
+      "java_exec_time_ms": 63,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 2,
+    "inputs": {
+      "goal": "0",
+      "position": "0",
+      "emergency": "False"
+    },
+    "path_constraint": "(!(goal < 0)) && (!(goal > 40)) && (!(position < 0)) && (!(position > 40)) && (!(emergency)) && (!(position != goal))",
+    "trace_path": "csc_tmp/external_SpfFlapMotion_1792781137345193000/SpfFlapMotion/traces/t2/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 263,
+      "java_exec_time_ms": 63,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 27
+    }
+  },
+  {
+    "iteration": 3,
+    "inputs": {
+      "goal": "4",
+      "position": "39",
+      "emergency": "False"
+    },
+    "path_constraint": "(!(goal < 0)) && (!(goal > 40)) && (!(position < 0)) && (!(position > 40)) && (!(emergency)) && (position != goal) && (!(emergency)) && (!(goal > position))",
+    "trace_path": "csc_tmp/external_SpfFlapMotion_1792781137345193000/SpfFlapMotion/traces/t3/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 239,
+      "java_exec_time_ms": 49,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 4
+    }
+  },
+  {
+    "iteration": 4,
+    "inputs": {
+      "goal": "3",
+      "position": "4",
+      "emergency": "False"
+    },
+    "path_constraint": "(!(goal < 0)) && (!(goal > 40)) && (!(position < 0)) && (!(position > 40)) && (!(emergency)) && (position != goal) && (!(emergency)) && (!(goal > position)) && (!(((0) + 1) > 1)) && (!((position - 1) != goal))",
+    "trace_path": "csc_tmp/external_SpfFlapMotion_1792781137345193000/SpfFlapMotion/traces/t4/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 245,
+      "java_exec_time_ms": 60,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 5,
+    "inputs": null,
+    "path_constraint": "(!(goal < 0)) && (!(goal > 40)) && (!(position < 0)) && (!(position > 40)) && (!(emergency)) && (position != goal) && (!(emergency)) && (!(goal > position)) && (!(((0) + 1) > 1)) && ((position - 1) != goal) && (emergency)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 6,
+    "inputs": null,
+    "path_constraint": "(!(goal < 0)) && (!(goal > 40)) && (!(position < 0)) && (!(position > 40)) && (!(emergency)) && (position != goal) && (!(emergency)) && (!(goal > position)) && (((0) + 1) > 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 7,
+    "inputs": {
+      "goal": "29",
+      "position": "0",
+      "emergency": "False"
+    },
+    "path_constraint": "(!(goal < 0)) && (!(goal > 40)) && (!(position < 0)) && (!(position > 40)) && (!(emergency)) && (position != goal) && (!(emergency)) && (goal > position) && (!(((0) + 1) > 1)) && ((position + 1) != goal)",
+    "trace_path": "csc_tmp/external_SpfFlapMotion_1792781137345193000/SpfFlapMotion/traces/t7/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 267,
+      "java_exec_time_ms": 58,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 8,
+    "inputs": null,
+    "path_constraint": "(!(goal < 0)) && (!(goal > 40)) && (!(position < 0)) && (!(position > 40)) && (!(emergency)) && (position != goal) && (!(emergency)) && (goal > position) && (!(((0) + 1) > 1)) && ((position + 1) != goal) && (emergency)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 9,
+    "inputs": null,
+    "path_constraint": "(!(goal < 0)) && (!(goal > 40)) && (!(position < 0)) && (!(position > 40)) && (!(emergency)) && (position != goal) && (!(emergency)) && (goal > position) && (((0) + 1) > 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 10,
+    "inputs": null,
+    "path_constraint": "(!(goal < 0)) && (!(goal > 40)) && (!(position < 0)) && (!(position > 40)) && (!(emergency)) && (position != goal) && (emergency)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 11,
+    "inputs": {
+      "goal": "0",
+      "position": "0",
+      "emergency": "True"
+    },
+    "path_constraint": "(!(goal < 0)) && (!(goal > 40)) && (!(position < 0)) && (!(position > 40)) && (emergency)",
+    "trace_path": "csc_tmp/external_SpfFlapMotion_1792781137345193000/SpfFlapMotion/traces/t11/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 269,
+      "java_exec_time_ms": 61,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 12,
+    "inputs": {
+      "goal": "0",
+      "position": "30",
+      "emergency": "True"
+    },
+    "path_constraint": "(!(goal < 0)) && (!(goal > 40)) && (!(position < 0)) && (!(position > 40)) && (emergency) && (!(position != (30)))",
+    "trace_path": "csc_tmp/external_SpfFlapMotion_1792781137345193000/SpfFlapMotion/traces/t12/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 237,
+      "java_exec_time_ms": 51,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 13,
+    "inputs": null,
+    "path_constraint": "(!(goal < 0)) && (!(goal > 40)) && (!(position < 0)) && (!(position > 40)) && (emergency) && (position != (30)) && (!(emergency))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 14,
+    "inputs": {
+      "goal": "0",
+      "position": "31",
+      "emergency": "True"
+    },
+    "path_constraint": "(!(goal < 0)) && (!(goal > 40)) && (!(position < 0)) && (!(position > 40)) && (emergency) && (position != (30)) && (emergency) && (!((30) > position))",
+    "trace_path": "csc_tmp/external_SpfFlapMotion_1792781137345193000/SpfFlapMotion/traces/t14/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 281,
+      "java_exec_time_ms": 62,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 15,
+    "inputs": {
+      "goal": "0",
+      "position": "40",
+      "emergency": "True"
+    },
+    "path_constraint": "(!(goal < 0)) && (!(goal > 40)) && (!(position < 0)) && (!(position > 40)) && (emergency) && (position != (30)) && (emergency) && (!((30) > position)) && (!(((0) + 1) > 1)) && (!(position - 10) != (30))",
+    "trace_path": "csc_tmp/external_SpfFlapMotion_1792781137345193000/SpfFlapMotion/traces/t15/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 295,
+      "java_exec_time_ms": 63,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 16,
+    "inputs": null,
+    "path_constraint": "(!(goal < 0)) && (!(goal > 40)) && (!(position < 0)) && (!(position > 40)) && (emergency) && (position != (30)) && (emergency) && (!((30) > position)) && (!(((0) + 1) > 1)) && (position - 10) != (30) && (!(emergency))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 17,
+    "inputs": null,
+    "path_constraint": "(!(goal < 0)) && (!(goal > 40)) && (!(position < 0)) && (!(position > 40)) && (emergency) && (position != (30)) && (emergency) && (!((30) > position)) && (((0) + 1) > 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 18,
+    "inputs": {
+      "goal": "0",
+      "position": "20",
+      "emergency": "True"
+    },
+    "path_constraint": "(!(goal < 0)) && (!(goal > 40)) && (!(position < 0)) && (!(position > 40)) && (emergency) && (position != (30)) && (emergency) && ((30) > position) && (!(((0) + 1) > 1)) && (!(position + 10) != (30))",
+    "trace_path": "csc_tmp/external_SpfFlapMotion_1792781137345193000/SpfFlapMotion/traces/t18/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 375,
+      "java_exec_time_ms": 139,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 19,
+    "inputs": null,
+    "path_constraint": "(!(goal < 0)) && (!(goal > 40)) && (!(position < 0)) && (!(position > 40)) && (emergency) && (position != (30)) && (emergency) && ((30) > position) && (!(((0) + 1) > 1)) && (position + 10) != (30) && (!(emergency))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 20,
+    "inputs": {
+      "goal": "12",
+      "position": "21",
+      "emergency": "True"
+    },
+    "path_constraint": "(!(goal < 0)) && (!(goal > 40)) && (!(position < 0)) && (!(position > 40)) && (emergency) && (position != (30)) && (emergency) && ((30) > position) && (!(((0) + 1) > 1)) && (position + 10) != (30) && (emergency) && (!(30) > (position + 10))",
+    "trace_path": "csc_tmp/external_SpfFlapMotion_1792781137345193000/SpfFlapMotion/traces/t20/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 252,
+      "java_exec_time_ms": 50,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 21,
+    "inputs": null,
+    "path_constraint": "(!(goal < 0)) && (!(goal > 40)) && (!(position < 0)) && (!(position > 40)) && (emergency) && (position != (30)) && (emergency) && ((30) > position) && (((0) + 1) > 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 22,
+    "inputs": {
+      "goal": "0",
+      "position": "44",
+      "emergency": "False"
+    },
+    "path_constraint": "(!(goal < 0)) && (!(goal > 40)) && (!(position < 0)) && (position > 40)",
+    "trace_path": "csc_tmp/external_SpfFlapMotion_1792781137345193000/SpfFlapMotion/traces/t22/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 371,
+      "java_exec_time_ms": 60,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 23,
+    "inputs": {
+      "goal": "0",
+      "position": "-32768",
+      "emergency": "False"
+    },
+    "path_constraint": "(!(goal < 0)) && (!(goal > 40)) && (position < 0)",
+    "trace_path": "csc_tmp/external_SpfFlapMotion_1792781137345193000/SpfFlapMotion/traces/t23/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 281,
+      "java_exec_time_ms": 77,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 24,
+    "inputs": {
+      "goal": "44",
+      "position": "0",
+      "emergency": "False"
+    },
+    "path_constraint": "(!(goal < 0)) && (goal > 40)",
+    "trace_path": "csc_tmp/external_SpfFlapMotion_1792781137345193000/SpfFlapMotion/traces/t24/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 242,
+      "java_exec_time_ms": 58,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 4
+    }
+  },
+  {
+    "iteration": 25,
+    "inputs": {
+      "goal": "-32768",
+      "position": "0",
+      "emergency": "False"
+    },
+    "path_constraint": "(goal < 0)",
+    "trace_path": "csc_tmp/external_SpfFlapMotion_1792781137345193000/SpfFlapMotion/traces/t25/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 246,
+      "java_exec_time_ms": 63,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  }
+]

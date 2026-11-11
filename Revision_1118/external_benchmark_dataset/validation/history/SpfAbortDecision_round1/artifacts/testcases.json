@@ -1,0 +1,140 @@
+[
+  {
+    "iteration": 0,
+    "inputs": {
+      "altitude": 120000,
+      "fired": true
+    },
+    "path_constraint": "bootstrap",
+    "trace_path": "csc_tmp/external_SpfAbortDecision_1792781157798136000/SpfAbortDecision/traces/bootstrap/trace.jsonl",
+    "status": "bootstrap",
+    "timings": {
+      "compile_time_ms": 237,
+      "java_exec_time_ms": 60,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 2,
+    "inputs": {
+      "altitude": "0",
+      "fired": "False"
+    },
+    "path_constraint": "(!(fired))",
+    "trace_path": "csc_tmp/external_SpfAbortDecision_1792781157798136000/SpfAbortDecision/traces/t2/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 252,
+      "java_exec_time_ms": 49,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 3,
+    "inputs": null,
+    "path_constraint": "(!(fired)) && (!(altitude <= 120000))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 4,
+    "inputs": null,
+    "path_constraint": "(!(fired)) && (altitude <= 120000) && (!(fired)) && (altitude >= 120000)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 5,
+    "inputs": null,
+    "path_constraint": "(!(fired)) && (altitude <= 120000) && (fired)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 6,
+    "inputs": null,
+    "path_constraint": "(fired) && (!(altitude <= 120000))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 7,
+    "inputs": null,
+    "path_constraint": "(fired) && (altitude <= 120000) && (!(fired))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 8,
+    "inputs": {
+      "altitude": "0",
+      "fired": "True"
+    },
+    "path_constraint": "(fired) && (altitude <= 120000) && (fired) && (!(altitude >= 120000))",
+    "trace_path": "csc_tmp/external_SpfAbortDecision_1792781157798136000/SpfAbortDecision/traces/t8/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 242,
+      "java_exec_time_ms": 47,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 9,
+    "inputs": null,
+    "path_constraint": "(fired) && (altitude <= 120000) && (fired) && (altitude >= 120000) && (!(true))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  }
+]

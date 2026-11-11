@@ -1,0 +1,122 @@
+digraph CCT {
+  rankdir=TB;
+  node [shape=box, style=filled, fontname="monospace", fontsize=10];
+  edge [fontname="monospace", fontsize=9];
+
+  // Legend
+  {
+    rank=sink;
+    legend [shape=plaintext, label=<
+      <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td bgcolor="#e8f5e9"><b>Leaf</b></td><td>Covered (has test cases)</td></tr>
+        <tr><td bgcolor="#d6d6d6"><b>Leaf</b></td><td>Infeasible (X)</td></tr>
+        <tr><td bgcolor="#fff9c4"><b>Leaf</b></td><td>Out-of-Range</td></tr>
+        <tr><td bgcolor="#fff3e0"><b>Leaf</b></td><td>Truncated (MAX_LOOP_BOUND)</td></tr>
+        <tr><td bgcolor="#e3f2fd"><b>Leaf</b></td><td>Expanded node</td></tr>
+        <tr><td bgcolor="#eeeeee"><b>Leaf Ø</b></td><td>Uncovered (empty)</td></tr>
+      </table>
+    >];
+  }
+
+  node0 [label="(1) a < 0\nWP: a < 0", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node1 [label="(1) a > 9\nWP: a > 9", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node0 -> node1 [label="F", color="#c62828", style=dashed];
+  node2 [label="(1) b < 0\nWP: b < 0", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node1 -> node2 [label="F", color="#c62828", style=dashed];
+  node3 [label="(1) b > 9\nWP: b > 9", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node2 -> node3 [label="F", color="#c62828", style=dashed];
+  node4 [label="(1) c < 0\nWP: c < 0", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node3 -> node4 [label="F", color="#c62828", style=dashed];
+  node5 [label="(1) c > 9\nWP: c > 9", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node4 -> node5 [label="F", color="#c62828", style=dashed];
+  node6 [label="(1) pops < 0\nWP: pops < 0", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node5 -> node6 [label="F", color="#c62828", style=dashed];
+  node7 [label="(1) pops > 4\nWP: pops > 4", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node6 -> node7 [label="F", color="#c62828", style=dashed];
+  node8 [label="(1) i < pops\nWP: (0) < pops", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node7 -> node8 [label="F", color="#c62828", style=dashed];
+  node9 [label="tc_2(a=0, b=0, c=0, pops=0)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node8 -> node9 [label="F", color="#c62828", style=dashed];
+  node10 [label="(1) depth == 0\nWP: (3) == 0", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node8 -> node10 [label="T", color="#2e7d32"];
+  node11 [label="(1) depth == 3\nWP: (3) == 3", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node10 -> node11 [label="F", color="#c62828", style=dashed];
+  node12 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node11 -> node12 [label="F", color="#c62828", style=dashed];
+  node13 [label="(1) depth == 2\nWP: (3) == 2", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node11 -> node13 [label="T", color="#2e7d32"];
+  node14 [label="(1) depth == 1\nWP: (3) == 1", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node13 -> node14 [label="F", color="#c62828", style=dashed];
+  node15 [label="(2) i < pops\nWP: ((0) + 1) < pops", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node14 -> node15 [label="F", color="#c62828", style=dashed];
+  node16 [label="tc_4(a=0, b=0, c=0, pops=1)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node15 -> node16 [label="F", color="#c62828", style=dashed];
+  node17 [label="(2) depth == 0\nWP: ((3) - 1) == 0", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node15 -> node17 [label="T", color="#2e7d32"];
+  node18 [label="(2) depth == 3\nWP: ((3) - 1) == 3", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node17 -> node18 [label="F", color="#c62828", style=dashed];
+  node19 [label="(2) depth == 2\nWP: ((3) - 1) == 2", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node18 -> node19 [label="F", color="#c62828", style=dashed];
+  node20 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node19 -> node20 [label="F", color="#c62828", style=dashed];
+  node21 [label="(2) depth == 1\nWP: ((3) - 1) == 1", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node19 -> node21 [label="T", color="#2e7d32"];
+  node22 [label="(3) i < pops\nWP: (((0) + 1) + 1) < pops", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node21 -> node22 [label="F", color="#c62828", style=dashed];
+  node23 [label="bootstrap(a=1, b=2, c=3, pops=2)\n[EXPANDED]", shape=ellipse, fillcolor="#e3f2fd", fontcolor="#1b5e20"];
+  node22 -> node23 [label="F", color="#c62828", style=dashed];
+  node24 [label="(3) depth == 0\nWP: (((3) - 1) - 1) == 0", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node22 -> node24 [label="T", color="#2e7d32"];
+  node25 [label="(3) depth == 3\nWP: (((3) - 1) - 1) == 3", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node24 -> node25 [label="F", color="#c62828", style=dashed];
+  node26 [label="(3) depth == 2\nWP: (((3) - 1) - 1) == 2", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node25 -> node26 [label="F", color="#c62828", style=dashed];
+  node27 [label="(3) depth == 1\nWP: (((3) - 1) - 1) == 1", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node26 -> node27 [label="F", color="#c62828", style=dashed];
+  node28 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node27 -> node28 [label="F", color="#c62828", style=dashed];
+  node29 [label="(4) i < pops\nWP: ((((0) + 1) + 1) + 1) < pops", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node27 -> node29 [label="T", color="#2e7d32"];
+  node30 [label="tc_6(a=0, b=0, c=0, pops=3)\n[EXPANDED]", shape=ellipse, fillcolor="#e3f2fd", fontcolor="#1b5e20"];
+  node29 -> node30 [label="F", color="#c62828", style=dashed];
+  node31 [label="(4) depth == 0\nWP: ((((3) - 1) - 1) - 1) == 0", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node29 -> node31 [label="T", color="#2e7d32"];
+  node32 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node31 -> node32 [label="F", color="#c62828", style=dashed];
+  node33 [label="tc_5(a=0, b=0, c=0, pops=4)\n[EXPANDED]", shape=ellipse, fillcolor="#e3f2fd", fontcolor="#1b5e20"];
+  node31 -> node33 [label="T", color="#2e7d32"];
+  node34 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node26 -> node34 [label="T", color="#2e7d32"];
+  node35 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node25 -> node35 [label="T", color="#2e7d32"];
+  node36 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node24 -> node36 [label="T", color="#2e7d32"];
+  node37 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node21 -> node37 [label="T", color="#2e7d32"];
+  node38 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node18 -> node38 [label="T", color="#2e7d32"];
+  node39 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node17 -> node39 [label="T", color="#2e7d32"];
+  node40 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node14 -> node40 [label="T", color="#2e7d32"];
+  node41 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node13 -> node41 [label="T", color="#2e7d32"];
+  node42 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node10 -> node42 [label="T", color="#2e7d32"];
+  node43 [label="tc_13(a=0, b=0, c=0, pops=6)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node7 -> node43 [label="T", color="#2e7d32"];
+  node44 [label="tc_14(a=0, b=0, c=0, pops=-32768)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node6 -> node44 [label="T", color="#2e7d32"];
+  node45 [label="tc_15(a=0, b=0, c=12, pops=0)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node5 -> node45 [label="T", color="#2e7d32"];
+  node46 [label="tc_16(a=0, b=0, c=-32768, pops=0)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node4 -> node46 [label="T", color="#2e7d32"];
+  node47 [label="tc_17(a=0, b=12, c=0, pops=0)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node3 -> node47 [label="T", color="#2e7d32"];
+  node48 [label="tc_18(a=0, b=-32768, c=0, pops=0)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node2 -> node48 [label="T", color="#2e7d32"];
+  node49 [label="tc_19(a=16384, b=0, c=0, pops=0)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node1 -> node49 [label="T", color="#2e7d32"];
+  node50 [label="tc_20(a=-32768, b=0, c=0, pops=0)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node0 -> node50 [label="T", color="#2e7d32"];
+}

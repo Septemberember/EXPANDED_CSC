@@ -1,0 +1,267 @@
+[
+  {
+    "iteration": 0,
+    "inputs": {
+      "a": 65,
+      "b": 48,
+      "c": 97
+    },
+    "path_constraint": "bootstrap",
+    "trace_path": "csc_tmp/external_SvTokenIdentifier_1792782075348243000/SvTokenIdentifier/traces/bootstrap/trace.jsonl",
+    "status": "bootstrap",
+    "timings": {
+      "compile_time_ms": 245,
+      "java_exec_time_ms": 51,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 2,
+    "inputs": {
+      "a": "59",
+      "b": "32",
+      "c": "32"
+    },
+    "path_constraint": "(!(a < 32)) && (!(a > 126)) && (!(b < 32)) && (!(b > 126)) && (!(c < 32)) && (!(c > 126)) && (!(((a >= 65 && a <= 90) || (a >= 97 && a <= 122))))",
+    "trace_path": "csc_tmp/external_SvTokenIdentifier_1792782075348243000/SvTokenIdentifier/traces/t2/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 246,
+      "java_exec_time_ms": 51,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 5
+    }
+  },
+  {
+    "iteration": 3,
+    "inputs": null,
+    "path_constraint": "(!(a < 32)) && (!(a > 126)) && (!(b < 32)) && (!(b > 126)) && (!(c < 32)) && (!(c > 126)) && (((a >= 65 && a <= 90) || (a >= 97 && a <= 122))) && (!((1) < 3))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 4,
+    "inputs": {
+      "a": "112",
+      "b": "59",
+      "c": "32"
+    },
+    "path_constraint": "(!(a < 32)) && (!(a > 126)) && (!(b < 32)) && (!(b > 126)) && (!(c < 32)) && (!(c > 126)) && (((a >= 65 && a <= 90) || (a >= 97 && a <= 122))) && ((1) < 3) && (!((1) == 2)) && (!((((b) >= 65 && (b) <= 90) || ((b) >= 97 && (b) <= 122)))) && (!(((b) >= 48 && (b) <= 57)))",
+    "trace_path": "csc_tmp/external_SvTokenIdentifier_1792782075348243000/SvTokenIdentifier/traces/t4/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 241,
+      "java_exec_time_ms": 49,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 5,
+    "inputs": null,
+    "path_constraint": "(!(a < 32)) && (!(a > 126)) && (!(b < 32)) && (!(b > 126)) && (!(c < 32)) && (!(c > 126)) && (((a >= 65 && a <= 90) || (a >= 97 && a <= 122))) && ((1) < 3) && (!((1) == 2)) && (!((((b) >= 65 && (b) <= 90) || ((b) >= 97 && (b) <= 122)))) && (((b) >= 48 && (b) <= 57)) && (!(((1) + 1) < 3))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 6,
+    "inputs": {
+      "a": "112",
+      "b": "80",
+      "c": "64"
+    },
+    "path_constraint": "(!(a < 32)) && (!(a > 126)) && (!(b < 32)) && (!(b > 126)) && (!(c < 32)) && (!(c > 126)) && (((a >= 65 && a <= 90) || (a >= 97 && a <= 122))) && ((1) < 3) && (!((1) == 2)) && ((((b) >= 65 && (b) <= 90) || ((b) >= 97 && (b) <= 122)))",
+    "trace_path": "csc_tmp/external_SvTokenIdentifier_1792782075348243000/SvTokenIdentifier/traces/t6/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 243,
+      "java_exec_time_ms": 59,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 7,
+    "inputs": null,
+    "path_constraint": "(!(a < 32)) && (!(a > 126)) && (!(b < 32)) && (!(b > 126)) && (!(c < 32)) && (!(c > 126)) && (((a >= 65 && a <= 90) || (a >= 97 && a <= 122))) && ((1) < 3) && (!((1) == 2)) && ((((b) >= 65 && (b) <= 90) || ((b) >= 97 && (b) <= 122))) && (!(((1) + 1) < 3))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 8,
+    "inputs": {
+      "a": "80",
+      "b": "112",
+      "c": "48"
+    },
+    "path_constraint": "(!(a < 32)) && (!(a > 126)) && (!(b < 32)) && (!(b > 126)) && (!(c < 32)) && (!(c > 126)) && (((a >= 65 && a <= 90) || (a >= 97 && a <= 122))) && ((1) < 3) && (!((1) == 2)) && ((((b) >= 65 && (b) <= 90) || ((b) >= 97 && (b) <= 122))) && (((1) + 1) < 3) && (((1) + 1) == 2) && (!((((c) >= 65 && (c) <= 90) || ((c) >= 97 && (c) <= 122)))) && (((c) >= 48 && (c) <= 57))",
+    "trace_path": "csc_tmp/external_SvTokenIdentifier_1792782075348243000/SvTokenIdentifier/traces/t8/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 244,
+      "java_exec_time_ms": 52,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 9,
+    "inputs": null,
+    "path_constraint": "(!(a < 32)) && (!(a > 126)) && (!(b < 32)) && (!(b > 126)) && (!(c < 32)) && (!(c > 126)) && (((a >= 65 && a <= 90) || (a >= 97 && a <= 122))) && ((1) < 3) && ((1) == 2)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 10,
+    "inputs": {
+      "a": "64",
+      "b": "64",
+      "c": "127"
+    },
+    "path_constraint": "(!(a < 32)) && (!(a > 126)) && (!(b < 32)) && (!(b > 126)) && (!(c < 32)) && (c > 126)",
+    "trace_path": "csc_tmp/external_SvTokenIdentifier_1792782075348243000/SvTokenIdentifier/traces/t10/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 244,
+      "java_exec_time_ms": 58,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 11,
+    "inputs": {
+      "a": "64",
+      "b": "32",
+      "c": "0"
+    },
+    "path_constraint": "(!(a < 32)) && (!(a > 126)) && (!(b < 32)) && (!(b > 126)) && (c < 32)",
+    "trace_path": "csc_tmp/external_SvTokenIdentifier_1792782075348243000/SvTokenIdentifier/traces/t11/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 247,
+      "java_exec_time_ms": 45,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 12,
+    "inputs": {
+      "a": "63",
+      "b": "127",
+      "c": "0"
+    },
+    "path_constraint": "(!(a < 32)) && (!(a > 126)) && (!(b < 32)) && (b > 126)",
+    "trace_path": "csc_tmp/external_SvTokenIdentifier_1792782075348243000/SvTokenIdentifier/traces/t12/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 249,
+      "java_exec_time_ms": 44,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 13,
+    "inputs": {
+      "a": "63",
+      "b": "0",
+      "c": "0"
+    },
+    "path_constraint": "(!(a < 32)) && (!(a > 126)) && (b < 32)",
+    "trace_path": "csc_tmp/external_SvTokenIdentifier_1792782075348243000/SvTokenIdentifier/traces/t13/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 255,
+      "java_exec_time_ms": 56,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 14,
+    "inputs": {
+      "a": "16384",
+      "b": "0",
+      "c": "0"
+    },
+    "path_constraint": "(!(a < 32)) && (a > 126)",
+    "trace_path": "csc_tmp/external_SvTokenIdentifier_1792782075348243000/SvTokenIdentifier/traces/t14/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 255,
+      "java_exec_time_ms": 44,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 15,
+    "inputs": {
+      "a": "0",
+      "b": "0",
+      "c": "0"
+    },
+    "path_constraint": "(a < 32)",
+    "trace_path": "csc_tmp/external_SvTokenIdentifier_1792782075348243000/SvTokenIdentifier/traces/t15/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 244,
+      "java_exec_time_ms": 55,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  }
+]

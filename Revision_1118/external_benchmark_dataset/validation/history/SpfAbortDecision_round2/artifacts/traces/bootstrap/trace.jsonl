@@ -1,0 +1,11 @@
+{"type":"ASSIGN","line":21,"kind":"var_decl","target":"failure","rhs":"0","value":"0"}
+{"type":"ASSIGN","line":22,"kind":"var_decl","target":"state","rhs":"0","value":"0"}
+{"type":"ASSIGN","line":23,"kind":"var_decl","target":"selected","rhs":"false","value":"false"}
+{"type":"COND","line":24,"kind":"if","order":1,"expr":"fired","value":true}
+{"type":"COND","line":25,"kind":"if","order":1,"expr":"altitude <= 120000","value":true}
+{"type":"COND","line":26,"kind":"if","order":1,"expr":"fired","value":true}
+{"type":"ASSIGN","line":26,"kind":"assign","target":"state","rhs":"1","value":"1"}
+{"type":"ASSIGN","line":27,"kind":"assign","target":"selected","rhs":"true","value":"true"}
+{"type":"COND","line":29,"kind":"if","order":1,"expr":"altitude >= 120000","value":true}
+{"type":"COND","line":30,"kind":"if","order":1,"expr":"selected","value":true}
+{"type":"RETURN","line":30,"target":"return_value","rhs":"-2","value":"-2"}

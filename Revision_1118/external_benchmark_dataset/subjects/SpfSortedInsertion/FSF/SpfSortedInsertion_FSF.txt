@@ -1,0 +1,19 @@
+[fsf_1]
+T: a < 0 || a > 9 || b < a || b > 9 || c < b || c > 9 || value < 0 || value > 9
+D: return_value == -1
+
+[fsf_2]
+T: !(a < 0 || a > 9 || b < a || b > 9 || c < b || c > 9 || value < 0 || value > 9) && (value <= a)
+D: return_value == value * 1000 + a * 100 + b * 10 + c
+
+[fsf_3]
+T: !(a < 0 || a > 9 || b < a || b > 9 || c < b || c > 9 || value < 0 || value > 9) && (value > a && value <= b)
+D: return_value == a * 1000 + value * 100 + b * 10 + c
+
+[fsf_4]
+T: !(a < 0 || a > 9 || b < a || b > 9 || c < b || c > 9 || value < 0 || value > 9) && (value > b && value <= c)
+D: return_value == a * 1000 + b * 100 + value * 10 + c
+
+[fsf_5]
+T: !(a < 0 || a > 9 || b < a || b > 9 || c < b || c > 9 || value < 0 || value > 9) && (value > c)
+D: return_value == a * 1000 + b * 100 + c * 10 + value

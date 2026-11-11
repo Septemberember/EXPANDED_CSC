@@ -1,0 +1,11 @@
+[fsf_1]
+T: kind < 0 || kind > 3 || ch < 0 || ch > 10 || a < 0 || a > 10 || b < 0 || b > 10 || index < 0 || index > 1
+D: return_value == -99
+
+[fsf_2]
+T: !(kind < 0 || kind > 3 || ch < 0 || ch > 10 || a < 0 || a > 10 || b < 0 || b > 10 || index < 0 || index > 1) && ((ch != 0 && ((kind == 0 && ch == a) || (kind == 1 && ch != 10) || (kind == 2 && (ch == a || ch == b)) || (kind == 3 && ch != 10 && ch != a && ch != b))))
+D: return_value == index + 1
+
+[fsf_3]
+T: !(kind < 0 || kind > 3 || ch < 0 || ch > 10 || a < 0 || a > 10 || b < 0 || b > 10 || index < 0 || index > 1) && (!(ch != 0 && ((kind == 0 && ch == a) || (kind == 1 && ch != 10) || (kind == 2 && (ch == a || ch == b)) || (kind == 3 && ch != 10 && ch != a && ch != b))))
+D: return_value == -1

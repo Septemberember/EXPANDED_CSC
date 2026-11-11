@@ -1,0 +1,11 @@
+[fsf_1]
+T: a < -3 || a > 3 || b < -3 || b > 3 || c < -3 || c > 3
+D: return_value == -99
+
+[fsf_2]
+T: !(a < -3 || a > 3 || b < -3 || b > 3 || c < -3 || c > 3) && (((increasing && strict && a < b && b < c) || (increasing && !strict && a <= b && b <= c) || (!increasing && strict && a > b && b > c) || (!increasing && !strict && a >= b && b >= c)))
+D: return_value == 1
+
+[fsf_3]
+T: !(a < -3 || a > 3 || b < -3 || b > 3 || c < -3 || c > 3) && (!((increasing && strict && a < b && b < c) || (increasing && !strict && a <= b && b <= c) || (!increasing && strict && a > b && b > c) || (!increasing && !strict && a >= b && b >= c)))
+D: return_value == 0

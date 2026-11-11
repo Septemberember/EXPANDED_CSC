@@ -1,0 +1,74 @@
+digraph CCT {
+  rankdir=TB;
+  node [shape=box, style=filled, fontname="monospace", fontsize=10];
+  edge [fontname="monospace", fontsize=9];
+
+  // Legend
+  {
+    rank=sink;
+    legend [shape=plaintext, label=<
+      <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td bgcolor="#e8f5e9"><b>Leaf</b></td><td>Covered (has test cases)</td></tr>
+        <tr><td bgcolor="#d6d6d6"><b>Leaf</b></td><td>Infeasible (X)</td></tr>
+        <tr><td bgcolor="#fff9c4"><b>Leaf</b></td><td>Out-of-Range</td></tr>
+        <tr><td bgcolor="#fff3e0"><b>Leaf</b></td><td>Truncated (MAX_LOOP_BOUND)</td></tr>
+        <tr><td bgcolor="#e3f2fd"><b>Leaf</b></td><td>Expanded node</td></tr>
+        <tr><td bgcolor="#eeeeee"><b>Leaf Ø</b></td><td>Uncovered (empty)</td></tr>
+      </table>
+    >];
+  }
+
+  node0 [label="(1) balance < 0\nWP: balance < 0", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node1 [label="(1) balance > 20\nWP: balance > 20", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node0 -> node1 [label="F", color="#c62828", style=dashed];
+  node2 [label="(1) deposit < -5\nWP: deposit < -5", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node1 -> node2 [label="F", color="#c62828", style=dashed];
+  node3 [label="(1) deposit > 10\nWP: deposit > 10", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node2 -> node3 [label="F", color="#c62828", style=dashed];
+  node4 [label="(1) amount < -5\nWP: amount < -5", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node3 -> node4 [label="F", color="#c62828", style=dashed];
+  node5 [label="(1) amount > 30\nWP: amount > 30", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node4 -> node5 [label="F", color="#c62828", style=dashed];
+  node6 [label="(1) withdrawals < 0\nWP: withdrawals < 0", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node5 -> node6 [label="F", color="#c62828", style=dashed];
+  node7 [label="(1) withdrawals > 5\nWP: withdrawals > 5", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node6 -> node7 [label="F", color="#c62828", style=dashed];
+  node8 [label="(1) deposit > 0\nWP: deposit > 0", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node7 -> node8 [label="F", color="#c62828", style=dashed];
+  node9 [label="(1) amount > currentBalance\nWP: amount > (balance)", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node8 -> node9 [label="F", color="#c62828", style=dashed];
+  node10 [label="(1) withdrawals >= 5\nWP: withdrawals >= 5", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node9 -> node10 [label="F", color="#c62828", style=dashed];
+  node11 [label="tc_3(balance=20, deposit=0, amount=0, withdrawals=0)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node10 -> node11 [label="F", color="#c62828", style=dashed];
+  node12 [label="tc_4(balance=20, deposit=0, amount=0, withdrawals=5)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node10 -> node12 [label="T", color="#2e7d32"];
+  node13 [label="tc_2(balance=0, deposit=0, amount=27, withdrawals=0)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node9 -> node13 [label="T", color="#2e7d32"];
+  node14 [label="(1) amount > currentBalance\nWP: amount > ((balance) + deposit)", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node8 -> node14 [label="T", color="#2e7d32"];
+  node15 [label="(1) withdrawals >= 5\nWP: withdrawals >= 5", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node14 -> node15 [label="F", color="#c62828", style=dashed];
+  node16 [label="bootstrap(balance=10, deposit=1, amount=3, withdrawals=0)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node15 -> node16 [label="F", color="#c62828", style=dashed];
+  node17 [label="tc_5(balance=13, deposit=3, amount=-5, withdrawals=5)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node15 -> node17 [label="T", color="#2e7d32"];
+  node18 [label="tc_6(balance=15, deposit=3, amount=19, withdrawals=0)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node14 -> node18 [label="T", color="#2e7d32"];
+  node19 [label="tc_7(balance=0, deposit=-5, amount=27, withdrawals=6)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node7 -> node19 [label="T", color="#2e7d32"];
+  node20 [label="tc_8(balance=0, deposit=-5, amount=27, withdrawals=-32768)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node6 -> node20 [label="T", color="#2e7d32"];
+  node21 [label="tc_9(balance=0, deposit=-5, amount=31, withdrawals=0)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node5 -> node21 [label="T", color="#2e7d32"];
+  node22 [label="tc_10(balance=6, deposit=-5, amount=-32768, withdrawals=0)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node4 -> node22 [label="T", color="#2e7d32"];
+  node23 [label="tc_11(balance=0, deposit=11, amount=0, withdrawals=0)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node3 -> node23 [label="T", color="#2e7d32"];
+  node24 [label="tc_12(balance=0, deposit=-32768, amount=0, withdrawals=0)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node2 -> node24 [label="T", color="#2e7d32"];
+  node25 [label="tc_13(balance=21, deposit=0, amount=0, withdrawals=0)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node1 -> node25 [label="T", color="#2e7d32"];
+  node26 [label="tc_14(balance=-32768, deposit=0, amount=0, withdrawals=0)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node0 -> node26 [label="T", color="#2e7d32"];
+}

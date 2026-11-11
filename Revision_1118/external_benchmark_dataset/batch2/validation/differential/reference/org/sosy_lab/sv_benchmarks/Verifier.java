@@ -1,0 +1,1 @@
+package org.sosy_lab.sv_benchmarks; public class Verifier { public static int nondetInt(){throw new UnsupportedOperationException("unused driver");} public static void assume(boolean b){throw new UnsupportedOperationException("unused driver");}}

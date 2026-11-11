@@ -1,0 +1,282 @@
+[
+  {
+    "iteration": 0,
+    "inputs": {
+      "balance": 10,
+      "deposit": 1,
+      "amount": 3,
+      "withdrawals": 0
+    },
+    "path_constraint": "bootstrap",
+    "trace_path": "csc_tmp/external_SpfBankWithdrawal_1792781143617841000/SpfBankWithdrawal/traces/bootstrap/trace.jsonl",
+    "status": "bootstrap",
+    "timings": {
+      "compile_time_ms": 281,
+      "java_exec_time_ms": 49,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 2,
+    "inputs": {
+      "balance": "0",
+      "deposit": "0",
+      "amount": "27",
+      "withdrawals": "0"
+    },
+    "path_constraint": "(!(balance < 0)) && (!(balance > 20)) && (!(deposit < -5)) && (!(deposit > 10)) && (!(amount < -5)) && (!(amount > 30)) && (!(withdrawals < 0)) && (!(withdrawals > 5)) && (!(deposit > 0))",
+    "trace_path": "csc_tmp/external_SpfBankWithdrawal_1792781143617841000/SpfBankWithdrawal/traces/t2/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 272,
+      "java_exec_time_ms": 57,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 5
+    }
+  },
+  {
+    "iteration": 3,
+    "inputs": {
+      "balance": "20",
+      "deposit": "0",
+      "amount": "0",
+      "withdrawals": "0"
+    },
+    "path_constraint": "(!(balance < 0)) && (!(balance > 20)) && (!(deposit < -5)) && (!(deposit > 10)) && (!(amount < -5)) && (!(amount > 30)) && (!(withdrawals < 0)) && (!(withdrawals > 5)) && (!(deposit > 0)) && (!(amount > balance))",
+    "trace_path": "csc_tmp/external_SpfBankWithdrawal_1792781143617841000/SpfBankWithdrawal/traces/t3/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 299,
+      "java_exec_time_ms": 63,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 4,
+    "inputs": {
+      "balance": "20",
+      "deposit": "0",
+      "amount": "0",
+      "withdrawals": "5"
+    },
+    "path_constraint": "(!(balance < 0)) && (!(balance > 20)) && (!(deposit < -5)) && (!(deposit > 10)) && (!(amount < -5)) && (!(amount > 30)) && (!(withdrawals < 0)) && (!(withdrawals > 5)) && (!(deposit > 0)) && (!(amount > balance)) && (withdrawals >= 5)",
+    "trace_path": "csc_tmp/external_SpfBankWithdrawal_1792781143617841000/SpfBankWithdrawal/traces/t4/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 273,
+      "java_exec_time_ms": 59,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 5,
+    "inputs": {
+      "balance": "13",
+      "deposit": "3",
+      "amount": "-5",
+      "withdrawals": "5"
+    },
+    "path_constraint": "(!(balance < 0)) && (!(balance > 20)) && (!(deposit < -5)) && (!(deposit > 10)) && (!(amount < -5)) && (!(amount > 30)) && (!(withdrawals < 0)) && (!(withdrawals > 5)) && (deposit > 0) && (!(amount > (balance + deposit))) && (withdrawals >= 5)",
+    "trace_path": "csc_tmp/external_SpfBankWithdrawal_1792781143617841000/SpfBankWithdrawal/traces/t5/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 262,
+      "java_exec_time_ms": 58,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 6,
+    "inputs": {
+      "balance": "15",
+      "deposit": "3",
+      "amount": "19",
+      "withdrawals": "0"
+    },
+    "path_constraint": "(!(balance < 0)) && (!(balance > 20)) && (!(deposit < -5)) && (!(deposit > 10)) && (!(amount < -5)) && (!(amount > 30)) && (!(withdrawals < 0)) && (!(withdrawals > 5)) && (deposit > 0) && (amount > (balance + deposit))",
+    "trace_path": "csc_tmp/external_SpfBankWithdrawal_1792781143617841000/SpfBankWithdrawal/traces/t6/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 251,
+      "java_exec_time_ms": 61,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 7,
+    "inputs": {
+      "balance": "0",
+      "deposit": "-5",
+      "amount": "27",
+      "withdrawals": "6"
+    },
+    "path_constraint": "(!(balance < 0)) && (!(balance > 20)) && (!(deposit < -5)) && (!(deposit > 10)) && (!(amount < -5)) && (!(amount > 30)) && (!(withdrawals < 0)) && (withdrawals > 5)",
+    "trace_path": "csc_tmp/external_SpfBankWithdrawal_1792781143617841000/SpfBankWithdrawal/traces/t7/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 261,
+      "java_exec_time_ms": 45,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 8,
+    "inputs": {
+      "balance": "0",
+      "deposit": "-5",
+      "amount": "27",
+      "withdrawals": "-32768"
+    },
+    "path_constraint": "(!(balance < 0)) && (!(balance > 20)) && (!(deposit < -5)) && (!(deposit > 10)) && (!(amount < -5)) && (!(amount > 30)) && (withdrawals < 0)",
+    "trace_path": "csc_tmp/external_SpfBankWithdrawal_1792781143617841000/SpfBankWithdrawal/traces/t8/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 299,
+      "java_exec_time_ms": 69,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 9,
+    "inputs": {
+      "balance": "0",
+      "deposit": "-5",
+      "amount": "31",
+      "withdrawals": "0"
+    },
+    "path_constraint": "(!(balance < 0)) && (!(balance > 20)) && (!(deposit < -5)) && (!(deposit > 10)) && (!(amount < -5)) && (amount > 30)",
+    "trace_path": "csc_tmp/external_SpfBankWithdrawal_1792781143617841000/SpfBankWithdrawal/traces/t9/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 293,
+      "java_exec_time_ms": 51,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 4
+    }
+  },
+  {
+    "iteration": 10,
+    "inputs": {
+      "balance": "6",
+      "deposit": "-5",
+      "amount": "-32768",
+      "withdrawals": "0"
+    },
+    "path_constraint": "(!(balance < 0)) && (!(balance > 20)) && (!(deposit < -5)) && (!(deposit > 10)) && (amount < -5)",
+    "trace_path": "csc_tmp/external_SpfBankWithdrawal_1792781143617841000/SpfBankWithdrawal/traces/t10/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 260,
+      "java_exec_time_ms": 84,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 11,
+    "inputs": {
+      "balance": "0",
+      "deposit": "11",
+      "amount": "0",
+      "withdrawals": "0"
+    },
+    "path_constraint": "(!(balance < 0)) && (!(balance > 20)) && (!(deposit < -5)) && (deposit > 10)",
+    "trace_path": "csc_tmp/external_SpfBankWithdrawal_1792781143617841000/SpfBankWithdrawal/traces/t11/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 321,
+      "java_exec_time_ms": 64,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 6
+    }
+  },
+  {
+    "iteration": 12,
+    "inputs": {
+      "balance": "0",
+      "deposit": "-32768",
+      "amount": "0",
+      "withdrawals": "0"
+    },
+    "path_constraint": "(!(balance < 0)) && (!(balance > 20)) && (deposit < -5)",
+    "trace_path": "csc_tmp/external_SpfBankWithdrawal_1792781143617841000/SpfBankWithdrawal/traces/t12/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 274,
+      "java_exec_time_ms": 49,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 15
+    }
+  },
+  {
+    "iteration": 13,
+    "inputs": {
+      "balance": "21",
+      "deposit": "0",
+      "amount": "0",
+      "withdrawals": "0"
+    },
+    "path_constraint": "(!(balance < 0)) && (balance > 20)",
+    "trace_path": "csc_tmp/external_SpfBankWithdrawal_1792781143617841000/SpfBankWithdrawal/traces/t13/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 296,
+      "java_exec_time_ms": 72,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 14,
+    "inputs": {
+      "balance": "-32768",
+      "deposit": "0",
+      "amount": "0",
+      "withdrawals": "0"
+    },
+    "path_constraint": "(balance < 0)",
+    "trace_path": "csc_tmp/external_SpfBankWithdrawal_1792781143617841000/SpfBankWithdrawal/traces/t14/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 246,
+      "java_exec_time_ms": 62,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  }
+]

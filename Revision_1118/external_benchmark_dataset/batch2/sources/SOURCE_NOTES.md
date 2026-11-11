@@ -1,0 +1,8 @@
+# Provenance and notices
+
+- SV-Benchmarks commit: 2e1723fde6aa65a250dcb677efa45edaa4b6b631; Java subtree: c8f8b813dedda748849c48e4e1054541ec458217. Fixed raw URLs and original download results are in fetch_manifest.json.
+- The collection has **per-subcollection/per-file licenses**, not one global Apache license. The attempted root LICENSE URL returned 404 and was not saved as source. MinePump's Apache-2.0 text, Java Ranger's Apache-2.0 and GPLv3 texts and upstream attribution README, and the algorithm source's embedded Berkeley BSD notice are retained. Do not relabel this entire batch Apache-2.0. No new claim of exclusive ownership is made over adapted snippets.
+- Java Ranger README traces its subjects to the Java Ranger examples and earlier symbolic-execution benchmark literature; the SVN/Git history of that originating work has not been independently re-audited here.
+- Apache Commons Lang source commit d1a45e9738de5b3e299bb51e987565dcce55fee6 matches the fixed revision of Defects4J Lang bug 1. Apache Commons Math source commit 86545dab3ed57872ad98b23e46924d67ddad03fc matches Math bug 1. Both LICENSE.txt and NOTICE.txt are retained.
+- Defects4J active-bugs.csv snapshots were read from rjust/defects4j commit 8c16da8230843cdc918eaf4ddb449637f02b83c6, framework/projects/Lang/active-bugs.csv and framework/projects/Math/active-bugs.csv. These establish revision provenance only; our chosen methods are not claimed to reproduce those bugs.
+- Source snapshots are unmodified. Reference compatibility copies and exact extraction hashes are under validation/differential; adaptations under subjects. Sources of deferred candidates are retained so the next search can resume without downloading them again.

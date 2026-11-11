@@ -1,0 +1,1107 @@
+=======================================================
+  CSC Engine — Test Case Generator
+=======================================================
+  Source:       /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/subjects/SpfAbortDecision/SpfAbortDecision.java
+  Mode:         Expanded CSC
+  Range bound:  +/- 40
+  Max iter:     160
+  Strategy:     sequential
+  Session:      external_SpfAbortDecision_1792781336874780000
+  CCT render:   no
+
+[1/3] Auto-instrumenting Java source...
+  [instrument] /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/subjects/SpfAbortDecision/SpfAbortDecision.java -> /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/subjects/SpfAbortDecision/SpfAbortDecision_instrumented.java
+  Class:        SpfAbortDecision
+  Params:       {'return_value': 'int', 'altitudeOffset': 'int', 'fired': 'boolean'}
+  Run log:      csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/run_log.jsonl
+
+[2/3] Compiling...
+  [compile] SpfAbortDecision.class
+[3/3] CSC Loop
+---------------------------------------------
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+{Ø}
+-----------------------------
+
+
+  [Iter 1] CCT not initialized — running bootstrap
+  Bootstrap inputs: {'altitudeOffset': 0, 'fired': True}
+  Execution path: 13 steps, 7 conditions
+CCT DOT saved to: csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/SpfAbortDecision_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: altitudeOffset < -1000 @L21 (WP: altitudeOffset < -1000, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: altitudeOffset > 1000 @L21 (WP: altitudeOffset > 1000, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: fired @L25 (WP: fired, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(altitudeOffset=0, fired=True)
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 2] Target: fired -> F (cnt=1)
+  Path constraint: (!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (!(fired))
+  -> SAT: {'altitudeOffset': '-4', 'fired': 'False'}
+  Execution path: 13 steps, 6 conditions
+CCT DOT saved to: csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/SpfAbortDecision_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: altitudeOffset < -1000 @L21 (WP: altitudeOffset < -1000, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: altitudeOffset > 1000 @L21 (WP: altitudeOffset > 1000, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: fired @L25 (WP: fired, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(altitudeOffset=-4, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(altitudeOffset=0, fired=True)
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 3] Target: altitudeOffset <= 0 -> F (cnt=1)
+  Path constraint: (!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (!(fired)) && (!(altitudeOffset <= 0))
+  -> SAT: {'altitudeOffset': '512', 'fired': 'False'}
+  Execution path: 13 steps, 6 conditions
+CCT DOT saved to: csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/SpfAbortDecision_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: altitudeOffset < -1000 @L21 (WP: altitudeOffset < -1000, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: altitudeOffset > 1000 @L21 (WP: altitudeOffset > 1000, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: fired @L25 (WP: fired, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (false), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_3'}  inputs: tc_3(altitudeOffset=512, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(altitudeOffset=-4, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(altitudeOffset=0, fired=True)
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 4] Target: altitudeOffset >= 0 -> F (cnt=1)
+  Path constraint: (!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (!(fired)) && (!(altitudeOffset <= 0)) && (!(altitudeOffset >= 0))
+CCT DOT saved to: csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/SpfAbortDecision_cct.dot
+  -> INFEASIBLE (UNSAT)
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: altitudeOffset < -1000 @L21 (WP: altitudeOffset < -1000, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: altitudeOffset > 1000 @L21 (WP: altitudeOffset > 1000, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: fired @L25 (WP: fired, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (false), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_3'}  inputs: tc_3(altitudeOffset=512, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(altitudeOffset=-4, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(altitudeOffset=0, fired=True)
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 5] Target: selected -> T (cnt=1)
+  Path constraint: (!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (!(fired)) && (!(altitudeOffset <= 0)) && (altitudeOffset >= 0) && (false)
+CCT DOT saved to: csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/SpfAbortDecision_cct.dot
+  -> INFEASIBLE (UNSAT)
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: altitudeOffset < -1000 @L21 (WP: altitudeOffset < -1000, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: altitudeOffset > 1000 @L21 (WP: altitudeOffset > 1000, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: fired @L25 (WP: fired, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (false), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_3'}  inputs: tc_3(altitudeOffset=512, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(altitudeOffset=-4, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(altitudeOffset=0, fired=True)
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 6] Target: altitudeOffset >= 0 -> T (cnt=1)
+  Path constraint: (!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (!(fired)) && (altitudeOffset <= 0) && (!(fired)) && (altitudeOffset >= 0)
+  -> SAT: {'altitudeOffset': '0', 'fired': 'False'}
+  Execution path: 14 steps, 7 conditions
+CCT DOT saved to: csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/SpfAbortDecision_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: altitudeOffset < -1000 @L21 (WP: altitudeOffset < -1000, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: altitudeOffset > 1000 @L21 (WP: altitudeOffset > 1000, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: fired @L25 (WP: fired, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (false), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_3'}  inputs: tc_3(altitudeOffset=512, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(altitudeOffset=-4, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6'}  inputs: tc_6(altitudeOffset=0, fired=False)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(altitudeOffset=0, fired=True)
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 7] Target: selected -> F (cnt=1)
+  Path constraint: (!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (!(fired)) && (altitudeOffset <= 0) && (!(fired)) && (altitudeOffset >= 0) && (!(true))
+CCT DOT saved to: csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/SpfAbortDecision_cct.dot
+  -> INFEASIBLE (UNSAT)
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: altitudeOffset < -1000 @L21 (WP: altitudeOffset < -1000, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: altitudeOffset > 1000 @L21 (WP: altitudeOffset > 1000, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: fired @L25 (WP: fired, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (false), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_3'}  inputs: tc_3(altitudeOffset=512, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(altitudeOffset=-4, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6'}  inputs: tc_6(altitudeOffset=0, fired=False)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   {Ø}
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(altitudeOffset=0, fired=True)
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 8] Target: fired -> T (cnt=1)
+  Path constraint: (!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (!(fired)) && (altitudeOffset <= 0) && (fired)
+CCT DOT saved to: csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/SpfAbortDecision_cct.dot
+  -> INFEASIBLE (UNSAT)
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: altitudeOffset < -1000 @L21 (WP: altitudeOffset < -1000, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: altitudeOffset > 1000 @L21 (WP: altitudeOffset > 1000, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: fired @L25 (WP: fired, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (false), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_3'}  inputs: tc_3(altitudeOffset=512, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(altitudeOffset=-4, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6'}  inputs: tc_6(altitudeOffset=0, fired=False)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(altitudeOffset=0, fired=True)
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 9] Target: altitudeOffset <= 0 -> F (cnt=1)
+  Path constraint: (!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (fired) && (!(altitudeOffset <= 0))
+  -> SAT: {'altitudeOffset': '512', 'fired': 'True'}
+  Execution path: 12 steps, 6 conditions
+CCT DOT saved to: csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/SpfAbortDecision_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: altitudeOffset < -1000 @L21 (WP: altitudeOffset < -1000, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: altitudeOffset > 1000 @L21 (WP: altitudeOffset > 1000, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: fired @L25 (WP: fired, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (false), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_3'}  inputs: tc_3(altitudeOffset=512, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(altitudeOffset=-4, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6'}  inputs: tc_6(altitudeOffset=0, fired=False)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (false), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_9'}  inputs: tc_9(altitudeOffset=512, fired=True)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(altitudeOffset=0, fired=True)
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 10] Target: altitudeOffset >= 0 -> F (cnt=1)
+  Path constraint: (!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (fired) && (!(altitudeOffset <= 0)) && (!(altitudeOffset >= 0))
+CCT DOT saved to: csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/SpfAbortDecision_cct.dot
+  -> INFEASIBLE (UNSAT)
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: altitudeOffset < -1000 @L21 (WP: altitudeOffset < -1000, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: altitudeOffset > 1000 @L21 (WP: altitudeOffset > 1000, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: fired @L25 (WP: fired, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (false), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_3'}  inputs: tc_3(altitudeOffset=512, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(altitudeOffset=-4, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6'}  inputs: tc_6(altitudeOffset=0, fired=False)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (false), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_9'}  inputs: tc_9(altitudeOffset=512, fired=True)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(altitudeOffset=0, fired=True)
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 11] Target: selected -> T (cnt=1)
+  Path constraint: (!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (fired) && (!(altitudeOffset <= 0)) && (altitudeOffset >= 0) && (false)
+CCT DOT saved to: csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/SpfAbortDecision_cct.dot
+  -> INFEASIBLE (UNSAT)
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: altitudeOffset < -1000 @L21 (WP: altitudeOffset < -1000, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: altitudeOffset > 1000 @L21 (WP: altitudeOffset > 1000, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: fired @L25 (WP: fired, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (false), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_3'}  inputs: tc_3(altitudeOffset=512, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(altitudeOffset=-4, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6'}  inputs: tc_6(altitudeOffset=0, fired=False)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (false), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_9'}  inputs: tc_9(altitudeOffset=512, fired=True)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   {Ø}
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(altitudeOffset=0, fired=True)
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 12] Target: fired -> F (cnt=1)
+  Path constraint: (!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (fired) && (altitudeOffset <= 0) && (!(fired))
+CCT DOT saved to: csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/SpfAbortDecision_cct.dot
+  -> INFEASIBLE (UNSAT)
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: altitudeOffset < -1000 @L21 (WP: altitudeOffset < -1000, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: altitudeOffset > 1000 @L21 (WP: altitudeOffset > 1000, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: fired @L25 (WP: fired, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (false), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_3'}  inputs: tc_3(altitudeOffset=512, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(altitudeOffset=-4, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6'}  inputs: tc_6(altitudeOffset=0, fired=False)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (false), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_9'}  inputs: tc_9(altitudeOffset=512, fired=True)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(altitudeOffset=0, fired=True)
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 13] Target: altitudeOffset >= 0 -> F (cnt=1)
+  Path constraint: (!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (fired) && (altitudeOffset <= 0) && (fired) && (!(altitudeOffset >= 0))
+  -> SAT: {'altitudeOffset': '-512', 'fired': 'True'}
+  Execution path: 12 steps, 6 conditions
+CCT DOT saved to: csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/SpfAbortDecision_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: altitudeOffset < -1000 @L21 (WP: altitudeOffset < -1000, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: altitudeOffset > 1000 @L21 (WP: altitudeOffset > 1000, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: fired @L25 (WP: fired, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (false), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_3'}  inputs: tc_3(altitudeOffset=512, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(altitudeOffset=-4, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6'}  inputs: tc_6(altitudeOffset=0, fired=False)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (false), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_9'}  inputs: tc_9(altitudeOffset=512, fired=True)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_13'}  inputs: tc_13(altitudeOffset=-512, fired=True)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   {Ø}
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(altitudeOffset=0, fired=True)
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 14] Target: selected -> F (cnt=1)
+  Path constraint: (!(altitudeOffset < -1000)) && (!(altitudeOffset > 1000)) && (fired) && (altitudeOffset <= 0) && (fired) && (altitudeOffset >= 0) && (!(true))
+CCT DOT saved to: csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/SpfAbortDecision_cct.dot
+  -> INFEASIBLE (UNSAT)
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: altitudeOffset < -1000 @L21 (WP: altitudeOffset < -1000, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: altitudeOffset > 1000 @L21 (WP: altitudeOffset > 1000, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: fired @L25 (WP: fired, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (false), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_3'}  inputs: tc_3(altitudeOffset=512, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(altitudeOffset=-4, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6'}  inputs: tc_6(altitudeOffset=0, fired=False)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (false), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_9'}  inputs: tc_9(altitudeOffset=512, fired=True)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_13'}  inputs: tc_13(altitudeOffset=-512, fired=True)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(altitudeOffset=0, fired=True)
+  |     (T) ->
+  |     |   {Ø}
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 15] Target: altitudeOffset > 1000 -> T (cnt=1)
+  Path constraint: (!(altitudeOffset < -1000)) && (altitudeOffset > 1000)
+  -> SAT: {'altitudeOffset': '1004', 'fired': 'False'}
+  Execution path: 3 steps, 2 conditions
+CCT DOT saved to: csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/SpfAbortDecision_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: altitudeOffset < -1000 @L21 (WP: altitudeOffset < -1000, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: altitudeOffset > 1000 @L21 (WP: altitudeOffset > 1000, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: fired @L25 (WP: fired, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (false), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_3'}  inputs: tc_3(altitudeOffset=512, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(altitudeOffset=-4, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6'}  inputs: tc_6(altitudeOffset=0, fired=False)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (false), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_9'}  inputs: tc_9(altitudeOffset=512, fired=True)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_13'}  inputs: tc_13(altitudeOffset=-512, fired=True)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(altitudeOffset=0, fired=True)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_15'}  inputs: tc_15(altitudeOffset=1004, fired=False)
+  (T) ->
+  |   {Ø}
+-----------------------------
+
+
+  [Iter 16] Target: altitudeOffset < -1000 -> T (cnt=1)
+  Path constraint: (altitudeOffset < -1000)
+  -> SAT: {'altitudeOffset': '-32768', 'fired': 'False'}
+  Execution path: 2 steps, 1 conditions
+CCT DOT saved to: csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/SpfAbortDecision_cct.dot
+
+--- Current CCT Structure ---
+  [Config: use_bounded_range=True, range_bound=40]
+[NODE] Condition: altitudeOffset < -1000 @L21 (WP: altitudeOffset < -1000, Cnt: 1)
+  (F) ->
+  |   [NODE] Condition: altitudeOffset > 1000 @L21 (WP: altitudeOffset > 1000, Cnt: 1)
+  |     (F) ->
+  |     |   [NODE] Condition: fired @L25 (WP: fired, Cnt: 1)
+  |     |     (F) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (false), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_3'}  inputs: tc_3(altitudeOffset=512, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_2'}  inputs: tc_2(altitudeOffset=-4, fired=False)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'tc_6'}  inputs: tc_6(altitudeOffset=0, fired=False)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     (T) ->
+  |     |     |   [NODE] Condition: altitudeOffset <= 0 @L26 (WP: altitudeOffset <= 0, Cnt: 1)
+  |     |     |     (F) ->
+  |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (false), Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_9'}  inputs: tc_9(altitudeOffset=512, fired=True)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     (T) ->
+  |     |     |     |   [NODE] Condition: fired @L27 (WP: fired, Cnt: 1)
+  |     |     |     |     (F) ->
+  |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     (T) ->
+  |     |     |     |     |   [NODE] Condition: altitudeOffset >= 0 @L30 (WP: altitudeOffset >= 0, Cnt: 1)
+  |     |     |     |     |     (F) ->
+  |     |     |     |     |     |   [LEAF] Cases: {'tc_13'}  inputs: tc_13(altitudeOffset=-512, fired=True)
+  |     |     |     |     |     (T) ->
+  |     |     |     |     |     |   [NODE] Condition: selected @L31 (WP: (true), Cnt: 1)
+  |     |     |     |     |     |     (F) ->
+  |     |     |     |     |     |     |   [LEAF] Infeasible (X)
+  |     |     |     |     |     |     (T) ->
+  |     |     |     |     |     |     |   [LEAF] Cases: {'bootstrap'}  inputs: bootstrap(altitudeOffset=0, fired=True)
+  |     (T) ->
+  |     |   [LEAF] Cases: {'tc_15'}  inputs: tc_15(altitudeOffset=1004, fired=False)
+  (T) ->
+  |   [LEAF] Cases: {'tc_16'}  inputs: tc_16(altitudeOffset=-32768, fired=False)
+-----------------------------
+
+
+  [Iter 17] CCT is FULL — all branches covered!
+CCT DOT saved to: csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/SpfAbortDecision_cct.dot
+
+=======================================================
+  Done! 16 test cases generated in 17 iterations.
+=======================================================
+CCT DOT saved to: csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/SpfAbortDecision_cct.dot
+
+Generated Test Cases:
+---------------------------------------------
+  [BOOTSTRAP]  (bootstrap)
+  tc_02  [SAT]  altitudeOffset=-4, fired=False
+  tc_03  [SAT]  altitudeOffset=512, fired=False
+  [INFEASIBLE]
+  [INFEASIBLE]
+  tc_06  [SAT]  altitudeOffset=0, fired=False
+  [INFEASIBLE]
+  [INFEASIBLE]
+  tc_09  [SAT]  altitudeOffset=512, fired=True
+  [INFEASIBLE]
+  [INFEASIBLE]
+  [INFEASIBLE]
+  tc_13  [SAT]  altitudeOffset=-512, fired=True
+  [INFEASIBLE]
+  tc_15  [SAT]  altitudeOffset=1004, fired=False
+  tc_16  [SAT]  altitudeOffset=-32768, fired=False
+
+Timing Summary (ms):
+---------------------------------------------
+  solver_time_ms: 52
+  compile_time_ms: 1849
+  java_exec_time_ms: 366
+  path_log_parse_time_ms: 0
+  cct_path_build_time_ms: 0
+  cct_merge_time_ms: 0
+
+Test cases written to: csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/testcases.json
+  (cleaned up /Users/jiazedong/WorkSpace/ZedResearch/CSC_EXT/Revision_1118/external_benchmark_dataset/subjects/SpfAbortDecision/SpfAbortDecision_instrumented.java)
+
+CCT visualization:
+  DOT: csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/SpfAbortDecision_cct.dot
+  Stats: csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/cct_stats.json
+  Counts: nodes=31, leaves=16, covered=8, infeasible=8, out_of_range=0, expanded=0, truncated=0
+  Render script: csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/render_cct.sh
+  (render later with: csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/render_cct.sh)
+
+Run log:
+  JSONL: csc_tmp/external_SpfAbortDecision_1792781336874780000/SpfAbortDecision/run_log.jsonl

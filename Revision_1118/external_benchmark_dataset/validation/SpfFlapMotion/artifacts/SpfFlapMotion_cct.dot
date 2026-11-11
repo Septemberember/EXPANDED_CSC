@@ -1,0 +1,150 @@
+digraph CCT {
+  rankdir=TB;
+  node [shape=box, style=filled, fontname="monospace", fontsize=10];
+  edge [fontname="monospace", fontsize=9];
+
+  // Legend
+  {
+    rank=sink;
+    legend [shape=plaintext, label=<
+      <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td bgcolor="#e8f5e9"><b>Leaf</b></td><td>Covered (has test cases)</td></tr>
+        <tr><td bgcolor="#d6d6d6"><b>Leaf</b></td><td>Infeasible (X)</td></tr>
+        <tr><td bgcolor="#fff9c4"><b>Leaf</b></td><td>Out-of-Range</td></tr>
+        <tr><td bgcolor="#fff3e0"><b>Leaf</b></td><td>Truncated (MAX_LOOP_BOUND)</td></tr>
+        <tr><td bgcolor="#e3f2fd"><b>Leaf</b></td><td>Expanded node</td></tr>
+        <tr><td bgcolor="#eeeeee"><b>Leaf Ø</b></td><td>Uncovered (empty)</td></tr>
+      </table>
+    >];
+  }
+
+  node0 [label="(1) goal < 0\nWP: goal < 0", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node1 [label="(1) goal > 40\nWP: goal > 40", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node0 -> node1 [label="F", color="#c62828", style=dashed];
+  node2 [label="(1) position < 0\nWP: position < 0", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node1 -> node2 [label="F", color="#c62828", style=dashed];
+  node3 [label="(1) position > 40\nWP: position > 40", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node2 -> node3 [label="F", color="#c62828", style=dashed];
+  node4 [label="(1) emergency\nWP: emergency", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node3 -> node4 [label="F", color="#c62828", style=dashed];
+  node5 [label="(1) position != goal\nWP: position != goal", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node4 -> node5 [label="F", color="#c62828", style=dashed];
+  node6 [label="tc_2(goal=0, position=0, emergency=False)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node5 -> node6 [label="F", color="#c62828", style=dashed];
+  node7 [label="(1) emergency\nWP: emergency", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node5 -> node7 [label="T", color="#2e7d32"];
+  node8 [label="(1) goal > position\nWP: goal > position", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node7 -> node8 [label="F", color="#c62828", style=dashed];
+  node9 [label="(1) time > 1\nWP: ((0) + 1) > 1", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node8 -> node9 [label="F", color="#c62828", style=dashed];
+  node10 [label="(2) position != goal\nWP: (position - 1) != goal", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node9 -> node10 [label="F", color="#c62828", style=dashed];
+  node11 [label="tc_4(goal=3, position=4, emergency=False)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node10 -> node11 [label="F", color="#c62828", style=dashed];
+  node12 [label="(2) emergency\nWP: emergency", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node10 -> node12 [label="T", color="#2e7d32"];
+  node13 [label="(2) goal > position\nWP: goal > (position - 1)", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node12 -> node13 [label="F", color="#c62828", style=dashed];
+  node14 [label="(2) time > 1\nWP: (((0) + 1) + 1) > 1", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node13 -> node14 [label="F", color="#c62828", style=dashed];
+  node15 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node14 -> node15 [label="F", color="#c62828", style=dashed];
+  node16 [label="tc_3(goal=4, position=39, emergency=False)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node14 -> node16 [label="T", color="#2e7d32"];
+  node17 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node13 -> node17 [label="T", color="#2e7d32"];
+  node18 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node12 -> node18 [label="T", color="#2e7d32"];
+  node19 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node9 -> node19 [label="T", color="#2e7d32"];
+  node20 [label="(1) time > 1\nWP: ((0) + 1) > 1", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node8 -> node20 [label="T", color="#2e7d32"];
+  node21 [label="(2) position != goal\nWP: (position + 1) != goal", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node20 -> node21 [label="F", color="#c62828", style=dashed];
+  node22 [label="bootstrap(goal=1, position=0, emergency=False)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node21 -> node22 [label="F", color="#c62828", style=dashed];
+  node23 [label="(2) emergency\nWP: emergency", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node21 -> node23 [label="T", color="#2e7d32"];
+  node24 [label="(2) goal > position\nWP: goal > (position + 1)", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node23 -> node24 [label="F", color="#c62828", style=dashed];
+  node25 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node24 -> node25 [label="F", color="#c62828", style=dashed];
+  node26 [label="(2) time > 1\nWP: (((0) + 1) + 1) > 1", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node24 -> node26 [label="T", color="#2e7d32"];
+  node27 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node26 -> node27 [label="F", color="#c62828", style=dashed];
+  node28 [label="tc_7(goal=29, position=0, emergency=False)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node26 -> node28 [label="T", color="#2e7d32"];
+  node29 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node23 -> node29 [label="T", color="#2e7d32"];
+  node30 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node20 -> node30 [label="T", color="#2e7d32"];
+  node31 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node7 -> node31 [label="T", color="#2e7d32"];
+  node32 [label="(1) position != goal\nWP: position != (30)", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node4 -> node32 [label="T", color="#2e7d32"];
+  node33 [label="tc_12(goal=0, position=30, emergency=True)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node32 -> node33 [label="F", color="#c62828", style=dashed];
+  node34 [label="(1) emergency\nWP: emergency", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node32 -> node34 [label="T", color="#2e7d32"];
+  node35 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node34 -> node35 [label="F", color="#c62828", style=dashed];
+  node36 [label="(1) goal > position\nWP: (30) > position", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node34 -> node36 [label="T", color="#2e7d32"];
+  node37 [label="(1) time > 1\nWP: ((0) + 1) > 1", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node36 -> node37 [label="F", color="#c62828", style=dashed];
+  node38 [label="(2) position != goal\nWP: (position - 10) != (30)", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node37 -> node38 [label="F", color="#c62828", style=dashed];
+  node39 [label="tc_15(goal=0, position=40, emergency=True)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node38 -> node39 [label="F", color="#c62828", style=dashed];
+  node40 [label="(2) emergency\nWP: emergency", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node38 -> node40 [label="T", color="#2e7d32"];
+  node41 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node40 -> node41 [label="F", color="#c62828", style=dashed];
+  node42 [label="(2) goal > position\nWP: (30) > (position - 10)", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node40 -> node42 [label="T", color="#2e7d32"];
+  node43 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node42 -> node43 [label="F", color="#c62828", style=dashed];
+  node44 [label="(2) time > 1\nWP: (((0) + 1) + 1) > 1", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node42 -> node44 [label="T", color="#2e7d32"];
+  node45 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node44 -> node45 [label="F", color="#c62828", style=dashed];
+  node46 [label="tc_14(goal=0, position=31, emergency=True)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node44 -> node46 [label="T", color="#2e7d32"];
+  node47 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node37 -> node47 [label="T", color="#2e7d32"];
+  node48 [label="(1) time > 1\nWP: ((0) + 1) > 1", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node36 -> node48 [label="T", color="#2e7d32"];
+  node49 [label="(2) position != goal\nWP: (position + 10) != (30)", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node48 -> node49 [label="F", color="#c62828", style=dashed];
+  node50 [label="tc_18(goal=0, position=20, emergency=True)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node49 -> node50 [label="F", color="#c62828", style=dashed];
+  node51 [label="(2) emergency\nWP: emergency", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node49 -> node51 [label="T", color="#2e7d32"];
+  node52 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node51 -> node52 [label="F", color="#c62828", style=dashed];
+  node53 [label="(2) goal > position\nWP: (30) > (position + 10)", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node51 -> node53 [label="T", color="#2e7d32"];
+  node54 [label="(2) time > 1\nWP: (((0) + 1) + 1) > 1", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node53 -> node54 [label="F", color="#c62828", style=dashed];
+  node55 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node54 -> node55 [label="F", color="#c62828", style=dashed];
+  node56 [label="tc_20(goal=12, position=21, emergency=True)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node54 -> node56 [label="T", color="#2e7d32"];
+  node57 [label="(2) time > 1\nWP: (((0) + 1) + 1) > 1", fillcolor="#f5f5f5", fontcolor="#333333"];
+  node53 -> node57 [label="T", color="#2e7d32"];
+  node58 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node57 -> node58 [label="F", color="#c62828", style=dashed];
+  node59 [label="tc_11(goal=0, position=0, emergency=True)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node57 -> node59 [label="T", color="#2e7d32"];
+  node60 [label="✗ INFEASIBLE", shape=ellipse, fillcolor="#d6d6d6", fontcolor="#555555"];
+  node48 -> node60 [label="T", color="#2e7d32"];
+  node61 [label="tc_22(goal=0, position=44, emergency=False)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node3 -> node61 [label="T", color="#2e7d32"];
+  node62 [label="tc_23(goal=0, position=-32768, emergency=False)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node2 -> node62 [label="T", color="#2e7d32"];
+  node63 [label="tc_24(goal=44, position=0, emergency=False)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node1 -> node63 [label="T", color="#2e7d32"];
+  node64 [label="tc_25(goal=-32768, position=0, emergency=False)", shape=ellipse, fillcolor="#e8f5e9", fontcolor="#1b5e20"];
+  node0 -> node64 [label="T", color="#2e7d32"];
+}

@@ -1,0 +1,127 @@
+{
+  "repository": "https://github.com/SymbolicPathFinder/jpf-symbc",
+  "commit": "c98bfae2969e51923006e4c922c0f4e4a1cfbdfb",
+  "subjects": [
+    {
+      "name": "SpfWbsStep",
+      "source": "WBS.java",
+      "source_method": "update",
+      "domain": "pedal 0..4; previous mode 0..1, command 0..4, pressure 0..5; all flags; other inputs return -1",
+      "adaptation": "Expose previous state as inputs; retain complete update control flow; encode outputs normal + 10*alternate + 100*mode. Does not model multi-step reachability.",
+      "bootstrap": "PedalPos=0,AutoBrake=false,Skid=false,prevMode=0,prevCommand=0,prevPressure=5",
+      "source_sha256": "6af56bd0dcd370b6501c19ead0fe38abd673a380f5c82d2738316f4b4a5090af",
+      "status": "accepted_smoke_validated",
+      "adapted_sha256": "7f1b41fe8900f9218a35eb70217826dad59eeaa4945bc224fb63e2e38bae8fe0",
+      "fsf_sha256": "3b5122719b8733587c34e0d4b299ad0f5611f2197642e1ea661e13533c0d9ade"
+    },
+    {
+      "name": "SpfFlapMotion",
+      "source": "FlapController.java",
+      "source_method": "EmergencySensor.run; FlapMovement.run",
+      "domain": "goal and initial position 0..40; emergency flag",
+      "adaptation": "Execute sensor before motion; preserve movement and time>1 assertion as -2; -1 rejects domain. No interleavings or concurrency claim.",
+      "bootstrap": "goal=1,position=0,emergency=false",
+      "source_sha256": "044e9af3f5232293416097c71711e044a52ab38dcaeed1272dfb0ec03f5beb23",
+      "status": "accepted_smoke_validated",
+      "adapted_sha256": "0034db7a09fe835e100975a372c57ca2005665e4f24b7af6a1c10e507d84a0f5",
+      "fsf_sha256": "b84086f9a6aa93a4b5b2bf6980639f88353d741f672e50c433b3681e60d962f0"
+    },
+    {
+      "name": "SpfBankWithdrawal",
+      "source": "sequences/BankAccount.java",
+      "source_method": "deposit; withdraw",
+      "domain": "balance 0..20; deposit -5..10; amount -5..30; count 0..5",
+      "adaptation": "Expose object state; keep input values immutable and copy balance to local currentBalance; inline deposit then withdraw; return final balance or -2 assertion. Preserve negative withdrawal behavior rather than silently fixing it.",
+      "bootstrap": "balance=10,deposit=1,amount=3,withdrawals=0",
+      "source_sha256": "35735d2ae7bd0806b58a50a2e50970c177982de42ab4139598d949b708c94a07",
+      "status": "accepted_smoke_validated",
+      "adapted_sha256": "aabe212fa4d201430aa72bdeac432aac8fd235b47643b8ee87d6ec5e598611f7",
+      "fsf_sha256": "449882956b57223cece8b97a23a239cd68790fc91f45cf442db190c7564ab0df"
+    },
+    {
+      "name": "SpfDelimiterSearch",
+      "source": "strings/DelimSearch.java",
+      "source_method": "search",
+      "domain": "three character text and two delimiters, each code 0..9",
+      "adaptation": "Flatten fixed-length strings into scalar character codes, preserve nested search loops and earliest match; replace continue with equivalent fall-through.",
+      "bootstrap": "a=1,b=2,c=3,d=4,e=5",
+      "source_sha256": "b7947c8eb7d93311c7dcc15985c02307a5a51bbc502a5a5df7e5cd3b27aa8642",
+      "status": "accepted_smoke_validated",
+      "adapted_sha256": "a3903755ad87184ac305147ce5fc5d265c1e9eaf1df141c818c0c2c2d15ff895",
+      "fsf_sha256": "034612ef76449f476a76992dbc793e2085bd57bde8e08cb2c072a9c441e99fe4"
+    },
+    {
+      "name": "SpfSubstringCount",
+      "source": "strings/StringSearch.java",
+      "source_method": "search_1",
+      "domain": "four-character haystack and two-character needle; codes 0..9",
+      "adaptation": "Flatten strings; retain nested search and overlapping occurrences.",
+      "bootstrap": "a=1,b=2,c=1,d=2,p=1,q=2",
+      "source_sha256": "a8876f8ad9c18a0d6580300a0f95e980346ef42e0cae1a86b75ed9b6dfce8adf",
+      "status": "accepted_smoke_validated",
+      "adapted_sha256": "f9f4b44a79fc889d23dc4f3b2fd4193b0a1e3ed717600cd5f6e825f459d20060",
+      "fsf_sha256": "59a5d11ec2b1baedbc9dcf9e193a80c6f219ce4f016126e4af9163ab3e29ff21"
+    },
+    {
+      "name": "SpfSortedInsertion",
+      "source": "compositional/SortedListInt.java",
+      "source_method": "insert",
+      "domain": "sorted three-node list with values 0..9; inserted digit 0..9",
+      "adaptation": "Replace next pointers by cursor and scalar fields; preserve search for insertion location; encode all four output digits, including leading zeros. Fixed length makes encoding injective.",
+      "bootstrap": "a=1,b=3,c=5,value=4",
+      "source_sha256": "c23cf1c63677ce67732f72d5a70e87ada3ac0d172c4a6a60fa46ec3d22b29a81",
+      "status": "accepted_smoke_validated",
+      "adapted_sha256": "9119056001e84b4f878830e7052f87f17a96ae1235c62518af89d5bc4f701b45",
+      "fsf_sha256": "a6ff31521eff870b3e69541f33201764e5b7902308b1528a4b90b903b252bb56"
+    },
+    {
+      "name": "SpfTreeSearch",
+      "source": "sequences/BinTree.java",
+      "source_method": "find",
+      "domain": "three-node BST with 0<=left<root<right<=9; key 0..9",
+      "adaptation": "Fix tree shape to root with two leaves; replace references/null by node indices/-1; preserve traversal.",
+      "bootstrap": "left=1,root=4,right=7,key=5",
+      "source_sha256": "cd8084b18c048de72d2c437ec4fdbd30a6b559385810f3d45d20e2fee0371417",
+      "status": "accepted_smoke_validated",
+      "adapted_sha256": "eb47f41512c2db3461cbb1789a79e53f9066de24e73a888da60178919114679f",
+      "fsf_sha256": "4bbabd2eeb265401499dba167feca4d69dd4a2e519efa653d4876d36239c6642"
+    },
+    {
+      "name": "SpfAbortDecision",
+      "source": "ExampleAbort.java",
+      "source_method": "abort; setNextState",
+      "domain": "offset -1000..1000 and flags; original altitude = 120000 + altitudeOffset",
+      "adaptation": "Translate altitude around its threshold (no overflow on domain); flatten EnumSet to failure flag, state strings to tags; inline setNextState; preserve ambiguous transition assertion at offset=0 as -2. Original defect is retained and specified, not repaired.",
+      "bootstrap": "altitudeOffset=0,fired=true",
+      "source_sha256": "312e7a50bde985972284cbacb14ee42885feb3c5bdf4c5dbd4f9c0e64c19c525",
+      "status": "accepted_smoke_validated",
+      "adapted_sha256": "0cef8ca392d4f68cadfc4637e7881d77425348422bb6cd1aa956676df6f1f1ff",
+      "fsf_sha256": "f45fcee0fbda0bcc30084570ba05fc63b80b6a390c2b774ac435054447bac05d"
+    },
+    {
+      "name": "SpfRjcCounter",
+      "source": "rjc/SimpleCounter.java",
+      "source_method": "Init; Main; state entry/exit methods",
+      "domain": "0..8 Main calls after Init",
+      "adaptation": "Flatten one-element state/output arrays; inline state dispatch and transitions; bound repeated controller ticks.",
+      "bootstrap": "steps=3",
+      "source_sha256": "5a1ea8ab88a384523810315c2a5f0da426ffe98e892e3cc4ca78c26d387869e8",
+      "status": "accepted_smoke_validated",
+      "adapted_sha256": "a8e5fd77d62ecef51ad450631dead8fd04be1d5459d1e532081d2bcc46cd3ab8",
+      "fsf_sha256": "9db8b4d119e364f08ee0583671b37d364f61bd64b891d2ef230a9a3c5c6bab0b"
+    },
+    {
+      "name": "SpfStackPops",
+      "source": "sequences/Stack.java",
+      "source_method": "push; pop; isEmpty",
+      "domain": "push three digits then pop 0..4 times",
+      "adaptation": "Flatten three nodes to slots and depth; inline pop/isEmpty; return last popped value, -3 for no pop and -2 for empty-stack exception; remove diagnostic printing. Annotation preconditions are not enforced by ordinary Java; zero values deliberately retained.",
+      "bootstrap": "a=1,b=2,c=3,pops=2",
+      "source_sha256": "1bf80a9f1c3e505b2d1196b5254d4a8c212c45117c686d19ee3434c8f4c0290c",
+      "status": "accepted_smoke_validated",
+      "adapted_sha256": "a1bc48db20b7285970f9af337cd55edc7831fc2d7c7d799cfe258e245d54b414",
+      "fsf_sha256": "8c45c90b89ac102005be1f62e03382f5520532d51015c0a81a74f001b0dfc171"
+    }
+  ],
+  "validation_scope": "Exhaustive mapped finite domains; expanded CSC completion; nontrivial FSF verification with every scenario matched. Not RQ1/RQ2/RQ3 experiments or full upstream verification."
+}

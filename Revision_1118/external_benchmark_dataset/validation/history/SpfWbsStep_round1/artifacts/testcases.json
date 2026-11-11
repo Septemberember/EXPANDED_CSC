@@ -1,0 +1,2322 @@
+[
+  {
+    "iteration": 0,
+    "inputs": {
+      "PedalPos": 0,
+      "AutoBrake": false,
+      "Skid": false,
+      "prevMode": 0,
+      "prevCommand": 0,
+      "prevPressure": 5
+    },
+    "path_constraint": "bootstrap",
+    "trace_path": "csc_tmp/external_SpfWbsStep_1792781137345173000/SpfWbsStep/traces/bootstrap/trace.jsonl",
+    "status": "bootstrap",
+    "timings": {
+      "compile_time_ms": 295,
+      "java_exec_time_ms": 49,
+      "path_log_parse_time_ms": 1,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 0
+    }
+  },
+  {
+    "iteration": 2,
+    "inputs": {
+      "PedalPos": "4",
+      "AutoBrake": "False",
+      "Skid": "False",
+      "prevMode": "0",
+      "prevCommand": "0",
+      "prevPressure": "0"
+    },
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0))",
+    "trace_path": "csc_tmp/external_SpfWbsStep_1792781137345173000/SpfWbsStep/traces/t2/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 304,
+      "java_exec_time_ms": 47,
+      "path_log_parse_time_ms": 1,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 5
+    }
+  },
+  {
+    "iteration": 3,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (!(PedalPos == 4))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 4,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((5) >= 1))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 5,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && (!((4) == 4))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 6,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((((0) + (4))) >= 0))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 7,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((0) + (4))) >= 0) && (!((((0) + (4))) < 1)) && (!((((0) + (4))) >= 1))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 8,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((0) + (4))) >= 0) && (!((((0) + (4))) < 1)) && ((((0) + (4))) >= 1) && (!((((0) + (4))) < 2)) && (!((((0) + (4))) >= 2))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 9,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((0) + (4))) >= 0) && (!((((0) + (4))) < 1)) && ((((0) + (4))) >= 1) && (!((((0) + (4))) < 2)) && ((((0) + (4))) >= 2) && (!((((0) + (4))) < 3)) && (!((((0) + (4))) >= 3))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 10,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((0) + (4))) >= 0) && (!((((0) + (4))) < 1)) && ((((0) + (4))) >= 1) && (!((((0) + (4))) < 2)) && ((((0) + (4))) >= 2) && (!((((0) + (4))) < 3)) && ((((0) + (4))) >= 3) && (!((((0) + (4))) < 4)) && (!((5) >= 1))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 11,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((0) + (4))) >= 0) && (!((((0) + (4))) < 1)) && ((((0) + (4))) >= 1) && (!((((0) + (4))) < 2)) && ((((0) + (4))) >= 2) && (!((((0) + (4))) < 3)) && ((((0) + (4))) >= 3) && (!((((0) + (4))) < 4)) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && (!((4) == 4))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 12,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((0) + (4))) >= 0) && (!((((0) + (4))) < 1)) && ((((0) + (4))) >= 1) && (!((((0) + (4))) < 2)) && ((((0) + (4))) >= 2) && (!((((0) + (4))) < 3)) && ((((0) + (4))) >= 3) && (!((((0) + (4))) < 4)) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && (!((4) == 4))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 13,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((0) + (4))) >= 0) && (!((((0) + (4))) < 1)) && ((((0) + (4))) >= 1) && (!((((0) + (4))) < 2)) && ((((0) + (4))) >= 2) && (!((((0) + (4))) < 3)) && ((((0) + (4))) >= 3) && (!((((0) + (4))) < 4)) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && ((4) == 3)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 14,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((0) + (4))) >= 0) && (!((((0) + (4))) < 1)) && ((((0) + (4))) >= 1) && (!((((0) + (4))) < 2)) && ((((0) + (4))) >= 2) && (!((((0) + (4))) < 3)) && ((((0) + (4))) >= 3) && (!((((0) + (4))) < 4)) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!((4) == 0)) && (!((4) == 1)) && ((4) == 2)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 15,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((0) + (4))) >= 0) && (!((((0) + (4))) < 1)) && ((((0) + (4))) >= 1) && (!((((0) + (4))) < 2)) && ((((0) + (4))) >= 2) && (!((((0) + (4))) < 3)) && ((((0) + (4))) >= 3) && (!((((0) + (4))) < 4)) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!((4) == 0)) && ((4) == 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 16,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((0) + (4))) >= 0) && (!((((0) + (4))) < 1)) && ((((0) + (4))) >= 1) && (!((((0) + (4))) < 2)) && ((((0) + (4))) >= 2) && (!((((0) + (4))) < 3)) && ((((0) + (4))) >= 3) && (!((((0) + (4))) < 4)) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && ((4) == 0)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 17,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((0) + (4))) >= 0) && (!((((0) + (4))) < 1)) && ((((0) + (4))) >= 1) && (!((((0) + (4))) < 2)) && ((((0) + (4))) >= 2) && (!((((0) + (4))) < 3)) && ((((0) + (4))) >= 3) && (!((((0) + (4))) < 4)) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && ((4) == 3)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 18,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((0) + (4))) >= 0) && (!((((0) + (4))) < 1)) && ((((0) + (4))) >= 1) && (!((((0) + (4))) < 2)) && ((((0) + (4))) >= 2) && (!((((0) + (4))) < 3)) && ((((0) + (4))) >= 3) && (!((((0) + (4))) < 4)) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && ((4) == 2)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 19,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((0) + (4))) >= 0) && (!((((0) + (4))) < 1)) && ((((0) + (4))) >= 1) && (!((((0) + (4))) < 2)) && ((((0) + (4))) >= 2) && (!((((0) + (4))) < 3)) && ((((0) + (4))) >= 3) && (!((((0) + (4))) < 4)) && ((5) >= 1) && (!((4) == 0)) && ((4) == 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 20,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((0) + (4))) >= 0) && (!((((0) + (4))) < 1)) && ((((0) + (4))) >= 1) && (!((((0) + (4))) < 2)) && ((((0) + (4))) >= 2) && (!((((0) + (4))) < 3)) && ((((0) + (4))) >= 3) && (!((((0) + (4))) < 4)) && ((5) >= 1) && ((4) == 0)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 21,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((0) + (4))) >= 0) && (!((((0) + (4))) < 1)) && ((((0) + (4))) >= 1) && (!((((0) + (4))) < 2)) && ((((0) + (4))) >= 2) && (!((((0) + (4))) < 3)) && ((((0) + (4))) >= 3) && ((((0) + (4))) < 4)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 22,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((0) + (4))) >= 0) && (!((((0) + (4))) < 1)) && ((((0) + (4))) >= 1) && (!((((0) + (4))) < 2)) && ((((0) + (4))) >= 2) && ((((0) + (4))) < 3)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 23,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((0) + (4))) >= 0) && (!((((0) + (4))) < 1)) && ((((0) + (4))) >= 1) && ((((0) + (4))) < 2)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 24,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((0) + (4))) >= 0) && ((((0) + (4))) < 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 25,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 26,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 27,
+    "inputs": {
+      "PedalPos": "4",
+      "AutoBrake": "False",
+      "Skid": "True",
+      "prevMode": "0",
+      "prevCommand": "0",
+      "prevPressure": "0"
+    },
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (Skid)",
+    "trace_path": "csc_tmp/external_SpfWbsStep_1792781137345173000/SpfWbsStep/traces/t27/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 290,
+      "java_exec_time_ms": 52,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 28,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (Skid) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((0) >= 0))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 29,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (Skid) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((0) >= 0) && (!((0) < 1))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 30,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (Skid) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((0) >= 0) && ((0) < 1) && (!((5) >= 1))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 31,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (Skid) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((0) >= 0) && ((0) < 1) && ((5) >= 1) && (!((0) == 0))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 32,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (Skid) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((0) >= 0) && ((0) < 1) && ((5) >= 1) && ((0) == 0) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && (!((4) == 4))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 33,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (Skid) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((0) >= 0) && ((0) < 1) && ((5) >= 1) && ((0) == 0) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && ((4) == 3)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 34,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (Skid) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((0) >= 0) && ((0) < 1) && ((5) >= 1) && ((0) == 0) && (!((4) == 0)) && (!((4) == 1)) && ((4) == 2)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 35,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (Skid) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((0) >= 0) && ((0) < 1) && ((5) >= 1) && ((0) == 0) && (!((4) == 0)) && ((4) == 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 36,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (Skid) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((0) >= 0) && ((0) < 1) && ((5) >= 1) && ((0) == 0) && ((4) == 0)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 37,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (Skid) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 38,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 39,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && ((4) == 3)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 40,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && ((4) == 2)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 41,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && ((4) == 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 42,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((4) == 0)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 43,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 44,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 45,
+    "inputs": {
+      "PedalPos": "4",
+      "AutoBrake": "False",
+      "Skid": "False",
+      "prevMode": "0",
+      "prevCommand": "4",
+      "prevPressure": "0"
+    },
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))",
+    "trace_path": "csc_tmp/external_SpfWbsStep_1792781137345173000/SpfWbsStep/traces/t45/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 311,
+      "java_exec_time_ms": 48,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 46,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 47,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 48,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((5) >= 1))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 49,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && (!((4) == 4))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 50,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 51,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 52,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (!((0) == 0))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 53,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && ((0) == 0) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && (!((4) == 4))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 54,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && ((0) == 0) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && ((4) == 3)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 55,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && ((0) == 0) && (!((4) == 0)) && (!((4) == 1)) && ((4) == 2)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 56,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && ((0) == 0) && (!((4) == 0)) && ((4) == 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 57,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && ((0) == 0) && ((4) == 0)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 58,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((0) >= 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 59,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (Skid)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 60,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && ((4) == 3)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 61,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && ((4) == 2)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 62,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((4) == 0)) && ((4) == 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 63,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && ((4) == 0)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 64,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((0) >= 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 65,
+    "inputs": {
+      "PedalPos": "4",
+      "AutoBrake": "False",
+      "Skid": "True",
+      "prevMode": "0",
+      "prevCommand": "4",
+      "prevPressure": "0"
+    },
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid)",
+    "trace_path": "csc_tmp/external_SpfWbsStep_1792781137345173000/SpfWbsStep/traces/t65/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 311,
+      "java_exec_time_ms": 49,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 66,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 67,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 68,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((5) >= 1))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 69,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((0) == 0))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 70,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && ((0) == 0) && (!(Skid))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 71,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && ((0) == 0) && (Skid) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 72,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && ((0) == 0) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 73,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && ((0) == 0) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (!((0) == 0))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 74,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && ((0) == 0) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && ((0) == 0) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && (!((4) == 4))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 75,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && ((0) == 0) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && ((0) == 0) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && ((4) == 3)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 76,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && ((0) == 0) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && ((0) == 0) && (!((4) == 0)) && (!((4) == 1)) && ((4) == 2)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 77,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && ((0) == 0) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && ((0) == 0) && (!((4) == 0)) && ((4) == 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 78,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && ((0) == 0) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && ((0) == 0) && ((4) == 0)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 79,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && ((0) == 0) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((0) >= 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 80,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (!(AutoBrake)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((0) >= 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 81,
+    "inputs": {
+      "PedalPos": "4",
+      "AutoBrake": "True",
+      "Skid": "False",
+      "prevMode": "0",
+      "prevCommand": "0",
+      "prevPressure": "0"
+    },
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake)",
+    "trace_path": "csc_tmp/external_SpfWbsStep_1792781137345173000/SpfWbsStep/traces/t81/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 308,
+      "java_exec_time_ms": 75,
+      "path_log_parse_time_ms": 1,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 82,
+    "inputs": {
+      "PedalPos": "4",
+      "AutoBrake": "True",
+      "Skid": "False",
+      "prevMode": "1",
+      "prevCommand": "0",
+      "prevPressure": "0"
+    },
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0)))",
+    "trace_path": "csc_tmp/external_SpfWbsStep_1792781137345173000/SpfWbsStep/traces/t82/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 350,
+      "java_exec_time_ms": 53,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 83,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 84,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 85,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 86,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((5) >= 1))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 87,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && (!((4) == 4))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 88,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 89,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 90,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (!((0) == 0))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 91,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && ((0) == 0) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && (!((4) == 4))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 92,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && ((0) == 0) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && ((4) == 3)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 93,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && ((0) == 0) && (!((4) == 0)) && (!((4) == 1)) && ((4) == 2)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 94,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && ((0) == 0) && (!((4) == 0)) && ((4) == 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 95,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && ((0) == 0) && ((4) == 0)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 96,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((0) >= 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 97,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (Skid)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 98,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && ((4) == 3)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 99,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && ((4) == 2)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 100,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((4) == 0)) && ((4) == 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 101,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && ((4) == 0)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 102,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((0) >= 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 103,
+    "inputs": {
+      "PedalPos": "4",
+      "AutoBrake": "True",
+      "Skid": "True",
+      "prevMode": "1",
+      "prevCommand": "0",
+      "prevPressure": "0"
+    },
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid)",
+    "trace_path": "csc_tmp/external_SpfWbsStep_1792781137345173000/SpfWbsStep/traces/t103/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 399,
+      "java_exec_time_ms": 138,
+      "path_log_parse_time_ms": 2,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 104,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 4
+    }
+  },
+  {
+    "iteration": 105,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 106,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((5) >= 1))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 107,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && (!((0) == 0))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 108,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && ((0) == 0) && (!(Skid))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 109,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && ((0) == 0) && (Skid) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 110,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && ((0) == 0) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 111,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && ((0) == 0) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (!((0) == 0))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 112,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && ((0) == 0) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && ((0) == 0) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && (!((4) == 4))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 113,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && ((0) == 0) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && ((0) == 0) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && ((4) == 3)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 114,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && ((0) == 0) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && ((0) == 0) && (!((4) == 0)) && (!((4) == 1)) && ((4) == 2)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 115,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && ((0) == 0) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && ((0) == 0) && (!((4) == 0)) && ((4) == 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 116,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && ((0) == 0) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && ((0) == 0) && ((4) == 0)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 117,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (!((0) >= 1)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((5) >= 1) && ((0) == 0) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((0) >= 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 118,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (!(((prevMode) == 0))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0))))) && ((0) >= 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 119,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((5) >= 1))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 120,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && (!((4) == 4))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 121,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((((1) + (4))) >= 0))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 122,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((1) + (4))) >= 0) && (!((((1) + (4))) < 1)) && (!((((1) + (4))) >= 1))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 123,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((1) + (4))) >= 0) && (!((((1) + (4))) < 1)) && ((((1) + (4))) >= 1) && (!((((1) + (4))) < 2)) && (!((((1) + (4))) >= 2))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 124,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((1) + (4))) >= 0) && (!((((1) + (4))) < 1)) && ((((1) + (4))) >= 1) && (!((((1) + (4))) < 2)) && ((((1) + (4))) >= 2) && (!((((1) + (4))) < 3)) && (!((((1) + (4))) >= 3))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 125,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((1) + (4))) >= 0) && (!((((1) + (4))) < 1)) && ((((1) + (4))) >= 1) && (!((((1) + (4))) < 2)) && ((((1) + (4))) >= 2) && (!((((1) + (4))) < 3)) && ((((1) + (4))) >= 3) && (!((((1) + (4))) < 4)) && (!((5) >= 1))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 126,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((1) + (4))) >= 0) && (!((((1) + (4))) < 1)) && ((((1) + (4))) >= 1) && (!((((1) + (4))) < 2)) && ((((1) + (4))) >= 2) && (!((((1) + (4))) < 3)) && ((((1) + (4))) >= 3) && (!((((1) + (4))) < 4)) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && (!((4) == 4))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 127,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((1) + (4))) >= 0) && (!((((1) + (4))) < 1)) && ((((1) + (4))) >= 1) && (!((((1) + (4))) < 2)) && ((((1) + (4))) >= 2) && (!((((1) + (4))) < 3)) && ((((1) + (4))) >= 3) && (!((((1) + (4))) < 4)) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && (!((4) == 4))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 128,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((1) + (4))) >= 0) && (!((((1) + (4))) < 1)) && ((((1) + (4))) >= 1) && (!((((1) + (4))) < 2)) && ((((1) + (4))) >= 2) && (!((((1) + (4))) < 3)) && ((((1) + (4))) >= 3) && (!((((1) + (4))) < 4)) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && ((4) == 3)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 129,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((1) + (4))) >= 0) && (!((((1) + (4))) < 1)) && ((((1) + (4))) >= 1) && (!((((1) + (4))) < 2)) && ((((1) + (4))) >= 2) && (!((((1) + (4))) < 3)) && ((((1) + (4))) >= 3) && (!((((1) + (4))) < 4)) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!((4) == 0)) && (!((4) == 1)) && ((4) == 2)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 130,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((1) + (4))) >= 0) && (!((((1) + (4))) < 1)) && ((((1) + (4))) >= 1) && (!((((1) + (4))) < 2)) && ((((1) + (4))) >= 2) && (!((((1) + (4))) < 3)) && ((((1) + (4))) >= 3) && (!((((1) + (4))) < 4)) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!((4) == 0)) && ((4) == 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 131,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((1) + (4))) >= 0) && (!((((1) + (4))) < 1)) && ((((1) + (4))) >= 1) && (!((((1) + (4))) < 2)) && ((((1) + (4))) >= 2) && (!((((1) + (4))) < 3)) && ((((1) + (4))) >= 3) && (!((((1) + (4))) < 4)) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && ((4) == 0)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 132,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((1) + (4))) >= 0) && (!((((1) + (4))) < 1)) && ((((1) + (4))) >= 1) && (!((((1) + (4))) < 2)) && ((((1) + (4))) >= 2) && (!((((1) + (4))) < 3)) && ((((1) + (4))) >= 3) && (!((((1) + (4))) < 4)) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && ((4) == 3)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 133,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((1) + (4))) >= 0) && (!((((1) + (4))) < 1)) && ((((1) + (4))) >= 1) && (!((((1) + (4))) < 2)) && ((((1) + (4))) >= 2) && (!((((1) + (4))) < 3)) && ((((1) + (4))) >= 3) && (!((((1) + (4))) < 4)) && ((5) >= 1) && (!((4) == 0)) && (!((4) == 1)) && ((4) == 2)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 134,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((1) + (4))) >= 0) && (!((((1) + (4))) < 1)) && ((((1) + (4))) >= 1) && (!((((1) + (4))) < 2)) && ((((1) + (4))) >= 2) && (!((((1) + (4))) < 3)) && ((((1) + (4))) >= 3) && (!((((1) + (4))) < 4)) && ((5) >= 1) && (!((4) == 0)) && ((4) == 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 135,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((1) + (4))) >= 0) && (!((((1) + (4))) < 1)) && ((((1) + (4))) >= 1) && (!((((1) + (4))) < 2)) && ((((1) + (4))) >= 2) && (!((((1) + (4))) < 3)) && ((((1) + (4))) >= 3) && (!((((1) + (4))) < 4)) && ((5) >= 1) && ((4) == 0)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 136,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((1) + (4))) >= 0) && (!((((1) + (4))) < 1)) && ((((1) + (4))) >= 1) && (!((((1) + (4))) < 2)) && ((((1) + (4))) >= 2) && (!((((1) + (4))) < 3)) && ((((1) + (4))) >= 3) && ((((1) + (4))) < 4)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 137,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((1) + (4))) >= 0) && (!((((1) + (4))) < 1)) && ((((1) + (4))) >= 1) && (!((((1) + (4))) < 2)) && ((((1) + (4))) >= 2) && ((((1) + (4))) < 3)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 138,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((1) + (4))) >= 0) && (!((((1) + (4))) < 1)) && ((((1) + (4))) >= 1) && ((((1) + (4))) < 2)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 139,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((((1) + (4))) >= 0) && ((((1) + (4))) < 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 140,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 141,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (!(Skid)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 142,
+    "inputs": {
+      "PedalPos": "4",
+      "AutoBrake": "True",
+      "Skid": "True",
+      "prevMode": "0",
+      "prevCommand": "0",
+      "prevPressure": "0"
+    },
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (Skid)",
+    "trace_path": "csc_tmp/external_SpfWbsStep_1792781137345173000/SpfWbsStep/traces/t142/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 362,
+      "java_exec_time_ms": 62,
+      "path_log_parse_time_ms": 1,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 143,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (Skid) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((0) >= 0))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 144,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (Skid) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((0) >= 0) && (!((0) < 1))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 145,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (Skid) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((0) >= 0) && ((0) < 1) && (!((5) >= 1))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 146,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (Skid) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((0) >= 0) && ((0) < 1) && ((5) >= 1) && (!((0) == 0))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 147,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (Skid) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((0) >= 0) && ((0) < 1) && ((5) >= 1) && ((0) == 0) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && (!((4) == 4))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 148,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (Skid) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((0) >= 0) && ((0) < 1) && ((5) >= 1) && ((0) == 0) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && ((4) == 3)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 149,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (Skid) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((0) >= 0) && ((0) < 1) && ((5) >= 1) && ((0) == 0) && (!((4) == 0)) && (!((4) == 1)) && ((4) == 2)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 150,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (Skid) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((0) >= 0) && ((0) < 1) && ((5) >= 1) && ((0) == 0) && (!((4) == 0)) && ((4) == 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 151,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (Skid) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((0) >= 0) && ((0) < 1) && ((5) >= 1) && ((0) == 0) && ((4) == 0)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 152,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (Skid) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 153,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && (!((4) == 3)) && ((4) == 4) && (Skid) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 154,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && (!((4) == 2)) && ((4) == 3)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 155,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && (!((4) == 1)) && ((4) == 2)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 156,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!((4) == 0)) && ((4) == 1)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 2
+    }
+  },
+  {
+    "iteration": 157,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((4) == 0)",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 158,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && ((5) >= 1) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  },
+  {
+    "iteration": 159,
+    "inputs": null,
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (!(((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))",
+    "status": "infeasible",
+    "timings": {
+      "compile_time_ms": 0,
+      "java_exec_time_ms": 0,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 1
+    }
+  },
+  {
+    "iteration": 160,
+    "inputs": {
+      "PedalPos": "4",
+      "AutoBrake": "True",
+      "Skid": "False",
+      "prevMode": "0",
+      "prevCommand": "4",
+      "prevPressure": "0"
+    },
+    "path_constraint": "(!(PedalPos < 0)) && (!(PedalPos > 4)) && (!(prevMode < 0)) && (!(prevMode > 1)) && (!(prevCommand < 0)) && (!(prevCommand > 4)) && (!(prevPressure < 0)) && (!(prevPressure > 5)) && (!(PedalPos == 0)) && (!(PedalPos == 1)) && (!(PedalPos == 2)) && (!(PedalPos == 3)) && (PedalPos == 4) && (AutoBrake) && (((prevMode) == 0)) && (((((!((prevCommand) == 0)) && ((prevPressure) <= 0)) && (((prevMode) == 0))) || (!(((prevMode) == 0)))))",
+    "trace_path": "csc_tmp/external_SpfWbsStep_1792781137345173000/SpfWbsStep/traces/t160/trace.jsonl",
+    "status": "sat",
+    "timings": {
+      "compile_time_ms": 331,
+      "java_exec_time_ms": 54,
+      "path_log_parse_time_ms": 0,
+      "cct_path_build_time_ms": 0,
+      "cct_merge_time_ms": 0,
+      "solver_time_ms": 3
+    }
+  }
+]

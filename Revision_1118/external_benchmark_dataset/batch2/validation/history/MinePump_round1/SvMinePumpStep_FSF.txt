@@ -1,0 +1,99 @@
+[fsf_1]
+T: water < 0 || water > 2
+D: return_value == -99
+
+[fsf_2]
+T: !(water < 0 || water > 2) && (water == 0 && !running && !active && !methane)
+D: return_value == 0
+
+[fsf_3]
+T: !(water < 0 || water > 2) && (water == 0 && !running && !active && methane)
+D: return_value == 0
+
+[fsf_4]
+T: !(water < 0 || water > 2) && (water == 0 && !running && active && !methane)
+D: return_value == 0
+
+[fsf_5]
+T: !(water < 0 || water > 2) && (water == 0 && !running && active && methane)
+D: return_value == 0
+
+[fsf_6]
+T: !(water < 0 || water > 2) && (water == 0 && running && !active && !methane)
+D: return_value == 10
+
+[fsf_7]
+T: !(water < 0 || water > 2) && (water == 0 && running && !active && methane)
+D: return_value == 10
+
+[fsf_8]
+T: !(water < 0 || water > 2) && (water == 0 && running && active && !methane)
+D: return_value == 0
+
+[fsf_9]
+T: !(water < 0 || water > 2) && (water == 0 && running && active && methane)
+D: return_value == 0
+
+[fsf_10]
+T: !(water < 0 || water > 2) && (water == 1 && !running && !active && !methane)
+D: return_value == 1
+
+[fsf_11]
+T: !(water < 0 || water > 2) && (water == 1 && !running && !active && methane)
+D: return_value == 1
+
+[fsf_12]
+T: !(water < 0 || water > 2) && (water == 1 && !running && active && !methane)
+D: return_value == 1
+
+[fsf_13]
+T: !(water < 0 || water > 2) && (water == 1 && !running && active && methane)
+D: return_value == 1
+
+[fsf_14]
+T: !(water < 0 || water > 2) && (water == 1 && running && !active && !methane)
+D: return_value == 10
+
+[fsf_15]
+T: !(water < 0 || water > 2) && (water == 1 && running && !active && methane)
+D: return_value == 10
+
+[fsf_16]
+T: !(water < 0 || water > 2) && (water == 1 && running && active && !methane)
+D: return_value == 0
+
+[fsf_17]
+T: !(water < 0 || water > 2) && (water == 1 && running && active && methane)
+D: return_value == 0
+
+[fsf_18]
+T: !(water < 0 || water > 2) && (water == 2 && !running && !active && !methane)
+D: return_value == 2
+
+[fsf_19]
+T: !(water < 0 || water > 2) && (water == 2 && !running && !active && methane)
+D: return_value == 2
+
+[fsf_20]
+T: !(water < 0 || water > 2) && (water == 2 && !running && active && !methane)
+D: return_value == 12
+
+[fsf_21]
+T: !(water < 0 || water > 2) && (water == 2 && !running && active && methane)
+D: return_value == 2
+
+[fsf_22]
+T: !(water < 0 || water > 2) && (water == 2 && running && !active && !methane)
+D: return_value == 11
+
+[fsf_23]
+T: !(water < 0 || water > 2) && (water == 2 && running && !active && methane)
+D: return_value == 11
+
+[fsf_24]
+T: !(water < 0 || water > 2) && (water == 2 && running && active && !methane)
+D: return_value == 11
+
+[fsf_25]
+T: !(water < 0 || water > 2) && (water == 2 && running && active && methane)
+D: return_value == 1
